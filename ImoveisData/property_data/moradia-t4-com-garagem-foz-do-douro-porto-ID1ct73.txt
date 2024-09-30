@@ -1,0 +1,768 @@
+{
+  "pageProps": {
+    "lang": "pt",
+    "_sentryTraceData": "30c148b2b15047809df2f521619e9041-a0a955a3bda5882a-0",
+    "_sentryBaggage": "sentry-environment=imovirtualpt2-prd,sentry-release=frontend-platform%40v20240930T093022-imovirtualpt2,sentry-public_key=feffe528c390ea66992a4a05131c3c68,sentry-trace_id=30c148b2b15047809df2f521619e9041,sentry-transaction=%2Fpt%2Fanuncio%2F%5Bid%5D,sentry-sampled=false",
+    "id": "1ct73",
+    "ad": {
+      "id": 17748185,
+      "price": {
+        "type": "ON_DEMAND",
+        "__typename": "AdvertPrice"
+      },
+      "market": "SECONDARY",
+      "services": [],
+      "publicId": "",
+      "slug": "moradia-t4-com-garagem-foz-do-douro-porto-ID1ct73",
+      "advertiserType": "business",
+      "advertType": "AGENCY",
+      "source": "urn:partner:ego",
+      "createdAt": "2023-10-17T18:13:42+01:00",
+      "modifiedAt": "2024-09-25T04:45:21+01:00",
+      "description": "Moradia T4 com 198 m2 de área bruta privativa e 75 m2 de logradouro, na rua do Crasto, Foz do Douro, Porto. Composta por três pisos, distribuídos por rés chão com hall de entrada, quarto, sala, casa de banho com duche, arrecadação e garagem para dois carros. No piso 1, hall, cozinha, despensa, sala de jantar, e sala de estar. No segundo e ultimo piso, dois quartos orientados a Sul, um quarto de frente para a rua e duas casa de banho completas. O imóvel tem potencial para aumentar e fazer um melhor aproveitamento da área exterior.<br/>\r\n<br/>\r\nLocalizado próximo de comércio, serviços, estabelecimentos de ensino e transportes. Está a 3 minutos walking distance do rio Douro e do Lawn Tennis Clube da Foz, a 5 minutos da praia do Ourigo, a menos de 10 minutos do Mercado da Foz do Douro, da Universidade Católica e da Avenida Brasil. Está ainda a menos de 10 minutos driving distance do Parque de Serralves e do Parque da Cidade do Porto, a 15 minutos da Baixa do Porto, a 20 minutos do aeroporto Francisco Sá Carneiro e a 3 horas de Lisboa. <br/>\r\nCategoria Energética: D<br/>\n<br/>\n4-bedroom villa with a private gross area of 198 m2 and a courtyard of 75 m2, located on Rua do Crasto, in Foz do Douro, Porto. The property is spread over three floors. The ground floor includes an entrance hall, a bedroom, a living room, a bathroom with a shower, a storage room, and a garage for two cars. On the 1st floor, there is a hall, a kitchen, a pantry, a dining room, and a living room. The second and top floor features two south-facing bedrooms, a street-facing bedroom, and two full bathrooms. The property has the potential to expand and better utilize the outdoor area.<br/>\r\n<br/>\r\nLocated close to shops, services, educational institutions, and transportation. It is a 3-minute walk from the Douro River and the Lawn Tennis Club in Foz, 5 minutes from Ourigo Beach, less than 10 minutes from Foz do Douro Market, the Catholic University, and Avenida Brasil. It is also less than a 10-minute drive from Serralves Park and Porto City Park, 15 minutes from downtown Porto, 20 minutes from Francisco Sá Carneiro Airport, and three hours from Lisbon. <br/>\r\nEnergy Rating: D",
+      "developmentId": 0,
+      "developmentTitle": "",
+      "developmentUrl": "",
+      "exclusiveOffer": false,
+      "externalId": "8ad4494b-14aa-4f9a-bb21-fec1352a83a4",
+      "features": [
+        "garagem",
+        "Acessibilidade para pessoas com mobilidade reduzida",
+        "jardim",
+        "terraço"
+      ],
+      "creationSource": "api",
+      "featuresByCategory": [
+        {
+          "label": "Informações adicionais",
+          "values": [
+            "garagem",
+            "Acessibilidade para pessoas com mobilidade reduzida",
+            "jardim",
+            "terraço"
+          ],
+          "__typename": "FeatureGroup"
+        }
+      ],
+      "featuresWithoutCategory": [],
+      "openDay": null,
+      "referenceId": "74225",
+      "target": {
+        "Area": "146",
+        "AreaRange": [],
+        "Bathrooms_num": [
+          "3"
+        ],
+        "City": "aldoar-foz-do-douro-e-nevogilde-porto",
+        "City_id": "13643792",
+        "Country": "Portugal",
+        "Energy_certificate": [
+          "d"
+        ],
+        "Extras_types": [
+          "garage",
+          "accessibility_for_people_with_reduced_mobility",
+          "garden",
+          "terrace"
+        ],
+        "Id": "17748185",
+        "MarketType": "secondary",
+        "ObidoAdvert": "n",
+        "OfferType": "comprar",
+        "Photo": "aHR0cHM6Ly9pcmVsYW5kLmFwb2xsby5vbHhjZG4uY29tL3YxL2ZpbGVzL2V5Sm1iaUk2SW5GbGNEZDNhVEZ6ZHpBMmFpMUZRMDlUV1ZOVVJVMGlMQ0ozSWpwYmV5Sm1iaUk2SWpZNWJteHdZVGRsWTNGdE56RXRRVkJVSWl3aWN5STZJakUwSWl3aWNDSTZJakV3TEMweE1DSXNJbUVpT2lJd0luMWRmUS5fU09DR19mNFVBcHdrMDZLRGhNNzZud2xGRzVGMEt5c2lqWU9KeVdhSkE4L2ltYWdlO3M9NjU1eDQ5MTtxPTgw",
+        "ProperType": "moradia",
+        "Province": "porto",
+        "RegularUser": "n",
+        "Rooms_num": [
+          "5"
+        ],
+        "Subregion": "porto",
+        "Title": "TW9yYWRpYSBUNCBjb20gZ2FyYWdlbSwgRm96IGRvIERvdXJvLCBQb3J0bw==",
+        "categoryId": "201",
+        "env": "production",
+        "hidePrice": "1",
+        "seller_id": "18410",
+        "user_type": "agency"
+      },
+      "title": "Moradia T4 com garagem, Foz do Douro, Porto",
+      "topInformation": [
+        {
+          "label": "area",
+          "values": [
+            "146"
+          ],
+          "unit": "m²",
+          "__typename": "AdditionalInfo"
+        },
+        {
+          "label": "heating_types",
+          "values": [],
+          "unit": "",
+          "__typename": "AdditionalInfo"
+        },
+        {
+          "label": "terrain_area",
+          "values": [],
+          "unit": "",
+          "__typename": "AdditionalInfo"
+        },
+        {
+          "label": "construction_status",
+          "values": [],
+          "unit": "",
+          "__typename": "AdditionalInfo"
+        },
+        {
+          "label": "building_type",
+          "values": [],
+          "unit": "",
+          "__typename": "AdditionalInfo"
+        },
+        {
+          "label": "build_year",
+          "values": [],
+          "unit": "",
+          "__typename": "AdditionalInfo"
+        },
+        {
+          "label": "rooms_num",
+          "values": [
+            "5"
+          ],
+          "unit": "",
+          "__typename": "AdditionalInfo"
+        },
+        {
+          "label": "car",
+          "values": [
+            "extras_types::garage"
+          ],
+          "unit": "",
+          "__typename": "AdditionalInfo"
+        },
+        {
+          "label": "remote_services",
+          "values": [],
+          "unit": "",
+          "__typename": "AdditionalInfo"
+        },
+        {
+          "label": "rent",
+          "values": [],
+          "unit": "",
+          "__typename": "AdditionalInfo"
+        }
+      ],
+      "additionalInformation": [
+        {
+          "label": "market",
+          "values": [
+            "market::secondary"
+          ],
+          "unit": "",
+          "__typename": "AdditionalInfo"
+        },
+        {
+          "label": "advertiser_type",
+          "values": [
+            "advertiser_type::agency"
+          ],
+          "unit": "",
+          "__typename": "AdditionalInfo"
+        },
+        {
+          "label": "bathrooms_num",
+          "values": [
+            "3"
+          ],
+          "unit": "",
+          "__typename": "AdditionalInfo"
+        },
+        {
+          "label": "free_from",
+          "values": [],
+          "unit": "",
+          "__typename": "AdditionalInfo"
+        },
+        {
+          "label": "building_material",
+          "values": [],
+          "unit": "",
+          "__typename": "AdditionalInfo"
+        },
+        {
+          "label": "windows_type",
+          "values": [],
+          "unit": "",
+          "__typename": "AdditionalInfo"
+        },
+        {
+          "label": "floors_num",
+          "values": [],
+          "unit": "",
+          "__typename": "AdditionalInfo"
+        },
+        {
+          "label": "roof_type",
+          "values": [],
+          "unit": "",
+          "__typename": "AdditionalInfo"
+        },
+        {
+          "label": "roofing",
+          "values": [],
+          "unit": "",
+          "__typename": "AdditionalInfo"
+        },
+        {
+          "label": "garret_type",
+          "values": [],
+          "unit": "",
+          "__typename": "AdditionalInfo"
+        },
+        {
+          "label": "media_types",
+          "values": [],
+          "unit": "",
+          "__typename": "AdditionalInfo"
+        },
+        {
+          "label": "security_types",
+          "values": [],
+          "unit": "",
+          "__typename": "AdditionalInfo"
+        },
+        {
+          "label": "fence_types",
+          "values": [],
+          "unit": "",
+          "__typename": "AdditionalInfo"
+        },
+        {
+          "label": "access_types",
+          "values": [],
+          "unit": "",
+          "__typename": "AdditionalInfo"
+        },
+        {
+          "label": "location",
+          "values": [],
+          "unit": "",
+          "__typename": "AdditionalInfo"
+        },
+        {
+          "label": "vicinity_types",
+          "values": [],
+          "unit": "",
+          "__typename": "AdditionalInfo"
+        },
+        {
+          "label": "extras_types",
+          "values": [
+            "extras_types::accessibility_for_people_with_reduced_mobility",
+            "extras_types::garden",
+            "extras_types::terrace"
+          ],
+          "unit": "",
+          "__typename": "AdditionalInfo"
+        }
+      ],
+      "url": "https://www.imovirtual.com/pt/anuncio/moradia-t4-com-garagem-foz-do-douro-porto-ID1ct73",
+      "status": "active",
+      "adCategory": {
+        "id": "201",
+        "name": "HOUSE",
+        "type": "SELL",
+        "__typename": "AdvertCategory"
+      },
+      "category": {
+        "id": 201,
+        "name": [
+          {
+            "locale": "pt",
+            "value": "Moradias",
+            "__typename": "LocalizedString"
+          },
+          {
+            "locale": "en",
+            "value": "Houses",
+            "__typename": "LocalizedString"
+          }
+        ],
+        "__typename": "AdCategory"
+      },
+      "characteristics": [
+        {
+          "key": "price",
+          "value": "",
+          "label": "Preço",
+          "localizedValue": "Preço sob consulta",
+          "currency": "EUR",
+          "suffix": "",
+          "__typename": "Characteristic"
+        },
+        {
+          "key": "m",
+          "value": "146",
+          "label": "Área",
+          "localizedValue": "146 m²",
+          "currency": "",
+          "suffix": "",
+          "__typename": "Characteristic"
+        },
+        {
+          "key": "price_per_m",
+          "value": "",
+          "label": "preço/m2",
+          "localizedValue": "",
+          "currency": "",
+          "suffix": "",
+          "__typename": "Characteristic"
+        },
+        {
+          "key": "market",
+          "value": "secondary",
+          "label": "Nova construção",
+          "localizedValue": "não",
+          "currency": "",
+          "suffix": "",
+          "__typename": "Characteristic"
+        },
+        {
+          "key": "rooms_num",
+          "value": "5",
+          "label": "Tipologia",
+          "localizedValue": "T4",
+          "currency": "",
+          "suffix": "",
+          "__typename": "Characteristic"
+        },
+        {
+          "key": "energy_certificate",
+          "value": "d",
+          "label": "Certificado energético",
+          "localizedValue": "D",
+          "currency": "",
+          "suffix": "",
+          "__typename": "Characteristic"
+        },
+        {
+          "key": "bathrooms_num",
+          "value": "3",
+          "label": "N.º de casas de banho",
+          "localizedValue": "3",
+          "currency": "",
+          "suffix": "",
+          "__typename": "Characteristic"
+        }
+      ],
+      "images": [
+        {
+          "thumbnail": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InFlcDd3aTFzdzA2ai1FQ09TWVNURU0iLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ._SOCG_f4UApwk06KDhM76nwlFG5F0KysijYOJyWaJA8/image;s=184x138;q=80",
+          "small": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InFlcDd3aTFzdzA2ai1FQ09TWVNURU0iLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ._SOCG_f4UApwk06KDhM76nwlFG5F0KysijYOJyWaJA8/image;s=314x236;q=80",
+          "medium": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InFlcDd3aTFzdzA2ai1FQ09TWVNURU0iLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ._SOCG_f4UApwk06KDhM76nwlFG5F0KysijYOJyWaJA8/image;s=655x491;q=80",
+          "large": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InFlcDd3aTFzdzA2ai1FQ09TWVNURU0iLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ._SOCG_f4UApwk06KDhM76nwlFG5F0KysijYOJyWaJA8/image;s=1280x1024;q=80",
+          "__typename": "AdImage"
+        },
+        {
+          "thumbnail": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImZldmc3azRnZ2ZidjEtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.dTz63OSirUeu_kGIzK5Z0DQyUYOxVsSM_E3elGjAsIM/image;s=184x138;q=80",
+          "small": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImZldmc3azRnZ2ZidjEtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.dTz63OSirUeu_kGIzK5Z0DQyUYOxVsSM_E3elGjAsIM/image;s=314x236;q=80",
+          "medium": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImZldmc3azRnZ2ZidjEtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.dTz63OSirUeu_kGIzK5Z0DQyUYOxVsSM_E3elGjAsIM/image;s=655x491;q=80",
+          "large": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImZldmc3azRnZ2ZidjEtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.dTz63OSirUeu_kGIzK5Z0DQyUYOxVsSM_E3elGjAsIM/image;s=1280x1024;q=80",
+          "__typename": "AdImage"
+        },
+        {
+          "thumbnail": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjQ1cm5weml5aDd1OTMtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.aZzzOJdmC3PLaTHCFbLlrV3jO3gTqfvHWVQfTKrFBrI/image;s=184x138;q=80",
+          "small": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjQ1cm5weml5aDd1OTMtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.aZzzOJdmC3PLaTHCFbLlrV3jO3gTqfvHWVQfTKrFBrI/image;s=314x236;q=80",
+          "medium": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjQ1cm5weml5aDd1OTMtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.aZzzOJdmC3PLaTHCFbLlrV3jO3gTqfvHWVQfTKrFBrI/image;s=655x491;q=80",
+          "large": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjQ1cm5weml5aDd1OTMtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.aZzzOJdmC3PLaTHCFbLlrV3jO3gTqfvHWVQfTKrFBrI/image;s=1280x1024;q=80",
+          "__typename": "AdImage"
+        },
+        {
+          "thumbnail": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Ijgzc2xzdHNmZTBwODMtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.sgxPHRCya_IwdCi3SfH4JVPbj8sWK2jQ3bRUNTAQt3A/image;s=184x138;q=80",
+          "small": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Ijgzc2xzdHNmZTBwODMtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.sgxPHRCya_IwdCi3SfH4JVPbj8sWK2jQ3bRUNTAQt3A/image;s=314x236;q=80",
+          "medium": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Ijgzc2xzdHNmZTBwODMtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.sgxPHRCya_IwdCi3SfH4JVPbj8sWK2jQ3bRUNTAQt3A/image;s=655x491;q=80",
+          "large": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Ijgzc2xzdHNmZTBwODMtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.sgxPHRCya_IwdCi3SfH4JVPbj8sWK2jQ3bRUNTAQt3A/image;s=1280x1024;q=80",
+          "__typename": "AdImage"
+        },
+        {
+          "thumbnail": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImEyZHQ2N2cxcWp6bDEtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.EH5XeHxqpaVmMnY69qf-ywENdT3k6RZzInFFMtbC-Oc/image;s=184x138;q=80",
+          "small": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImEyZHQ2N2cxcWp6bDEtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.EH5XeHxqpaVmMnY69qf-ywENdT3k6RZzInFFMtbC-Oc/image;s=314x236;q=80",
+          "medium": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImEyZHQ2N2cxcWp6bDEtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.EH5XeHxqpaVmMnY69qf-ywENdT3k6RZzInFFMtbC-Oc/image;s=655x491;q=80",
+          "large": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImEyZHQ2N2cxcWp6bDEtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.EH5XeHxqpaVmMnY69qf-ywENdT3k6RZzInFFMtbC-Oc/image;s=1280x1024;q=80",
+          "__typename": "AdImage"
+        },
+        {
+          "thumbnail": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InFrc2w0MWJzem5ybi1FQ09TWVNURU0iLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.IhlX8--T7pX_ViX5HvXb54apt1aqJBdp8lujzsn5eI0/image;s=184x138;q=80",
+          "small": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InFrc2w0MWJzem5ybi1FQ09TWVNURU0iLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.IhlX8--T7pX_ViX5HvXb54apt1aqJBdp8lujzsn5eI0/image;s=314x236;q=80",
+          "medium": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InFrc2w0MWJzem5ybi1FQ09TWVNURU0iLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.IhlX8--T7pX_ViX5HvXb54apt1aqJBdp8lujzsn5eI0/image;s=655x491;q=80",
+          "large": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InFrc2w0MWJzem5ybi1FQ09TWVNURU0iLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.IhlX8--T7pX_ViX5HvXb54apt1aqJBdp8lujzsn5eI0/image;s=1280x1024;q=80",
+          "__typename": "AdImage"
+        },
+        {
+          "thumbnail": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjBmN3NveW5yd3FlbzEtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.X_DFEN41EjaVJ_9KoJzdovvzU5HcJIVHs-nNMGBVrFU/image;s=184x138;q=80",
+          "small": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjBmN3NveW5yd3FlbzEtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.X_DFEN41EjaVJ_9KoJzdovvzU5HcJIVHs-nNMGBVrFU/image;s=314x236;q=80",
+          "medium": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjBmN3NveW5yd3FlbzEtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.X_DFEN41EjaVJ_9KoJzdovvzU5HcJIVHs-nNMGBVrFU/image;s=655x491;q=80",
+          "large": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjBmN3NveW5yd3FlbzEtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.X_DFEN41EjaVJ_9KoJzdovvzU5HcJIVHs-nNMGBVrFU/image;s=1280x1024;q=80",
+          "__typename": "AdImage"
+        }
+      ],
+      "links": {
+        "localPlanUrl": "",
+        "videoUrl": "https://www.youtube.com/embed/bGZhyQNMpW4",
+        "view3dUrl": "",
+        "walkaroundUrl": "",
+        "__typename": "AdvertLinks"
+      },
+      "location": {
+        "id": "60000177002",
+        "coordinates": {
+          "latitude": 41.16139,
+          "longitude": -8.6712,
+          "__typename": "Coordinates"
+        },
+        "mapDetails": {
+          "radius": 100,
+          "zoom": 12,
+          "__typename": "MapDetails"
+        },
+        "address": {
+          "street": null,
+          "subdistrict": null,
+          "district": null,
+          "city": {
+            "id": "13643792",
+            "code": "aldoar-foz-do-douro-e-nevogilde-porto",
+            "name": "Aldoar, Foz do Douro e Nevogilde",
+            "__typename": "City"
+          },
+          "municipality": null,
+          "county": {
+            "id": "190",
+            "code": "porto",
+            "name": "Porto",
+            "__typename": "County"
+          },
+          "province": {
+            "id": "13",
+            "code": "porto",
+            "name": "Porto",
+            "__typename": "Province"
+          },
+          "postalCode": null,
+          "__typename": "Address"
+        },
+        "reverseGeocoding": {
+          "locations": [
+            {
+              "id": "porto",
+              "locationLevel": "district",
+              "name": "Porto",
+              "fullName": "Porto",
+              "fullNameItems": [
+                "Porto"
+              ],
+              "parentIds": [],
+              "__typename": "BasicLocationObject"
+            },
+            {
+              "id": "porto/porto",
+              "locationLevel": "council",
+              "name": "Porto",
+              "fullName": "Porto, Porto",
+              "fullNameItems": [
+                "Porto",
+                "Porto"
+              ],
+              "parentIds": [
+                "porto"
+              ],
+              "__typename": "BasicLocationObject"
+            },
+            {
+              "id": "porto/porto/aldoar-foz-do-douro-e-nevogilde",
+              "locationLevel": "parish",
+              "name": "Aldoar, Foz do Douro e Nevogilde",
+              "fullName": "Aldoar, Foz do Douro e Nevogilde, Porto, Porto",
+              "fullNameItems": [
+                "Aldoar, Foz do Douro e Nevogilde",
+                "Porto",
+                "Porto"
+              ],
+              "parentIds": [
+                "porto",
+                "porto/porto"
+              ],
+              "__typename": "BasicLocationObject"
+            },
+            {
+              "id": "porto/porto/aldoar-foz-do-douro-e-nevogilde/aviz--cristo-rei",
+              "locationLevel": "neighborhood",
+              "name": "Aviz - Cristo Rei",
+              "fullName": "Aviz - Cristo Rei, Aldoar, Foz do Douro e Nevogilde, Porto, Porto",
+              "fullNameItems": [
+                "Aviz - Cristo Rei",
+                "Aldoar, Foz do Douro e Nevogilde",
+                "Porto",
+                "Porto"
+              ],
+              "parentIds": [
+                "porto",
+                "porto/porto",
+                "porto/porto/aldoar-foz-do-douro-e-nevogilde"
+              ],
+              "__typename": "BasicLocationObject"
+            }
+          ],
+          "__typename": "ReverseGeocoding"
+        },
+        "__typename": "LocationDetails"
+      },
+      "property": null,
+      "owner": {
+        "id": 18410,
+        "name": "JLL Residencial",
+        "type": "agency",
+        "phones": [
+          "+351923299527"
+        ],
+        "imageUrl": "",
+        "contacts": [],
+        "__typename": "LegacyAdvertOwner"
+      },
+      "agency": {
+        "id": 18410,
+        "name": "JLL Residencial",
+        "licenseNumber": "479",
+        "type": "agency",
+        "phones": [
+          "+351923299527"
+        ],
+        "address": "Rua Castilho nº 39, 1250-068, Santo António, Lisboa",
+        "imageUrl": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImY0eTQxMTZncDczdjMtQVBUIn0.b_ne5i2wpusB7DS6R931Ac7Lrw2B7UJfQkFseahmvRQ/image;s=800x600;q=90",
+        "url": "https://www.imovirtual.com/pt/empresas/agencias-imobiliarias/jll-residencial-ID18410",
+        "leaderYear": "",
+        "brandingVisible": true,
+        "enabledFeatures": [
+          "ACADEMY",
+          "AD_HOMEPAGE_1_SCHEDULE",
+          "ADDITIONAL_CONTACT_FORMS_AD_PAGE",
+          "ADVANCED_PICTURE_GALLERY_AD_PAGE",
+          "AGENCY_WEB_PAGE",
+          "BANNER_DISCOUNT",
+          "CALL_TRACKING",
+          "CONTACT_CUSTOMIZATION",
+          "CONTACT_PERSONALISATION",
+          "CRM_INTEGRATION",
+          "DEDICATED_CS",
+          "EXPORT_OLX",
+          "LISTGLOBALLY",
+          "LOGO_AD_PAGE",
+          "LOGO_SEARCH_PAGE",
+          "MEGABUMP",
+          "OLX_BUNDLE_BASIC",
+          "OLX_BUNDLE_NORMAL",
+          "OLX_BUNDLE_PREMIUM",
+          "OLX_PROMOTIONS",
+          "OLX_PUSHUP",
+          "OLX_TOPADS_30",
+          "OLX_TOPADS_7",
+          "PAID_FOR_POST_30_AGENCY",
+          "PREDEFINED_MESSAGES_CONTACT_FORM",
+          "PROJECT_RED",
+          "PROMOTIONS_RECOMMENDATIONS",
+          "PUSHUP",
+          "STATISTICS",
+          "SUGGEST_PRICE_FORM",
+          "TOPADS_1",
+          "VAS_SCHEDULING"
+        ],
+        "__typename": "AdvertAgency"
+      },
+      "seo": {
+        "title": "T4, moradia para comprar - Aldoar, Foz do Douro e Nevogilde, Porto - 17748185 • www.imovirtual.com",
+        "description": "Fantástica moradia para venda com T4 em Aldoar, Foz do Douro e Nevogilde, Porto, por Preço sob consulta. Esta Moradia está inserida num terreno de , tem 146 m² de àrea útil e 146 m² de àrea bruta.. De acordo com o profissional JLL Residencial os atributos mais importantes são garagem, Acessibilidade para pessoas com mobilidade reduzida, jardimSITE 17748185",
+        "__typename": "AdvertSeo"
+      },
+      "breadcrumbs": [
+        {
+          "label": "Moradia para comprar",
+          "locative": "",
+          "url": "https://www.imovirtual.com/pt/anuncios/comprar/moradia",
+          "__typename": "AdvertBreadcrumb"
+        },
+        {
+          "label": "Porto (distrito)",
+          "locative": "Porto (distrito)",
+          "url": "https://www.imovirtual.com/pt/anuncios/comprar/moradia/porto",
+          "__typename": "AdvertBreadcrumb"
+        },
+        {
+          "label": "Porto",
+          "locative": "Porto",
+          "url": "https://www.imovirtual.com/pt/anuncios/comprar/moradia/porto",
+          "__typename": "AdvertBreadcrumb"
+        },
+        {
+          "label": "Aldoar, Foz do Douro e Nevogilde",
+          "locative": "Aldoar, Foz do Douro e Nevogilde",
+          "url": "https://www.imovirtual.com/pt/anuncios/comprar/moradia/aldoar-foz-do-douro-e-nevogilde-porto",
+          "__typename": "AdvertBreadcrumb"
+        },
+        {
+          "label": "Moradia T4 com garagem, Foz do Douro, Porto",
+          "locative": "",
+          "url": "",
+          "__typename": "AdvertBreadcrumb"
+        }
+      ],
+      "userAdverts": [
+        {
+          "adId": "18486338",
+          "url": "https://www.imovirtual.com/pt/anuncio/moradia-t3-com-piscina-e-vista-mar-em-machico-madeira-ID1fz8K",
+          "image": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImFxbTN5ejdnbG9mbTMtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.UOPMFkL2mJuDOJo7MoGHTWPYjm9obV_Ns_HROp_Ldk0/image;s=314x236;q=80",
+          "roomsNum": "4",
+          "pricePerM": 4808,
+          "price": {
+            "value": "1250000",
+            "unit": "EUR",
+            "__typename": "UserAdvertPrice"
+          },
+          "netArea": "260",
+          "title": "Moradia T3 com piscina e vista mar, em Machico, Madeira",
+          "__typename": "UserAdvert"
+        },
+        {
+          "adId": "18485882",
+          "url": "https://www.imovirtual.com/pt/anuncio/apartamento-t1-1-em-condominio-no-funchal-madeira-ID1fz1o",
+          "image": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjR2NGpxODM5bWU0bTMtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.B7QiruRZp4L_iWvv-mDm8zo3YzKIDxwPSkzauY700JM/image;s=314x236;q=80",
+          "roomsNum": "2",
+          "pricePerM": 4468,
+          "price": {
+            "value": "420000",
+            "unit": "EUR",
+            "__typename": "UserAdvertPrice"
+          },
+          "netArea": "94",
+          "title": "Apartamento T1+1 em condomínio, no Funchal, Madeira",
+          "__typename": "UserAdvert"
+        },
+        {
+          "adId": "18485874",
+          "url": "https://www.imovirtual.com/pt/anuncio/moradia-t3-com-vista-mar-em-camara-de-lobos-madeira-ID1fz1g",
+          "image": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImdhcGdvajVpNWpxNTItRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.1LpS3ZMLshYuOKJil9AArEL4wX90PeTe4IX3Qg6raV4/image;s=314x236;q=80",
+          "roomsNum": "4",
+          "pricePerM": 1211,
+          "price": {
+            "value": "235000",
+            "unit": "EUR",
+            "__typename": "UserAdvertPrice"
+          },
+          "netArea": "194",
+          "title": "Moradia T3 com vista mar, em Câmara de Lobos, Madeira",
+          "__typename": "UserAdvert"
+        },
+        {
+          "adId": "18485662",
+          "url": "https://www.imovirtual.com/pt/anuncio/apartamento-t3-com-varandas-e-estacionamento-seixal-ID1fyXQ",
+          "image": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImFjNWhkODJlamdqbTEtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.Nf0dkHhl4n533rLnzIXfEQrqp-nFARQXuy5thgCQ_QA/image;s=314x236;q=80",
+          "roomsNum": "4",
+          "pricePerM": 20,
+          "price": {
+            "value": "2500",
+            "unit": "EUR",
+            "__typename": "UserAdvertPrice"
+          },
+          "netArea": "128",
+          "title": "Apartamento T3, com varandas e estacionamento, Seixal",
+          "__typename": "UserAdvert"
+        }
+      ],
+      "paginatedUnits": {
+        "items": null,
+        "isPriceHidden": null,
+        "pagination": null,
+        "facets": null,
+        "__typename": "AdvertsPages"
+      },
+      "specialOffer": null,
+      "__typename": "Advert",
+      "contactDetails": {
+        "name": "JLL Residencial",
+        "type": "agency",
+        "phones": [
+          "+351923299527"
+        ],
+        "imageUrl": ""
+      }
+    },
+    "relativeUrl": "/pt/anuncio/moradia-t4-com-garagem-foz-do-douro-porto-ID1ct73",
+    "adTrackingData": {
+      "touch_point_page": "ad_page",
+      "lat": 41.16139,
+      "long": -8.6712,
+      "ad_photo": 7,
+      "price_currency": "EUR",
+      "cat_l1_id": 201,
+      "cat_l1_name": "Moradias",
+      "special_offer_type": null,
+      "ad_id": "17748185",
+      "ad_price": null,
+      "business": "comprar",
+      "city_id": "13643792",
+      "city_name": "aldoar-foz-do-douro-e-nevogilde-porto",
+      "market": "secondary",
+      "poster_type": "agency",
+      "surface": null,
+      "region_id": "porto",
+      "region_name": "porto",
+      "subregion_id": "porto",
+      "seller_id": "18410",
+      "obido_advert": "n"
+    },
+    "referer": null,
+    "currentUser": null,
+    "cookiesCategorisation": {},
+    "experiments": {},
+    "featureFlags": {
+      "isAdAvmModuleEnabled": false,
+      "isAdFinanceBannerEnabled": false,
+      "isAdFinanceLinkEnabled": false,
+      "isAdMortgageSimulatorEnabled": false,
+      "isFeaturedDevelopmentVASEnabled": true,
+      "isListingRentPriceEnabled": false,
+      "isNewApartmentsForSalePostingFormEnabled": false,
+      "isOldSaveSearchQueryEnabled": false,
+      "shouldUseNewInformation": true,
+      "isFinanceCheckboxEnabled": false,
+      "isObservedAdsPageEnabled": true,
+      "isBikPromotionEnabled": true,
+      "isSpecialOfferForUnitsExperimentEnabled": false,
+      "isSpecialOfferEnabled": true,
+      "isSeoAdsDescriptionEnabled": false,
+      "isPropertyEvaluationPageActive": false,
+      "isSettingsContactsTabMigrated": false,
+      "isRegularNmfEnabled": true,
+      "isExtendedBillingDataEnabled": false,
+      "isRESellerLeadsActive": false,
+      "isBadgesFeatureEnabled": false,
+      "isNexusHomePageEnabled": true,
+      "isPostPaymentOptionEnabled": true,
+      "isSettingsOurTeamTabEnabled": false,
+      "isHCIAMEnabled": false,
+      "isSellerLeadsMvpEnabled": false,
+      "isNexusSellerPageEnabled": false,
+      "isHCIAMAgencyRegistrationEnabled": true,
+      "isHCIAMAgentRegistrationEnabled": true,
+      "isHCIAMDeveloperRegistrationEnabled": true,
+      "__typename": "FeatureFlags"
+    },
+    "laquesisResult": null,
+    "userSessionId": "28b12bce-cdc8-4eb8-b9cc-000ec8a1b24a",
+    "unconfirmedUserAuthToken": null,
+    "desktopHeader": {
+      "Is-Desktop": "true"
+    }
+  },
+  "__N_SSP": true
+}
