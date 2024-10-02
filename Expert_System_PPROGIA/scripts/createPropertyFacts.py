@@ -33,14 +33,14 @@ def generate_prolog_facts(data):
     return facts
 
 # Read the JSON file
-with open('extracted_property_data.json', 'r', encoding='utf-8') as file:
+with open('/Users/luispaula/Desktop/MEIA/RealEstateAnalyzer/ImoveisData/extracted_property_data.json', 'r', encoding='utf-8') as file:
     data = json.load(file)
 
 # Generate Prolog facts
 prolog_facts = generate_prolog_facts(data)
 
 # Write facts to a .pl file
-with open('ImoveisData/facts/properties.pl', 'w', encoding='utf-8') as file:
+with open('/Users/luispaula/Desktop/MEIA/RealEstateAnalyzer/ImoveisData/facts/properties.pl', 'w', encoding='utf-8') as file:
     file.write('\n'.join(prolog_facts))
 
 print("Prolog facts have been generated and saved to 'ImoveisData/facts/properties.pl'")
