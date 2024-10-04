@@ -1,61 +1,103 @@
-# Base de Conhecimento Informal
+# Informal Knowledge Base
 
-## 1. Segurança
+## 1. Security
 
-- **Regra 1.1: Alta Segurança**
+- **Rule 1.1: Low Crime Rate**
 
-  - Se a taxa de criminalidade da localização é baixa e o imóvel possui sistema de segurança,
-  - Então a segurança do imóvel é considerada alta.
+  - If the crime rate in the location is low and the property is located there,
+  - Then the crime rate of the property is considered low.
 
-- **Regra 1.2: Baixa Segurança**
+- **Rule 1.2: Medium Crime Rate**
 
-  - Se a taxa de criminalidade da localização é alta e o imóvel não possui sistema de segurança,
-  - Então a segurança do imóvel é considerada baixa.
+  - If the crime rate in the location is medium and the property is located there,
+  - Then the crime rate of the property is considered medium.
 
-- **Regra 1.3: Moderado/Baixo Segurança**
+- **Rule 1.3: High Crime Rate**
 
-  - Se a taxa de criminalidade da localização é alta e o imóvel não possui sistema de segurança,
-  - Então a segurança do imóvel é considerada moderado/baixo.
+  - If the crime rate in the location is high and the property is located there,
+  - Then the crime rate of the property is considered high.
 
-- **Regra 1.4: Moderado/Alto Segurança**
-  - Se a taxa de criminalidade da localização é baixa e o imóvel possui sistema de segurança,
-  - Então a segurança do imóvel é considerada moderado/alto.
+- **Rule 1.4: High Security**
 
-## 2. Conforto (Geral)
+  - If the property has a low crime rate and a security system is present,
+  - Then the security of the property is considered high.
 
-- **Regra 2.1: Baixo Conforto Sonoro**
+- **Rule 1.5: Low Security**
 
-  - Se o ruído é alto e o isolamento acústico é baixo,
-  - Então o conforto sonoro do imóvel é considerado baixo.
+  - If the property has a high crime rate and no security system is present,
+  - Then the security of the property is considered low.
 
-- **Regra 2.2: Alto Conforto Sonoro**
+- **Rule 1.6: Medium Security (No Security System)**
 
-  - Se o isolamento acústico é alto e o ruído é baixo,
-  - Então o conforto sonoro do imóvel é considerado alto.
+  - If the security system is absent and the property has a low or medium crime rate,
+  - Then the security of the property is considered medium.
 
-- **Regra 2.3: Moderado Conforto Sonoro**
+- **Rule 1.7: Medium Security (With Security System)**
 
-  - Se o isolamento acústico é alto e o ruído é alto,
-  - Então o conforto do imóvel é considerado moderado.
+  - If the property has a high crime rate and a security system is present,
+  - Then the security of the property is considered medium.
 
-- **Regra 2.4: Alto Conforto (Geral)**
+## 2. General Comfort
 
-  - Se o conforto sonoro é alto e o conforto térmico é alto,
-  - Então o conforto do imóvel é alto.
+- **Rule 2.1: High Noise Level**
 
-- **Regra 2.5: Baixo Conforto (Geral)**
+  - If the property is located in an area with an airport and busy traffic,
+  - Then the noise level of the property is considered high.
 
-  - Se o conforto sonoro é baixo e o conforto térmico é baixo,
-  - Então o conforto do imóvel é baixo.
+- **Rule 2.2: Medium Noise Level**
 
-- **Regra 2.6: Moderado Conforto (Geral)**
+  - If the property is located in an area with either an airport or busy traffic, but not both,
+  - Then the noise level of the property is considered medium.
 
-  - Se o conforto sonoro é alto e o conforto térmico é baixo,
-  - Então o conforto do imóvel é moderado.
+- **Rule 2.3: Low Noise Level**
 
-- **Regra 2.7: Moderado Conforto (Geral)**
-  - Se o conforto sonoro é baixo e o conforto térmico é alto,
-  - Então o conforto do imóvel é moderado.
+  - If the property is located in an area without an airport and without busy traffic,
+  - Then the noise level of the property is considered low.
+
+- **Rule 2.4: Low Sound Comfort**
+
+  - If the noise level is high and the acoustic insulation is low,
+  - Then the sound comfort of the property is considered low.
+
+- **Rule 2.5: High Sound Comfort**
+
+  - If the acoustic insulation is high and the noise level is low,
+  - Then the sound comfort of the property is considered high.
+
+- **Rule 2.6: Medium Sound Comfort**
+
+  - If the acoustic insulation is high and the noise level is high,
+  - Then the sound comfort of the property is considered medium.
+
+- **Rule 2.7: Medium Sound Comfort**
+
+  - If the acoustic insulation is medium or the noise level is medium,
+  - Then the sound comfort of the property is considered medium.
+
+- **Rule 2.8: High Overall Comfort**
+
+  - If the sound comfort is high and the thermal comfort is high,
+  - Then the overall comfort of the property is considered high.
+
+- **Rule 2.9: Low Overall Comfort**
+
+  - If the sound comfort is low and the thermal comfort is low,
+  - Then the overall comfort of the property is considered low.
+
+- **Rule 2.10: Medium Overall Comfort (High Sound, Low Heat)**
+
+  - If the sound comfort is high and the thermal comfort is low,
+  - Then the overall comfort of the property is considered medium.
+
+- **Rule 2.11: Medium Overall Comfort (Low Sound, High Heat)**
+
+  - If the thermal comfort is high and the sound comfort is low,
+  - Then the overall comfort of the property is considered medium.
+
+- **Rule 2.12: Medium Overall Comfort (Medium Sound or Heat)**
+
+  - If the sound comfort is medium or the thermal comfort is medium,
+  - Then the overall comfort of the property is considered medium.
 
 ## 3. Acessibilidade
 
