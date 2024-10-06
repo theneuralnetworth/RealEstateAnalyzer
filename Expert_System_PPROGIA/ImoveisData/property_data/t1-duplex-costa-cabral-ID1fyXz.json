@@ -1,8 +1,8 @@
 {
   "pageProps": {
     "lang": "pt",
-    "_sentryTraceData": "006f5fad0bb343f197208e9d44b4fe66-bd2b4b07c99e4da9-0",
-    "_sentryBaggage": "sentry-environment=imovirtualpt2-prd,sentry-release=frontend-platform%40v20240930T093022-imovirtualpt2,sentry-public_key=feffe528c390ea66992a4a05131c3c68,sentry-trace_id=006f5fad0bb343f197208e9d44b4fe66,sentry-transaction=%2Fpt%2Fanuncio%2F%5Bid%5D,sentry-sampled=false",
+    "_sentryTraceData": "cc09fc74b54a44a4a4159c3a7c2eadb1-9f23a1029c20e057-0",
+    "_sentryBaggage": "sentry-environment=imovirtualpt2-prd,sentry-release=frontend-platform%40v20241004T114115-imovirtualpt2,sentry-public_key=feffe528c390ea66992a4a05131c3c68,sentry-trace_id=cc09fc74b54a44a4a4159c3a7c2eadb1,sentry-transaction=%2Fpt%2Fanuncio%2F%5Bid%5D,sentry-sampled=false",
     "id": "1fyXz",
     "ad": {
       "id": 18485645,
@@ -710,7 +710,6 @@
       "isListingRentPriceEnabled": false,
       "isNewApartmentsForSalePostingFormEnabled": false,
       "isOldSaveSearchQueryEnabled": false,
-      "shouldUseNewInformation": true,
       "isFinanceCheckboxEnabled": false,
       "isObservedAdsPageEnabled": true,
       "isBikPromotionEnabled": true,
@@ -732,10 +731,12 @@
       "isHCIAMAgencyRegistrationEnabled": true,
       "isHCIAMAgentRegistrationEnabled": true,
       "isHCIAMDeveloperRegistrationEnabled": true,
+      "isMessagingCenterEnabled": false,
+      "isMessagingCenterChatEnabled": false,
       "__typename": "FeatureFlags"
     },
     "laquesisResult": null,
-    "userSessionId": "e4139b64-35b5-42c7-b962-33298242c09a",
+    "userSessionId": "8ec44236-3777-4a20-b1d3-4456eda0b1be",
     "unconfirmedUserAuthToken": null,
     "desktopHeader": {
       "Is-Desktop": "true"

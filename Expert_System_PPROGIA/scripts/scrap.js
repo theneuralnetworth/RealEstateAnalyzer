@@ -4,7 +4,8 @@ const path = require("path");
 async function scrap() {
   const results = [];
   // Create a folder to store property files
-  const folderName = "property_data";
+  const folderName =
+    "C:/ISEP/RealEstateAnalyzer/Expert_System_PPROGIA/ImoveisData/property_data";
   try {
     await fs.mkdir(folderName, { recursive: true });
   } catch (error) {
@@ -12,7 +13,7 @@ async function scrap() {
   }
 
   for (let i = 0; i < 10; i++) {
-    const url = `https://www.imovirtual.com/_next/data/QyLCHxWbzZaIPltR6x2mJ/pt/resultados/comprar/moradia/porto/porto.json?ownerTypeSingleSelect=ALL&by=DEFAULT&direction=DESC&viewType=listing&searchingCriteria=comprar&searchingCriteria=moradia&searchingCriteria=porto&searchingCriteria=porto&limit=72&page${i}`;
+    const url = `https://www.imovirtual.com/_next/data/Q31vPO_KnxZgmMBvIEthP/pt/resultados/comprar/apartamento/porto/porto.json?limit=72&ownerTypeSingleSelect=ALL&by=DEFAULT&direction=DESC&viewType=listing&page=${i}&searchingCriteria=comprar&searchingCriteria=apartamento&searchingCriteria=porto&searchingCriteria=porto`;
     try {
       const response = await fetch(url);
       if (!response.ok) {
@@ -25,7 +26,7 @@ async function scrap() {
       for (const property of properties) {
         try {
           const propertyResponse = await fetch(
-            `https://www.imovirtual.com/_next/data/QyLCHxWbzZaIPltR6x2mJ/pt/anuncio/${property.slug}.json?id=${property.slug}`
+            `https://www.imovirtual.com/_next/data/Q31vPO_KnxZgmMBvIEthP/pt/anuncio/${property.slug}.json?id=${property.slug}`
           );
 
           if (!propertyResponse.ok) {

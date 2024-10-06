@@ -1,0 +1,843 @@
+{
+  "pageProps": {
+    "lang": "pt",
+    "_sentryTraceData": "ba3824c031e049639c85ce91b2ce4451-a735dd80ea26bb06-0",
+    "_sentryBaggage": "sentry-environment=imovirtualpt2-prd,sentry-release=frontend-platform%40v20241004T114115-imovirtualpt2,sentry-public_key=feffe528c390ea66992a4a05131c3c68,sentry-trace_id=ba3824c031e049639c85ce91b2ce4451,sentry-transaction=%2Fpt%2Fanuncio%2F%5Bid%5D,sentry-sampled=false",
+    "id": "1fA6a",
+    "ad": {
+      "id": 18490022,
+      "price": {
+        "type": "",
+        "__typename": "AdvertPrice"
+      },
+      "market": "SECONDARY",
+      "services": [
+        "E_SIGNATURE",
+        "VIDEO_PRESENTATION",
+        "VIDEO_MEETING"
+      ],
+      "publicId": "",
+      "slug": "t3-1-proximo-da-avenida-da-boavistabessa-leite-porto-ID1fA6a",
+      "advertiserType": "business",
+      "advertType": "AGENCY",
+      "source": "urn:site:local",
+      "createdAt": "2024-10-02T18:41:40+01:00",
+      "modifiedAt": "2024-10-02T18:41:55+01:00",
+      "description": "<p>Descubra o apartamento perfeito na Boavista, projetado para estudantes e investidores.<br/><br/>Este T3+1 espaçoso oferece quartos bem iluminados e uma localização privilegiada. Perto de universidades, transportes públicos e serviços essenciais, é uma excelente oportunidade para morar ou investir.<br/><br/>Para mais informações não hesite contactar.<br/><br/><br/>Raul Ferreira<br/><br/>913420557<br/><br/>Fração Exata Matosinhos Sul</p>",
+      "developmentId": 0,
+      "developmentTitle": "",
+      "developmentUrl": "",
+      "exclusiveOffer": false,
+      "externalId": "",
+      "features": [],
+      "creationSource": "none",
+      "featuresByCategory": [],
+      "featuresWithoutCategory": [],
+      "openDay": null,
+      "referenceId": "24.0/074",
+      "target": {
+        "Area": "110",
+        "AreaRange": [],
+        "Bathrooms_num": [
+          "2"
+        ],
+        "Building_type": [
+          "block"
+        ],
+        "City": "lordelo-do-ouro-e-massarelos-porto",
+        "City_id": "13643794",
+        "Country": "Portugal",
+        "Energy_certificate": [
+          "d"
+        ],
+        "Id": "18490022",
+        "MarketType": "secondary",
+        "ObidoAdvert": "n",
+        "OfferType": "comprar",
+        "Photo": "aHR0cHM6Ly9pcmVsYW5kLmFwb2xsby5vbHhjZG4uY29tL3YxL2ZpbGVzL2V5Sm1iaUk2SW1Rd1lUWjZjSE16T1c0eE16SXRRVkJVSWl3aWR5STZXM3NpWm00aU9pSTJPVzVzY0dFM1pXTnhiVGN4TFVGUVZDSXNJbk1pT2lJeE5DSXNJbkFpT2lJeE1Dd3RNVEFpTENKaElqb2lNQ0o5WFgwLjAwU21Na1lCQkRmVkNGbUxyTHBLQkNRVVlfcG1FeWE4cUlpbENia1QyYlUvaW1hZ2U7cz02NTV4NDkxO3E9ODA=",
+        "Price": 200000,
+        "PriceRange": [
+          "100001-250000"
+        ],
+        "Price_per_m": 1818,
+        "ProperType": "apartamento",
+        "Province": "porto",
+        "RegularUser": "n",
+        "Remote_services": [
+          "1"
+        ],
+        "Rooms_num": [
+          "4"
+        ],
+        "Subregion": "porto",
+        "Title": "VDMrMSBwcm94aW1vIGRhIEF2ZW5pZGEgZGEgQm9hdmlzdGEoQmVzc2EgTGVpdGUpLCBQb3J0bw==",
+        "Windows_type": [
+          "aluminium"
+        ],
+        "categoryId": "101",
+        "env": "production",
+        "hidePrice": "0",
+        "seller_id": "4716035",
+        "user_type": "agency"
+      },
+      "title": "T3+1 proximo da Avenida da Boavista(Bessa Leite), Porto",
+      "topInformation": [
+        {
+          "label": "area",
+          "values": [
+            "110"
+          ],
+          "unit": "m²",
+          "__typename": "AdditionalInfo"
+        },
+        {
+          "label": "building_ownership",
+          "values": [],
+          "unit": "",
+          "__typename": "AdditionalInfo"
+        },
+        {
+          "label": "rooms_num",
+          "values": [
+            "4"
+          ],
+          "unit": "",
+          "__typename": "AdditionalInfo"
+        },
+        {
+          "label": "construction_status",
+          "values": [],
+          "unit": "",
+          "__typename": "AdditionalInfo"
+        },
+        {
+          "label": "floor",
+          "values": [],
+          "unit": "",
+          "__typename": "AdditionalInfo"
+        },
+        {
+          "label": "outdoor",
+          "values": [],
+          "unit": "",
+          "__typename": "AdditionalInfo"
+        },
+        {
+          "label": "rent",
+          "values": [],
+          "unit": "",
+          "__typename": "AdditionalInfo"
+        },
+        {
+          "label": "car",
+          "values": [],
+          "unit": "",
+          "__typename": "AdditionalInfo"
+        },
+        {
+          "label": "remote_services",
+          "values": [
+            "remote_services::1"
+          ],
+          "unit": "",
+          "__typename": "AdditionalInfo"
+        },
+        {
+          "label": "heating",
+          "values": [],
+          "unit": "",
+          "__typename": "AdditionalInfo"
+        }
+      ],
+      "additionalInformation": [
+        {
+          "label": "market",
+          "values": [
+            "market::secondary"
+          ],
+          "unit": "",
+          "__typename": "AdditionalInfo"
+        },
+        {
+          "label": "advertiser_type",
+          "values": [
+            "advertiser_type::agency"
+          ],
+          "unit": "",
+          "__typename": "AdditionalInfo"
+        },
+        {
+          "label": "bathrooms_num",
+          "values": [
+            "2"
+          ],
+          "unit": "",
+          "__typename": "AdditionalInfo"
+        },
+        {
+          "label": "free_from",
+          "values": [],
+          "unit": "",
+          "__typename": "AdditionalInfo"
+        },
+        {
+          "label": "build_year",
+          "values": [],
+          "unit": "",
+          "__typename": "AdditionalInfo"
+        },
+        {
+          "label": "building_type",
+          "values": [
+            "building_type::block"
+          ],
+          "unit": "",
+          "__typename": "AdditionalInfo"
+        },
+        {
+          "label": "windows_type",
+          "values": [
+            "windows_type::aluminium"
+          ],
+          "unit": "",
+          "__typename": "AdditionalInfo"
+        },
+        {
+          "label": "lift",
+          "values": [
+            "::n"
+          ],
+          "unit": "",
+          "__typename": "AdditionalInfo"
+        },
+        {
+          "label": "media_types",
+          "values": [],
+          "unit": "",
+          "__typename": "AdditionalInfo"
+        },
+        {
+          "label": "security_types",
+          "values": [],
+          "unit": "",
+          "__typename": "AdditionalInfo"
+        },
+        {
+          "label": "equipment_types",
+          "values": [],
+          "unit": "",
+          "__typename": "AdditionalInfo"
+        },
+        {
+          "label": "extras_types",
+          "values": [],
+          "unit": "",
+          "__typename": "AdditionalInfo"
+        },
+        {
+          "label": "building_material",
+          "values": [],
+          "unit": "",
+          "__typename": "AdditionalInfo"
+        }
+      ],
+      "url": "https://www.imovirtual.com/pt/anuncio/t3-1-proximo-da-avenida-da-boavistabessa-leite-porto-ID1fA6a",
+      "status": "active",
+      "adCategory": {
+        "id": "101",
+        "name": "FLAT",
+        "type": "SELL",
+        "__typename": "AdvertCategory"
+      },
+      "category": {
+        "id": 101,
+        "name": [
+          {
+            "locale": "pt",
+            "value": "Apartamentos",
+            "__typename": "LocalizedString"
+          },
+          {
+            "locale": "en",
+            "value": "apartments",
+            "__typename": "LocalizedString"
+          }
+        ],
+        "__typename": "AdCategory"
+      },
+      "characteristics": [
+        {
+          "key": "price",
+          "value": "200000",
+          "label": "Preço",
+          "localizedValue": "200 000 €",
+          "currency": "EUR",
+          "suffix": "",
+          "__typename": "Characteristic"
+        },
+        {
+          "key": "remote_services",
+          "value": "1",
+          "label": "Serviços à distância",
+          "localizedValue": "sim",
+          "currency": "",
+          "suffix": "",
+          "__typename": "Characteristic"
+        },
+        {
+          "key": "m",
+          "value": "110",
+          "label": "Área",
+          "localizedValue": "110 m²",
+          "currency": "",
+          "suffix": "",
+          "__typename": "Characteristic"
+        },
+        {
+          "key": "price_per_m",
+          "value": "1818",
+          "label": "preço/m2",
+          "localizedValue": "1 818 €/m²",
+          "currency": "",
+          "suffix": "",
+          "__typename": "Characteristic"
+        },
+        {
+          "key": "rooms_num",
+          "value": "4",
+          "label": "Tipologia",
+          "localizedValue": "T3",
+          "currency": "",
+          "suffix": "",
+          "__typename": "Characteristic"
+        },
+        {
+          "key": "market",
+          "value": "secondary",
+          "label": "Nova construção",
+          "localizedValue": "não",
+          "currency": "",
+          "suffix": "",
+          "__typename": "Characteristic"
+        },
+        {
+          "key": "energy_certificate",
+          "value": "d",
+          "label": "Certificado energético",
+          "localizedValue": "D",
+          "currency": "",
+          "suffix": "",
+          "__typename": "Characteristic"
+        },
+        {
+          "key": "building_type",
+          "value": "block",
+          "label": "Tipo de imóvel",
+          "localizedValue": "bloco de apartamentos",
+          "currency": "",
+          "suffix": "",
+          "__typename": "Characteristic"
+        },
+        {
+          "key": "bathrooms_num",
+          "value": "2",
+          "label": "N.º de casas de banho",
+          "localizedValue": "2",
+          "currency": "",
+          "suffix": "",
+          "__typename": "Characteristic"
+        },
+        {
+          "key": "windows_type",
+          "value": "aluminium",
+          "label": "Janelas",
+          "localizedValue": "alumínio",
+          "currency": "",
+          "suffix": "",
+          "__typename": "Characteristic"
+        }
+      ],
+      "images": [
+        {
+          "thumbnail": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImQwYTZ6cHMzOW4xMzItQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.00SmMkYBBDfVCFmLrLpKBCQUY_pmEya8qIilCbkT2bU/image;s=184x138;q=80",
+          "small": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImQwYTZ6cHMzOW4xMzItQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.00SmMkYBBDfVCFmLrLpKBCQUY_pmEya8qIilCbkT2bU/image;s=314x236;q=80",
+          "medium": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImQwYTZ6cHMzOW4xMzItQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.00SmMkYBBDfVCFmLrLpKBCQUY_pmEya8qIilCbkT2bU/image;s=655x491;q=80",
+          "large": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImQwYTZ6cHMzOW4xMzItQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.00SmMkYBBDfVCFmLrLpKBCQUY_pmEya8qIilCbkT2bU/image;s=1280x1024;q=80",
+          "__typename": "AdImage"
+        },
+        {
+          "thumbnail": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Imx5M215OWo0YjY3My1BUFQiLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.NJ-HUnF71D5VCFJXjq8i9qhhtFUO-PNJsEE7MlcfPy0/image;s=184x138;q=80",
+          "small": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Imx5M215OWo0YjY3My1BUFQiLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.NJ-HUnF71D5VCFJXjq8i9qhhtFUO-PNJsEE7MlcfPy0/image;s=314x236;q=80",
+          "medium": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Imx5M215OWo0YjY3My1BUFQiLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.NJ-HUnF71D5VCFJXjq8i9qhhtFUO-PNJsEE7MlcfPy0/image;s=655x491;q=80",
+          "large": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Imx5M215OWo0YjY3My1BUFQiLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.NJ-HUnF71D5VCFJXjq8i9qhhtFUO-PNJsEE7MlcfPy0/image;s=1280x1024;q=80",
+          "__typename": "AdImage"
+        },
+        {
+          "thumbnail": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImVvb3J3dGdwdWZocDMtQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.FOXdl3tj1vpA0ntNuGxHXE3qz1dXLpHpxgZ4TMhebFY/image;s=184x138;q=80",
+          "small": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImVvb3J3dGdwdWZocDMtQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.FOXdl3tj1vpA0ntNuGxHXE3qz1dXLpHpxgZ4TMhebFY/image;s=314x236;q=80",
+          "medium": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImVvb3J3dGdwdWZocDMtQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.FOXdl3tj1vpA0ntNuGxHXE3qz1dXLpHpxgZ4TMhebFY/image;s=655x491;q=80",
+          "large": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImVvb3J3dGdwdWZocDMtQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.FOXdl3tj1vpA0ntNuGxHXE3qz1dXLpHpxgZ4TMhebFY/image;s=1280x1024;q=80",
+          "__typename": "AdImage"
+        },
+        {
+          "thumbnail": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImQ3YzlmZGlvY2MwMzItQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.PHxNBKriq5BcIy7FpczJLAglOeJRfO0YdUwgbi8uu-E/image;s=184x138;q=80",
+          "small": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImQ3YzlmZGlvY2MwMzItQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.PHxNBKriq5BcIy7FpczJLAglOeJRfO0YdUwgbi8uu-E/image;s=314x236;q=80",
+          "medium": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImQ3YzlmZGlvY2MwMzItQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.PHxNBKriq5BcIy7FpczJLAglOeJRfO0YdUwgbi8uu-E/image;s=655x491;q=80",
+          "large": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImQ3YzlmZGlvY2MwMzItQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.PHxNBKriq5BcIy7FpczJLAglOeJRfO0YdUwgbi8uu-E/image;s=1280x1024;q=80",
+          "__typename": "AdImage"
+        },
+        {
+          "thumbnail": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InJzamJqOWY0amRtYjItQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.PIIVslyKmyJKT59HYnStO4CsHmhpelyw4hHWtwoYxf8/image;s=184x138;q=80",
+          "small": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InJzamJqOWY0amRtYjItQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.PIIVslyKmyJKT59HYnStO4CsHmhpelyw4hHWtwoYxf8/image;s=314x236;q=80",
+          "medium": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InJzamJqOWY0amRtYjItQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.PIIVslyKmyJKT59HYnStO4CsHmhpelyw4hHWtwoYxf8/image;s=655x491;q=80",
+          "large": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InJzamJqOWY0amRtYjItQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.PIIVslyKmyJKT59HYnStO4CsHmhpelyw4hHWtwoYxf8/image;s=1280x1024;q=80",
+          "__typename": "AdImage"
+        },
+        {
+          "thumbnail": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImFybnQ2Mm8wZ3B6cDItQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.tmYWKx_c0YX6C5gNuluhbFfqBDh96nJMXmRjdr2IEh4/image;s=184x138;q=80",
+          "small": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImFybnQ2Mm8wZ3B6cDItQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.tmYWKx_c0YX6C5gNuluhbFfqBDh96nJMXmRjdr2IEh4/image;s=314x236;q=80",
+          "medium": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImFybnQ2Mm8wZ3B6cDItQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.tmYWKx_c0YX6C5gNuluhbFfqBDh96nJMXmRjdr2IEh4/image;s=655x491;q=80",
+          "large": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImFybnQ2Mm8wZ3B6cDItQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.tmYWKx_c0YX6C5gNuluhbFfqBDh96nJMXmRjdr2IEh4/image;s=1280x1024;q=80",
+          "__typename": "AdImage"
+        },
+        {
+          "thumbnail": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InpjZmRhZTVqbzBubC1BUFQiLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.o007COkLxdADEWCQQOF28h7Ns7jsQk2DoY7kDmatCXE/image;s=184x138;q=80",
+          "small": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InpjZmRhZTVqbzBubC1BUFQiLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.o007COkLxdADEWCQQOF28h7Ns7jsQk2DoY7kDmatCXE/image;s=314x236;q=80",
+          "medium": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InpjZmRhZTVqbzBubC1BUFQiLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.o007COkLxdADEWCQQOF28h7Ns7jsQk2DoY7kDmatCXE/image;s=655x491;q=80",
+          "large": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InpjZmRhZTVqbzBubC1BUFQiLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.o007COkLxdADEWCQQOF28h7Ns7jsQk2DoY7kDmatCXE/image;s=1280x1024;q=80",
+          "__typename": "AdImage"
+        },
+        {
+          "thumbnail": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InNmeGp5anZud2dhMjEtQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.RgQ3ntUQnEE9mYv-EdLSq89ulMqfh4r8ppcOG1jRV4Y/image;s=184x138;q=80",
+          "small": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InNmeGp5anZud2dhMjEtQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.RgQ3ntUQnEE9mYv-EdLSq89ulMqfh4r8ppcOG1jRV4Y/image;s=314x236;q=80",
+          "medium": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InNmeGp5anZud2dhMjEtQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.RgQ3ntUQnEE9mYv-EdLSq89ulMqfh4r8ppcOG1jRV4Y/image;s=655x491;q=80",
+          "large": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InNmeGp5anZud2dhMjEtQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.RgQ3ntUQnEE9mYv-EdLSq89ulMqfh4r8ppcOG1jRV4Y/image;s=1280x1024;q=80",
+          "__typename": "AdImage"
+        },
+        {
+          "thumbnail": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjVlMDJ2a25nYWFkdzItQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.VbkF9VkiQT5zQOR52MZbVWFhU65X8oU1RjlNVPoKWgw/image;s=184x138;q=80",
+          "small": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjVlMDJ2a25nYWFkdzItQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.VbkF9VkiQT5zQOR52MZbVWFhU65X8oU1RjlNVPoKWgw/image;s=314x236;q=80",
+          "medium": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjVlMDJ2a25nYWFkdzItQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.VbkF9VkiQT5zQOR52MZbVWFhU65X8oU1RjlNVPoKWgw/image;s=655x491;q=80",
+          "large": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjVlMDJ2a25nYWFkdzItQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.VbkF9VkiQT5zQOR52MZbVWFhU65X8oU1RjlNVPoKWgw/image;s=1280x1024;q=80",
+          "__typename": "AdImage"
+        },
+        {
+          "thumbnail": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImU0YjdrNmhzMjV6bDMtQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.K5KBRJn0PBT_xaS5v7odAF3OlTSbI2i4645YoWM7JKU/image;s=184x138;q=80",
+          "small": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImU0YjdrNmhzMjV6bDMtQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.K5KBRJn0PBT_xaS5v7odAF3OlTSbI2i4645YoWM7JKU/image;s=314x236;q=80",
+          "medium": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImU0YjdrNmhzMjV6bDMtQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.K5KBRJn0PBT_xaS5v7odAF3OlTSbI2i4645YoWM7JKU/image;s=655x491;q=80",
+          "large": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImU0YjdrNmhzMjV6bDMtQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.K5KBRJn0PBT_xaS5v7odAF3OlTSbI2i4645YoWM7JKU/image;s=1280x1024;q=80",
+          "__typename": "AdImage"
+        },
+        {
+          "thumbnail": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImZiYWMxbnJsbDdmaDEtQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.62favosN1yZaezh_tVFDOocF2vBjuX1fxsXYTgs9R80/image;s=184x138;q=80",
+          "small": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImZiYWMxbnJsbDdmaDEtQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.62favosN1yZaezh_tVFDOocF2vBjuX1fxsXYTgs9R80/image;s=314x236;q=80",
+          "medium": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImZiYWMxbnJsbDdmaDEtQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.62favosN1yZaezh_tVFDOocF2vBjuX1fxsXYTgs9R80/image;s=655x491;q=80",
+          "large": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImZiYWMxbnJsbDdmaDEtQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.62favosN1yZaezh_tVFDOocF2vBjuX1fxsXYTgs9R80/image;s=1280x1024;q=80",
+          "__typename": "AdImage"
+        },
+        {
+          "thumbnail": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjlrdDR0ZnR0aGNmZC1BUFQiLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.hG_yuK6KhWW_roVy08ZcrHBHGEqj6wcAPo9UsQUiNOc/image;s=184x138;q=80",
+          "small": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjlrdDR0ZnR0aGNmZC1BUFQiLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.hG_yuK6KhWW_roVy08ZcrHBHGEqj6wcAPo9UsQUiNOc/image;s=314x236;q=80",
+          "medium": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjlrdDR0ZnR0aGNmZC1BUFQiLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.hG_yuK6KhWW_roVy08ZcrHBHGEqj6wcAPo9UsQUiNOc/image;s=655x491;q=80",
+          "large": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjlrdDR0ZnR0aGNmZC1BUFQiLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.hG_yuK6KhWW_roVy08ZcrHBHGEqj6wcAPo9UsQUiNOc/image;s=1280x1024;q=80",
+          "__typename": "AdImage"
+        }
+      ],
+      "links": {
+        "localPlanUrl": "",
+        "videoUrl": "https://www.youtube.com/embed/mduKi-CoxdY",
+        "view3dUrl": "",
+        "walkaroundUrl": "",
+        "__typename": "AdvertLinks"
+      },
+      "location": {
+        "id": null,
+        "coordinates": {
+          "latitude": 41.158969,
+          "longitude": -8.646165,
+          "__typename": "Coordinates"
+        },
+        "mapDetails": {
+          "radius": 100,
+          "zoom": 13,
+          "__typename": "MapDetails"
+        },
+        "address": {
+          "street": null,
+          "subdistrict": null,
+          "district": null,
+          "city": {
+            "id": "13643794",
+            "code": "lordelo-do-ouro-e-massarelos-porto",
+            "name": "Lordelo do Ouro e Massarelos",
+            "__typename": "City"
+          },
+          "municipality": null,
+          "county": {
+            "id": "190",
+            "code": "porto",
+            "name": "Porto",
+            "__typename": "County"
+          },
+          "province": {
+            "id": "13",
+            "code": "porto",
+            "name": "Porto",
+            "__typename": "Province"
+          },
+          "postalCode": null,
+          "__typename": "Address"
+        },
+        "reverseGeocoding": {
+          "locations": [
+            {
+              "id": "porto",
+              "locationLevel": "district",
+              "name": "Porto",
+              "fullName": "Porto",
+              "fullNameItems": [
+                "Porto"
+              ],
+              "parentIds": [],
+              "__typename": "BasicLocationObject"
+            },
+            {
+              "id": "porto/porto",
+              "locationLevel": "council",
+              "name": "Porto",
+              "fullName": "Porto, Porto",
+              "fullNameItems": [
+                "Porto",
+                "Porto"
+              ],
+              "parentIds": [
+                "porto"
+              ],
+              "__typename": "BasicLocationObject"
+            },
+            {
+              "id": "porto/porto/lordelo-do-ouro-e-massarelos",
+              "locationLevel": "parish",
+              "name": "Lordelo do Ouro e Massarelos",
+              "fullName": "Lordelo do Ouro e Massarelos, Porto, Porto",
+              "fullNameItems": [
+                "Lordelo do Ouro e Massarelos",
+                "Porto",
+                "Porto"
+              ],
+              "parentIds": [
+                "porto",
+                "porto/porto"
+              ],
+              "__typename": "BasicLocationObject"
+            },
+            {
+              "id": "porto/porto/lordelo-do-ouro-e-massarelos/bessa-leite",
+              "locationLevel": "neighborhood",
+              "name": "Bessa Leite",
+              "fullName": "Bessa Leite, Lordelo do Ouro e Massarelos, Porto, Porto",
+              "fullNameItems": [
+                "Bessa Leite",
+                "Lordelo do Ouro e Massarelos",
+                "Porto",
+                "Porto"
+              ],
+              "parentIds": [
+                "porto",
+                "porto/porto",
+                "porto/porto/lordelo-do-ouro-e-massarelos"
+              ],
+              "__typename": "BasicLocationObject"
+            }
+          ],
+          "__typename": "ReverseGeocoding"
+        },
+        "__typename": "LocationDetails"
+      },
+      "property": {
+        "id": null,
+        "type": "FLAT",
+        "rent": null,
+        "costs": [],
+        "condition": null,
+        "properties": {
+          "equipment": [],
+          "areas": [],
+          "floor": null,
+          "kitchen": null,
+          "parking": [],
+          "numberOfRooms": 4,
+          "rooms": [],
+          "type": null,
+          "windowsOrientation": [],
+          "__typename": "FlatProperties"
+        },
+        "buildingProperties": {
+          "year": null,
+          "type": "BLOCK",
+          "material": null,
+          "windows": [
+            "ALUMINIUM"
+          ],
+          "heating": null,
+          "numberOfFloors": null,
+          "conveniences": [],
+          "security": [],
+          "__typename": "FlatBuildingProperties"
+        },
+        "ownership": null,
+        "area": {
+          "value": 110,
+          "unit": "M2",
+          "__typename": "Area"
+        },
+        "__typename": "Flat"
+      },
+      "owner": {
+        "id": 4716035,
+        "name": "Raul Ferreira - Fração Exata Matosinhos Sul",
+        "type": "agency",
+        "phones": [
+          "+351913420557"
+        ],
+        "imageUrl": "",
+        "contacts": [],
+        "__typename": "LegacyAdvertOwner"
+      },
+      "agency": {
+        "id": 4716035,
+        "name": "Raul Ferreira - Fração Exata Matosinhos Sul",
+        "licenseNumber": "8866",
+        "type": "agency",
+        "phones": [
+          "+351913420557"
+        ],
+        "address": "Avenida da República 446, 4450-237, Matosinhos e Leça da Palmeira, Matosinhos, Porto",
+        "imageUrl": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImhzYnV4ZHVzaWloazMtQVBUIn0.ihb96Jj1wb8oEs59sg1s-GdowCMew7CqSa5eSi8Il0s/image;s=800x600;q=90",
+        "url": "https://www.imovirtual.com/pt/empresas/agencias-imobiliarias/raul-ferreira-fracao-exata-matosinhos-sul-ID4716035",
+        "leaderYear": "",
+        "brandingVisible": true,
+        "enabledFeatures": [
+          "ACADEMY",
+          "AD_HOMEPAGE_1_SCHEDULE",
+          "ADDITIONAL_CONTACT_FORMS_AD_PAGE",
+          "ADVANCED_PICTURE_GALLERY_AD_PAGE",
+          "AGENCY_WEB_PAGE",
+          "BANNER_DISCOUNT",
+          "CALL_TRACKING",
+          "CONTACT_CUSTOMIZATION",
+          "CONTACT_PERSONALISATION",
+          "CRM_INTEGRATION",
+          "DEDICATED_CS",
+          "EXPORT_OLX",
+          "LISTGLOBALLY",
+          "LOGO_AD_PAGE",
+          "LOGO_SEARCH_PAGE",
+          "MEGABUMP",
+          "OLX_BUNDLE_BASIC",
+          "OLX_BUNDLE_NORMAL",
+          "OLX_BUNDLE_PREMIUM",
+          "OLX_PROMOTIONS",
+          "OLX_PUSHUP",
+          "OLX_TOPADS_30",
+          "OLX_TOPADS_7",
+          "PAID_FOR_POST_30_AGENCY",
+          "PREDEFINED_MESSAGES_CONTACT_FORM",
+          "PROJECT_RED",
+          "PROMOTIONS_RECOMMENDATIONS",
+          "PUSHUP",
+          "STATISTICS",
+          "SUGGEST_PRICE_FORM",
+          "TOPADS_1",
+          "VAS_SCHEDULING"
+        ],
+        "__typename": "AdvertAgency"
+      },
+      "seo": {
+        "title": "T3, apartamento para comprar - Lordelo do Ouro e Massarelos, Porto - 18490022 • www.imovirtual.com",
+        "description": "Excelente apartamento para venda com T3 em Lordelo do Ouro e Massarelos, Porto, por 200 000 €. Este apartamento para venda  tem 110 m² de àrea útil e 110 m² de àrea bruta.SITE 18490022",
+        "__typename": "AdvertSeo"
+      },
+      "breadcrumbs": [
+        {
+          "label": "Apartamento para comprar",
+          "locative": "",
+          "url": "https://www.imovirtual.com/pt/anuncios/comprar/apartamento",
+          "__typename": "AdvertBreadcrumb"
+        },
+        {
+          "label": "Porto (distrito)",
+          "locative": "Porto (distrito)",
+          "url": "https://www.imovirtual.com/pt/anuncios/comprar/apartamento/porto",
+          "__typename": "AdvertBreadcrumb"
+        },
+        {
+          "label": "Porto",
+          "locative": "Porto",
+          "url": "https://www.imovirtual.com/pt/anuncios/comprar/apartamento/porto",
+          "__typename": "AdvertBreadcrumb"
+        },
+        {
+          "label": "Lordelo do Ouro e Massarelos",
+          "locative": "Lordelo do Ouro e Massarelos",
+          "url": "https://www.imovirtual.com/pt/anuncios/comprar/apartamento/lordelo-do-ouro-e-massarelos-porto",
+          "__typename": "AdvertBreadcrumb"
+        },
+        {
+          "label": "T3+1 proximo da Avenida da Boavista(Bessa Leite), Porto",
+          "locative": "",
+          "url": "",
+          "__typename": "AdvertBreadcrumb"
+        }
+      ],
+      "userAdverts": [
+        {
+          "adId": "18490625",
+          "url": "https://www.imovirtual.com/pt/anuncio/t2-totalmente-remodelado-a-venda-em-rio-tinto-ID1fAfT",
+          "image": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImdrejkxY2Jxd2p0MjItQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.wC0y6ZUOZ7k-64ffo6ptUiREWAI7mN_lBomsmtDFLmE/image;s=314x236;q=80",
+          "roomsNum": "3",
+          "pricePerM": 2363,
+          "price": {
+            "value": "189000",
+            "unit": "EUR",
+            "__typename": "UserAdvertPrice"
+          },
+          "netArea": "80",
+          "title": "T2 Totalmente Remodelado à venda em Rio Tinto",
+          "__typename": "UserAdvert"
+        },
+        {
+          "adId": "18490593",
+          "url": "https://www.imovirtual.com/pt/anuncio/t0-novo-junto-ao-parque-nascente-ID1fAfn",
+          "image": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Inh3YTVkdzdlemxlcTItQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.VD-oze20yhD_xkTha2xsQEa0YojUANDqL-xq4J8v-gA/image;s=314x236;q=80",
+          "roomsNum": "1",
+          "pricePerM": 3750,
+          "price": {
+            "value": "135000",
+            "unit": "EUR",
+            "__typename": "UserAdvertPrice"
+          },
+          "netArea": "36",
+          "title": "T0 Novo Junto ao Parque Nascente",
+          "__typename": "UserAdvert"
+        },
+        {
+          "adId": "18490577",
+          "url": "https://www.imovirtual.com/pt/anuncio/t2-2-renovado-em-rio-tinto-proximo-a-estacao-ID1fAf7",
+          "image": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InhhdzZ1OXd0d2U0My1BUFQiLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.NZX6n4Jew5bC4JExH41CjuEbjbqI3lBq67ANUIoTfLY/image;s=314x236;q=80",
+          "roomsNum": "3",
+          "pricePerM": 2708,
+          "price": {
+            "value": "195000",
+            "unit": "EUR",
+            "__typename": "UserAdvertPrice"
+          },
+          "netArea": "72",
+          "title": "T2+2, renovado em Rio Tinto, próximo á estação",
+          "__typename": "UserAdvert"
+        },
+        {
+          "adId": "18490029",
+          "url": "https://www.imovirtual.com/pt/anuncio/moradia-em-banda-t2-ilha-ID1fA6h",
+          "image": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Im81b3BxaW4xbjAyajMtQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.69CetnaddqhL-9JvJ09lrXIUCkoxL_dhFK842zmTWh4/image;s=314x236;q=80",
+          "roomsNum": "3",
+          "pricePerM": 2273,
+          "price": {
+            "value": "125000",
+            "unit": "EUR",
+            "__typename": "UserAdvertPrice"
+          },
+          "netArea": "55",
+          "title": "Moradia em Banda T2 ( Ilha)",
+          "__typename": "UserAdvert"
+        }
+      ],
+      "paginatedUnits": {
+        "items": null,
+        "isPriceHidden": null,
+        "pagination": null,
+        "facets": null,
+        "__typename": "AdvertsPages"
+      },
+      "specialOffer": null,
+      "__typename": "Advert",
+      "contactDetails": {
+        "name": "Raul Ferreira - Fração Exata Matosinhos Sul",
+        "type": "agency",
+        "phones": [
+          "+351913420557"
+        ],
+        "imageUrl": ""
+      }
+    },
+    "relativeUrl": "/pt/anuncio/t3-1-proximo-da-avenida-da-boavistabessa-leite-porto-ID1fA6a",
+    "adTrackingData": {
+      "touch_point_page": "ad_page",
+      "lat": 41.158969,
+      "long": -8.646165,
+      "ad_photo": 12,
+      "price_currency": "EUR",
+      "cat_l1_id": 101,
+      "cat_l1_name": "Apartamentos",
+      "special_offer_type": null,
+      "ad_id": "18490022",
+      "ad_price": 200000,
+      "business": "comprar",
+      "city_id": "13643794",
+      "city_name": "lordelo-do-ouro-e-massarelos-porto",
+      "market": "secondary",
+      "poster_type": "agency",
+      "surface": null,
+      "region_id": "porto",
+      "region_name": "porto",
+      "subregion_id": "porto",
+      "seller_id": "4716035",
+      "obido_advert": "n"
+    },
+    "referer": null,
+    "currentUser": null,
+    "cookiesCategorisation": {},
+    "experiments": {},
+    "featureFlags": {
+      "isAdAvmModuleEnabled": false,
+      "isAdFinanceBannerEnabled": false,
+      "isAdFinanceLinkEnabled": false,
+      "isAdMortgageSimulatorEnabled": false,
+      "isFeaturedDevelopmentVASEnabled": true,
+      "isListingRentPriceEnabled": false,
+      "isNewApartmentsForSalePostingFormEnabled": false,
+      "isOldSaveSearchQueryEnabled": false,
+      "isFinanceCheckboxEnabled": false,
+      "isObservedAdsPageEnabled": true,
+      "isBikPromotionEnabled": true,
+      "isSpecialOfferForUnitsExperimentEnabled": false,
+      "isSpecialOfferEnabled": true,
+      "isSeoAdsDescriptionEnabled": false,
+      "isPropertyEvaluationPageActive": false,
+      "isSettingsContactsTabMigrated": false,
+      "isRegularNmfEnabled": true,
+      "isExtendedBillingDataEnabled": false,
+      "isRESellerLeadsActive": false,
+      "isBadgesFeatureEnabled": false,
+      "isNexusHomePageEnabled": true,
+      "isPostPaymentOptionEnabled": true,
+      "isSettingsOurTeamTabEnabled": false,
+      "isHCIAMEnabled": false,
+      "isSellerLeadsMvpEnabled": false,
+      "isNexusSellerPageEnabled": false,
+      "isHCIAMAgencyRegistrationEnabled": true,
+      "isHCIAMAgentRegistrationEnabled": true,
+      "isHCIAMDeveloperRegistrationEnabled": true,
+      "isMessagingCenterEnabled": false,
+      "isMessagingCenterChatEnabled": false,
+      "__typename": "FeatureFlags"
+    },
+    "laquesisResult": null,
+    "userSessionId": "238e9b02-f5fd-440f-a0fc-bc3a99672f8a",
+    "unconfirmedUserAuthToken": null,
+    "desktopHeader": {
+      "Is-Desktop": "true"
+    }
+  },
+  "__N_SSP": true
+}

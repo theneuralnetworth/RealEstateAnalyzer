@@ -1,8 +1,8 @@
 {
   "pageProps": {
     "lang": "pt",
-    "_sentryTraceData": "52f8bf9de95d4f3bb619b53b4e75483f-b462c9771faee4b7-0",
-    "_sentryBaggage": "sentry-environment=imovirtualpt2-prd,sentry-release=frontend-platform%40v20240930T093022-imovirtualpt2,sentry-public_key=feffe528c390ea66992a4a05131c3c68,sentry-trace_id=52f8bf9de95d4f3bb619b53b4e75483f,sentry-transaction=%2Fpt%2Fanuncio%2F%5Bid%5D,sentry-sampled=false",
+    "_sentryTraceData": "c8300f91f7214fd7a423f02e6c9dcca5-aba4c7f23757282e-0",
+    "_sentryBaggage": "sentry-environment=imovirtualpt2-prd,sentry-release=frontend-platform%40v20241004T114115-imovirtualpt2,sentry-public_key=feffe528c390ea66992a4a05131c3c68,sentry-trace_id=c8300f91f7214fd7a423f02e6c9dcca5,sentry-transaction=%2Fpt%2Fanuncio%2F%5Bid%5D,sentry-sampled=false",
     "id": "1eMUk",
     "ad": {
       "id": 18300932,
@@ -229,13 +229,13 @@
         "id": 101,
         "name": [
           {
-            "locale": "pt",
-            "value": "Apartamentos",
+            "locale": "en",
+            "value": "apartments",
             "__typename": "LocalizedString"
           },
           {
-            "locale": "en",
-            "value": "apartments",
+            "locale": "pt",
+            "value": "Apartamentos",
             "__typename": "LocalizedString"
           }
         ],
@@ -629,7 +629,7 @@
         "phones": [
           "+351923299402"
         ],
-        "imageUrl": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InoxMGx2OGc3MGN1cS1BUFQifQ.n44k3Pwd4_C2k-Cxe6JKUagzXepMj_JNFYT1ErOSccE/image;s=97x97;q=100",
+        "imageUrl": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjI1aHB4dXBsNWNsNTEtQVBUIn0.S2JPi-XcXmFIoShdbWymY0G_NbvJEdb2BqOMzsiumH4/image;s=97x97;q=100",
         "contacts": [],
         "__typename": "LegacyAdvertOwner"
       },
@@ -721,63 +721,63 @@
       ],
       "userAdverts": [
         {
-          "adId": "18467325",
-          "url": "https://www.imovirtual.com/pt/anuncio/apartamento-t2-com-logradouro-para-venda-em-almada-ID1fuc5",
-          "image": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InZwZ2hjMnJpd2xpaC1FQ09TWVNURU0iLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.fZBgs0HcvD8acKftyRoZ-vqYEriMvQdfauHpNVGLYy0/image;s=314x236;q=80",
+          "adId": "18465907",
+          "url": "https://www.imovirtual.com/pt/anuncio/apartamento-t2-para-arrendamento-mobilado-nas-avenidas-novas-ID1ftPd",
+          "image": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjM4dnJ1djU1Z3BzODItRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.UIY3dQJK39_TRMobCAsadlt41FjLAsV6j11xRt5bfKo/image;s=314x236;q=80",
           "roomsNum": "3",
-          "pricePerM": 2406,
+          "pricePerM": 36,
           "price": {
-            "value": "158800",
+            "value": "3900",
             "unit": "EUR",
             "__typename": "UserAdvertPrice"
           },
-          "netArea": "66",
-          "title": "Apartamento T2 com logradouro para venda em Almada",
+          "netArea": "109",
+          "title": "Apartamento T2 para arrendamento, mobilado nas Avenidas Novas",
           "__typename": "UserAdvert"
         },
         {
-          "adId": "18464947",
-          "url": "https://www.imovirtual.com/pt/anuncio/apartamento-t2-com-logradouro-para-venda-em-almada-ID1ftzJ",
-          "image": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjMxNzhpNHpvd2N0eDItRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.ZxBUst71lxPpTdY9BPcmlh1Gp8zraICAwjxPttocdIk/image;s=314x236;q=80",
-          "roomsNum": "3",
-          "pricePerM": 3008,
-          "price": {
-            "value": "198500",
-            "unit": "EUR",
-            "__typename": "UserAdvertPrice"
-          },
-          "netArea": "66",
-          "title": "Apartamento T2 com logradouro para venda em Almada",
-          "__typename": "UserAdvert"
-        },
-        {
-          "adId": "18283267",
-          "url": "https://www.imovirtual.com/pt/anuncio/apartamento-t1-1-duplex-nas-janelas-verdes-lisboa-ID1eIjp",
-          "image": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImkzM3d3bzNubmwycjEtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.kXyND_5NbkNhnRZu8CP0klcz-4hSIcgA1TM3i2genUw/image;s=314x236;q=80",
+          "adId": "18483180",
+          "url": "https://www.imovirtual.com/pt/anuncio/apartamento-t1-para-arrendamento-mobilado-em-cascais-ID1fyjO",
+          "image": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IndmY2ZneXlpeW5hNy1FQ09TWVNURU0iLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.WFmfAPT3jkk6plOFfcIyyUdW_e6mMctQ-Ip_rYncG80/image;s=314x236;q=80",
           "roomsNum": "2",
-          "pricePerM": 4672,
+          "pricePerM": 28,
           "price": {
-            "value": "299000",
+            "value": "1400",
             "unit": "EUR",
             "__typename": "UserAdvertPrice"
           },
-          "netArea": "64",
-          "title": "Apartamento T1+1 duplex nas Janelas Verdes, Lisboa",
+          "netArea": "50",
+          "title": "Apartamento T1 para arrendamento mobilado em Cascais",
           "__typename": "UserAdvert"
         },
         {
-          "adId": "18407762",
-          "url": "https://www.imovirtual.com/pt/anuncio/apartamento-t3-com-elevador-e-estacionamento-em-belem-lisboa-ID1feHo",
-          "image": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Im1nZnRlYzYwa3o0cTMtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.KWAPMGDyKdXgwEh0uTd9xF2AwOQWa3nikLgaoiN3Owg/image;s=314x236;q=80",
-          "roomsNum": "4",
-          "pricePerM": 8502,
+          "adId": "18458819",
+          "url": "https://www.imovirtual.com/pt/anuncio/apartamento-t2-para-arrendamento-na-costa-da-guia-ID1frYT",
+          "image": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Im9hdHYzejc3YTR4ejEtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.A_IOeixDEFGpDuR1hTqNpLgr9nVuCnrwpMiriPM27nQ/image;s=314x236;q=80",
+          "roomsNum": "3",
+          "pricePerM": 26,
           "price": {
-            "value": "2100000",
+            "value": "2600",
             "unit": "EUR",
             "__typename": "UserAdvertPrice"
           },
-          "netArea": "247",
-          "title": "Apartamento T3 com elevador e estacionamento em Belém, Lisboa",
+          "netArea": "99",
+          "title": "Apartamento T2 para arrendamento na Costa da Guia",
+          "__typename": "UserAdvert"
+        },
+        {
+          "adId": "18483138",
+          "url": "https://www.imovirtual.com/pt/anuncio/apartamento-t2-para-arrendamento-com-moveis-em-santo-antonio-ID1fyj8",
+          "image": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImhuMGd5MHo1dGpwNjItRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.rXRXyYkgL4cMmwLnjpsyIB4fOCybXyKMEzpxSwHOIJo/image;s=314x236;q=80",
+          "roomsNum": "3",
+          "pricePerM": 32,
+          "price": {
+            "value": "3100",
+            "unit": "EUR",
+            "__typename": "UserAdvertPrice"
+          },
+          "netArea": "97.5",
+          "title": "Apartamento T2 para arrendamento com móveis em Santo António",
           "__typename": "UserAdvert"
         }
       ],
@@ -796,7 +796,7 @@
         "phones": [
           "+351923299402"
         ],
-        "imageUrl": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InoxMGx2OGc3MGN1cS1BUFQifQ.n44k3Pwd4_C2k-Cxe6JKUagzXepMj_JNFYT1ErOSccE/image;s=97x97;q=100"
+        "imageUrl": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjI1aHB4dXBsNWNsNTEtQVBUIn0.S2JPi-XcXmFIoShdbWymY0G_NbvJEdb2BqOMzsiumH4/image;s=97x97;q=100"
       }
     },
     "relativeUrl": "/pt/anuncio/apartamento-t3-com-varanda-e-estacionamento-em-paranhos-porto-ID1eMUk",
@@ -807,7 +807,7 @@
       "ad_photo": 25,
       "price_currency": "EUR",
       "cat_l1_id": 101,
-      "cat_l1_name": "Apartamentos",
+      "cat_l1_name": "apartments",
       "special_offer_type": null,
       "ad_id": "18300932",
       "ad_price": 625000,
@@ -836,7 +836,6 @@
       "isListingRentPriceEnabled": false,
       "isNewApartmentsForSalePostingFormEnabled": false,
       "isOldSaveSearchQueryEnabled": false,
-      "shouldUseNewInformation": true,
       "isFinanceCheckboxEnabled": false,
       "isObservedAdsPageEnabled": true,
       "isBikPromotionEnabled": true,
@@ -858,10 +857,12 @@
       "isHCIAMAgencyRegistrationEnabled": true,
       "isHCIAMAgentRegistrationEnabled": true,
       "isHCIAMDeveloperRegistrationEnabled": true,
+      "isMessagingCenterEnabled": false,
+      "isMessagingCenterChatEnabled": false,
       "__typename": "FeatureFlags"
     },
     "laquesisResult": null,
-    "userSessionId": "c304fd38-15a3-4ed4-bc20-8bea96d62a65",
+    "userSessionId": "b3e58c88-4db1-479d-b1c9-5fe35bf7d29b",
     "unconfirmedUserAuthToken": null,
     "desktopHeader": {
       "Is-Desktop": "true"

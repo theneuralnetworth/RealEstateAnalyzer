@@ -1,8 +1,8 @@
 {
   "pageProps": {
     "lang": "pt",
-    "_sentryTraceData": "459f921eddbc4b4c87de774764df86b6-ac9cc2b8c716bc6b-0",
-    "_sentryBaggage": "sentry-environment=imovirtualpt2-prd,sentry-release=frontend-platform%40v20240930T093022-imovirtualpt2,sentry-public_key=feffe528c390ea66992a4a05131c3c68,sentry-trace_id=459f921eddbc4b4c87de774764df86b6,sentry-transaction=%2Fpt%2Fanuncio%2F%5Bid%5D,sentry-sampled=false",
+    "_sentryTraceData": "7faae71ee6de4ab8ac6871a776d71a5b-942d3b8928d662d3-0",
+    "_sentryBaggage": "sentry-environment=imovirtualpt2-prd,sentry-release=frontend-platform%40v20241004T114115-imovirtualpt2,sentry-public_key=feffe528c390ea66992a4a05131c3c68,sentry-trace_id=7faae71ee6de4ab8ac6871a776d71a5b,sentry-transaction=%2Fpt%2Fanuncio%2F%5Bid%5D,sentry-sampled=false",
     "id": "1fyrG",
     "ad": {
       "id": 18483668,
@@ -247,13 +247,13 @@
         "id": 101,
         "name": [
           {
-            "locale": "pt",
-            "value": "Apartamentos",
+            "locale": "en",
+            "value": "apartments",
             "__typename": "LocalizedString"
           },
           {
-            "locale": "en",
-            "value": "apartments",
+            "locale": "pt",
+            "value": "Apartamentos",
             "__typename": "LocalizedString"
           }
         ],
@@ -610,63 +610,63 @@
       ],
       "userAdverts": [
         {
-          "adId": "18483682",
-          "url": "https://www.imovirtual.com/pt/anuncio/t2-ao-bonfim-ID1fyrU",
-          "image": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InpvajBod2U1NjRkODEtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.6YWtKvam4ZTb-4Beqd4UjSrABt42joWY4rPU2_VdLUs/image;s=314x236;q=80",
+          "adId": "18280315",
+          "url": "https://www.imovirtual.com/pt/anuncio/t2-park-three-no-centro-de-gaia-ID1eHxN",
+          "image": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InJneGJheWRydW9wczItRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.f7R3WEmtjqnJGfpqTh_d6IbnK07avlwQoXonavD_5f8/image;s=314x236;q=80",
           "roomsNum": "3",
-          "pricePerM": 4588,
+          "pricePerM": 3005,
           "price": {
-            "value": "390000",
+            "value": "250000",
             "unit": "EUR",
             "__typename": "UserAdvertPrice"
           },
-          "netArea": "85",
-          "title": "T2 ao Bonfim",
+          "netArea": "83.2",
+          "title": "T2 Park Three no Centro de Gaia",
           "__typename": "UserAdvert"
         },
         {
-          "adId": "18483679",
-          "url": "https://www.imovirtual.com/pt/anuncio/t3-ao-bonfim-ID1fyrR",
-          "image": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImY3MnExcXRiZm9pajEtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.C_c3B7yCzr3hHgsc4_GUtkRAn9uyUKDU0bNbXqQta18/image;s=314x236;q=80",
+          "adId": "17433140",
+          "url": "https://www.imovirtual.com/pt/anuncio/t3-office-descobrimentos-edificio-pacifico-ID1b99G",
+          "image": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Imc0bzBjOGx5ZTZhcTEtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.8ztdg2mIMt-X9o2ZSNJBd71pBC2tlRMlY1gijhp8U9o/image;s=314x236;q=80",
           "roomsNum": "4",
-          "pricePerM": 4080,
-          "price": {
-            "value": "510000",
-            "unit": "EUR",
-            "__typename": "UserAdvertPrice"
-          },
-          "netArea": "125",
-          "title": "T3 ao Bonfim",
-          "__typename": "UserAdvert"
-        },
-        {
-          "adId": "18483674",
-          "url": "https://www.imovirtual.com/pt/anuncio/t3-c-terraco-ao-bonfim-ID1fyrM",
-          "image": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImN5cXpydXFjMjIwai1FQ09TWVNURU0iLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.9Dw2DpmRShOheo5Yev-Gww2pV3dwYlf5Nhn1rU9u1ds/image;s=314x236;q=80",
-          "roomsNum": "4",
-          "pricePerM": 4409,
-          "price": {
-            "value": "560000",
-            "unit": "EUR",
-            "__typename": "UserAdvertPrice"
-          },
-          "netArea": "127",
-          "title": "T3 C/ Terraço ao Bonfim",
-          "__typename": "UserAdvert"
-        },
-        {
-          "adId": "18483664",
-          "url": "https://www.imovirtual.com/pt/anuncio/t2-ao-bonfim-ID1fyrC",
-          "image": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjdrOGJtNTgyOTE2aC1FQ09TWVNURU0iLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.ynnPJsXHdiI2CL7XRc9vkK8OayrmfTprR4dohRpX-rU/image;s=314x236;q=80",
-          "roomsNum": "3",
-          "pricePerM": 4235,
+          "pricePerM": 2733,
           "price": {
             "value": "360000",
             "unit": "EUR",
             "__typename": "UserAdvertPrice"
           },
-          "netArea": "85",
-          "title": "T2 ao Bonfim",
+          "netArea": "131.7",
+          "title": "T3 Office Descobrimentos - Edifício Pacifico",
+          "__typename": "UserAdvert"
+        },
+        {
+          "adId": "17433173",
+          "url": "https://www.imovirtual.com/pt/anuncio/t3-office-descobrimentos-edificio-pacifico-ID1b9ad",
+          "image": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Img4dnlmc2c1ZHc5ajItRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.6MCmO7wMFEr0uDmN8OPXmbdy31Lpd3RPlejFQIUbfMk/image;s=314x236;q=80",
+          "roomsNum": "4",
+          "pricePerM": 2913,
+          "price": {
+            "value": "347500",
+            "unit": "EUR",
+            "__typename": "UserAdvertPrice"
+          },
+          "netArea": "119.3",
+          "title": "T3 Office Descobrimentos - Edifício Pacifico",
+          "__typename": "UserAdvert"
+        },
+        {
+          "adId": "18280317",
+          "url": "https://www.imovirtual.com/pt/anuncio/t2-park-three-no-centro-de-gaia-ID1eHxP",
+          "image": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImZpZHBvbHR2emdqcC1FQ09TWVNURU0iLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.7TtlHaSbaH_5RLmEgzawA6qlCAAJaaPpwxbslg5Y7N4/image;s=314x236;q=80",
+          "roomsNum": "3",
+          "pricePerM": 2976,
+          "price": {
+            "value": "250000",
+            "unit": "EUR",
+            "__typename": "UserAdvertPrice"
+          },
+          "netArea": "84",
+          "title": "T2 Park Three no Centro de Gaia",
           "__typename": "UserAdvert"
         }
       ],
@@ -696,7 +696,7 @@
       "ad_photo": 6,
       "price_currency": "EUR",
       "cat_l1_id": 101,
-      "cat_l1_name": "Apartamentos",
+      "cat_l1_name": "apartments",
       "special_offer_type": null,
       "ad_id": "18483668",
       "ad_price": 500000,
@@ -725,7 +725,6 @@
       "isListingRentPriceEnabled": false,
       "isNewApartmentsForSalePostingFormEnabled": false,
       "isOldSaveSearchQueryEnabled": false,
-      "shouldUseNewInformation": true,
       "isFinanceCheckboxEnabled": false,
       "isObservedAdsPageEnabled": true,
       "isBikPromotionEnabled": true,
@@ -747,10 +746,12 @@
       "isHCIAMAgencyRegistrationEnabled": true,
       "isHCIAMAgentRegistrationEnabled": true,
       "isHCIAMDeveloperRegistrationEnabled": true,
+      "isMessagingCenterEnabled": false,
+      "isMessagingCenterChatEnabled": false,
       "__typename": "FeatureFlags"
     },
     "laquesisResult": null,
-    "userSessionId": "4669a554-d0e5-4efe-b10d-b5e5af85f891",
+    "userSessionId": "542053c6-db00-4380-8c43-b96bead79a78",
     "unconfirmedUserAuthToken": null,
     "desktopHeader": {
       "Is-Desktop": "true"

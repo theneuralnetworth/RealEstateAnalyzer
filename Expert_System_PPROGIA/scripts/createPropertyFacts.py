@@ -82,7 +82,8 @@ def generate_prolog_facts(data):
     return facts
 
 # Read the JSON file
-with open('../ImoveisData/extracted_property_data.json', 'r', encoding='utf-8') as file:
+# with open('/Users/luispaula/Desktop/MEIA/RealEstateAnalyzer/ImoveisData/extracted_property_data.json', 'r', encoding='utf-8') as file:
+with open('C:/ISEP/RealEstateAnalyzer/Expert_System_PPROGIA/ImoveisData/formatted_property_data.json', 'r', encoding='utf-8') as file:
     data = json.load(file)
 
 # Extract unique features
@@ -95,7 +96,7 @@ for feature in unique_features:
 prolog_facts = generate_prolog_facts(data)
 
 # Write facts to a .pl file
-with open('../ImoveisData/test/properties.pl', 'w', encoding='utf-8') as file:
+with open('C:/ISEP/RealEstateAnalyzer/Expert_System_PPROGIA/Facts/saved_properties.pl', 'w', encoding='utf-8') as file:
     file.write('\n'.join(prolog_facts))
 
-print("\nProlog facts have been generated and saved to 'ImoveisData/facts/properties.pl'")
+print("Prolog facts have been generated and saved to 'ImoveisData/facts/saved_properties.pl'")

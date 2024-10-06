@@ -1,8 +1,8 @@
 {
   "pageProps": {
     "lang": "pt",
-    "_sentryTraceData": "6158bf02a95949c589c5d56f84ada9cd-9a9ad8ceb4c13e0d-0",
-    "_sentryBaggage": "sentry-environment=imovirtualpt2-prd,sentry-release=frontend-platform%40v20240930T093022-imovirtualpt2,sentry-public_key=feffe528c390ea66992a4a05131c3c68,sentry-trace_id=6158bf02a95949c589c5d56f84ada9cd,sentry-transaction=%2Fpt%2Fanuncio%2F%5Bid%5D,sentry-sampled=false",
+    "_sentryTraceData": "856a707c8d9d43019e7e69580382821c-b79e812fe25e19fb-0",
+    "_sentryBaggage": "sentry-environment=imovirtualpt2-prd,sentry-release=frontend-platform%40v20241004T114115-imovirtualpt2,sentry-public_key=feffe528c390ea66992a4a05131c3c68,sentry-trace_id=856a707c8d9d43019e7e69580382821c,sentry-transaction=%2Fpt%2Fanuncio%2F%5Bid%5D,sentry-sampled=false",
     "id": "1fmAz",
     "ad": {
       "id": 18438091,
@@ -287,13 +287,13 @@
         "id": 101,
         "name": [
           {
-            "locale": "en",
-            "value": "apartments",
+            "locale": "pt",
+            "value": "Apartamentos",
             "__typename": "LocalizedString"
           },
           {
-            "locale": "pt",
-            "value": "Apartamentos",
+            "locale": "en",
+            "value": "apartments",
             "__typename": "LocalizedString"
           }
         ],
@@ -667,18 +667,18 @@
       ],
       "userAdverts": [
         {
-          "adId": "18321334",
-          "url": "https://www.imovirtual.com/pt/anuncio/apartamento-t1-1-vista-mar-ultimo-piso-ID1eSdo",
-          "image": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InQxajJjeHVpYWVnMzEtQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0._cbx3fkwHxTTcIytp6lHJYgJ-BF69vrRZq8dHwO1OtM/image;s=314x236;q=80",
-          "roomsNum": "3",
-          "pricePerM": 3205,
+          "adId": "18434286",
+          "url": "https://www.imovirtual.com/pt/anuncio/apartamento-t0-de-luxo-c-terraco-ID1flBc",
+          "image": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InFmYXU1c3YxeXBsNC1BUFQiLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.MUvdPuJ55YF9Awuu0gfGO6EbIA5B5_KsqdzSa1a7EUo/image;s=314x236;q=80",
+          "roomsNum": "1",
+          "pricePerM": 4167,
           "price": {
-            "value": "250000",
+            "value": "450000",
             "unit": "EUR",
             "__typename": "UserAdvertPrice"
           },
-          "netArea": "78",
-          "title": "Apartamento T1+1 - Vista Mar (Último Piso)",
+          "netArea": "108",
+          "title": "Apartamento T0 de Luxo C/ Terraço",
           "__typename": "UserAdvert"
         },
         {
@@ -753,7 +753,7 @@
       "ad_photo": 5,
       "price_currency": "EUR",
       "cat_l1_id": 101,
-      "cat_l1_name": "apartments",
+      "cat_l1_name": "Apartamentos",
       "special_offer_type": null,
       "ad_id": "18438091",
       "ad_price": 450000,
@@ -782,7 +782,6 @@
       "isListingRentPriceEnabled": false,
       "isNewApartmentsForSalePostingFormEnabled": false,
       "isOldSaveSearchQueryEnabled": false,
-      "shouldUseNewInformation": true,
       "isFinanceCheckboxEnabled": false,
       "isObservedAdsPageEnabled": true,
       "isBikPromotionEnabled": true,
@@ -804,10 +803,12 @@
       "isHCIAMAgencyRegistrationEnabled": true,
       "isHCIAMAgentRegistrationEnabled": true,
       "isHCIAMDeveloperRegistrationEnabled": true,
+      "isMessagingCenterEnabled": false,
+      "isMessagingCenterChatEnabled": false,
       "__typename": "FeatureFlags"
     },
     "laquesisResult": null,
-    "userSessionId": "8b01722b-d716-4b06-8079-74f6dd5a87b8",
+    "userSessionId": "24fc810d-cca2-4c52-b3cf-803f3efa79de",
     "unconfirmedUserAuthToken": null,
     "desktopHeader": {
       "Is-Desktop": "true"

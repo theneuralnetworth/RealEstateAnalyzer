@@ -1,8 +1,8 @@
 {
   "pageProps": {
     "lang": "pt",
-    "_sentryTraceData": "e0a88bb7123144f5b8b11545c38d7a63-91aa22dbc04161e9-0",
-    "_sentryBaggage": "sentry-environment=imovirtualpt2-prd,sentry-release=frontend-platform%40v20240930T093022-imovirtualpt2,sentry-public_key=feffe528c390ea66992a4a05131c3c68,sentry-trace_id=e0a88bb7123144f5b8b11545c38d7a63,sentry-transaction=%2Fpt%2Fanuncio%2F%5Bid%5D,sentry-sampled=false",
+    "_sentryTraceData": "adb84d97167b4b84952af9d22798addc-88e36ffd51553f7d-0",
+    "_sentryBaggage": "sentry-environment=imovirtualpt2-prd,sentry-release=frontend-platform%40v20241004T114115-imovirtualpt2,sentry-public_key=feffe528c390ea66992a4a05131c3c68,sentry-trace_id=adb84d97167b4b84952af9d22798addc,sentry-transaction=%2Fpt%2Fanuncio%2F%5Bid%5D,sentry-sampled=false",
     "id": "1awHe",
     "ad": {
       "id": 17281460,
@@ -786,6 +786,21 @@
       ],
       "userAdverts": [
         {
+          "adId": "18490038",
+          "url": "https://www.imovirtual.com/pt/anuncio/apartamento-t1-mobiliado-a-venda-em-edificio-centenario-lisboa-ID1fA6q",
+          "image": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Inl0cWk2eXVwanlhdTItRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.MU0PcQ1X-QpyUwfbdAJbkZhS_QMnPoEFHaduYxt--ls/image;s=314x236;q=80",
+          "roomsNum": "2",
+          "pricePerM": 7900,
+          "price": {
+            "value": "323900",
+            "unit": "EUR",
+            "__typename": "UserAdvertPrice"
+          },
+          "netArea": "41",
+          "title": "Apartamento T1 Mobiliado à Venda em Edifício Centenário - Lisboa",
+          "__typename": "UserAdvert"
+        },
+        {
           "adId": "17612039",
           "url": "https://www.imovirtual.com/pt/anuncio/apartamento-t2-novo-com-suite-e-garagem-cabanas-de-tavira-ID1bTH9",
           "image": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjRycTRrYWd0azhwZzItRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.uw1hpdHdcYqn1MkxETkjBPTceSw4Oe7fDoLc9R4cYZg/image;s=314x236;q=80",
@@ -828,21 +843,6 @@
           },
           "netArea": "96.05",
           "title": "Apartamento T2 em condomínio fechado com piscina, paddel, jacuzzi, spa",
-          "__typename": "UserAdvert"
-        },
-        {
-          "adId": "17576879",
-          "url": "https://www.imovirtual.com/pt/anuncio/moradia-isolada-t3-com-piscina-e-vista-para-o-rio-douro-ID1bKy3",
-          "image": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImVoMWV3ajAxZG84cS1FQ09TWVNURU0iLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.yheUmNhNitzcs6qnUgknU4y9O34I-4rr8y9khhjb5Gg/image;s=314x236;q=80",
-          "roomsNum": "4",
-          "pricePerM": 1348,
-          "price": {
-            "value": "550000",
-            "unit": "EUR",
-            "__typename": "UserAdvertPrice"
-          },
-          "netArea": "408",
-          "title": "Moradia isolada T3 com piscina e vista para o Rio Douro",
           "__typename": "UserAdvert"
         }
       ],
@@ -901,7 +901,6 @@
       "isListingRentPriceEnabled": false,
       "isNewApartmentsForSalePostingFormEnabled": false,
       "isOldSaveSearchQueryEnabled": false,
-      "shouldUseNewInformation": true,
       "isFinanceCheckboxEnabled": false,
       "isObservedAdsPageEnabled": true,
       "isBikPromotionEnabled": true,
@@ -923,10 +922,12 @@
       "isHCIAMAgencyRegistrationEnabled": true,
       "isHCIAMAgentRegistrationEnabled": true,
       "isHCIAMDeveloperRegistrationEnabled": true,
+      "isMessagingCenterEnabled": false,
+      "isMessagingCenterChatEnabled": false,
       "__typename": "FeatureFlags"
     },
     "laquesisResult": null,
-    "userSessionId": "4671e048-3d51-4f9c-a0c2-926eed74c8df",
+    "userSessionId": "db2cb3e9-b32e-408a-85a1-964659418810",
     "unconfirmedUserAuthToken": null,
     "desktopHeader": {
       "Is-Desktop": "true"

@@ -1,8 +1,8 @@
 {
   "pageProps": {
     "lang": "pt",
-    "_sentryTraceData": "b9c76beb3acf487d80138adf346d0ffc-b0e136d4292e4b81-0",
-    "_sentryBaggage": "sentry-environment=imovirtualpt2-prd,sentry-release=frontend-platform%40v20240930T093022-imovirtualpt2,sentry-public_key=feffe528c390ea66992a4a05131c3c68,sentry-trace_id=b9c76beb3acf487d80138adf346d0ffc,sentry-transaction=%2Fpt%2Fanuncio%2F%5Bid%5D,sentry-sampled=false",
+    "_sentryTraceData": "e2f07782c686470194ff0858b05475c5-8384d4071699bda5-0",
+    "_sentryBaggage": "sentry-environment=imovirtualpt2-prd,sentry-release=frontend-platform%40v20241004T114115-imovirtualpt2,sentry-public_key=feffe528c390ea66992a4a05131c3c68,sentry-trace_id=e2f07782c686470194ff0858b05475c5,sentry-transaction=%2Fpt%2Fanuncio%2F%5Bid%5D,sentry-sampled=false",
     "id": "1fysd",
     "ad": {
       "id": 18483701,
@@ -18,7 +18,7 @@
       "advertType": "AGENCY",
       "source": "urn:partner:proppy",
       "createdAt": "2024-09-27T11:32:09+01:00",
-      "modifiedAt": "2024-09-27T11:32:23+01:00",
+      "modifiedAt": "2024-10-01T12:08:07+01:00",
       "description": "Apartamento T3, renovado, localizado bem no coração da Foz, junto à Universidade Católica, zona residencial premium, com todo o tipo de comercio nas redondezas, com especial destaque para o mercado da Foz ou o SuperCor  Fluvial.<br/>Excelente imóvel da tipologia 3, inserido no Edifício Living Foz, construção de referência da J Camilo, em de 2011, completamente renovado em excelente estado de conservação, sem defeitos de manutenção e/ou construção, pautado pelas áreas amplas, luminosas e com os pormenores de luxo e requinte que este construtor já nos habituou.<br/>264 m2 de área total, (165m2 úteis, 99m2 brutos), com duas frentes solares, duas excelentes varandas, jardim privativo, este imóvel ainda disponibiliza o seguinte equipamento de conforto: piso radiante dividido por zona (zona privada e zona social), cozinha e lavandaria equipadas , detetor de fumo e de gás, portas pivotantes, black outs na sala, persiana nos quartos, alarme, domótica, 1 suite, dois quartos convencionais, com WC completo de apoio, lareira com recuperador de calor por estrear!<br/>Garagem box para 3 viaturas.<br/><br/>Segurança das 8h/20H.<br/>Classe energética A | Valor do Condomínio de 145.",
       "developmentId": 0,
       "developmentTitle": "",
@@ -100,7 +100,7 @@
           "usable_room"
         ],
         "Floor_no": [
-          "floor_3"
+          "floor_2"
         ],
         "Id": "18483701",
         "MarketType": "secondary",
@@ -164,7 +164,7 @@
         {
           "label": "floor",
           "values": [
-            "floor_no::floor_3",
+            "floor_no::floor_2",
             "/1"
           ],
           "unit": "",
@@ -406,9 +406,9 @@
         },
         {
           "key": "floor_no",
-          "value": "floor_3",
+          "value": "floor_2",
           "label": "Andar",
-          "localizedValue": "3",
+          "localizedValue": "2",
           "currency": "",
           "suffix": "",
           "__typename": "Characteristic"
@@ -840,7 +840,7 @@
             "terrace",
             "usable_room"
           ],
-          "floor": "FLOOR_3",
+          "floor": "FLOOR_2",
           "kitchen": "SEPARATE",
           "parking": [],
           "numberOfRooms": 4,
@@ -937,7 +937,7 @@
       },
       "seo": {
         "title": "T3, apartamento para comprar - Rua Padre Luís Cabral - Foz do Douro, Aldoar, Foz do Douro e Nevogilde - 18483701 • www.imovirtual.com",
-        "description": "Excelente apartamento para venda com T3 em Rua Padre Luís Cabral - Foz do Douro, Aldoar, Foz do Douro e Nevogilde, por 870 000 €. Este apartamento para venda localizado no 3 piso tem 165 m² de àrea útil e 165 m² de àrea bruta. De acordo com o profissional MM Imóveis os atributos mais importantes são cozinha separada, elevador, garagemSITE 18483701",
+        "description": "Excelente apartamento para venda com T3 em Rua Padre Luís Cabral - Foz do Douro, Aldoar, Foz do Douro e Nevogilde, por 870 000 €. Este apartamento para venda localizado no 2 piso tem 165 m² de àrea útil e 165 m² de àrea bruta. De acordo com o profissional MM Imóveis os atributos mais importantes são cozinha separada, elevador, garagemSITE 18483701",
         "__typename": "AdvertSeo"
       },
       "breadcrumbs": [
@@ -980,54 +980,24 @@
       ],
       "userAdverts": [
         {
-          "adId": "18485646",
-          "url": "https://www.imovirtual.com/pt/anuncio/loja-maia-renovada-montra-ID1fyXA",
-          "image": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Im0zejV5aW10cHF3bDEtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.s-6Fcf1msZDsDx6sU_AovV_65ykRyo41VmPadIhVSsc/image;s=314x236;q=80",
-          "roomsNum": "",
-          "pricePerM": 7,
-          "price": {
-            "value": "650",
-            "unit": "EUR",
-            "__typename": "UserAdvertPrice"
-          },
-          "netArea": "89.5",
-          "title": "Loja | Maia | Renovada | Montra",
-          "__typename": "UserAdvert"
-        },
-        {
-          "adId": "18485644",
-          "url": "https://www.imovirtual.com/pt/anuncio/t3-leca-da-palmeira-recuado-4-frentes-piscina-vista-rio-e-mar-ID1fyXy",
-          "image": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjU4Y3UzbmF0NW1rdTItRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.9ikmRzoF5hRZsQY9B5FmtkAbAgYpOnkq3d9fblOgncI/image;s=314x236;q=80",
+          "adId": "18480817",
+          "url": "https://www.imovirtual.com/pt/anuncio/apartamento-t3-luxo-gondomar-varandas-box-2-carros-ID1fxHH",
+          "image": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImJ4dWVncXB2d3hmdDItRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.cLZqCzNqGuiV6D73FXql3tqjxrZl7j61WngfFwX0zHc/image;s=314x236;q=80",
           "roomsNum": "4",
-          "pricePerM": 20,
+          "pricePerM": 2833,
           "price": {
-            "value": "3500",
+            "value": "340000",
             "unit": "EUR",
             "__typename": "UserAdvertPrice"
           },
-          "netArea": "175.71",
-          "title": "T3 Leça da Palmeira | Recuado | 4 Frentes | Piscina | Vista Rio e Mar",
+          "netArea": "120",
+          "title": "Apartamento T3 | Luxo | Gondomar | Varandas | Box 2  carros",
           "__typename": "UserAdvert"
         },
         {
-          "adId": "18281636",
-          "url": "https://www.imovirtual.com/pt/anuncio/apartamento-t1-novo-luxo-marina-douro-gaia-ID1eHT6",
-          "image": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InBoY2kzeWFibWdmcTEtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.go83vccKcZz9tULZd_fH97eKFG4gmkVCbi-kJIsHjT4/image;s=314x236;q=80",
-          "roomsNum": "2",
-          "pricePerM": 6042,
-          "price": {
-            "value": "290000",
-            "unit": "EUR",
-            "__typename": "UserAdvertPrice"
-          },
-          "netArea": "48",
-          "title": "Apartamento T1 | Novo | Luxo | Marina Douro | Gaia",
-          "__typename": "UserAdvert"
-        },
-        {
-          "adId": "18369719",
-          "url": "https://www.imovirtual.com/pt/anuncio/moradia-t4-pedroso-piscina-jardim-box-garagem-nova-ID1f4NN",
-          "image": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjZoem16YWE4b3kxbzItRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.EapVMeNRaJulje_ZaCqBPAXmxXm82YMlu6AhxugPDRo/image;s=314x236;q=80",
+          "adId": "18472807",
+          "url": "https://www.imovirtual.com/pt/anuncio/moradia-t4-pedroso-piscina-jardim-box-garagem-nova-ID1fwCw",
+          "image": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Im0yNGRyb3h0MDRpaTMtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.BoGMbj1CTHJ6OrQRdv_co8c-Ebz0OBV0PcZA6wc29X8/image;s=314x236;q=80",
           "roomsNum": "5",
           "pricePerM": 1728,
           "price": {
@@ -1037,6 +1007,36 @@
           },
           "netArea": "243",
           "title": "Moradia T4 | Pedroso | Piscina | Jardim |Box garagem | NOVA",
+          "__typename": "UserAdvert"
+        },
+        {
+          "adId": "18482303",
+          "url": "https://www.imovirtual.com/pt/anuncio/apartamento-t1-avintes-terraco-elevador-ID1fy5F",
+          "image": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Imt5M3Z3dHpyc3RvcC1FQ09TWVNURU0iLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.P4NoPXlwMgbKlwTr-uLY4Taa8nTYGm0ZAt2X9nYlOPU/image;s=314x236;q=80",
+          "roomsNum": "2",
+          "pricePerM": 3363,
+          "price": {
+            "value": "134500",
+            "unit": "EUR",
+            "__typename": "UserAdvertPrice"
+          },
+          "netArea": "40",
+          "title": "Apartamento T1 | Avintes | Terraço | Elevador",
+          "__typename": "UserAdvert"
+        },
+        {
+          "adId": "18481957",
+          "url": "https://www.imovirtual.com/pt/anuncio/apartamento-t2-novo-2024-varanda-garagem-ID1fy05",
+          "image": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImxrazAxa3c5ZnF4dTItRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.NY8VFwLVAuMHYaktoxHZdC4aa4IfZZVeAdFm6_SXPXM/image;s=314x236;q=80",
+          "roomsNum": "3",
+          "pricePerM": 2811,
+          "price": {
+            "value": "238900",
+            "unit": "EUR",
+            "__typename": "UserAdvertPrice"
+          },
+          "netArea": "85",
+          "title": "Apartamento T2 | Novo 2024 |  Varanda | Garagem",
           "__typename": "UserAdvert"
         }
       ],
@@ -1095,7 +1095,6 @@
       "isListingRentPriceEnabled": false,
       "isNewApartmentsForSalePostingFormEnabled": false,
       "isOldSaveSearchQueryEnabled": false,
-      "shouldUseNewInformation": true,
       "isFinanceCheckboxEnabled": false,
       "isObservedAdsPageEnabled": true,
       "isBikPromotionEnabled": true,
@@ -1117,10 +1116,12 @@
       "isHCIAMAgencyRegistrationEnabled": true,
       "isHCIAMAgentRegistrationEnabled": true,
       "isHCIAMDeveloperRegistrationEnabled": true,
+      "isMessagingCenterEnabled": false,
+      "isMessagingCenterChatEnabled": false,
       "__typename": "FeatureFlags"
     },
     "laquesisResult": null,
-    "userSessionId": "f5bf8320-468d-4449-a75b-fd9f2c61ae9c",
+    "userSessionId": "71965e1a-632e-41e7-926d-8d9db641d304",
     "unconfirmedUserAuthToken": null,
     "desktopHeader": {
       "Is-Desktop": "true"
