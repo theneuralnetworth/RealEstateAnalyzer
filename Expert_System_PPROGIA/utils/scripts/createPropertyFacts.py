@@ -1,13 +1,8 @@
 import json
 
-def extract_unique_features(data):
-    unique_features = set()
-    for property in data:
-        unique_features.update(property['features'])
-    return sorted(unique_features)
-
 def generate_prolog_facts(data):
     facts = []
+    unique_predicates = set(['image', 'location'])  # To store unique predicates
     fact_counter = 1
     unmapped_features = set()
 
@@ -46,13 +41,16 @@ def generate_prolog_facts(data):
         'fase de acabamento': 'status',
         'n.º de andares': 'numberFloors',
         'tipo de imóvel': 'propertyType',
-        'ano de construção': 'buildYear',
+        'ano de construção': 'year_construction',
         'tipologia': 'typology'
     }
+
+    characteristics_to_ignore = ['status', 'serviços_à_distância', 'disponível_a_partir_de', 'material_de_construção']
 
     for property in data:
         # Property fact
         facts.append(f"facto({fact_counter}, property({property['id']}, '{property['title'].replace("'", "''")}', '{property['description'].replace("'", "''")}')).")
+        unique_predicates.add(f"property({property['id']}, '{property['title'].replace("'", "''")}', '{property['description'].replace("'", "''")}')")  # Add to unique predicates
         fact_counter += 1
         security_count = 0
 
@@ -61,9 +59,10 @@ def generate_prolog_facts(data):
         for feature in feature_mapping.keys():
             # Check if the property has the feature
             has_feature = feature.lower() in (f.lower() for f in property['features'])
-            predicate = special_chars_map.get(feature.lower(), feature_mapping[feature.lower()])
+            predicate = special_chars_map.get(feature.lower(), feature_mapping.get(feature.lower(), feature))
 
             facts.append(f"facto({fact_counter}, {predicate}({property['id']}, {str(has_feature).lower()})).")
+            unique_predicates.add(f"{predicate}({property['id']}, {str(has_feature).lower()})")  # Add to unique predicates
             fact_counter += 1
             
             # Count security features separately
@@ -83,6 +82,7 @@ def generate_prolog_facts(data):
             security_value = str(False).lower()
 
         facts.append(f"facto({fact_counter}, hasSecurity({property['id']}, {security_value})).")
+        unique_predicates.add(f"hasSecurity({property['id']}, {security_value})")  # Add to unique predicates
         fact_counter += 1
 
         # ------------------------ Characteristics facts ----------------------------- #
@@ -117,8 +117,9 @@ def generate_prolog_facts(data):
             value = value.replace('€/m²','').replace('m²', '').replace('€', '').replace(' ', '') if label in ['price', 'area', 'pricePerSquareMeter', 'despesas_adicionais'] else value
 
             # characteristics to ignore
-            if label not in ['status']: 
+            if label not in characteristics_to_ignore: 
                 facts.append(f"facto({fact_counter}, {label}({property['id']}, '{value}')).")
+                unique_predicates.add(f"{label}({property['id']}, '{value}')")  # Add to unique predicates
                 fact_counter += 1
 
         #  ------------------------ Images facts ---------------------#
@@ -130,6 +131,15 @@ def generate_prolog_facts(data):
         facts.append(f"facto({fact_counter}, location_property({property['id']}, '{property['location'].lower()}')).")
         fact_counter += 1
 
+    # Extract only the predicate names (e.g., "property", "hasSecurity")
+    predicate_names = {pred.split('(')[0] for pred in unique_predicates}
+
+    # Write unique predicate names to a new .pl file
+    with open('C:/ISEP/Neural Networth/RealEstateAnalyzer/Expert_System_PPROGIA/utils/ImoveisData/unique_predicates.txt', 'w', encoding='utf-8') as file:
+        file.write('\n'.join(predicate_names))
+
+    # Print unmapped features at the end of the function
+    print("Unmapped features:", sorted(unmapped_features))  # Print 
     return facts
 
 # Read the JSON file
@@ -141,7 +151,7 @@ with open('C:/ISEP/Neural Networth/RealEstateAnalyzer/Expert_System_PPROGIA/util
 prolog_facts = generate_prolog_facts(data)
 
 # Write facts to a .pl file
-with open('C:/ISEP/Neural Networth/RealEstateAnalyzer/Expert_System_PPROGIA/utils/ImoveisData/saved_properties.pl', 'w', encoding='utf-8') as file:
+with open('C:/ISEP/Neural Networth/RealEstateAnalyzer/Expert_System_PPROGIA/utils/ImoveisData/properties.pl', 'w', encoding='utf-8') as file:
     file.write('\n'.join(prolog_facts))
 
 print("Prolog facts have been generated and saved to 'ImoveisData/facts/saved_properties.pl'")
