@@ -84,3 +84,25 @@ fact(64, last_5_years_increased(lisboa, 70)).
 fact(65, last_5_years_increased(porto, 35)).
 fact(66, last_5_years_increased(faro, 10)).
 
+% View
+fact(55, floor_level(property_1, 6)).
+fact(56, floor_level(property_2, 1)).
+fact(57, floor_level(property_3, 4)).
+
+% Area
+fact(58, area(property_1, 100)).
+fact(59, area(property_2, 200)).
+fact(60, area(property_3, 150)).
+fact(61, rooms(property_1, 2)).
+fact(62, rooms(property_2, 3)).
+fact(63, rooms(property_3, 2)).
+
+%area_per_room(Property, AreaPerRoom) :-
+%    area(Property, Area),
+%    rooms(Property, Rooms),
+%    AreaPerRoom is Area / Rooms.
+
+% Sun exposure
+fact(64, sun_orientation(property_1, south)).
+fact(65, sun_orientation(property_2, north)).
+fact(66, sun_orientation(property_3, east)).

@@ -196,7 +196,7 @@ rule 6.5
 /*
 % Rule 6.6: If a property has four or more nearby services, then it is classified as having a high service level.
 rule 6.6
-    if [evaluate(N, number_of_facts(services(Property, _), >=, 4))]
+    if [evaluate(_, number_of_facts(services(Property, _), >=, 4))]
     then [create_fact(result(Property, services, medium))].
 
 % Rule 6.7: If a property has two or three nearby services, then it is classified as having a medium service level.
@@ -206,7 +206,7 @@ rule 6.7
 
 % Rule 6.8: If a property has less than two nearby services, then it is classified as having a low service level.
 rule 6.8
-    if [evaluate(N, number_of_facts(services(Property, _), <, 2))]
+    if [evaluate(_, number_of_facts(services(Property, _), <, 2))]
     then [create_fact(result(Property, services, medium))].
 */
 
@@ -229,6 +229,18 @@ rule 7.3
 rule 7.4
     if [optical_fiber(Property, absent) and smart_appliances(Property, absent)]
     then [create_fact(result(Property, connectivity, low))].
+
+rule 8.1
+    if [evaluate(_, floor_level(Property, >=, 4))]
+    then [create_fact(result(Property, view, high))].
+
+rule 10.1
+    if [sun_orientation(Property, south) or sun_orientation(Property, east)]
+    then [create_fact(result(Property, sun_exposure, good))].
+
+rule 10.2
+    if [sun_orientation(Property, north) or sun_orientation(Property, west)]
+    then [create_fact(result(Property, sun_exposure, average))].
 
 %%%%%%%%%%% 11.Parking %%%%%%%%%%%
 
@@ -295,4 +307,3 @@ rule 13.2
 rule 13.3
     if [evaluate(last_5_years_increased(Location, <, 20)) and location_property(Location, Property)]
     then [create_fact(result(Property, potential_appreciation, low))].
-

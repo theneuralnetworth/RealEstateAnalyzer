@@ -9,9 +9,9 @@
 
 % load knowledge base
 load_kb:-
-	consult('Expert_System_PPROGIA/Metaknowledge/index.pl'),
-	consult('Expert_System_PPROGIA/Rules/index.pl'),
-    consult('Expert_System_PPROGIA/Facts/index.pl').
+	consult('Metaknowledge/index.pl'),
+	consult('Rules/index.pl'),
+    consult('Facts/index.pl').
 
 % counts the number of facts
 number_of_facts(Total) :-
@@ -34,7 +34,7 @@ start_engine_loop(N, Total) :-
     N1 is N + 1,
     fact(N1, Fact),
     fact_triggers_rules1(Fact, LRules),
-    trigger_rules(N1, Fact, LRules), 
+    trigger_rules(N1, Fact, LRules),
     number_of_facts(Total1),
     start_engine_loop(N1, Total1).
 
