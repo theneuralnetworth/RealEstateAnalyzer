@@ -1,8 +1,8 @@
 {
   "pageProps": {
     "lang": "pt",
-    "_sentryTraceData": "d080e430438f4731b2777e4f6d60b799-96e75510a8a5aefd-0",
-    "_sentryBaggage": "sentry-environment=imovirtualpt2-prd,sentry-release=frontend-platform%40v20240930T093022-imovirtualpt2,sentry-public_key=feffe528c390ea66992a4a05131c3c68,sentry-trace_id=d080e430438f4731b2777e4f6d60b799,sentry-transaction=%2Fpt%2Fanuncio%2F%5Bid%5D,sentry-sampled=false",
+    "_sentryTraceData": "53d0120f310d4374a2169b753dccb330-831b455d59ff89b9-0",
+    "_sentryBaggage": "sentry-environment=imovirtualpt2-prd,sentry-release=frontend-platform%40v20241004T114115-imovirtualpt2,sentry-public_key=feffe528c390ea66992a4a05131c3c68,sentry-trace_id=53d0120f310d4374a2169b753dccb330,sentry-transaction=%2Fpt%2Fanuncio%2F%5Bid%5D,sentry-sampled=false",
     "id": "1fyPF",
     "ad": {
       "id": 18485155,
@@ -598,7 +598,7 @@
         "phones": [
           "+351220149370"
         ],
-        "imageUrl": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InZhbmZ6cmxzb216dS1BUFQifQ.vCMrfnGcMHbAiLfbVznwttADqyHIa7PtQnuwJhzt94U/image;s=97x97;q=100",
+        "imageUrl": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImhkNjg4aWhrbnNwaS1BUFQifQ.-1fvIxIO86YO37hPSHq5howMDIJtRNMc9OvWAFttZDY/image;s=97x97;q=100",
         "contacts": [],
         "__typename": "LegacyAdvertOwner"
       },
@@ -696,6 +696,36 @@
       ],
       "userAdverts": [
         {
+          "adId": "18493272",
+          "url": "https://www.imovirtual.com/pt/anuncio/apartamento-t3-para-venda-ID1fAVA",
+          "image": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InN2YWVxNjhwZHJpcC1FQ09TWVNURU0iLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.2Zw31c1ZMMHsKC9YmxyZc_JRmA1QXClxLNhnuGWuXOk/image;s=314x236;q=80",
+          "roomsNum": "4",
+          "pricePerM": 2765,
+          "price": {
+            "value": "235000",
+            "unit": "EUR",
+            "__typename": "UserAdvertPrice"
+          },
+          "netArea": "85",
+          "title": "Apartamento T3 para venda",
+          "__typename": "UserAdvert"
+        },
+        {
+          "adId": "18103309",
+          "url": "https://www.imovirtual.com/pt/anuncio/apartamento-t4-para-venda-ID1dXuR",
+          "image": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InA0ZmM0N3dmZTZqbDMtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.S8y6FA-j14cHwcosI8NBDyZ_RamAGwuI36rYK62-LNU/image;s=314x236;q=80",
+          "roomsNum": "5",
+          "pricePerM": 3216,
+          "price": {
+            "value": "550000",
+            "unit": "EUR",
+            "__typename": "UserAdvertPrice"
+          },
+          "netArea": "171",
+          "title": "Apartamento T4 para venda",
+          "__typename": "UserAdvert"
+        },
+        {
           "adId": "18485741",
           "url": "https://www.imovirtual.com/pt/anuncio/trespasse-para-venda-ID1fyZ7",
           "image": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InRqdTVybTA3ZmNxbTItRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.av3Xxm_eQ1JcYI4WeHLIEJueKGfrJwJ5ky7c3dUyaXE/image;s=314x236;q=80",
@@ -724,36 +754,6 @@
           "netArea": "88",
           "title": "Apartamento T2 para venda",
           "__typename": "UserAdvert"
-        },
-        {
-          "adId": "18480391",
-          "url": "https://www.imovirtual.com/pt/anuncio/apartamento-t2-para-arrendamento-ID1fxAP",
-          "image": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImkxMHF5aDY4aWJzYTMtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.aGkN6FdokcxoZIvBxBVRqB_N-OVeOZCN7QIxz_2_CCs/image;s=314x236;q=80",
-          "roomsNum": "3",
-          "pricePerM": 14,
-          "price": {
-            "value": "1450",
-            "unit": "EUR",
-            "__typename": "UserAdvertPrice"
-          },
-          "netArea": "101",
-          "title": "Apartamento T2 para arrendamento",
-          "__typename": "UserAdvert"
-        },
-        {
-          "adId": "18477490",
-          "url": "https://www.imovirtual.com/pt/anuncio/moradia-t2-para-venda-ID1fvQ2",
-          "image": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Imh2bXF0dXdxZWUwdjMtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.DlwoksYMUsi8tRTGstPVvooaxBCaV55QboQ8H0RA4mA/image;s=314x236;q=80",
-          "roomsNum": "3",
-          "pricePerM": 1990,
-          "price": {
-            "value": "80000",
-            "unit": "EUR",
-            "__typename": "UserAdvertPrice"
-          },
-          "netArea": "40.2",
-          "title": "Moradia T2 para venda",
-          "__typename": "UserAdvert"
         }
       ],
       "paginatedUnits": {
@@ -771,7 +771,7 @@
         "phones": [
           "+351220149370"
         ],
-        "imageUrl": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InZhbmZ6cmxzb216dS1BUFQifQ.vCMrfnGcMHbAiLfbVznwttADqyHIa7PtQnuwJhzt94U/image;s=97x97;q=100"
+        "imageUrl": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImhkNjg4aWhrbnNwaS1BUFQifQ.-1fvIxIO86YO37hPSHq5howMDIJtRNMc9OvWAFttZDY/image;s=97x97;q=100"
       }
     },
     "relativeUrl": "/pt/anuncio/apartamento-t2-para-venda-ID1fyPF",
@@ -811,7 +811,6 @@
       "isListingRentPriceEnabled": false,
       "isNewApartmentsForSalePostingFormEnabled": false,
       "isOldSaveSearchQueryEnabled": false,
-      "shouldUseNewInformation": true,
       "isFinanceCheckboxEnabled": false,
       "isObservedAdsPageEnabled": true,
       "isBikPromotionEnabled": true,
@@ -833,10 +832,12 @@
       "isHCIAMAgencyRegistrationEnabled": true,
       "isHCIAMAgentRegistrationEnabled": true,
       "isHCIAMDeveloperRegistrationEnabled": true,
+      "isMessagingCenterEnabled": false,
+      "isMessagingCenterChatEnabled": false,
       "__typename": "FeatureFlags"
     },
     "laquesisResult": null,
-    "userSessionId": "e95b1a46-2470-4f74-bdf9-5f55104556bd",
+    "userSessionId": "774fc118-391c-41c9-92fb-eb3965a1ca05",
     "unconfirmedUserAuthToken": null,
     "desktopHeader": {
       "Is-Desktop": "true"

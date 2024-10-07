@@ -1,0 +1,906 @@
+{
+  "pageProps": {
+    "lang": "pt",
+    "_sentryTraceData": "7e015de851b94376a1a226a9fd8b13f3-95622576bb133110-0",
+    "_sentryBaggage": "sentry-environment=imovirtualpt2-prd,sentry-release=frontend-platform%40v20241004T114115-imovirtualpt2,sentry-public_key=feffe528c390ea66992a4a05131c3c68,sentry-trace_id=7e015de851b94376a1a226a9fd8b13f3,sentry-transaction=%2Fpt%2Fanuncio%2F%5Bid%5D,sentry-sampled=false",
+    "id": "1aVEj",
+    "ad": {
+      "id": 17385067,
+      "price": {
+        "type": "",
+        "__typename": "AdvertPrice"
+      },
+      "market": "PRIMARY",
+      "services": [],
+      "publicId": "",
+      "slug": "apart-t2-1-fracao-a-rua-antonio-candido-porto-parque-covelo-ID1aVEj",
+      "advertiserType": "private",
+      "advertType": "PRIVATE",
+      "source": "urn:site:local",
+      "createdAt": "2023-04-17T22:14:06+01:00",
+      "modifiedAt": "2024-10-05T15:16:16+01:00",
+      "description": "<p>Apartamento no RC com excelentes acabamentos, Terraço e garagem para 2 carros.</p>\r\n<p><br/>Edifício com 7 apartamentos de tipologia T2 com diferentes formatos.<br/><br/>Não hesite em contactar e marque já a sua visita!</p>\r\n<p></p>\r\n<p>Contacto direto com o promotor.</p>\r\n<p></p>\r\n<p></p>",
+      "developmentId": 0,
+      "developmentTitle": "",
+      "developmentUrl": "",
+      "exclusiveOffer": false,
+      "externalId": "",
+      "features": [
+        "televisão por cabo",
+        "internet",
+        "portas e janelas de segurança",
+        "monitorização",
+        "estores anti-roubo",
+        "máquina de lavar louça",
+        "frigorífico",
+        "forno",
+        "fogão",
+        "Acessibilidade para pessoas com mobilidade reduzida",
+        "ar condicionado",
+        "garagem",
+        "jardim",
+        "elevador",
+        "terraço"
+      ],
+      "creationSource": "none",
+      "featuresByCategory": [
+        {
+          "label": "Utilidades",
+          "values": [
+            "televisão por cabo",
+            "internet"
+          ],
+          "__typename": "FeatureGroup"
+        },
+        {
+          "label": "Segurança",
+          "values": [
+            "portas e janelas de segurança",
+            "monitorização",
+            "estores anti-roubo"
+          ],
+          "__typename": "FeatureGroup"
+        },
+        {
+          "label": "Equipamento",
+          "values": [
+            "máquina de lavar louça",
+            "frigorífico",
+            "forno",
+            "fogão"
+          ],
+          "__typename": "FeatureGroup"
+        },
+        {
+          "label": "Informações adicionais",
+          "values": [
+            "Acessibilidade para pessoas com mobilidade reduzida",
+            "ar condicionado",
+            "garagem",
+            "jardim",
+            "elevador",
+            "terraço"
+          ],
+          "__typename": "FeatureGroup"
+        }
+      ],
+      "featuresWithoutCategory": [],
+      "openDay": null,
+      "referenceId": "",
+      "target": {
+        "Area": "171.78",
+        "AreaRange": [],
+        "Bathrooms_num": [
+          "3"
+        ],
+        "Build_year": "2024",
+        "Building_type": [
+          "block"
+        ],
+        "City": "paranhos-porto",
+        "City_id": "13643786",
+        "Construction_status": [
+          "ready_to_use"
+        ],
+        "Country": "Portugal",
+        "Energy_certificate": [
+          "b"
+        ],
+        "Equipment_types": [
+          "dishwasher",
+          "fridge",
+          "oven",
+          "stove"
+        ],
+        "Extras_types": [
+          "accessibility_for_people_with_reduced_mobility",
+          "air_conditioning",
+          "garage",
+          "garden",
+          "lift",
+          "terrace"
+        ],
+        "Floor_no": [
+          "ground_floor"
+        ],
+        "Heating": [
+          "other"
+        ],
+        "Id": "17385067",
+        "MarketType": "primary",
+        "Media_types": [
+          "cable-television",
+          "internet"
+        ],
+        "ObidoAdvert": "n",
+        "OfferType": "comprar",
+        "Photo": "aHR0cHM6Ly9pcmVsYW5kLmFwb2xsby5vbHhjZG4uY29tL3YxL2ZpbGVzL2V5Sm1iaUk2SW14NFpucHlhSGszYld3NFpURXRRVkJVSWl3aWR5STZXM3NpWm00aU9pSTJPVzVzY0dFM1pXTnhiVGN4TFVGUVZDSXNJbk1pT2lJeE5DSXNJbkFpT2lJeE1Dd3RNVEFpTENKaElqb2lNQ0o5WFgwLmN4RTJEdmhxX1NrSHFhdTkxeFUySDJSeVdaMnAxSThUa3M4TzQ2RTdWTXcvaW1hZ2U7cz02NTV4NDkxO3E9ODA=",
+        "Price": 615000,
+        "PriceRange": [
+          "500001-750000"
+        ],
+        "Price_per_m": 3580,
+        "ProperType": "apartamento",
+        "Province": "porto",
+        "RegularUser": "y",
+        "Rooms_num": [
+          "3"
+        ],
+        "Security_types": [
+          "anti_burglary_door",
+          "monitoring",
+          "roller_shutters"
+        ],
+        "Subregion": "porto",
+        "Title": "QXBhcnQgVDIrMSBGcmHDp8OjbyBBIC0gUnVhIEFudMOzbmlvIENhbmRpZG8sIFBvcnRvIC0gUGFycXVlIENvdmVsbw==",
+        "categoryId": "101",
+        "env": "production",
+        "hidePrice": "0",
+        "seller_id": "138823",
+        "user_type": "private"
+      },
+      "title": "Apart T2+1 Fração A - Rua António Candido, Porto - Parque Covelo",
+      "topInformation": [
+        {
+          "label": "area",
+          "values": [
+            "171.78"
+          ],
+          "unit": "m²",
+          "__typename": "AdditionalInfo"
+        },
+        {
+          "label": "building_ownership",
+          "values": [],
+          "unit": "",
+          "__typename": "AdditionalInfo"
+        },
+        {
+          "label": "rooms_num",
+          "values": [
+            "3"
+          ],
+          "unit": "",
+          "__typename": "AdditionalInfo"
+        },
+        {
+          "label": "construction_status",
+          "values": [
+            "construction_status::ready_to_use"
+          ],
+          "unit": "",
+          "__typename": "AdditionalInfo"
+        },
+        {
+          "label": "floor",
+          "values": [
+            "floor_no::ground_floor",
+            ""
+          ],
+          "unit": "",
+          "__typename": "AdditionalInfo"
+        },
+        {
+          "label": "outdoor",
+          "values": [
+            "extras_types::garden",
+            "extras_types::terrace"
+          ],
+          "unit": "",
+          "__typename": "AdditionalInfo"
+        },
+        {
+          "label": "rent",
+          "values": [],
+          "unit": "",
+          "__typename": "AdditionalInfo"
+        },
+        {
+          "label": "car",
+          "values": [
+            "extras_types::garage"
+          ],
+          "unit": "",
+          "__typename": "AdditionalInfo"
+        },
+        {
+          "label": "remote_services",
+          "values": [],
+          "unit": "",
+          "__typename": "AdditionalInfo"
+        },
+        {
+          "label": "heating",
+          "values": [
+            "heating::other"
+          ],
+          "unit": "",
+          "__typename": "AdditionalInfo"
+        }
+      ],
+      "additionalInformation": [
+        {
+          "label": "market",
+          "values": [
+            "market::primary"
+          ],
+          "unit": "",
+          "__typename": "AdditionalInfo"
+        },
+        {
+          "label": "advertiser_type",
+          "values": [
+            "advertiser_type::private"
+          ],
+          "unit": "",
+          "__typename": "AdditionalInfo"
+        },
+        {
+          "label": "bathrooms_num",
+          "values": [
+            "3"
+          ],
+          "unit": "",
+          "__typename": "AdditionalInfo"
+        },
+        {
+          "label": "free_from",
+          "values": [],
+          "unit": "",
+          "__typename": "AdditionalInfo"
+        },
+        {
+          "label": "build_year",
+          "values": [
+            "2024"
+          ],
+          "unit": "",
+          "__typename": "AdditionalInfo"
+        },
+        {
+          "label": "building_type",
+          "values": [
+            "building_type::block"
+          ],
+          "unit": "",
+          "__typename": "AdditionalInfo"
+        },
+        {
+          "label": "windows_type",
+          "values": [],
+          "unit": "",
+          "__typename": "AdditionalInfo"
+        },
+        {
+          "label": "lift",
+          "values": [
+            "::y"
+          ],
+          "unit": "",
+          "__typename": "AdditionalInfo"
+        },
+        {
+          "label": "media_types",
+          "values": [
+            "media_types::cable-television",
+            "media_types::internet"
+          ],
+          "unit": "",
+          "__typename": "AdditionalInfo"
+        },
+        {
+          "label": "security_types",
+          "values": [
+            "security_types::anti_burglary_door",
+            "security_types::monitoring",
+            "security_types::roller_shutters"
+          ],
+          "unit": "",
+          "__typename": "AdditionalInfo"
+        },
+        {
+          "label": "equipment_types",
+          "values": [
+            "equipment_types::dishwasher",
+            "equipment_types::fridge",
+            "equipment_types::oven",
+            "equipment_types::stove"
+          ],
+          "unit": "",
+          "__typename": "AdditionalInfo"
+        },
+        {
+          "label": "extras_types",
+          "values": [
+            "extras_types::accessibility_for_people_with_reduced_mobility",
+            "extras_types::air_conditioning"
+          ],
+          "unit": "",
+          "__typename": "AdditionalInfo"
+        },
+        {
+          "label": "building_material",
+          "values": [],
+          "unit": "",
+          "__typename": "AdditionalInfo"
+        }
+      ],
+      "url": "https://www.imovirtual.com/pt/anuncio/apart-t2-1-fracao-a-rua-antonio-candido-porto-parque-covelo-ID1aVEj",
+      "status": "active",
+      "adCategory": {
+        "id": "101",
+        "name": "FLAT",
+        "type": "SELL",
+        "__typename": "AdvertCategory"
+      },
+      "category": {
+        "id": 101,
+        "name": [
+          {
+            "locale": "en",
+            "value": "apartments",
+            "__typename": "LocalizedString"
+          },
+          {
+            "locale": "pt",
+            "value": "Apartamentos",
+            "__typename": "LocalizedString"
+          }
+        ],
+        "__typename": "AdCategory"
+      },
+      "characteristics": [
+        {
+          "key": "price",
+          "value": "615000",
+          "label": "Preço",
+          "localizedValue": "615 000 €",
+          "currency": "EUR",
+          "suffix": "",
+          "__typename": "Characteristic"
+        },
+        {
+          "key": "m",
+          "value": "171.78",
+          "label": "Área",
+          "localizedValue": "171,78 m²",
+          "currency": "",
+          "suffix": "",
+          "__typename": "Characteristic"
+        },
+        {
+          "key": "price_per_m",
+          "value": "3580",
+          "label": "preço/m2",
+          "localizedValue": "3 580 €/m²",
+          "currency": "",
+          "suffix": "",
+          "__typename": "Characteristic"
+        },
+        {
+          "key": "rooms_num",
+          "value": "3",
+          "label": "Tipologia",
+          "localizedValue": "T2",
+          "currency": "",
+          "suffix": "",
+          "__typename": "Characteristic"
+        },
+        {
+          "key": "market",
+          "value": "primary",
+          "label": "Nova construção",
+          "localizedValue": "sim",
+          "currency": "",
+          "suffix": "",
+          "__typename": "Characteristic"
+        },
+        {
+          "key": "energy_certificate",
+          "value": "b",
+          "label": "Certificado energético",
+          "localizedValue": "B",
+          "currency": "",
+          "suffix": "",
+          "__typename": "Characteristic"
+        },
+        {
+          "key": "building_type",
+          "value": "block",
+          "label": "Tipo de imóvel",
+          "localizedValue": "bloco de apartamentos",
+          "currency": "",
+          "suffix": "",
+          "__typename": "Characteristic"
+        },
+        {
+          "key": "bathrooms_num",
+          "value": "3",
+          "label": "N.º de casas de banho",
+          "localizedValue": "3",
+          "currency": "",
+          "suffix": "",
+          "__typename": "Characteristic"
+        },
+        {
+          "key": "floor_no",
+          "value": "ground_floor",
+          "label": "Andar",
+          "localizedValue": "rés do chão",
+          "currency": "",
+          "suffix": "",
+          "__typename": "Characteristic"
+        },
+        {
+          "key": "heating",
+          "value": "other",
+          "label": "Aquecimento",
+          "localizedValue": "outro",
+          "currency": "",
+          "suffix": "",
+          "__typename": "Characteristic"
+        },
+        {
+          "key": "build_year",
+          "value": "2024",
+          "label": "Ano de construção",
+          "localizedValue": "2024",
+          "currency": "",
+          "suffix": "",
+          "__typename": "Characteristic"
+        },
+        {
+          "key": "construction_status",
+          "value": "ready_to_use",
+          "label": "Fase de acabamento",
+          "localizedValue": "pronto a habitar",
+          "currency": "",
+          "suffix": "",
+          "__typename": "Characteristic"
+        }
+      ],
+      "images": [
+        {
+          "thumbnail": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Imx4ZnpyaHk3bWw4ZTEtQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.cxE2Dvhq_SkHqau91xU2H2RyWZ2p1I8Tks8O46E7VMw/image;s=184x138;q=80",
+          "small": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Imx4ZnpyaHk3bWw4ZTEtQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.cxE2Dvhq_SkHqau91xU2H2RyWZ2p1I8Tks8O46E7VMw/image;s=314x236;q=80",
+          "medium": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Imx4ZnpyaHk3bWw4ZTEtQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.cxE2Dvhq_SkHqau91xU2H2RyWZ2p1I8Tks8O46E7VMw/image;s=655x491;q=80",
+          "large": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Imx4ZnpyaHk3bWw4ZTEtQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.cxE2Dvhq_SkHqau91xU2H2RyWZ2p1I8Tks8O46E7VMw/image;s=1280x1024;q=80",
+          "__typename": "AdImage"
+        },
+        {
+          "thumbnail": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImJzZDB4bms2bmF5azItQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.7s9OuZSBA0UFUjHu1KIfuwfztU8N-iY5S4ykTcJ2z-M/image;s=184x138;q=80",
+          "small": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImJzZDB4bms2bmF5azItQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.7s9OuZSBA0UFUjHu1KIfuwfztU8N-iY5S4ykTcJ2z-M/image;s=314x236;q=80",
+          "medium": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImJzZDB4bms2bmF5azItQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.7s9OuZSBA0UFUjHu1KIfuwfztU8N-iY5S4ykTcJ2z-M/image;s=655x491;q=80",
+          "large": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImJzZDB4bms2bmF5azItQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.7s9OuZSBA0UFUjHu1KIfuwfztU8N-iY5S4ykTcJ2z-M/image;s=1280x1024;q=80",
+          "__typename": "AdImage"
+        },
+        {
+          "thumbnail": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InkwYXJoYzh1M3puYzMtQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.f5dCwVas2zlFIZxKF6ULYyCoBiCnXUF2DRa5emAlXCg/image;s=184x138;q=80",
+          "small": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InkwYXJoYzh1M3puYzMtQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.f5dCwVas2zlFIZxKF6ULYyCoBiCnXUF2DRa5emAlXCg/image;s=314x236;q=80",
+          "medium": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InkwYXJoYzh1M3puYzMtQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.f5dCwVas2zlFIZxKF6ULYyCoBiCnXUF2DRa5emAlXCg/image;s=655x491;q=80",
+          "large": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InkwYXJoYzh1M3puYzMtQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.f5dCwVas2zlFIZxKF6ULYyCoBiCnXUF2DRa5emAlXCg/image;s=1280x1024;q=80",
+          "__typename": "AdImage"
+        },
+        {
+          "thumbnail": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImJvajg2Nm51d3J2ejEtQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.U-BPDUzQKSvKd6jh3T05CJPtO4Vj6sF_Vu5QgEg34rQ/image;s=184x138;q=80",
+          "small": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImJvajg2Nm51d3J2ejEtQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.U-BPDUzQKSvKd6jh3T05CJPtO4Vj6sF_Vu5QgEg34rQ/image;s=314x236;q=80",
+          "medium": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImJvajg2Nm51d3J2ejEtQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.U-BPDUzQKSvKd6jh3T05CJPtO4Vj6sF_Vu5QgEg34rQ/image;s=655x491;q=80",
+          "large": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImJvajg2Nm51d3J2ejEtQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.U-BPDUzQKSvKd6jh3T05CJPtO4Vj6sF_Vu5QgEg34rQ/image;s=1280x1024;q=80",
+          "__typename": "AdImage"
+        },
+        {
+          "thumbnail": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjZ4Y3dkYm1rM2RyZDMtQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.ZsTBAaT5-nA9ayDS841XrXyp3ET3NrN34UBg_pWN1WY/image;s=184x138;q=80",
+          "small": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjZ4Y3dkYm1rM2RyZDMtQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.ZsTBAaT5-nA9ayDS841XrXyp3ET3NrN34UBg_pWN1WY/image;s=314x236;q=80",
+          "medium": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjZ4Y3dkYm1rM2RyZDMtQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.ZsTBAaT5-nA9ayDS841XrXyp3ET3NrN34UBg_pWN1WY/image;s=655x491;q=80",
+          "large": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjZ4Y3dkYm1rM2RyZDMtQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.ZsTBAaT5-nA9ayDS841XrXyp3ET3NrN34UBg_pWN1WY/image;s=1280x1024;q=80",
+          "__typename": "AdImage"
+        },
+        {
+          "thumbnail": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Im01d3g3djE4Yzduay1BUFQiLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.l-c3fI9f7Um81-U6bFUiWsx8cK6GkKvEdFKwoMivTrs/image;s=184x138;q=80",
+          "small": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Im01d3g3djE4Yzduay1BUFQiLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.l-c3fI9f7Um81-U6bFUiWsx8cK6GkKvEdFKwoMivTrs/image;s=314x236;q=80",
+          "medium": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Im01d3g3djE4Yzduay1BUFQiLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.l-c3fI9f7Um81-U6bFUiWsx8cK6GkKvEdFKwoMivTrs/image;s=655x491;q=80",
+          "large": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Im01d3g3djE4Yzduay1BUFQiLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.l-c3fI9f7Um81-U6bFUiWsx8cK6GkKvEdFKwoMivTrs/image;s=1280x1024;q=80",
+          "__typename": "AdImage"
+        },
+        {
+          "thumbnail": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InJ5ZTl5OGVudXVpODEtQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.ja3sNK03X_Oo6K-RXgt2O9QhQCPO-HR_AfhwzyNSlAA/image;s=184x138;q=80",
+          "small": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InJ5ZTl5OGVudXVpODEtQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.ja3sNK03X_Oo6K-RXgt2O9QhQCPO-HR_AfhwzyNSlAA/image;s=314x236;q=80",
+          "medium": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InJ5ZTl5OGVudXVpODEtQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.ja3sNK03X_Oo6K-RXgt2O9QhQCPO-HR_AfhwzyNSlAA/image;s=655x491;q=80",
+          "large": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InJ5ZTl5OGVudXVpODEtQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.ja3sNK03X_Oo6K-RXgt2O9QhQCPO-HR_AfhwzyNSlAA/image;s=1280x1024;q=80",
+          "__typename": "AdImage"
+        },
+        {
+          "thumbnail": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InViendicmozeHEzeC1BUFQiLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.JVLoUNfRp-gSMmWcuKR0pkqspiJDIuzqJIoGESl-r3k/image;s=184x138;q=80",
+          "small": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InViendicmozeHEzeC1BUFQiLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.JVLoUNfRp-gSMmWcuKR0pkqspiJDIuzqJIoGESl-r3k/image;s=314x236;q=80",
+          "medium": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InViendicmozeHEzeC1BUFQiLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.JVLoUNfRp-gSMmWcuKR0pkqspiJDIuzqJIoGESl-r3k/image;s=655x491;q=80",
+          "large": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InViendicmozeHEzeC1BUFQiLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.JVLoUNfRp-gSMmWcuKR0pkqspiJDIuzqJIoGESl-r3k/image;s=1280x1024;q=80",
+          "__typename": "AdImage"
+        },
+        {
+          "thumbnail": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Im44bGgyNjNpbXBvci1BUFQiLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.2uwI4Z-skiWGSKlaoKg8t8aIx-hWU0S4bHV6CVlnLE0/image;s=184x138;q=80",
+          "small": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Im44bGgyNjNpbXBvci1BUFQiLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.2uwI4Z-skiWGSKlaoKg8t8aIx-hWU0S4bHV6CVlnLE0/image;s=314x236;q=80",
+          "medium": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Im44bGgyNjNpbXBvci1BUFQiLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.2uwI4Z-skiWGSKlaoKg8t8aIx-hWU0S4bHV6CVlnLE0/image;s=655x491;q=80",
+          "large": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Im44bGgyNjNpbXBvci1BUFQiLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.2uwI4Z-skiWGSKlaoKg8t8aIx-hWU0S4bHV6CVlnLE0/image;s=1280x1024;q=80",
+          "__typename": "AdImage"
+        },
+        {
+          "thumbnail": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImxydW9wNjdtZHN5di1BUFQiLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.bXiAfXOJDg_dVDrDtb8PamMywEFEupk2vj-fCJe3I28/image;s=184x138;q=80",
+          "small": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImxydW9wNjdtZHN5di1BUFQiLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.bXiAfXOJDg_dVDrDtb8PamMywEFEupk2vj-fCJe3I28/image;s=314x236;q=80",
+          "medium": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImxydW9wNjdtZHN5di1BUFQiLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.bXiAfXOJDg_dVDrDtb8PamMywEFEupk2vj-fCJe3I28/image;s=655x491;q=80",
+          "large": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImxydW9wNjdtZHN5di1BUFQiLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.bXiAfXOJDg_dVDrDtb8PamMywEFEupk2vj-fCJe3I28/image;s=1280x1024;q=80",
+          "__typename": "AdImage"
+        },
+        {
+          "thumbnail": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Im94aWQyYXB4MzB5Yy1BUFQiLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.6rHqD1hCdotZ9J_is2hiRSI41MaMcztcg3dAoXVTfrs/image;s=184x138;q=80",
+          "small": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Im94aWQyYXB4MzB5Yy1BUFQiLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.6rHqD1hCdotZ9J_is2hiRSI41MaMcztcg3dAoXVTfrs/image;s=314x236;q=80",
+          "medium": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Im94aWQyYXB4MzB5Yy1BUFQiLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.6rHqD1hCdotZ9J_is2hiRSI41MaMcztcg3dAoXVTfrs/image;s=655x491;q=80",
+          "large": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Im94aWQyYXB4MzB5Yy1BUFQiLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.6rHqD1hCdotZ9J_is2hiRSI41MaMcztcg3dAoXVTfrs/image;s=1280x1024;q=80",
+          "__typename": "AdImage"
+        },
+        {
+          "thumbnail": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Imc2bzdmZXN3Z3hyczMtQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.1_0zTOO58UVGsWZZqVGV1QtUZunuo-vgcqzNuLPIujA/image;s=184x138;q=80",
+          "small": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Imc2bzdmZXN3Z3hyczMtQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.1_0zTOO58UVGsWZZqVGV1QtUZunuo-vgcqzNuLPIujA/image;s=314x236;q=80",
+          "medium": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Imc2bzdmZXN3Z3hyczMtQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.1_0zTOO58UVGsWZZqVGV1QtUZunuo-vgcqzNuLPIujA/image;s=655x491;q=80",
+          "large": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Imc2bzdmZXN3Z3hyczMtQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.1_0zTOO58UVGsWZZqVGV1QtUZunuo-vgcqzNuLPIujA/image;s=1280x1024;q=80",
+          "__typename": "AdImage"
+        },
+        {
+          "thumbnail": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImtpYmZkYTJlNzNqaTItQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.FdHNLd3F9bLW5aAsHAmmYOvl7cYUPDUUB3gdFUYBLx0/image;s=184x138;q=80",
+          "small": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImtpYmZkYTJlNzNqaTItQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.FdHNLd3F9bLW5aAsHAmmYOvl7cYUPDUUB3gdFUYBLx0/image;s=314x236;q=80",
+          "medium": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImtpYmZkYTJlNzNqaTItQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.FdHNLd3F9bLW5aAsHAmmYOvl7cYUPDUUB3gdFUYBLx0/image;s=655x491;q=80",
+          "large": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImtpYmZkYTJlNzNqaTItQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.FdHNLd3F9bLW5aAsHAmmYOvl7cYUPDUUB3gdFUYBLx0/image;s=1280x1024;q=80",
+          "__typename": "AdImage"
+        }
+      ],
+      "links": {
+        "localPlanUrl": "",
+        "videoUrl": "",
+        "view3dUrl": "",
+        "walkaroundUrl": "",
+        "__typename": "AdvertLinks"
+      },
+      "location": {
+        "id": null,
+        "coordinates": {
+          "latitude": 41.16433741190637,
+          "longitude": -8.608189149806975,
+          "__typename": "Coordinates"
+        },
+        "mapDetails": {
+          "radius": 0,
+          "zoom": 14,
+          "__typename": "MapDetails"
+        },
+        "address": {
+          "street": {
+            "id": "175621",
+            "code": "",
+            "name": "Rua António Cândido",
+            "number": "",
+            "__typename": "Street"
+          },
+          "subdistrict": null,
+          "district": null,
+          "city": {
+            "id": "13643786",
+            "code": "paranhos-porto",
+            "name": "Paranhos",
+            "__typename": "City"
+          },
+          "municipality": null,
+          "county": {
+            "id": "190",
+            "code": "porto",
+            "name": "Porto",
+            "__typename": "County"
+          },
+          "province": {
+            "id": "13",
+            "code": "porto",
+            "name": "Porto",
+            "__typename": "Province"
+          },
+          "postalCode": null,
+          "__typename": "Address"
+        },
+        "reverseGeocoding": {
+          "locations": [
+            {
+              "id": "porto",
+              "locationLevel": "district",
+              "name": "Porto",
+              "fullName": "Porto",
+              "fullNameItems": [
+                "Porto"
+              ],
+              "parentIds": [],
+              "__typename": "BasicLocationObject"
+            },
+            {
+              "id": "porto/porto",
+              "locationLevel": "council",
+              "name": "Porto",
+              "fullName": "Porto, Porto",
+              "fullNameItems": [
+                "Porto",
+                "Porto"
+              ],
+              "parentIds": [
+                "porto"
+              ],
+              "__typename": "BasicLocationObject"
+            },
+            {
+              "id": "porto/porto/paranhos",
+              "locationLevel": "parish",
+              "name": "Paranhos",
+              "fullName": "Paranhos, Porto, Porto",
+              "fullNameItems": [
+                "Paranhos",
+                "Porto",
+                "Porto"
+              ],
+              "parentIds": [
+                "porto",
+                "porto/porto"
+              ],
+              "__typename": "BasicLocationObject"
+            },
+            {
+              "id": "porto/porto/paranhos/covelo--monte-de-sao-joao",
+              "locationLevel": "neighborhood",
+              "name": "Covelo - Monte de São João",
+              "fullName": "Covelo - Monte de São João, Paranhos, Porto, Porto",
+              "fullNameItems": [
+                "Covelo - Monte de São João",
+                "Paranhos",
+                "Porto",
+                "Porto"
+              ],
+              "parentIds": [
+                "porto",
+                "porto/porto",
+                "porto/porto/paranhos"
+              ],
+              "__typename": "BasicLocationObject"
+            }
+          ],
+          "__typename": "ReverseGeocoding"
+        },
+        "__typename": "LocationDetails"
+      },
+      "property": {
+        "id": null,
+        "type": "FLAT",
+        "rent": null,
+        "costs": [],
+        "condition": "READY_TO_USE",
+        "properties": {
+          "equipment": [
+            "dishwasher",
+            "fridge",
+            "oven",
+            "stove",
+            "air_conditioning"
+          ],
+          "areas": [
+            "garage",
+            "garden",
+            "terrace"
+          ],
+          "floor": "GROUND_FLOOR",
+          "kitchen": null,
+          "parking": [],
+          "numberOfRooms": 3,
+          "rooms": [],
+          "type": null,
+          "windowsOrientation": [],
+          "__typename": "FlatProperties"
+        },
+        "buildingProperties": {
+          "year": 2024,
+          "type": "BLOCK",
+          "material": null,
+          "windows": [],
+          "heating": "OTHER",
+          "numberOfFloors": null,
+          "conveniences": [
+            "LIFT",
+            "INTERNET"
+          ],
+          "security": [
+            "ANTI_BURGLARY_DOOR",
+            "MONITORING",
+            "ROLLER_SHUTTERS"
+          ],
+          "__typename": "FlatBuildingProperties"
+        },
+        "ownership": null,
+        "area": {
+          "value": 171.78,
+          "unit": "M2",
+          "__typename": "Area"
+        },
+        "__typename": "Flat"
+      },
+      "owner": {
+        "id": 138823,
+        "name": "José Mário Batista",
+        "type": "private",
+        "phones": [
+          "+351914954642"
+        ],
+        "imageUrl": "",
+        "contacts": [],
+        "__typename": "LegacyAdvertOwner"
+      },
+      "agency": null,
+      "seo": {
+        "title": "T2, apartamento para comprar - Rua António Cândido, Paranhos - 17385067 • www.imovirtual.com",
+        "description": "Excelente apartamento para venda com T2 em Rua António Cândido, Paranhos, por 615 000 €. Este apartamento para venda localizado no rés do chão piso tem 171,78 m² de àrea útil e 171,78 m² de àrea bruta. De acordo com O proprietário os atributos mais importantes são Acessibilidade para pessoas com mobilidade reduzida, ar condicionado, garagemSITE 17385067",
+        "__typename": "AdvertSeo"
+      },
+      "breadcrumbs": [
+        {
+          "label": "Apartamento para comprar",
+          "locative": "",
+          "url": "https://www.imovirtual.com/pt/anuncios/comprar/apartamento",
+          "__typename": "AdvertBreadcrumb"
+        },
+        {
+          "label": "Porto (distrito)",
+          "locative": "Porto (distrito)",
+          "url": "https://www.imovirtual.com/pt/anuncios/comprar/apartamento/porto",
+          "__typename": "AdvertBreadcrumb"
+        },
+        {
+          "label": "Porto",
+          "locative": "Porto",
+          "url": "https://www.imovirtual.com/pt/anuncios/comprar/apartamento/porto",
+          "__typename": "AdvertBreadcrumb"
+        },
+        {
+          "label": "Paranhos",
+          "locative": "Paranhos",
+          "url": "https://www.imovirtual.com/pt/anuncios/comprar/apartamento/paranhos-porto",
+          "__typename": "AdvertBreadcrumb"
+        },
+        {
+          "label": "Rua António Cândido",
+          "locative": "Rua António Cândido",
+          "url": "https://www.imovirtual.com/pt/anuncios/comprar/apartamento/paranhos-porto?locations%5B0%5D%5BstreetId%5D=175621&locations%5B0%5D%5BcityId%5D=13643786&locations=%5Bstreets-175621%5D",
+          "__typename": "AdvertBreadcrumb"
+        },
+        {
+          "label": "Apart T2+1 Fração A - Rua António Candido, Porto - Parque Covelo",
+          "locative": "",
+          "url": "",
+          "__typename": "AdvertBreadcrumb"
+        }
+      ],
+      "userAdverts": [
+        {
+          "adId": "16785713",
+          "url": "https://www.imovirtual.com/pt/anuncio/arrendar-apartamento-t1-2-frentes-4-andar-rua-de-camoes-porto-ID18qJj",
+          "image": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InA3NThmNDNuMGhtNzMtQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.jjGPYPlzH0x-j_D4Re0wvJAVkJdORQRZFtOxwYl1TfU/image;s=314x236;q=80",
+          "roomsNum": "2",
+          "pricePerM": 19,
+          "price": {
+            "value": "1200",
+            "unit": "EUR",
+            "__typename": "UserAdvertPrice"
+          },
+          "netArea": "63.6",
+          "title": "Arrendar Apartamento T1 2 frentes 4º andar, Rua de Camões - Porto",
+          "__typename": "UserAdvert"
+        }
+      ],
+      "paginatedUnits": {
+        "items": null,
+        "isPriceHidden": null,
+        "pagination": null,
+        "facets": null,
+        "__typename": "AdvertsPages"
+      },
+      "specialOffer": null,
+      "__typename": "Advert",
+      "contactDetails": {
+        "name": "José Mário Batista",
+        "type": "private",
+        "phones": [
+          "+351914954642"
+        ],
+        "imageUrl": ""
+      }
+    },
+    "relativeUrl": "/pt/anuncio/apart-t2-1-fracao-a-rua-antonio-candido-porto-parque-covelo-ID1aVEj",
+    "adTrackingData": {
+      "touch_point_page": "ad_page",
+      "lat": 41.16433741190637,
+      "long": -8.608189149806975,
+      "ad_photo": 13,
+      "price_currency": "EUR",
+      "cat_l1_id": 101,
+      "cat_l1_name": "apartments",
+      "special_offer_type": null,
+      "ad_id": "17385067",
+      "ad_price": 615000,
+      "business": "comprar",
+      "city_id": "13643786",
+      "city_name": "paranhos-porto",
+      "market": "primary",
+      "poster_type": "private",
+      "surface": null,
+      "region_id": "porto",
+      "region_name": "porto",
+      "subregion_id": "porto",
+      "seller_id": "138823",
+      "obido_advert": "n"
+    },
+    "referer": null,
+    "currentUser": null,
+    "cookiesCategorisation": {},
+    "experiments": {},
+    "featureFlags": {
+      "isAdAvmModuleEnabled": false,
+      "isAdFinanceBannerEnabled": false,
+      "isAdFinanceLinkEnabled": false,
+      "isAdMortgageSimulatorEnabled": false,
+      "isFeaturedDevelopmentVASEnabled": true,
+      "isListingRentPriceEnabled": false,
+      "isNewApartmentsForSalePostingFormEnabled": false,
+      "isOldSaveSearchQueryEnabled": false,
+      "isFinanceCheckboxEnabled": false,
+      "isObservedAdsPageEnabled": true,
+      "isBikPromotionEnabled": true,
+      "isSpecialOfferForUnitsExperimentEnabled": false,
+      "isSpecialOfferEnabled": true,
+      "isSeoAdsDescriptionEnabled": false,
+      "isPropertyEvaluationPageActive": false,
+      "isSettingsContactsTabMigrated": false,
+      "isRegularNmfEnabled": true,
+      "isExtendedBillingDataEnabled": false,
+      "isRESellerLeadsActive": false,
+      "isBadgesFeatureEnabled": false,
+      "isNexusHomePageEnabled": true,
+      "isPostPaymentOptionEnabled": true,
+      "isSettingsOurTeamTabEnabled": false,
+      "isHCIAMEnabled": false,
+      "isSellerLeadsMvpEnabled": false,
+      "isNexusSellerPageEnabled": false,
+      "isHCIAMAgencyRegistrationEnabled": true,
+      "isHCIAMAgentRegistrationEnabled": true,
+      "isHCIAMDeveloperRegistrationEnabled": true,
+      "isMessagingCenterEnabled": false,
+      "isMessagingCenterChatEnabled": false,
+      "__typename": "FeatureFlags"
+    },
+    "laquesisResult": null,
+    "userSessionId": "76427afb-e5cd-4d24-ae31-4087f2fab7f8",
+    "unconfirmedUserAuthToken": null,
+    "desktopHeader": {
+      "Is-Desktop": "true"
+    }
+  },
+  "__N_SSP": true
+}

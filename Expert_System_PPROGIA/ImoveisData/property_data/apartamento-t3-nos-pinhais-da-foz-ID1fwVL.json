@@ -1,8 +1,8 @@
 {
   "pageProps": {
     "lang": "pt",
-    "_sentryTraceData": "c2fb9d43a6c748f8870de6c5bd510c99-a1ad94d08b580b2b-0",
-    "_sentryBaggage": "sentry-environment=imovirtualpt2-prd,sentry-release=frontend-platform%40v20240930T093022-imovirtualpt2,sentry-public_key=feffe528c390ea66992a4a05131c3c68,sentry-trace_id=c2fb9d43a6c748f8870de6c5bd510c99,sentry-transaction=%2Fpt%2Fanuncio%2F%5Bid%5D,sentry-sampled=false",
+    "_sentryTraceData": "7986820e7c4e4e73997e90efa3901d15-9535a8f83801e460-0",
+    "_sentryBaggage": "sentry-environment=imovirtualpt2-prd,sentry-release=frontend-platform%40v20241004T114115-imovirtualpt2,sentry-public_key=feffe528c390ea66992a4a05131c3c68,sentry-trace_id=7986820e7c4e4e73997e90efa3901d15,sentry-transaction=%2Fpt%2Fanuncio%2F%5Bid%5D,sentry-sampled=false",
     "id": "1fwVL",
     "ad": {
       "id": 18474063,
@@ -18,7 +18,7 @@
       "advertType": "AGENCY",
       "source": "urn:partner:ego",
       "createdAt": "2024-09-18T18:36:10+01:00",
-      "modifiedAt": "2024-09-30T13:30:16+01:00",
+      "modifiedAt": "2024-10-04T13:30:18+01:00",
       "description": "Apartamento T3 nos Pinhais da Foz<br/>\r\n<br/>\r\nDescubra este incrível apartamento situado num edifício de prestígio.<br/>\r\nCom uma ampla sala comum, cozinha funcional, três confortáveis quartos e dois banheiros completos, este lar oferece praticidade e conforto.<br/>\r\nA área de lavandaria e o espaço para arrumos acrescentam conveniência.<br/>\r\n<br/>\r\nLocalizado numa zona residencial tranquila, você terá fácil acesso a diversas opções de serviços, como cafés, padarias, farmácias e ginásios, garantindo uma excelente qualidade de vida.<br/>\r\n<br/>\r\nA 650 metros da Fundação Serralves<br/>\r\nA 6 minutos da entrada da A28<br/>\r\nA 850 metros da Escola Básica dos 2.º e 3.º Ciclos Francisco Torrinha<br/>\r\nA 4 minutos do Colégio de Nossa Senhora do Rosário<br/>\r\nA 1.2 km da Praia dos ingleses<br/>\r\n <br/>\r\n<br/>\r\nREF 100518. Veja este e outros imóveis em  (url) <br/>\r\nIntermediário de crédito aprovado pelo Banco de Portugal. Tratamos de toda a documentação sem custos para o cliente.<br/>\r\n______<br/>\r\nFundada há 19 anos, a Condelix é uma agência imobiliária de capital português que assume, atualmente, uma posição privilegiada no mercado imobiliário nacional.<br/>\r\nCom sólidas sinergias com uma rede de construtores, entidades bancárias e fundos de investimento, garantimos uma abordagem unificada para os nossos clientes, onde quer que estejam e em qualquer localização que desejem comprar, arrendar ou vender um imóvel. <br/>\r\nCategoria Energética: C<br/>\n<br/>\n <br/>\r\nEnergy Rating: C",
       "developmentId": 0,
       "developmentTitle": "",
@@ -252,13 +252,13 @@
         "id": 101,
         "name": [
           {
-            "locale": "pt",
-            "value": "Apartamentos",
+            "locale": "en",
+            "value": "apartments",
             "__typename": "LocalizedString"
           },
           {
-            "locale": "en",
-            "value": "apartments",
+            "locale": "pt",
+            "value": "Apartamentos",
             "__typename": "LocalizedString"
           }
         ],
@@ -765,8 +765,38 @@
           "__typename": "UserAdvert"
         },
         {
+          "adId": "18492091",
+          "url": "https://www.imovirtual.com/pt/anuncio/apartamento-t2-para-venda-em-paranhos-ID1fADx",
+          "image": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjJ1eGJiNGVoM2t2azEtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.eLIEfKrQGzGMJqpg9IzoJEwyWh5tDK84YzM5RiKhqZs/image;s=314x236;q=80",
+          "roomsNum": "3",
+          "pricePerM": 4164,
+          "price": {
+            "value": "306901",
+            "unit": "EUR",
+            "__typename": "UserAdvertPrice"
+          },
+          "netArea": "73.7",
+          "title": "Apartamento T2 para venda em Paranhos",
+          "__typename": "UserAdvert"
+        },
+        {
+          "adId": "18492084",
+          "url": "https://www.imovirtual.com/pt/anuncio/apartamento-t1-1-para-venda-em-paranhos-ID1fADq",
+          "image": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImR5b3l4cHY0aWhoMTMtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.7c2HzDeUKHES5SFRgFoZ53ZeSl-nu15xyu3WFmCgUM0/image;s=314x236;q=80",
+          "roomsNum": "2",
+          "pricePerM": 4246,
+          "price": {
+            "value": "225900",
+            "unit": "EUR",
+            "__typename": "UserAdvertPrice"
+          },
+          "netArea": "53.2",
+          "title": "Apartamento T1+1 para venda em Paranhos",
+          "__typename": "UserAdvert"
+        },
+        {
           "adId": "18472151",
-          "url": "https://www.imovirtual.com/pt/anuncio/apartamento-t1-venda-matosinhos-ID1fwrW",
+          "url": "https://www.imovirtual.com/pt/anuncio/t1-localizado-em-leca-da-palmeira-ID1fwrW",
           "image": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImJ1MndsdDBnaHc4bDMtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.we6uUGmfrMh-JnbKRHtoc9uHvnYW5qUVEZqC2Gc5Byk/image;s=314x236;q=80",
           "roomsNum": "2",
           "pricePerM": 5024,
@@ -776,37 +806,7 @@
             "__typename": "UserAdvertPrice"
           },
           "netArea": "41.8",
-          "title": "Apartamento T1 Venda Matosinhos",
-          "__typename": "UserAdvert"
-        },
-        {
-          "adId": "18478751",
-          "url": "https://www.imovirtual.com/pt/anuncio/apartamento-t3-luxuoso-e-moderno-em-camarate-ID1fxan",
-          "image": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IndkNnRneDUwMnhmZy1FQ09TWVNURU0iLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.GtdJFjROxN0IBSzrSDfm_Sn9KhDfmxX2n7SeAfwjb-k/image;s=314x236;q=80",
-          "roomsNum": "4",
-          "pricePerM": 2237,
-          "price": {
-            "value": "310000",
-            "unit": "EUR",
-            "__typename": "UserAdvertPrice"
-          },
-          "netArea": "138.6",
-          "title": "Apartamento T3 luxuoso e moderno, em Camarate",
-          "__typename": "UserAdvert"
-        },
-        {
-          "adId": "17519189",
-          "url": "https://www.imovirtual.com/pt/anuncio/apartamento-t3-novo-com-varanda-em-conceicao-e-cabanas-de-tavira-ID1bwxz",
-          "image": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjYzeTYybjQwNmd0ci1FQ09TWVNURU0iLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.RMMram5dxfgl8VQmNebgMf1lPCOe7cBVnwUO-kWO2fY/image;s=314x236;q=80",
-          "roomsNum": "4",
-          "pricePerM": 2756,
-          "price": {
-            "value": "320000",
-            "unit": "EUR",
-            "__typename": "UserAdvertPrice"
-          },
-          "netArea": "116.1",
-          "title": "Apartamento T3 novo com varanda em Conceição e Cabanas de Tavira",
+          "title": "T1 localizado em Leça da Palmeira",
           "__typename": "UserAdvert"
         }
       ],
@@ -836,7 +836,7 @@
       "ad_photo": 24,
       "price_currency": "EUR",
       "cat_l1_id": 101,
-      "cat_l1_name": "Apartamentos",
+      "cat_l1_name": "apartments",
       "special_offer_type": null,
       "ad_id": "18474063",
       "ad_price": 490000,
@@ -865,7 +865,6 @@
       "isListingRentPriceEnabled": false,
       "isNewApartmentsForSalePostingFormEnabled": false,
       "isOldSaveSearchQueryEnabled": false,
-      "shouldUseNewInformation": true,
       "isFinanceCheckboxEnabled": false,
       "isObservedAdsPageEnabled": true,
       "isBikPromotionEnabled": true,
@@ -887,10 +886,12 @@
       "isHCIAMAgencyRegistrationEnabled": true,
       "isHCIAMAgentRegistrationEnabled": true,
       "isHCIAMDeveloperRegistrationEnabled": true,
+      "isMessagingCenterEnabled": false,
+      "isMessagingCenterChatEnabled": false,
       "__typename": "FeatureFlags"
     },
     "laquesisResult": null,
-    "userSessionId": "096ae068-6b7d-468e-a424-72faa335a517",
+    "userSessionId": "7cd4fed3-2c41-4245-aae1-d7ce184b8f73",
     "unconfirmedUserAuthToken": null,
     "desktopHeader": {
       "Is-Desktop": "true"

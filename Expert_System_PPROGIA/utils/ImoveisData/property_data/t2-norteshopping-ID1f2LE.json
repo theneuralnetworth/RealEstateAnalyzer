@@ -1,0 +1,927 @@
+{
+  "pageProps": {
+    "lang": "pt",
+    "_sentryTraceData": "a19b2de373cd40a0a71084b6c4c0386c-803d4fb3bf7ac681-0",
+    "_sentryBaggage": "sentry-environment=imovirtualpt2-prd,sentry-release=frontend-platform%40v20241004T114115-imovirtualpt2,sentry-public_key=feffe528c390ea66992a4a05131c3c68,sentry-trace_id=a19b2de373cd40a0a71084b6c4c0386c,sentry-transaction=%2Fpt%2Fanuncio%2F%5Bid%5D,sentry-sampled=false",
+    "id": "1f2LE",
+    "ad": {
+      "id": 18361898,
+      "price": {
+        "type": "",
+        "__typename": "AdvertPrice"
+      },
+      "market": "SECONDARY",
+      "services": [],
+      "publicId": "",
+      "slug": "t2-norteshopping-ID1f2LE",
+      "advertiserType": "private",
+      "advertType": "PRIVATE",
+      "source": "urn:site:local",
+      "createdAt": "2024-06-19T14:33:26+01:00",
+      "modifiedAt": "2024-09-27T23:23:47+01:00",
+      "description": "<p>Apartamento T2, devoluto, ótimas áreas, cozinha com placa e forno, lavandaria e despensa, sala com varanda marquisada, roupeiros, WC completo, lugar de garagem e arrumos.</p>\r\n<p></p>\r\n<p>Localizada privilegiada.</p>\r\n<p>A 250 mts. da Estação do Metro NorteShopping/Sete Bicas (5 min a pé).</p>\r\n<p>A 350 mts do NorteShopping / acesso à A28/IC1.</p>\r\n<p>Em frente à “Staples” (Edifício da Agência do Millennium BCP).</p>\r\n<p></p>\r\n<p>POSSIBILIDADE DE PERMUTA.</p>\r\n<p></p>\r\n<p>Marque já mesmo a sua visita.</p>\r\n<p></p>\r\n<p>SÓ A PARTICULARES.</p>",
+      "developmentId": 0,
+      "developmentTitle": "",
+      "developmentUrl": "",
+      "exclusiveOffer": false,
+      "externalId": "",
+      "features": [
+        "internet",
+        "forno",
+        "fogão",
+        "varanda",
+        "garagem",
+        "elevador",
+        "lavandaria"
+      ],
+      "creationSource": "none",
+      "featuresByCategory": [
+        {
+          "label": "Utilidades",
+          "values": [
+            "internet"
+          ],
+          "__typename": "FeatureGroup"
+        },
+        {
+          "label": "Equipamento",
+          "values": [
+            "forno",
+            "fogão"
+          ],
+          "__typename": "FeatureGroup"
+        },
+        {
+          "label": "Informações adicionais",
+          "values": [
+            "varanda",
+            "garagem",
+            "elevador",
+            "lavandaria"
+          ],
+          "__typename": "FeatureGroup"
+        }
+      ],
+      "featuresWithoutCategory": [],
+      "openDay": null,
+      "referenceId": "",
+      "target": {
+        "Area": "80",
+        "AreaRange": [],
+        "Bathrooms_num": [
+          "1"
+        ],
+        "Build_year": "1993",
+        "Building_floors_num": "4",
+        "Building_ownership": [
+          "full_ownership"
+        ],
+        "Building_type": [
+          "apartment"
+        ],
+        "City": "sao-mamede-de-infesta-e-senhora-da-hora-matosinhos",
+        "City_id": "13639694",
+        "Construction_status": [
+          "ready_to_use"
+        ],
+        "Country": "Portugal",
+        "Energy_certificate": [
+          "c"
+        ],
+        "Equipment_types": [
+          "oven",
+          "stove"
+        ],
+        "Extras_types": [
+          "balcony",
+          "garage",
+          "lift",
+          "usable_room"
+        ],
+        "Floor_no": [
+          "floor_2"
+        ],
+        "Id": "18361898",
+        "MarketType": "secondary",
+        "Media_types": [
+          "internet"
+        ],
+        "ObidoAdvert": "n",
+        "OfferType": "comprar",
+        "Photo": "aHR0cHM6Ly9pcmVsYW5kLmFwb2xsby5vbHhjZG4uY29tL3YxL2ZpbGVzL2V5Sm1iaUk2SWpnMWRtNTBkVEpvYURVMlp6RXRRVkJVSWl3aWR5STZXM3NpWm00aU9pSTJPVzVzY0dFM1pXTnhiVGN4TFVGUVZDSXNJbk1pT2lJeE5DSXNJbkFpT2lJeE1Dd3RNVEFpTENKaElqb2lNQ0o5WFgwLkJaRGp4dGVhZ1I3S2VnaW1EdlViUHU4S0F0RXhNWUN3Q1NfMFRwdlhwcGMvaW1hZ2U7cz02NTV4NDkxO3E9ODA=",
+        "Price": 280000,
+        "PriceRange": [
+          "250001-500000"
+        ],
+        "Price_per_m": 3500,
+        "ProperType": "apartamento",
+        "Province": "porto",
+        "RegularUser": "y",
+        "Rooms_num": [
+          "3"
+        ],
+        "Subregion": "matosinhos",
+        "Title": "VDIgLSBOb3J0ZVNob3BwaW5n",
+        "Windows_type": [
+          "aluminium"
+        ],
+        "categoryId": "101",
+        "env": "production",
+        "hidePrice": "0",
+        "seller_id": "2063596",
+        "user_type": "private"
+      },
+      "title": "T2 - NorteShopping",
+      "topInformation": [
+        {
+          "label": "area",
+          "values": [
+            "80"
+          ],
+          "unit": "m²",
+          "__typename": "AdditionalInfo"
+        },
+        {
+          "label": "building_ownership",
+          "values": [
+            "building_ownership::full_ownership"
+          ],
+          "unit": "",
+          "__typename": "AdditionalInfo"
+        },
+        {
+          "label": "rooms_num",
+          "values": [
+            "3"
+          ],
+          "unit": "",
+          "__typename": "AdditionalInfo"
+        },
+        {
+          "label": "construction_status",
+          "values": [
+            "construction_status::ready_to_use"
+          ],
+          "unit": "",
+          "__typename": "AdditionalInfo"
+        },
+        {
+          "label": "floor",
+          "values": [
+            "floor_no::floor_2",
+            "/4"
+          ],
+          "unit": "",
+          "__typename": "AdditionalInfo"
+        },
+        {
+          "label": "outdoor",
+          "values": [
+            "extras_types::balcony"
+          ],
+          "unit": "",
+          "__typename": "AdditionalInfo"
+        },
+        {
+          "label": "rent",
+          "values": [],
+          "unit": "",
+          "__typename": "AdditionalInfo"
+        },
+        {
+          "label": "car",
+          "values": [
+            "extras_types::garage"
+          ],
+          "unit": "",
+          "__typename": "AdditionalInfo"
+        },
+        {
+          "label": "remote_services",
+          "values": [],
+          "unit": "",
+          "__typename": "AdditionalInfo"
+        },
+        {
+          "label": "heating",
+          "values": [],
+          "unit": "",
+          "__typename": "AdditionalInfo"
+        }
+      ],
+      "additionalInformation": [
+        {
+          "label": "market",
+          "values": [
+            "market::secondary"
+          ],
+          "unit": "",
+          "__typename": "AdditionalInfo"
+        },
+        {
+          "label": "advertiser_type",
+          "values": [
+            "advertiser_type::private"
+          ],
+          "unit": "",
+          "__typename": "AdditionalInfo"
+        },
+        {
+          "label": "bathrooms_num",
+          "values": [
+            "1"
+          ],
+          "unit": "",
+          "__typename": "AdditionalInfo"
+        },
+        {
+          "label": "free_from",
+          "values": [],
+          "unit": "",
+          "__typename": "AdditionalInfo"
+        },
+        {
+          "label": "build_year",
+          "values": [
+            "1993"
+          ],
+          "unit": "",
+          "__typename": "AdditionalInfo"
+        },
+        {
+          "label": "building_type",
+          "values": [
+            "building_type-15::apartment"
+          ],
+          "unit": "",
+          "__typename": "AdditionalInfo"
+        },
+        {
+          "label": "windows_type",
+          "values": [
+            "windows_type::aluminium"
+          ],
+          "unit": "",
+          "__typename": "AdditionalInfo"
+        },
+        {
+          "label": "lift",
+          "values": [
+            "::y"
+          ],
+          "unit": "",
+          "__typename": "AdditionalInfo"
+        },
+        {
+          "label": "media_types",
+          "values": [
+            "media_types::internet"
+          ],
+          "unit": "",
+          "__typename": "AdditionalInfo"
+        },
+        {
+          "label": "security_types",
+          "values": [],
+          "unit": "",
+          "__typename": "AdditionalInfo"
+        },
+        {
+          "label": "equipment_types",
+          "values": [
+            "equipment_types::oven",
+            "equipment_types::stove"
+          ],
+          "unit": "",
+          "__typename": "AdditionalInfo"
+        },
+        {
+          "label": "extras_types",
+          "values": [
+            "extras_types::usable_room"
+          ],
+          "unit": "",
+          "__typename": "AdditionalInfo"
+        },
+        {
+          "label": "building_material",
+          "values": [],
+          "unit": "",
+          "__typename": "AdditionalInfo"
+        }
+      ],
+      "url": "https://www.imovirtual.com/pt/anuncio/t2-norteshopping-ID1f2LE",
+      "status": "active",
+      "adCategory": {
+        "id": "101",
+        "name": "FLAT",
+        "type": "SELL",
+        "__typename": "AdvertCategory"
+      },
+      "category": {
+        "id": 101,
+        "name": [
+          {
+            "locale": "pt",
+            "value": "Apartamentos",
+            "__typename": "LocalizedString"
+          },
+          {
+            "locale": "en",
+            "value": "apartments",
+            "__typename": "LocalizedString"
+          }
+        ],
+        "__typename": "AdCategory"
+      },
+      "characteristics": [
+        {
+          "key": "price",
+          "value": "280000",
+          "label": "Preço",
+          "localizedValue": "280 000 €",
+          "currency": "EUR",
+          "suffix": "",
+          "__typename": "Characteristic"
+        },
+        {
+          "key": "m",
+          "value": "80",
+          "label": "Área",
+          "localizedValue": "80 m²",
+          "currency": "",
+          "suffix": "",
+          "__typename": "Characteristic"
+        },
+        {
+          "key": "price_per_m",
+          "value": "3500",
+          "label": "preço/m2",
+          "localizedValue": "3 500 €/m²",
+          "currency": "",
+          "suffix": "",
+          "__typename": "Characteristic"
+        },
+        {
+          "key": "rooms_num",
+          "value": "3",
+          "label": "Tipologia",
+          "localizedValue": "T2",
+          "currency": "",
+          "suffix": "",
+          "__typename": "Characteristic"
+        },
+        {
+          "key": "market",
+          "value": "secondary",
+          "label": "Nova construção",
+          "localizedValue": "não",
+          "currency": "",
+          "suffix": "",
+          "__typename": "Characteristic"
+        },
+        {
+          "key": "energy_certificate",
+          "value": "c",
+          "label": "Certificado energético",
+          "localizedValue": "C",
+          "currency": "",
+          "suffix": "",
+          "__typename": "Characteristic"
+        },
+        {
+          "key": "building_type",
+          "value": "apartment",
+          "label": "Tipo de imóvel",
+          "localizedValue": "prédio",
+          "currency": "",
+          "suffix": "",
+          "__typename": "Characteristic"
+        },
+        {
+          "key": "bathrooms_num",
+          "value": "1",
+          "label": "N.º de casas de banho",
+          "localizedValue": "1",
+          "currency": "",
+          "suffix": "",
+          "__typename": "Characteristic"
+        },
+        {
+          "key": "floor_no",
+          "value": "floor_2",
+          "label": "Andar",
+          "localizedValue": "2",
+          "currency": "",
+          "suffix": "",
+          "__typename": "Characteristic"
+        },
+        {
+          "key": "building_floors_num",
+          "value": "4",
+          "label": "N.º de andares",
+          "localizedValue": "4",
+          "currency": "",
+          "suffix": "",
+          "__typename": "Characteristic"
+        },
+        {
+          "key": "windows_type",
+          "value": "aluminium",
+          "label": "Janelas",
+          "localizedValue": "alumínio",
+          "currency": "",
+          "suffix": "",
+          "__typename": "Characteristic"
+        },
+        {
+          "key": "build_year",
+          "value": "1993",
+          "label": "Ano de construção",
+          "localizedValue": "1993",
+          "currency": "",
+          "suffix": "",
+          "__typename": "Characteristic"
+        },
+        {
+          "key": "construction_status",
+          "value": "ready_to_use",
+          "label": "Fase de acabamento",
+          "localizedValue": "pronto a habitar",
+          "currency": "",
+          "suffix": "",
+          "__typename": "Characteristic"
+        },
+        {
+          "key": "building_ownership",
+          "value": "full_ownership",
+          "label": "Forma de propriedade",
+          "localizedValue": "propriedade plena",
+          "currency": "",
+          "suffix": "",
+          "__typename": "Characteristic"
+        }
+      ],
+      "images": [
+        {
+          "thumbnail": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Ijg1dm50dTJoaDU2ZzEtQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.BZDjxteagR7KegimDvUbPu8KAtExMYCwCS_0TpvXppc/image;s=184x138;q=80",
+          "small": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Ijg1dm50dTJoaDU2ZzEtQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.BZDjxteagR7KegimDvUbPu8KAtExMYCwCS_0TpvXppc/image;s=314x236;q=80",
+          "medium": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Ijg1dm50dTJoaDU2ZzEtQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.BZDjxteagR7KegimDvUbPu8KAtExMYCwCS_0TpvXppc/image;s=655x491;q=80",
+          "large": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Ijg1dm50dTJoaDU2ZzEtQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.BZDjxteagR7KegimDvUbPu8KAtExMYCwCS_0TpvXppc/image;s=1280x1024;q=80",
+          "__typename": "AdImage"
+        },
+        {
+          "thumbnail": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjVyaTJhaG96czJ1czItQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.HqLvM5dE3Jo78GJlH8pIRRGN6Qabm-koYsv7Ymrp3WA/image;s=184x138;q=80",
+          "small": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjVyaTJhaG96czJ1czItQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.HqLvM5dE3Jo78GJlH8pIRRGN6Qabm-koYsv7Ymrp3WA/image;s=314x236;q=80",
+          "medium": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjVyaTJhaG96czJ1czItQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.HqLvM5dE3Jo78GJlH8pIRRGN6Qabm-koYsv7Ymrp3WA/image;s=655x491;q=80",
+          "large": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjVyaTJhaG96czJ1czItQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.HqLvM5dE3Jo78GJlH8pIRRGN6Qabm-koYsv7Ymrp3WA/image;s=1280x1024;q=80",
+          "__typename": "AdImage"
+        },
+        {
+          "thumbnail": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjRobG54cGcxYjgxejItQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.8KoOtDafm2LXTUkyQ4prZni7XBcNIhsDuHrmt9ZTTF8/image;s=184x138;q=80",
+          "small": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjRobG54cGcxYjgxejItQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.8KoOtDafm2LXTUkyQ4prZni7XBcNIhsDuHrmt9ZTTF8/image;s=314x236;q=80",
+          "medium": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjRobG54cGcxYjgxejItQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.8KoOtDafm2LXTUkyQ4prZni7XBcNIhsDuHrmt9ZTTF8/image;s=655x491;q=80",
+          "large": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjRobG54cGcxYjgxejItQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.8KoOtDafm2LXTUkyQ4prZni7XBcNIhsDuHrmt9ZTTF8/image;s=1280x1024;q=80",
+          "__typename": "AdImage"
+        },
+        {
+          "thumbnail": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Ijg1bGE0MThjMXA0bjEtQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.YT6XnmEe-eQeEDCPEgknKSJUYxBV6HPL7aDFK0FAIGQ/image;s=184x138;q=80",
+          "small": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Ijg1bGE0MThjMXA0bjEtQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.YT6XnmEe-eQeEDCPEgknKSJUYxBV6HPL7aDFK0FAIGQ/image;s=314x236;q=80",
+          "medium": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Ijg1bGE0MThjMXA0bjEtQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.YT6XnmEe-eQeEDCPEgknKSJUYxBV6HPL7aDFK0FAIGQ/image;s=655x491;q=80",
+          "large": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Ijg1bGE0MThjMXA0bjEtQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.YT6XnmEe-eQeEDCPEgknKSJUYxBV6HPL7aDFK0FAIGQ/image;s=1280x1024;q=80",
+          "__typename": "AdImage"
+        },
+        {
+          "thumbnail": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjUyenNqdTF4MmZ2OS1BUFQiLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.zzxOTfJFFbk2-u6eWOlR6bRvycex-bVuazG27w_PpX8/image;s=184x138;q=80",
+          "small": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjUyenNqdTF4MmZ2OS1BUFQiLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.zzxOTfJFFbk2-u6eWOlR6bRvycex-bVuazG27w_PpX8/image;s=314x236;q=80",
+          "medium": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjUyenNqdTF4MmZ2OS1BUFQiLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.zzxOTfJFFbk2-u6eWOlR6bRvycex-bVuazG27w_PpX8/image;s=655x491;q=80",
+          "large": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjUyenNqdTF4MmZ2OS1BUFQiLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.zzxOTfJFFbk2-u6eWOlR6bRvycex-bVuazG27w_PpX8/image;s=1280x1024;q=80",
+          "__typename": "AdImage"
+        },
+        {
+          "thumbnail": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InBsbTd6anFsNWhxYjEtQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.nBR3hnsIdamlzxq9yGpAAtkJJvqy320lVJPr2-7Soeg/image;s=184x138;q=80",
+          "small": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InBsbTd6anFsNWhxYjEtQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.nBR3hnsIdamlzxq9yGpAAtkJJvqy320lVJPr2-7Soeg/image;s=314x236;q=80",
+          "medium": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InBsbTd6anFsNWhxYjEtQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.nBR3hnsIdamlzxq9yGpAAtkJJvqy320lVJPr2-7Soeg/image;s=655x491;q=80",
+          "large": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InBsbTd6anFsNWhxYjEtQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.nBR3hnsIdamlzxq9yGpAAtkJJvqy320lVJPr2-7Soeg/image;s=1280x1024;q=80",
+          "__typename": "AdImage"
+        },
+        {
+          "thumbnail": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InhiaWJvNDhkdHVmNS1BUFQiLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.8YpHa_BG3T4Lzg6hY0M5790jv8ek8wfDUPEQ8VitgB4/image;s=184x138;q=80",
+          "small": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InhiaWJvNDhkdHVmNS1BUFQiLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.8YpHa_BG3T4Lzg6hY0M5790jv8ek8wfDUPEQ8VitgB4/image;s=314x236;q=80",
+          "medium": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InhiaWJvNDhkdHVmNS1BUFQiLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.8YpHa_BG3T4Lzg6hY0M5790jv8ek8wfDUPEQ8VitgB4/image;s=655x491;q=80",
+          "large": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InhiaWJvNDhkdHVmNS1BUFQiLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.8YpHa_BG3T4Lzg6hY0M5790jv8ek8wfDUPEQ8VitgB4/image;s=1280x1024;q=80",
+          "__typename": "AdImage"
+        },
+        {
+          "thumbnail": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjgydHk0bGVnemtycDMtQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.Vl0T9hXC6QPZELI3yURHuM1NVtNExJNz0WcJk65jjxo/image;s=184x138;q=80",
+          "small": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjgydHk0bGVnemtycDMtQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.Vl0T9hXC6QPZELI3yURHuM1NVtNExJNz0WcJk65jjxo/image;s=314x236;q=80",
+          "medium": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjgydHk0bGVnemtycDMtQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.Vl0T9hXC6QPZELI3yURHuM1NVtNExJNz0WcJk65jjxo/image;s=655x491;q=80",
+          "large": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjgydHk0bGVnemtycDMtQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.Vl0T9hXC6QPZELI3yURHuM1NVtNExJNz0WcJk65jjxo/image;s=1280x1024;q=80",
+          "__typename": "AdImage"
+        },
+        {
+          "thumbnail": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InVuN21sdThvaW9lYi1BUFQiLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.XnsjdXpUp8uVQhq3N6X87sGtRBnpmmq0KV6nv2dY1Xo/image;s=184x138;q=80",
+          "small": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InVuN21sdThvaW9lYi1BUFQiLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.XnsjdXpUp8uVQhq3N6X87sGtRBnpmmq0KV6nv2dY1Xo/image;s=314x236;q=80",
+          "medium": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InVuN21sdThvaW9lYi1BUFQiLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.XnsjdXpUp8uVQhq3N6X87sGtRBnpmmq0KV6nv2dY1Xo/image;s=655x491;q=80",
+          "large": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InVuN21sdThvaW9lYi1BUFQiLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.XnsjdXpUp8uVQhq3N6X87sGtRBnpmmq0KV6nv2dY1Xo/image;s=1280x1024;q=80",
+          "__typename": "AdImage"
+        },
+        {
+          "thumbnail": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjN5MWJueXZrajJ3Yy1BUFQiLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.OJW6u4J8ngm7H9Ieg-XLKfPIPyxgjTO57xf2IorxVqQ/image;s=184x138;q=80",
+          "small": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjN5MWJueXZrajJ3Yy1BUFQiLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.OJW6u4J8ngm7H9Ieg-XLKfPIPyxgjTO57xf2IorxVqQ/image;s=314x236;q=80",
+          "medium": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjN5MWJueXZrajJ3Yy1BUFQiLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.OJW6u4J8ngm7H9Ieg-XLKfPIPyxgjTO57xf2IorxVqQ/image;s=655x491;q=80",
+          "large": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjN5MWJueXZrajJ3Yy1BUFQiLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.OJW6u4J8ngm7H9Ieg-XLKfPIPyxgjTO57xf2IorxVqQ/image;s=1280x1024;q=80",
+          "__typename": "AdImage"
+        },
+        {
+          "thumbnail": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImttdzJjNTRjbWY1bS1BUFQiLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.pp1Id-kjvdc_VmTuEAjb8mkkj5DDrxttQgETb3y7sdk/image;s=184x138;q=80",
+          "small": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImttdzJjNTRjbWY1bS1BUFQiLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.pp1Id-kjvdc_VmTuEAjb8mkkj5DDrxttQgETb3y7sdk/image;s=314x236;q=80",
+          "medium": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImttdzJjNTRjbWY1bS1BUFQiLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.pp1Id-kjvdc_VmTuEAjb8mkkj5DDrxttQgETb3y7sdk/image;s=655x491;q=80",
+          "large": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImttdzJjNTRjbWY1bS1BUFQiLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.pp1Id-kjvdc_VmTuEAjb8mkkj5DDrxttQgETb3y7sdk/image;s=1280x1024;q=80",
+          "__typename": "AdImage"
+        },
+        {
+          "thumbnail": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImhlMzNrOHJ4d3hrejEtQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.FTTrlWcXt7TOBsivlvyjB8BX4IjEJzzwcwo8OURllf0/image;s=184x138;q=80",
+          "small": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImhlMzNrOHJ4d3hrejEtQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.FTTrlWcXt7TOBsivlvyjB8BX4IjEJzzwcwo8OURllf0/image;s=314x236;q=80",
+          "medium": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImhlMzNrOHJ4d3hrejEtQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.FTTrlWcXt7TOBsivlvyjB8BX4IjEJzzwcwo8OURllf0/image;s=655x491;q=80",
+          "large": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImhlMzNrOHJ4d3hrejEtQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.FTTrlWcXt7TOBsivlvyjB8BX4IjEJzzwcwo8OURllf0/image;s=1280x1024;q=80",
+          "__typename": "AdImage"
+        },
+        {
+          "thumbnail": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InNydjA0MGJxNTBjMzItQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.YG4OazVCMEmaLRvjqZBEZIPHogAwrj5VRwEpc0Fr8MM/image;s=184x138;q=80",
+          "small": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InNydjA0MGJxNTBjMzItQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.YG4OazVCMEmaLRvjqZBEZIPHogAwrj5VRwEpc0Fr8MM/image;s=314x236;q=80",
+          "medium": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InNydjA0MGJxNTBjMzItQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.YG4OazVCMEmaLRvjqZBEZIPHogAwrj5VRwEpc0Fr8MM/image;s=655x491;q=80",
+          "large": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InNydjA0MGJxNTBjMzItQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.YG4OazVCMEmaLRvjqZBEZIPHogAwrj5VRwEpc0Fr8MM/image;s=1280x1024;q=80",
+          "__typename": "AdImage"
+        },
+        {
+          "thumbnail": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Ijg4cW9vbTRnbjZxYTItQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.xPQ-6SSAKZ6f66Sffyt6mAc78FsgBQxs8PCw5yz0Wh0/image;s=184x138;q=80",
+          "small": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Ijg4cW9vbTRnbjZxYTItQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.xPQ-6SSAKZ6f66Sffyt6mAc78FsgBQxs8PCw5yz0Wh0/image;s=314x236;q=80",
+          "medium": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Ijg4cW9vbTRnbjZxYTItQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.xPQ-6SSAKZ6f66Sffyt6mAc78FsgBQxs8PCw5yz0Wh0/image;s=655x491;q=80",
+          "large": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Ijg4cW9vbTRnbjZxYTItQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.xPQ-6SSAKZ6f66Sffyt6mAc78FsgBQxs8PCw5yz0Wh0/image;s=1280x1024;q=80",
+          "__typename": "AdImage"
+        },
+        {
+          "thumbnail": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InVsNW1remJzcTZlczMtQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.dkR1PBHboZzcSN731gVH0Lj0-CbtoVfpyZxJPg5rsXw/image;s=184x138;q=80",
+          "small": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InVsNW1remJzcTZlczMtQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.dkR1PBHboZzcSN731gVH0Lj0-CbtoVfpyZxJPg5rsXw/image;s=314x236;q=80",
+          "medium": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InVsNW1remJzcTZlczMtQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.dkR1PBHboZzcSN731gVH0Lj0-CbtoVfpyZxJPg5rsXw/image;s=655x491;q=80",
+          "large": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InVsNW1remJzcTZlczMtQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.dkR1PBHboZzcSN731gVH0Lj0-CbtoVfpyZxJPg5rsXw/image;s=1280x1024;q=80",
+          "__typename": "AdImage"
+        },
+        {
+          "thumbnail": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjdoZmhkcjVxdzE0cC1BUFQiLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.mOpYKtfJbggfc1iHaDcTspjgvre32Ia3RP_v7VWNz8g/image;s=184x138;q=80",
+          "small": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjdoZmhkcjVxdzE0cC1BUFQiLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.mOpYKtfJbggfc1iHaDcTspjgvre32Ia3RP_v7VWNz8g/image;s=314x236;q=80",
+          "medium": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjdoZmhkcjVxdzE0cC1BUFQiLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.mOpYKtfJbggfc1iHaDcTspjgvre32Ia3RP_v7VWNz8g/image;s=655x491;q=80",
+          "large": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjdoZmhkcjVxdzE0cC1BUFQiLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.mOpYKtfJbggfc1iHaDcTspjgvre32Ia3RP_v7VWNz8g/image;s=1280x1024;q=80",
+          "__typename": "AdImage"
+        },
+        {
+          "thumbnail": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Ind3MGE5OWh6dms3by1BUFQiLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.LqRGbYTQ95H0pA8zG0gfRf0wKOMJUenDmNbe2S0-d0I/image;s=184x138;q=80",
+          "small": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Ind3MGE5OWh6dms3by1BUFQiLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.LqRGbYTQ95H0pA8zG0gfRf0wKOMJUenDmNbe2S0-d0I/image;s=314x236;q=80",
+          "medium": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Ind3MGE5OWh6dms3by1BUFQiLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.LqRGbYTQ95H0pA8zG0gfRf0wKOMJUenDmNbe2S0-d0I/image;s=655x491;q=80",
+          "large": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Ind3MGE5OWh6dms3by1BUFQiLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.LqRGbYTQ95H0pA8zG0gfRf0wKOMJUenDmNbe2S0-d0I/image;s=1280x1024;q=80",
+          "__typename": "AdImage"
+        }
+      ],
+      "links": {
+        "localPlanUrl": "",
+        "videoUrl": "",
+        "view3dUrl": "",
+        "walkaroundUrl": "",
+        "__typename": "AdvertLinks"
+      },
+      "location": {
+        "id": null,
+        "coordinates": {
+          "latitude": 41.18065999764364,
+          "longitude": -8.651241322753899,
+          "__typename": "Coordinates"
+        },
+        "mapDetails": {
+          "radius": 0,
+          "zoom": 14,
+          "__typename": "MapDetails"
+        },
+        "address": {
+          "street": {
+            "id": "165927",
+            "code": "",
+            "name": "Estrada da Circunvalação",
+            "number": "",
+            "__typename": "Street"
+          },
+          "subdistrict": null,
+          "district": null,
+          "city": {
+            "id": "13639694",
+            "code": "sao-mamede-de-infesta-e-senhora-da-hora-matosinhos",
+            "name": "São Mamede de Infesta e Senhora da Hora",
+            "__typename": "City"
+          },
+          "municipality": null,
+          "county": {
+            "id": "186",
+            "code": "matosinhos",
+            "name": "Matosinhos",
+            "__typename": "County"
+          },
+          "province": {
+            "id": "13",
+            "code": "porto",
+            "name": "Porto",
+            "__typename": "Province"
+          },
+          "postalCode": null,
+          "__typename": "Address"
+        },
+        "reverseGeocoding": {
+          "locations": [
+            {
+              "id": "porto",
+              "locationLevel": "district",
+              "name": "Porto",
+              "fullName": "Porto",
+              "fullNameItems": [
+                "Porto"
+              ],
+              "parentIds": [],
+              "__typename": "BasicLocationObject"
+            },
+            {
+              "id": "porto/matosinhos",
+              "locationLevel": "council",
+              "name": "Matosinhos",
+              "fullName": "Matosinhos, Porto",
+              "fullNameItems": [
+                "Matosinhos",
+                "Porto"
+              ],
+              "parentIds": [
+                "porto"
+              ],
+              "__typename": "BasicLocationObject"
+            },
+            {
+              "id": "porto/matosinhos/sao-mamede-de-infesta-e-senhora-da-hora",
+              "locationLevel": "parish",
+              "name": "São Mamede de Infesta e Senhora da Hora",
+              "fullName": "São Mamede de Infesta e Senhora da Hora, Matosinhos, Porto",
+              "fullNameItems": [
+                "São Mamede de Infesta e Senhora da Hora",
+                "Matosinhos",
+                "Porto"
+              ],
+              "parentIds": [
+                "porto",
+                "porto/matosinhos"
+              ],
+              "__typename": "BasicLocationObject"
+            },
+            {
+              "id": "porto/matosinhos/sao-mamede-de-infesta-e-senhora-da-hora/sete-bicas",
+              "locationLevel": "neighborhood",
+              "name": "Sete Bicas",
+              "fullName": "Sete Bicas, São Mamede de Infesta e Senhora da Hora, Matosinhos, Porto",
+              "fullNameItems": [
+                "Sete Bicas",
+                "São Mamede de Infesta e Senhora da Hora",
+                "Matosinhos",
+                "Porto"
+              ],
+              "parentIds": [
+                "porto",
+                "porto/matosinhos",
+                "porto/matosinhos/sao-mamede-de-infesta-e-senhora-da-hora"
+              ],
+              "__typename": "BasicLocationObject"
+            }
+          ],
+          "__typename": "ReverseGeocoding"
+        },
+        "__typename": "LocationDetails"
+      },
+      "property": {
+        "id": null,
+        "type": "FLAT",
+        "rent": null,
+        "costs": [],
+        "condition": "READY_TO_USE",
+        "properties": {
+          "equipment": [
+            "oven",
+            "stove"
+          ],
+          "areas": [
+            "balcony",
+            "garage",
+            "usable_room"
+          ],
+          "floor": "FLOOR_2",
+          "kitchen": null,
+          "parking": [],
+          "numberOfRooms": 3,
+          "rooms": [],
+          "type": null,
+          "windowsOrientation": [],
+          "__typename": "FlatProperties"
+        },
+        "buildingProperties": {
+          "year": 1993,
+          "type": "APARTMENT",
+          "material": null,
+          "windows": [
+            "ALUMINIUM"
+          ],
+          "heating": null,
+          "numberOfFloors": 4,
+          "conveniences": [
+            "LIFT",
+            "INTERNET"
+          ],
+          "security": [],
+          "__typename": "FlatBuildingProperties"
+        },
+        "ownership": "FULL_OWNERSHIP",
+        "area": {
+          "value": 80,
+          "unit": "M2",
+          "__typename": "Area"
+        },
+        "__typename": "Flat"
+      },
+      "owner": {
+        "id": 2063596,
+        "name": "Joaquim Oliveira",
+        "type": "private",
+        "phones": [
+          "+351917539203"
+        ],
+        "imageUrl": "",
+        "contacts": [],
+        "__typename": "LegacyAdvertOwner"
+      },
+      "agency": null,
+      "seo": {
+        "title": "T2, apartamento para comprar - Estrada da Circunvalação, São Mamede de Infesta e Senhora da Hora - 18361898 • www.imovirtual.com",
+        "description": "Excelente apartamento para venda com T2 em Estrada da Circunvalação, São Mamede de Infesta e Senhora da Hora, por 280 000 €. Este apartamento para venda localizado no 2 piso tem 80 m² de àrea útil e 80 m² de àrea bruta. De acordo com O proprietário os atributos mais importantes são varanda, garagem, elevadorSITE 18361898",
+        "__typename": "AdvertSeo"
+      },
+      "breadcrumbs": [
+        {
+          "label": "Apartamento para comprar",
+          "locative": "",
+          "url": "https://www.imovirtual.com/pt/anuncios/comprar/apartamento",
+          "__typename": "AdvertBreadcrumb"
+        },
+        {
+          "label": "Porto",
+          "locative": "Porto",
+          "url": "https://www.imovirtual.com/pt/anuncios/comprar/apartamento/porto",
+          "__typename": "AdvertBreadcrumb"
+        },
+        {
+          "label": "Matosinhos",
+          "locative": "Matosinhos",
+          "url": "https://www.imovirtual.com/pt/anuncios/comprar/apartamento/matosinhos",
+          "__typename": "AdvertBreadcrumb"
+        },
+        {
+          "label": "São Mamede de Infesta e Senhora da Hora",
+          "locative": "São Mamede de Infesta e Senhora da Hora",
+          "url": "https://www.imovirtual.com/pt/anuncios/comprar/apartamento/sao-mamede-de-infesta-e-senhora-da-hora-matosinhos",
+          "__typename": "AdvertBreadcrumb"
+        },
+        {
+          "label": "Estrada da Circunvalação",
+          "locative": "Estrada da Circunvalação",
+          "url": "https://www.imovirtual.com/pt/anuncios/comprar/apartamento/sao-mamede-de-infesta-e-senhora-da-hora-matosinhos?locations%5B0%5D%5BstreetId%5D=165928&locations%5B0%5D%5BcityId%5D=13639694&locations=%5Bstreets-165928%5D",
+          "__typename": "AdvertBreadcrumb"
+        },
+        {
+          "label": "T2 - NorteShopping",
+          "locative": "",
+          "url": "",
+          "__typename": "AdvertBreadcrumb"
+        }
+      ],
+      "userAdverts": [
+        {
+          "adId": "18361925",
+          "url": "https://www.imovirtual.com/pt/anuncio/t3-ramalde-ultimo-piso-ID1f2M5",
+          "image": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImF5OGp5cWpjdDRwdi1BUFQiLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.x5AwOmdoizRvlscQKV9_wG4L8xwsB306bET81dKj8-Y/image;s=314x236;q=80",
+          "roomsNum": "4",
+          "pricePerM": 1772,
+          "price": {
+            "value": "179000",
+            "unit": "EUR",
+            "__typename": "UserAdvertPrice"
+          },
+          "netArea": "101",
+          "title": "T3 - RAMALDE (último piso)",
+          "__typename": "UserAdvert"
+        },
+        {
+          "adId": "18379294",
+          "url": "https://www.imovirtual.com/pt/anuncio/t4-1-novo-pronto-a-habitar-duplex-ultimo-piso-canidelo-ID1f7ie",
+          "image": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImYwamYzc2JibjRrYzItQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.8kU1UHFW1oL9q96vn2dl_Afb3EiLHNqQ52-UkJtwcFw/image;s=314x236;q=80",
+          "roomsNum": "6",
+          "pricePerM": 3809,
+          "price": {
+            "value": "650000",
+            "unit": "EUR",
+            "__typename": "UserAdvertPrice"
+          },
+          "netArea": "170.65",
+          "title": "T4+1 NOVO (pronto a habitar) - DUPLEX - ÚLTIMO PISO - CANIDELO",
+          "__typename": "UserAdvert"
+        }
+      ],
+      "paginatedUnits": {
+        "items": null,
+        "isPriceHidden": null,
+        "pagination": null,
+        "facets": null,
+        "__typename": "AdvertsPages"
+      },
+      "specialOffer": null,
+      "__typename": "Advert",
+      "contactDetails": {
+        "name": "Joaquim Oliveira",
+        "type": "private",
+        "phones": [
+          "+351917539203"
+        ],
+        "imageUrl": ""
+      }
+    },
+    "relativeUrl": "/pt/anuncio/t2-norteshopping-ID1f2LE",
+    "adTrackingData": {
+      "touch_point_page": "ad_page",
+      "lat": 41.18065999764364,
+      "long": -8.651241322753899,
+      "ad_photo": 17,
+      "price_currency": "EUR",
+      "cat_l1_id": 101,
+      "cat_l1_name": "Apartamentos",
+      "special_offer_type": null,
+      "ad_id": "18361898",
+      "ad_price": 280000,
+      "business": "comprar",
+      "city_id": "13639694",
+      "city_name": "sao-mamede-de-infesta-e-senhora-da-hora-matosinhos",
+      "market": "secondary",
+      "poster_type": "private",
+      "surface": null,
+      "region_id": "porto",
+      "region_name": "porto",
+      "subregion_id": "matosinhos",
+      "seller_id": "2063596",
+      "obido_advert": "n"
+    },
+    "referer": null,
+    "currentUser": null,
+    "cookiesCategorisation": {},
+    "experiments": {},
+    "featureFlags": {
+      "isAdAvmModuleEnabled": false,
+      "isAdFinanceBannerEnabled": false,
+      "isAdFinanceLinkEnabled": false,
+      "isAdMortgageSimulatorEnabled": false,
+      "isFeaturedDevelopmentVASEnabled": true,
+      "isListingRentPriceEnabled": false,
+      "isNewApartmentsForSalePostingFormEnabled": false,
+      "isOldSaveSearchQueryEnabled": false,
+      "isFinanceCheckboxEnabled": false,
+      "isObservedAdsPageEnabled": true,
+      "isBikPromotionEnabled": true,
+      "isSpecialOfferForUnitsExperimentEnabled": false,
+      "isSpecialOfferEnabled": true,
+      "isSeoAdsDescriptionEnabled": false,
+      "isPropertyEvaluationPageActive": false,
+      "isSettingsContactsTabMigrated": false,
+      "isRegularNmfEnabled": true,
+      "isExtendedBillingDataEnabled": false,
+      "isRESellerLeadsActive": false,
+      "isBadgesFeatureEnabled": false,
+      "isNexusHomePageEnabled": true,
+      "isPostPaymentOptionEnabled": true,
+      "isSettingsOurTeamTabEnabled": false,
+      "isHCIAMEnabled": false,
+      "isSellerLeadsMvpEnabled": false,
+      "isNexusSellerPageEnabled": false,
+      "isHCIAMAgencyRegistrationEnabled": true,
+      "isHCIAMAgentRegistrationEnabled": true,
+      "isHCIAMDeveloperRegistrationEnabled": true,
+      "isMessagingCenterEnabled": false,
+      "isMessagingCenterChatEnabled": false,
+      "__typename": "FeatureFlags"
+    },
+    "laquesisResult": null,
+    "userSessionId": "aec2d3b6-0240-4203-99bd-10805747ee9c",
+    "unconfirmedUserAuthToken": null,
+    "desktopHeader": {
+      "Is-Desktop": "true"
+    }
+  },
+  "__N_SSP": true
+}

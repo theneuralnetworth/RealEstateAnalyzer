@@ -1,8 +1,8 @@
 {
   "pageProps": {
     "lang": "pt",
-    "_sentryTraceData": "3c052f3d0f7948bb83040b9513c5d840-95f32a7833d99414-0",
-    "_sentryBaggage": "sentry-environment=imovirtualpt2-prd,sentry-release=frontend-platform%40v20240930T093022-imovirtualpt2,sentry-public_key=feffe528c390ea66992a4a05131c3c68,sentry-trace_id=3c052f3d0f7948bb83040b9513c5d840,sentry-transaction=%2Fpt%2Fanuncio%2F%5Bid%5D,sentry-sampled=false",
+    "_sentryTraceData": "39b31047ba18453db9fa94a107bdeeee-87ebf90799f19ad9-0",
+    "_sentryBaggage": "sentry-environment=imovirtualpt2-prd,sentry-release=frontend-platform%40v20241004T114115-imovirtualpt2,sentry-public_key=feffe528c390ea66992a4a05131c3c68,sentry-trace_id=39b31047ba18453db9fa94a107bdeeee,sentry-transaction=%2Fpt%2Fanuncio%2F%5Bid%5D,sentry-sampled=false",
     "id": "1fvJ3",
     "ad": {
       "id": 18477057,
@@ -627,7 +627,7 @@
         "phones": [
           "+351923291423"
         ],
-        "imageUrl": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjlzamlydnRseTY0Yy1BUFQifQ.KR7H3BL6LeFvQK-MpyZ1mG9WfwFK0He7kIchnCauipU/image;s=97x97;q=100",
+        "imageUrl": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InUwNTM0emQ1dWszNDMtQVBUIn0.QNWAQd2T-7WRoF9UD4e7qHfWvHQditqj8u8_6fiSYpc/image;s=97x97;q=100",
         "contacts": [],
         "__typename": "LegacyAdvertOwner"
       },
@@ -725,6 +725,51 @@
       ],
       "userAdverts": [
         {
+          "adId": "18493285",
+          "url": "https://www.imovirtual.com/pt/anuncio/apartamento-t3-para-arrendamento-ID1fAVN",
+          "image": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InEzaG9vZmZiOWx4OTEtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.BGuHrDABRIEDNUae7GsNVNctI3o78j_5675cwEmAwEs/image;s=314x236;q=80",
+          "roomsNum": "4",
+          "pricePerM": 13,
+          "price": {
+            "value": "1250",
+            "unit": "EUR",
+            "__typename": "UserAdvertPrice"
+          },
+          "netArea": "94.1",
+          "title": "Apartamento T3 para arrendamento",
+          "__typename": "UserAdvert"
+        },
+        {
+          "adId": "18493282",
+          "url": "https://www.imovirtual.com/pt/anuncio/apartamento-t2-para-venda-ID1fAVK",
+          "image": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Ims3ZWFneHZmdmY4eDEtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.BNWs-lipiC4kE-aJEPVO7-TNKz0V9FRKm5KZIdRhmmA/image;s=314x236;q=80",
+          "roomsNum": "3",
+          "pricePerM": 1722,
+          "price": {
+            "value": "155000",
+            "unit": "EUR",
+            "__typename": "UserAdvertPrice"
+          },
+          "netArea": "90",
+          "title": "Apartamento T2 para venda",
+          "__typename": "UserAdvert"
+        },
+        {
+          "adId": "18492901",
+          "url": "https://www.imovirtual.com/pt/anuncio/trespasse-para-venda-ID1fAQB",
+          "image": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjA3dWd2Y2k1NnEwMTItRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.kpv9GNgpzx2IYNO6eEjoI_XL5gMbh3_Dnsj9m2e-z3g/image;s=314x236;q=80",
+          "roomsNum": "",
+          "pricePerM": 615,
+          "price": {
+            "value": "75000",
+            "unit": "EUR",
+            "__typename": "UserAdvertPrice"
+          },
+          "netArea": "122",
+          "title": "Trespasse  para venda",
+          "__typename": "UserAdvert"
+        },
+        {
           "adId": "18183572",
           "url": "https://www.imovirtual.com/pt/anuncio/moradia-t5-para-venda-ID1einq",
           "image": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImcwYTB3cHNncGQwazItRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.S9N1ZfTSpvPP5uBQTr00g68VNulcRuUvl67FTQqPvw0/image;s=314x236;q=80",
@@ -737,51 +782,6 @@
           },
           "netArea": "320",
           "title": "Moradia T5 para venda",
-          "__typename": "UserAdvert"
-        },
-        {
-          "adId": "18414387",
-          "url": "https://www.imovirtual.com/pt/anuncio/moradia-t3-para-venda-ID1fgqf",
-          "image": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImZ4amlrOTJkbXpzaC1FQ09TWVNURU0iLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.YIqGGiMw5e8J9S9p_NRtzla_ysLFhpfw6upxvwmQY3Y/image;s=314x236;q=80",
-          "roomsNum": "4",
-          "pricePerM": 5139,
-          "price": {
-            "value": "1130500",
-            "unit": "EUR",
-            "__typename": "UserAdvertPrice"
-          },
-          "netArea": "220",
-          "title": "Moradia T3 para venda",
-          "__typename": "UserAdvert"
-        },
-        {
-          "adId": "18485941",
-          "url": "https://www.imovirtual.com/pt/anuncio/moradia-t4-para-venda-ID1fz2l",
-          "image": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjFwNHFnNzg5YWkzNjItRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.sN2FjbhJfIZNg27_Ggbrtlw5JRl_kBV4Tfp920roB_k/image;s=314x236;q=80",
-          "roomsNum": "5",
-          "pricePerM": 3186,
-          "price": {
-            "value": "975000",
-            "unit": "EUR",
-            "__typename": "UserAdvertPrice"
-          },
-          "netArea": "306",
-          "title": "Moradia T4 para venda",
-          "__typename": "UserAdvert"
-        },
-        {
-          "adId": "18485315",
-          "url": "https://www.imovirtual.com/pt/anuncio/moradia-t3-para-venda-ID1fySf",
-          "image": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InNmZGw5cmVvcmxjYi1FQ09TWVNURU0iLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.ryRBQ4X0jn7jAEcrRB_oIkHGAU_iNZgkEMZa_1JhuHM/image;s=314x236;q=80",
-          "roomsNum": "4",
-          "pricePerM": 3219,
-          "price": {
-            "value": "795000",
-            "unit": "EUR",
-            "__typename": "UserAdvertPrice"
-          },
-          "netArea": "247",
-          "title": "Moradia T3 para venda",
           "__typename": "UserAdvert"
         }
       ],
@@ -800,7 +800,7 @@
         "phones": [
           "+351923291423"
         ],
-        "imageUrl": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjlzamlydnRseTY0Yy1BUFQifQ.KR7H3BL6LeFvQK-MpyZ1mG9WfwFK0He7kIchnCauipU/image;s=97x97;q=100"
+        "imageUrl": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InUwNTM0emQ1dWszNDMtQVBUIn0.QNWAQd2T-7WRoF9UD4e7qHfWvHQditqj8u8_6fiSYpc/image;s=97x97;q=100"
       }
     },
     "relativeUrl": "/pt/anuncio/apartamento-t3-para-venda-ID1fvJ3",
@@ -840,7 +840,6 @@
       "isListingRentPriceEnabled": false,
       "isNewApartmentsForSalePostingFormEnabled": false,
       "isOldSaveSearchQueryEnabled": false,
-      "shouldUseNewInformation": true,
       "isFinanceCheckboxEnabled": false,
       "isObservedAdsPageEnabled": true,
       "isBikPromotionEnabled": true,
@@ -862,10 +861,12 @@
       "isHCIAMAgencyRegistrationEnabled": true,
       "isHCIAMAgentRegistrationEnabled": true,
       "isHCIAMDeveloperRegistrationEnabled": true,
+      "isMessagingCenterEnabled": false,
+      "isMessagingCenterChatEnabled": false,
       "__typename": "FeatureFlags"
     },
     "laquesisResult": null,
-    "userSessionId": "4f1ad9f7-4eb1-4d3e-8207-d6d851893c43",
+    "userSessionId": "4e7e5c48-b13a-45b0-b45d-818952284ed5",
     "unconfirmedUserAuthToken": null,
     "desktopHeader": {
       "Is-Desktop": "true"

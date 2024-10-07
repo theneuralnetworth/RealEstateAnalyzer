@@ -1,0 +1,841 @@
+{
+  "pageProps": {
+    "lang": "pt",
+    "_sentryTraceData": "34e4f160e62643af8476051d60f246e8-b70f5f42d3324e59-0",
+    "_sentryBaggage": "sentry-environment=imovirtualpt2-prd,sentry-release=frontend-platform%40v20241004T114115-imovirtualpt2,sentry-public_key=feffe528c390ea66992a4a05131c3c68,sentry-trace_id=34e4f160e62643af8476051d60f246e8,sentry-transaction=%2Fpt%2Fanuncio%2F%5Bid%5D,sentry-sampled=false",
+    "id": "1fzX5",
+    "ad": {
+      "id": 18489459,
+      "price": {
+        "type": "",
+        "__typename": "AdvertPrice"
+      },
+      "market": "PRIMARY",
+      "services": [
+        "E_SIGNATURE",
+        "VIDEO_PRESENTATION",
+        "VIDEO_MEETING"
+      ],
+      "publicId": "",
+      "slug": "apartamento-t4-com-varanda-nova-construcao-no-foco-boavista-ID1fzX5",
+      "advertiserType": "business",
+      "advertType": "AGENCY",
+      "source": "urn:site:local",
+      "createdAt": "2024-10-02T15:00:00+01:00",
+      "modifiedAt": "2024-10-02T15:00:19+01:00",
+      "description": "<p>Apartamento T4 Com Varanda| Nova Construção<br/><br/>Com localização central, na prestigiada zona da Boavista, próximo de todos os serviços e comércios necessários no dia a dia.<br/>Este empreendimento foi projeto para aqueles que primam pelo conforto e bem-estar. Destaca-se pela arquitetura moderna e pelo nível dos acabamentos.<br/> O apartamento de tipologia T4  tem de área bruta privativa 172,65m2 e uma bela varanda com 17.15m2.<br/><br/>Complementa-se ainda com lugar de garagem.<br/><br/>Marque já Sua visita junto de um nossos consultores imobiliários.<br/><br/><strong>RÉPLICA, uma referência imobiliária</strong>.<br/><br/>Com 35 anos de atuação no mercado nacional, aplicamos as boas práticas e metodologias que privilegiam Proprietário e Comprador, proporcionando os melhores resultados para todos os intervenientes.<br/>Atuamos com um posicionamento de rigor na prestação de serviços imobiliários, apoiando a nossa atividade na experiência da nossa equipa de profissionais e em soluções eficazes de publicidade e marketing. Garantimos a máxima descrição e serviço de excelência.<br/><br/>Sem preocupações - nós tratamos de tudo.<br/></p>",
+      "developmentId": 0,
+      "developmentTitle": "",
+      "developmentUrl": "",
+      "exclusiveOffer": false,
+      "externalId": "",
+      "features": [
+        "portas e janelas de segurança",
+        "Acessibilidade para pessoas com mobilidade reduzida",
+        "varanda",
+        "garagem",
+        "elevador"
+      ],
+      "creationSource": "none",
+      "featuresByCategory": [
+        {
+          "label": "Segurança",
+          "values": [
+            "portas e janelas de segurança"
+          ],
+          "__typename": "FeatureGroup"
+        },
+        {
+          "label": "Informações adicionais",
+          "values": [
+            "Acessibilidade para pessoas com mobilidade reduzida",
+            "varanda",
+            "garagem",
+            "elevador"
+          ],
+          "__typename": "FeatureGroup"
+        }
+      ],
+      "featuresWithoutCategory": [],
+      "openDay": null,
+      "referenceId": "RE0145",
+      "target": {
+        "Area": "189.8",
+        "AreaRange": [],
+        "Bathrooms_num": [
+          "3"
+        ],
+        "City": "ramalde-porto",
+        "City_id": "13643787",
+        "Country": "Portugal",
+        "Energy_certificate": [
+          "a"
+        ],
+        "Extras_types": [
+          "accessibility_for_people_with_reduced_mobility",
+          "balcony",
+          "garage",
+          "lift"
+        ],
+        "Floor_no": [
+          "floor_6"
+        ],
+        "Id": "18489459",
+        "MarketType": "primary",
+        "ObidoAdvert": "n",
+        "OfferType": "comprar",
+        "Photo": "aHR0cHM6Ly9pcmVsYW5kLmFwb2xsby5vbHhjZG4uY29tL3YxL2ZpbGVzL2V5Sm1iaUk2SW5KeWNtYzFNSE5zWkhkdWF6RXRRVkJVSWl3aWR5STZXM3NpWm00aU9pSTJPVzVzY0dFM1pXTnhiVGN4TFVGUVZDSXNJbk1pT2lJeE5DSXNJbkFpT2lJeE1Dd3RNVEFpTENKaElqb2lNQ0o5WFgwLjBva2dCZjJOY05USjg0Ri1sbjZ0SUJrQWJSbmUxY3V4SU1kd2V3ZmNXcFUvaW1hZ2U7cz02NTV4NDkxO3E9ODA=",
+        "Price": 830000,
+        "PriceRange": [
+          "750001-1000000"
+        ],
+        "Price_per_m": 4373,
+        "ProperType": "apartamento",
+        "Province": "porto",
+        "RegularUser": "n",
+        "Remote_services": [
+          "1"
+        ],
+        "Rooms_num": [
+          "5"
+        ],
+        "Security_types": [
+          "anti_burglary_door"
+        ],
+        "Subregion": "porto",
+        "Title": "QXBhcnRhbWVudG8gVDQgQ29tIFZhcmFuZGF8IE5vdmEgQ29uc3RydcOnw6NvIG5vIEZvY28sIEJvYXZpc3Rh",
+        "categoryId": "101",
+        "env": "production",
+        "hidePrice": "0",
+        "seller_id": "1656433",
+        "user_type": "agency"
+      },
+      "title": "Apartamento T4 Com Varanda| Nova Construção no Foco, Boavista",
+      "topInformation": [
+        {
+          "label": "area",
+          "values": [
+            "189.8"
+          ],
+          "unit": "m²",
+          "__typename": "AdditionalInfo"
+        },
+        {
+          "label": "building_ownership",
+          "values": [],
+          "unit": "",
+          "__typename": "AdditionalInfo"
+        },
+        {
+          "label": "rooms_num",
+          "values": [
+            "5"
+          ],
+          "unit": "",
+          "__typename": "AdditionalInfo"
+        },
+        {
+          "label": "construction_status",
+          "values": [],
+          "unit": "",
+          "__typename": "AdditionalInfo"
+        },
+        {
+          "label": "floor",
+          "values": [
+            "floor_no::floor_6",
+            ""
+          ],
+          "unit": "",
+          "__typename": "AdditionalInfo"
+        },
+        {
+          "label": "outdoor",
+          "values": [
+            "extras_types::balcony"
+          ],
+          "unit": "",
+          "__typename": "AdditionalInfo"
+        },
+        {
+          "label": "rent",
+          "values": [],
+          "unit": "",
+          "__typename": "AdditionalInfo"
+        },
+        {
+          "label": "car",
+          "values": [
+            "extras_types::garage"
+          ],
+          "unit": "",
+          "__typename": "AdditionalInfo"
+        },
+        {
+          "label": "remote_services",
+          "values": [
+            "remote_services::1"
+          ],
+          "unit": "",
+          "__typename": "AdditionalInfo"
+        },
+        {
+          "label": "heating",
+          "values": [],
+          "unit": "",
+          "__typename": "AdditionalInfo"
+        }
+      ],
+      "additionalInformation": [
+        {
+          "label": "market",
+          "values": [
+            "market::primary"
+          ],
+          "unit": "",
+          "__typename": "AdditionalInfo"
+        },
+        {
+          "label": "advertiser_type",
+          "values": [
+            "advertiser_type::agency"
+          ],
+          "unit": "",
+          "__typename": "AdditionalInfo"
+        },
+        {
+          "label": "bathrooms_num",
+          "values": [
+            "3"
+          ],
+          "unit": "",
+          "__typename": "AdditionalInfo"
+        },
+        {
+          "label": "free_from",
+          "values": [],
+          "unit": "",
+          "__typename": "AdditionalInfo"
+        },
+        {
+          "label": "build_year",
+          "values": [],
+          "unit": "",
+          "__typename": "AdditionalInfo"
+        },
+        {
+          "label": "building_type",
+          "values": [],
+          "unit": "",
+          "__typename": "AdditionalInfo"
+        },
+        {
+          "label": "windows_type",
+          "values": [],
+          "unit": "",
+          "__typename": "AdditionalInfo"
+        },
+        {
+          "label": "lift",
+          "values": [
+            "::y"
+          ],
+          "unit": "",
+          "__typename": "AdditionalInfo"
+        },
+        {
+          "label": "media_types",
+          "values": [],
+          "unit": "",
+          "__typename": "AdditionalInfo"
+        },
+        {
+          "label": "security_types",
+          "values": [
+            "security_types::anti_burglary_door"
+          ],
+          "unit": "",
+          "__typename": "AdditionalInfo"
+        },
+        {
+          "label": "equipment_types",
+          "values": [],
+          "unit": "",
+          "__typename": "AdditionalInfo"
+        },
+        {
+          "label": "extras_types",
+          "values": [
+            "extras_types::accessibility_for_people_with_reduced_mobility"
+          ],
+          "unit": "",
+          "__typename": "AdditionalInfo"
+        },
+        {
+          "label": "building_material",
+          "values": [],
+          "unit": "",
+          "__typename": "AdditionalInfo"
+        }
+      ],
+      "url": "https://www.imovirtual.com/pt/anuncio/apartamento-t4-com-varanda-nova-construcao-no-foco-boavista-ID1fzX5",
+      "status": "active",
+      "adCategory": {
+        "id": "101",
+        "name": "FLAT",
+        "type": "SELL",
+        "__typename": "AdvertCategory"
+      },
+      "category": {
+        "id": 101,
+        "name": [
+          {
+            "locale": "pt",
+            "value": "Apartamentos",
+            "__typename": "LocalizedString"
+          },
+          {
+            "locale": "en",
+            "value": "apartments",
+            "__typename": "LocalizedString"
+          }
+        ],
+        "__typename": "AdCategory"
+      },
+      "characteristics": [
+        {
+          "key": "price",
+          "value": "830000",
+          "label": "Preço",
+          "localizedValue": "830 000 €",
+          "currency": "EUR",
+          "suffix": "",
+          "__typename": "Characteristic"
+        },
+        {
+          "key": "remote_services",
+          "value": "1",
+          "label": "Serviços à distância",
+          "localizedValue": "sim",
+          "currency": "",
+          "suffix": "",
+          "__typename": "Characteristic"
+        },
+        {
+          "key": "m",
+          "value": "189.8",
+          "label": "Área",
+          "localizedValue": "189,80 m²",
+          "currency": "",
+          "suffix": "",
+          "__typename": "Characteristic"
+        },
+        {
+          "key": "price_per_m",
+          "value": "4373",
+          "label": "preço/m2",
+          "localizedValue": "4 373 €/m²",
+          "currency": "",
+          "suffix": "",
+          "__typename": "Characteristic"
+        },
+        {
+          "key": "rooms_num",
+          "value": "5",
+          "label": "Tipologia",
+          "localizedValue": "T4",
+          "currency": "",
+          "suffix": "",
+          "__typename": "Characteristic"
+        },
+        {
+          "key": "market",
+          "value": "primary",
+          "label": "Nova construção",
+          "localizedValue": "sim",
+          "currency": "",
+          "suffix": "",
+          "__typename": "Characteristic"
+        },
+        {
+          "key": "energy_certificate",
+          "value": "a",
+          "label": "Certificado energético",
+          "localizedValue": "A",
+          "currency": "",
+          "suffix": "",
+          "__typename": "Characteristic"
+        },
+        {
+          "key": "bathrooms_num",
+          "value": "3",
+          "label": "N.º de casas de banho",
+          "localizedValue": "3",
+          "currency": "",
+          "suffix": "",
+          "__typename": "Characteristic"
+        },
+        {
+          "key": "floor_no",
+          "value": "floor_6",
+          "label": "Andar",
+          "localizedValue": "6",
+          "currency": "",
+          "suffix": "",
+          "__typename": "Characteristic"
+        }
+      ],
+      "images": [
+        {
+          "thumbnail": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InJycmc1MHNsZHduazEtQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.0okgBf2NcNTJ84F-ln6tIBkAbRne1cuxIMdwewfcWpU/image;s=184x138;q=80",
+          "small": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InJycmc1MHNsZHduazEtQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.0okgBf2NcNTJ84F-ln6tIBkAbRne1cuxIMdwewfcWpU/image;s=314x236;q=80",
+          "medium": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InJycmc1MHNsZHduazEtQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.0okgBf2NcNTJ84F-ln6tIBkAbRne1cuxIMdwewfcWpU/image;s=655x491;q=80",
+          "large": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InJycmc1MHNsZHduazEtQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.0okgBf2NcNTJ84F-ln6tIBkAbRne1cuxIMdwewfcWpU/image;s=1280x1024;q=80",
+          "__typename": "AdImage"
+        },
+        {
+          "thumbnail": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImlsOW1hYjhoaGtoaS1BUFQiLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.Li16c8xDNSHNEf5qI5dw7pbqFnJgUayG1oaR_tEYXkw/image;s=184x138;q=80",
+          "small": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImlsOW1hYjhoaGtoaS1BUFQiLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.Li16c8xDNSHNEf5qI5dw7pbqFnJgUayG1oaR_tEYXkw/image;s=314x236;q=80",
+          "medium": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImlsOW1hYjhoaGtoaS1BUFQiLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.Li16c8xDNSHNEf5qI5dw7pbqFnJgUayG1oaR_tEYXkw/image;s=655x491;q=80",
+          "large": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImlsOW1hYjhoaGtoaS1BUFQiLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.Li16c8xDNSHNEf5qI5dw7pbqFnJgUayG1oaR_tEYXkw/image;s=1280x1024;q=80",
+          "__typename": "AdImage"
+        },
+        {
+          "thumbnail": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjczNmRta2Rvb3MwMzItQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.UWg07ce9knA3P1eU51s_FCHPx2Pt6F46zBtJ7drpa5A/image;s=184x138;q=80",
+          "small": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjczNmRta2Rvb3MwMzItQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.UWg07ce9knA3P1eU51s_FCHPx2Pt6F46zBtJ7drpa5A/image;s=314x236;q=80",
+          "medium": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjczNmRta2Rvb3MwMzItQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.UWg07ce9knA3P1eU51s_FCHPx2Pt6F46zBtJ7drpa5A/image;s=655x491;q=80",
+          "large": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjczNmRta2Rvb3MwMzItQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.UWg07ce9knA3P1eU51s_FCHPx2Pt6F46zBtJ7drpa5A/image;s=1280x1024;q=80",
+          "__typename": "AdImage"
+        },
+        {
+          "thumbnail": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InBzdnk1NDBnMHp0Yy1BUFQiLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.TtEMEiQ6XCZObMTOJ9wkPYXycQtHyxUp6yANAPiCRh4/image;s=184x138;q=80",
+          "small": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InBzdnk1NDBnMHp0Yy1BUFQiLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.TtEMEiQ6XCZObMTOJ9wkPYXycQtHyxUp6yANAPiCRh4/image;s=314x236;q=80",
+          "medium": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InBzdnk1NDBnMHp0Yy1BUFQiLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.TtEMEiQ6XCZObMTOJ9wkPYXycQtHyxUp6yANAPiCRh4/image;s=655x491;q=80",
+          "large": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InBzdnk1NDBnMHp0Yy1BUFQiLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.TtEMEiQ6XCZObMTOJ9wkPYXycQtHyxUp6yANAPiCRh4/image;s=1280x1024;q=80",
+          "__typename": "AdImage"
+        },
+        {
+          "thumbnail": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImsxMnk3NGd0ODFkbjEtQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.3QS242NXlD41j7r69HzLkTMxtO6NSPl0A5tfW9wVeRM/image;s=184x138;q=80",
+          "small": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImsxMnk3NGd0ODFkbjEtQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.3QS242NXlD41j7r69HzLkTMxtO6NSPl0A5tfW9wVeRM/image;s=314x236;q=80",
+          "medium": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImsxMnk3NGd0ODFkbjEtQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.3QS242NXlD41j7r69HzLkTMxtO6NSPl0A5tfW9wVeRM/image;s=655x491;q=80",
+          "large": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImsxMnk3NGd0ODFkbjEtQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.3QS242NXlD41j7r69HzLkTMxtO6NSPl0A5tfW9wVeRM/image;s=1280x1024;q=80",
+          "__typename": "AdImage"
+        },
+        {
+          "thumbnail": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjVkY3l3cWg3bWEzeDItQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.ytKGJugSwgt2gurYpmgVThFLSOViZqsnBvFmJ9xAzjg/image;s=184x138;q=80",
+          "small": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjVkY3l3cWg3bWEzeDItQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.ytKGJugSwgt2gurYpmgVThFLSOViZqsnBvFmJ9xAzjg/image;s=314x236;q=80",
+          "medium": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjVkY3l3cWg3bWEzeDItQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.ytKGJugSwgt2gurYpmgVThFLSOViZqsnBvFmJ9xAzjg/image;s=655x491;q=80",
+          "large": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjVkY3l3cWg3bWEzeDItQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.ytKGJugSwgt2gurYpmgVThFLSOViZqsnBvFmJ9xAzjg/image;s=1280x1024;q=80",
+          "__typename": "AdImage"
+        },
+        {
+          "thumbnail": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InNybDh2em1ydWhqazItQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.YphRw8_5lKAgCtRa9cs4VbIH50z3anCT3Pp9p1uXSHI/image;s=184x138;q=80",
+          "small": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InNybDh2em1ydWhqazItQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.YphRw8_5lKAgCtRa9cs4VbIH50z3anCT3Pp9p1uXSHI/image;s=314x236;q=80",
+          "medium": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InNybDh2em1ydWhqazItQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.YphRw8_5lKAgCtRa9cs4VbIH50z3anCT3Pp9p1uXSHI/image;s=655x491;q=80",
+          "large": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InNybDh2em1ydWhqazItQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.YphRw8_5lKAgCtRa9cs4VbIH50z3anCT3Pp9p1uXSHI/image;s=1280x1024;q=80",
+          "__typename": "AdImage"
+        }
+      ],
+      "links": {
+        "localPlanUrl": "",
+        "videoUrl": "https://www.youtube.com/embed/ljhClcKn0Xc",
+        "view3dUrl": "",
+        "walkaroundUrl": "",
+        "__typename": "AdvertLinks"
+      },
+      "location": {
+        "id": null,
+        "coordinates": {
+          "latitude": 41.161434,
+          "longitude": -8.645091,
+          "__typename": "Coordinates"
+        },
+        "mapDetails": {
+          "radius": 100,
+          "zoom": 13,
+          "__typename": "MapDetails"
+        },
+        "address": {
+          "street": null,
+          "subdistrict": null,
+          "district": null,
+          "city": {
+            "id": "13643787",
+            "code": "ramalde-porto",
+            "name": "Ramalde",
+            "__typename": "City"
+          },
+          "municipality": null,
+          "county": {
+            "id": "190",
+            "code": "porto",
+            "name": "Porto",
+            "__typename": "County"
+          },
+          "province": {
+            "id": "13",
+            "code": "porto",
+            "name": "Porto",
+            "__typename": "Province"
+          },
+          "postalCode": null,
+          "__typename": "Address"
+        },
+        "reverseGeocoding": {
+          "locations": [
+            {
+              "id": "porto",
+              "locationLevel": "district",
+              "name": "Porto",
+              "fullName": "Porto",
+              "fullNameItems": [
+                "Porto"
+              ],
+              "parentIds": [],
+              "__typename": "BasicLocationObject"
+            },
+            {
+              "id": "porto/porto",
+              "locationLevel": "council",
+              "name": "Porto",
+              "fullName": "Porto, Porto",
+              "fullNameItems": [
+                "Porto",
+                "Porto"
+              ],
+              "parentIds": [
+                "porto"
+              ],
+              "__typename": "BasicLocationObject"
+            },
+            {
+              "id": "porto/porto/ramalde",
+              "locationLevel": "parish",
+              "name": "Ramalde",
+              "fullName": "Ramalde, Porto, Porto",
+              "fullNameItems": [
+                "Ramalde",
+                "Porto",
+                "Porto"
+              ],
+              "parentIds": [
+                "porto",
+                "porto/porto"
+              ],
+              "__typename": "BasicLocationObject"
+            },
+            {
+              "id": "porto/porto/ramalde/bessa--foco",
+              "locationLevel": "neighborhood",
+              "name": "Bessa - Foco",
+              "fullName": "Bessa - Foco, Ramalde, Porto, Porto",
+              "fullNameItems": [
+                "Bessa - Foco",
+                "Ramalde",
+                "Porto",
+                "Porto"
+              ],
+              "parentIds": [
+                "porto",
+                "porto/porto",
+                "porto/porto/ramalde"
+              ],
+              "__typename": "BasicLocationObject"
+            }
+          ],
+          "__typename": "ReverseGeocoding"
+        },
+        "__typename": "LocationDetails"
+      },
+      "property": {
+        "id": null,
+        "type": "FLAT",
+        "rent": null,
+        "costs": [],
+        "condition": null,
+        "properties": {
+          "equipment": [],
+          "areas": [
+            "balcony",
+            "garage"
+          ],
+          "floor": "FLOOR_6",
+          "kitchen": null,
+          "parking": [],
+          "numberOfRooms": 5,
+          "rooms": [],
+          "type": null,
+          "windowsOrientation": [],
+          "__typename": "FlatProperties"
+        },
+        "buildingProperties": {
+          "year": null,
+          "type": null,
+          "material": null,
+          "windows": [],
+          "heating": null,
+          "numberOfFloors": null,
+          "conveniences": [
+            "LIFT"
+          ],
+          "security": [
+            "ANTI_BURGLARY_DOOR"
+          ],
+          "__typename": "FlatBuildingProperties"
+        },
+        "ownership": null,
+        "area": {
+          "value": 189.8,
+          "unit": "M2",
+          "__typename": "Area"
+        },
+        "__typename": "Flat"
+      },
+      "owner": {
+        "id": 1656433,
+        "name": "Réplica Antas",
+        "type": "agency",
+        "phones": [
+          "+351923299587"
+        ],
+        "imageUrl": "",
+        "contacts": [],
+        "__typename": "LegacyAdvertOwner"
+      },
+      "agency": {
+        "id": 1656433,
+        "name": "Réplica Antas",
+        "licenseNumber": "12769",
+        "type": "agency",
+        "phones": [
+          "+351923299587"
+        ],
+        "address": "Avenida Fernão de Magalhães, 1266 Porto, 4350-156, Campanhã, Porto",
+        "imageUrl": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Ijdlczluc2RlZDlsNTMtQVBUIn0.JSPlOH33TLncZrup4VpnJWTGHeYlFU7Ic_cPOqor1C4/image;s=800x600;q=90",
+        "url": "https://www.imovirtual.com/pt/empresas/agencias-imobiliarias/replica-antas-ID1656433",
+        "leaderYear": "",
+        "brandingVisible": true,
+        "enabledFeatures": [
+          "ACADEMY",
+          "AD_HOMEPAGE_1_SCHEDULE",
+          "ADDITIONAL_CONTACT_FORMS_AD_PAGE",
+          "ADVANCED_PICTURE_GALLERY_AD_PAGE",
+          "AGENCY_WEB_PAGE",
+          "BANNER_DISCOUNT",
+          "CALL_TRACKING",
+          "CONTACT_CUSTOMIZATION",
+          "CONTACT_PERSONALISATION",
+          "CRM_INTEGRATION",
+          "DEDICATED_CS",
+          "EXPORT_OLX",
+          "LISTGLOBALLY",
+          "LOGO_AD_PAGE",
+          "LOGO_SEARCH_PAGE",
+          "MEGABUMP",
+          "OLX_BUNDLE_BASIC",
+          "OLX_BUNDLE_NORMAL",
+          "OLX_BUNDLE_PREMIUM",
+          "OLX_PROMOTIONS",
+          "OLX_PUSHUP",
+          "OLX_TOPADS_30",
+          "OLX_TOPADS_7",
+          "PAID_FOR_POST_30_AGENCY",
+          "PREDEFINED_MESSAGES_CONTACT_FORM",
+          "PROJECT_RED",
+          "PROMOTIONS_RECOMMENDATIONS",
+          "PUSHUP",
+          "STATISTICS",
+          "SUGGEST_PRICE_FORM",
+          "TOPADS_1",
+          "VAS_SCHEDULING"
+        ],
+        "__typename": "AdvertAgency"
+      },
+      "seo": {
+        "title": "T4, apartamento para comprar - Ramalde, Porto - 18489459 • www.imovirtual.com",
+        "description": "Excelente apartamento para venda com T4 em Ramalde, Porto, por 830 000 €. Este apartamento para venda localizado no 6 piso tem 189,80 m² de àrea útil e 189,80 m² de àrea bruta. De acordo com o profissional Réplica Antas os atributos mais importantes são Acessibilidade para pessoas com mobilidade reduzida, varanda, garagemSITE 18489459",
+        "__typename": "AdvertSeo"
+      },
+      "breadcrumbs": [
+        {
+          "label": "Apartamento para comprar",
+          "locative": "",
+          "url": "https://www.imovirtual.com/pt/anuncios/comprar/apartamento",
+          "__typename": "AdvertBreadcrumb"
+        },
+        {
+          "label": "Porto (distrito)",
+          "locative": "Porto (distrito)",
+          "url": "https://www.imovirtual.com/pt/anuncios/comprar/apartamento/porto",
+          "__typename": "AdvertBreadcrumb"
+        },
+        {
+          "label": "Porto",
+          "locative": "Porto",
+          "url": "https://www.imovirtual.com/pt/anuncios/comprar/apartamento/porto",
+          "__typename": "AdvertBreadcrumb"
+        },
+        {
+          "label": "Ramalde",
+          "locative": "Ramalde",
+          "url": "https://www.imovirtual.com/pt/anuncios/comprar/apartamento/ramalde-porto",
+          "__typename": "AdvertBreadcrumb"
+        },
+        {
+          "label": "Apartamento T4 Com Varanda| Nova Construção no Foco, Boavista",
+          "locative": "",
+          "url": "",
+          "__typename": "AdvertBreadcrumb"
+        }
+      ],
+      "userAdverts": [
+        {
+          "adId": "18458804",
+          "url": "https://www.imovirtual.com/pt/anuncio/apartamento-t3-novo-futura-estacao-de-metro-arrabioda-shoppinhg-ID1frYE",
+          "image": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Im92bzZxaTB3cGc0NjItQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.1f1BGA8VzTou26XmF7brhUUFKFzVfj0CYWe658s3-gM/image;s=314x236;q=80",
+          "roomsNum": "4",
+          "pricePerM": 2850,
+          "price": {
+            "value": "340000",
+            "unit": "EUR",
+            "__typename": "UserAdvertPrice"
+          },
+          "netArea": "119.29",
+          "title": "Apartamento T3 Novo - Futura Estação de Metro, Arrábioda Shoppinhg",
+          "__typename": "UserAdvert"
+        },
+        {
+          "adId": "18492302",
+          "url": "https://www.imovirtual.com/pt/anuncio/moradia-t3-com-terracos-em-ramalde-remodelada-ID1fAGV",
+          "image": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImF1dWZjMnV1eGZ2Zy1BUFQiLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.JGoqgVNOApHLX2hrkvlvIramJ7vYjBiqVyworuFVaL4/image;s=314x236;q=80",
+          "roomsNum": "4",
+          "pricePerM": 3986,
+          "price": {
+            "value": "550000",
+            "unit": "EUR",
+            "__typename": "UserAdvertPrice"
+          },
+          "netArea": "138",
+          "title": "Moradia T3 com Terraços em Ramalde - Remodelada",
+          "__typename": "UserAdvert"
+        },
+        {
+          "adId": "18491597",
+          "url": "https://www.imovirtual.com/pt/anuncio/apartamento-t2-duplex-novo-em-matosinhos-sul-ID1fAwz",
+          "image": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjBpY21rcXg0dGVxNjMtQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.ilN-qJpu-PMmzyWYqhydv5m_rD2Wo8TYQFA7ZfJsT4A/image;s=314x236;q=80",
+          "roomsNum": "3",
+          "pricePerM": 4190,
+          "price": {
+            "value": "440000",
+            "unit": "EUR",
+            "__typename": "UserAdvertPrice"
+          },
+          "netArea": "105",
+          "title": "Apartamento T2 Duplex Novo em Matosinhos Sul",
+          "__typename": "UserAdvert"
+        },
+        {
+          "adId": "18491579",
+          "url": "https://www.imovirtual.com/pt/anuncio/apartamento-t3-1-com-varanda-condominio-com-jardim-privativo-em-guif-ID1fAwh",
+          "image": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjRlZzR1ZmlsZjFmZTEtQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.9a7R7SLBzVaVHPFQfJjOEUSObEaDUk6DAE9Qplgn7xc/image;s=314x236;q=80",
+          "roomsNum": "4",
+          "pricePerM": 2087,
+          "price": {
+            "value": "345000",
+            "unit": "EUR",
+            "__typename": "UserAdvertPrice"
+          },
+          "netArea": "165.3",
+          "title": "Apartamento T3+1 com Varanda - Condomínio com Jardim Privativo em Guif",
+          "__typename": "UserAdvert"
+        }
+      ],
+      "paginatedUnits": {
+        "items": null,
+        "isPriceHidden": null,
+        "pagination": null,
+        "facets": null,
+        "__typename": "AdvertsPages"
+      },
+      "specialOffer": null,
+      "__typename": "Advert",
+      "contactDetails": {
+        "name": "Réplica Antas",
+        "type": "agency",
+        "phones": [
+          "+351923299587"
+        ],
+        "imageUrl": ""
+      }
+    },
+    "relativeUrl": "/pt/anuncio/apartamento-t4-com-varanda-nova-construcao-no-foco-boavista-ID1fzX5",
+    "adTrackingData": {
+      "touch_point_page": "ad_page",
+      "lat": 41.161434,
+      "long": -8.645091,
+      "ad_photo": 7,
+      "price_currency": "EUR",
+      "cat_l1_id": 101,
+      "cat_l1_name": "Apartamentos",
+      "special_offer_type": null,
+      "ad_id": "18489459",
+      "ad_price": 830000,
+      "business": "comprar",
+      "city_id": "13643787",
+      "city_name": "ramalde-porto",
+      "market": "primary",
+      "poster_type": "agency",
+      "surface": null,
+      "region_id": "porto",
+      "region_name": "porto",
+      "subregion_id": "porto",
+      "seller_id": "1656433",
+      "obido_advert": "n"
+    },
+    "referer": null,
+    "currentUser": null,
+    "cookiesCategorisation": {},
+    "experiments": {},
+    "featureFlags": {
+      "isAdAvmModuleEnabled": false,
+      "isAdFinanceBannerEnabled": false,
+      "isAdFinanceLinkEnabled": false,
+      "isAdMortgageSimulatorEnabled": false,
+      "isFeaturedDevelopmentVASEnabled": true,
+      "isListingRentPriceEnabled": false,
+      "isNewApartmentsForSalePostingFormEnabled": false,
+      "isOldSaveSearchQueryEnabled": false,
+      "isFinanceCheckboxEnabled": false,
+      "isObservedAdsPageEnabled": true,
+      "isBikPromotionEnabled": true,
+      "isSpecialOfferForUnitsExperimentEnabled": false,
+      "isSpecialOfferEnabled": true,
+      "isSeoAdsDescriptionEnabled": false,
+      "isPropertyEvaluationPageActive": false,
+      "isSettingsContactsTabMigrated": false,
+      "isRegularNmfEnabled": true,
+      "isExtendedBillingDataEnabled": false,
+      "isRESellerLeadsActive": false,
+      "isBadgesFeatureEnabled": false,
+      "isNexusHomePageEnabled": true,
+      "isPostPaymentOptionEnabled": true,
+      "isSettingsOurTeamTabEnabled": false,
+      "isHCIAMEnabled": false,
+      "isSellerLeadsMvpEnabled": false,
+      "isNexusSellerPageEnabled": false,
+      "isHCIAMAgencyRegistrationEnabled": true,
+      "isHCIAMAgentRegistrationEnabled": true,
+      "isHCIAMDeveloperRegistrationEnabled": true,
+      "isMessagingCenterEnabled": false,
+      "isMessagingCenterChatEnabled": false,
+      "__typename": "FeatureFlags"
+    },
+    "laquesisResult": null,
+    "userSessionId": "83982477-4d4c-4901-bd5a-a6fe29c5701b",
+    "unconfirmedUserAuthToken": null,
+    "desktopHeader": {
+      "Is-Desktop": "true"
+    }
+  },
+  "__N_SSP": true
+}

@@ -1,8 +1,8 @@
 {
   "pageProps": {
     "lang": "pt",
-    "_sentryTraceData": "e2abcf89168449e48f8569dab9616a15-bc6e0552b6fa361a-0",
-    "_sentryBaggage": "sentry-environment=imovirtualpt2-prd,sentry-release=frontend-platform%40v20240930T093022-imovirtualpt2,sentry-public_key=feffe528c390ea66992a4a05131c3c68,sentry-trace_id=e2abcf89168449e48f8569dab9616a15,sentry-transaction=%2Fpt%2Fanuncio%2F%5Bid%5D,sentry-sampled=false",
+    "_sentryTraceData": "1fac838bbc8048998f9e616a80d7c701-b61d6f3511e30386-0",
+    "_sentryBaggage": "sentry-environment=imovirtualpt2-prd,sentry-release=frontend-platform%40v20241004T114115-imovirtualpt2,sentry-public_key=feffe528c390ea66992a4a05131c3c68,sentry-trace_id=1fac838bbc8048998f9e616a80d7c701,sentry-transaction=%2Fpt%2Fanuncio%2F%5Bid%5D,sentry-sampled=false",
     "id": "1fxvT",
     "ad": {
       "id": 18480147,
@@ -18,7 +18,7 @@
       "advertType": "PRIVATE",
       "source": "urn:site:local",
       "createdAt": "2024-09-24T15:32:42+01:00",
-      "modifiedAt": "2024-09-24T21:04:12+01:00",
+      "modifiedAt": "2024-10-04T21:04:03+01:00",
       "description": "<p>Apartamento T4, convertido em T3, inserido na Cooperativa dos Arquitetos em Aldoar, junto ao Parque da Cidade e Avenida da Boavista.<br/>Excelente localização: zona residencial de referência na cidade, sossegada com bastante área verde, com fácil acesso a transportes públicos, comércio e serviços. Encontra-se a escassos metros do Parque da Cidade, da universidade Lusíada, escolas, Hospital Cuf e com facilidade de acesso às principais vias da cidade (Av. Boavista, VCI, A28, A1, A3 e A4). <br/>Tem duas casas de banho completas, uma delas com luz natural.<br/>Orientação solar: Nascente, Poente e Sul.<br/>Encontra-se distribuído da seguinte forma: - Hall de entrada com acesso à sala, casa de banho completa, cozinha, lavandaria e corredor dos quartos; - Sala com lareira e varanda; - Cozinha equipada com (placa, forno, exaustor e frigorífico) electrodomésticos novos; <br/>- Lavandaria com máquina de lavar roupa e armário para arrumação;<br/>- Termo acumulador super eficiente (tem ligação à rede de gás); - Hall de acesso aos quartos; - Casa de banho completa com janela virada Sul.<br/>- Garagem Box para um carro junto à entrada do prédio. <br/>Prédio equipado com 2 elevadores.<br/>Entrada imediata, pronto a habitar.<br/>Venda particular. Não pretendo ser contactado por imobiliárias.</p>",
       "developmentId": 0,
       "developmentTitle": "",
@@ -326,13 +326,13 @@
         "id": 101,
         "name": [
           {
-            "locale": "pt",
-            "value": "Apartamentos",
+            "locale": "en",
+            "value": "apartments",
             "__typename": "LocalizedString"
           },
           {
-            "locale": "en",
-            "value": "apartments",
+            "locale": "pt",
+            "value": "Apartamentos",
             "__typename": "LocalizedString"
           }
         ],
@@ -833,7 +833,7 @@
       "ad_photo": 17,
       "price_currency": "EUR",
       "cat_l1_id": 101,
-      "cat_l1_name": "Apartamentos",
+      "cat_l1_name": "apartments",
       "special_offer_type": null,
       "ad_id": "18480147",
       "ad_price": 385000,
@@ -862,7 +862,6 @@
       "isListingRentPriceEnabled": false,
       "isNewApartmentsForSalePostingFormEnabled": false,
       "isOldSaveSearchQueryEnabled": false,
-      "shouldUseNewInformation": true,
       "isFinanceCheckboxEnabled": false,
       "isObservedAdsPageEnabled": true,
       "isBikPromotionEnabled": true,
@@ -884,10 +883,12 @@
       "isHCIAMAgencyRegistrationEnabled": true,
       "isHCIAMAgentRegistrationEnabled": true,
       "isHCIAMDeveloperRegistrationEnabled": true,
+      "isMessagingCenterEnabled": false,
+      "isMessagingCenterChatEnabled": false,
       "__typename": "FeatureFlags"
     },
     "laquesisResult": null,
-    "userSessionId": "7d659eb1-23e2-44ca-bd9e-e53a651491a9",
+    "userSessionId": "8e732ad0-a81d-49e9-aa1e-b5d58095f9d6",
     "unconfirmedUserAuthToken": null,
     "desktopHeader": {
       "Is-Desktop": "true"

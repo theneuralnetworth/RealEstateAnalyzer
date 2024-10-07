@@ -1,8 +1,8 @@
 {
   "pageProps": {
     "lang": "pt",
-    "_sentryTraceData": "7955955b32324be48a0a4982924cd63e-9f9302b10a0e1df1-0",
-    "_sentryBaggage": "sentry-environment=imovirtualpt2-prd,sentry-release=frontend-platform%40v20240930T093022-imovirtualpt2,sentry-public_key=feffe528c390ea66992a4a05131c3c68,sentry-trace_id=7955955b32324be48a0a4982924cd63e,sentry-transaction=%2Fpt%2Fanuncio%2F%5Bid%5D,sentry-sampled=false",
+    "_sentryTraceData": "4a72929db0d54ece834886a6cf53f97a-b48f0d47682e0001-0",
+    "_sentryBaggage": "sentry-environment=imovirtualpt2-prd,sentry-release=frontend-platform%40v20241004T114115-imovirtualpt2,sentry-public_key=feffe528c390ea66992a4a05131c3c68,sentry-trace_id=4a72929db0d54ece834886a6cf53f97a,sentry-transaction=%2Fpt%2Fanuncio%2F%5Bid%5D,sentry-sampled=false",
     "id": "1fyqz",
     "ad": {
       "id": 18483599,
@@ -257,13 +257,13 @@
         "id": 101,
         "name": [
           {
-            "locale": "pt",
-            "value": "Apartamentos",
+            "locale": "en",
+            "value": "apartments",
             "__typename": "LocalizedString"
           },
           {
-            "locale": "en",
-            "value": "apartments",
+            "locale": "pt",
+            "value": "Apartamentos",
             "__typename": "LocalizedString"
           }
         ],
@@ -729,63 +729,63 @@
       ],
       "userAdverts": [
         {
-          "adId": "18484155",
-          "url": "https://www.imovirtual.com/pt/anuncio/fantastico-apartamento-t3-com-varanda-e-garagem-box-para-2-carros-ID1fyzx",
-          "image": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Ijlpam9ma2Y3ZTd4MzEtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.dI7VCpY5wWM7N8TaFpABTMI_CYVuqqhLtEHalfROlXI/image;s=314x236;q=80",
+          "adId": "18491962",
+          "url": "https://www.imovirtual.com/pt/anuncio/apartamento-t3-para-arrendar-na-senhora-da-hora-com-suite-garage-ID1fABs",
+          "image": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IndlNzNieWVpZXI5bzMtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.g0TkQbz0r8uBWBFR6mIEbXgPPrhiGeWePWwOvJHsnBY/image;s=314x236;q=80",
           "roomsNum": "4",
-          "pricePerM": 5134,
+          "pricePerM": 10,
           "price": {
-            "value": "730000",
+            "value": "1300",
             "unit": "EUR",
             "__typename": "UserAdvertPrice"
           },
-          "netArea": "142.2",
-          "title": "Fantástico apartamento T3 com varanda e garagem box para 2 carros.",
+          "netArea": "130.8",
+          "title": "Apartamento T3 para arrendar na Senhora da Hora - Com Suite, Garage...",
           "__typename": "UserAdvert"
         },
         {
-          "adId": "18484151",
-          "url": "https://www.imovirtual.com/pt/anuncio/t1-1-no-foco-com-grande-varanda-a-sul-ID1fyzt",
-          "image": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImdjaTllcGhjbjE1ZjEtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.rSgIocBayLJpqogGjDcGObi4OusE1eFzKg_TAzKoTM0/image;s=314x236;q=80",
+          "adId": "18491298",
+          "url": "https://www.imovirtual.com/pt/anuncio/excelente-apartamento-t2-junto-a-marina-da-afurada-ID1fAqK",
+          "image": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImNueXh0ODN0Y2p5bDEtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.BaHWnTydbonbwP5PyNFwMXHzqMaOFYDsnikKkUWvzjQ/image;s=314x236;q=80",
+          "roomsNum": "3",
+          "pricePerM": 5072,
+          "price": {
+            "value": "495000",
+            "unit": "EUR",
+            "__typename": "UserAdvertPrice"
+          },
+          "netArea": "97.6",
+          "title": "Excelente apartamento T2 junto à Marina da Afurada.",
+          "__typename": "UserAdvert"
+        },
+        {
+          "adId": "18490033",
+          "url": "https://www.imovirtual.com/pt/anuncio/apartamento-t1-com-terraco-na-marina-da-afurada-ID1fA6l",
+          "image": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjZlbjVxd3libjZ0aTMtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.lqisTVk259oyXE3Gd-SR60CPFNe1c8kmlQcUb1GGiAM/image;s=314x236;q=80",
           "roomsNum": "2",
-          "pricePerM": 4336,
+          "pricePerM": 5702,
           "price": {
-            "value": "330000",
+            "value": "325000",
             "unit": "EUR",
             "__typename": "UserAdvertPrice"
           },
-          "netArea": "76.1",
-          "title": "T1+1 no Foco com grande varanda a sul",
+          "netArea": "57",
+          "title": "Apartamento T1 com terraço, na Marina da Afurada",
           "__typename": "UserAdvert"
         },
         {
-          "adId": "18484128",
-          "url": "https://www.imovirtual.com/pt/anuncio/apartamento-t3-na-seca-do-bacalhau-vn-gaia-junto-ao-rio-e-ao-mar-ID1fyz6",
-          "image": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjFkdGhmMDRjMGpuMzMtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.TNwH8riOUZgV6kQJsAVldA35xE1WFvFKssXoZfXJ5TI/image;s=314x236;q=80",
+          "adId": "18490019",
+          "url": "https://www.imovirtual.com/pt/anuncio/apartamento-t3-com-piscina-privada-e-terraco-ID1fA67",
+          "image": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImtnYnJjdWVkOG1zeTItRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.uPocc5Cis3HgWn04-Nr96XFt7RXcVgJaUAdnAXo0Mz4/image;s=314x236;q=80",
           "roomsNum": "4",
-          "pricePerM": 4327,
+          "pricePerM": 5331,
           "price": {
-            "value": "530000",
+            "value": "725000",
             "unit": "EUR",
             "__typename": "UserAdvertPrice"
           },
-          "netArea": "122.5",
-          "title": "Apartamento T3 na Seca do Bacalhau, VN Gaia junto ao Rio e ao mar!",
-          "__typename": "UserAdvert"
-        },
-        {
-          "adId": "18484114",
-          "url": "https://www.imovirtual.com/pt/anuncio/apartamento-t3-com-terraco-lugar-de-garagem-e-arrumo-no-bonfim-ID1fyyS",
-          "image": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Im15d2N5MzhlMGpkazMtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.b-x-9I33024ufGLkfrUqp9OCfEefpqQ6zo44Iy5SFwA/image;s=314x236;q=80",
-          "roomsNum": "4",
-          "pricePerM": 3840,
-          "price": {
-            "value": "480000",
-            "unit": "EUR",
-            "__typename": "UserAdvertPrice"
-          },
-          "netArea": "125",
-          "title": "Apartamento T3, com terraço, lugar de garagem e arrumo, no Bonfim, ...",
+          "netArea": "136",
+          "title": "Apartamento T3, com piscina privada e terraço",
           "__typename": "UserAdvert"
         }
       ],
@@ -815,7 +815,7 @@
       "ad_photo": 20,
       "price_currency": "EUR",
       "cat_l1_id": 101,
-      "cat_l1_name": "Apartamentos",
+      "cat_l1_name": "apartments",
       "special_offer_type": null,
       "ad_id": "18483599",
       "ad_price": 237500,
@@ -844,7 +844,6 @@
       "isListingRentPriceEnabled": false,
       "isNewApartmentsForSalePostingFormEnabled": false,
       "isOldSaveSearchQueryEnabled": false,
-      "shouldUseNewInformation": true,
       "isFinanceCheckboxEnabled": false,
       "isObservedAdsPageEnabled": true,
       "isBikPromotionEnabled": true,
@@ -866,10 +865,12 @@
       "isHCIAMAgencyRegistrationEnabled": true,
       "isHCIAMAgentRegistrationEnabled": true,
       "isHCIAMDeveloperRegistrationEnabled": true,
+      "isMessagingCenterEnabled": false,
+      "isMessagingCenterChatEnabled": false,
       "__typename": "FeatureFlags"
     },
     "laquesisResult": null,
-    "userSessionId": "0168b9dd-a1e2-4049-8d92-1f71ca62edae",
+    "userSessionId": "ff343c9a-f65c-451b-a627-02cdd84fd68c",
     "unconfirmedUserAuthToken": null,
     "desktopHeader": {
       "Is-Desktop": "true"
