@@ -207,3 +207,69 @@ rule 6.7
 rule 6.8
     if [evaluate(N, number_of_facts(services(Property, _), <, 2))]
     then [create_fact(result(Property, services, medium))].
+
+%%%%%%%%%%% 11.Parking %%%%%%%%%%%
+
+% Rule 11.1: If the public parking availability in the location is low, then the property is classified as having low public parking.
+rule 11.1
+    if [parking(Location, low) and location_property(Location, Property)]
+    then [create_fact(public_parking(Property, low))].
+
+% Rule 11.2: If the public parking availability in the location is medium, then the property is classified as having medium public parking.
+rule 11.2
+    if [parking(Location, medium) and location_property(Location, Property)]
+    then [create_fact(public_parking(Property, medium))].
+
+% Rule 11.3: If the public parking availability in the location is high, then the property is classified as having high public parking.
+rule 11.3
+    if [parking(Location, high) and location_property(Location, Property)]
+    then [create_fact(public_parking(Property, high))].
+
+% Rule 11.4: If the property has a garage and the public parking availability is either high or medium, then the property is classified as having high overall parking.
+rule 11.4
+    if [garage(Property, present) and (public_parking(Property, high) or public_parking(Property, medium))]
+    then [create_fact(result(Property, parking, high))].
+
+% Rule 11.5: If the property does not have a garage but the public parking availability is either high or medium, then the property is classified as having medium overall parking.
+rule 11.5
+    if [garage(Property, absent) and (public_parking(Property, high) or public_parking(Property, medium))]
+    then [create_fact(result(Property, parking, medium))].
+
+% Rule 11.6: If the property does not have a garage and the public parking availability is low, then the property is classified as having low overall parking.
+rule 11.6
+    if [garage(Property, absent) and public_parking(Property, low)]
+    then [create_fact(result(Property, parking, low))].
+
+%%%%%%%%%%% 12.State %%%%%%%%%%%
+
+% Rule 12.1: If the property was constructed after 2020, it is classified as being in a high state of condition.
+rule 12.1
+    if [evaluate(N, year_construction(Property, >, 2020))]
+    then [create_fact(result(Property, state, high))].
+
+% Rule 12.2: If the property was constructed between 1990 and 2020 (inclusive), it is classified as being in a medium state of condition.
+rule 12.2
+    if [evaluate(_,year_construction(Property, >=, 1990)) and evaluate(_,year_construction(Property, <=, 2020)) ]
+    then [create_fact(result(Property, state, medium))].
+
+% Rule 12.3: If the property was constructed before 1990, it is classified as being in a low state of condition.
+rule 12.3
+    if [evaluate(_,year_construction(Property, <, 1990))]
+    then [create_fact(result(Property, state, low))].
+
+%%%%%%%%%%% 13.Potential for Appreciation %%%%%%%%%%%
+
+% Rule 13.1: If the property is located in an area where property values have increased by more than 50% in the last five years, the property is classified as having high potential for appreciation.
+rule 13.1
+    if [location_property(Location, Property) and evaluate(N, last_5_years_increased(Location, >, 50))]
+    then [create_fact(result(Property, potential_appreciation, high))].
+
+% Rule 13.2: If the property is located in an area where property values have increased by between 20% and 50% in the last five years, the property is classified as having medium potential for appreciation.
+rule 13.2
+    if [location_property(Location, Property) and evaluate(_,last_5_years_increased(Location, >=, 20)) and evaluate(_,last_5_years_increased(Location, <=, 50)) ]
+    then [create_fact(result(Property, potential_appreciation, medium))].
+
+% Rule 13.3: If the property is located in an area where property values have increased by less than 20% in the last five years, the property is classified as having low potential for appreciation.
+rule 13.3
+    if [location_property(Location, Property) and evaluate(N, last_5_years_increased(Location, <, 20))]
+    then [create_fact(result(Property, potential_appreciation, low))].

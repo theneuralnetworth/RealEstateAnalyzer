@@ -259,37 +259,52 @@
 
 ## 11. Parking Space
 
-- **Rule 11.1: Adequate Parking**
+- **Rule 11.1: Low Public Parking**
 
-  - If the property has private parking OR public parking available nearby,
-  - Then the parking is considered adequate.
+  - If the location has low public parking availability,
+  - Then the property is classified as having low public parking.
 
-- **Rule 11.2: Medium Parking**
+- **Rule 11.2: Medium Public Parking**
 
-  - If parking is available but not always guaranteed nearby,
-  - Then parking is considered medium.
+  - If the location has medium public parking availability,
+  - Then the property is classified as having medium public parking.
 
-- **Rule 11.3: Poor Parking**
+- **Rule 11.3: High Public Parking**
 
-  - If the property has neither private nor reliable public parking,
-  - Then parking is considered poor.
+  - If the location has high public parking availability,
+  - Then the property is classified as having high public parking.
+
+- **Rule 11.4: High Overall Parking**
+
+  - If the property has a private garage and either high or medium public parking available,
+  - Then the parking is considered high.
+
+- **Rule 11.5: Medium Overall Parking**
+
+  - If the property does not have a private garage but has either high or medium public parking,
+  - Then the parking is considered medium.
+
+- **Rule 11.6: Low Overall Parking**
+
+  - If the property does not have a private garage and has low public parking,
+  - Then the parking is considered low.
 
 ## 12. Year of Construction
 
-- **Rule 12.1: Modern Construction**
+- **Rule 12.1: New Construction**
 
-  - If the year of construction is 2015 or later,
-  - Then the construction is considered modern.
+  - If the year of construction is after 2020,
+  - Then the property is considered as being in a high state.
 
 - **Rule 12.2: Recent Construction**
 
-  - If the year of construction is between 2000 and 2014,
-  - Then the construction is considered recent.
+  - If the year of construction is between 1990 and 2020,
+  - Then the property is considered as being in a medium state.
 
 - **Rule 12.3: Old Construction**
 
-  - If the year of construction is before 2000,
-  - Then the construction is considered old.
+  - If the year of construction is before 1990,
+  - Then the property is considered as being in a low state.
 
 ## 13. Property Valuation Potential
 
@@ -307,6 +322,7 @@
 
   - If the location's value increased by less than 20% in the last 5 years,
   - Then the property has low valuation potential.
+
 
 ## 14. Avaliação do Imóvel
 

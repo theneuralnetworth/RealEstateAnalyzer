@@ -65,3 +65,22 @@ fact(51, nearby_supermarkets(faro, present)).
 fact(52, nearby_leisure_areas(lisboa, absent)).
 fact(53, nearby_leisure_areas(porto, absent)).
 fact(54, nearby_leisure_areas(faro, present)).
+
+% Parking
+fact(55, parking(lisboa, low)).
+fact(56, parking(porto, medium)).
+fact(57, parking(faro, high)).
+fact(58, garage(property_1, absent)).
+fact(59, garage(property_2, present)).
+fact(60, garage(property_3, absent)).
+
+% Construction Year
+fact(61, year_construction(property_1, 2018)).
+fact(62, year_construction(property_2, 1960)).
+fact(63, year_construction(property_3, 2021)).
+
+% Potential for Appreciation
+fact(64, last_5_years_increased(lisboa, 70)).
+fact(65, last_5_years_increased(porto, 35)).
+fact(66, last_5_years_increased(lisboa, 10)).
+
