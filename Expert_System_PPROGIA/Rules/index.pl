@@ -210,6 +210,26 @@ rule 6.8
     then [create_fact(result(Property, services, medium))].
 */
 
+% Rule 7.1: If the property has optical fiber and smart appliances, then the property is classified as having high connectivity.
+rule 7.1
+    if [optical_fiber(Property, present) and smart_appliances(Property, present)]
+    then [create_fact(result(Property, connectivity, high))].
+
+% Rule 7.2: If the property has optical fiber and no smart appliances, then the property is classified as having medium connectivity.
+rule 7.2
+    if [optical_fiber(Property, present) and smart_appliances(Property, absent)]
+    then [create_fact(result(Property, connectivity, medium))].
+
+% Rule 7.3: If the property does not have optical fiber but has smart appliances, then the property is classified as having medium connectivity.
+rule 7.3
+    if [optical_fiber(Property, absent) and smart_appliances(Property, present)]
+    then [create_fact(result(Property, connectivity, medium))].
+
+% Rule 7.4: If the property does not have optical fiber or smart appliances, then the property is classified as having low connectivity.
+rule 7.4
+    if [optical_fiber(Property, absent) and smart_appliances(Property, absent)]
+    then [create_fact(result(Property, connectivity, low))].
+
 %%%%%%%%%%% 11.Parking %%%%%%%%%%%
 
 % Rule 11.1: If the public parking availability in the location is low, then the property is classified as having low public parking.
@@ -275,3 +295,4 @@ rule 13.2
 rule 13.3
     if [evaluate(last_5_years_increased(Location, <, 20)) and location_property(Location, Property)]
     then [create_fact(result(Property, potential_appreciation, low))].
+

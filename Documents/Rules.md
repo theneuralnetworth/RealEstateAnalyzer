@@ -209,17 +209,19 @@
 
 ## 7. Infraestrutura de Conectividade
 
-- **Regra 7.1: Alta Conectividade**
+- **Regra 7.1: High Connectivity**
+  - If the property has optical fiber internet and smart appliances,
+  - Then the connectivity level is high.
 
-  - Se o imóvel possui internet de fibra e recursos de casa inteligente,
-  - Então a conectividade é considerada alta.
+- **Regra 7.2: Medium connectivity**
+  - If the property has optical fiber internet but does not have smart appliances,
+  - Then the connectivity is medium.
 
-- **Regra 7.2: Média Conectividade**
+- **Regra 7.3: Medium connectivity**
+  - If the property does not have optical fiber internet but does have smart appliances,
+  - Then the connectivity is medium
 
-  - Se o imóvel possui internet de fibra e não possui recursos de casa inteligente,
-  - Então a conectividade é considerada média.
-
-- **Regra 7.3: Baixa Conectividade**
+- **Regra 7.4: Baixa Conectividade**
   - Se o imóvel não possui internet de fibra nem recursos de casa inteligente,
   - Então a conectividade é considerada baixa.
 
