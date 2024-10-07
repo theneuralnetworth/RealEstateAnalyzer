@@ -12,10 +12,10 @@ def generate_prolog_facts(data):
     unmapped_features = set()
 
     feature_mapping = {
-        'acessibilidade para pessoas com mobilidade reduzida': 'hasAccessibility',
-        'elevador': 'hasElevator',
-        'piscina': 'hasPool',
-        'jardim': 'hasGarden',
+        'acessibilidade para pessoas com mobilidade reduzida': 'ramps',
+        'elevador': 'elevator',
+        'piscina': 'swimming_pool',
+        'jardim': 'garden',
         'garagem': 'hasGarage',
         'estacionamento': 'hasParking',
         'ar condicionado': 'hasAirConditioning',
@@ -38,8 +38,9 @@ def generate_prolog_facts(data):
         'preço': 'price',
         'área': 'area',
         'preço/m2': 'pricePerSquareMeter',
-        'nova construção': 'newConstruction',
-        'certificado energético': 'energyClass',
+        'price per meter': 'pricePerSquareMeter',
+        'nova construção': 'property_condition',
+        'certificado energético': 'energy_rating',
         'n.º de casas de banho': 'numberBathrooms',
         'aquecimento': 'heating',
         'fase de acabamento': 'status',
@@ -55,9 +56,8 @@ def generate_prolog_facts(data):
         fact_counter += 1
         security_count = 0
 
-        print(f"Property Features > {property['features']}")
 
-        # Check for features in feature_mapping
+        # -------------------------- Check for features ------------------------#
         for feature in feature_mapping.keys():
             # Check if the property has the feature
             has_feature = feature.lower() in (f.lower() for f in property['features'])
@@ -85,24 +85,49 @@ def generate_prolog_facts(data):
         facts.append(f"facto({fact_counter}, hasSecurity({property['id']}, {security_value})).")
         fact_counter += 1
 
-        # Characteristics facts
+        # ------------------------ Characteristics facts ----------------------------- #
         for characteristic in property['characteristics']:
             original_label = characteristic['label'].lower()
             value = characteristic['localizedValue'].replace("'", "''")
+            label = ""
             
-            # Use the mapped value if it exists in special_chars_map, otherwise use the original (cleaned) label
-            label = special_chars_map.get(original_label, original_label.replace(' ', '_').replace('º', ''))
-            
-            facts.append(f"facto({fact_counter}, {label}({property['id']}, '{value}')).")
-            fact_counter += 1
+            label = special_chars_map[original_label] if original_label in special_chars_map else original_label.replace(' ', '_').replace('º', '')
 
-        # Images facts
+            # property_condition in reality is "is_new_build", if yes then its "new", else we assume its "regular"
+            if label == 'property_condition':
+                value = 'new' if value == 'sim' else 'regular'
+            
+            if label == 'andar':
+                value = 0 if value in ['rés do chão', 'águas furtadas', 'semi-cave'] else value
+
+            # Format energy class to match rules values
+            if label == 'energy_rating':
+                value = 'absent' if value == 'isento / em curso' else value.lower()
+                if len(value) > 1:
+                    if value[1] == '++':
+                        value = f"{value[0]}_plus_plus" 
+                    elif value[1] == '+':
+                        value = f"{value[0]}_plus" 
+                    elif value[1] == '-':
+                        value = f"{value[0]}_minus"
+
+            value = '4_plus' if label == 'numberBathrooms' and value == '4 ou mais' else value
+            
+            # Remove €, m2 for price, area and pricePerSquareMeter values
+            value = value.replace('€/m²','').replace('m²', '').replace('€', '').replace(' ', '') if label in ['price', 'area', 'pricePerSquareMeter', 'despesas_adicionais'] else value
+
+            # characteristics to ignore
+            if label not in ['status']: 
+                facts.append(f"facto({fact_counter}, {label}({property['id']}, '{value}')).")
+                fact_counter += 1
+
+        #  ------------------------ Images facts ---------------------#
         for image_url in property['images']:
             facts.append(f"facto({fact_counter}, image({property['id']}, '{image_url}')).")
             fact_counter += 1
 
-        # Location fact
-        facts.append(f"facto({fact_counter}, location({property['id']}, '{property['location']}')).")
+        # -------------------------- Location fact -------------------#
+        facts.append(f"facto({fact_counter}, location_property({property['id']}, '{property['location'].lower()}')).")
         fact_counter += 1
 
     return facts
