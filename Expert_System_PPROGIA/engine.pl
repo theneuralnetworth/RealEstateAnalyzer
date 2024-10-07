@@ -9,9 +9,9 @@
 
 % load knowledge base
 load_kb:-
-	consult('RealEstateAnalyzer/Expert_System_PPROGIA/Metaknowledge/index.pl'),
-	consult('RealEstateAnalyzer/Expert_System_PPROGIA/Rules/index.pl'),
-    consult('RealEstateAnalyzer/Expert_System_PPROGIA/Facts/index.pl').
+	consult('Expert_System_PPROGIA/Metaknowledge/index.pl'),
+	consult('Expert_System_PPROGIA/Rules/index.pl'),
+    consult('Expert_System_PPROGIA/Facts/index.pl').
 
 % counts the number of facts
 number_of_facts(Total) :-
@@ -26,7 +26,7 @@ start_engine :-
 
 % when all facts are processed
 start_engine_loop(N, N) :-
-    writeln('All facts have been processed.').
+    !.
 
 % process each fact and repeat the process after create the new facts
 start_engine_loop(N, Total) :-
@@ -127,15 +127,25 @@ create_fact(F,ID,LFacts):-
 	N is N1+1,
 	asserta(last_fact(N)),
 	assertz(justifies(N,ID,LFacts)),
-	assertz(fact(N,F)),
-	write('The fact has been concluded, n. '),write(N),write(' -> '),write(F),get0(_),!.
-
-
+	assertz(fact(N,F)),!.
 
 evaluate(N,P):-	P=..[Functor,Entidade,Operando,Valor],
 		P1=..[Functor,Entidade,Valor1],
 		fact(N,P1),
 		compare_values(Valor1,Operando,Valor).
+
+/*
+evaluate(N, P) :-
+    P =.. [number_of_facts, Predicate, Operando, Valor],
+    count_facts(Predicate, Count),
+    compare_values(Count, Operando, Valor), !.
+
+count_facts(Predicate, Count) :-
+	findall(_, fact(_, Predicate), List),
+	length(List, Count).
+*/
+
+
 
 compare_values(V1,==,V):- V1==V.
 compare_values(V1,\==,V):- V1\==V.

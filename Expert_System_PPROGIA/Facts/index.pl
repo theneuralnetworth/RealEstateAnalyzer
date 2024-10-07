@@ -24,3 +24,44 @@ fact(18, acoustic_insulation(property_3, high)).
 fact(19, thermal_comfort(property_1, high)).
 fact(20, thermal_comfort(property_2, low)).
 fact(21, thermal_comfort(property_3, high)).
+
+% Accessibility
+fact(22, elevator(property_1, absent)).
+fact(23, elevator(property_2, absent)).
+fact(24, elevator(property_3, present)).
+fact(25, ramps(property_1, absent)).
+fact(26, ramps(property_2, present)).
+fact(27, ramps(property_3, present)).
+
+% Maintenance
+fact(28, swimming_pool(property_1, absent)).
+fact(29, swimming_pool(property_2, absent)).
+fact(30, swimming_pool(property_3, present)).
+fact(31, garden(property_1, absent)).
+fact(32, garden(property_2, present)).
+fact(33, garden(property_3, present)).
+fact(34, property_condition(property_1, regular)).
+fact(35, property_condition(property_2, new)).
+fact(36, property_condition(property_3, reform)).
+
+% Energy Efficiency
+fact(37, energy_rating(property_1, b)).
+fact(38, energy_rating(property_2, e)).
+fact(39, energy_rating(property_3, a)).
+
+% Services
+fact(40, nearby_schools(lisboa, present)).
+fact(41, nearby_schools(porto, present)).
+fact(42, nearby_schools(faro, absent)).
+fact(43, nearby_public_transport(lisboa, absent)).
+fact(44, nearby_public_transport(porto, absent)).
+fact(45, nearby_public_transport(faro, present)).
+fact(46, nearby_hospitals(lisboa, present)).
+fact(47, nearby_hospitals(porto, present)).
+fact(48, nearby_hospitals(faro, present)).
+fact(49, nearby_supermarkets(lisboa, absent)).
+fact(50, nearby_supermarkets(porto, present)).
+fact(51, nearby_supermarkets(faro, present)).
+fact(52, nearby_leisure_areas(lisboa, absent)).
+fact(53, nearby_leisure_areas(porto, absent)).
+fact(54, nearby_leisure_areas(faro, present)).

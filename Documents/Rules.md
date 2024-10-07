@@ -99,67 +99,113 @@
   - If the sound comfort is medium or the thermal comfort is medium,
   - Then the overall comfort of the property is considered medium.
 
-## 3. Acessibilidade
+## 3. Accessibility
 
-- **Regra 3.1: Alta Acessibilidade**
+- **Rule 3.1: High Accessibility**
+  
+  - If the property has an elevator and ramps, 
+  - Then the property is classified as having high accessibility.
 
-  - Se o imóvel possui elevador e rampas,
-  - Então a acessibilidade é considerada alta.
+- **Rule 3.2: Low Accessibility**
+  
+  - If the property does not have an elevator and ramps, 
+  - Then the property is classified as having low accessibility.
 
-- **Regra 3.2: Baixa Acessibilidade**
+- **Rule 3.3: Medium Accessibility**
+  
+  - If the property has either an elevator or ramps, but not both, 
+  - Then the property is classified as having medium accessibility.
 
-  - Se o imóvel não possui elevador nem rampas,
-  - Então a acessibilidade é considerada baixa.
+## 4. Maintenance
 
-- **Regra 3.3: Moderada Acessibilidade**
-  - Se o imóvel possui elevador ou (exclusivo) rampas,
-  - Então a acessibilidade é considerada moderada.
+- **Rule 4.1: Medium Commodities**
+  
+  - If the property has either a swimming pool or a garden, but not both, 
+  - Then the property is classified as having medium commodities.
 
-## 4. Manutenção
+- **Rule 4.2: High Commodities**
+  
+  - If the property has both a swimming pool and a garden, 
+  - Then the property is classified as having high commodities.
 
-- **Regra 4.1: Moderado Custos de Manutenção**
+- **Rule 4.3: Low Commodities**
+  
+  - If the property has neither a swimming pool nor a garden, 
+  - Then the property is classified as having low commodities.
 
-  - Se o imóvel possui piscina ou (exclusivo) jardim,
-  - Então os custos de manutenção são considerados moderados.
+- **Rule 4.4: Low Maintenance**
+  
+  - If the property is new or has low commodities, 
+  - Then the property is classified as requiring low maintenance.
 
-- **Regra 4.2: Altos Custos de Manutenção**
+- **Rule 4.5: Medium Maintenance**
+  
+  - If the property is not new and has medium commodities, 
+  - Then the property is classified as requiring medium maintenance.
 
-  - Se o imóvel possui piscina e jardim,
-  - Então os custos de manutenção são considerados altos.
+- **Rule 4.6: High Maintenance**
+  
+  - If the property is not new and has high commodities, 
+  - Then the property is classified as requiring high maintenance.
 
-- **Regra 4.3: Baixos Custos de Manutenção**
-  - Se o estado do imóvel é novo,
-  - Então os custos de manutenção são considerados baixos.
+## 5. Energy Efficiency
 
-## 5. Eficiência Energética
+- **Rule 5.1: High Energy Efficiency**
+  
+  - If the property has an energy rating of A++, A+, or A, 
+  - Then the property is classified as having high energy efficiency.
 
-- **Regra 5.1: Alta Eficiência Energética**
+- **Rule 5.2: Medium Energy Efficiency**
+  
+  - If the property has an energy rating of B or C, 
+  - Then the property is classified as having medium energy efficiency.
 
-  - Se a classe energética é A++, A+, ou A,
-  - Então a eficiência energética é considerada alta.
+- **Rule 5.3: Low Energy Efficiency**
+  
+  - If the property has an energy rating of D, E, or F, 
+  - Then the property is classified as having low energy efficiency.
 
-- **Regra 5.2: Moderado Eficiência Energética**
+## 6. Services
 
-  - Se a classe energética é B, C, ou D,
-  - Então a eficiência energética é considerada moderada.
+- **Rule 6.1: Nearby Schools**
+  
+  - If the property is located near schools, 
+  - Then it is classified as having the service "nearby schools".
 
-- **Regra 5.3: Baixa Eficiência Energética**
-  - Se a classe energética é D, E, ou F,
-  - Então a eficiência energética é considerada baixa.
+- **Rule 6.2: Nearby Public Transport**
+  
+  - If the property is located near public transport, 
+  - Then it is classified as having the service "nearby public transport".
 
-## 6. Serviços
+- **Rule 6.3: Nearby Hospitals**
+  
+  - If the property is located near hospitals, 
+  - Then it is classified as having the service "nearby hospitals".
 
-- **Regra 6.1: Alta disponibilidade de Serviços**
+- **Rule 6.4: Nearby Supermarkets**
+  
+  - If the property is located near supermarkets, 
+  - Then it is classified as having the service "nearby supermarkets".
 
-  - Se o imóvel possui escolas, transportes públicos, hospitais, parques, supermercados e zonas de lazer nas proximidades,
-  - Então a disponibilidade de serviços do imóvel é alta.
+- **Rule 6.5: Nearby Leisure Areas**
+  
+  - If the property is located near leisure areas, 
+  - Then it is classified as having the service "nearby leisure areas".
 
-- **Regra 6.2: Média disponibilidade de serviços**
+- **Rule 6.6: High Service Level**
+  
+  - If a property has four or more nearby services, 
+  - Then it is classified as having a high service level.
 
-  - ...
+- **Rule 6.7: Medium Service Level**
+  
+  - If a property has two or three nearby services, 
+  - Then it is classified as having a medium service level.
 
-- **Regra 6.3: Baixa disponibilidade de serviços**
-  - ...
+- **Rule 6.8: Low Service Level**
+  
+  - If a property has less than two nearby services, 
+  - Then it is classified as having a low service level.
 
 ## 7. Infraestrutura de Conectividade
 
@@ -211,49 +257,56 @@
 - **Regra 10.3: Orientação Solar Pequena**
   - ...
 
-## 11. Lugar de Estacionamento
+## 11. Parking Space
 
-- **Regra 11.1: Estacionamento Adequado**
+- **Rule 11.1: Adequate Parking**
 
-  - Se o imóvel possui estacionamento privado OU localização com estacionamento público disponível,
-  - Então o estacionamento é considerado adequado.
+  - If the property has private parking OR public parking available nearby,
+  - Then the parking is considered adequate.
 
-- **Regra 11.2: Estacionamento Moderado**
+- **Rule 11.2: Medium Parking**
 
-  - ...
+  - If parking is available but not always guaranteed nearby,
+  - Then parking is considered medium.
 
-- **Regra 11.3: Estacionamento Mau**
-  - ...
+- **Rule 11.3: Poor Parking**
 
-## 12. Ano de Construção
+  - If the property has neither private nor reliable public parking,
+  - Then parking is considered poor.
 
-- **Regra 12.1: Construção Moderna**
+## 12. Year of Construction
 
-  - Se o ano de construção do imóvel é posterior ou igual a 2015,
-  - Então a construção é considerada moderna.
+- **Rule 12.1: Modern Construction**
 
-- **Regra 12.2: Construção Recente**
+  - If the year of construction is 2015 or later,
+  - Then the construction is considered modern.
 
-  - ...
+- **Rule 12.2: Recent Construction**
 
-- **Regra 12.3: Construção Antiga**
-  - ...
+  - If the year of construction is between 2000 and 2014,
+  - Then the construction is considered recent.
 
-## 13. Potencial de Valorização
+- **Rule 12.3: Old Construction**
 
-- **Regra 13.1: Alto Potencial de Valorização**
+  - If the year of construction is before 2000,
+  - Then the construction is considered old.
 
-  - Se a localização valorizou > 50% nos últimos 5 anos,
-  - Então o imóvel possui alto potencial de valorização.
+## 13. Property Valuation Potential
 
-- **Regra 13.2: Moderado Potencial de Valorização**
+- **Rule 13.1: High Valuation Potential**
 
-  - Se a localização valorizou < 50% e > 20% nos últimos 5 anos,
-  - Então o imóvel possui potencial de valorização moderado.
+  - If the location's value increased by more than 50% in the last 5 years,
+  - Then the property has high valuation potential.
 
-- **Regra 13.3: Baixo Potencial de Valorização**
-  - Se a localização valorizou < 20% nos últimos 5 anos,
-  - Então o imóvel possui baixo potencial de valorização.
+- **Rule 13.2: Medium Valuation Potential**
+
+  - If the location's value increased by between 20% and 50% in the last 5 years,
+  - Then the property has medium valuation potential.
+
+- **Rule 13.3: Low Valuation Potential**
+
+  - If the location's value increased by less than 20% in the last 5 years,
+  - Then the property has low valuation potential.
 
 ## 14. Avaliação do Imóvel
 

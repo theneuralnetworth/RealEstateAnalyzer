@@ -99,3 +99,111 @@ rule 2.11
 rule 2.12
     if [sound_comfort(Property, medium) or thermal_comfort(Property, medium)]
     then [create_fact(result(Property, comfort, medium))].
+
+%%%%%%%%%%% 3.Accessibility %%%%%%%%%%%
+
+% Rule 3.1: If the property has an elevator and ramps, then the property is classified as having high accessibility.
+rule 3.1
+    if [elevator(Property, present) and ramps(Property, present)]
+    then [create_fact(result(Property, accessibility, high))].
+
+% Rule 3.2: If the property does not have an elevator and ramps, then the property is classified as having low accessibility.
+rule 3.2
+    if [elevator(Property, absent) and ramps(Property, absent)]
+    then [create_fact(result(Property, accessibility, low))].
+
+% Rule 3.3: If the property has either an elevator or ramps, but not both, then the property is classified as having medium accessibility.
+rule 3.3
+    if [(elevator(Property, present) and ramps(Property, absent)) or (elevator(Property, absent) and ramps(Property, present))]
+    then [create_fact(result(Property, accessibility, medium))].
+
+%%%%%%%%%%% 4.Maintenance %%%%%%%%%%%
+
+% Rule 4.1: If the property has either a swimming pool or a garden, but not both, then the property is classified as having medium commodities.
+rule 4.1
+    if [(swimming_pool(Property, present) and garden(Property, absent)) or (swimming_pool(Property, absent) and garden(Property, present))]
+    then [create_fact(commodities(Property, medium))].
+
+% Rule 4.2: If the property has both a swimming pool and a garden, then the property is classified as having high commodities.
+rule 4.2
+    if [swimming_pool(Property, present) and garden(Property, present)]
+    then [create_fact(commodities(Property, high))].
+
+% Rule 4.3: If the property has neither a swimming pool nor a garden, then the property is classified as having low commodities.
+rule 4.3
+    if [swimming_pool(Property, absent) and garden(Property, absent)]
+    then [create_fact(commodities(Property, low))].
+
+% Rule 4.4: If the property is new or has low commodities, then it is classified as requiring low maintenance.
+rule 4.4
+    if [property_condition(Property, new) or commodities(Property, low)]
+    then [create_fact(result(Property, maintenance, low))].
+
+% Rule 4.5: If the property is not new and has medium commodities, then it is classified as requiring medium maintenance.
+rule 4.5
+    if [not property_condition(Property, new) and commodities(Property, medium)]
+    then [create_fact(result(Property, maintenance, medium))].
+
+% Rule 4.6: If the property is not new and has high commodities, then it is classified as requiring high maintenance.
+rule 4.6
+    if [not property_condition(Property, new) and commodities(Property, high)]
+    then [create_fact(result(Property, maintenance, high))].
+
+%%%%%%%%%%% 5.Energy Efficiency %%%%%%%%%%%
+
+% Rule 5.1: If the property has an energy rating of A++ or A+ or A, then the property is classified as having high energy efficiency.
+rule 5.1
+    if [energy_rating(Property, a_plus_plus) or energy_rating(Property, a_plus) or energy_rating(Property, a)]
+    then [create_fact(result(Property, energy_efficiency, high))].
+
+% Rule 5.2: If the property has an energy rating of B or C, then the property is classified as having medium energy efficiency.
+rule 5.2
+    if [energy_rating(Property, b) or energy_rating(Property, c)]
+    then [create_fact(result(Property, energy_efficiency, medium))].
+
+% Rule 5.3: If the property has an energy rating of D, E, or F, then the property is classified as having low energy efficiency.
+rule 5.3
+    if [energy_rating(Property, d) or energy_rating(Property, e) or energy_rating(Property, f)]
+    then [create_fact(result(Property, energy_efficiency, low))].
+
+%%%%%%%%%%% 6.Services %%%%%%%%%%%
+
+% Rule 6.1: If the property is located near schools, then it is classified as having the service "nearby schools".
+rule 6.1
+    if [location_property(Location, Property) and nearby_schools(Location, present)]
+    then [create_fact(services(Property, nearby_schools))].
+
+% Rule 6.2: If the property is located near public transport, then it is classified as having the service "nearby public transport".
+rule 6.2
+    if [location_property(Location, Property) and nearby_public_transport(Location, present)]
+    then [create_fact(services(Property, nearby_public_transport))].
+
+% Rule 6.3: If the property is located near hospitals, then it is classified as having the service "nearby hospitals".
+rule 6.3
+    if [location_property(Location, Property) and nearby_hospitals(Location, present)]
+    then [create_fact(services(Property, nearby_hospitals))].
+
+% Rule 6.4: If the property is located near supermarkets, then it is classified as having the service "nearby supermarkets".
+rule 6.4
+    if [location_property(Location, Property) and nearby_supermarkets(Location, present)]
+    then [create_fact(services(Property, nearby_supermarkets))].
+
+% Rule 6.5: If the property is located near leisure areas, then it is classified as having the service "nearby leisure areas".
+rule 6.5
+    if [location_property(Location, Property) and nearby_leisure_areas(Location, present)]
+    then [create_fact(services(Property, nearby_leisure_areas))].
+
+% Rule 6.6: If a property has four or more nearby services, then it is classified as having a high service level.
+rule 6.6
+    if [evaluate(N, number_of_facts(services(Property, _), >=, 4))]
+    then [create_fact(result(Property, services, medium))].
+
+% Rule 6.7: If a property has two or three nearby services, then it is classified as having a medium service level.
+rule 6.7
+    if [evaluate(N, number_of_facts(services(Property, _), >=, 2)) and evaluate(N, number_of_facts(services(Property, _), <, 4))]
+    then [create_fact(result(Property, services, medium))].
+
+% Rule 6.8: If a property has less than two nearby services, then it is classified as having a low service level.
+rule 6.8
+    if [evaluate(N, number_of_facts(services(Property, _), <, 2))]
+    then [create_fact(result(Property, services, medium))].
