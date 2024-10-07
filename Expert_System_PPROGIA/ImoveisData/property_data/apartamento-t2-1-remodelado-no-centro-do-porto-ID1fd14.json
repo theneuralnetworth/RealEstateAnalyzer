@@ -1,8 +1,8 @@
 {
   "pageProps": {
     "lang": "pt",
-    "_sentryTraceData": "effe128bcdfe4d709e8cc096ce8e54aa-850364c62ad076d6-0",
-    "_sentryBaggage": "sentry-environment=imovirtualpt2-prd,sentry-release=frontend-platform%40v20240930T093022-imovirtualpt2,sentry-public_key=feffe528c390ea66992a4a05131c3c68,sentry-trace_id=effe128bcdfe4d709e8cc096ce8e54aa,sentry-transaction=%2Fpt%2Fanuncio%2F%5Bid%5D,sentry-sampled=false",
+    "_sentryTraceData": "0b0d644c3167467b90dd39966f01b2bf-b2adae87e878f15e-0",
+    "_sentryBaggage": "sentry-environment=imovirtualpt2-prd,sentry-release=frontend-platform%40v20241004T114115-imovirtualpt2,sentry-public_key=feffe528c390ea66992a4a05131c3c68,sentry-trace_id=0b0d644c3167467b90dd39966f01b2bf,sentry-transaction=%2Fpt%2Fanuncio%2F%5Bid%5D,sentry-sampled=false",
     "id": "1fd14",
     "ad": {
       "id": 18401294,
@@ -749,6 +749,21 @@
       ],
       "userAdverts": [
         {
+          "adId": "18487819",
+          "url": "https://www.imovirtual.com/pt/anuncio/apartamento-t2-novo-com-terraco-e-garagem-ID1fzvD",
+          "image": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InI5c3BmcXNqYnB4di1FQ09TWVNURU0iLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ._Vtl--B9ktXAh7KEIqpkgOedAgVxTo0zmeMdspMGJMI/image;s=314x236;q=80",
+          "roomsNum": "3",
+          "pricePerM": 4233,
+          "price": {
+            "value": "317500",
+            "unit": "EUR",
+            "__typename": "UserAdvertPrice"
+          },
+          "netArea": "75",
+          "title": "Apartamento T2 novo com terraço e garagem",
+          "__typename": "UserAdvert"
+        },
+        {
           "adId": "18473331",
           "url": "https://www.imovirtual.com/pt/anuncio/lote-de-terreno-com-projeto-aprovado-ID1fwKX",
           "image": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImpjeTZrdmN5cjgwazItRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.kWQMOxg_xHk15mE09DUfzYGsWPxYPbSUkkyi12vgNBA/image;s=314x236;q=80",
@@ -791,21 +806,6 @@
           },
           "netArea": "488",
           "title": "Moradia T4 de quatro frentes na Maia",
-          "__typename": "UserAdvert"
-        },
-        {
-          "adId": "18359270",
-          "url": "https://www.imovirtual.com/pt/anuncio/moradias-t4-em-famalicao-ID1f25g",
-          "image": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InM5a3d6a2RqMzNlcDEtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.P5JLDs2Z2fMPM-OvOyy55kls95ZDZWpm8-EBGc4WkCo/image;s=314x236;q=80",
-          "roomsNum": "5",
-          "pricePerM": 1374,
-          "price": {
-            "value": "290000",
-            "unit": "EUR",
-            "__typename": "UserAdvertPrice"
-          },
-          "netArea": "211",
-          "title": "Moradias T4 em Famalicão",
           "__typename": "UserAdvert"
         }
       ],
@@ -864,7 +864,6 @@
       "isListingRentPriceEnabled": false,
       "isNewApartmentsForSalePostingFormEnabled": false,
       "isOldSaveSearchQueryEnabled": false,
-      "shouldUseNewInformation": true,
       "isFinanceCheckboxEnabled": false,
       "isObservedAdsPageEnabled": true,
       "isBikPromotionEnabled": true,
@@ -886,10 +885,12 @@
       "isHCIAMAgencyRegistrationEnabled": true,
       "isHCIAMAgentRegistrationEnabled": true,
       "isHCIAMDeveloperRegistrationEnabled": true,
+      "isMessagingCenterEnabled": false,
+      "isMessagingCenterChatEnabled": false,
       "__typename": "FeatureFlags"
     },
     "laquesisResult": null,
-    "userSessionId": "9c315a28-c055-492c-9083-407e9d6448b1",
+    "userSessionId": "cd4601d7-6136-49f4-8d2e-782edf13e516",
     "unconfirmedUserAuthToken": null,
     "desktopHeader": {
       "Is-Desktop": "true"

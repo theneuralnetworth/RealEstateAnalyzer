@@ -1,8 +1,8 @@
 {
   "pageProps": {
     "lang": "pt",
-    "_sentryTraceData": "80bf0167c073421eb2ba391d89f74fc0-b0552343a0534737-0",
-    "_sentryBaggage": "sentry-environment=imovirtualpt2-prd,sentry-release=frontend-platform%40v20240930T093022-imovirtualpt2,sentry-public_key=feffe528c390ea66992a4a05131c3c68,sentry-trace_id=80bf0167c073421eb2ba391d89f74fc0,sentry-transaction=%2Fpt%2Fanuncio%2F%5Bid%5D,sentry-sampled=false",
+    "_sentryTraceData": "f41028aeb27845cbb363ca80d5834828-8961d9c0077dd742-0",
+    "_sentryBaggage": "sentry-environment=imovirtualpt2-prd,sentry-release=frontend-platform%40v20241004T114115-imovirtualpt2,sentry-public_key=feffe528c390ea66992a4a05131c3c68,sentry-trace_id=f41028aeb27845cbb363ca80d5834828,sentry-transaction=%2Fpt%2Fanuncio%2F%5Bid%5D,sentry-sampled=false",
     "id": "1fgIc",
     "ad": {
       "id": 18415500,
@@ -741,6 +741,21 @@
       ],
       "userAdverts": [
         {
+          "adId": "18491445",
+          "url": "https://www.imovirtual.com/pt/anuncio/t2-com-varanda-e-lugar-de-garagem-em-gulpilhares-ID1fAt7",
+          "image": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InVyMXNwMWtzNzlpaDMtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.zSWKhNbfblJvX95060vgjfazzqams6JNGT6t0xptz88/image;s=314x236;q=80",
+          "roomsNum": "3",
+          "pricePerM": 1601,
+          "price": {
+            "value": "158500",
+            "unit": "EUR",
+            "__typename": "UserAdvertPrice"
+          },
+          "netArea": "99",
+          "title": "T2 COM VARANDA E LUGAR DE GARAGEM EM GULPILHARES",
+          "__typename": "UserAdvert"
+        },
+        {
           "adId": "18473083",
           "url": "https://www.imovirtual.com/pt/anuncio/andar-moradia-t3-ID1fwGX",
           "image": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjR0Y3Mwd3N1OGVoai1FQ09TWVNURU0iLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ._rm5yH84j7ddVnXoFcwGNM7-8Ck5FFSP_2B-lI9zeM8/image;s=314x236;q=80",
@@ -768,21 +783,6 @@
           },
           "netArea": "256",
           "title": "Venda Moradia",
-          "__typename": "UserAdvert"
-        },
-        {
-          "adId": "18252814",
-          "url": "https://www.imovirtual.com/pt/anuncio/venda-apartamento-ID1eAoe",
-          "image": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Inp6bjMxNXRoZnIxZjMtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.-0pWvJYJWqmkH6wRib-zH60b_0Ze9_Rm8y3SdFNK0Gs/image;s=314x236;q=80",
-          "roomsNum": "4",
-          "pricePerM": 2114,
-          "price": {
-            "value": "279000",
-            "unit": "EUR",
-            "__typename": "UserAdvertPrice"
-          },
-          "netArea": "132",
-          "title": "Venda Apartamento",
           "__typename": "UserAdvert"
         },
         {
@@ -856,7 +856,6 @@
       "isListingRentPriceEnabled": false,
       "isNewApartmentsForSalePostingFormEnabled": false,
       "isOldSaveSearchQueryEnabled": false,
-      "shouldUseNewInformation": true,
       "isFinanceCheckboxEnabled": false,
       "isObservedAdsPageEnabled": true,
       "isBikPromotionEnabled": true,
@@ -878,10 +877,12 @@
       "isHCIAMAgencyRegistrationEnabled": true,
       "isHCIAMAgentRegistrationEnabled": true,
       "isHCIAMDeveloperRegistrationEnabled": true,
+      "isMessagingCenterEnabled": false,
+      "isMessagingCenterChatEnabled": false,
       "__typename": "FeatureFlags"
     },
     "laquesisResult": null,
-    "userSessionId": "5dce3165-5f3b-450d-8d9e-1cb795908e77",
+    "userSessionId": "5e0d9117-5942-40f9-9a5c-2c884ec03417",
     "unconfirmedUserAuthToken": null,
     "desktopHeader": {
       "Is-Desktop": "true"

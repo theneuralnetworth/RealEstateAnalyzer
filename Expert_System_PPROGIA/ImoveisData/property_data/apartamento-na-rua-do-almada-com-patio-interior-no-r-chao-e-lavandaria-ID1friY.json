@@ -1,8 +1,8 @@
 {
   "pageProps": {
     "lang": "pt",
-    "_sentryTraceData": "2b216f72bbc8400786ac4f20b1434542-8229d66d98e7e08d-0",
-    "_sentryBaggage": "sentry-environment=imovirtualpt2-prd,sentry-release=frontend-platform%40v20240930T093022-imovirtualpt2,sentry-public_key=feffe528c390ea66992a4a05131c3c68,sentry-trace_id=2b216f72bbc8400786ac4f20b1434542,sentry-transaction=%2Fpt%2Fanuncio%2F%5Bid%5D,sentry-sampled=false",
+    "_sentryTraceData": "dc141d34f85e4e008d28123eeb56680a-849258d0f8af36a1-0",
+    "_sentryBaggage": "sentry-environment=imovirtualpt2-prd,sentry-release=frontend-platform%40v20241004T114115-imovirtualpt2,sentry-public_key=feffe528c390ea66992a4a05131c3c68,sentry-trace_id=dc141d34f85e4e008d28123eeb56680a,sentry-transaction=%2Fpt%2Fanuncio%2F%5Bid%5D,sentry-sampled=false",
     "id": "1friY",
     "ad": {
       "id": 18456220,
@@ -22,7 +22,7 @@
       "advertType": "PRIVATE",
       "source": "urn:site:local",
       "createdAt": "2024-09-02T11:55:22+01:00",
-      "modifiedAt": "2024-09-22T11:56:42+01:00",
+      "modifiedAt": "2024-10-02T11:56:41+01:00",
       "description": "<p>Vende-se apartamento localizado na Rua do Almada, a poucos passos dos Aliados, bem no centro da cidade.</p>\r\n<p></p>\r\n<p>Com 55m2 de área bruta privativa e charmoso pátio com 6m2, e zona de escritório e de lavandaria. Mobilado tal como as fotografias e equipado (placa de fogão, frigorifico, maquina de lavar louça, máquina de lavar roupa, micro-ondas e maquina nespresso. E ainda utensílios de cozinha pratos, tachos, talheres, etc.</p>\r\n<p></p>\r\n<p>Excelentes acessos ao metro. A estação da Trindade (400m) e estação do Aliados (350m), Todas as comodidades bem perto supermercado (100m), estacionamento em parque público (180m), ginásio (180m), cinema do outro lado da rua e inúmeros restaurantes e lojas.</p>\r\n<p></p>\r\n<p>Apartamento integrado num prédio com fachada do século XIX, 3 andares e 7 apartamentos (6 em Alojamento Local) e uma loja.</p>",
       "developmentId": 0,
       "developmentTitle": "",
@@ -971,23 +971,7 @@
           "__typename": "AdvertBreadcrumb"
         }
       ],
-      "userAdverts": [
-        {
-          "adId": "18456519",
-          "url": "https://www.imovirtual.com/pt/anuncio/moradia-t3-com-piscinas-e-vista-de-rio-douro-ID1frnN",
-          "image": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Im82bWNiMmtxOWtldi1BUFQiLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.gnZh1xwoywIeR8hKzNX1mqwuxy5W8sr38O1VQ8nqT0Q/image;s=314x236;q=80",
-          "roomsNum": "4",
-          "pricePerM": 20,
-          "price": {
-            "value": "4500",
-            "unit": "EUR",
-            "__typename": "UserAdvertPrice"
-          },
-          "netArea": "230",
-          "title": "Moradia T3 com piscinas e vista de rio Douro",
-          "__typename": "UserAdvert"
-        }
-      ],
+      "userAdverts": [],
       "paginatedUnits": {
         "items": null,
         "isPriceHidden": null,
@@ -1043,7 +1027,6 @@
       "isListingRentPriceEnabled": false,
       "isNewApartmentsForSalePostingFormEnabled": false,
       "isOldSaveSearchQueryEnabled": false,
-      "shouldUseNewInformation": true,
       "isFinanceCheckboxEnabled": false,
       "isObservedAdsPageEnabled": true,
       "isBikPromotionEnabled": true,
@@ -1065,10 +1048,12 @@
       "isHCIAMAgencyRegistrationEnabled": true,
       "isHCIAMAgentRegistrationEnabled": true,
       "isHCIAMDeveloperRegistrationEnabled": true,
+      "isMessagingCenterEnabled": false,
+      "isMessagingCenterChatEnabled": false,
       "__typename": "FeatureFlags"
     },
     "laquesisResult": null,
-    "userSessionId": "d7842fd5-9715-4589-9cc7-b03890db51dc",
+    "userSessionId": "5f8a1aac-43b1-4ed7-b42c-f23eae9394d4",
     "unconfirmedUserAuthToken": null,
     "desktopHeader": {
       "Is-Desktop": "true"

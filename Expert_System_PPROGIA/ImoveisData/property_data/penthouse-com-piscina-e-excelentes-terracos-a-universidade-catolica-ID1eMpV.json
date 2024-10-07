@@ -1,8 +1,8 @@
 {
   "pageProps": {
     "lang": "pt",
-    "_sentryTraceData": "f717718fd309409eaa48166092400c38-b2a76eb827d406c6-0",
-    "_sentryBaggage": "sentry-environment=imovirtualpt2-prd,sentry-release=frontend-platform%40v20240930T093022-imovirtualpt2,sentry-public_key=feffe528c390ea66992a4a05131c3c68,sentry-trace_id=f717718fd309409eaa48166092400c38,sentry-transaction=%2Fpt%2Fanuncio%2F%5Bid%5D,sentry-sampled=false",
+    "_sentryTraceData": "78b1d33f024d4de599a21612d628332f-86a6952f910399c0-0",
+    "_sentryBaggage": "sentry-environment=imovirtualpt2-prd,sentry-release=frontend-platform%40v20241004T114115-imovirtualpt2,sentry-public_key=feffe528c390ea66992a4a05131c3c68,sentry-trace_id=78b1d33f024d4de599a21612d628332f,sentry-transaction=%2Fpt%2Fanuncio%2F%5Bid%5D,sentry-sampled=false",
     "id": "1eMpV",
     "ad": {
       "id": 18299048,
@@ -18,7 +18,7 @@
       "advertType": "AGENCY",
       "source": "urn:partner:ximo",
       "createdAt": "2024-05-10T21:06:55+01:00",
-      "modifiedAt": "2024-09-29T16:26:24+01:00",
+      "modifiedAt": "2024-10-01T16:26:24+01:00",
       "description": "Excelente apartamento T3 com piscina e grande terraço privativo à Universidade Católica, Foz. 3 suites, casa de banho de serviço e casa de banho de apoio à piscina / terraço. Elevador privativo de acesso ao terraço, sala com varanda a sul, todo o apartamento com muita luz e vistas fantásticas da Foz do Douro, condomínio com porteiro e jardim privativo. Próximo dos principais serviços e a 500 mt do Passeio Alegre. Apartamento adaptado a pessoas com mobilidade reduzida. Apartamento em excelente estado e recuperado recentemente com muita qualidade e materiais nobres. Arrumo de grande dimensão e 2 lugares de garagem.",
       "developmentId": 0,
       "developmentTitle": "",
@@ -281,13 +281,13 @@
         "id": 101,
         "name": [
           {
-            "locale": "pt",
-            "value": "Apartamentos",
+            "locale": "en",
+            "value": "apartments",
             "__typename": "LocalizedString"
           },
           {
-            "locale": "en",
-            "value": "apartments",
+            "locale": "pt",
+            "value": "Apartamentos",
             "__typename": "LocalizedString"
           }
         ],
@@ -937,7 +937,7 @@
       "ad_photo": 30,
       "price_currency": "EUR",
       "cat_l1_id": 101,
-      "cat_l1_name": "Apartamentos",
+      "cat_l1_name": "apartments",
       "special_offer_type": null,
       "ad_id": "18299048",
       "ad_price": 1350000,
@@ -966,7 +966,6 @@
       "isListingRentPriceEnabled": false,
       "isNewApartmentsForSalePostingFormEnabled": false,
       "isOldSaveSearchQueryEnabled": false,
-      "shouldUseNewInformation": true,
       "isFinanceCheckboxEnabled": false,
       "isObservedAdsPageEnabled": true,
       "isBikPromotionEnabled": true,
@@ -988,10 +987,12 @@
       "isHCIAMAgencyRegistrationEnabled": true,
       "isHCIAMAgentRegistrationEnabled": true,
       "isHCIAMDeveloperRegistrationEnabled": true,
+      "isMessagingCenterEnabled": false,
+      "isMessagingCenterChatEnabled": false,
       "__typename": "FeatureFlags"
     },
     "laquesisResult": null,
-    "userSessionId": "520da8ad-d726-4ace-b400-962e37ed9261",
+    "userSessionId": "53d16597-a787-47a9-9d0c-28c4a21cce79",
     "unconfirmedUserAuthToken": null,
     "desktopHeader": {
       "Is-Desktop": "true"

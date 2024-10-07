@@ -1,18 +1,63 @@
 import json
 
+def extract_unique_features(data):
+    unique_features = set()
+    for property in data:
+        unique_features.update(property['features'])
+    return sorted(unique_features)
+
 def generate_prolog_facts(data):
     facts = []
     fact_counter = 1
+    unmapped_features = set()
+
+    feature_mapping = {
+        # Accessibility
+        'acessibilidade para pessoas com mobilidade reduzida': 'hasAccessibility',
+        'elevador': 'hasElevator',
+        
+        # Security
+        hasSecurity
+        'condomínio fechado': 'hasGatedCommunity',
+        'estores anti-roubo': 'hasAntiTheftShutters',
+        'intercomunicador / videoporteiro': 'hasIntercom',
+        'monitorização': 'hasMonitoring',
+        'portas e janelas de segurança': 'hasSecurityDoorsWindows',
+        'sistema de alarme': 'hasAlarmSystem',
+
+        # Outdoor Features
+        'piscina': 'hasPool',
+
+        hasOutdoorSpace
+        'jardim': 'hasGarden',
+        'terraço': 'hasTerrace',
+
+        # Parking and Storage
+        'garagem': 'hasGarage',
+        'estacionamento': 'hasParking',
+
+        # Appliances and Furnishings
+        'ar condicionado': 'hasAirConditioning',
+
+        # Views and Surroundings
+        'vista mar': 'hasSeaView',
+        'vista rio': 'hasRiverView',
+        'floresta': 'hasForestView',
+    }
 
     for property in data:
         # Property fact
         facts.append(f"facto({fact_counter}, property({property['id']}, '{property['title'].replace("'", "''")}', '{property['description'].replace("'", "''")}')).")
         fact_counter += 1
 
-        # Features fact
-        features_str = ', '.join([f"'{feature}'" for feature in property['features']])
-        facts.append(f"facto({fact_counter}, features({property['id']}, [{features_str}])).")
-        fact_counter += 1
+        # Individual feature facts
+        for feature in property['features']:
+            predicate = feature_mapping.get(feature.lower())
+            if predicate:
+                facts.append(f"facto({fact_counter}, {predicate}({property['id']})).")
+                fact_counter += 1
+            else:
+                unmapped_features.add(feature)
 
         # Characteristics facts
         for characteristic in property['characteristics']:
@@ -30,17 +75,28 @@ def generate_prolog_facts(data):
         facts.append(f"facto({fact_counter}, location({property['id']}, '{property['location']}')).")
         fact_counter += 1
 
+    print("\nUnmapped features:")
+    for feature in sorted(unmapped_features):
+        print(f"'{feature}',")
+
     return facts
 
 # Read the JSON file
-with open('/Users/luispaula/Desktop/MEIA/RealEstateAnalyzer/ImoveisData/extracted_property_data.json', 'r', encoding='utf-8') as file:
+# with open('/Users/luispaula/Desktop/MEIA/RealEstateAnalyzer/ImoveisData/extracted_property_data.json', 'r', encoding='utf-8') as file:
+with open('C:/ISEP/RealEstateAnalyzer/Expert_System_PPROGIA/ImoveisData/formatted_property_data.json', 'r', encoding='utf-8') as file:
     data = json.load(file)
+
+# Extract unique features
+unique_features = extract_unique_features(data)
+print("Unique features found:")
+for feature in unique_features:
+    print(f"'{feature}',")
 
 # Generate Prolog facts
 prolog_facts = generate_prolog_facts(data)
 
 # Write facts to a .pl file
-with open('/Users/luispaula/Desktop/MEIA/RealEstateAnalyzer/ImoveisData/facts/properties.pl', 'w', encoding='utf-8') as file:
+with open('C:/ISEP/RealEstateAnalyzer/Expert_System_PPROGIA/Facts/saved_properties.pl', 'w', encoding='utf-8') as file:
     file.write('\n'.join(prolog_facts))
 
-print("Prolog facts have been generated and saved to 'ImoveisData/facts/properties.pl'")
+print("Prolog facts have been generated and saved to 'ImoveisData/facts/saved_properties.pl'")

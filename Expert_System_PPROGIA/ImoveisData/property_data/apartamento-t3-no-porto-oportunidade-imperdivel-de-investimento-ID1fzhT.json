@@ -1,8 +1,8 @@
 {
   "pageProps": {
     "lang": "pt",
-    "_sentryTraceData": "0d1bb97fddbb49c9858943b74a3794aa-97848cad5c71ab12-0",
-    "_sentryBaggage": "sentry-environment=imovirtualpt2-prd,sentry-release=frontend-platform%40v20240930T093022-imovirtualpt2,sentry-public_key=feffe528c390ea66992a4a05131c3c68,sentry-trace_id=0d1bb97fddbb49c9858943b74a3794aa,sentry-transaction=%2Fpt%2Fanuncio%2F%5Bid%5D,sentry-sampled=false",
+    "_sentryTraceData": "a7736d9413bc4366a292934dcfc28c2b-8fd7260066f511db-0",
+    "_sentryBaggage": "sentry-environment=imovirtualpt2-prd,sentry-release=frontend-platform%40v20241004T114115-imovirtualpt2,sentry-public_key=feffe528c390ea66992a4a05131c3c68,sentry-trace_id=a7736d9413bc4366a292934dcfc28c2b,sentry-transaction=%2Fpt%2Fanuncio%2F%5Bid%5D,sentry-sampled=false",
     "id": "1fzhT",
     "ad": {
       "id": 18486905,
@@ -252,13 +252,13 @@
         "id": 101,
         "name": [
           {
-            "locale": "en",
-            "value": "apartments",
+            "locale": "pt",
+            "value": "Apartamentos",
             "__typename": "LocalizedString"
           },
           {
-            "locale": "pt",
-            "value": "Apartamentos",
+            "locale": "en",
+            "value": "apartments",
             "__typename": "LocalizedString"
           }
         ],
@@ -757,6 +757,21 @@
       ],
       "userAdverts": [
         {
+          "adId": "18487574",
+          "url": "https://www.imovirtual.com/pt/anuncio/ferreira-de-castro-flats-bonfim-ID1fzsG",
+          "image": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImQ3ZXpncmEyejd3YTMtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.7R-De9-OxrYJDk0VbX9iaIkOlZt-3abHZo8kBB5dmaY/image;s=314x236;q=80",
+          "roomsNum": "4",
+          "pricePerM": 4048,
+          "price": {
+            "value": "510000",
+            "unit": "EUR",
+            "__typename": "UserAdvertPrice"
+          },
+          "netArea": "126",
+          "title": "FERREIRA DE CASTRO FLATS | BONFIM",
+          "__typename": "UserAdvert"
+        },
+        {
           "adId": "18485890",
           "url": "https://www.imovirtual.com/pt/anuncio/terreno-para-construcao-carvalho-de-rei-amarante-ID1fz1v",
           "image": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImIwMjVqNjM5YXpjMTItRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.-6N9W1Pyi769wv71PNnUJ4e823-WgOfmjg-Smvvjf8M/image;s=314x236;q=80",
@@ -775,7 +790,7 @@
           "adId": "18483318",
           "url": "https://www.imovirtual.com/pt/anuncio/ferreira-de-castro-flats-bonfim-ID1fym2",
           "image": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InYyeDJ1bnBwY3Ztai1FQ09TWVNURU0iLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.VDPQyAdT1t04ofidusjmjoh4Wtg3tXRQBP1IekBMbgw/image;s=314x236;q=80",
-          "roomsNum": "3",
+          "roomsNum": "4",
           "pricePerM": 3760,
           "price": {
             "value": "470000",
@@ -798,21 +813,6 @@
             "__typename": "UserAdvertPrice"
           },
           "netArea": "96",
-          "title": "FERREIRA DE CASTRO FLATS | BONFIM",
-          "__typename": "UserAdvert"
-        },
-        {
-          "adId": "18483307",
-          "url": "https://www.imovirtual.com/pt/anuncio/ferreira-de-castro-flats-bonfim-ID1fylR",
-          "image": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Imx6aXN6cW5oeHB4YzMtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.uVtG66hMQpOGPPZlUXJYhx1TL6tq6E8xf0Xz82AVORM/image;s=314x236;q=80",
-          "roomsNum": "3",
-          "pricePerM": 3882,
-          "price": {
-            "value": "330000",
-            "unit": "EUR",
-            "__typename": "UserAdvertPrice"
-          },
-          "netArea": "85",
           "title": "FERREIRA DE CASTRO FLATS | BONFIM",
           "__typename": "UserAdvert"
         }
@@ -843,7 +843,7 @@
       "ad_photo": 25,
       "price_currency": "EUR",
       "cat_l1_id": 101,
-      "cat_l1_name": "apartments",
+      "cat_l1_name": "Apartamentos",
       "special_offer_type": null,
       "ad_id": "18486905",
       "ad_price": 297500,
@@ -872,7 +872,6 @@
       "isListingRentPriceEnabled": false,
       "isNewApartmentsForSalePostingFormEnabled": false,
       "isOldSaveSearchQueryEnabled": false,
-      "shouldUseNewInformation": true,
       "isFinanceCheckboxEnabled": false,
       "isObservedAdsPageEnabled": true,
       "isBikPromotionEnabled": true,
@@ -894,10 +893,12 @@
       "isHCIAMAgencyRegistrationEnabled": true,
       "isHCIAMAgentRegistrationEnabled": true,
       "isHCIAMDeveloperRegistrationEnabled": true,
+      "isMessagingCenterEnabled": false,
+      "isMessagingCenterChatEnabled": false,
       "__typename": "FeatureFlags"
     },
     "laquesisResult": null,
-    "userSessionId": "b274c2d3-0c08-4cab-8ad7-507964a00692",
+    "userSessionId": "9c47747e-636d-4e6e-9807-10a13e39005c",
     "unconfirmedUserAuthToken": null,
     "desktopHeader": {
       "Is-Desktop": "true"

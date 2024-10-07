@@ -1,8 +1,8 @@
 {
   "pageProps": {
     "lang": "pt",
-    "_sentryTraceData": "56e3b83b166044d6824e3d620221bf7f-a407e568283b9168-0",
-    "_sentryBaggage": "sentry-environment=imovirtualpt2-prd,sentry-release=frontend-platform%40v20240930T093022-imovirtualpt2,sentry-public_key=feffe528c390ea66992a4a05131c3c68,sentry-trace_id=56e3b83b166044d6824e3d620221bf7f,sentry-transaction=%2Fpt%2Fanuncio%2F%5Bid%5D,sentry-sampled=false",
+    "_sentryTraceData": "c15c0625e30b4f4d885ddc4710cdb351-a7cf16e6c982e095-0",
+    "_sentryBaggage": "sentry-environment=imovirtualpt2-prd,sentry-release=frontend-platform%40v20241004T114115-imovirtualpt2,sentry-public_key=feffe528c390ea66992a4a05131c3c68,sentry-trace_id=c15c0625e30b4f4d885ddc4710cdb351,sentry-transaction=%2Fpt%2Fanuncio%2F%5Bid%5D,sentry-sampled=false",
     "id": "1fyFt",
     "ad": {
       "id": 18484523,
@@ -232,13 +232,13 @@
         "id": 101,
         "name": [
           {
-            "locale": "en",
-            "value": "apartments",
+            "locale": "pt",
+            "value": "Apartamentos",
             "__typename": "LocalizedString"
           },
           {
-            "locale": "pt",
-            "value": "Apartamentos",
+            "locale": "en",
+            "value": "apartments",
             "__typename": "LocalizedString"
           }
         ],
@@ -633,7 +633,7 @@
         "phones": [
           "+351923291399"
         ],
-        "imageUrl": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Ijd6NDZ3MGlldGplajMtQVBUIn0.juSfHUpQ_04yzwwk8gH8F5Jw1Pnv_Vy9EtsfvW0UrOA/image;s=97x97;q=100",
+        "imageUrl": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjZrZWZ6dzhraWF4azItQVBUIn0.6MP4oxJQaKRRsTlzXRlxWbrPcK7EZ9VFFEDCnEoPZvM/image;s=97x97;q=100",
         "contacts": [],
         "__typename": "LegacyAdvertOwner"
       },
@@ -731,63 +731,63 @@
       ],
       "userAdverts": [
         {
-          "adId": "18468796",
-          "url": "https://www.imovirtual.com/pt/anuncio/terreno-para-venda-ID1fuzO",
-          "image": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImluajM1YmdldDh5MDItRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.vAGv9ApEvFzWkVnORGLmuY8W8LCIJy83oOcveliGxp8/image;s=314x236;q=80",
-          "roomsNum": "",
-          "pricePerM": 160,
+          "adId": "18493472",
+          "url": "https://www.imovirtual.com/pt/anuncio/apartamento-t1-para-venda-ID1fAZO",
+          "image": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InFwcjBkZnFtaHMzdi1FQ09TWVNURU0iLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.RQWggsHVaavKsH-q4Ckx-pRU4gqC9mE65O45m4_77Eg/image;s=314x236;q=80",
+          "roomsNum": "2",
+          "pricePerM": 6907,
+          "price": {
+            "value": "397500",
+            "unit": "EUR",
+            "__typename": "UserAdvertPrice"
+          },
+          "netArea": "57.55",
+          "title": "Apartamento T1 para venda",
+          "__typename": "UserAdvert"
+        },
+        {
+          "adId": "18492900",
+          "url": "https://www.imovirtual.com/pt/anuncio/apartamento-t1-para-venda-ID1fAQA",
+          "image": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjZhNzFndG0zamhsOTItRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.Zcr-IxfccE1yiDd9ln_hICmmTZn-EZLpIFw3gd4aJkw/image;s=314x236;q=80",
+          "roomsNum": "2",
+          "pricePerM": 3311,
+          "price": {
+            "value": "245000",
+            "unit": "EUR",
+            "__typename": "UserAdvertPrice"
+          },
+          "netArea": "74",
+          "title": "Apartamento T1 para venda",
+          "__typename": "UserAdvert"
+        },
+        {
+          "adId": "18492894",
+          "url": "https://www.imovirtual.com/pt/anuncio/apartamento-t2-para-venda-ID1fAQu",
+          "image": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImppdG5jZ2N5dGxpcjItRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.YqrD2K42_Phz8m6WqJNb6SCWfnvTT2Ggan2yTkEgN9E/image;s=314x236;q=80",
+          "roomsNum": "3",
+          "pricePerM": 3238,
+          "price": {
+            "value": "395000",
+            "unit": "EUR",
+            "__typename": "UserAdvertPrice"
+          },
+          "netArea": "122",
+          "title": "Apartamento T2 para venda",
+          "__typename": "UserAdvert"
+        },
+        {
+          "adId": "18492889",
+          "url": "https://www.imovirtual.com/pt/anuncio/apartamento-t1-para-venda-ID1fAQp",
+          "image": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Indmd3Q0NHRjMjAxaDItRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.1wcun4f-8_Hfq8l5v-6vespsBSbXkXMvZjk3Y7StZXU/image;s=314x236;q=80",
+          "roomsNum": "2",
+          "pricePerM": 3700,
           "price": {
             "value": "185000",
             "unit": "EUR",
             "__typename": "UserAdvertPrice"
           },
-          "netArea": "1155",
-          "title": "Terreno  para venda",
-          "__typename": "UserAdvert"
-        },
-        {
-          "adId": "18484837",
-          "url": "https://www.imovirtual.com/pt/anuncio/apartamento-t3-para-venda-ID1fyKx",
-          "image": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InRhc3hpZmV6dG45bDMtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.yoij8hivgFsGEgzJNuxnsIX8BWpxoN0iEaB_ZyXXrOQ/image;s=314x236;q=80",
-          "roomsNum": "4",
-          "pricePerM": 7267,
-          "price": {
-            "value": "1090000",
-            "unit": "EUR",
-            "__typename": "UserAdvertPrice"
-          },
-          "netArea": "150",
-          "title": "Apartamento T3 para venda",
-          "__typename": "UserAdvert"
-        },
-        {
-          "adId": "18477004",
-          "url": "https://www.imovirtual.com/pt/anuncio/apartamento-t2-para-venda-ID1fvIc",
-          "image": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImdoMnVmZXBqeXV3bjEtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.yfrGVAEGsmPb04DNwccEjAs1J36SgH4YI6pHF4QCJcM/image;s=314x236;q=80",
-          "roomsNum": "3",
-          "pricePerM": 6304,
-          "price": {
-            "value": "435000",
-            "unit": "EUR",
-            "__typename": "UserAdvertPrice"
-          },
-          "netArea": "69",
-          "title": "Apartamento T2 para venda",
-          "__typename": "UserAdvert"
-        },
-        {
-          "adId": "18472342",
-          "url": "https://www.imovirtual.com/pt/anuncio/apartamento-t2-para-venda-ID1fww0",
-          "image": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImUxMmZ1OTRhbGdueDEtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.rQ87CZfkFOGibTC3fVH6Kcyojnezdrt0n7w4npAGMOA/image;s=314x236;q=80",
-          "roomsNum": "3",
-          "pricePerM": 7650,
-          "price": {
-            "value": "765000",
-            "unit": "EUR",
-            "__typename": "UserAdvertPrice"
-          },
-          "netArea": "100",
-          "title": "Apartamento T2 para venda",
+          "netArea": "50",
+          "title": "Apartamento T1 para venda",
           "__typename": "UserAdvert"
         }
       ],
@@ -806,7 +806,7 @@
         "phones": [
           "+351923291399"
         ],
-        "imageUrl": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Ijd6NDZ3MGlldGplajMtQVBUIn0.juSfHUpQ_04yzwwk8gH8F5Jw1Pnv_Vy9EtsfvW0UrOA/image;s=97x97;q=100"
+        "imageUrl": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjZrZWZ6dzhraWF4azItQVBUIn0.6MP4oxJQaKRRsTlzXRlxWbrPcK7EZ9VFFEDCnEoPZvM/image;s=97x97;q=100"
       }
     },
     "relativeUrl": "/pt/anuncio/predio-para-venda-ID1fyFt",
@@ -817,7 +817,7 @@
       "ad_photo": 23,
       "price_currency": "EUR",
       "cat_l1_id": 101,
-      "cat_l1_name": "apartments",
+      "cat_l1_name": "Apartamentos",
       "special_offer_type": null,
       "ad_id": "18484523",
       "ad_price": 790000,
@@ -846,7 +846,6 @@
       "isListingRentPriceEnabled": false,
       "isNewApartmentsForSalePostingFormEnabled": false,
       "isOldSaveSearchQueryEnabled": false,
-      "shouldUseNewInformation": true,
       "isFinanceCheckboxEnabled": false,
       "isObservedAdsPageEnabled": true,
       "isBikPromotionEnabled": true,
@@ -868,10 +867,12 @@
       "isHCIAMAgencyRegistrationEnabled": true,
       "isHCIAMAgentRegistrationEnabled": true,
       "isHCIAMDeveloperRegistrationEnabled": true,
+      "isMessagingCenterEnabled": false,
+      "isMessagingCenterChatEnabled": false,
       "__typename": "FeatureFlags"
     },
     "laquesisResult": null,
-    "userSessionId": "bbb3ae57-a9fa-4c43-bccd-15d386afca56",
+    "userSessionId": "eac32507-16fc-4565-8825-09500107348c",
     "unconfirmedUserAuthToken": null,
     "desktopHeader": {
       "Is-Desktop": "true"

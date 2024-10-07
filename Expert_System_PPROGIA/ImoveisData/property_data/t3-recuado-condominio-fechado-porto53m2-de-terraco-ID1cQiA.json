@@ -1,8 +1,8 @@
 {
   "pageProps": {
     "lang": "pt",
-    "_sentryTraceData": "3f708e69b62c4169b384f33b7c2bb5b7-85110c1929667ec0-0",
-    "_sentryBaggage": "sentry-environment=imovirtualpt2-prd,sentry-release=frontend-platform%40v20240930T093022-imovirtualpt2,sentry-public_key=feffe528c390ea66992a4a05131c3c68,sentry-trace_id=3f708e69b62c4169b384f33b7c2bb5b7,sentry-transaction=%2Fpt%2Fanuncio%2F%5Bid%5D,sentry-sampled=false",
+    "_sentryTraceData": "9b4d0829bda94eb4872ce404610517d4-b74bcb07929714bb-0",
+    "_sentryBaggage": "sentry-environment=imovirtualpt2-prd,sentry-release=frontend-platform%40v20241004T114115-imovirtualpt2,sentry-public_key=feffe528c390ea66992a4a05131c3c68,sentry-trace_id=9b4d0829bda94eb4872ce404610517d4,sentry-transaction=%2Fpt%2Fanuncio%2F%5Bid%5D,sentry-sampled=false",
     "id": "1cQiA",
     "ad": {
       "id": 17837312,
@@ -1026,28 +1026,13 @@
       ],
       "userAdverts": [
         {
-          "adId": "18482342",
-          "url": "https://www.imovirtual.com/pt/anuncio/t2-1-maia-guardeiras-ID1fy6i",
-          "image": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InZ4M3d4c2ZjdWQ5NjItQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.kjUuQwHddOGpRkYNoRTwIsULzp5WdqJMeRVdToU9kyw/image;s=314x236;q=80",
-          "roomsNum": "3",
-          "pricePerM": 1598,
-          "price": {
-            "value": "179000",
-            "unit": "EUR",
-            "__typename": "UserAdvertPrice"
-          },
-          "netArea": "112",
-          "title": "T2+1 Maia/Guardeiras",
-          "__typename": "UserAdvert"
-        },
-        {
           "adId": "18482318",
           "url": "https://www.imovirtual.com/pt/anuncio/t5-duplex-maia-ID1fy5U",
           "image": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InAxa2xrbDlmaHJyei1BUFQiLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.S48ygbVoMIiYqs8ArV_ka8frHDYk2wIMoApiaHQiAwQ/image;s=314x236;q=80",
           "roomsNum": "6",
-          "pricePerM": 1875,
+          "pricePerM": 1870,
           "price": {
-            "value": "360000",
+            "value": "359000",
             "unit": "EUR",
             "__typename": "UserAdvertPrice"
           },
@@ -1083,6 +1068,21 @@
           },
           "netArea": "165.66",
           "title": "T4 Condomínio fechado Senhora do Porto Residence",
+          "__typename": "UserAdvert"
+        },
+        {
+          "adId": "18084086",
+          "url": "https://www.imovirtual.com/pt/anuncio/t2-com-terraco-54m2-porto-ID1dSuO",
+          "image": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InN5eHBwOXJ0Y2tteDItQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.274vCGT-rYou8gPZQptIct72i55RsjSQoqvAWLPUJOk/image;s=314x236;q=80",
+          "roomsNum": "3",
+          "pricePerM": 3648,
+          "price": {
+            "value": "445000",
+            "unit": "EUR",
+            "__typename": "UserAdvertPrice"
+          },
+          "netArea": "122",
+          "title": "T2 com terraço 54m2 Porto",
           "__typename": "UserAdvert"
         }
       ],
@@ -1141,7 +1141,6 @@
       "isListingRentPriceEnabled": false,
       "isNewApartmentsForSalePostingFormEnabled": false,
       "isOldSaveSearchQueryEnabled": false,
-      "shouldUseNewInformation": true,
       "isFinanceCheckboxEnabled": false,
       "isObservedAdsPageEnabled": true,
       "isBikPromotionEnabled": true,
@@ -1163,10 +1162,12 @@
       "isHCIAMAgencyRegistrationEnabled": true,
       "isHCIAMAgentRegistrationEnabled": true,
       "isHCIAMDeveloperRegistrationEnabled": true,
+      "isMessagingCenterEnabled": false,
+      "isMessagingCenterChatEnabled": false,
       "__typename": "FeatureFlags"
     },
     "laquesisResult": null,
-    "userSessionId": "5c8042f9-40f8-458d-a537-ec2a1ab2f18d",
+    "userSessionId": "6f9e0cbe-3c21-4c2a-a616-6d8b08681c97",
     "unconfirmedUserAuthToken": null,
     "desktopHeader": {
       "Is-Desktop": "true"

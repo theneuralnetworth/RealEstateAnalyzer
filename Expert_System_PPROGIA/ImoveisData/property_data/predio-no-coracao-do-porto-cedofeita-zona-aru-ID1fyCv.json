@@ -1,8 +1,8 @@
 {
   "pageProps": {
     "lang": "pt",
-    "_sentryTraceData": "0fd87ad2f7534f5288b63e61758f0fc5-b731472b6bbc0e55-0",
-    "_sentryBaggage": "sentry-environment=imovirtualpt2-prd,sentry-release=frontend-platform%40v20240930T093022-imovirtualpt2,sentry-public_key=feffe528c390ea66992a4a05131c3c68,sentry-trace_id=0fd87ad2f7534f5288b63e61758f0fc5,sentry-transaction=%2Fpt%2Fanuncio%2F%5Bid%5D,sentry-sampled=false",
+    "_sentryTraceData": "e7ab3dce92e04517bb725b32fe140a10-bf72771ffb84cc59-0",
+    "_sentryBaggage": "sentry-environment=imovirtualpt2-prd,sentry-release=frontend-platform%40v20241004T114115-imovirtualpt2,sentry-public_key=feffe528c390ea66992a4a05131c3c68,sentry-trace_id=e7ab3dce92e04517bb725b32fe140a10,sentry-transaction=%2Fpt%2Fanuncio%2F%5Bid%5D,sentry-sampled=false",
     "id": "1fyCv",
     "ad": {
       "id": 18484340,
@@ -263,7 +263,7 @@
         {
           "key": "price_per_m",
           "value": "1768",
-          "label": "price per meter",
+          "label": "preço/m2",
           "localizedValue": "1 768 €/m²",
           "currency": "",
           "suffix": "",
@@ -791,63 +791,63 @@
       ],
       "userAdverts": [
         {
-          "adId": "18486975",
-          "url": "https://www.imovirtual.com/pt/anuncio/t2-santa-marta-do-pinhal-ID1fzj1",
-          "image": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InZyMzBnbDRkMG1lcC1FQ09TWVNURU0iLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.LgD_lRYhf_8NZME1rZjy4ED-g7UZi-JREkSQZkRBgqU/image;s=314x236;q=80",
+          "adId": "18491918",
+          "url": "https://www.imovirtual.com/pt/anuncio/terreno-com-1500-m2-em-vale-bejinha-sao-luis-ID1fAAK",
+          "image": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Imo3dGhsbWd1aWF5OTEtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.qSwB13SgEDENqYPEGn-pPdNiA-3edTllBaKhi1WAVQs/image;s=314x236;q=80",
+          "roomsNum": "",
+          "pricePerM": 27,
+          "price": {
+            "value": "39950",
+            "unit": "EUR",
+            "__typename": "UserAdvertPrice"
+          },
+          "netArea": "1500",
+          "title": "Terreno com 1500 m2 em Vale Bejinha, São Luís",
+          "__typename": "UserAdvert"
+        },
+        {
+          "adId": "18491911",
+          "url": "https://www.imovirtual.com/pt/anuncio/casa-em-pedra-xisto-p-recuperar-vila-real-ID1fAAD",
+          "image": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjI0eTIzZHk0YzIzeS1FQ09TWVNURU0iLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.-lnjlfAlpvhEfbsbYegELL5wzdl5OCX6qQgw3yPc9_M/image;s=314x236;q=80",
           "roomsNum": "3",
-          "pricePerM": 3476,
+          "pricePerM": 176,
           "price": {
-            "value": "285000",
+            "value": "12000",
             "unit": "EUR",
             "__typename": "UserAdvertPrice"
           },
-          "netArea": "82",
-          "title": "T2 Santa Marta do Pinhal",
+          "netArea": "68",
+          "title": "Casa em pedra xisto p/ recuperar - Vila Real",
           "__typename": "UserAdvert"
         },
         {
-          "adId": "18486969",
-          "url": "https://www.imovirtual.com/pt/anuncio/lote-terreno-em-rio-maior-637-m2-moradia-ID1fziW",
-          "image": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImNheDB3OTBjcnhueDItRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.hNYIWNDRJ3CLOWlUfR2QEH8GEWh27gjGbCSONaWHAGk/image;s=314x236;q=80",
-          "roomsNum": "",
-          "pricePerM": 67,
+          "adId": "18491836",
+          "url": "https://www.imovirtual.com/pt/anuncio/apartamento-remodelado-perto-da-utad-vila-real-ID1fAzq",
+          "image": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Im9obHpsMXAzZW5ncS1FQ09TWVNURU0iLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.Rqhss-xi7gnvGUvHZ2uNgJN1sHmTZkUtd4dm3JRclc4/image;s=314x236;q=80",
+          "roomsNum": "2",
+          "pricePerM": 13,
           "price": {
-            "value": "43000",
+            "value": "450",
             "unit": "EUR",
             "__typename": "UserAdvertPrice"
           },
-          "netArea": "637.5",
-          "title": "Lote Terreno em Rio Maior 637 m2, Moradia",
+          "netArea": "35",
+          "title": "Apartamento remodelado perto da UTAD - Vila Real",
           "__typename": "UserAdvert"
         },
         {
-          "adId": "18486965",
-          "url": "https://www.imovirtual.com/pt/anuncio/t2-santa-marta-do-pinhal-ID1fziR",
-          "image": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImVmZHd0eWlrMnV2ZS1FQ09TWVNURU0iLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.TuxxU57e1_3H1TYZkSwA2Ne7jK6_HrlkhZPA6C6b_l8/image;s=314x236;q=80",
-          "roomsNum": "4",
-          "pricePerM": 3284,
+          "adId": "16655939",
+          "url": "https://www.imovirtual.com/pt/anuncio/apartamento-t2-no-amparo-ID17SYb",
+          "image": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImdwazVqOG0wcTRrNzItRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.Xi4W4WkXLTImPQ3pl6haQ35qFO33yHkaVHUDRC0QLwg/image;s=314x236;q=80",
+          "roomsNum": "3",
+          "pricePerM": 3677,
           "price": {
-            "value": "335000",
+            "value": "460000",
             "unit": "EUR",
             "__typename": "UserAdvertPrice"
           },
-          "netArea": "102",
-          "title": "T2 Santa Marta do Pinhal",
-          "__typename": "UserAdvert"
-        },
-        {
-          "adId": "18486952",
-          "url": "https://www.imovirtual.com/pt/anuncio/lote-terreno-em-rio-maior-540-m2-ID1fziE",
-          "image": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImxlZjBjbzVzdGduazEtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.L2i0piVIPwJaRFByXhjxPAUVduch8MOo1OD_6aAdPbE/image;s=314x236;q=80",
-          "roomsNum": "",
-          "pricePerM": 77,
-          "price": {
-            "value": "41500",
-            "unit": "EUR",
-            "__typename": "UserAdvertPrice"
-          },
-          "netArea": "540",
-          "title": "Lote Terreno em Rio Maior 540 m2",
+          "netArea": "125.1",
+          "title": "Apartamento T2 no Amparo",
           "__typename": "UserAdvert"
         }
       ],
@@ -906,7 +906,6 @@
       "isListingRentPriceEnabled": false,
       "isNewApartmentsForSalePostingFormEnabled": false,
       "isOldSaveSearchQueryEnabled": false,
-      "shouldUseNewInformation": true,
       "isFinanceCheckboxEnabled": false,
       "isObservedAdsPageEnabled": true,
       "isBikPromotionEnabled": true,
@@ -928,10 +927,12 @@
       "isHCIAMAgencyRegistrationEnabled": true,
       "isHCIAMAgentRegistrationEnabled": true,
       "isHCIAMDeveloperRegistrationEnabled": true,
+      "isMessagingCenterEnabled": false,
+      "isMessagingCenterChatEnabled": false,
       "__typename": "FeatureFlags"
     },
     "laquesisResult": null,
-    "userSessionId": "5228be73-a2ec-49f9-9f34-c68dc886efc9",
+    "userSessionId": "72d65f21-0c7a-407a-bf74-d1094758b63d",
     "unconfirmedUserAuthToken": null,
     "desktopHeader": {
       "Is-Desktop": "true"

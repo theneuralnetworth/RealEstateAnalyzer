@@ -1,8 +1,8 @@
 {
   "pageProps": {
     "lang": "pt",
-    "_sentryTraceData": "17bc964739bb482b8f098bdf563393cb-82fc508fc4140ecf-0",
-    "_sentryBaggage": "sentry-environment=imovirtualpt2-prd,sentry-release=frontend-platform%40v20240930T093022-imovirtualpt2,sentry-public_key=feffe528c390ea66992a4a05131c3c68,sentry-trace_id=17bc964739bb482b8f098bdf563393cb,sentry-transaction=%2Fpt%2Fanuncio%2F%5Bid%5D,sentry-sampled=false",
+    "_sentryTraceData": "94ac3814a64540ea97ee81ef5c1a058f-bac356987a5027d4-0",
+    "_sentryBaggage": "sentry-environment=imovirtualpt2-prd,sentry-release=frontend-platform%40v20241004T114115-imovirtualpt2,sentry-public_key=feffe528c390ea66992a4a05131c3c68,sentry-trace_id=94ac3814a64540ea97ee81ef5c1a058f,sentry-transaction=%2Fpt%2Fanuncio%2F%5Bid%5D,sentry-sampled=false",
     "id": "1f8ae",
     "ad": {
       "id": 18382642,
@@ -18,7 +18,7 @@
       "advertType": "AGENCY",
       "source": "urn:partner:proppy",
       "createdAt": "2024-07-04T19:23:05+01:00",
-      "modifiedAt": "2024-09-29T21:53:30+01:00",
+      "modifiedAt": "2024-10-04T20:20:03+01:00",
       "description": "Mais um IMPERDÍVEL EXCLUSIVO IMOSTAGE<br/><br/>Localização: Rua Senhora do Porto - Ramalde<br/><br/>Excepcional Apartamento T3 de 2 Frentes, totalmente Renovado, com materiais de requinte em Edifício também renovado, situado em localização de excelência em Ramalde, composto por:<br/>- Hall de entrada <br/>- Cozinha NOVA e totalmente Equipada - EQUIPAMENTOS A ESTREAR (Forno, Microondas, Combinado e Placa Vitrocerâmica)<br/>- Lavandaria Fechada com Esquentador (NOVO)<br/>- Sala com acesso a uma fantástica Varanda<br/>- 3 Quartos com Armários Embutidos, um deles Suite e um com Walking Closet<br/>- 2 WCs Completos com Cabine de Duche<br/>- 1 Lugar de Garagem opcional ( +9.000 )<br/><br/>Principais características:<br/>- Área Habitacional 115m2<br/>- Área total de 135 m2<br/>- 2 frentes (Norte/Sul)<br/>- 1º andar com 2 elevadores<br/>- Estores Elétricos<br/>- Caixilharia nova em alumínio vidros duplos<br/>- Pavimento flutuante AC5 da marca Finsa (serie Original)<br/>- Revestimentos Cerâmicos novos, retificados, na Cozinha, Lavandaria e WC`s<br/>- Cozinha mobilada e equipada  TUDO A ESTREAR, móveis lacados e tampo de Silestone<br/>- Tetos falsos com focos led em toda a casa<br/>- Certificado Energético: E (anterior à renovação)<br/>- Suíte<br/>- Estores eléctricos<br/>- Roupeiros embutidos nos quartos<br/>- Closet num dos quartos<br/>- Varanda na Sala<br/>- Arrumos<br/>- Garagem<br/><br/>Localização:<br/>- Localizado ao lado do Hotel Star IN Porto, junto à Circunvalação<br/>- A 2km do Hospital de São João/Pólo Universitário<br/>- Com transportes de Autocarro à porta<br/>- Perto de Escolas, farmácias e todo o tipo de comércio<br/><br/>ImoStage - AMI 18071",
       "developmentId": 0,
       "developmentTitle": "",
@@ -80,11 +80,11 @@
         "ObidoAdvert": "n",
         "OfferType": "comprar",
         "Photo": "aHR0cHM6Ly9pcmVsYW5kLmFwb2xsby5vbHhjZG4uY29tL3YxL2ZpbGVzL2V5Sm1iaUk2SWpWak5XRjNiRE5uZVd0d2RUSXRSVU5QVTFsVFZFVk5JaXdpZHlJNlczc2labTRpT2lJMk9XNXNjR0UzWldOeGJUY3hMVUZRVkNJc0luTWlPaUl4TkNJc0luQWlPaUl4TUN3dE1UQWlMQ0poSWpvaU1DSjlYWDAuWXFXc3Rub0ZEZ2lva3VlbkJ1aURqZnlJNGZ0N0Jzc1FPME9pdDZfZUdpUS9pbWFnZTtzPTY1NXg0OTE7cT04MA==",
-        "Price": 289000,
+        "Price": 315,
         "PriceRange": [
-          "250001-500000"
+          "251-500"
         ],
-        "Price_per_m": 2513,
+        "Price_per_m": 3,
         "ProperType": "apartamento",
         "Province": "porto",
         "RegularUser": "n",
@@ -294,9 +294,9 @@
       "characteristics": [
         {
           "key": "price",
-          "value": "289000",
+          "value": "315",
           "label": "Preço",
-          "localizedValue": "289 000 €",
+          "localizedValue": "315 €",
           "currency": "EUR",
           "suffix": "",
           "__typename": "Characteristic"
@@ -312,9 +312,9 @@
         },
         {
           "key": "price_per_m",
-          "value": "2513",
-          "label": "price per meter",
-          "localizedValue": "2 513 €/m²",
+          "value": "3",
+          "label": "preço/m2",
+          "localizedValue": "3 €/m²",
           "currency": "",
           "suffix": "",
           "__typename": "Characteristic"
@@ -809,7 +809,7 @@
         "phones": [
           "+351923299304"
         ],
-        "address": "Rua Eduardo Joaquim Reis Figueira 1013, 4440-647, Valongo, Oporto",
+        "address": "Rua Eduardo Joaquim Reis Figueira 1013, 4440-647, Valongo, Porto",
         "imageUrl": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjQ5bTJsMDFseHg4Ny1BUFQifQ.58hDn4U20d2SdwQrmXu36eXMvp71CtEIdyCQNiHjE5E/image;s=800x600;q=90",
         "url": "https://www.imovirtual.com/pt/empresas/agencias-imobiliarias/imostage-ID3875312",
         "leaderYear": "",
@@ -852,7 +852,7 @@
       },
       "seo": {
         "title": "T3, apartamento para comprar - Rua Senhora do Porto, Ramalde - 18382642 • www.imovirtual.com",
-        "description": "Excelente apartamento para venda com T3 em Rua Senhora do Porto, Ramalde, por 289 000 €. Este apartamento para venda localizado no 1 piso tem 115 m² de àrea útil e 115 m² de àrea bruta. De acordo com o profissional ImoStage os atributos mais importantes são cozinha separada, jardim, elevadorSITE 18382642",
+        "description": "Excelente apartamento para venda com T3 em Rua Senhora do Porto, Ramalde, por 315 €. Este apartamento para venda localizado no 1 piso tem 115 m² de àrea útil e 115 m² de àrea bruta. De acordo com o profissional ImoStage os atributos mais importantes são cozinha separada, jardim, elevadorSITE 18382642",
         "__typename": "AdvertSeo"
       },
       "breadcrumbs": [
@@ -895,21 +895,6 @@
       ],
       "userAdverts": [
         {
-          "adId": "18485891",
-          "url": "https://www.imovirtual.com/pt/anuncio/esplendido-t2-em-condominio-c-piscina-ID1fz1x",
-          "image": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Ijc4dWFoYTZrajY2Ni1FQ09TWVNURU0iLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.AAA9nYy7Du6JnNzN8jDQiLcPtp4Yoj6n5vR5Ar80Ucw/image;s=314x236;q=80",
-          "roomsNum": "3",
-          "pricePerM": 2445,
-          "price": {
-            "value": "269000",
-            "unit": "EUR",
-            "__typename": "UserAdvertPrice"
-          },
-          "netArea": "110",
-          "title": "Esplêndido T2 em Condomínio c\\Piscina",
-          "__typename": "UserAdvert"
-        },
-        {
           "adId": "18456195",
           "url": "https://www.imovirtual.com/pt/anuncio/t2-de-luxo-com-piscina-valongo-lagueiroes-ID1friz",
           "image": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Inl3ZTJ0MDhpZHkxZTMtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.aoWNlKQ_51D2YvYT6xXnC6Mi7EaoPP7k3AnNRLuLw_Y/image;s=314x236;q=80",
@@ -937,6 +922,21 @@
           },
           "netArea": "48",
           "title": "T1 Novo em Empreendimento de Luxo",
+          "__typename": "UserAdvert"
+        },
+        {
+          "adId": "18485891",
+          "url": "https://www.imovirtual.com/pt/anuncio/esplendido-t2-em-condominio-c-piscina-ID1fz1x",
+          "image": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjBnc3JzZGNtanphcDEtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.pjolRRqhyZUzLVAl3DkYJaq6LeJBCxlFfgX1ygwXfvc/image;s=314x236;q=80",
+          "roomsNum": "3",
+          "pricePerM": 2445,
+          "price": {
+            "value": "269000",
+            "unit": "EUR",
+            "__typename": "UserAdvertPrice"
+          },
+          "netArea": "110",
+          "title": "Esplêndido T2 em Condomínio c\\Piscina",
           "__typename": "UserAdvert"
         },
         {
@@ -984,7 +984,7 @@
       "cat_l1_name": "Apartamentos",
       "special_offer_type": null,
       "ad_id": "18382642",
-      "ad_price": 289000,
+      "ad_price": 315,
       "business": "comprar",
       "city_id": "13643787",
       "city_name": "ramalde-porto",
@@ -1010,7 +1010,6 @@
       "isListingRentPriceEnabled": false,
       "isNewApartmentsForSalePostingFormEnabled": false,
       "isOldSaveSearchQueryEnabled": false,
-      "shouldUseNewInformation": true,
       "isFinanceCheckboxEnabled": false,
       "isObservedAdsPageEnabled": true,
       "isBikPromotionEnabled": true,
@@ -1032,10 +1031,12 @@
       "isHCIAMAgencyRegistrationEnabled": true,
       "isHCIAMAgentRegistrationEnabled": true,
       "isHCIAMDeveloperRegistrationEnabled": true,
+      "isMessagingCenterEnabled": false,
+      "isMessagingCenterChatEnabled": false,
       "__typename": "FeatureFlags"
     },
     "laquesisResult": null,
-    "userSessionId": "feb6f0cc-f305-4bd2-8c36-e6fca3cf358a",
+    "userSessionId": "f8f2e500-f7da-4fce-8d0b-58ef005299bc",
     "unconfirmedUserAuthToken": null,
     "desktopHeader": {
       "Is-Desktop": "true"

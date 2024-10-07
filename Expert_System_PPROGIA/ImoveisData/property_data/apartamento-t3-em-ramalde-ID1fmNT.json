@@ -1,8 +1,8 @@
 {
   "pageProps": {
     "lang": "pt",
-    "_sentryTraceData": "be85d67bebc1477187fcc559a91cd532-bdc23881fee1fe99-0",
-    "_sentryBaggage": "sentry-environment=imovirtualpt2-prd,sentry-release=frontend-platform%40v20240930T093022-imovirtualpt2,sentry-public_key=feffe528c390ea66992a4a05131c3c68,sentry-trace_id=be85d67bebc1477187fcc559a91cd532,sentry-transaction=%2Fpt%2Fanuncio%2F%5Bid%5D,sentry-sampled=false",
+    "_sentryTraceData": "183c9ace5a814ed0a8d6ea4bddf22328-8beca90d651f8d4f-0",
+    "_sentryBaggage": "sentry-environment=imovirtualpt2-prd,sentry-release=frontend-platform%40v20241004T114115-imovirtualpt2,sentry-public_key=feffe528c390ea66992a4a05131c3c68,sentry-trace_id=183c9ace5a814ed0a8d6ea4bddf22328,sentry-transaction=%2Fpt%2Fanuncio%2F%5Bid%5D,sentry-sampled=false",
     "id": "1fmNT",
     "ad": {
       "id": 18438917,
@@ -18,7 +18,7 @@
       "advertType": "AGENCY",
       "source": "urn:site:local",
       "createdAt": "2024-08-16T17:41:56+01:00",
-      "modifiedAt": "2024-09-30T12:49:59+01:00",
+      "modifiedAt": "2024-10-04T12:49:59+01:00",
       "description": "<p>Apartamento T3, na Zona de Ramalde - 4100-009<br/>Exposição solar: Nascente/Sul<br/>Área Total: 148,30<br/>Preço: 450.000,00<br/>Hall com armário<br/>Cozinha<br/>Marquise<br/>Sala<br/>3 quartos <br/>2 casas de banho <br/>2 lugares estacionamento no piso -1<br/>1 arrumo no piso -1</p>",
       "developmentId": 0,
       "developmentTitle": "",
@@ -234,13 +234,13 @@
         "id": 101,
         "name": [
           {
-            "locale": "pt",
-            "value": "Apartamentos",
+            "locale": "en",
+            "value": "apartments",
             "__typename": "LocalizedString"
           },
           {
-            "locale": "en",
-            "value": "apartments",
+            "locale": "pt",
+            "value": "Apartamentos",
             "__typename": "LocalizedString"
           }
         ],
@@ -653,7 +653,7 @@
       "ad_photo": 1,
       "price_currency": "EUR",
       "cat_l1_id": 101,
-      "cat_l1_name": "Apartamentos",
+      "cat_l1_name": "apartments",
       "special_offer_type": null,
       "ad_id": "18438917",
       "ad_price": 450000,
@@ -682,7 +682,6 @@
       "isListingRentPriceEnabled": false,
       "isNewApartmentsForSalePostingFormEnabled": false,
       "isOldSaveSearchQueryEnabled": false,
-      "shouldUseNewInformation": true,
       "isFinanceCheckboxEnabled": false,
       "isObservedAdsPageEnabled": true,
       "isBikPromotionEnabled": true,
@@ -704,10 +703,12 @@
       "isHCIAMAgencyRegistrationEnabled": true,
       "isHCIAMAgentRegistrationEnabled": true,
       "isHCIAMDeveloperRegistrationEnabled": true,
+      "isMessagingCenterEnabled": false,
+      "isMessagingCenterChatEnabled": false,
       "__typename": "FeatureFlags"
     },
     "laquesisResult": null,
-    "userSessionId": "68f09bb3-a160-4284-9cb2-ba8838eb8ee4",
+    "userSessionId": "7974b9fb-3afd-4930-9a68-30eb1b23eb51",
     "unconfirmedUserAuthToken": null,
     "desktopHeader": {
       "Is-Desktop": "true"
