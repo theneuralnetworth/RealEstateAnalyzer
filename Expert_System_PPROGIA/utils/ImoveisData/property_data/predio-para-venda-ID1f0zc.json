@@ -1,0 +1,749 @@
+{
+  "pageProps": {
+    "lang": "pt",
+    "_sentryTraceData": "3959e97cf35842748ea6811679f12b07-83ee8c83ed980712-0",
+    "_sentryBaggage": "sentry-environment=imovirtualpt2-prd,sentry-release=frontend-platform%40v20241004T114115-imovirtualpt2,sentry-public_key=feffe528c390ea66992a4a05131c3c68,sentry-trace_id=3959e97cf35842748ea6811679f12b07,sentry-transaction=%2Fpt%2Fanuncio%2F%5Bid%5D,sentry-sampled=false",
+    "id": "1f0zc",
+    "ad": {
+      "id": 18353438,
+      "price": {
+        "type": "",
+        "__typename": "AdvertPrice"
+      },
+      "market": "SECONDARY",
+      "services": [],
+      "publicId": "",
+      "slug": "predio-para-venda-ID1f0zc",
+      "advertiserType": "business",
+      "advertType": "AGENCY",
+      "source": "urn:partner:maxwork",
+      "createdAt": "2024-06-12T19:09:15+01:00",
+      "modifiedAt": "2024-10-06T15:47:40+01:00",
+      "description": "<p>Esta é uma oportunidade para investidores no Centro do Porto!</p><br/>\n<p>Predio de res-do-chão, 3 andares e aguas furtadas para reabilitar. </p><br/>\n<p>Destaca-se a proximidade à Rua Mouzinho da Silveira e Rua das Flores, assim como estação de São Bento e estação de metro.</p><br/>\n<p>Proximo de variedade de serviços essenciais, restaurantes, supermecados.</p><br/>\n<p>Venha conhecer!</p><br/>\n<p></p><br/>",
+      "developmentId": 0,
+      "developmentTitle": "",
+      "developmentUrl": "",
+      "exclusiveOffer": false,
+      "externalId": "96611b59-f749-410c-a89c-95dba7bd3c7c",
+      "features": [],
+      "creationSource": "api",
+      "featuresByCategory": [],
+      "featuresWithoutCategory": [],
+      "openDay": null,
+      "referenceId": "120741291-74",
+      "target": {
+        "Area": "168",
+        "AreaRange": [],
+        "Build_year": "1937",
+        "City": "cedofeita-santo-ildefonso-se-miragaia-sao-nicolau-e-vitoria-porto",
+        "City_id": "13643793",
+        "Country": "Portugal",
+        "Energy_certificate": [
+          "exempt"
+        ],
+        "Id": "18353438",
+        "MarketType": "secondary",
+        "ObidoAdvert": "n",
+        "OfferType": "comprar",
+        "Photo": "aHR0cHM6Ly9pcmVsYW5kLmFwb2xsby5vbHhjZG4uY29tL3YxL2ZpbGVzL2V5Sm1iaUk2SW1Gd2NuUTFPRFpyYXpSdGRTMUZRMDlUV1ZOVVJVMGlMQ0ozSWpwYmV5Sm1iaUk2SWpZNWJteHdZVGRsWTNGdE56RXRRVkJVSWl3aWN5STZJakUwSWl3aWNDSTZJakV3TEMweE1DSXNJbUVpT2lJd0luMWRmUS40c2liMktaZklfZzhHUElTeDlkaUFCaVVVMS1lNDdQX05walN4bHNGVTAwL2ltYWdlO3M9NjU1eDQ5MTtxPTgw",
+        "Price": 285000,
+        "PriceRange": [
+          "250001-500000"
+        ],
+        "Price_per_m": 1696,
+        "ProperType": "apartamento",
+        "Province": "porto",
+        "RegularUser": "n",
+        "Rooms_num": [
+          "more"
+        ],
+        "Subregion": "porto",
+        "Title": "UHLDqWRpbyAgcGFyYSB2ZW5kYQ==",
+        "categoryId": "101",
+        "env": "production",
+        "hidePrice": "0",
+        "seller_id": "4034826",
+        "user_type": "agency"
+      },
+      "title": "Prédio  para venda",
+      "topInformation": [
+        {
+          "label": "area",
+          "values": [
+            "168"
+          ],
+          "unit": "m²",
+          "__typename": "AdditionalInfo"
+        },
+        {
+          "label": "building_ownership",
+          "values": [],
+          "unit": "",
+          "__typename": "AdditionalInfo"
+        },
+        {
+          "label": "rooms_num",
+          "values": [
+            "rooms_num::more"
+          ],
+          "unit": "",
+          "__typename": "AdditionalInfo"
+        },
+        {
+          "label": "construction_status",
+          "values": [],
+          "unit": "",
+          "__typename": "AdditionalInfo"
+        },
+        {
+          "label": "floor",
+          "values": [],
+          "unit": "",
+          "__typename": "AdditionalInfo"
+        },
+        {
+          "label": "outdoor",
+          "values": [],
+          "unit": "",
+          "__typename": "AdditionalInfo"
+        },
+        {
+          "label": "rent",
+          "values": [],
+          "unit": "",
+          "__typename": "AdditionalInfo"
+        },
+        {
+          "label": "car",
+          "values": [],
+          "unit": "",
+          "__typename": "AdditionalInfo"
+        },
+        {
+          "label": "remote_services",
+          "values": [],
+          "unit": "",
+          "__typename": "AdditionalInfo"
+        },
+        {
+          "label": "heating",
+          "values": [],
+          "unit": "",
+          "__typename": "AdditionalInfo"
+        }
+      ],
+      "additionalInformation": [
+        {
+          "label": "market",
+          "values": [
+            "market::secondary"
+          ],
+          "unit": "",
+          "__typename": "AdditionalInfo"
+        },
+        {
+          "label": "advertiser_type",
+          "values": [
+            "advertiser_type::agency"
+          ],
+          "unit": "",
+          "__typename": "AdditionalInfo"
+        },
+        {
+          "label": "bathrooms_num",
+          "values": [],
+          "unit": "",
+          "__typename": "AdditionalInfo"
+        },
+        {
+          "label": "free_from",
+          "values": [],
+          "unit": "",
+          "__typename": "AdditionalInfo"
+        },
+        {
+          "label": "build_year",
+          "values": [
+            "1937"
+          ],
+          "unit": "",
+          "__typename": "AdditionalInfo"
+        },
+        {
+          "label": "building_type",
+          "values": [],
+          "unit": "",
+          "__typename": "AdditionalInfo"
+        },
+        {
+          "label": "windows_type",
+          "values": [],
+          "unit": "",
+          "__typename": "AdditionalInfo"
+        },
+        {
+          "label": "lift",
+          "values": [
+            "::n"
+          ],
+          "unit": "",
+          "__typename": "AdditionalInfo"
+        },
+        {
+          "label": "media_types",
+          "values": [],
+          "unit": "",
+          "__typename": "AdditionalInfo"
+        },
+        {
+          "label": "security_types",
+          "values": [],
+          "unit": "",
+          "__typename": "AdditionalInfo"
+        },
+        {
+          "label": "equipment_types",
+          "values": [],
+          "unit": "",
+          "__typename": "AdditionalInfo"
+        },
+        {
+          "label": "extras_types",
+          "values": [],
+          "unit": "",
+          "__typename": "AdditionalInfo"
+        },
+        {
+          "label": "building_material",
+          "values": [],
+          "unit": "",
+          "__typename": "AdditionalInfo"
+        }
+      ],
+      "url": "https://www.imovirtual.com/pt/anuncio/predio-para-venda-ID1f0zc",
+      "status": "active",
+      "adCategory": {
+        "id": "101",
+        "name": "FLAT",
+        "type": "SELL",
+        "__typename": "AdvertCategory"
+      },
+      "category": {
+        "id": 101,
+        "name": [
+          {
+            "locale": "pt",
+            "value": "Apartamentos",
+            "__typename": "LocalizedString"
+          },
+          {
+            "locale": "en",
+            "value": "apartments",
+            "__typename": "LocalizedString"
+          }
+        ],
+        "__typename": "AdCategory"
+      },
+      "characteristics": [
+        {
+          "key": "price",
+          "value": "285000",
+          "label": "Preço",
+          "localizedValue": "285 000 €",
+          "currency": "EUR",
+          "suffix": "",
+          "__typename": "Characteristic"
+        },
+        {
+          "key": "m",
+          "value": "168",
+          "label": "Área",
+          "localizedValue": "168 m²",
+          "currency": "",
+          "suffix": "",
+          "__typename": "Characteristic"
+        },
+        {
+          "key": "price_per_m",
+          "value": "1696",
+          "label": "preço/m2",
+          "localizedValue": "1 696 €/m²",
+          "currency": "",
+          "suffix": "",
+          "__typename": "Characteristic"
+        },
+        {
+          "key": "rooms_num",
+          "value": "more",
+          "label": "Tipologia",
+          "localizedValue": "T9+",
+          "currency": "",
+          "suffix": "",
+          "__typename": "Characteristic"
+        },
+        {
+          "key": "market",
+          "value": "secondary",
+          "label": "Nova construção",
+          "localizedValue": "não",
+          "currency": "",
+          "suffix": "",
+          "__typename": "Characteristic"
+        },
+        {
+          "key": "energy_certificate",
+          "value": "exempt",
+          "label": "Certificado energético",
+          "localizedValue": "isento / em curso",
+          "currency": "",
+          "suffix": "",
+          "__typename": "Characteristic"
+        },
+        {
+          "key": "build_year",
+          "value": "1937",
+          "label": "Ano de construção",
+          "localizedValue": "1937",
+          "currency": "",
+          "suffix": "",
+          "__typename": "Characteristic"
+        }
+      ],
+      "images": [
+        {
+          "thumbnail": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImFwcnQ1ODZrazRtdS1FQ09TWVNURU0iLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.4sib2KZfI_g8GPISx9diABiUU1-e47P_NpjSxlsFU00/image;s=184x138;q=80",
+          "small": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImFwcnQ1ODZrazRtdS1FQ09TWVNURU0iLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.4sib2KZfI_g8GPISx9diABiUU1-e47P_NpjSxlsFU00/image;s=314x236;q=80",
+          "medium": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImFwcnQ1ODZrazRtdS1FQ09TWVNURU0iLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.4sib2KZfI_g8GPISx9diABiUU1-e47P_NpjSxlsFU00/image;s=655x491;q=80",
+          "large": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImFwcnQ1ODZrazRtdS1FQ09TWVNURU0iLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.4sib2KZfI_g8GPISx9diABiUU1-e47P_NpjSxlsFU00/image;s=1280x1024;q=80",
+          "__typename": "AdImage"
+        },
+        {
+          "thumbnail": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImdjbDFzYjJpbWhuai1FQ09TWVNURU0iLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.QJSSWZr8FYT0eDERvzLokN7Luhf7ojcisBter01yV-M/image;s=184x138;q=80",
+          "small": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImdjbDFzYjJpbWhuai1FQ09TWVNURU0iLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.QJSSWZr8FYT0eDERvzLokN7Luhf7ojcisBter01yV-M/image;s=314x236;q=80",
+          "medium": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImdjbDFzYjJpbWhuai1FQ09TWVNURU0iLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.QJSSWZr8FYT0eDERvzLokN7Luhf7ojcisBter01yV-M/image;s=655x491;q=80",
+          "large": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImdjbDFzYjJpbWhuai1FQ09TWVNURU0iLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.QJSSWZr8FYT0eDERvzLokN7Luhf7ojcisBter01yV-M/image;s=1280x1024;q=80",
+          "__typename": "AdImage"
+        },
+        {
+          "thumbnail": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InF4MDRvc3dmanltaDEtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.-a2RQq-pUl56o-V26TbNs2UOkRbDg6rw6FVYyF6goxw/image;s=184x138;q=80",
+          "small": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InF4MDRvc3dmanltaDEtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.-a2RQq-pUl56o-V26TbNs2UOkRbDg6rw6FVYyF6goxw/image;s=314x236;q=80",
+          "medium": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InF4MDRvc3dmanltaDEtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.-a2RQq-pUl56o-V26TbNs2UOkRbDg6rw6FVYyF6goxw/image;s=655x491;q=80",
+          "large": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InF4MDRvc3dmanltaDEtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.-a2RQq-pUl56o-V26TbNs2UOkRbDg6rw6FVYyF6goxw/image;s=1280x1024;q=80",
+          "__typename": "AdImage"
+        },
+        {
+          "thumbnail": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjRvazg0Mjh2c3oyaDEtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.ElS3MwP8dQGyXRtYU97CIvl4YSC4I0Q5_M9Ui96dgX4/image;s=184x138;q=80",
+          "small": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjRvazg0Mjh2c3oyaDEtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.ElS3MwP8dQGyXRtYU97CIvl4YSC4I0Q5_M9Ui96dgX4/image;s=314x236;q=80",
+          "medium": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjRvazg0Mjh2c3oyaDEtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.ElS3MwP8dQGyXRtYU97CIvl4YSC4I0Q5_M9Ui96dgX4/image;s=655x491;q=80",
+          "large": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjRvazg0Mjh2c3oyaDEtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.ElS3MwP8dQGyXRtYU97CIvl4YSC4I0Q5_M9Ui96dgX4/image;s=1280x1024;q=80",
+          "__typename": "AdImage"
+        }
+      ],
+      "links": {
+        "localPlanUrl": "",
+        "videoUrl": "",
+        "view3dUrl": "",
+        "walkaroundUrl": "",
+        "__typename": "AdvertLinks"
+      },
+      "location": {
+        "id": null,
+        "coordinates": {
+          "latitude": 41.143277675814,
+          "longitude": -8.6124189770951,
+          "__typename": "Coordinates"
+        },
+        "mapDetails": {
+          "radius": 0,
+          "zoom": 12,
+          "__typename": "MapDetails"
+        },
+        "address": {
+          "street": {
+            "id": "177723",
+            "code": "",
+            "name": "Rua Bainharia",
+            "number": "",
+            "__typename": "Street"
+          },
+          "subdistrict": null,
+          "district": null,
+          "city": {
+            "id": "13643793",
+            "code": "cedofeita-santo-ildefonso-se-miragaia-sao-nicolau-e-vitoria-porto",
+            "name": "Cedofeita, Santo Ildefonso, Sé, Miragaia, São Nicolau e Vitória",
+            "__typename": "City"
+          },
+          "municipality": null,
+          "county": {
+            "id": "190",
+            "code": "porto",
+            "name": "Porto",
+            "__typename": "County"
+          },
+          "province": {
+            "id": "13",
+            "code": "porto",
+            "name": "Porto",
+            "__typename": "Province"
+          },
+          "postalCode": null,
+          "__typename": "Address"
+        },
+        "reverseGeocoding": {
+          "locations": [
+            {
+              "id": "porto",
+              "locationLevel": "district",
+              "name": "Porto",
+              "fullName": "Porto",
+              "fullNameItems": [
+                "Porto"
+              ],
+              "parentIds": [],
+              "__typename": "BasicLocationObject"
+            },
+            {
+              "id": "porto/porto",
+              "locationLevel": "council",
+              "name": "Porto",
+              "fullName": "Porto, Porto",
+              "fullNameItems": [
+                "Porto",
+                "Porto"
+              ],
+              "parentIds": [
+                "porto"
+              ],
+              "__typename": "BasicLocationObject"
+            },
+            {
+              "id": "porto/porto/cedofeita-ildefonso-se-miragaia-nicolau-vitoria",
+              "locationLevel": "parish",
+              "name": "Cedofeita, Ildefonso, Sé, Miragaia, Nicolau, Vitória",
+              "fullName": "Cedofeita, Ildefonso, Sé, Miragaia, Nicolau, Vitória, Porto, Porto",
+              "fullNameItems": [
+                "Cedofeita, Ildefonso, Sé, Miragaia, Nicolau, Vitória",
+                "Porto",
+                "Porto"
+              ],
+              "parentIds": [
+                "porto",
+                "porto/porto"
+              ],
+              "__typename": "BasicLocationObject"
+            },
+            {
+              "id": "porto/porto/cedofeita-ildefonso-se-miragaia-nicolau-vitoria/centro-historico",
+              "locationLevel": "neighborhood",
+              "name": "Centro Histórico",
+              "fullName": "Centro Histórico, Cedofeita, Ildefonso, Sé, Miragaia, Nicolau, Vitória, Porto, Porto",
+              "fullNameItems": [
+                "Centro Histórico",
+                "Cedofeita, Ildefonso, Sé, Miragaia, Nicolau, Vitória",
+                "Porto",
+                "Porto"
+              ],
+              "parentIds": [
+                "porto",
+                "porto/porto",
+                "porto/porto/cedofeita-ildefonso-se-miragaia-nicolau-vitoria"
+              ],
+              "__typename": "BasicLocationObject"
+            }
+          ],
+          "__typename": "ReverseGeocoding"
+        },
+        "__typename": "LocationDetails"
+      },
+      "property": {
+        "id": null,
+        "type": "FLAT",
+        "rent": null,
+        "costs": [],
+        "condition": null,
+        "properties": {
+          "equipment": [],
+          "areas": [],
+          "floor": null,
+          "kitchen": null,
+          "parking": [],
+          "numberOfRooms": 0,
+          "rooms": [],
+          "type": null,
+          "windowsOrientation": [],
+          "__typename": "FlatProperties"
+        },
+        "buildingProperties": {
+          "year": 1937,
+          "type": null,
+          "material": null,
+          "windows": [],
+          "heating": null,
+          "numberOfFloors": null,
+          "conveniences": [],
+          "security": [],
+          "__typename": "FlatBuildingProperties"
+        },
+        "ownership": null,
+        "area": {
+          "value": 168,
+          "unit": "M2",
+          "__typename": "Area"
+        },
+        "__typename": "Flat"
+      },
+      "owner": {
+        "id": 4034826,
+        "name": "Matosinhos",
+        "type": "agency",
+        "phones": [
+          "+351923291269"
+        ],
+        "imageUrl": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImtrM241N29nejF2cTItQVBUIn0.8aRu75BSYDj2WLKSdArnHeA2XzLlZGAUcnrvILmjqtg/image;s=97x97;q=100",
+        "contacts": [],
+        "__typename": "LegacyAdvertOwner"
+      },
+      "agency": {
+        "id": 4034826,
+        "name": "Remax Matosinhos",
+        "licenseNumber": "5225",
+        "type": "agency",
+        "phones": [
+          "+351923291269"
+        ],
+        "address": "Rua Sousa Aroso, 659, 4450-290, Matosinhos e Leça da Palmeira, Matosinhos, Oporto",
+        "imageUrl": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InhmN3B0YXowNXd0YzEtQVBUIn0.fhBfIgJAR0OvhgMpovWNcAnK_rQNM5eOqW52JtuVdMM/image;s=800x600;q=90",
+        "url": "https://www.imovirtual.com/pt/empresas/agencias-imobiliarias/remax-matosinhos-ID4034826",
+        "leaderYear": "",
+        "brandingVisible": true,
+        "enabledFeatures": [
+          "ACADEMY",
+          "AD_HOMEPAGE_1_SCHEDULE",
+          "ADDITIONAL_CONTACT_FORMS_AD_PAGE",
+          "ADVANCED_PICTURE_GALLERY_AD_PAGE",
+          "AGENCY_WEB_PAGE",
+          "BANNER_DISCOUNT",
+          "CALL_TRACKING",
+          "CONTACT_CUSTOMIZATION",
+          "CONTACT_PERSONALISATION",
+          "CRM_INTEGRATION",
+          "DEDICATED_CS",
+          "EXPORT_OLX",
+          "LISTGLOBALLY",
+          "LOGO_AD_PAGE",
+          "LOGO_SEARCH_PAGE",
+          "MEGABUMP",
+          "OLX_BUNDLE_BASIC",
+          "OLX_BUNDLE_NORMAL",
+          "OLX_BUNDLE_PREMIUM",
+          "OLX_PROMOTIONS",
+          "OLX_PUSHUP",
+          "OLX_TOPADS_30",
+          "OLX_TOPADS_7",
+          "PAID_FOR_POST_30_AGENCY",
+          "PREDEFINED_MESSAGES_CONTACT_FORM",
+          "PROJECT_RED",
+          "PROMOTIONS_RECOMMENDATIONS",
+          "PUSHUP",
+          "STATISTICS",
+          "SUGGEST_PRICE_FORM",
+          "TOPADS_1",
+          "VAS_SCHEDULING"
+        ],
+        "__typename": "AdvertAgency"
+      },
+      "seo": {
+        "title": "T9+, apartamento para comprar - Rua Bainharia, Cedofeita, Santo Ildefonso, Sé, Miragaia, São Nicolau e Vitória - 18353438 • www.imovirtual.com",
+        "description": "Excelente apartamento para venda com T9+ em Rua Bainharia, Cedofeita, Santo Ildefonso, Sé, Miragaia, São Nicolau e Vitória, por 285 000 €. Este apartamento para venda  tem 168 m² de àrea útil e 168 m² de àrea bruta.SITE 18353438",
+        "__typename": "AdvertSeo"
+      },
+      "breadcrumbs": [
+        {
+          "label": "Apartamento para comprar",
+          "locative": "",
+          "url": "https://www.imovirtual.com/pt/anuncios/comprar/apartamento",
+          "__typename": "AdvertBreadcrumb"
+        },
+        {
+          "label": "Porto (distrito)",
+          "locative": "Porto (distrito)",
+          "url": "https://www.imovirtual.com/pt/anuncios/comprar/apartamento/porto",
+          "__typename": "AdvertBreadcrumb"
+        },
+        {
+          "label": "Porto",
+          "locative": "Porto",
+          "url": "https://www.imovirtual.com/pt/anuncios/comprar/apartamento/porto",
+          "__typename": "AdvertBreadcrumb"
+        },
+        {
+          "label": "Cedofeita, Santo Ildefonso, Sé, Miragaia, São Nicolau e Vitória",
+          "locative": "Cedofeita, Santo Ildefonso, Sé, Miragaia, São Nicolau e Vitória",
+          "url": "https://www.imovirtual.com/pt/anuncios/comprar/apartamento/cedofeita-santo-ildefonso-se-miragaia-sao-nicolau-e-vitoria-porto",
+          "__typename": "AdvertBreadcrumb"
+        },
+        {
+          "label": "Rua Bainharia",
+          "locative": "Rua Bainharia",
+          "url": "https://www.imovirtual.com/pt/anuncios/comprar/apartamento/cedofeita-santo-ildefonso-se-miragaia-sao-nicolau-e-vitoria-porto?locations%5B0%5D%5BstreetId%5D=177725&locations%5B0%5D%5BcityId%5D=13643793&locations=%5Bstreets-177725%5D",
+          "__typename": "AdvertBreadcrumb"
+        },
+        {
+          "label": "Prédio  para venda",
+          "locative": "",
+          "url": "",
+          "__typename": "AdvertBreadcrumb"
+        }
+      ],
+      "userAdverts": [
+        {
+          "adId": "17959645",
+          "url": "https://www.imovirtual.com/pt/anuncio/moradia-t5-para-venda-ID1dm7H",
+          "image": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjdxMDgwdGtrcnhjazMtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.tfllLZdbZcok5Y7KmWSWoZdx_4OnCrbQVKdbPJghNeI/image;s=314x236;q=80",
+          "roomsNum": "6",
+          "pricePerM": 3645,
+          "price": {
+            "value": "995000",
+            "unit": "EUR",
+            "__typename": "UserAdvertPrice"
+          },
+          "netArea": "273",
+          "title": "Moradia T5 para venda",
+          "__typename": "UserAdvert"
+        },
+        {
+          "adId": "18168406",
+          "url": "https://www.imovirtual.com/pt/anuncio/predio-para-venda-ID1eeqO",
+          "image": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjluZmlhbXRsM3o4MS1FQ09TWVNURU0iLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.zNO6Imx3fhLq4j4WxaXkQTdTz_gyN7OuCV73jXLxXiI/image;s=314x236;q=80",
+          "roomsNum": "more",
+          "pricePerM": 2548,
+          "price": {
+            "value": "395000",
+            "unit": "EUR",
+            "__typename": "UserAdvertPrice"
+          },
+          "netArea": "155",
+          "title": "Prédio  para venda",
+          "__typename": "UserAdvert"
+        },
+        {
+          "adId": "18198096",
+          "url": "https://www.imovirtual.com/pt/anuncio/armazem-para-arrendamento-ID1em9G",
+          "image": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImIzcDc0bTQ2a3pyMzEtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.4pnDTtnWBH5qr-WeU96Xb5F5Akzdq5CiEB6pisKkmbw/image;s=314x236;q=80",
+          "roomsNum": "",
+          "pricePerM": 5,
+          "price": {
+            "value": "4500",
+            "unit": "EUR",
+            "__typename": "UserAdvertPrice"
+          },
+          "netArea": "900",
+          "title": "Armazém  para arrendamento",
+          "__typename": "UserAdvert"
+        },
+        {
+          "adId": "18321029",
+          "url": "https://www.imovirtual.com/pt/anuncio/moradia-t4-para-venda-ID1eS8t",
+          "image": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImoyM2U3Z20yNnlyMjItRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.N_OHeWcHfzHO0nHvXCuF6HB1Ho5FNPiCrNf4CdoqgQQ/image;s=314x236;q=80",
+          "roomsNum": "5",
+          "pricePerM": 2644,
+          "price": {
+            "value": "550000",
+            "unit": "EUR",
+            "__typename": "UserAdvertPrice"
+          },
+          "netArea": "208",
+          "title": "Moradia T4 para venda",
+          "__typename": "UserAdvert"
+        }
+      ],
+      "paginatedUnits": {
+        "items": null,
+        "isPriceHidden": null,
+        "pagination": null,
+        "facets": null,
+        "__typename": "AdvertsPages"
+      },
+      "specialOffer": null,
+      "__typename": "Advert",
+      "contactDetails": {
+        "name": "Matosinhos",
+        "type": "agency",
+        "phones": [
+          "+351923291269"
+        ],
+        "imageUrl": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImtrM241N29nejF2cTItQVBUIn0.8aRu75BSYDj2WLKSdArnHeA2XzLlZGAUcnrvILmjqtg/image;s=97x97;q=100"
+      }
+    },
+    "relativeUrl": "/pt/anuncio/predio-para-venda-ID1f0zc",
+    "adTrackingData": {
+      "touch_point_page": "ad_page",
+      "lat": 41.143277675814,
+      "long": -8.6124189770951,
+      "ad_photo": 4,
+      "price_currency": "EUR",
+      "cat_l1_id": 101,
+      "cat_l1_name": "Apartamentos",
+      "special_offer_type": null,
+      "ad_id": "18353438",
+      "ad_price": 285000,
+      "business": "comprar",
+      "city_id": "13643793",
+      "city_name": "cedofeita-santo-ildefonso-se-miragaia-sao-nicolau-e-vitoria-porto",
+      "market": "secondary",
+      "poster_type": "agency",
+      "surface": null,
+      "region_id": "porto",
+      "region_name": "porto",
+      "subregion_id": "porto",
+      "seller_id": "4034826",
+      "obido_advert": "n"
+    },
+    "referer": null,
+    "currentUser": null,
+    "cookiesCategorisation": {},
+    "experiments": {},
+    "featureFlags": {
+      "isAdAvmModuleEnabled": false,
+      "isAdFinanceBannerEnabled": false,
+      "isAdFinanceLinkEnabled": false,
+      "isAdMortgageSimulatorEnabled": false,
+      "isFeaturedDevelopmentVASEnabled": true,
+      "isListingRentPriceEnabled": false,
+      "isNewApartmentsForSalePostingFormEnabled": false,
+      "isOldSaveSearchQueryEnabled": false,
+      "isFinanceCheckboxEnabled": false,
+      "isObservedAdsPageEnabled": true,
+      "isBikPromotionEnabled": true,
+      "isSpecialOfferForUnitsExperimentEnabled": false,
+      "isSpecialOfferEnabled": true,
+      "isSeoAdsDescriptionEnabled": false,
+      "isPropertyEvaluationPageActive": false,
+      "isSettingsContactsTabMigrated": false,
+      "isRegularNmfEnabled": true,
+      "isExtendedBillingDataEnabled": false,
+      "isRESellerLeadsActive": false,
+      "isBadgesFeatureEnabled": false,
+      "isNexusHomePageEnabled": true,
+      "isPostPaymentOptionEnabled": true,
+      "isSettingsOurTeamTabEnabled": false,
+      "isHCIAMEnabled": false,
+      "isSellerLeadsMvpEnabled": false,
+      "isNexusSellerPageEnabled": false,
+      "isHCIAMAgencyRegistrationEnabled": true,
+      "isHCIAMAgentRegistrationEnabled": true,
+      "isHCIAMDeveloperRegistrationEnabled": true,
+      "isMessagingCenterEnabled": false,
+      "isMessagingCenterChatEnabled": false,
+      "__typename": "FeatureFlags"
+    },
+    "laquesisResult": null,
+    "userSessionId": "a02d066b-8498-45c9-adf9-ca06797ae9de",
+    "unconfirmedUserAuthToken": null,
+    "desktopHeader": {
+      "Is-Desktop": "true"
+    }
+  },
+  "__N_SSP": true
+}

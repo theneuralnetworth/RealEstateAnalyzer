@@ -1,0 +1,900 @@
+{
+  "pageProps": {
+    "lang": "pt",
+    "_sentryTraceData": "0b0d644c3167467b90dd39966f01b2bf-b2adae87e878f15e-0",
+    "_sentryBaggage": "sentry-environment=imovirtualpt2-prd,sentry-release=frontend-platform%40v20241004T114115-imovirtualpt2,sentry-public_key=feffe528c390ea66992a4a05131c3c68,sentry-trace_id=0b0d644c3167467b90dd39966f01b2bf,sentry-transaction=%2Fpt%2Fanuncio%2F%5Bid%5D,sentry-sampled=false",
+    "id": "1fd14",
+    "ad": {
+      "id": 18401294,
+      "price": {
+        "type": "",
+        "__typename": "AdvertPrice"
+      },
+      "market": "SECONDARY",
+      "services": [],
+      "publicId": "",
+      "slug": "apartamento-t2-1-remodelado-no-centro-do-porto-ID1fd14",
+      "advertiserType": "business",
+      "advertType": "AGENCY",
+      "source": "urn:partner:ximo",
+      "createdAt": "2024-07-18T17:37:52+01:00",
+      "modifiedAt": "2024-09-26T20:54:40+01:00",
+      "description": "Apartamento T2+1 localizado no centro do Porto. Oferece uma sala de estar em open space integrada com uma cozinha totalmente equipada com aparelhos de última geração da Whirlpool. Os dois quartos principais são suítes, enquanto um terceiro quarto versátil inclui uma mesa de trabalho rebatível. Detalhes como ar condicionado em todos os ambientes, janelas oscilobatentes em PVC com vidro duplo, estores elétricos e tetos falsos com iluminação LED garantem conforto e eficiência energética.<br/>\n<br/>\nLocalizado no coração do Porto, o apartamento está a apenas 2 minutos a pé da estação de metro Faria Guimarães e próximo da estação de metro Trindade. A área oferece uma variedade de comércio, serviços e uma atmosfera cosmopolita, ideal para quem procura conveniência e uma vida urbana dinâmica.<br/>\n<br/>\nA DCC Investments é uma sociedade de consultoria imobiliária especialista neste mercado, com formação adequada e rigor de cariz deontológico, dando especial dedicação aos seus clientes com um tratamento personalizado. Trabalha cada imóvel de forma especial e cada cliente de forma única, diferenciada e exclusiva, indo ao encontro dos seus interesses. A sua actuação baseia-se no acompanhamento, do início ao fim de cada processo, em todas fases, negocial, legal e burocrática, relacionados com o imóvel. Consegue almejar a confiança dos clientes, verificando-se a renovação pelos mesmos dos serviços prestados.",
+      "developmentId": 0,
+      "developmentTitle": "",
+      "developmentUrl": "",
+      "exclusiveOffer": false,
+      "externalId": "7801fe4f-c706-48f4-b1b1-7aa181cea543",
+      "features": [],
+      "creationSource": "api",
+      "featuresByCategory": [],
+      "featuresWithoutCategory": [],
+      "openDay": null,
+      "referenceId": "DCC808",
+      "target": {
+        "Area": "71",
+        "AreaRange": [],
+        "Bathrooms_num": [
+          "3"
+        ],
+        "City": "cedofeita-santo-ildefonso-se-miragaia-sao-nicolau-e-vitoria-porto",
+        "City_id": "13643793",
+        "Construction_status": [
+          "ready_to_use"
+        ],
+        "Country": "Portugal",
+        "Energy_certificate": [
+          "c"
+        ],
+        "Id": "18401294",
+        "MarketType": "secondary",
+        "ObidoAdvert": "n",
+        "OfferType": "comprar",
+        "Photo": "aHR0cHM6Ly9pcmVsYW5kLmFwb2xsby5vbHhjZG4uY29tL3YxL2ZpbGVzL2V5Sm1iaUk2SWpBMk5HdDJPR2h0YnpRMU5USXRSVU5QVTFsVFZFVk5JaXdpZHlJNlczc2labTRpT2lJMk9XNXNjR0UzWldOeGJUY3hMVUZRVkNJc0luTWlPaUl4TkNJc0luQWlPaUl4TUN3dE1UQWlMQ0poSWpvaU1DSjlYWDAuNnlWOV8waTAzc2czYXVZdURWSUd6REg5eUdtZFhfaXRoZXZaeXJpWnpBdy9pbWFnZTtzPTY1NXg0OTE7cT04MA==",
+        "Price": 312000,
+        "PriceRange": [
+          "250001-500000"
+        ],
+        "Price_per_m": 4394,
+        "ProperType": "apartamento",
+        "Province": "porto",
+        "RegularUser": "n",
+        "Rooms_num": [
+          "3"
+        ],
+        "Subregion": "porto",
+        "Title": "QXBhcnRhbWVudG8gVDIrMSByZW1vZGVsYWRvIG5vIGNlbnRybyBkbyBQb3J0bw==",
+        "categoryId": "101",
+        "env": "production",
+        "hidePrice": "0",
+        "seller_id": "2449411",
+        "user_type": "agency"
+      },
+      "title": "Apartamento T2+1 remodelado no centro do Porto",
+      "topInformation": [
+        {
+          "label": "area",
+          "values": [
+            "71"
+          ],
+          "unit": "m²",
+          "__typename": "AdditionalInfo"
+        },
+        {
+          "label": "building_ownership",
+          "values": [],
+          "unit": "",
+          "__typename": "AdditionalInfo"
+        },
+        {
+          "label": "rooms_num",
+          "values": [
+            "3"
+          ],
+          "unit": "",
+          "__typename": "AdditionalInfo"
+        },
+        {
+          "label": "construction_status",
+          "values": [
+            "construction_status::ready_to_use"
+          ],
+          "unit": "",
+          "__typename": "AdditionalInfo"
+        },
+        {
+          "label": "floor",
+          "values": [],
+          "unit": "",
+          "__typename": "AdditionalInfo"
+        },
+        {
+          "label": "outdoor",
+          "values": [],
+          "unit": "",
+          "__typename": "AdditionalInfo"
+        },
+        {
+          "label": "rent",
+          "values": [],
+          "unit": "",
+          "__typename": "AdditionalInfo"
+        },
+        {
+          "label": "car",
+          "values": [],
+          "unit": "",
+          "__typename": "AdditionalInfo"
+        },
+        {
+          "label": "remote_services",
+          "values": [],
+          "unit": "",
+          "__typename": "AdditionalInfo"
+        },
+        {
+          "label": "heating",
+          "values": [],
+          "unit": "",
+          "__typename": "AdditionalInfo"
+        }
+      ],
+      "additionalInformation": [
+        {
+          "label": "market",
+          "values": [
+            "market::secondary"
+          ],
+          "unit": "",
+          "__typename": "AdditionalInfo"
+        },
+        {
+          "label": "advertiser_type",
+          "values": [
+            "advertiser_type::agency"
+          ],
+          "unit": "",
+          "__typename": "AdditionalInfo"
+        },
+        {
+          "label": "bathrooms_num",
+          "values": [
+            "3"
+          ],
+          "unit": "",
+          "__typename": "AdditionalInfo"
+        },
+        {
+          "label": "free_from",
+          "values": [],
+          "unit": "",
+          "__typename": "AdditionalInfo"
+        },
+        {
+          "label": "build_year",
+          "values": [],
+          "unit": "",
+          "__typename": "AdditionalInfo"
+        },
+        {
+          "label": "building_type",
+          "values": [],
+          "unit": "",
+          "__typename": "AdditionalInfo"
+        },
+        {
+          "label": "windows_type",
+          "values": [],
+          "unit": "",
+          "__typename": "AdditionalInfo"
+        },
+        {
+          "label": "lift",
+          "values": [
+            "::n"
+          ],
+          "unit": "",
+          "__typename": "AdditionalInfo"
+        },
+        {
+          "label": "media_types",
+          "values": [],
+          "unit": "",
+          "__typename": "AdditionalInfo"
+        },
+        {
+          "label": "security_types",
+          "values": [],
+          "unit": "",
+          "__typename": "AdditionalInfo"
+        },
+        {
+          "label": "equipment_types",
+          "values": [],
+          "unit": "",
+          "__typename": "AdditionalInfo"
+        },
+        {
+          "label": "extras_types",
+          "values": [],
+          "unit": "",
+          "__typename": "AdditionalInfo"
+        },
+        {
+          "label": "building_material",
+          "values": [],
+          "unit": "",
+          "__typename": "AdditionalInfo"
+        }
+      ],
+      "url": "https://www.imovirtual.com/pt/anuncio/apartamento-t2-1-remodelado-no-centro-do-porto-ID1fd14",
+      "status": "active",
+      "adCategory": {
+        "id": "101",
+        "name": "FLAT",
+        "type": "SELL",
+        "__typename": "AdvertCategory"
+      },
+      "category": {
+        "id": 101,
+        "name": [
+          {
+            "locale": "pt",
+            "value": "Apartamentos",
+            "__typename": "LocalizedString"
+          },
+          {
+            "locale": "en",
+            "value": "apartments",
+            "__typename": "LocalizedString"
+          }
+        ],
+        "__typename": "AdCategory"
+      },
+      "characteristics": [
+        {
+          "key": "price",
+          "value": "312000",
+          "label": "Preço",
+          "localizedValue": "312 000 €",
+          "currency": "EUR",
+          "suffix": "",
+          "__typename": "Characteristic"
+        },
+        {
+          "key": "m",
+          "value": "71",
+          "label": "Área",
+          "localizedValue": "71 m²",
+          "currency": "",
+          "suffix": "",
+          "__typename": "Characteristic"
+        },
+        {
+          "key": "price_per_m",
+          "value": "4394",
+          "label": "preço/m2",
+          "localizedValue": "4 394 €/m²",
+          "currency": "",
+          "suffix": "",
+          "__typename": "Characteristic"
+        },
+        {
+          "key": "rooms_num",
+          "value": "3",
+          "label": "Tipologia",
+          "localizedValue": "T2",
+          "currency": "",
+          "suffix": "",
+          "__typename": "Characteristic"
+        },
+        {
+          "key": "market",
+          "value": "secondary",
+          "label": "Nova construção",
+          "localizedValue": "não",
+          "currency": "",
+          "suffix": "",
+          "__typename": "Characteristic"
+        },
+        {
+          "key": "energy_certificate",
+          "value": "c",
+          "label": "Certificado energético",
+          "localizedValue": "C",
+          "currency": "",
+          "suffix": "",
+          "__typename": "Characteristic"
+        },
+        {
+          "key": "bathrooms_num",
+          "value": "3",
+          "label": "N.º de casas de banho",
+          "localizedValue": "3",
+          "currency": "",
+          "suffix": "",
+          "__typename": "Characteristic"
+        },
+        {
+          "key": "construction_status",
+          "value": "ready_to_use",
+          "label": "Fase de acabamento",
+          "localizedValue": "pronto a habitar",
+          "currency": "",
+          "suffix": "",
+          "__typename": "Characteristic"
+        }
+      ],
+      "images": [
+        {
+          "thumbnail": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjA2NGt2OGhtbzQ1NTItRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.6yV9_0i03sg3auYuDVIGzDH9yGmdX_ithevZyriZzAw/image;s=184x138;q=80",
+          "small": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjA2NGt2OGhtbzQ1NTItRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.6yV9_0i03sg3auYuDVIGzDH9yGmdX_ithevZyriZzAw/image;s=314x236;q=80",
+          "medium": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjA2NGt2OGhtbzQ1NTItRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.6yV9_0i03sg3auYuDVIGzDH9yGmdX_ithevZyriZzAw/image;s=655x491;q=80",
+          "large": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjA2NGt2OGhtbzQ1NTItRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.6yV9_0i03sg3auYuDVIGzDH9yGmdX_ithevZyriZzAw/image;s=1280x1024;q=80",
+          "__typename": "AdImage"
+        },
+        {
+          "thumbnail": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Im05dWlyY3djajR6dzItRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.VCwKC4dNDzwfyTpcunfOz22IWXRmPAEip5nOvskq_rs/image;s=184x138;q=80",
+          "small": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Im05dWlyY3djajR6dzItRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.VCwKC4dNDzwfyTpcunfOz22IWXRmPAEip5nOvskq_rs/image;s=314x236;q=80",
+          "medium": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Im05dWlyY3djajR6dzItRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.VCwKC4dNDzwfyTpcunfOz22IWXRmPAEip5nOvskq_rs/image;s=655x491;q=80",
+          "large": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Im05dWlyY3djajR6dzItRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.VCwKC4dNDzwfyTpcunfOz22IWXRmPAEip5nOvskq_rs/image;s=1280x1024;q=80",
+          "__typename": "AdImage"
+        },
+        {
+          "thumbnail": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Inh2NzJ5aGJvNDE3MzEtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.eEKxs6S6l33mS8fMb5je-IumOYft48cqTzBOfyKVC2A/image;s=184x138;q=80",
+          "small": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Inh2NzJ5aGJvNDE3MzEtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.eEKxs6S6l33mS8fMb5je-IumOYft48cqTzBOfyKVC2A/image;s=314x236;q=80",
+          "medium": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Inh2NzJ5aGJvNDE3MzEtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.eEKxs6S6l33mS8fMb5je-IumOYft48cqTzBOfyKVC2A/image;s=655x491;q=80",
+          "large": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Inh2NzJ5aGJvNDE3MzEtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.eEKxs6S6l33mS8fMb5je-IumOYft48cqTzBOfyKVC2A/image;s=1280x1024;q=80",
+          "__typename": "AdImage"
+        },
+        {
+          "thumbnail": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InV0andlOWw5cjF4bjEtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.m2bHY4u38bRZjeb9lZ5HoTihyhdTZ0-pPeMpiwcMiVg/image;s=184x138;q=80",
+          "small": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InV0andlOWw5cjF4bjEtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.m2bHY4u38bRZjeb9lZ5HoTihyhdTZ0-pPeMpiwcMiVg/image;s=314x236;q=80",
+          "medium": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InV0andlOWw5cjF4bjEtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.m2bHY4u38bRZjeb9lZ5HoTihyhdTZ0-pPeMpiwcMiVg/image;s=655x491;q=80",
+          "large": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InV0andlOWw5cjF4bjEtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.m2bHY4u38bRZjeb9lZ5HoTihyhdTZ0-pPeMpiwcMiVg/image;s=1280x1024;q=80",
+          "__typename": "AdImage"
+        },
+        {
+          "thumbnail": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Imc4dzBiZTAybTc0ZDItRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.GqU00Il6kyGhJrCvNFUdaTKvC6_hf1zO8SZRzZDRxZs/image;s=184x138;q=80",
+          "small": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Imc4dzBiZTAybTc0ZDItRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.GqU00Il6kyGhJrCvNFUdaTKvC6_hf1zO8SZRzZDRxZs/image;s=314x236;q=80",
+          "medium": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Imc4dzBiZTAybTc0ZDItRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.GqU00Il6kyGhJrCvNFUdaTKvC6_hf1zO8SZRzZDRxZs/image;s=655x491;q=80",
+          "large": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Imc4dzBiZTAybTc0ZDItRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.GqU00Il6kyGhJrCvNFUdaTKvC6_hf1zO8SZRzZDRxZs/image;s=1280x1024;q=80",
+          "__typename": "AdImage"
+        },
+        {
+          "thumbnail": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImNpNGxjeTBrY21sYTEtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.bZKlmltlTHlRupGr3tvTU1BVuVQmCNjXUEN3BprYC94/image;s=184x138;q=80",
+          "small": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImNpNGxjeTBrY21sYTEtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.bZKlmltlTHlRupGr3tvTU1BVuVQmCNjXUEN3BprYC94/image;s=314x236;q=80",
+          "medium": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImNpNGxjeTBrY21sYTEtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.bZKlmltlTHlRupGr3tvTU1BVuVQmCNjXUEN3BprYC94/image;s=655x491;q=80",
+          "large": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImNpNGxjeTBrY21sYTEtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.bZKlmltlTHlRupGr3tvTU1BVuVQmCNjXUEN3BprYC94/image;s=1280x1024;q=80",
+          "__typename": "AdImage"
+        },
+        {
+          "thumbnail": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InBlb3B3d2Q1a3AxNDEtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.aeisjd450xr3sv0iK3T9oqahmOvHGB0pJT4l10uuOtE/image;s=184x138;q=80",
+          "small": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InBlb3B3d2Q1a3AxNDEtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.aeisjd450xr3sv0iK3T9oqahmOvHGB0pJT4l10uuOtE/image;s=314x236;q=80",
+          "medium": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InBlb3B3d2Q1a3AxNDEtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.aeisjd450xr3sv0iK3T9oqahmOvHGB0pJT4l10uuOtE/image;s=655x491;q=80",
+          "large": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InBlb3B3d2Q1a3AxNDEtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.aeisjd450xr3sv0iK3T9oqahmOvHGB0pJT4l10uuOtE/image;s=1280x1024;q=80",
+          "__typename": "AdImage"
+        },
+        {
+          "thumbnail": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImZvNDkxdWtrdG9pNTMtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.rPu_HXrYmOVk7QhKkB_AG_ZLtNgeQiUiXfmlv67g9rs/image;s=184x138;q=80",
+          "small": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImZvNDkxdWtrdG9pNTMtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.rPu_HXrYmOVk7QhKkB_AG_ZLtNgeQiUiXfmlv67g9rs/image;s=314x236;q=80",
+          "medium": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImZvNDkxdWtrdG9pNTMtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.rPu_HXrYmOVk7QhKkB_AG_ZLtNgeQiUiXfmlv67g9rs/image;s=655x491;q=80",
+          "large": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImZvNDkxdWtrdG9pNTMtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.rPu_HXrYmOVk7QhKkB_AG_ZLtNgeQiUiXfmlv67g9rs/image;s=1280x1024;q=80",
+          "__typename": "AdImage"
+        },
+        {
+          "thumbnail": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InBwZWR0YnlkZ2ZuMS1FQ09TWVNURU0iLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.F529_Z3lzyIyCcqtut6iKGaa0mZ_iasph27wD5pEXEk/image;s=184x138;q=80",
+          "small": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InBwZWR0YnlkZ2ZuMS1FQ09TWVNURU0iLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.F529_Z3lzyIyCcqtut6iKGaa0mZ_iasph27wD5pEXEk/image;s=314x236;q=80",
+          "medium": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InBwZWR0YnlkZ2ZuMS1FQ09TWVNURU0iLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.F529_Z3lzyIyCcqtut6iKGaa0mZ_iasph27wD5pEXEk/image;s=655x491;q=80",
+          "large": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InBwZWR0YnlkZ2ZuMS1FQ09TWVNURU0iLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.F529_Z3lzyIyCcqtut6iKGaa0mZ_iasph27wD5pEXEk/image;s=1280x1024;q=80",
+          "__typename": "AdImage"
+        },
+        {
+          "thumbnail": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjZudXExM3Q5NDNzaTEtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.oO-ISied92BE6rqqodFDYi41XPICOlWqsbrvhQ15b0M/image;s=184x138;q=80",
+          "small": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjZudXExM3Q5NDNzaTEtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.oO-ISied92BE6rqqodFDYi41XPICOlWqsbrvhQ15b0M/image;s=314x236;q=80",
+          "medium": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjZudXExM3Q5NDNzaTEtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.oO-ISied92BE6rqqodFDYi41XPICOlWqsbrvhQ15b0M/image;s=655x491;q=80",
+          "large": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjZudXExM3Q5NDNzaTEtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.oO-ISied92BE6rqqodFDYi41XPICOlWqsbrvhQ15b0M/image;s=1280x1024;q=80",
+          "__typename": "AdImage"
+        },
+        {
+          "thumbnail": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImlpZWhqaXYzMTEwczItRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.ohfLJFl-CuveGahGkAcTzqn8cOk9ExKVk-f7AH8uiqY/image;s=184x138;q=80",
+          "small": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImlpZWhqaXYzMTEwczItRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.ohfLJFl-CuveGahGkAcTzqn8cOk9ExKVk-f7AH8uiqY/image;s=314x236;q=80",
+          "medium": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImlpZWhqaXYzMTEwczItRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.ohfLJFl-CuveGahGkAcTzqn8cOk9ExKVk-f7AH8uiqY/image;s=655x491;q=80",
+          "large": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImlpZWhqaXYzMTEwczItRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.ohfLJFl-CuveGahGkAcTzqn8cOk9ExKVk-f7AH8uiqY/image;s=1280x1024;q=80",
+          "__typename": "AdImage"
+        },
+        {
+          "thumbnail": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Ijhic3hxdmwyNzlwczEtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.BDsY4OaHpAnxbwFq9OrT447iN7j-Zcacgp94Y0LRH0k/image;s=184x138;q=80",
+          "small": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Ijhic3hxdmwyNzlwczEtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.BDsY4OaHpAnxbwFq9OrT447iN7j-Zcacgp94Y0LRH0k/image;s=314x236;q=80",
+          "medium": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Ijhic3hxdmwyNzlwczEtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.BDsY4OaHpAnxbwFq9OrT447iN7j-Zcacgp94Y0LRH0k/image;s=655x491;q=80",
+          "large": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Ijhic3hxdmwyNzlwczEtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.BDsY4OaHpAnxbwFq9OrT447iN7j-Zcacgp94Y0LRH0k/image;s=1280x1024;q=80",
+          "__typename": "AdImage"
+        },
+        {
+          "thumbnail": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IndscXUydWZ0YmFtYzItRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.ec4sQwRm8zU4u3UrrKIGrd1vfindC2dUORNlRB1m9Ys/image;s=184x138;q=80",
+          "small": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IndscXUydWZ0YmFtYzItRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.ec4sQwRm8zU4u3UrrKIGrd1vfindC2dUORNlRB1m9Ys/image;s=314x236;q=80",
+          "medium": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IndscXUydWZ0YmFtYzItRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.ec4sQwRm8zU4u3UrrKIGrd1vfindC2dUORNlRB1m9Ys/image;s=655x491;q=80",
+          "large": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IndscXUydWZ0YmFtYzItRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.ec4sQwRm8zU4u3UrrKIGrd1vfindC2dUORNlRB1m9Ys/image;s=1280x1024;q=80",
+          "__typename": "AdImage"
+        },
+        {
+          "thumbnail": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImpubHllYm9obnZqNi1FQ09TWVNURU0iLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.EUtWrK6gjD3oTv3MGtHWpG0dNtfBeNlAWgRMhohR4DE/image;s=184x138;q=80",
+          "small": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImpubHllYm9obnZqNi1FQ09TWVNURU0iLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.EUtWrK6gjD3oTv3MGtHWpG0dNtfBeNlAWgRMhohR4DE/image;s=314x236;q=80",
+          "medium": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImpubHllYm9obnZqNi1FQ09TWVNURU0iLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.EUtWrK6gjD3oTv3MGtHWpG0dNtfBeNlAWgRMhohR4DE/image;s=655x491;q=80",
+          "large": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImpubHllYm9obnZqNi1FQ09TWVNURU0iLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.EUtWrK6gjD3oTv3MGtHWpG0dNtfBeNlAWgRMhohR4DE/image;s=1280x1024;q=80",
+          "__typename": "AdImage"
+        },
+        {
+          "thumbnail": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Im9mN3hjdjFjeGZiNDMtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.cehWN83Iw3uIB1AsNzyCxYYNdTzINONItjIcickmcX8/image;s=184x138;q=80",
+          "small": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Im9mN3hjdjFjeGZiNDMtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.cehWN83Iw3uIB1AsNzyCxYYNdTzINONItjIcickmcX8/image;s=314x236;q=80",
+          "medium": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Im9mN3hjdjFjeGZiNDMtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.cehWN83Iw3uIB1AsNzyCxYYNdTzINONItjIcickmcX8/image;s=655x491;q=80",
+          "large": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Im9mN3hjdjFjeGZiNDMtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.cehWN83Iw3uIB1AsNzyCxYYNdTzINONItjIcickmcX8/image;s=1280x1024;q=80",
+          "__typename": "AdImage"
+        },
+        {
+          "thumbnail": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Inp0bWc3b2ppenEzMS1FQ09TWVNURU0iLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.rIIdRQR7GT4CPL_AP7XY4hKZ6ocGNkJRgthYQcNiIL8/image;s=184x138;q=80",
+          "small": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Inp0bWc3b2ppenEzMS1FQ09TWVNURU0iLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.rIIdRQR7GT4CPL_AP7XY4hKZ6ocGNkJRgthYQcNiIL8/image;s=314x236;q=80",
+          "medium": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Inp0bWc3b2ppenEzMS1FQ09TWVNURU0iLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.rIIdRQR7GT4CPL_AP7XY4hKZ6ocGNkJRgthYQcNiIL8/image;s=655x491;q=80",
+          "large": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Inp0bWc3b2ppenEzMS1FQ09TWVNURU0iLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.rIIdRQR7GT4CPL_AP7XY4hKZ6ocGNkJRgthYQcNiIL8/image;s=1280x1024;q=80",
+          "__typename": "AdImage"
+        },
+        {
+          "thumbnail": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Ink2cXVzNm9pbzU0NTItRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.jxGC4n-dNMRzEgGFVOZVZRI89eWwhr0bWQlqdZ55RUg/image;s=184x138;q=80",
+          "small": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Ink2cXVzNm9pbzU0NTItRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.jxGC4n-dNMRzEgGFVOZVZRI89eWwhr0bWQlqdZ55RUg/image;s=314x236;q=80",
+          "medium": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Ink2cXVzNm9pbzU0NTItRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.jxGC4n-dNMRzEgGFVOZVZRI89eWwhr0bWQlqdZ55RUg/image;s=655x491;q=80",
+          "large": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Ink2cXVzNm9pbzU0NTItRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.jxGC4n-dNMRzEgGFVOZVZRI89eWwhr0bWQlqdZ55RUg/image;s=1280x1024;q=80",
+          "__typename": "AdImage"
+        },
+        {
+          "thumbnail": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjU5aWwxYTd1NnJiYS1FQ09TWVNURU0iLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.wSLjTk_Yu1GOFUWjIG-ovAdVLfPAj6h0yjqrrnXGFy8/image;s=184x138;q=80",
+          "small": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjU5aWwxYTd1NnJiYS1FQ09TWVNURU0iLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.wSLjTk_Yu1GOFUWjIG-ovAdVLfPAj6h0yjqrrnXGFy8/image;s=314x236;q=80",
+          "medium": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjU5aWwxYTd1NnJiYS1FQ09TWVNURU0iLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.wSLjTk_Yu1GOFUWjIG-ovAdVLfPAj6h0yjqrrnXGFy8/image;s=655x491;q=80",
+          "large": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjU5aWwxYTd1NnJiYS1FQ09TWVNURU0iLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.wSLjTk_Yu1GOFUWjIG-ovAdVLfPAj6h0yjqrrnXGFy8/image;s=1280x1024;q=80",
+          "__typename": "AdImage"
+        },
+        {
+          "thumbnail": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InhpNzJuOHBkZmJncjEtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.HQalM_ngetNqZP8l7gKTnsMGaq-qtV0ltxcUe9kIw5w/image;s=184x138;q=80",
+          "small": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InhpNzJuOHBkZmJncjEtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.HQalM_ngetNqZP8l7gKTnsMGaq-qtV0ltxcUe9kIw5w/image;s=314x236;q=80",
+          "medium": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InhpNzJuOHBkZmJncjEtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.HQalM_ngetNqZP8l7gKTnsMGaq-qtV0ltxcUe9kIw5w/image;s=655x491;q=80",
+          "large": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InhpNzJuOHBkZmJncjEtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.HQalM_ngetNqZP8l7gKTnsMGaq-qtV0ltxcUe9kIw5w/image;s=1280x1024;q=80",
+          "__typename": "AdImage"
+        },
+        {
+          "thumbnail": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Ind4cnhqNTVvdDJsaDMtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.UHWiOZFnMwSU77zeuf9OVIwPQo0DhvCXk5fDQuwzz0Q/image;s=184x138;q=80",
+          "small": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Ind4cnhqNTVvdDJsaDMtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.UHWiOZFnMwSU77zeuf9OVIwPQo0DhvCXk5fDQuwzz0Q/image;s=314x236;q=80",
+          "medium": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Ind4cnhqNTVvdDJsaDMtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.UHWiOZFnMwSU77zeuf9OVIwPQo0DhvCXk5fDQuwzz0Q/image;s=655x491;q=80",
+          "large": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Ind4cnhqNTVvdDJsaDMtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.UHWiOZFnMwSU77zeuf9OVIwPQo0DhvCXk5fDQuwzz0Q/image;s=1280x1024;q=80",
+          "__typename": "AdImage"
+        },
+        {
+          "thumbnail": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjJrYzdlbGZoamE0ZjItRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.cjs8-64_xjoy9bXp0q9_5o3YmUjxwjQE8VLy4kj1zQ0/image;s=184x138;q=80",
+          "small": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjJrYzdlbGZoamE0ZjItRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.cjs8-64_xjoy9bXp0q9_5o3YmUjxwjQE8VLy4kj1zQ0/image;s=314x236;q=80",
+          "medium": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjJrYzdlbGZoamE0ZjItRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.cjs8-64_xjoy9bXp0q9_5o3YmUjxwjQE8VLy4kj1zQ0/image;s=655x491;q=80",
+          "large": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjJrYzdlbGZoamE0ZjItRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.cjs8-64_xjoy9bXp0q9_5o3YmUjxwjQE8VLy4kj1zQ0/image;s=1280x1024;q=80",
+          "__typename": "AdImage"
+        },
+        {
+          "thumbnail": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjhuaG1yYjR2b2R5aTItRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.k4vEgM-Q5qOix5DPk0GgdZqVTU0J6d_e2CdhaFh2LNc/image;s=184x138;q=80",
+          "small": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjhuaG1yYjR2b2R5aTItRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.k4vEgM-Q5qOix5DPk0GgdZqVTU0J6d_e2CdhaFh2LNc/image;s=314x236;q=80",
+          "medium": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjhuaG1yYjR2b2R5aTItRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.k4vEgM-Q5qOix5DPk0GgdZqVTU0J6d_e2CdhaFh2LNc/image;s=655x491;q=80",
+          "large": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjhuaG1yYjR2b2R5aTItRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.k4vEgM-Q5qOix5DPk0GgdZqVTU0J6d_e2CdhaFh2LNc/image;s=1280x1024;q=80",
+          "__typename": "AdImage"
+        },
+        {
+          "thumbnail": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InNwc3ZyNWdtaGJzbDEtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.P27RjG3YadrIextAYUBJwRxpAC-evSt9kaG4qPXSPl0/image;s=184x138;q=80",
+          "small": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InNwc3ZyNWdtaGJzbDEtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.P27RjG3YadrIextAYUBJwRxpAC-evSt9kaG4qPXSPl0/image;s=314x236;q=80",
+          "medium": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InNwc3ZyNWdtaGJzbDEtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.P27RjG3YadrIextAYUBJwRxpAC-evSt9kaG4qPXSPl0/image;s=655x491;q=80",
+          "large": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InNwc3ZyNWdtaGJzbDEtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.P27RjG3YadrIextAYUBJwRxpAC-evSt9kaG4qPXSPl0/image;s=1280x1024;q=80",
+          "__typename": "AdImage"
+        },
+        {
+          "thumbnail": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImVkMXdvaGIxNGJuejItRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.9SQ8hNA4eyfqr_xPC0zXODg7Wz1a4XfIKt_-Z4PEkrc/image;s=184x138;q=80",
+          "small": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImVkMXdvaGIxNGJuejItRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.9SQ8hNA4eyfqr_xPC0zXODg7Wz1a4XfIKt_-Z4PEkrc/image;s=314x236;q=80",
+          "medium": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImVkMXdvaGIxNGJuejItRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.9SQ8hNA4eyfqr_xPC0zXODg7Wz1a4XfIKt_-Z4PEkrc/image;s=655x491;q=80",
+          "large": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImVkMXdvaGIxNGJuejItRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.9SQ8hNA4eyfqr_xPC0zXODg7Wz1a4XfIKt_-Z4PEkrc/image;s=1280x1024;q=80",
+          "__typename": "AdImage"
+        },
+        {
+          "thumbnail": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjZqcHQxYmxhcHgzNTMtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.5Fs53WGbSvEp6D7eZ5Sb4fJKfGZ6UVNw6baUJQYpZus/image;s=184x138;q=80",
+          "small": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjZqcHQxYmxhcHgzNTMtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.5Fs53WGbSvEp6D7eZ5Sb4fJKfGZ6UVNw6baUJQYpZus/image;s=314x236;q=80",
+          "medium": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjZqcHQxYmxhcHgzNTMtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.5Fs53WGbSvEp6D7eZ5Sb4fJKfGZ6UVNw6baUJQYpZus/image;s=655x491;q=80",
+          "large": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjZqcHQxYmxhcHgzNTMtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.5Fs53WGbSvEp6D7eZ5Sb4fJKfGZ6UVNw6baUJQYpZus/image;s=1280x1024;q=80",
+          "__typename": "AdImage"
+        }
+      ],
+      "links": {
+        "localPlanUrl": "http://mediadcc.ximo.pt/IMOVEIS/927/daaec97f-e684-4f44-97f8-3df789a28891.jpg?t=7888386",
+        "videoUrl": "https://www.youtube.com/embed/DN8lT9ogp68",
+        "view3dUrl": "",
+        "walkaroundUrl": "",
+        "__typename": "AdvertLinks"
+      },
+      "location": {
+        "id": null,
+        "coordinates": {
+          "latitude": 41.1551743,
+          "longitude": -8.622939,
+          "__typename": "Coordinates"
+        },
+        "mapDetails": {
+          "radius": 100,
+          "zoom": 12,
+          "__typename": "MapDetails"
+        },
+        "address": {
+          "street": null,
+          "subdistrict": null,
+          "district": null,
+          "city": {
+            "id": "13643793",
+            "code": "cedofeita-santo-ildefonso-se-miragaia-sao-nicolau-e-vitoria-porto",
+            "name": "Cedofeita, Santo Ildefonso, Sé, Miragaia, São Nicolau e Vitória",
+            "__typename": "City"
+          },
+          "municipality": null,
+          "county": {
+            "id": "190",
+            "code": "porto",
+            "name": "Porto",
+            "__typename": "County"
+          },
+          "province": {
+            "id": "13",
+            "code": "porto",
+            "name": "Porto",
+            "__typename": "Province"
+          },
+          "postalCode": null,
+          "__typename": "Address"
+        },
+        "reverseGeocoding": {
+          "locations": [
+            {
+              "id": "porto",
+              "locationLevel": "district",
+              "name": "Porto",
+              "fullName": "Porto",
+              "fullNameItems": [
+                "Porto"
+              ],
+              "parentIds": [],
+              "__typename": "BasicLocationObject"
+            },
+            {
+              "id": "porto/porto",
+              "locationLevel": "council",
+              "name": "Porto",
+              "fullName": "Porto, Porto",
+              "fullNameItems": [
+                "Porto",
+                "Porto"
+              ],
+              "parentIds": [
+                "porto"
+              ],
+              "__typename": "BasicLocationObject"
+            },
+            {
+              "id": "porto/porto/cedofeita-ildefonso-se-miragaia-nicolau-vitoria",
+              "locationLevel": "parish",
+              "name": "Cedofeita, Ildefonso, Sé, Miragaia, Nicolau, Vitória",
+              "fullName": "Cedofeita, Ildefonso, Sé, Miragaia, Nicolau, Vitória, Porto, Porto",
+              "fullNameItems": [
+                "Cedofeita, Ildefonso, Sé, Miragaia, Nicolau, Vitória",
+                "Porto",
+                "Porto"
+              ],
+              "parentIds": [
+                "porto",
+                "porto/porto"
+              ],
+              "__typename": "BasicLocationObject"
+            },
+            {
+              "id": "porto/porto/cedofeita-ildefonso-se-miragaia-nicolau-vitoria/baixa",
+              "locationLevel": "neighborhood",
+              "name": "Baixa",
+              "fullName": "Baixa, Cedofeita, Ildefonso, Sé, Miragaia, Nicolau, Vitória, Porto, Porto",
+              "fullNameItems": [
+                "Baixa",
+                "Cedofeita, Ildefonso, Sé, Miragaia, Nicolau, Vitória",
+                "Porto",
+                "Porto"
+              ],
+              "parentIds": [
+                "porto",
+                "porto/porto",
+                "porto/porto/cedofeita-ildefonso-se-miragaia-nicolau-vitoria"
+              ],
+              "__typename": "BasicLocationObject"
+            }
+          ],
+          "__typename": "ReverseGeocoding"
+        },
+        "__typename": "LocationDetails"
+      },
+      "property": {
+        "id": null,
+        "type": "FLAT",
+        "rent": null,
+        "costs": [],
+        "condition": "READY_TO_USE",
+        "properties": {
+          "equipment": [],
+          "areas": [],
+          "floor": null,
+          "kitchen": null,
+          "parking": [],
+          "numberOfRooms": 3,
+          "rooms": [],
+          "type": null,
+          "windowsOrientation": [],
+          "__typename": "FlatProperties"
+        },
+        "buildingProperties": {
+          "year": null,
+          "type": null,
+          "material": null,
+          "windows": [],
+          "heating": null,
+          "numberOfFloors": null,
+          "conveniences": [],
+          "security": [],
+          "__typename": "FlatBuildingProperties"
+        },
+        "ownership": null,
+        "area": {
+          "value": 71,
+          "unit": "M2",
+          "__typename": "Area"
+        },
+        "__typename": "Flat"
+      },
+      "owner": {
+        "id": 2449411,
+        "name": "DCC Investimentos",
+        "type": "agency",
+        "phones": [
+          "+351912723336"
+        ],
+        "imageUrl": "https://statics.imovirtual.com/static/imovirtualpt2/naspersclassifieds-regional/verticalsre-atlas-web-imovirtualpt2/static/img/user_placeholder.png",
+        "contacts": [],
+        "__typename": "LegacyAdvertOwner"
+      },
+      "agency": {
+        "id": 2449411,
+        "name": "DCC Investments",
+        "licenseNumber": "14946",
+        "type": "agency",
+        "phones": [
+          "+351912723336"
+        ],
+        "address": "Cais das Pedras n°8 – 3° Esquerdo, 4050-465, Lordelo do Ouro e Massarelos, Porto",
+        "imageUrl": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Imtyajl2cm1jbWtobDEtQVBUIn0.xE6v_LSLbOEdareE9_dKxTLkhel35mF8u92snm_iWn8/image;s=800x600;q=90",
+        "url": "https://www.imovirtual.com/pt/empresas/agencias-imobiliarias/dcc-investments-ID2449411",
+        "leaderYear": "",
+        "brandingVisible": true,
+        "enabledFeatures": [
+          "ACADEMY",
+          "AD_HOMEPAGE_1_SCHEDULE",
+          "ADDITIONAL_CONTACT_FORMS_AD_PAGE",
+          "ADVANCED_PICTURE_GALLERY_AD_PAGE",
+          "AGENCY_WEB_PAGE",
+          "BANNER_DISCOUNT",
+          "CALL_TRACKING",
+          "CONTACT_CUSTOMIZATION",
+          "CONTACT_PERSONALISATION",
+          "CRM_INTEGRATION",
+          "DEDICATED_CS",
+          "EXPORT_OLX",
+          "LISTGLOBALLY",
+          "LOGO_AD_PAGE",
+          "LOGO_SEARCH_PAGE",
+          "MEGABUMP",
+          "OLX_BUNDLE_BASIC",
+          "OLX_BUNDLE_NORMAL",
+          "OLX_BUNDLE_PREMIUM",
+          "OLX_PROMOTIONS",
+          "OLX_PUSHUP",
+          "OLX_TOPADS_30",
+          "OLX_TOPADS_7",
+          "PAID_FOR_POST_30_AGENCY",
+          "PREDEFINED_MESSAGES_CONTACT_FORM",
+          "PROJECT_RED",
+          "PROMOTIONS_RECOMMENDATIONS",
+          "PUSHUP",
+          "STATISTICS",
+          "SUGGEST_PRICE_FORM",
+          "TOPADS_1",
+          "VAS_SCHEDULING"
+        ],
+        "__typename": "AdvertAgency"
+      },
+      "seo": {
+        "title": "T2, apartamento para comprar - Cedofeita, Santo Ildefonso, Sé, Miragaia, São Nicolau e Vitória, Porto - 18401294 • www.imovirtual.com",
+        "description": "Excelente apartamento para venda com T2 em Cedofeita, Santo Ildefonso, Sé, Miragaia, São Nicolau e Vitória, Porto, por 312 000 €. Este apartamento para venda  tem 71 m² de àrea útil e 71 m² de àrea bruta.SITE 18401294",
+        "__typename": "AdvertSeo"
+      },
+      "breadcrumbs": [
+        {
+          "label": "Apartamento para comprar",
+          "locative": "",
+          "url": "https://www.imovirtual.com/pt/anuncios/comprar/apartamento",
+          "__typename": "AdvertBreadcrumb"
+        },
+        {
+          "label": "Porto (distrito)",
+          "locative": "Porto (distrito)",
+          "url": "https://www.imovirtual.com/pt/anuncios/comprar/apartamento/porto",
+          "__typename": "AdvertBreadcrumb"
+        },
+        {
+          "label": "Porto",
+          "locative": "Porto",
+          "url": "https://www.imovirtual.com/pt/anuncios/comprar/apartamento/porto",
+          "__typename": "AdvertBreadcrumb"
+        },
+        {
+          "label": "Cedofeita, Santo Ildefonso, Sé, Miragaia, São Nicolau e Vitória",
+          "locative": "Cedofeita, Santo Ildefonso, Sé, Miragaia, São Nicolau e Vitória",
+          "url": "https://www.imovirtual.com/pt/anuncios/comprar/apartamento/cedofeita-santo-ildefonso-se-miragaia-sao-nicolau-e-vitoria-porto",
+          "__typename": "AdvertBreadcrumb"
+        },
+        {
+          "label": "Apartamento T2+1 remodelado no centro do Porto",
+          "locative": "",
+          "url": "",
+          "__typename": "AdvertBreadcrumb"
+        }
+      ],
+      "userAdverts": [
+        {
+          "adId": "18487819",
+          "url": "https://www.imovirtual.com/pt/anuncio/apartamento-t2-novo-com-terraco-e-garagem-ID1fzvD",
+          "image": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InI5c3BmcXNqYnB4di1FQ09TWVNURU0iLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ._Vtl--B9ktXAh7KEIqpkgOedAgVxTo0zmeMdspMGJMI/image;s=314x236;q=80",
+          "roomsNum": "3",
+          "pricePerM": 4233,
+          "price": {
+            "value": "317500",
+            "unit": "EUR",
+            "__typename": "UserAdvertPrice"
+          },
+          "netArea": "75",
+          "title": "Apartamento T2 novo com terraço e garagem",
+          "__typename": "UserAdvert"
+        },
+        {
+          "adId": "18473331",
+          "url": "https://www.imovirtual.com/pt/anuncio/lote-de-terreno-com-projeto-aprovado-ID1fwKX",
+          "image": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImpjeTZrdmN5cjgwazItRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.kWQMOxg_xHk15mE09DUfzYGsWPxYPbSUkkyi12vgNBA/image;s=314x236;q=80",
+          "roomsNum": "",
+          "pricePerM": 103,
+          "price": {
+            "value": "80000",
+            "unit": "EUR",
+            "__typename": "UserAdvertPrice"
+          },
+          "netArea": "778",
+          "title": "Lote de Terreno com projeto aprovado",
+          "__typename": "UserAdvert"
+        },
+        {
+          "adId": "18465586",
+          "url": "https://www.imovirtual.com/pt/anuncio/moradia-t2-com-jardim-e-garagem-ID1ftK2",
+          "image": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImxvYzE0NTdtNmJoZjMtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.9Un8Bog9Q7bRhLCaSXQkwF0Dfv0nh-rpPi8ZQGsWDgU/image;s=314x236;q=80",
+          "roomsNum": "3",
+          "pricePerM": 2663,
+          "price": {
+            "value": "265000",
+            "unit": "EUR",
+            "__typename": "UserAdvertPrice"
+          },
+          "netArea": "99.5",
+          "title": "Moradia T2 com jardim e garagem",
+          "__typename": "UserAdvert"
+        },
+        {
+          "adId": "16857874",
+          "url": "https://www.imovirtual.com/pt/anuncio/moradia-t4-de-quatro-frentes-na-maia-ID18Jwc",
+          "image": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjVmOTJ1emNzeGk0bDItRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.VBo7Aq6KXLrsjuw_hQ-LldKEkEqy9NVfeNgQodnvmA4/image;s=314x236;q=80",
+          "roomsNum": "5",
+          "pricePerM": 1004,
+          "price": {
+            "value": "490000",
+            "unit": "EUR",
+            "__typename": "UserAdvertPrice"
+          },
+          "netArea": "488",
+          "title": "Moradia T4 de quatro frentes na Maia",
+          "__typename": "UserAdvert"
+        }
+      ],
+      "paginatedUnits": {
+        "items": null,
+        "isPriceHidden": null,
+        "pagination": null,
+        "facets": null,
+        "__typename": "AdvertsPages"
+      },
+      "specialOffer": null,
+      "__typename": "Advert",
+      "contactDetails": {
+        "name": "DCC Investimentos",
+        "type": "agency",
+        "phones": [
+          "+351912723336"
+        ],
+        "imageUrl": "https://statics.imovirtual.com/static/imovirtualpt2/naspersclassifieds-regional/verticalsre-atlas-web-imovirtualpt2/static/img/user_placeholder.png"
+      }
+    },
+    "relativeUrl": "/pt/anuncio/apartamento-t2-1-remodelado-no-centro-do-porto-ID1fd14",
+    "adTrackingData": {
+      "touch_point_page": "ad_page",
+      "lat": 41.1551743,
+      "long": -8.622939,
+      "ad_photo": 25,
+      "price_currency": "EUR",
+      "cat_l1_id": 101,
+      "cat_l1_name": "Apartamentos",
+      "special_offer_type": null,
+      "ad_id": "18401294",
+      "ad_price": 312000,
+      "business": "comprar",
+      "city_id": "13643793",
+      "city_name": "cedofeita-santo-ildefonso-se-miragaia-sao-nicolau-e-vitoria-porto",
+      "market": "secondary",
+      "poster_type": "agency",
+      "surface": null,
+      "region_id": "porto",
+      "region_name": "porto",
+      "subregion_id": "porto",
+      "seller_id": "2449411",
+      "obido_advert": "n"
+    },
+    "referer": null,
+    "currentUser": null,
+    "cookiesCategorisation": {},
+    "experiments": {},
+    "featureFlags": {
+      "isAdAvmModuleEnabled": false,
+      "isAdFinanceBannerEnabled": false,
+      "isAdFinanceLinkEnabled": false,
+      "isAdMortgageSimulatorEnabled": false,
+      "isFeaturedDevelopmentVASEnabled": true,
+      "isListingRentPriceEnabled": false,
+      "isNewApartmentsForSalePostingFormEnabled": false,
+      "isOldSaveSearchQueryEnabled": false,
+      "isFinanceCheckboxEnabled": false,
+      "isObservedAdsPageEnabled": true,
+      "isBikPromotionEnabled": true,
+      "isSpecialOfferForUnitsExperimentEnabled": false,
+      "isSpecialOfferEnabled": true,
+      "isSeoAdsDescriptionEnabled": false,
+      "isPropertyEvaluationPageActive": false,
+      "isSettingsContactsTabMigrated": false,
+      "isRegularNmfEnabled": true,
+      "isExtendedBillingDataEnabled": false,
+      "isRESellerLeadsActive": false,
+      "isBadgesFeatureEnabled": false,
+      "isNexusHomePageEnabled": true,
+      "isPostPaymentOptionEnabled": true,
+      "isSettingsOurTeamTabEnabled": false,
+      "isHCIAMEnabled": false,
+      "isSellerLeadsMvpEnabled": false,
+      "isNexusSellerPageEnabled": false,
+      "isHCIAMAgencyRegistrationEnabled": true,
+      "isHCIAMAgentRegistrationEnabled": true,
+      "isHCIAMDeveloperRegistrationEnabled": true,
+      "isMessagingCenterEnabled": false,
+      "isMessagingCenterChatEnabled": false,
+      "__typename": "FeatureFlags"
+    },
+    "laquesisResult": null,
+    "userSessionId": "cd4601d7-6136-49f4-8d2e-782edf13e516",
+    "unconfirmedUserAuthToken": null,
+    "desktopHeader": {
+      "Is-Desktop": "true"
+    }
+  },
+  "__N_SSP": true
+}

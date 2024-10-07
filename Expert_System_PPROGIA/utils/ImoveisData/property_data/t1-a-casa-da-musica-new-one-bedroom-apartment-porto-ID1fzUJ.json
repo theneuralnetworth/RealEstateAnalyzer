@@ -1,0 +1,832 @@
+{
+  "pageProps": {
+    "lang": "pt",
+    "_sentryTraceData": "640a3c77a30d404da1239c43b3f5d64f-bd83dcb7534bcc74-0",
+    "_sentryBaggage": "sentry-environment=imovirtualpt2-prd,sentry-release=frontend-platform%40v20241004T114115-imovirtualpt2,sentry-public_key=feffe528c390ea66992a4a05131c3c68,sentry-trace_id=640a3c77a30d404da1239c43b3f5d64f,sentry-transaction=%2Fpt%2Fanuncio%2F%5Bid%5D,sentry-sampled=false",
+    "id": "1fzUJ",
+    "ad": {
+      "id": 18489313,
+      "price": {
+        "type": "",
+        "__typename": "AdvertPrice"
+      },
+      "market": "PRIMARY",
+      "services": [
+        "E_SIGNATURE",
+        "VIDEO_PRESENTATION",
+        "VIDEO_MEETING"
+      ],
+      "publicId": "",
+      "slug": "t1-a-casa-da-musica-new-one-bedroom-apartment-porto-ID1fzUJ",
+      "advertiserType": "business",
+      "advertType": "AGENCY",
+      "source": "urn:site:local",
+      "createdAt": "2024-10-02T13:14:25+01:00",
+      "modifiedAt": "2024-10-02T13:14:38+01:00",
+      "description": "<p>Apartamento T1 à Rotunda da Boavista - Casa da Música<br/><br/>Apartamento T1 situado na Boavista numa zona central da cidade, muito próximo da Casa da Música.<br/>Na sua envolvente dispõe de comércio local, ampla oferta de serviços e proximidade ao metro da Casa da Música e MetroBus que percorrerá toda a Avenida da Boavista.<br/><br/>Está inserido num prédio de 16 frações com design moderno e luminosidade privilegiada devido os recortes na fachada.<br/>Destacamos os acabamentos de qualidade e a intenção de criar um ambiente natural no exterior do prédio, tanto pelas floreiras na janela como pelos decks exteriores em bamboo ou ainda o espaço de vegetação disponível nos terraços.<br/><br/>O apartamento é constituído por:<br/>- Hall de entrada<br/>- Sala em openspace com cozinha equipada<br/>- 1 quarto<br/>- 1 wc completo<br/><br/>Obs: 3D´s Ilustrativos<br/><br/>RÉPLICA, uma referência imobiliária.<br/>Com 35 anos de atuação no mercado nacional, aplicamos as boas práticas e metodologias que privilegiam proprietário e comprador, proporcionando os melhores resultados para todos os intervenientes.<br/>Trabalhamos com um posicionamento de rigor na prestação de serviços imobiliários, apoiando a nossa atividade na experiência da nossa equipa de profissionais e em soluções eficazes de publicidade e marketing.<br/>Garantimos a máxima discrição e serviço de excelência.<br/> <br/>Sem preocupações - nós tratamos de tudo.</p>",
+      "developmentId": 0,
+      "developmentTitle": "",
+      "developmentUrl": "",
+      "exclusiveOffer": false,
+      "externalId": "",
+      "features": [
+        "intercomunicador / videoporteiro",
+        "máquina de lavar louça",
+        "frigorífico",
+        "forno",
+        "ar condicionado",
+        "elevador"
+      ],
+      "creationSource": "none",
+      "featuresByCategory": [
+        {
+          "label": "Segurança",
+          "values": [
+            "intercomunicador / videoporteiro"
+          ],
+          "__typename": "FeatureGroup"
+        },
+        {
+          "label": "Equipamento",
+          "values": [
+            "máquina de lavar louça",
+            "frigorífico",
+            "forno"
+          ],
+          "__typename": "FeatureGroup"
+        },
+        {
+          "label": "Informações adicionais",
+          "values": [
+            "ar condicionado",
+            "elevador"
+          ],
+          "__typename": "FeatureGroup"
+        }
+      ],
+      "featuresWithoutCategory": [],
+      "openDay": null,
+      "referenceId": "RZ0325-G",
+      "target": {
+        "Area": "42.1",
+        "AreaRange": [],
+        "City": "cedofeita-santo-ildefonso-se-miragaia-sao-nicolau-e-vitoria-porto",
+        "City_id": "13643793",
+        "Country": "Portugal",
+        "Energy_certificate": [
+          "exempt"
+        ],
+        "Equipment_types": [
+          "dishwasher",
+          "fridge",
+          "oven"
+        ],
+        "Extras_types": [
+          "air_conditioning",
+          "lift"
+        ],
+        "Id": "18489313",
+        "MarketType": "primary",
+        "ObidoAdvert": "n",
+        "OfferType": "comprar",
+        "Photo": "aHR0cHM6Ly9pcmVsYW5kLmFwb2xsby5vbHhjZG4uY29tL3YxL2ZpbGVzL2V5Sm1iaUk2SWpWc01qQmxhSE5sWlhGcGJ6RXRRVkJVSWl3aWR5STZXM3NpWm00aU9pSTJPVzVzY0dFM1pXTnhiVGN4TFVGUVZDSXNJbk1pT2lJeE5DSXNJbkFpT2lJeE1Dd3RNVEFpTENKaElqb2lNQ0o5WFgwLllmV2VvTW85QWhBOEFCbXNEWHljMlVIVGpqT1B5X3A2Y1o0QWYzel8yZVEvaW1hZ2U7cz02NTV4NDkxO3E9ODA=",
+        "Price": 210000,
+        "PriceRange": [
+          "100001-250000"
+        ],
+        "Price_per_m": 4988,
+        "ProperType": "apartamento",
+        "Province": "porto",
+        "RegularUser": "n",
+        "Remote_services": [
+          "1"
+        ],
+        "Rooms_num": [
+          "2"
+        ],
+        "Security_types": [
+          "entryphone"
+        ],
+        "Subregion": "porto",
+        "Title": "VDEgw6AgQ2FzYSBkYSBNw7pzaWNhIE5ldyBPbmUgQmVkcm9vbSBBcGFydG1lbnQgUG9ydG8=",
+        "categoryId": "101",
+        "env": "production",
+        "hidePrice": "0",
+        "seller_id": "3665375",
+        "user_type": "agency"
+      },
+      "title": "T1 à Casa da Música New One Bedroom Apartment Porto",
+      "topInformation": [
+        {
+          "label": "area",
+          "values": [
+            "42.1"
+          ],
+          "unit": "m²",
+          "__typename": "AdditionalInfo"
+        },
+        {
+          "label": "building_ownership",
+          "values": [],
+          "unit": "",
+          "__typename": "AdditionalInfo"
+        },
+        {
+          "label": "rooms_num",
+          "values": [
+            "2"
+          ],
+          "unit": "",
+          "__typename": "AdditionalInfo"
+        },
+        {
+          "label": "construction_status",
+          "values": [],
+          "unit": "",
+          "__typename": "AdditionalInfo"
+        },
+        {
+          "label": "floor",
+          "values": [],
+          "unit": "",
+          "__typename": "AdditionalInfo"
+        },
+        {
+          "label": "outdoor",
+          "values": [],
+          "unit": "",
+          "__typename": "AdditionalInfo"
+        },
+        {
+          "label": "rent",
+          "values": [],
+          "unit": "",
+          "__typename": "AdditionalInfo"
+        },
+        {
+          "label": "car",
+          "values": [],
+          "unit": "",
+          "__typename": "AdditionalInfo"
+        },
+        {
+          "label": "remote_services",
+          "values": [
+            "remote_services::1"
+          ],
+          "unit": "",
+          "__typename": "AdditionalInfo"
+        },
+        {
+          "label": "heating",
+          "values": [],
+          "unit": "",
+          "__typename": "AdditionalInfo"
+        }
+      ],
+      "additionalInformation": [
+        {
+          "label": "market",
+          "values": [
+            "market::primary"
+          ],
+          "unit": "",
+          "__typename": "AdditionalInfo"
+        },
+        {
+          "label": "advertiser_type",
+          "values": [
+            "advertiser_type::agency"
+          ],
+          "unit": "",
+          "__typename": "AdditionalInfo"
+        },
+        {
+          "label": "bathrooms_num",
+          "values": [],
+          "unit": "",
+          "__typename": "AdditionalInfo"
+        },
+        {
+          "label": "free_from",
+          "values": [],
+          "unit": "",
+          "__typename": "AdditionalInfo"
+        },
+        {
+          "label": "build_year",
+          "values": [],
+          "unit": "",
+          "__typename": "AdditionalInfo"
+        },
+        {
+          "label": "building_type",
+          "values": [],
+          "unit": "",
+          "__typename": "AdditionalInfo"
+        },
+        {
+          "label": "windows_type",
+          "values": [],
+          "unit": "",
+          "__typename": "AdditionalInfo"
+        },
+        {
+          "label": "lift",
+          "values": [
+            "::y"
+          ],
+          "unit": "",
+          "__typename": "AdditionalInfo"
+        },
+        {
+          "label": "media_types",
+          "values": [],
+          "unit": "",
+          "__typename": "AdditionalInfo"
+        },
+        {
+          "label": "security_types",
+          "values": [
+            "security_types::entryphone"
+          ],
+          "unit": "",
+          "__typename": "AdditionalInfo"
+        },
+        {
+          "label": "equipment_types",
+          "values": [
+            "equipment_types::dishwasher",
+            "equipment_types::fridge",
+            "equipment_types::oven"
+          ],
+          "unit": "",
+          "__typename": "AdditionalInfo"
+        },
+        {
+          "label": "extras_types",
+          "values": [
+            "extras_types::air_conditioning"
+          ],
+          "unit": "",
+          "__typename": "AdditionalInfo"
+        },
+        {
+          "label": "building_material",
+          "values": [],
+          "unit": "",
+          "__typename": "AdditionalInfo"
+        }
+      ],
+      "url": "https://www.imovirtual.com/pt/anuncio/t1-a-casa-da-musica-new-one-bedroom-apartment-porto-ID1fzUJ",
+      "status": "active",
+      "adCategory": {
+        "id": "101",
+        "name": "FLAT",
+        "type": "SELL",
+        "__typename": "AdvertCategory"
+      },
+      "category": {
+        "id": 101,
+        "name": [
+          {
+            "locale": "pt",
+            "value": "Apartamentos",
+            "__typename": "LocalizedString"
+          },
+          {
+            "locale": "en",
+            "value": "apartments",
+            "__typename": "LocalizedString"
+          }
+        ],
+        "__typename": "AdCategory"
+      },
+      "characteristics": [
+        {
+          "key": "price",
+          "value": "210000",
+          "label": "Preço",
+          "localizedValue": "210 000 €",
+          "currency": "EUR",
+          "suffix": "",
+          "__typename": "Characteristic"
+        },
+        {
+          "key": "remote_services",
+          "value": "1",
+          "label": "Serviços à distância",
+          "localizedValue": "sim",
+          "currency": "",
+          "suffix": "",
+          "__typename": "Characteristic"
+        },
+        {
+          "key": "m",
+          "value": "42.1",
+          "label": "Área",
+          "localizedValue": "42,10 m²",
+          "currency": "",
+          "suffix": "",
+          "__typename": "Characteristic"
+        },
+        {
+          "key": "price_per_m",
+          "value": "4988",
+          "label": "preço/m2",
+          "localizedValue": "4 988 €/m²",
+          "currency": "",
+          "suffix": "",
+          "__typename": "Characteristic"
+        },
+        {
+          "key": "rooms_num",
+          "value": "2",
+          "label": "Tipologia",
+          "localizedValue": "T1",
+          "currency": "",
+          "suffix": "",
+          "__typename": "Characteristic"
+        },
+        {
+          "key": "market",
+          "value": "primary",
+          "label": "Nova construção",
+          "localizedValue": "sim",
+          "currency": "",
+          "suffix": "",
+          "__typename": "Characteristic"
+        },
+        {
+          "key": "energy_certificate",
+          "value": "exempt",
+          "label": "Certificado energético",
+          "localizedValue": "isento / em curso",
+          "currency": "",
+          "suffix": "",
+          "__typename": "Characteristic"
+        }
+      ],
+      "images": [
+        {
+          "thumbnail": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjVsMjBlaHNlZXFpbzEtQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.YfWeoMo9AhA8ABmsDXyc2UHTjjOPy_p6cZ4Af3z_2eQ/image;s=184x138;q=80",
+          "small": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjVsMjBlaHNlZXFpbzEtQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.YfWeoMo9AhA8ABmsDXyc2UHTjjOPy_p6cZ4Af3z_2eQ/image;s=314x236;q=80",
+          "medium": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjVsMjBlaHNlZXFpbzEtQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.YfWeoMo9AhA8ABmsDXyc2UHTjjOPy_p6cZ4Af3z_2eQ/image;s=655x491;q=80",
+          "large": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjVsMjBlaHNlZXFpbzEtQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.YfWeoMo9AhA8ABmsDXyc2UHTjjOPy_p6cZ4Af3z_2eQ/image;s=1280x1024;q=80",
+          "__typename": "AdImage"
+        },
+        {
+          "thumbnail": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjlyaWI2bTB0aGJ6NDMtQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.QfauUZ-46-bDdrMpcGwNb_qjl-9kyVb-OPDjYwMP4wA/image;s=184x138;q=80",
+          "small": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjlyaWI2bTB0aGJ6NDMtQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.QfauUZ-46-bDdrMpcGwNb_qjl-9kyVb-OPDjYwMP4wA/image;s=314x236;q=80",
+          "medium": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjlyaWI2bTB0aGJ6NDMtQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.QfauUZ-46-bDdrMpcGwNb_qjl-9kyVb-OPDjYwMP4wA/image;s=655x491;q=80",
+          "large": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjlyaWI2bTB0aGJ6NDMtQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.QfauUZ-46-bDdrMpcGwNb_qjl-9kyVb-OPDjYwMP4wA/image;s=1280x1024;q=80",
+          "__typename": "AdImage"
+        },
+        {
+          "thumbnail": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Im1pN3FqMW05ZDhkZTEtQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.QRvmoXjAyP1UhNTywwdKftsFn28aMQqrhdbSiIdtTAU/image;s=184x138;q=80",
+          "small": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Im1pN3FqMW05ZDhkZTEtQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.QRvmoXjAyP1UhNTywwdKftsFn28aMQqrhdbSiIdtTAU/image;s=314x236;q=80",
+          "medium": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Im1pN3FqMW05ZDhkZTEtQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.QRvmoXjAyP1UhNTywwdKftsFn28aMQqrhdbSiIdtTAU/image;s=655x491;q=80",
+          "large": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Im1pN3FqMW05ZDhkZTEtQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.QRvmoXjAyP1UhNTywwdKftsFn28aMQqrhdbSiIdtTAU/image;s=1280x1024;q=80",
+          "__typename": "AdImage"
+        },
+        {
+          "thumbnail": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InN6Z3Y0cm01MTR5Mi1BUFQiLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.oidMIZYNSxSRT3Hlq9pu7O7U54rem9FmjQ06OJkiopc/image;s=184x138;q=80",
+          "small": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InN6Z3Y0cm01MTR5Mi1BUFQiLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.oidMIZYNSxSRT3Hlq9pu7O7U54rem9FmjQ06OJkiopc/image;s=314x236;q=80",
+          "medium": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InN6Z3Y0cm01MTR5Mi1BUFQiLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.oidMIZYNSxSRT3Hlq9pu7O7U54rem9FmjQ06OJkiopc/image;s=655x491;q=80",
+          "large": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InN6Z3Y0cm01MTR5Mi1BUFQiLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.oidMIZYNSxSRT3Hlq9pu7O7U54rem9FmjQ06OJkiopc/image;s=1280x1024;q=80",
+          "__typename": "AdImage"
+        },
+        {
+          "thumbnail": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Im8wNmo4MDU3M2V0MjItQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.kfurziHN0kzheVD1do76FHfNrh1YLl8gq-fyVAvIM04/image;s=184x138;q=80",
+          "small": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Im8wNmo4MDU3M2V0MjItQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.kfurziHN0kzheVD1do76FHfNrh1YLl8gq-fyVAvIM04/image;s=314x236;q=80",
+          "medium": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Im8wNmo4MDU3M2V0MjItQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.kfurziHN0kzheVD1do76FHfNrh1YLl8gq-fyVAvIM04/image;s=655x491;q=80",
+          "large": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Im8wNmo4MDU3M2V0MjItQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.kfurziHN0kzheVD1do76FHfNrh1YLl8gq-fyVAvIM04/image;s=1280x1024;q=80",
+          "__typename": "AdImage"
+        },
+        {
+          "thumbnail": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImhqdzMxZ2dpNnB5aS1BUFQiLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.QNq0ouxsqPLgm6NmuCPFrmJH9aSOOV2NL9pcI-mOxOQ/image;s=184x138;q=80",
+          "small": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImhqdzMxZ2dpNnB5aS1BUFQiLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.QNq0ouxsqPLgm6NmuCPFrmJH9aSOOV2NL9pcI-mOxOQ/image;s=314x236;q=80",
+          "medium": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImhqdzMxZ2dpNnB5aS1BUFQiLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.QNq0ouxsqPLgm6NmuCPFrmJH9aSOOV2NL9pcI-mOxOQ/image;s=655x491;q=80",
+          "large": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImhqdzMxZ2dpNnB5aS1BUFQiLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.QNq0ouxsqPLgm6NmuCPFrmJH9aSOOV2NL9pcI-mOxOQ/image;s=1280x1024;q=80",
+          "__typename": "AdImage"
+        },
+        {
+          "thumbnail": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImlwdHkwM3d6MmwyNzItQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.Yo_f_KzytDnMk6OVkpbMCZ3iiNeYNt-r4_j4JZluwtk/image;s=184x138;q=80",
+          "small": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImlwdHkwM3d6MmwyNzItQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.Yo_f_KzytDnMk6OVkpbMCZ3iiNeYNt-r4_j4JZluwtk/image;s=314x236;q=80",
+          "medium": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImlwdHkwM3d6MmwyNzItQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.Yo_f_KzytDnMk6OVkpbMCZ3iiNeYNt-r4_j4JZluwtk/image;s=655x491;q=80",
+          "large": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImlwdHkwM3d6MmwyNzItQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.Yo_f_KzytDnMk6OVkpbMCZ3iiNeYNt-r4_j4JZluwtk/image;s=1280x1024;q=80",
+          "__typename": "AdImage"
+        },
+        {
+          "thumbnail": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImhhanBnMXBmdjd1eS1BUFQiLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.PQ-Rc7VAkyoVRBnj6EDxr3w9ppJ6oT0y62iVK2N7Bgk/image;s=184x138;q=80",
+          "small": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImhhanBnMXBmdjd1eS1BUFQiLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.PQ-Rc7VAkyoVRBnj6EDxr3w9ppJ6oT0y62iVK2N7Bgk/image;s=314x236;q=80",
+          "medium": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImhhanBnMXBmdjd1eS1BUFQiLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.PQ-Rc7VAkyoVRBnj6EDxr3w9ppJ6oT0y62iVK2N7Bgk/image;s=655x491;q=80",
+          "large": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImhhanBnMXBmdjd1eS1BUFQiLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.PQ-Rc7VAkyoVRBnj6EDxr3w9ppJ6oT0y62iVK2N7Bgk/image;s=1280x1024;q=80",
+          "__typename": "AdImage"
+        }
+      ],
+      "links": {
+        "localPlanUrl": "",
+        "videoUrl": "",
+        "view3dUrl": "",
+        "walkaroundUrl": "",
+        "__typename": "AdvertLinks"
+      },
+      "location": {
+        "id": null,
+        "coordinates": {
+          "latitude": 41.157241,
+          "longitude": -8.628124,
+          "__typename": "Coordinates"
+        },
+        "mapDetails": {
+          "radius": 100,
+          "zoom": 13,
+          "__typename": "MapDetails"
+        },
+        "address": {
+          "street": null,
+          "subdistrict": null,
+          "district": null,
+          "city": {
+            "id": "13643793",
+            "code": "cedofeita-santo-ildefonso-se-miragaia-sao-nicolau-e-vitoria-porto",
+            "name": "Cedofeita, Santo Ildefonso, Sé, Miragaia, São Nicolau e Vitória",
+            "__typename": "City"
+          },
+          "municipality": null,
+          "county": {
+            "id": "190",
+            "code": "porto",
+            "name": "Porto",
+            "__typename": "County"
+          },
+          "province": {
+            "id": "13",
+            "code": "porto",
+            "name": "Porto",
+            "__typename": "Province"
+          },
+          "postalCode": null,
+          "__typename": "Address"
+        },
+        "reverseGeocoding": {
+          "locations": [
+            {
+              "id": "porto",
+              "locationLevel": "district",
+              "name": "Porto",
+              "fullName": "Porto",
+              "fullNameItems": [
+                "Porto"
+              ],
+              "parentIds": [],
+              "__typename": "BasicLocationObject"
+            },
+            {
+              "id": "porto/porto",
+              "locationLevel": "council",
+              "name": "Porto",
+              "fullName": "Porto, Porto",
+              "fullNameItems": [
+                "Porto",
+                "Porto"
+              ],
+              "parentIds": [
+                "porto"
+              ],
+              "__typename": "BasicLocationObject"
+            },
+            {
+              "id": "porto/porto/cedofeita-ildefonso-se-miragaia-nicolau-vitoria",
+              "locationLevel": "parish",
+              "name": "Cedofeita, Ildefonso, Sé, Miragaia, Nicolau, Vitória",
+              "fullName": "Cedofeita, Ildefonso, Sé, Miragaia, Nicolau, Vitória, Porto, Porto",
+              "fullNameItems": [
+                "Cedofeita, Ildefonso, Sé, Miragaia, Nicolau, Vitória",
+                "Porto",
+                "Porto"
+              ],
+              "parentIds": [
+                "porto",
+                "porto/porto"
+              ],
+              "__typename": "BasicLocationObject"
+            },
+            {
+              "id": "porto/porto/cedofeita-ildefonso-se-miragaia-nicolau-vitoria/boavista",
+              "locationLevel": "neighborhood",
+              "name": "Boavista",
+              "fullName": "Boavista, Cedofeita, Ildefonso, Sé, Miragaia, Nicolau, Vitória, Porto, Porto",
+              "fullNameItems": [
+                "Boavista",
+                "Cedofeita, Ildefonso, Sé, Miragaia, Nicolau, Vitória",
+                "Porto",
+                "Porto"
+              ],
+              "parentIds": [
+                "porto",
+                "porto/porto",
+                "porto/porto/cedofeita-ildefonso-se-miragaia-nicolau-vitoria"
+              ],
+              "__typename": "BasicLocationObject"
+            }
+          ],
+          "__typename": "ReverseGeocoding"
+        },
+        "__typename": "LocationDetails"
+      },
+      "property": {
+        "id": null,
+        "type": "FLAT",
+        "rent": null,
+        "costs": [],
+        "condition": null,
+        "properties": {
+          "equipment": [
+            "dishwasher",
+            "fridge",
+            "oven",
+            "air_conditioning"
+          ],
+          "areas": [],
+          "floor": null,
+          "kitchen": null,
+          "parking": [],
+          "numberOfRooms": 2,
+          "rooms": [],
+          "type": null,
+          "windowsOrientation": [],
+          "__typename": "FlatProperties"
+        },
+        "buildingProperties": {
+          "year": null,
+          "type": null,
+          "material": null,
+          "windows": [],
+          "heating": null,
+          "numberOfFloors": null,
+          "conveniences": [
+            "LIFT"
+          ],
+          "security": [
+            "ENTRYPHONE"
+          ],
+          "__typename": "FlatBuildingProperties"
+        },
+        "ownership": null,
+        "area": {
+          "value": 42.1,
+          "unit": "M2",
+          "__typename": "Area"
+        },
+        "__typename": "Flat"
+      },
+      "owner": {
+        "id": 3665375,
+        "name": "Réplica Foz",
+        "type": "agency",
+        "phones": [
+          "+351923299781"
+        ],
+        "imageUrl": "",
+        "contacts": [],
+        "__typename": "LegacyAdvertOwner"
+      },
+      "agency": {
+        "id": 3665375,
+        "name": "Réplica Foz",
+        "licenseNumber": "10411",
+        "type": "agency",
+        "phones": [
+          "+351923299781"
+        ],
+        "address": "Esplanada Castelo 128, 4150-196, Aldoar, Foz do Douro e Nevogilde, Porto",
+        "imageUrl": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InJpbzl4eWMxMmQzczMtQVBUIn0.EcN4kvQUKqKg2tBpJfe1nixpGmwKp2SnKVKYy32cCjg/image;s=800x600;q=90",
+        "url": "https://www.imovirtual.com/pt/empresas/agencias-imobiliarias/replica-foz-ID3665375",
+        "leaderYear": "",
+        "brandingVisible": true,
+        "enabledFeatures": [
+          "ACADEMY",
+          "AD_HOMEPAGE_1_SCHEDULE",
+          "ADDITIONAL_CONTACT_FORMS_AD_PAGE",
+          "ADVANCED_PICTURE_GALLERY_AD_PAGE",
+          "AGENCY_WEB_PAGE",
+          "BANNER_DISCOUNT",
+          "CALL_TRACKING",
+          "CONTACT_CUSTOMIZATION",
+          "CONTACT_PERSONALISATION",
+          "CRM_INTEGRATION",
+          "DEDICATED_CS",
+          "EXPORT_OLX",
+          "LISTGLOBALLY",
+          "LOGO_AD_PAGE",
+          "LOGO_SEARCH_PAGE",
+          "MEGABUMP",
+          "OLX_BUNDLE_BASIC",
+          "OLX_BUNDLE_NORMAL",
+          "OLX_BUNDLE_PREMIUM",
+          "OLX_PROMOTIONS",
+          "OLX_PUSHUP",
+          "OLX_TOPADS_30",
+          "OLX_TOPADS_7",
+          "PAID_FOR_POST_30_AGENCY",
+          "PREDEFINED_MESSAGES_CONTACT_FORM",
+          "PROJECT_RED",
+          "PROMOTIONS_RECOMMENDATIONS",
+          "PUSHUP",
+          "STATISTICS",
+          "SUGGEST_PRICE_FORM",
+          "TOPADS_1",
+          "VAS_SCHEDULING"
+        ],
+        "__typename": "AdvertAgency"
+      },
+      "seo": {
+        "title": "T1, apartamento para comprar - Cedofeita, Santo Ildefonso, Sé, Miragaia, São Nicolau e Vitória, Porto - 18489313 • www.imovirtual.com",
+        "description": "Excelente apartamento para venda com T1 em Cedofeita, Santo Ildefonso, Sé, Miragaia, São Nicolau e Vitória, Porto, por 210 000 €. Este apartamento para venda  tem 42,10 m² de àrea útil e 42,10 m² de àrea bruta. De acordo com o profissional Réplica Foz os atributos mais importantes são ar condicionado, elevador, intercomunicador / videoporteiroSITE 18489313",
+        "__typename": "AdvertSeo"
+      },
+      "breadcrumbs": [
+        {
+          "label": "Apartamento para comprar",
+          "locative": "",
+          "url": "https://www.imovirtual.com/pt/anuncios/comprar/apartamento",
+          "__typename": "AdvertBreadcrumb"
+        },
+        {
+          "label": "Porto (distrito)",
+          "locative": "Porto (distrito)",
+          "url": "https://www.imovirtual.com/pt/anuncios/comprar/apartamento/porto",
+          "__typename": "AdvertBreadcrumb"
+        },
+        {
+          "label": "Porto",
+          "locative": "Porto",
+          "url": "https://www.imovirtual.com/pt/anuncios/comprar/apartamento/porto",
+          "__typename": "AdvertBreadcrumb"
+        },
+        {
+          "label": "Cedofeita, Santo Ildefonso, Sé, Miragaia, São Nicolau e Vitória",
+          "locative": "Cedofeita, Santo Ildefonso, Sé, Miragaia, São Nicolau e Vitória",
+          "url": "https://www.imovirtual.com/pt/anuncios/comprar/apartamento/cedofeita-santo-ildefonso-se-miragaia-sao-nicolau-e-vitoria-porto",
+          "__typename": "AdvertBreadcrumb"
+        },
+        {
+          "label": "T1 à Casa da Música New One Bedroom Apartment Porto",
+          "locative": "",
+          "url": "",
+          "__typename": "AdvertBreadcrumb"
+        }
+      ],
+      "userAdverts": [
+        {
+          "adId": "18492065",
+          "url": "https://www.imovirtual.com/pt/anuncio/apartamento-t1-novo-com-terraco-de-41m2-no-campo-alegre-ID1fAD7",
+          "image": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InNxcWMzYWZhbHFodzItQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.iw1HlpIGLrF6be4EjjDflBVm5R-ioeyyHZow9AZMFT0/image;s=314x236;q=80",
+          "roomsNum": "2",
+          "pricePerM": 2837,
+          "price": {
+            "value": "295000",
+            "unit": "EUR",
+            "__typename": "UserAdvertPrice"
+          },
+          "netArea": "104",
+          "title": "Apartamento T1 Novo com Terraço de 41m2 no Campo Alegre",
+          "__typename": "UserAdvert"
+        },
+        {
+          "adId": "18491563",
+          "url": "https://www.imovirtual.com/pt/anuncio/t2-varanda-a-sul-ao-parque-da-cidade-new-two-bedroom-apartment-porto-ID1fAw1",
+          "image": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjFleDlxeDZzbzJqMi1BUFQiLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.6leZnKfX4fzq1RanVOStLJ2bZzwl6o14jArWkD1msxs/image;s=314x236;q=80",
+          "roomsNum": "3",
+          "pricePerM": 3585,
+          "price": {
+            "value": "376400",
+            "unit": "EUR",
+            "__typename": "UserAdvertPrice"
+          },
+          "netArea": "105",
+          "title": "T2 Varanda a Sul ao Parque da Cidade New Two Bedroom Apartment Porto",
+          "__typename": "UserAdvert"
+        },
+        {
+          "adId": "18490502",
+          "url": "https://www.imovirtual.com/pt/anuncio/penthouse-t2-com-varanda-a-sul-vista-mar-proxima-ao-parque-da-cidade-ID1fAdU",
+          "image": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjkxbHJsMzFlZTZibzMtQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.MyQhCW6EdhnnHWs52dYLxB_Ve-eukTClD_-kGBn3a6Q/image;s=314x236;q=80",
+          "roomsNum": "3",
+          "pricePerM": 3718,
+          "price": {
+            "value": "390400",
+            "unit": "EUR",
+            "__typename": "UserAdvertPrice"
+          },
+          "netArea": "105",
+          "title": "Penthouse T2 com Varanda a Sul Vista Mar próxima ao Parque da Cidade",
+          "__typename": "UserAdvert"
+        },
+        {
+          "adId": "18490490",
+          "url": "https://www.imovirtual.com/pt/anuncio/t2-com-jardins-privativos-proximo-ao-parque-da-cidade-no-porto-ID1fAdI",
+          "image": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Ijdwd3VxaHI5ODdjNDMtQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.tK7nlnXDEVbpCiIBRD3Anck8uh78Y4nLpkTNijPuzHM/image;s=314x236;q=80",
+          "roomsNum": "3",
+          "pricePerM": 2831,
+          "price": {
+            "value": "414400",
+            "unit": "EUR",
+            "__typename": "UserAdvertPrice"
+          },
+          "netArea": "146.4",
+          "title": "T2 com Jardins Privativos próximo ao Parque da Cidade no Porto",
+          "__typename": "UserAdvert"
+        }
+      ],
+      "paginatedUnits": {
+        "items": null,
+        "isPriceHidden": null,
+        "pagination": null,
+        "facets": null,
+        "__typename": "AdvertsPages"
+      },
+      "specialOffer": null,
+      "__typename": "Advert",
+      "contactDetails": {
+        "name": "Réplica Foz",
+        "type": "agency",
+        "phones": [
+          "+351923299781"
+        ],
+        "imageUrl": ""
+      }
+    },
+    "relativeUrl": "/pt/anuncio/t1-a-casa-da-musica-new-one-bedroom-apartment-porto-ID1fzUJ",
+    "adTrackingData": {
+      "touch_point_page": "ad_page",
+      "lat": 41.157241,
+      "long": -8.628124,
+      "ad_photo": 8,
+      "price_currency": "EUR",
+      "cat_l1_id": 101,
+      "cat_l1_name": "Apartamentos",
+      "special_offer_type": null,
+      "ad_id": "18489313",
+      "ad_price": 210000,
+      "business": "comprar",
+      "city_id": "13643793",
+      "city_name": "cedofeita-santo-ildefonso-se-miragaia-sao-nicolau-e-vitoria-porto",
+      "market": "primary",
+      "poster_type": "agency",
+      "surface": null,
+      "region_id": "porto",
+      "region_name": "porto",
+      "subregion_id": "porto",
+      "seller_id": "3665375",
+      "obido_advert": "n"
+    },
+    "referer": null,
+    "currentUser": null,
+    "cookiesCategorisation": {},
+    "experiments": {},
+    "featureFlags": {
+      "isAdAvmModuleEnabled": false,
+      "isAdFinanceBannerEnabled": false,
+      "isAdFinanceLinkEnabled": false,
+      "isAdMortgageSimulatorEnabled": false,
+      "isFeaturedDevelopmentVASEnabled": true,
+      "isListingRentPriceEnabled": false,
+      "isNewApartmentsForSalePostingFormEnabled": false,
+      "isOldSaveSearchQueryEnabled": false,
+      "isFinanceCheckboxEnabled": false,
+      "isObservedAdsPageEnabled": true,
+      "isBikPromotionEnabled": true,
+      "isSpecialOfferForUnitsExperimentEnabled": false,
+      "isSpecialOfferEnabled": true,
+      "isSeoAdsDescriptionEnabled": false,
+      "isPropertyEvaluationPageActive": false,
+      "isSettingsContactsTabMigrated": false,
+      "isRegularNmfEnabled": true,
+      "isExtendedBillingDataEnabled": false,
+      "isRESellerLeadsActive": false,
+      "isBadgesFeatureEnabled": false,
+      "isNexusHomePageEnabled": true,
+      "isPostPaymentOptionEnabled": true,
+      "isSettingsOurTeamTabEnabled": false,
+      "isHCIAMEnabled": false,
+      "isSellerLeadsMvpEnabled": false,
+      "isNexusSellerPageEnabled": false,
+      "isHCIAMAgencyRegistrationEnabled": true,
+      "isHCIAMAgentRegistrationEnabled": true,
+      "isHCIAMDeveloperRegistrationEnabled": true,
+      "isMessagingCenterEnabled": false,
+      "isMessagingCenterChatEnabled": false,
+      "__typename": "FeatureFlags"
+    },
+    "laquesisResult": null,
+    "userSessionId": "5649d614-6662-495b-9924-cb5cb582a3e8",
+    "unconfirmedUserAuthToken": null,
+    "desktopHeader": {
+      "Is-Desktop": "true"
+    }
+  },
+  "__N_SSP": true
+}

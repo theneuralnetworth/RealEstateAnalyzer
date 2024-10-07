@@ -1,0 +1,779 @@
+{
+  "pageProps": {
+    "lang": "pt",
+    "_sentryTraceData": "b696814c19534e9abd95703f46367d71-9d915552f63b073d-0",
+    "_sentryBaggage": "sentry-environment=imovirtualpt2-prd,sentry-release=frontend-platform%40v20241004T114115-imovirtualpt2,sentry-public_key=feffe528c390ea66992a4a05131c3c68,sentry-trace_id=b696814c19534e9abd95703f46367d71,sentry-transaction=%2Fpt%2Fanuncio%2F%5Bid%5D,sentry-sampled=false",
+    "id": "1fz5m",
+    "ad": {
+      "id": 18486128,
+      "price": {
+        "type": "",
+        "__typename": "AdvertPrice"
+      },
+      "market": "PRIMARY",
+      "services": [],
+      "publicId": "",
+      "slug": "apartamento-t1-porto-ID1fz5m",
+      "advertiserType": "business",
+      "advertType": "AGENCY",
+      "source": "urn:partner:centralimo",
+      "createdAt": "2024-09-30T13:26:17+01:00",
+      "modifiedAt": "2024-09-30T13:26:33+01:00",
+      "description": "Apartamento T1, no centro do Porto, junto a todo o tipo de comércio, serviços, escolas e com ligação ás principais vias rodoviárias.<br/>\r\n<br/>\r\n- Área 43 m² + Varanda 3,3 m² <br/>\r\n- Exposição solar: Norte/Sul<br/>\r\n- 1 WC<br/>\r\n- Elevador<br/>\r\n- Piso 3<br/>\r\n<br/>\r\nRef: E-148-3<br/>\r\n<br/>\r\nO nosso agente imobiliário já está disponível para ajudar!<br/>\r\nSolicite o seu pedido de informação.<br/>\r\n<br/>\r\nAgende já a sua visita!<br/>\r\n<br/>\r\n✉️ <br/>\r\n<br/>\r\n<br/>\r\nProcura uma agência imobiliária especializada em Matosinhos?<br/>\r\n<br/>\r\nDesde 2006 que estamos presentes no mercado imobiliário de Matosinhos, a trabalhar com profissionalismo e rigor na Compra, Venda, Arrendamento, Trespasse de imóveis.<br/>\r\n<br/>\r\nA FA Imobiliária diferencia-se pelo acompanhamento próximo do cliente em todo o processo, desde a fase da angariação à concretização final do negócio.﻿<br/>",
+      "developmentId": 0,
+      "developmentTitle": "",
+      "developmentUrl": "",
+      "exclusiveOffer": false,
+      "externalId": "684f3ab8-02f3-4240-b2db-1b5061d7c8d8",
+      "features": [],
+      "creationSource": "api",
+      "featuresByCategory": [],
+      "featuresWithoutCategory": [],
+      "openDay": null,
+      "referenceId": "E-148-3",
+      "target": {
+        "Area": "43",
+        "AreaRange": [],
+        "Bathrooms_num": [
+          "1"
+        ],
+        "Build_year": "2026",
+        "City": "paranhos-porto",
+        "City_id": "13643786",
+        "Construction_status": [
+          "to_completion"
+        ],
+        "Country": "Portugal",
+        "Energy_certificate": [
+          "exempt"
+        ],
+        "Id": "18486128",
+        "MarketType": "primary",
+        "ObidoAdvert": "n",
+        "OfferType": "comprar",
+        "Photo": "aHR0cHM6Ly9pcmVsYW5kLmFwb2xsby5vbHhjZG4uY29tL3YxL2ZpbGVzL2V5Sm1iaUk2SW5GbloyczRZWEUwZWpjeFpTMUZRMDlUV1ZOVVJVMGlMQ0ozSWpwYmV5Sm1iaUk2SWpZNWJteHdZVGRsWTNGdE56RXRRVkJVSWl3aWN5STZJakUwSWl3aWNDSTZJakV3TEMweE1DSXNJbUVpT2lJd0luMWRmUS5VZ0c4ZTFCR1B6RjBEbmVUSkZsVW5FX0dGQmdQcFJWQlBZak56WGVmWEtvL2ltYWdlO3M9NjU1eDQ5MTtxPTgw",
+        "Price": 207500,
+        "PriceRange": [
+          "100001-250000"
+        ],
+        "Price_per_m": 4826,
+        "ProperType": "apartamento",
+        "Province": "porto",
+        "RegularUser": "n",
+        "Rooms_num": [
+          "2"
+        ],
+        "Subregion": "porto",
+        "Title": "QXBhcnRhbWVudG8gVDEgUG9ydG8=",
+        "categoryId": "101",
+        "env": "production",
+        "hidePrice": "0",
+        "seller_id": "1015",
+        "user_type": "agency"
+      },
+      "title": "Apartamento T1 Porto",
+      "topInformation": [
+        {
+          "label": "area",
+          "values": [
+            "43"
+          ],
+          "unit": "m²",
+          "__typename": "AdditionalInfo"
+        },
+        {
+          "label": "building_ownership",
+          "values": [],
+          "unit": "",
+          "__typename": "AdditionalInfo"
+        },
+        {
+          "label": "rooms_num",
+          "values": [
+            "2"
+          ],
+          "unit": "",
+          "__typename": "AdditionalInfo"
+        },
+        {
+          "label": "construction_status",
+          "values": [
+            "construction_status::to_completion"
+          ],
+          "unit": "",
+          "__typename": "AdditionalInfo"
+        },
+        {
+          "label": "floor",
+          "values": [],
+          "unit": "",
+          "__typename": "AdditionalInfo"
+        },
+        {
+          "label": "outdoor",
+          "values": [],
+          "unit": "",
+          "__typename": "AdditionalInfo"
+        },
+        {
+          "label": "rent",
+          "values": [],
+          "unit": "",
+          "__typename": "AdditionalInfo"
+        },
+        {
+          "label": "car",
+          "values": [],
+          "unit": "",
+          "__typename": "AdditionalInfo"
+        },
+        {
+          "label": "remote_services",
+          "values": [],
+          "unit": "",
+          "__typename": "AdditionalInfo"
+        },
+        {
+          "label": "heating",
+          "values": [],
+          "unit": "",
+          "__typename": "AdditionalInfo"
+        }
+      ],
+      "additionalInformation": [
+        {
+          "label": "market",
+          "values": [
+            "market::primary"
+          ],
+          "unit": "",
+          "__typename": "AdditionalInfo"
+        },
+        {
+          "label": "advertiser_type",
+          "values": [
+            "advertiser_type::agency"
+          ],
+          "unit": "",
+          "__typename": "AdditionalInfo"
+        },
+        {
+          "label": "bathrooms_num",
+          "values": [
+            "1"
+          ],
+          "unit": "",
+          "__typename": "AdditionalInfo"
+        },
+        {
+          "label": "free_from",
+          "values": [],
+          "unit": "",
+          "__typename": "AdditionalInfo"
+        },
+        {
+          "label": "build_year",
+          "values": [
+            "2026"
+          ],
+          "unit": "",
+          "__typename": "AdditionalInfo"
+        },
+        {
+          "label": "building_type",
+          "values": [],
+          "unit": "",
+          "__typename": "AdditionalInfo"
+        },
+        {
+          "label": "windows_type",
+          "values": [],
+          "unit": "",
+          "__typename": "AdditionalInfo"
+        },
+        {
+          "label": "lift",
+          "values": [
+            "::n"
+          ],
+          "unit": "",
+          "__typename": "AdditionalInfo"
+        },
+        {
+          "label": "media_types",
+          "values": [],
+          "unit": "",
+          "__typename": "AdditionalInfo"
+        },
+        {
+          "label": "security_types",
+          "values": [],
+          "unit": "",
+          "__typename": "AdditionalInfo"
+        },
+        {
+          "label": "equipment_types",
+          "values": [],
+          "unit": "",
+          "__typename": "AdditionalInfo"
+        },
+        {
+          "label": "extras_types",
+          "values": [],
+          "unit": "",
+          "__typename": "AdditionalInfo"
+        },
+        {
+          "label": "building_material",
+          "values": [],
+          "unit": "",
+          "__typename": "AdditionalInfo"
+        }
+      ],
+      "url": "https://www.imovirtual.com/pt/anuncio/apartamento-t1-porto-ID1fz5m",
+      "status": "active",
+      "adCategory": {
+        "id": "101",
+        "name": "FLAT",
+        "type": "SELL",
+        "__typename": "AdvertCategory"
+      },
+      "category": {
+        "id": 101,
+        "name": [
+          {
+            "locale": "pt",
+            "value": "Apartamentos",
+            "__typename": "LocalizedString"
+          },
+          {
+            "locale": "en",
+            "value": "apartments",
+            "__typename": "LocalizedString"
+          }
+        ],
+        "__typename": "AdCategory"
+      },
+      "characteristics": [
+        {
+          "key": "price",
+          "value": "207500",
+          "label": "Preço",
+          "localizedValue": "207 500 €",
+          "currency": "EUR",
+          "suffix": "",
+          "__typename": "Characteristic"
+        },
+        {
+          "key": "m",
+          "value": "43",
+          "label": "Área",
+          "localizedValue": "43 m²",
+          "currency": "",
+          "suffix": "",
+          "__typename": "Characteristic"
+        },
+        {
+          "key": "price_per_m",
+          "value": "4826",
+          "label": "preço/m2",
+          "localizedValue": "4 826 €/m²",
+          "currency": "",
+          "suffix": "",
+          "__typename": "Characteristic"
+        },
+        {
+          "key": "rooms_num",
+          "value": "2",
+          "label": "Tipologia",
+          "localizedValue": "T1",
+          "currency": "",
+          "suffix": "",
+          "__typename": "Characteristic"
+        },
+        {
+          "key": "market",
+          "value": "primary",
+          "label": "Nova construção",
+          "localizedValue": "sim",
+          "currency": "",
+          "suffix": "",
+          "__typename": "Characteristic"
+        },
+        {
+          "key": "energy_certificate",
+          "value": "exempt",
+          "label": "Certificado energético",
+          "localizedValue": "isento / em curso",
+          "currency": "",
+          "suffix": "",
+          "__typename": "Characteristic"
+        },
+        {
+          "key": "bathrooms_num",
+          "value": "1",
+          "label": "N.º de casas de banho",
+          "localizedValue": "1",
+          "currency": "",
+          "suffix": "",
+          "__typename": "Characteristic"
+        },
+        {
+          "key": "build_year",
+          "value": "2026",
+          "label": "Ano de construção",
+          "localizedValue": "2026",
+          "currency": "",
+          "suffix": "",
+          "__typename": "Characteristic"
+        },
+        {
+          "key": "construction_status",
+          "value": "to_completion",
+          "label": "Fase de acabamento",
+          "localizedValue": "por terminar",
+          "currency": "",
+          "suffix": "",
+          "__typename": "Characteristic"
+        }
+      ],
+      "images": [
+        {
+          "thumbnail": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InFnZ2s4YXE0ejcxZS1FQ09TWVNURU0iLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.UgG8e1BGPzF0DneTJFlUnE_GFBgPpRVBPYjNzXefXKo/image;s=184x138;q=80",
+          "small": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InFnZ2s4YXE0ejcxZS1FQ09TWVNURU0iLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.UgG8e1BGPzF0DneTJFlUnE_GFBgPpRVBPYjNzXefXKo/image;s=314x236;q=80",
+          "medium": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InFnZ2s4YXE0ejcxZS1FQ09TWVNURU0iLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.UgG8e1BGPzF0DneTJFlUnE_GFBgPpRVBPYjNzXefXKo/image;s=655x491;q=80",
+          "large": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InFnZ2s4YXE0ejcxZS1FQ09TWVNURU0iLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.UgG8e1BGPzF0DneTJFlUnE_GFBgPpRVBPYjNzXefXKo/image;s=1280x1024;q=80",
+          "__typename": "AdImage"
+        },
+        {
+          "thumbnail": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjdmdGpoY2N3dWs3dS1FQ09TWVNURU0iLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.2QQ_UKvOj6QaMJyi0Exa7Hqhf_Lh79SeX6UYMHY8xwM/image;s=184x138;q=80",
+          "small": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjdmdGpoY2N3dWs3dS1FQ09TWVNURU0iLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.2QQ_UKvOj6QaMJyi0Exa7Hqhf_Lh79SeX6UYMHY8xwM/image;s=314x236;q=80",
+          "medium": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjdmdGpoY2N3dWs3dS1FQ09TWVNURU0iLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.2QQ_UKvOj6QaMJyi0Exa7Hqhf_Lh79SeX6UYMHY8xwM/image;s=655x491;q=80",
+          "large": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjdmdGpoY2N3dWs3dS1FQ09TWVNURU0iLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.2QQ_UKvOj6QaMJyi0Exa7Hqhf_Lh79SeX6UYMHY8xwM/image;s=1280x1024;q=80",
+          "__typename": "AdImage"
+        },
+        {
+          "thumbnail": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InNrY2xnemExczRsdTItRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.v7x93OIOp-CNAiRfwIRv3FEGeaPJhjhwp8ZxoOeunH4/image;s=184x138;q=80",
+          "small": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InNrY2xnemExczRsdTItRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.v7x93OIOp-CNAiRfwIRv3FEGeaPJhjhwp8ZxoOeunH4/image;s=314x236;q=80",
+          "medium": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InNrY2xnemExczRsdTItRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.v7x93OIOp-CNAiRfwIRv3FEGeaPJhjhwp8ZxoOeunH4/image;s=655x491;q=80",
+          "large": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InNrY2xnemExczRsdTItRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.v7x93OIOp-CNAiRfwIRv3FEGeaPJhjhwp8ZxoOeunH4/image;s=1280x1024;q=80",
+          "__typename": "AdImage"
+        },
+        {
+          "thumbnail": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Imdlc25mbHZnc3V2Zy1FQ09TWVNURU0iLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.5bfcYY7Ix5yq6TcjJgumb0BQY_gvNDdoESYlAoI4wcs/image;s=184x138;q=80",
+          "small": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Imdlc25mbHZnc3V2Zy1FQ09TWVNURU0iLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.5bfcYY7Ix5yq6TcjJgumb0BQY_gvNDdoESYlAoI4wcs/image;s=314x236;q=80",
+          "medium": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Imdlc25mbHZnc3V2Zy1FQ09TWVNURU0iLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.5bfcYY7Ix5yq6TcjJgumb0BQY_gvNDdoESYlAoI4wcs/image;s=655x491;q=80",
+          "large": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Imdlc25mbHZnc3V2Zy1FQ09TWVNURU0iLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.5bfcYY7Ix5yq6TcjJgumb0BQY_gvNDdoESYlAoI4wcs/image;s=1280x1024;q=80",
+          "__typename": "AdImage"
+        },
+        {
+          "thumbnail": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjU1OGN3cmM3bzJxNzItRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.Fa_uhBw4mMWn9aBYkplCG4VwU-BPNIA1tMsCLKSq9CQ/image;s=184x138;q=80",
+          "small": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjU1OGN3cmM3bzJxNzItRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.Fa_uhBw4mMWn9aBYkplCG4VwU-BPNIA1tMsCLKSq9CQ/image;s=314x236;q=80",
+          "medium": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjU1OGN3cmM3bzJxNzItRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.Fa_uhBw4mMWn9aBYkplCG4VwU-BPNIA1tMsCLKSq9CQ/image;s=655x491;q=80",
+          "large": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjU1OGN3cmM3bzJxNzItRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.Fa_uhBw4mMWn9aBYkplCG4VwU-BPNIA1tMsCLKSq9CQ/image;s=1280x1024;q=80",
+          "__typename": "AdImage"
+        },
+        {
+          "thumbnail": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Im5sbnU0OGwwdTFnaDEtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.Hb7JLdH2kNtRx41Kg8RxKXWlS9X_wwfl0UL3tCHO0nE/image;s=184x138;q=80",
+          "small": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Im5sbnU0OGwwdTFnaDEtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.Hb7JLdH2kNtRx41Kg8RxKXWlS9X_wwfl0UL3tCHO0nE/image;s=314x236;q=80",
+          "medium": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Im5sbnU0OGwwdTFnaDEtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.Hb7JLdH2kNtRx41Kg8RxKXWlS9X_wwfl0UL3tCHO0nE/image;s=655x491;q=80",
+          "large": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Im5sbnU0OGwwdTFnaDEtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.Hb7JLdH2kNtRx41Kg8RxKXWlS9X_wwfl0UL3tCHO0nE/image;s=1280x1024;q=80",
+          "__typename": "AdImage"
+        }
+      ],
+      "links": {
+        "localPlanUrl": "",
+        "videoUrl": "",
+        "view3dUrl": "",
+        "walkaroundUrl": "",
+        "__typename": "AdvertLinks"
+      },
+      "location": {
+        "id": null,
+        "coordinates": {
+          "latitude": 41.161811828613,
+          "longitude": -8.6040096282959,
+          "__typename": "Coordinates"
+        },
+        "mapDetails": {
+          "radius": 100,
+          "zoom": 12,
+          "__typename": "MapDetails"
+        },
+        "address": {
+          "street": null,
+          "subdistrict": null,
+          "district": null,
+          "city": {
+            "id": "13643786",
+            "code": "paranhos-porto",
+            "name": "Paranhos",
+            "__typename": "City"
+          },
+          "municipality": null,
+          "county": {
+            "id": "190",
+            "code": "porto",
+            "name": "Porto",
+            "__typename": "County"
+          },
+          "province": {
+            "id": "13",
+            "code": "porto",
+            "name": "Porto",
+            "__typename": "Province"
+          },
+          "postalCode": null,
+          "__typename": "Address"
+        },
+        "reverseGeocoding": {
+          "locations": [
+            {
+              "id": "porto",
+              "locationLevel": "district",
+              "name": "Porto",
+              "fullName": "Porto",
+              "fullNameItems": [
+                "Porto"
+              ],
+              "parentIds": [],
+              "__typename": "BasicLocationObject"
+            },
+            {
+              "id": "porto/porto",
+              "locationLevel": "council",
+              "name": "Porto",
+              "fullName": "Porto, Porto",
+              "fullNameItems": [
+                "Porto",
+                "Porto"
+              ],
+              "parentIds": [
+                "porto"
+              ],
+              "__typename": "BasicLocationObject"
+            },
+            {
+              "id": "porto/porto/bonfim",
+              "locationLevel": "parish",
+              "name": "Bonfim",
+              "fullName": "Bonfim, Porto, Porto",
+              "fullNameItems": [
+                "Bonfim",
+                "Porto",
+                "Porto"
+              ],
+              "parentIds": [
+                "porto",
+                "porto/porto"
+              ],
+              "__typename": "BasicLocationObject"
+            },
+            {
+              "id": "porto/porto/bonfim/praca-do-marques--lima",
+              "locationLevel": "neighborhood",
+              "name": "Praça do Marquês - Lima",
+              "fullName": "Praça do Marquês - Lima, Bonfim, Porto, Porto",
+              "fullNameItems": [
+                "Praça do Marquês - Lima",
+                "Bonfim",
+                "Porto",
+                "Porto"
+              ],
+              "parentIds": [
+                "porto",
+                "porto/porto",
+                "porto/porto/bonfim"
+              ],
+              "__typename": "BasicLocationObject"
+            }
+          ],
+          "__typename": "ReverseGeocoding"
+        },
+        "__typename": "LocationDetails"
+      },
+      "property": {
+        "id": null,
+        "type": "FLAT",
+        "rent": null,
+        "costs": [],
+        "condition": "TO_COMPLETION",
+        "properties": {
+          "equipment": [],
+          "areas": [],
+          "floor": null,
+          "kitchen": null,
+          "parking": [],
+          "numberOfRooms": 2,
+          "rooms": [],
+          "type": null,
+          "windowsOrientation": [],
+          "__typename": "FlatProperties"
+        },
+        "buildingProperties": {
+          "year": 2026,
+          "type": null,
+          "material": null,
+          "windows": [],
+          "heating": null,
+          "numberOfFloors": null,
+          "conveniences": [],
+          "security": [],
+          "__typename": "FlatBuildingProperties"
+        },
+        "ownership": null,
+        "area": {
+          "value": 43,
+          "unit": "M2",
+          "__typename": "Area"
+        },
+        "__typename": "Flat"
+      },
+      "owner": {
+        "id": 1015,
+        "name": "FA Imobiliária",
+        "type": "agency",
+        "phones": [
+          "+351229370932"
+        ],
+        "imageUrl": "",
+        "contacts": [],
+        "__typename": "LegacyAdvertOwner"
+      },
+      "agency": {
+        "id": 1015,
+        "name": "FA Imobiliária - Mediação Imobiliária Lda",
+        "licenseNumber": "7028",
+        "type": "agency",
+        "phones": [
+          "+351229370932"
+        ],
+        "address": "AV. D. AFONSO HENRIQUES Nº878, 4450-010, Matosinhos e Leça da Palmeira, Matosinhos, Porto",
+        "imageUrl": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Ing3MXM0eHVkM2ZndTItQVBUIn0.M5ClfZ7YTtYzuXY13j0x-iUTnPIQPglYIdt8J27com0/image;s=800x600;q=90",
+        "url": "https://www.imovirtual.com/pt/empresas/agencias-imobiliarias/fa-imobiliaria-mediacao-imobiliaria-lda-ID1015",
+        "leaderYear": "",
+        "brandingVisible": true,
+        "enabledFeatures": [
+          "ACADEMY",
+          "AD_HOMEPAGE_1_SCHEDULE",
+          "ADDITIONAL_CONTACT_FORMS_AD_PAGE",
+          "ADVANCED_PICTURE_GALLERY_AD_PAGE",
+          "AGENCY_WEB_PAGE",
+          "BANNER_DISCOUNT",
+          "CALL_TRACKING",
+          "CONTACT_CUSTOMIZATION",
+          "CONTACT_PERSONALISATION",
+          "CRM_INTEGRATION",
+          "DEDICATED_CS",
+          "EXPORT_OLX",
+          "LISTGLOBALLY",
+          "LOGO_AD_PAGE",
+          "LOGO_SEARCH_PAGE",
+          "MEGABUMP",
+          "OLX_BUNDLE_BASIC",
+          "OLX_BUNDLE_NORMAL",
+          "OLX_BUNDLE_PREMIUM",
+          "OLX_PROMOTIONS",
+          "OLX_PUSHUP",
+          "OLX_TOPADS_30",
+          "OLX_TOPADS_7",
+          "PAID_FOR_POST_30_AGENCY",
+          "PREDEFINED_MESSAGES_CONTACT_FORM",
+          "PROJECT_RED",
+          "PROMOTIONS_RECOMMENDATIONS",
+          "PUSHUP",
+          "STATISTICS",
+          "SUGGEST_PRICE_FORM",
+          "TOPADS_1",
+          "VAS_SCHEDULING"
+        ],
+        "__typename": "AdvertAgency"
+      },
+      "seo": {
+        "title": "T1, apartamento para comprar - Paranhos, Porto - 18486128 • www.imovirtual.com",
+        "description": "Excelente apartamento para venda com T1 em Paranhos, Porto, por 207 500 €. Este apartamento para venda  tem 43 m² de àrea útil e 43 m² de àrea bruta.SITE 18486128",
+        "__typename": "AdvertSeo"
+      },
+      "breadcrumbs": [
+        {
+          "label": "Apartamento para comprar",
+          "locative": "",
+          "url": "https://www.imovirtual.com/pt/anuncios/comprar/apartamento",
+          "__typename": "AdvertBreadcrumb"
+        },
+        {
+          "label": "Porto (distrito)",
+          "locative": "Porto (distrito)",
+          "url": "https://www.imovirtual.com/pt/anuncios/comprar/apartamento/porto",
+          "__typename": "AdvertBreadcrumb"
+        },
+        {
+          "label": "Porto",
+          "locative": "Porto",
+          "url": "https://www.imovirtual.com/pt/anuncios/comprar/apartamento/porto",
+          "__typename": "AdvertBreadcrumb"
+        },
+        {
+          "label": "Paranhos",
+          "locative": "Paranhos",
+          "url": "https://www.imovirtual.com/pt/anuncios/comprar/apartamento/paranhos-porto",
+          "__typename": "AdvertBreadcrumb"
+        },
+        {
+          "label": "Apartamento T1 Porto",
+          "locative": "",
+          "url": "",
+          "__typename": "AdvertBreadcrumb"
+        }
+      ],
+      "userAdverts": [
+        {
+          "adId": "18490149",
+          "url": "https://www.imovirtual.com/pt/anuncio/t2-c-lugar-de-garagem-2-piso-virado-a-sul-santa-rita-ID1fA8d",
+          "image": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Imo5NWxlcnBtdDJrNzMtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.mo15swo4H-lplnNrt4vRsqXBxptGhTpyGPomL6s82hY/image;s=314x236;q=80",
+          "roomsNum": "3",
+          "pricePerM": 2250,
+          "price": {
+            "value": "225000",
+            "unit": "EUR",
+            "__typename": "UserAdvertPrice"
+          },
+          "netArea": "100",
+          "title": "T2 c/ Lugar de Garagem \" 2º Piso Virado a Sul\"  Santa Rita",
+          "__typename": "UserAdvert"
+        },
+        {
+          "adId": "18487532",
+          "url": "https://www.imovirtual.com/pt/anuncio/apartamento-t3-vistas-mar-vila-do-conde-ID1fzs0",
+          "image": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImF0ZHBtZ3Z3enh4Mi1FQ09TWVNURU0iLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.F2N21AJwwohxxqhYyXW_XRzpnc5_GPOilMGUwBacCL8/image;s=314x236;q=80",
+          "roomsNum": "4",
+          "pricePerM": 5457,
+          "price": {
+            "value": "884000",
+            "unit": "EUR",
+            "__typename": "UserAdvertPrice"
+          },
+          "netArea": "162",
+          "title": "Apartamento T3 Vistas Mar Vila do Conde",
+          "__typename": "UserAdvert"
+        },
+        {
+          "adId": "18487530",
+          "url": "https://www.imovirtual.com/pt/anuncio/apartamento-t2-vistas-mar-vila-do-conde-ID1fzrY",
+          "image": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Imo3MGMzN2NyNHliMzEtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.2TJiayqSQ_Moi8IeLGOU8AlUUBNsfz77eWrwUvRZ9Fc/image;s=314x236;q=80",
+          "roomsNum": "3",
+          "pricePerM": 5330,
+          "price": {
+            "value": "581000",
+            "unit": "EUR",
+            "__typename": "UserAdvertPrice"
+          },
+          "netArea": "109",
+          "title": "Apartamento T2 Vistas Mar Vila do Conde",
+          "__typename": "UserAdvert"
+        },
+        {
+          "adId": "18487531",
+          "url": "https://www.imovirtual.com/pt/anuncio/apartamento-t2-vistas-mar-vila-do-conde-ID1fzrZ",
+          "image": "https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImxzMHd0YWJhZDJnbTMtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.nN6aUH_Edv2K7j6gDuh8O8ajskQeetXBPM6W6g_64Bs/image;s=314x236;q=80",
+          "roomsNum": "3",
+          "pricePerM": 5376,
+          "price": {
+            "value": "586000",
+            "unit": "EUR",
+            "__typename": "UserAdvertPrice"
+          },
+          "netArea": "109",
+          "title": "Apartamento T2 Vistas Mar Vila do Conde",
+          "__typename": "UserAdvert"
+        }
+      ],
+      "paginatedUnits": {
+        "items": null,
+        "isPriceHidden": null,
+        "pagination": null,
+        "facets": null,
+        "__typename": "AdvertsPages"
+      },
+      "specialOffer": null,
+      "__typename": "Advert",
+      "contactDetails": {
+        "name": "FA Imobiliária",
+        "type": "agency",
+        "phones": [
+          "+351229370932"
+        ],
+        "imageUrl": ""
+      }
+    },
+    "relativeUrl": "/pt/anuncio/apartamento-t1-porto-ID1fz5m",
+    "adTrackingData": {
+      "touch_point_page": "ad_page",
+      "lat": 41.161811828613,
+      "long": -8.6040096282959,
+      "ad_photo": 6,
+      "price_currency": "EUR",
+      "cat_l1_id": 101,
+      "cat_l1_name": "Apartamentos",
+      "special_offer_type": null,
+      "ad_id": "18486128",
+      "ad_price": 207500,
+      "business": "comprar",
+      "city_id": "13643786",
+      "city_name": "paranhos-porto",
+      "market": "primary",
+      "poster_type": "agency",
+      "surface": null,
+      "region_id": "porto",
+      "region_name": "porto",
+      "subregion_id": "porto",
+      "seller_id": "1015",
+      "obido_advert": "n"
+    },
+    "referer": null,
+    "currentUser": null,
+    "cookiesCategorisation": {},
+    "experiments": {},
+    "featureFlags": {
+      "isAdAvmModuleEnabled": false,
+      "isAdFinanceBannerEnabled": false,
+      "isAdFinanceLinkEnabled": false,
+      "isAdMortgageSimulatorEnabled": false,
+      "isFeaturedDevelopmentVASEnabled": true,
+      "isListingRentPriceEnabled": false,
+      "isNewApartmentsForSalePostingFormEnabled": false,
+      "isOldSaveSearchQueryEnabled": false,
+      "isFinanceCheckboxEnabled": false,
+      "isObservedAdsPageEnabled": true,
+      "isBikPromotionEnabled": true,
+      "isSpecialOfferForUnitsExperimentEnabled": false,
+      "isSpecialOfferEnabled": true,
+      "isSeoAdsDescriptionEnabled": false,
+      "isPropertyEvaluationPageActive": false,
+      "isSettingsContactsTabMigrated": false,
+      "isRegularNmfEnabled": true,
+      "isExtendedBillingDataEnabled": false,
+      "isRESellerLeadsActive": false,
+      "isBadgesFeatureEnabled": false,
+      "isNexusHomePageEnabled": true,
+      "isPostPaymentOptionEnabled": true,
+      "isSettingsOurTeamTabEnabled": false,
+      "isHCIAMEnabled": false,
+      "isSellerLeadsMvpEnabled": false,
+      "isNexusSellerPageEnabled": false,
+      "isHCIAMAgencyRegistrationEnabled": true,
+      "isHCIAMAgentRegistrationEnabled": true,
+      "isHCIAMDeveloperRegistrationEnabled": true,
+      "isMessagingCenterEnabled": false,
+      "isMessagingCenterChatEnabled": false,
+      "__typename": "FeatureFlags"
+    },
+    "laquesisResult": null,
+    "userSessionId": "b13f79da-66d1-424e-b95b-644b7761dfd8",
+    "unconfirmedUserAuthToken": null,
+    "desktopHeader": {
+      "Is-Desktop": "true"
+    }
+  },
+  "__N_SSP": true
+}
