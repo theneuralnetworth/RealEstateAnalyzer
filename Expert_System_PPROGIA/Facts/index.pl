@@ -82,5 +82,5 @@ fact(63, year_construction(property_3, 2021)).
 % Potential for Appreciation
 fact(64, last_5_years_increased(lisboa, 70)).
 fact(65, last_5_years_increased(porto, 35)).
-fact(66, last_5_years_increased(lisboa, 10)).
+fact(66, last_5_years_increased(faro, 10)).
 

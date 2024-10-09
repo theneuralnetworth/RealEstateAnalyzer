@@ -78,6 +78,12 @@ fact_in_condition(F,[F]).
 fact_in_condition(F,[evaluate(F1)]):-F=..[H,H1|_],F1=..[H,H1|_].
 
 % verifies conditions
+verify_conditions([evaluate(X)],_):- 
+	evaluate(_,X).
+
+verify_conditions([evaluate(X) and evaluate(Y)],_):- 
+	evaluate(_,X), evaluate(_,Y).
+
 verify_conditions([not evaluate(X) or Y],[not X|LF]):- !,
 	\+ evaluate(_,X),
 	verify_conditions([Y],LF).
@@ -133,19 +139,6 @@ evaluate(N,P):-	P=..[Functor,Entidade,Operando,Valor],
 		P1=..[Functor,Entidade,Valor1],
 		fact(N,P1),
 		compare_values(Valor1,Operando,Valor).
-
-/*
-evaluate(N, P) :-
-    P =.. [number_of_facts, Predicate, Operando, Valor],
-    count_facts(Predicate, Count),
-    compare_values(Count, Operando, Valor), !.
-
-count_facts(Predicate, Count) :-
-	findall(_, fact(_, Predicate), List),
-	length(List, Count).
-*/
-
-
 
 compare_values(V1,==,V):- V1==V.
 compare_values(V1,\==,V):- V1\==V.

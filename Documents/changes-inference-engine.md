@@ -132,3 +132,53 @@ In addition to the changes in operator names, a new operator or has been introdu
 + verify_conditions([X or Y],[N|LF]):- !,
 + 	(fact(N,X) ; verify_conditions([Y],LF)).
 ```
+
+## Addition of new Predicates for enhanced evaluate conditions
+
+To further enhance the flexibility and expressiveness of the inference engine, two new predicates have been added. These predicates allow the creation of rules that utilize the evaluate predicate either alone or in combination with multiple evaluate conditions connected by the and operator. This enhancement facilitates more complex rule definitions and improves the engine's decision-making capabilities.
+
+New Predicates:
+- **verify_conditions([evaluate(X)], _)**: Allows rules to include a single evaluate condition.
+
+- **verify_conditions([evaluate(X) and evaluate(Y)], _)**: Enables rules to incorporate multiple evaluate conditions connected by the and operator.
+
+```diff
+  % verifies conditions
++ verify_conditions([evaluate(X)],_):- 
++ 	evaluate(_,X).
++ 
++ verify_conditions([evaluate(X) and evaluate(Y)],_):- 
++ 	evaluate(_,X), evaluate(_,Y).
+  
+  verify_conditions([not evaluate(X) or Y],[not X|LF]):- !,
+  	\+ evaluate(_,X),
+  	verify_conditions([Y],LF).
+  
+  verify_conditions([evaluate(X) or Y],[N|LF]):- !,
+  	(evaluate(N,X) ; verify_conditions([Y],LF)).
+  
+  verify_conditions([not X or Y],[not X|LF]):- !,
+  	(\+ fact(_,X) ; verify_conditions([Y],LF)).
+  
+  verify_conditions([X or Y],[N|LF]):- !,
+  	(fact(N,X) ; verify_conditions([Y],LF)).
+  
+  verify_conditions([not evaluate(X) and Y],[not X|LF]):- !,
+  	\+ evaluate(_,X),
+  	verify_conditions([Y],LF).
+  
+  verify_conditions([evaluate(X) and Y],[N|LF]):- !,
+  	evaluate(N,X),
+  	verify_conditions([Y],LF).
+  
+  verify_conditions([not X and Y],[not X|LF]):- !,
+  	\+ fact(_,X),
+  	verify_conditions([Y],LF).
+  
+  verify_conditions([X and Y],[N|LF]):- !,
+  	fact(N,X),
+  	verify_conditions([Y],LF).
+  
+  verify_conditions([not X],[not X]):- !, \+ fact(_,X).
+  verify_conditions([X],[N]):- fact(N,X).
+```
