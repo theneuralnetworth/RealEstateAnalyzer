@@ -230,10 +230,35 @@ rule 7.4
     if [optical_fiber(Property, absent) and smart_appliances(Property, absent)]
     then [create_fact(result(Property, connectivity, low))].
 
-rule 8.1
-    if [evaluate(_, floor_level(Property, >=, 4))]
-    then [create_fact(result(Property, view, high))].
+%%%%%%%%%%% 8.View %%%%%%%%%%%
 
+rule 8.1
+    if [evaluate(floor_level(Property, >=, 4))]
+    then [create_fact(result(Property, view, good))].
+
+rule 8.2
+    if [evaluate(floor_level(Property, <, 4))]
+    then [create_fact(result(Property, view, average))].
+
+rule 8.3
+    if [evaluate(floor_level(Property, <, 2))]
+    then [create_fact(result(Property, view, bad))].
+
+%%%%%%%%%%% 9.Area size %%%%%%%%%%%
+
+rule 9.1
+    if [evaluate(area_per_room(Property, >, 30))]
+    then [create_fact(result(Property, spaciousness, high))].
+
+rule 9.2
+    if [evaluate(area_per_room(Property, >, 20)) and evaluate(area_per_room(Property, =<, 30))]
+    then [create_fact(result(Property, spaciousness, medium))].
+
+rule 9.3
+    if [evaluate(area_per_room(Property, =<, 20))]
+    then [create_fact(result(Property, spaciousness, low))].
+
+%%%%%%%%%%% 10.Sun Exposure %%%%%%%%%%%
 rule 10.1
     if [sun_orientation(Property, south) or sun_orientation(Property, east)]
     then [create_fact(result(Property, sun_exposure, good))].

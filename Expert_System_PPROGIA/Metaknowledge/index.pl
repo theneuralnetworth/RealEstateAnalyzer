@@ -53,5 +53,8 @@ fact_triggers_rules(connectivity(_, _), [7.1,7.2,7.3,7.4]).
 % View
 fact_triggers_rules(floor_level(_, _), [8.1]).
 
+% Area
+fact_triggers_rules(area_per_room(_, _), [9.0,9.1,9.2,9.3]).
+
 % Sun exposure
 fact_triggers_rules(sun_orientation(_, _), [10.1, 10.2]).
