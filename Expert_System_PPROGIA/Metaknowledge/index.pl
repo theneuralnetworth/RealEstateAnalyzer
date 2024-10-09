@@ -43,5 +43,18 @@ fact_triggers_rules(public_parking(_, _), [11.4,11.5,11.6]).
 % Construction Year
 fact_triggers_rules(year_construction(_, _), [12.1,12.2,12.3]).
 
-% Potential for Appreciation 
+% Potential for Appreciation
 fact_triggers_rules(last_5_years_increased(_, _), [13.1,13.2,13.3]).
+fact_triggers_rules(services(_, _), [6.6,6.7,6.8]).
+
+% Connectivity
+fact_triggers_rules(connectivity(_, _), [7.1,7.2,7.3,7.4]).
+
+% View
+fact_triggers_rules(floor_level(_, _), [8.1]).
+
+% Area
+fact_triggers_rules(area_per_room(_, _), [9.0,9.1,9.2,9.3]).
+
+% Sun exposure
+fact_triggers_rules(sun_orientation(_, _), [10.1, 10.2]).

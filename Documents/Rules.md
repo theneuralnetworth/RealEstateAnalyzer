@@ -102,124 +102,126 @@
 ## 3. Accessibility
 
 - **Rule 3.1: High Accessibility**
-  
-  - If the property has an elevator and ramps, 
+
+  - If the property has an elevator and ramps,
   - Then the property is classified as having high accessibility.
 
 - **Rule 3.2: Low Accessibility**
-  
-  - If the property does not have an elevator and ramps, 
+
+  - If the property does not have an elevator and ramps,
   - Then the property is classified as having low accessibility.
 
 - **Rule 3.3: Medium Accessibility**
-  
-  - If the property has either an elevator or ramps, but not both, 
+
+  - If the property has either an elevator or ramps, but not both,
   - Then the property is classified as having medium accessibility.
 
 ## 4. Maintenance
 
 - **Rule 4.1: Medium Commodities**
-  
-  - If the property has either a swimming pool or a garden, but not both, 
+
+  - If the property has either a swimming pool or a garden, but not both,
   - Then the property is classified as having medium commodities.
 
 - **Rule 4.2: High Commodities**
-  
-  - If the property has both a swimming pool and a garden, 
+
+  - If the property has both a swimming pool and a garden,
   - Then the property is classified as having high commodities.
 
 - **Rule 4.3: Low Commodities**
-  
-  - If the property has neither a swimming pool nor a garden, 
+
+  - If the property has neither a swimming pool nor a garden,
   - Then the property is classified as having low commodities.
 
 - **Rule 4.4: Low Maintenance**
-  
-  - If the property is new or has low commodities, 
+
+  - If the property is new or has low commodities,
   - Then the property is classified as requiring low maintenance.
 
 - **Rule 4.5: Medium Maintenance**
-  
-  - If the property is not new and has medium commodities, 
+
+  - If the property is not new and has medium commodities,
   - Then the property is classified as requiring medium maintenance.
 
 - **Rule 4.6: High Maintenance**
-  
-  - If the property is not new and has high commodities, 
+
+  - If the property is not new and has high commodities,
   - Then the property is classified as requiring high maintenance.
 
 ## 5. Energy Efficiency
 
 - **Rule 5.1: High Energy Efficiency**
-  
-  - If the property has an energy rating of A++, A+, or A, 
+
+  - If the property has an energy rating of A++, A+, or A,
   - Then the property is classified as having high energy efficiency.
 
 - **Rule 5.2: Medium Energy Efficiency**
-  
-  - If the property has an energy rating of B or C, 
+
+  - If the property has an energy rating of B or C,
   - Then the property is classified as having medium energy efficiency.
 
 - **Rule 5.3: Low Energy Efficiency**
-  
-  - If the property has an energy rating of D, E, or F, 
+
+  - If the property has an energy rating of D, E, or F,
   - Then the property is classified as having low energy efficiency.
 
 ## 6. Services
 
 - **Rule 6.1: Nearby Schools**
-  
-  - If the property is located near schools, 
+
+  - If the property is located near schools,
   - Then it is classified as having the service "nearby schools".
 
 - **Rule 6.2: Nearby Public Transport**
-  
-  - If the property is located near public transport, 
+
+  - If the property is located near public transport,
   - Then it is classified as having the service "nearby public transport".
 
 - **Rule 6.3: Nearby Hospitals**
-  
-  - If the property is located near hospitals, 
+
+  - If the property is located near hospitals,
   - Then it is classified as having the service "nearby hospitals".
 
 - **Rule 6.4: Nearby Supermarkets**
-  
-  - If the property is located near supermarkets, 
+
+  - If the property is located near supermarkets,
   - Then it is classified as having the service "nearby supermarkets".
 
 - **Rule 6.5: Nearby Leisure Areas**
-  
-  - If the property is located near leisure areas, 
+
+  - If the property is located near leisure areas,
   - Then it is classified as having the service "nearby leisure areas".
 
 - **Rule 6.6: High Service Level**
-  
-  - If a property has four or more nearby services, 
+
+  - If a property has four or more nearby services,
   - Then it is classified as having a high service level.
 
 - **Rule 6.7: Medium Service Level**
-  
-  - If a property has two or three nearby services, 
+
+  - If a property has two or three nearby services,
   - Then it is classified as having a medium service level.
 
 - **Rule 6.8: Low Service Level**
-  
-  - If a property has less than two nearby services, 
+
+  - If a property has less than two nearby services,
   - Then it is classified as having a low service level.
 
 ## 7. Infraestrutura de Conectividade
 
-- **Regra 7.1: Alta Conectividade**
+- **Regra 7.1: High Connectivity**
+  - If the property has optical fiber internet and smart appliances,
+  - Then the connectivity level is high.
 
-  - Se o imóvel possui internet de fibra e recursos de casa inteligente,
-  - Então a conectividade é considerada alta.
+- **Regra 7.2: Medium connectivity**
+  - If the property has optical fiber internet but does not have smart appliances,
+  - Then the connectivity is medium.
 
-- **Regra 7.2: Média Conectividade**
+- **Regra 7.3: Medium connectivity**
+  - If the property does not have optical fiber internet but does have smart appliances,
+  - Then the connectivity is medium
 
-  - Se o imóvel possui internet de fibra e não possui recursos de casa inteligente,
-  - Então a conectividade é considerada média.
-
-- **Regra 7.3: Baixa Conectividade**
+- **Regra 7.4: Baixa Conectividade**
   - Se o imóvel não possui internet de fibra nem recursos de casa inteligente,
   - Então a conectividade é considerada baixa.
 
@@ -231,31 +233,28 @@
 
 ## 9. Áreas das Divisões
 
-- **Regra 9.1: Grandes Áreas**
+- **Regra 9.1: Large areas**
+  - If the ratio area by number of rooms is high
+  - Then the property has large areas
 
-  - Se o ratio área/número de divisões for alto,
-  - Então o imóvel tem áreas grandes.
+- **Regra 9.2: Medium areas**
+  - If the ratio area by number of rooms is medium
+  - Then the property has medium areas
 
-- **Regra 9.2: Médias Áreas**
 
-  - ...
-
-- **Regra 9.3: Pequenas Áreas**
-  - ...
+- **Regra 9.3: Small areas**
+  - If the ratio area by number of rooms is low
+  - Then the property has small areas
 
 ## 10. Orientação Solar
 
-- **Regra 10.1: Orientação Solar Ótima**
+- **Regra 10.1: Good Sun Exposure**
+  - If the sun orientation of the property is south or east
+  - Then the sun exposure is good
 
-  - Se a orientação solar do imóvel é poente ou sul,
-  - Então a orientação solar é considerada ótima.
-
-- **Regra 10.2: Orientação Solar Média**
-
-  - ...
-
-- **Regra 10.3: Orientação Solar Pequena**
-  - ...
+- **Regra 10.2: Average Sun Exposure**
+  - If the sun orientation of the property is north or west
+  - Then the sun exposure is average
 
 ## 11. Parking Space
 

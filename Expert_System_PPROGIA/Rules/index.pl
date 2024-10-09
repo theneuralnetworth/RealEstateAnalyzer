@@ -196,7 +196,7 @@ rule 6.5
 /*
 % Rule 6.6: If a property has four or more nearby services, then it is classified as having a high service level.
 rule 6.6
-    if [evaluate(N, number_of_facts(services(Property, _), >=, 4))]
+    if [evaluate(_, number_of_facts(services(Property, _), >=, 4))]
     then [create_fact(result(Property, services, medium))].
 
 % Rule 6.7: If a property has two or three nearby services, then it is classified as having a medium service level.
@@ -206,9 +206,66 @@ rule 6.7
 
 % Rule 6.8: If a property has less than two nearby services, then it is classified as having a low service level.
 rule 6.8
-    if [evaluate(N, number_of_facts(services(Property, _), <, 2))]
+    if [evaluate(_, number_of_facts(services(Property, _), <, 2))]
     then [create_fact(result(Property, services, medium))].
 */
+
+% Rule 7.1: If the property has optical fiber and smart appliances, then the property is classified as having high connectivity.
+rule 7.1
+    if [optical_fiber(Property, present) and smart_appliances(Property, present)]
+    then [create_fact(result(Property, connectivity, high))].
+
+% Rule 7.2: If the property has optical fiber and no smart appliances, then the property is classified as having medium connectivity.
+rule 7.2
+    if [optical_fiber(Property, present) and smart_appliances(Property, absent)]
+    then [create_fact(result(Property, connectivity, medium))].
+
+% Rule 7.3: If the property does not have optical fiber but has smart appliances, then the property is classified as having medium connectivity.
+rule 7.3
+    if [optical_fiber(Property, absent) and smart_appliances(Property, present)]
+    then [create_fact(result(Property, connectivity, medium))].
+
+% Rule 7.4: If the property does not have optical fiber or smart appliances, then the property is classified as having low connectivity.
+rule 7.4
+    if [optical_fiber(Property, absent) and smart_appliances(Property, absent)]
+    then [create_fact(result(Property, connectivity, low))].
+
+%%%%%%%%%%% 8.View %%%%%%%%%%%
+
+rule 8.1
+    if [evaluate(floor_level(Property, >=, 4))]
+    then [create_fact(result(Property, view, good))].
+
+rule 8.2
+    if [evaluate(floor_level(Property, <, 4))]
+    then [create_fact(result(Property, view, average))].
+
+rule 8.3
+    if [evaluate(floor_level(Property, <, 2))]
+    then [create_fact(result(Property, view, bad))].
+
+%%%%%%%%%%% 9.Area size %%%%%%%%%%%
+
+rule 9.1
+    if [evaluate(area_per_room(Property, >, 30))]
+    then [create_fact(result(Property, spaciousness, high))].
+
+rule 9.2
+    if [evaluate(area_per_room(Property, >, 20)) and evaluate(area_per_room(Property, =<, 30))]
+    then [create_fact(result(Property, spaciousness, medium))].
+
+rule 9.3
+    if [evaluate(area_per_room(Property, =<, 20))]
+    then [create_fact(result(Property, spaciousness, low))].
+
+%%%%%%%%%%% 10.Sun Exposure %%%%%%%%%%%
+rule 10.1
+    if [sun_orientation(Property, south) or sun_orientation(Property, east)]
+    then [create_fact(result(Property, sun_exposure, good))].
+
+rule 10.2
+    if [sun_orientation(Property, north) or sun_orientation(Property, west)]
+    then [create_fact(result(Property, sun_exposure, average))].
 
 %%%%%%%%%%% 11.Parking %%%%%%%%%%%
 
