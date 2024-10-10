@@ -241,16 +241,16 @@
 
 ## 9. Spaciousness
 
-- **Rule 9.1: Large areas**
+- **Rule 9.1: High spaciousness**
   - If the ratio area by number of rooms is high
   - Then the property has high spaciousness
 
-- **Rule 9.2: Medium areas**
+- **Rule 9.2: Medium spaciousness**
   - If the ratio area by number of rooms is medium
   - Then the property has medium spaciousness
 
 
-- **Rule 9.3: Small areas**
+- **Rule 9.3: Low spaciousness**
   - If the ratio area by number of rooms is low
   - Then the property has low spaciousness
 
