@@ -207,46 +207,54 @@
   - If a property has less than two nearby services,
   - Then it is classified as having a low service level.
 
-## 7. Infraestrutura de Conectividade
+## 7. Connectivity
 
-- **Regra 7.1: High Connectivity**
+- **Rule 7.1: High Connectivity**
   - If the property has optical fiber internet and smart appliances,
   - Then the connectivity level is high.
 
-- **Regra 7.2: Medium connectivity**
+- **Rule 7.2: Medium connectivity**
   - If the property has optical fiber internet but does not have smart appliances,
   - Then the connectivity is medium.
 
-- **Regra 7.3: Medium connectivity**
+- **Rule 7.3: Medium connectivity**
   - If the property does not have optical fiber internet but does have smart appliances,
   - Then the connectivity is medium
 
-- **Regra 7.4: Baixa Conectividade**
-  - Se o imóvel não possui internet de fibra nem recursos de casa inteligente,
-  - Então a conectividade é considerada baixa.
+- **Rule 7.4: Low connectivity**
+  - If the property does not have optical fiber internet or smart appliances
+  - Then the connectivity is low
 
-## 8. Vista Panorâmica
+## 8. View
 
-- **Regra 8.1: Possui Boa Vista**
-  - Se o imóvel estiver no >=4º andar e numa localização com praia,
-  - Então o imóvel possui uma boa vista.
+- **Rule 8.1: Good View**
+  - If the property is in the 4th floor or higher
+  - Then it has a good view
 
-## 9. Áreas das Divisões
+- **Rule 8.2: Average View**
+  - If the property is between the 2nd and 3rd floor
+  - Then it has an average view
 
-- **Regra 9.1: Large areas**
+- **Rule 8.3: Poor view**
+  - If the property is below the 2nd floor
+  - Then it has a poor view
+
+## 9. Spaciousness
+
+- **Rule 9.1: Large areas**
   - If the ratio area by number of rooms is high
-  - Then the property has large areas
+  - Then the property has high spaciousness
 
-- **Regra 9.2: Medium areas**
+- **Rule 9.2: Medium areas**
   - If the ratio area by number of rooms is medium
-  - Then the property has medium areas
+  - Then the property has medium spaciousness
 
 
-- **Regra 9.3: Small areas**
+- **Rule 9.3: Small areas**
   - If the ratio area by number of rooms is low
-  - Then the property has small areas
+  - Then the property has low spaciousness
 
-## 10. Orientação Solar
+## 10. Sun exposure
 
 - **Regra 10.1: Good Sun Exposure**
   - If the sun orientation of the property is south or east

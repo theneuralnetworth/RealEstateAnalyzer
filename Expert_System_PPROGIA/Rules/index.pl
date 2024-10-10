@@ -237,7 +237,7 @@ rule 8.1
     then [create_fact(result(Property, view, good))].
 
 rule 8.2
-    if [evaluate(floor_level(Property, <, 4))]
+    if [evaluate(floor_level(Property, >=, 2)) and evaluate(floor_level(Property, <, 4))]
     then [create_fact(result(Property, view, average))].
 
 rule 8.3
