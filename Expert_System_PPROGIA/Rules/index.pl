@@ -230,19 +230,39 @@ rule 7.4
     if [optical_fiber(Property, absent) and smart_appliances(Property, absent)]
     then [create_fact(result(Property, connectivity, low))].
 
-%%%%%%%%%%% 8.View %%%%%%%%%%%
+%%%%%%%%%%% 8.View quality %%%%%%%%%%%
 
 rule 8.1
-    if [evaluate(floor_level(Property, >=, 4))]
-    then [create_fact(result(Property, view, good))].
+    if [florest(Location, present) or beach(Location, present) and location_property(Location, Property)]
+    then [create_fact(view_quality(Property, high))].
 
 rule 8.2
-    if [evaluate(floor_level(Property, >=, 2)) and evaluate(floor_level(Property, <, 4))]
-    then [create_fact(result(Property, view, average))].
+    if [florest(Location, absent) and beach(Location, absent) and location_property(Location, Property)]
+    then [create_fact(view_quality(Property, low))].
 
 rule 8.3
-    if [evaluate(floor_level(Property, <, 2))]
-    then [create_fact(result(Property, view, bad))].
+    if [view_quality(Property, high) and property_type(Property, residence)]
+    then [create_fact(result(Property, view_quality, high))].
+
+rule 8.4
+    if [view_quality(Property, low) and property_type(Property, residence)]
+    then [create_fact(result(Property, view_quality, medium))].
+
+rule 8.5
+    if [view_quality(Property, low) and property_type(Property, apartment)]
+    then [create_fact(result(Property, view_quality, low))].
+
+rule 8.6
+    if [view_quality(Property, high) and evaluate(floor_level(Property, >=, 4))]
+    then [create_fact(result(Property, view_quality, high))].
+
+rule 8.7
+    if [view_quality(Property, high) and  evaluate(floor_level(Property, >=, 2)) and evaluate(floor_level(Property, <, 4))]
+    then [create_fact(result(Property, view_quality, medium))].
+
+rule 8.8
+    if [view_quality(Property, high) and evaluate(floor_level(Property, <, 2))]
+    then [create_fact(result(Property, view_quality, low))].
 
 %%%%%%%%%%% 9.Area size %%%%%%%%%%%
 
@@ -260,18 +280,22 @@ rule 9.3
 
 %%%%%%%%%%% 10.Sun Exposure %%%%%%%%%%%
 rule 10.1
-    if [sun_orientation(Property, south) or sun_orientation(Property, east)]
-    then [create_fact(result(Property, sun_exposure, good))].
+    if [sun_orientation(Property, south) and sun_orientation(Property, east)]
+    then [create_fact(result(Property, sun_exposure, high))].
 
 rule 10.2
-    if [sun_orientation(Property, north) or sun_orientation(Property, west)]
-    then [create_fact(result(Property, sun_exposure, average))].
+    if [(sun_orientation(Property, south) and not sun_orientation(Property, east)) or (sun_orientation(Property, east) and not sun_orientation(Property, south))]
+    then [create_fact(result(Property, sun_exposure, medium))].
+
+rule 10.3
+    if [(sun_orientation(Property, north) or sun_orientation(Property, west)) and (not sun_orientation(Property, south) or not sun_orientation(Property, east))]
+    then [create_fact(result(Property, sun_exposure, low))].
 
 %%%%%%%%%%% 11.Parking %%%%%%%%%%%
 
 % Rule 11.1: If the public parking availability in the location is low, then the property is classified as having low public parking.
 rule 11.1
-    if [parking(Location, low) and location_property(Location, Property)]
+    if [parking(Location, low) and location_property(Location, Property) ]
     then [create_fact(public_parking(Property, low))].
 
 % Rule 11.2: If the public parking availability in the location is medium, then the property is classified as having medium public parking.
