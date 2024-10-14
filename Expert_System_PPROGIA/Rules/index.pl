@@ -288,7 +288,7 @@ rule 10.2
     then [create_fact(result(Property, sun_exposure, medium))].
 
 rule 10.3
-    if [(sun_orientation(Property, north) or sun_orientation(Property, west)) and (not sun_orientation(Property, south) or not sun_orientation(Property, east))]
+    if [not sun_exposure(Property, high) and not sun_exposure(Property, medium)]
     then [create_fact(result(Property, sun_exposure, low))].
 
 %%%%%%%%%%% 11.Parking %%%%%%%%%%%

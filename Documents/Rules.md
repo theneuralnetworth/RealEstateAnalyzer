@@ -265,20 +265,23 @@
   - If the ratio area by number of rooms is medium
   - Then the property has medium spaciousness
 
-
 - **Rule 9.3: Low spaciousness**
   - If the ratio area by number of rooms is low
   - Then the property has low spaciousness
 
 ## 10. Sun exposure
 
-- **Regra 10.1: Good Sun Exposure**
-  - If the sun orientation of the property is south or east
-  - Then the sun exposure is good
+- **Rule 10.1: High Sun Exposure**
+  - If the property has south and east sun orientation
+  - Then it has high sun exposure
 
-- **Regra 10.2: Average Sun Exposure**
-  - If the sun orientation of the property is north or west
-  - Then the sun exposure is average
+- **Rule 10.2: Medium Sun Exposure**
+  - If the property has either south or east sun orientation
+  - Then it has medium sun exposure
+
+- **Rule 10.3: Low Sun Exposure**
+  - If the property does not have medium or high sun exposure
+  - Then it has low sun exposure
 
 ## 11. Parking Space
 
