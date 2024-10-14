@@ -21,7 +21,7 @@ fact_triggers_rules(ramps(_, _), [3.1,3.2,3.3]).
 % Maintenance
 fact_triggers_rules(swimming_pool(_, _), [4.1,4.2,4.3]).
 fact_triggers_rules(garden(_, _), [4.1,4.2,4.3]).
-fact_triggers_rules(commodities(_, _), [4.4,4.5,4.6]).
+fact_triggers_rules(amenities(_, _), [4.4,4.5,4.6]).
 fact_triggers_rules(property_condition(_, _), [4.4,4.5,4.6]).
 
 % Energy Efficiency

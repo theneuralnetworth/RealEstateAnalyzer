@@ -119,34 +119,34 @@ rule 3.3
 
 %%%%%%%%%%% 4.Maintenance %%%%%%%%%%%
 
-% Rule 4.1: If the property has either a swimming pool or a garden, but not both, then the property is classified as having medium commodities.
+% Rule 4.1: If the property has either a swimming pool or a garden, but not both, then the property is classified as having medium amenities.
 rule 4.1
     if [(swimming_pool(Property, present) and garden(Property, absent)) or (swimming_pool(Property, absent) and garden(Property, present))]
-    then [create_fact(commodities(Property, medium))].
+    then [create_fact(amenities(Property, medium))].
 
-% Rule 4.2: If the property has both a swimming pool and a garden, then the property is classified as having high commodities.
+% Rule 4.2: If the property has both a swimming pool and a garden, then the property is classified as having high amenities.
 rule 4.2
     if [swimming_pool(Property, present) and garden(Property, present)]
-    then [create_fact(commodities(Property, high))].
+    then [create_fact(amenities(Property, high))].
 
-% Rule 4.3: If the property has neither a swimming pool nor a garden, then the property is classified as having low commodities.
+% Rule 4.3: If the property has neither a swimming pool nor a garden, then the property is classified as having low amenities.
 rule 4.3
     if [swimming_pool(Property, absent) and garden(Property, absent)]
-    then [create_fact(commodities(Property, low))].
+    then [create_fact(amenities(Property, low))].
 
-% Rule 4.4: If the property is new or has low commodities, then it is classified as requiring low maintenance.
+% Rule 4.4: If the property is new or has low amenities, then it is classified as requiring low maintenance.
 rule 4.4
-    if [property_condition(Property, new) or commodities(Property, low)]
+    if [property_condition(Property, new) or amenities(Property, low)]
     then [create_fact(result(Property, maintenance, low))].
 
-% Rule 4.5: If the property is not new and has medium commodities, then it is classified as requiring medium maintenance.
+% Rule 4.5: If the property is not new and has medium amenities, then it is classified as requiring medium maintenance.
 rule 4.5
-    if [not property_condition(Property, new) and commodities(Property, medium)]
+    if [not property_condition(Property, new) and amenities(Property, medium)]
     then [create_fact(result(Property, maintenance, medium))].
 
-% Rule 4.6: If the property is not new and has high commodities, then it is classified as requiring high maintenance.
+% Rule 4.6: If the property is not new and has high amenities, then it is classified as requiring high maintenance.
 rule 4.6
-    if [not property_condition(Property, new) and commodities(Property, high)]
+    if [not property_condition(Property, new) and amenities(Property, high)]
     then [create_fact(result(Property, maintenance, high))].
 
 %%%%%%%%%%% 5.Energy Efficiency %%%%%%%%%%%

@@ -118,34 +118,34 @@
 
 ## 4. Maintenance
 
-- **Rule 4.1: Medium Commodities**
+- **Rule 4.1: Medium amenities**
 
   - If the property has either a swimming pool or a garden, but not both,
-  - Then the property is classified as having medium commodities.
+  - Then the property is classified as having medium amenities.
 
-- **Rule 4.2: High Commodities**
+- **Rule 4.2: High amenities**
 
   - If the property has both a swimming pool and a garden,
-  - Then the property is classified as having high commodities.
+  - Then the property is classified as having high amenities.
 
-- **Rule 4.3: Low Commodities**
+- **Rule 4.3: Low amenities**
 
   - If the property has neither a swimming pool nor a garden,
-  - Then the property is classified as having low commodities.
+  - Then the property is classified as having low amenities.
 
 - **Rule 4.4: Low Maintenance**
 
-  - If the property is new or has low commodities,
+  - If the property is new or has low amenities,
   - Then the property is classified as requiring low maintenance.
 
 - **Rule 4.5: Medium Maintenance**
 
-  - If the property is not new and has medium commodities,
+  - If the property is not new and has medium amenities,
   - Then the property is classified as requiring medium maintenance.
 
 - **Rule 4.6: High Maintenance**
 
-  - If the property is not new and has high commodities,
+  - If the property is not new and has high amenities,
   - Then the property is classified as requiring high maintenance.
 
 ## 5. Energy Efficiency
