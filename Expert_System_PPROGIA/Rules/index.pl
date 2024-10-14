@@ -233,11 +233,11 @@ rule 7.4
 %%%%%%%%%%% 8.View quality %%%%%%%%%%%
 
 rule 8.1
-    if [florest(Location, present) or beach(Location, present) and location_property(Location, Property)]
+    if [forest(Location, present) or beach(Location, present) and location_property(Location, Property)]
     then [create_fact(view_quality(Property, high))].
 
 rule 8.2
-    if [florest(Location, absent) and beach(Location, absent) and location_property(Location, Property)]
+    if [forest(Location, absent) and beach(Location, absent) and location_property(Location, Property)]
     then [create_fact(view_quality(Property, low))].
 
 rule 8.3
@@ -288,7 +288,7 @@ rule 10.2
     then [create_fact(result(Property, sun_exposure, medium))].
 
 rule 10.3
-    if [(sun_orientation(Property, north) or sun_orientation(Property, west)) and (not sun_orientation(Property, south) or not sun_orientation(Property, east))]
+    if [not sun_exposure(Property, high) and not sun_exposure(Property, medium)]
     then [create_fact(result(Property, sun_exposure, low))].
 
 %%%%%%%%%%% 11.Parking %%%%%%%%%%%
