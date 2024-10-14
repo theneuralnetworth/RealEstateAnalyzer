@@ -225,19 +225,35 @@
   - If the property does not have optical fiber internet or smart appliances
   - Then the connectivity is low
 
-## 8. View
+## 8. View Quality
 
-- **Rule 8.1: Good View**
-  - If the property is in the 4th floor or higher
-  - Then it has a good view
+- **Rule 8.1: High view quality**
+  - If the property location has a beach or a forest
+  - Then its view quality is high
 
-- **Rule 8.2: Average View**
-  - If the property is between the 2nd and 3rd floor
-  - Then it has an average view
+- **Rule 8.2: Low view quality**
+  - If the property location has no beach or forest
+  - Then its view quality is low
 
-- **Rule 8.3: Poor view**
-  - If the property is below the 2nd floor
-  - Then it has a poor view
+- **Rule 8.3: High view quality**
+  - If the property has a high view quality and it's a residence
+  - Then it has a high quality view
+
+- **Rule 8.4: Medium view quality**
+  - If the property has a low view quality and it's a residence
+  - Then it has medium view quality
+
+- **Rule 8.5: Low view quality**
+  - If the property has a low view quality and it's an appartment
+  - Then it has a low view quality
+
+- **Rule 8.6: High view quality**
+  - If the property has a high view quality and the floor level is >= 4
+  - Then it has a high view quality
+
+- **Rule 8.7: Medium view quality**
+  - If the property has a high view quality and the floor level is between 2 and 3 floor
+  - Then it has a medium view quality
 
 ## 9. Spaciousness
 

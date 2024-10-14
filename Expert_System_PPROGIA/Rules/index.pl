@@ -233,11 +233,11 @@ rule 7.4
 %%%%%%%%%%% 8.View quality %%%%%%%%%%%
 
 rule 8.1
-    if [florest(Location, present) or beach(Location, present) and location_property(Location, Property)]
+    if [forest(Location, present) or beach(Location, present) and location_property(Location, Property)]
     then [create_fact(view_quality(Property, high))].
 
 rule 8.2
-    if [florest(Location, absent) and beach(Location, absent) and location_property(Location, Property)]
+    if [forest(Location, absent) and beach(Location, absent) and location_property(Location, Property)]
     then [create_fact(view_quality(Property, low))].
 
 rule 8.3
