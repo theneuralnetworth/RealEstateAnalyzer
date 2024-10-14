@@ -78,10 +78,10 @@ fact_in_condition(F,[F]).
 fact_in_condition(F,[evaluate(F1)]):-F=..[H,H1|_],F1=..[H,H1|_].
 
 % verifies conditions
-verify_conditions([evaluate(X)],_):- 
+verify_conditions([evaluate(X)],_):-
 	evaluate(_,X).
 
-verify_conditions([evaluate(X) and evaluate(Y)],_):- 
+verify_conditions([evaluate(X) and evaluate(Y)],_):-
 	evaluate(_,X), evaluate(_,Y).
 
 verify_conditions([not evaluate(X) or Y],[not X|LF]):- !,

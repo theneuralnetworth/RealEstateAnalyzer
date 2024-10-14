@@ -102,5 +102,13 @@ fact(78, area_per_room(property_3, 16)).
 
 % Sun exposure
 fact(79, sun_orientation(property_1, south)).
-fact(80, sun_orientation(property_2, north)).
-fact(81, sun_orientation(property_3, east)).
+fact(80, sun_orientation(property_1, east)).
+fact(81, sun_orientation(property_2, north)).
+fact(82, sun_orientation(property_3, east)).
+
+fact(83, property_type(property_1, apartment)).
+fact(84, property_type(property_2, residence)).
+fact(85, property_type(property_3, apartment)).
+fact(86, forest(lisbon, present)).
+fact(87, forest(porto, absent)).
+fact(88, beach(faro, present)).
