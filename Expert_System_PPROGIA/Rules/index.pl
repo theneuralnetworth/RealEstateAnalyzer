@@ -193,12 +193,12 @@ rule 6.5
     if [location_property(Property, Location) and nearby_leisure_areas(Location, present)]
     then [create_fact(services(Property, nearby_leisure_areas))].
 
-/*
+
 % Rule 6.6: If a property has four or more nearby services, then it is classified as having a high service level.
 rule 6.6
-    if [evaluate(_, number_of_facts(services(Property, _), >=, 4))]
+    if [evaluate(count_services(Property, >=, 1))]
     then [create_fact(result(Property, services, medium))].
-
+/*
 % Rule 6.7: If a property has two or three nearby services, then it is classified as having a medium service level.
 rule 6.7
     if [evaluate(N, number_of_facts(services(Property, _), >=, 2)) and evaluate(N, number_of_facts(services(Property, _), <, 4))]

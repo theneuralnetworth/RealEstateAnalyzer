@@ -33,7 +33,7 @@ fact_triggers_rules(nearby_public_transport(_, _), [6.2]).
 fact_triggers_rules(nearby_hospitals(_, _), [6.3]).
 fact_triggers_rules(nearby_supermarkets(_, _), [6.4]).
 fact_triggers_rules(nearby_leisure_areas(_, _), [6.5]).
-%fact_triggers_rules(services(_, _), [6.6,6.7,6.8]).
+fact_triggers_rules(services(_,_), [6.6]).
 
 % Parking
 fact_triggers_rules(parking(_, _), [11.1,11.2,11.3]).

@@ -140,6 +140,10 @@ evaluate(N,P):-	P=..[Functor,Entidade,Operando,Valor],
 		fact(N,P1),
 		compare_values(Valor1,Operando,Valor).
 
+count_services(Property, Count):-
+	findall(Service, fact(_, services(Property, Service)), LServices),
+	length(LServices, Count).
+
 compare_values(V1,==,V):- V1==V.
 compare_values(V1,\==,V):- V1\==V.
 compare_values(V1,>,V):-V1>V.
