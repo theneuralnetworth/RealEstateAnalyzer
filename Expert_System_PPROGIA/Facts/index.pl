@@ -134,3 +134,13 @@ fact(114, image(18438091, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Im
 
 fact(115, sun_orientation(18438091, south)).
 fact(116, sun_orientation(18438091, east)).
+
+fact(117, forest(bonfim, present)).
+fact(118, location_property(18438091, bonfim)).
+fact(119, property_type(18438091, apartment)).
+fact(120, property_type(18484873, residence)).
+
+fact(121, optical_fiber(18438091, present)).
+fact(122, smart_appliances(18438091, present)).
+fact(123, optical_fiber(18484873, present)).
+fact(124, smart_appliances(18484873, absent)).
