@@ -48,10 +48,16 @@ fact_triggers_rules(year_construction(_, _), [12.1,12.2,12.3]).
 fact_triggers_rules(last_5_years_increased(_, _), [13.1,13.2,13.3]).
 
 % Connectivity
-fact_triggers_rules(connectivity(_, _), [7.1,7.2,7.3,7.4]).
+fact_triggers_rules(optical_fiber(_, _), [7.1,7.2,7.3,7.4]).
+fact_triggers_rules(smart_appliances(_,_), [7.1,7.2,7.3,7.4]).
 
 % View
-fact_triggers_rules(floor_level(_, _), [8.1]).
+fact_triggers_rules(forest(_,_), [8.1, 8.2]).
+fact_triggers_rules(beach(_,_), [8.1, 8.2]).
+fact_triggers_rules(location_property(_,_), [8.1, 8.2]).
+fact_triggers_rules(view_quality(_,_), [8.3,8.4,8.5,8.6,8.7,8.8]).
+fact_triggers_rules(property_type(_,_), [8.3,8.4,8.5]).
+fact_triggers_rules(floor_level(_, _), [8.6,8.7,8.8]).
 
 % Area
 fact_triggers_rules(area_per_room(_, _), [9.0,9.1,9.2,9.3]).
