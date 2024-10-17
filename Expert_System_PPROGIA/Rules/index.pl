@@ -4,17 +4,17 @@
 
 % Rule 1.1: If the crime rate in a location is low and the property is located there, then the property is classified as having a low crime rate.
 rule 1.1
-    if [location_crime_rate(Location, low) and location_property(Location, Property)]
+    if [location_crime_rate(Location, low) and location_property(Property, Location)]
     then [create_fact(property_crime_rate(Property, low))].
 
 % Rule 1.2: If the crime rate in a location is medium and the property is located there, then the property is classified as having a medium crime rate.
 rule 1.2
-    if [location_crime_rate(Location, medium) and location_property(Location, Property)]
+    if [location_crime_rate(Location, medium) and location_property(Property, Location)]
     then [create_fact(property_crime_rate(Property, medium))].
 
 % Rule 1.3: If the crime rate in a location is high and the property is located there, then the property is classified as having a high crime rate.
 rule 1.3
-    if [location_crime_rate(Location, high) and location_property(Location, Property)]
+    if [location_crime_rate(Location, high) and location_property(Property, Location)]
     then [create_fact(property_crime_rate(Property, high))].
 
 % Rule 1.4: If the property has a low crime rate and a security system is present, then the property is classified as having high security.
@@ -42,17 +42,17 @@ rule 1.7
 
 % Rule 2.1: If the property is located in an area with an airport and busy traffic, then the property will have a high noise level.
 rule 2.1
-    if [location_property(Location, Property) and aeroport(Location, present) and busy_traffic(Location, present)]
+    if [location_property(Property, Location) and aeroport(Location, present) and busy_traffic(Location, present)]
     then [create_fact(noise_level(Property, high))].
 
 % Rule 2.2: If the property is located in an area with an airport or busy traffic, then the property will have a medium noise level.
 rule 2.2
-    if [location_property(Location, Property) and ((aeroport(Location, present) and busy_traffic(Location, absent)) or (busy_traffic(Location, present) and aeroport(Location, absent) ))]
+    if [location_property(Property, Location) and ((aeroport(Location, present) and busy_traffic(Location, absent)) or (busy_traffic(Location, present) and aeroport(Location, absent) ))]
     then [create_fact(noise_level(Property, medium))].
 
 % Rule 2.3: If the property is not located in an area with an airport and does not have busy traffic, then the property will have a low noise level.
 rule 2.3
-    if [location_property(Location, Property) and (aeroport(Location, absent) and busy_traffic(Location, absent))]
+    if [location_property(Property, Location) and (aeroport(Location, absent) and busy_traffic(Location, absent))]
     then [create_fact(noise_level(Property, low))].
 
 % Rule 2.4: If the property has a high noise level and low acoustic insulation, then the property will have low sound comfort.
@@ -170,27 +170,27 @@ rule 5.3
 
 % Rule 6.1: If the property is located near schools, then it is classified as having the service "nearby schools".
 rule 6.1
-    if [location_property(Location, Property) and nearby_schools(Location, present)]
+    if [location_property(Property, Location) and nearby_schools(Location, present)]
     then [create_fact(services(Property, nearby_schools))].
 
 % Rule 6.2: If the property is located near public transport, then it is classified as having the service "nearby public transport".
 rule 6.2
-    if [location_property(Location, Property) and nearby_public_transport(Location, present)]
+    if [location_property(Property, Location) and nearby_public_transport(Location, present)]
     then [create_fact(services(Property, nearby_public_transport))].
 
 % Rule 6.3: If the property is located near hospitals, then it is classified as having the service "nearby hospitals".
 rule 6.3
-    if [location_property(Location, Property) and nearby_hospitals(Location, present)]
+    if [location_property(Property, Location) and nearby_hospitals(Location, present)]
     then [create_fact(services(Property, nearby_hospitals))].
 
 % Rule 6.4: If the property is located near supermarkets, then it is classified as having the service "nearby supermarkets".
 rule 6.4
-    if [location_property(Location, Property) and nearby_supermarkets(Location, present)]
+    if [location_property(Property, Location) and nearby_supermarkets(Location, present)]
     then [create_fact(services(Property, nearby_supermarkets))].
 
 % Rule 6.5: If the property is located near leisure areas, then it is classified as having the service "nearby leisure areas".
 rule 6.5
-    if [location_property(Location, Property) and nearby_leisure_areas(Location, present)]
+    if [location_property(Property, Location) and nearby_leisure_areas(Location, present)]
     then [create_fact(services(Property, nearby_leisure_areas))].
 
 /*
@@ -233,11 +233,11 @@ rule 7.4
 %%%%%%%%%%% 8.View quality %%%%%%%%%%%
 
 rule 8.1
-    if [forest(Location, present) or beach(Location, present) and location_property(Location, Property)]
+    if [forest(Location, present) or beach(Location, present) and location_property(Property, Location)]
     then [create_fact(view_quality(Property, high))].
 
 rule 8.2
-    if [forest(Location, absent) and beach(Location, absent) and location_property(Location, Property)]
+    if [forest(Location, absent) and beach(Location, absent) and location_property(Property, Location)]
     then [create_fact(view_quality(Property, low))].
 
 rule 8.3
@@ -295,17 +295,17 @@ rule 10.3
 
 % Rule 11.1: If the public parking availability in the location is low, then the property is classified as having low public parking.
 rule 11.1
-    if [parking(Location, low) and location_property(Location, Property) ]
+    if [parking(Location, low) and location_property(Property, Location) ]
     then [create_fact(public_parking(Property, low))].
 
 % Rule 11.2: If the public parking availability in the location is medium, then the property is classified as having medium public parking.
 rule 11.2
-    if [parking(Location, medium) and location_property(Location, Property)]
+    if [parking(Location, medium) and location_property(Property, Location)]
     then [create_fact(public_parking(Property, medium))].
 
 % Rule 11.3: If the public parking availability in the location is high, then the property is classified as having high public parking.
 rule 11.3
-    if [parking(Location, high) and location_property(Location, Property)]
+    if [parking(Location, high) and location_property(Property, Location)]
     then [create_fact(public_parking(Property, high))].
 
 % Rule 11.4: If the property has a garage and the public parking availability is either high or medium, then the property is classified as having high overall parking.
@@ -344,15 +344,15 @@ rule 12.3
 
 % Rule 13.1: If the property is located in an area where property values have increased by more than 50% in the last five years, the property is classified as having high potential for appreciation.
 rule 13.1
-    if [evaluate(last_5_years_increased(Location, >, 50)) and location_property(Location, Property)]
+    if [evaluate(last_5_years_increased(Location, >, 50)) and location_property(Property, Location)]
     then [create_fact(result(Property, potential_appreciation, high))].
 
 % Rule 13.2: If the property is located in an area where property values have increased by between 20% and 50% in the last five years, the property is classified as having medium potential for appreciation.
 rule 13.2
-    if [evaluate(last_5_years_increased(Location, >=, 20)) and (evaluate(last_5_years_increased(Location, =<, 50)) and location_property(Location, Property))]
+    if [evaluate(last_5_years_increased(Location, >=, 20)) and (evaluate(last_5_years_increased(Location, =<, 50)) and location_property(Property, Location))]
     then [create_fact(result(Property, potential_appreciation, medium))].
 
 % Rule 13.3: If the property is located in an area where property values have increased by less than 20% in the last five years, the property is classified as having low potential for appreciation.
 rule 13.3
-    if [evaluate(last_5_years_increased(Location, <, 20)) and location_property(Location, Property)]
+    if [evaluate(last_5_years_increased(Location, <, 20)) and location_property(Property, Location)]
     then [create_fact(result(Property, potential_appreciation, low))].
