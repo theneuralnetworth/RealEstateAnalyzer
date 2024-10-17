@@ -33,7 +33,8 @@ fact_triggers_rules(nearby_public_transport(_, _), [6.2]).
 fact_triggers_rules(nearby_hospitals(_, _), [6.3]).
 fact_triggers_rules(nearby_supermarkets(_, _), [6.4]).
 fact_triggers_rules(nearby_leisure_areas(_, _), [6.5]).
-%fact_triggers_rules(services(_, _), [6.6,6.7,6.8]).
+fact_triggers_rules(services(_, _), [6.6]).
+fact_triggers_rules(number_services(_,_), [6.7,6.8,6.9]).
 
 % Parking
 fact_triggers_rules(parking(_, _), [11.1,11.2,11.3]).
@@ -45,7 +46,6 @@ fact_triggers_rules(year_construction(_, _), [12.1,12.2,12.3]).
 
 % Potential for Appreciation
 fact_triggers_rules(last_5_years_increased(_, _), [13.1,13.2,13.3]).
-fact_triggers_rules(services(_, _), [6.6,6.7,6.8]).
 
 % Connectivity
 fact_triggers_rules(connectivity(_, _), [7.1,7.2,7.3,7.4]).
@@ -58,3 +58,20 @@ fact_triggers_rules(area_per_room(_, _), [9.0,9.1,9.2,9.3]).
 
 % Sun exposure
 fact_triggers_rules(sun_orientation(_, _), [10.1, 10.2]).
+
+% Score
+fact_triggers_rules(meta_score(_,_), [14.1,14.2,14.3,14.4,14.5,14.6,14.7,14.8,14.9,14.10,14.11,14.12,14.13]).
+fact_triggers_rules(result(_,security,_), [14.1]).
+fact_triggers_rules(result(_,comfort,_), [14.2]).
+fact_triggers_rules(result(_,accessibility,_), [14.3]).
+fact_triggers_rules(result(_,maintenance,_), [14.4]).
+fact_triggers_rules(result(_,energy_efficiency,_), [14.5]).
+fact_triggers_rules(result(_,services,_), [14.6]).
+fact_triggers_rules(result(_,connectivity,_), [14.7]).
+fact_triggers_rules(result(_,view_quality,_), [14.8]).
+fact_triggers_rules(result(_,spaciousness,_), [14.9]).
+fact_triggers_rules(result(_,sun_exposure,_), [14.10]).
+fact_triggers_rules(result(_,parking,_), [14.11]).
+fact_triggers_rules(result(_,state,_), [14.12]).
+fact_triggers_rules(result(_,potential_appreciation,_), [14.13,14.14]).
+fact_triggers_rules(score(_,_,_), [14.14]).

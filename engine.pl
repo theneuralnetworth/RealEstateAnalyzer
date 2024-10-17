@@ -129,11 +129,46 @@ create_fact(F,_,_):-
 	fact(_,F),!.
 
 create_fact(F,ID,LFacts):-
+	F=..[V1,V2,Z],
+	Z=..[operation,O,X,L],
+	operate(O,X,L,Result),
+	FinalFact =..[V1,V2,Result],
+	create_fact(FinalFact,ID,LFacts).
+
+create_fact(F,ID,LFacts):-
+	F=..[V1,V2,V3,Z],
+	Z=..[operation,O,X,L],
+	operate(O,X,L,Result),
+	FinalFact =..[V1,V2,V3,Result],
+	create_fact(FinalFact,ID,LFacts).
+
+create_fact(F,ID,LFacts):-
 	retract(last_fact(N1)),
 	N is N1+1,
 	asserta(last_fact(N)),
 	assertz(justifies(N,ID,LFacts)),
 	assertz(fact(N,F)),!.
+
+operate(multi,X,L,Result):-
+	multiplication(X,L,Result).
+
+operate(count,X,L,Result):-
+	count(X,L,Result).
+
+operate(sum_all,X,L,Result):-
+	sum_all(X,L,Result).
+
+multiplication(X, Y, Result) :-
+	Result is X * Y.
+
+sum_all(X, _, Result) :-
+	X=..[_,_,_,V],
+	findall(V, fact(_,X), Values),
+    sum_list(Values, Result).
+
+count(X, _, Result) :-
+	findall(_, fact(_, X), LFacts),
+	length(LFacts, Result).
 
 evaluate(N,P):-	P=..[Functor,Entidade,Operando,Valor],
 		P1=..[Functor,Entidade,Valor1],

@@ -50,9 +50,9 @@ fact(38, energy_rating(property_2, e)).
 fact(39, energy_rating(property_3, a)).
 
 % Services
-fact(40, nearby_schools(lisboa, present)).
+fact(40, nearby_schools(lisboa, absent)).
 fact(41, nearby_schools(porto, present)).
-fact(42, nearby_schools(faro, absent)).
+fact(42, nearby_schools(faro, present)).
 fact(43, nearby_public_transport(lisboa, absent)).
 fact(44, nearby_public_transport(porto, absent)).
 fact(45, nearby_public_transport(faro, present)).
@@ -112,3 +112,7 @@ fact(85, property_type(property_3, apartment)).
 fact(86, forest(lisbon, present)).
 fact(87, forest(porto, absent)).
 fact(88, beach(faro, present)).
+
+fact(89, meta_score(high,1)).
+fact(90, meta_score(medium,0.7)).
+fact(91, meta_score(low,0.4)).

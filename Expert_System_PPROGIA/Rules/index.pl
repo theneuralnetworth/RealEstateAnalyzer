@@ -193,22 +193,25 @@ rule 6.5
     if [location_property(Location, Property) and nearby_leisure_areas(Location, present)]
     then [create_fact(services(Property, nearby_leisure_areas))].
 
-/*
-% Rule 6.6: If a property has four or more nearby services, then it is classified as having a high service level.
+% Rule 6.6: Calculates the number of services near the property based on the facts created by
 rule 6.6
-    if [evaluate(_, number_of_facts(services(Property, _), >=, 4))]
-    then [create_fact(result(Property, services, medium))].
+    if [services(Property,_)]
+    then [create_fact(number_services(Property, operation(count,services(Property,_), _)))].
 
-% Rule 6.7: If a property has two or three nearby services, then it is classified as having a medium service level.
+% Rule 6.7: If a property has four or more nearby services, then it is classified as having a high service level.
 rule 6.7
-    if [evaluate(N, number_of_facts(services(Property, _), >=, 2)) and evaluate(N, number_of_facts(services(Property, _), <, 4))]
+    if [evaluate(number_services(Property, >, 4))]
+    then [create_fact(result(Property, services, high))].
+
+% Rule 6.8: If a property has two or three nearby services, then it is classified as having a medium service level.
+rule 6.8
+    if [evaluate(number_services(Property, >=, 2)) and evaluate(number_services(Property, =<, 4))]
     then [create_fact(result(Property, services, medium))].
 
-% Rule 6.8: If a property has less than two nearby services, then it is classified as having a low service level.
-rule 6.8
-    if [evaluate(_, number_of_facts(services(Property, _), <, 2))]
-    then [create_fact(result(Property, services, medium))].
-*/
+% Rule 6.9: If a property has less than two nearby services, then it is classified as having a low service level.
+rule 6.9
+    if [evaluate(number_services(Property, <, 2))]
+    then [create_fact(result(Property, services, low))].
 
 % Rule 7.1: If the property has optical fiber and smart appliances, then the property is classified as having high connectivity.
 rule 7.1
@@ -356,3 +359,74 @@ rule 13.2
 rule 13.3
     if [evaluate(last_5_years_increased(Location, <, 20)) and location_property(Location, Property)]
     then [create_fact(result(Property, potential_appreciation, low))].
+
+%%%%%%%%%%% 14.Score %%%%%%%%%%%
+
+% Rule 14.1: Calculates the score for security based on the meta_score of the result. The weight for security is multiplied by 10.
+rule 14.1
+    if [result(Property, security, X) and meta_score(X,P)]
+    then [create_fact(score(Property, security, operation(multi,P, 10)))].
+
+% Rule 14.2: Calculates the score for comfort based on the meta_score of the result. The weight for comfort is multiplied by 15.
+rule 14.2
+    if [result(Property, comfort, X) and meta_score(X,P)]
+    then [create_fact(score(Property, comfort, operation(multi,P, 15)))].
+
+% Rule 14.3: Calculates the score for accessibility based on the meta_score of the result. The weight for accessibility is multiplied by 8.
+rule 14.3
+    if [result(Property, accessibility, X) and meta_score(X,P)]
+    then [create_fact(score(Property, accessibility, operation(multi,P, 8)))].
+
+% Rule 14.4: Calculates the score for maintenance based on the meta_score of the result. The weight for maintenance is multiplied by 12.
+rule 14.4
+    if [result(Property, maintenance, X) and meta_score(X,P)]
+    then [create_fact(score(Property, maintenance, operation(multi,P, 12)))].
+
+% Rule 14.5: Calculates the score for energy efficiency based on the meta_score of the result. The weight for energy efficiency is multiplied by 10.
+rule 14.5
+    if [result(Property, energy_efficiency, X) and meta_score(X,P)]
+    then [create_fact(score(Property, energy_efficiency, operation(multi,P, 10)))].
+
+% Rule 14.6: Calculates the score for services based on the meta_score of the result. The weight for services is multiplied by 10.
+rule 14.6
+    if [result(Property, services, X) and meta_score(X,P)]
+    then [create_fact(score(Property, services, operation(multi,P, 10)))].
+
+% Rule 14.7: Calculates the score for connectivity based on the meta_score of the result. The weight for connectivity is multiplied by 7.
+rule 14.7
+    if [result(Property, connectivity, X) and meta_score(X,P)]
+    then [create_fact(score(Property, connectivity, operation(multi,P, 7)))].
+
+% Rule 14.8: Calculates the score for view quality based on the meta_score of the result. The weight for view quality is multiplied by 8.
+rule 14.8
+    if [result(Property, view_quality, X) and meta_score(X,P)]
+    then [create_fact(score(Property, view_quality, operation(multi,P, 8)))].
+
+% Rule 14.9: Calculates the score for spaciousness based on the meta_score of the result. The weight for spaciousness is multiplied by 10.
+rule 14.9
+    if [result(Property, spaciousness, X) and meta_score(X,P)]
+    then [create_fact(score(Property, spaciousness, operation(multi,P, 10)))].
+
+% Rule 14.10: Calculates the score for sun exposure based on the meta_score of the result. The weight for sun exposure is multiplied by 5.
+rule 14.10
+    if [result(Property, sun_exposure, X) and meta_score(X,P)]
+    then [create_fact(score(Property, sun_exposure, operation(multi,P, 5)))].
+
+% Rule 14.11: Calculates the score for parking based on the meta_score of the result. The weight for parking is multiplied by 5.
+rule 14.11
+    if [result(Property, parking, X) and meta_score(X,P)]
+    then [create_fact(score(Property, parking, operation(multi,P, 5)))].
+
+% Rule 14.12: Calculates the score for state of the property based on the meta_score of the result. The weight for the state is multiplied by 5.
+rule 14.12
+    if [result(Property, state, X) and meta_score(X,P)]
+    then [create_fact(score(Property, state, operation(multi,P, 5)))].
+
+% Rule 14.13: Calculates the score for potential appreciation based on the meta_score of the result. The weight for potential appreciation is multiplied by 5.
+rule 14.13
+    if [result(Property, potential_appreciation, X) and meta_score(X,P)]
+    then [create_fact(score(Property, potential_appreciation, operation(multi,P, 5)))].
+
+rule 14.14
+    if [score(Property,_,_) and score(Property,security,_) and score(Property,comfort,_) and score(Property,accessibility,_) and score(Property,maintenance,_) and score(Property,energy_efficiency,_) and score(Property,services,_)  and score(Property,parking,_) and score(Property,state,_) and score(Property,potential_appreciation,_)]
+    then [create_fact(final_score(Property, operation(sum_all,score(Property,_,_), _)))].
