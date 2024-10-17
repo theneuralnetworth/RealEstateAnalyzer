@@ -131,3 +131,6 @@ fact(111, image(18438091, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6In
 fact(112, image(18438091, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InVjdjZlczVtdGRwNzEtQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.G6ZA_LQ6oPUH6ix42boaf0ey8nIHMarUqG4Fx4mR-CE/image;s=655x491;q=80')).
 fact(113, image(18438091, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Inc2em53cWJiamQ3ajItQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.ofK3Mwv5w177VDzXtSkOjcszoR6_6CA5o9yP3ticHEY/image;s=655x491;q=80')).
 fact(114, image(18438091, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImNudThvdTVycHl4OS1BUFQiLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.hUuSwVYLOBnLOq-_4DbZrYQ-M0BmS9NF8cW0z1uUcMg/image;s=655x491;q=80')).
+
+fact(115, sun_orientation(18438091, south)).
+fact(116, sun_orientation(18438091, east)).
