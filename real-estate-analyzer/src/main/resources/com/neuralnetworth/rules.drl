@@ -1,15 +1,43 @@
-
 package com.neuralnetworth;
 
-unit MeasurementUnit;
+import com.neuralnetworth.Model.Location;
+import com.neuralnetworth.Model.Property;
 
-rule "will execute per each Measurement having ID color"
-when
-	/measurements[ id == "color", $colorVal : val ]
-then
-	controlSet.add($colorVal);
+// Rule 1.1: If the crime rate in a location is low and the property is located there, then update the property to have a low crime rate.
+rule "Rule 1.1 - Low Crime Rate"
+    when
+        $location : Location(crimeRate == "low")
+        $property : Property(location == $location)
+    then
+        $property.setCrimeRate("low");
+        update($property);
 end
 
-query FindColor
-    $m: /measurements[ id == "color" ]
+// Rule 1.2: If the crime rate in a location is medium and the property is located there, then update the property to have a medium crime rate.
+rule "Rule 1.2 - Medium Crime Rate"
+    when
+        $location : Location(crimeRate == "medium")
+        $property : Property(location == $location)
+    then
+        $property.setCrimeRate("medium");
+        update($property);
+end
+
+// Rule 1.3: If the crime rate in a location is high and the property is located there, then update the property to have a high crime rate.
+rule "Rule 1.3 - High Crime Rate"
+    when
+        $location : Location(crimeRate == "high")
+        $property : Property(location == $location)
+    then
+        $property.setCrimeRate("high");
+        update($property);
+end
+
+// Rule 1.4: If the property has a low crime rate and a security system is present, then update the property to have high security.
+rule "Rule 1.4 - High Security"
+    when
+        $property : Property(crimeRate == "low", securitySystem == "present")
+    then
+        $property.setSecurity("high");
+        update($property);
 end
