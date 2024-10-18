@@ -6,7 +6,7 @@
 
 :- http_handler(root(realestates), handle_real_estates, []).
 
-server(Port) :-
+start_server(Port) :-
     http_server(http_dispatch, [port(Port)]).
 
 handle_real_estates(Request) :-
@@ -24,7 +24,7 @@ get_real_estates(Preferences, RealEstates) :-
     load_kb,
     start_engine,
     findall(Dict,
-        (fact(_, Fact), 
+        (fact(_, Fact),
          fact_to_dict(Fact, Dict)),
         RealEstates).
 
@@ -42,4 +42,9 @@ arg_to_json(Arg, JsonArg) :-
     ->  JsonArg = "unbound"
     ;   JsonArg = Arg).
 
-:- initialization(server(8080)).
+:- initialization(main).
+
+main :-
+    start_server(8000),
+    write('Server listening on http://localhost:8000.'), nl,
+    catch((repeat, sleep(1000000000)), _E, true).

@@ -37,7 +37,6 @@ namespace RealEstateAPI.Controllers
                     var result = await response.Content.ReadAsStringAsync();
                     var prologResult = JsonConvert.DeserializeObject<PrologResultDTO>(result);
 
-
                     List<RealEstate> realEstates = new List<RealEstate>();
 
                     foreach (var item in prologResult.RealEstates)
