@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using RealEstateAPI.Model;
 using RealEstateAPI.DTO;
 using System.Text;
+using System.Globalization;
 
 namespace RealEstateAPI.Controllers
 {
@@ -59,7 +60,8 @@ namespace RealEstateAPI.Controllers
                     {
                         case "final_score":
                             var estate = realEstates.Find(x => x.ID == item.Args[0]);
-                            estate.FinalScore = Double.Parse(item.Args[1]);
+                            estate.FinalScore = Double.Parse(item.Args[1], CultureInfo.InvariantCulture);
+                            //estate.FinalScore = Double.Parse(item.Args[1]);
                             break;
                     
                     }
