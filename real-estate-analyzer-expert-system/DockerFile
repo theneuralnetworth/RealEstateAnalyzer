@@ -1,4 +1,4 @@
 FROM swipl:latest
 WORKDIR /app
 COPY . .
-CMD ["swipl", "engine_server.pl"]
+CMD ["swipl", "-s", "engine_server.pl"]

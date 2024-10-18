@@ -2,6 +2,7 @@ namespace RealEstateAPI.DTO
 {
     public class PreferencesDTO
     {
-        public string? location { get; set; }
+        public float? location { get; set; }
+        public float? security { get; set; }
     }
 }
