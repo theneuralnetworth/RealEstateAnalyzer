@@ -1,0 +1,29 @@
+version: '3.8'
+services:
+  webapi:
+    build:
+      context: ./real-estate-pprogia-webapi/RealEstateAPI
+    ports:
+      - "5182:80"
+    networks:
+      - app-network
+
+  web:
+    build:
+      context: ./real-estate-web
+    ports:
+      - "3000:80"
+    networks:
+      - app-network
+
+  prolog:
+    build:
+      context: ./Expert_System_PPROGIA
+    ports:
+      - "8080:80"
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge

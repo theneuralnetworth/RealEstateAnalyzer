@@ -37,3 +37,21 @@ To run the `engine.pl`, follow these steps:
 ```
 
 7. **Follow the Prompts**: Interact with the system as instructed by the output prompts.
+
+# Running the web api
+
+1. **Open the Terminal or Command Prompt**: Navigate to the directory where your web api folder is located.
+
+2. **Start api**: Run the command `dotnet run` to start the web api.
+
+3. **Open api**: [http://localhost:5182](http://localhost:5182) to view it in your browser.
+
+# Running the web application
+
+1. **Open the Terminal or Command Prompt**: Navigate to the directory where your web app folder is located.
+
+2. **Start app**: Run the command `npm start` to start the web app.
+
+3. **Open app**: [http://localhost:3000](http://localhost:3000) to view it in your browser.
+
+The page will reload when you make changes.

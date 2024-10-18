@@ -1,0 +1,4 @@
+FROM swi-prolog:latest
+WORKDIR /app
+COPY . .
+CMD ["swipl", "engine_server.pl"]

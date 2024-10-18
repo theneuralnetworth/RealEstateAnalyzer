@@ -9,9 +9,9 @@
 
 % load knowledge base
 load_kb:-
-	consult('Expert_System_PPROGIA/Metaknowledge/index.pl'),
-	consult('Expert_System_PPROGIA/Rules/index.pl'),
-    consult('Expert_System_PPROGIA/Facts/index.pl').
+	consult('Metaknowledge/index.pl'),
+	consult('Rules/index.pl'),
+    consult('Facts/index.pl').
 
 % counts the number of facts
 number_of_facts(Total) :-

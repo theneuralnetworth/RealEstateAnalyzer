@@ -16,7 +16,7 @@ handle_real_estates(Request) :-
 
 process_request(DictIn, DictOut) :-
     (   _{preferences: Preferences} :< DictIn
-    ->  get_real_estates(Preferences, RealEstates),
+    -> get_real_estates(Preferences, RealEstates),
         DictOut = _{realEstates: RealEstates}
     ; DictOut = _{error: "Missing preferences"}).
 
@@ -30,6 +30,16 @@ get_real_estates(Preferences, RealEstates) :-
 
 fact_to_dict(Fact, Dict) :-
     Fact =.. [Predicate | Args],
-    Dict = _{type: Predicate, args: Args}.
+    maplist(arg_to_json, Args, JsonArgs),
+    Dict = _{type: Predicate, args: JsonArgs}.
+
+arg_to_json(Arg, JsonArg) :-
+    (   atom(Arg)
+    ->  JsonArg = Arg
+    ;   number(Arg)
+    ->  JsonArg = Arg
+    ;   var(Arg)
+    ->  JsonArg = "unbound"
+    ;   JsonArg = Arg).
 
 :- initialization(server(8080)).
