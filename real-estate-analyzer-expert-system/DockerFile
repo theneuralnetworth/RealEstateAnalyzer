@@ -1,4 +1,4 @@
-FROM swi-prolog:latest
+FROM swipl:latest
 WORKDIR /app
 COPY . .
 CMD ["swipl", "engine_server.pl"]
