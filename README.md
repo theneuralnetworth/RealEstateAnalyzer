@@ -11,7 +11,7 @@ Real estate buyers struggle to find properties that match their unique preferenc
 - Implement a real-time updating mechanism that reflects changes in user-defined weights for characteristics such as location, price, and size.
 - Provide an expert system that evaluates properties based on user-defined criteria, ensuring accurate and relevant recommendations.
 
-## Running the `engine.pl`
+## Running the Prolog inference engine
 
 To run the `engine.pl`, follow these steps:
 
@@ -38,20 +38,27 @@ To run the `engine.pl`, follow these steps:
 
 7. **Follow the Prompts**: Interact with the system as instructed by the output prompts.
 
-# Running the web api
+## Running the WebAPI
 
 1. **Open the Terminal or Command Prompt**: Navigate to the directory where your web api folder is located.
-
 2. **Start api**: Run the command `dotnet run` to start the web api.
-
 3. **Open api**: [http://localhost:5182](http://localhost:5182) to view it in your browser.
 
-# Running the web application
+## Running the web application
 
 1. **Open the Terminal or Command Prompt**: Navigate to the directory where your web app folder is located.
-
 2. **Start app**: Run the command `npm start` to start the web app.
-
 3. **Open app**: [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 The page will reload when you make changes.
+
+## Deliverables
+
+| Deliverable | Class | Date | Status | Grade |
+|---|---|---|---|---|
+| Blog | `ENGCIA` & `PPROGIA` | 8th week | `WIP` | 10% |
+| Relatório prévio | `ENGCIA` & `PPROGIA` | 5th week | `delivered` | 15% |
+| Relatório Final | `ENGCIA` & `PPROGIA` | November 7th | `WIP`| 15% |
+| Expert System | `ENGCIA` & `PPROGIA` | November 7th | `WIP`| 50% |
+| DemoDay Pitch | `ENGCIA` & `PPROGIA` | 8th week | `WIP` | 10% |
+| Artigo Científico | `PPROGIA` |  | `` | 30% |
