@@ -1,15 +1,21 @@
 
 package com.neuralnetworth;
+unit PropertyRules;
 
-unit MeasurementUnit;
+import org.drools.ruleunits.api.RuleUnitData;
+import org.drools.ruleunits.api.DataStream;
+import com.neuralnetworth.Property;
+import com.neuralnetworth.Location;
+import com.neuralnetworth.PropertyFact;
 
-rule "will execute per each Measurement having ID color"
+rule "Low crime rate"
 when
-	/measurements[ id == "color", $colorVal : val ]
+    $location: Location(crimeRate == "low")
+    $property: Property(location == $location)
 then
-	controlSet.add($colorVal);
+    insert(new PropertyFact("crimeRate", $property, "low"));
 end
 
-query FindColor
-    $m: /measurements[ id == "color" ]
+query "FindBestProperties"
+    $propertyFact: PropertyFact(attribute == "crimeRate", value == "low")
 end
