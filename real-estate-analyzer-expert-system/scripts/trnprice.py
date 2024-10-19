@@ -2,6 +2,7 @@ import re
 import random
 import json
 import os
+import random
 
 # Function to read JSON data from a file in a directory
 def read_json_from_file(file_path):
@@ -10,7 +11,12 @@ def read_json_from_file(file_path):
 
 # Function to process the data and generate Prolog facts
 def generate_prolog_facts(data, output_file_path):
-    fact_counter = 73  # Counter to track the fact number globally
+    fact_counter = 91  # Counter to track the fact number globally
+
+
+
+
+
     
     prolog_facts = []
     
@@ -89,11 +95,26 @@ def generate_prolog_facts(data, output_file_path):
         if year_of_construction:
             prolog_facts.append(f"fact({fact_counter}, year_construction({id_imovel}, {year_of_construction})).")
         else:
-            prolog_facts.append(f"fact({fact_counter}, year_construction({id_imovel}, absent)).")
+            random_year = random.randint(1980, 2020)
+            prolog_facts.append(f"fact({fact_counter}, year_construction({id_imovel}, {random_year})).")
         fact_counter += 1
         
         # Default fact for garage
-        prolog_facts.append(f"fact({fact_counter}, garage({id_imovel}, absent)).")
+        #prolog_facts.append(f"fact({fact_counter}, garage({id_imovel}, absent)).")
+        #fact_counter += 1
+
+        random_garage = random.choice(['present', 'absent'])
+        prolog_facts.append(f"fact({fact_counter}, garage({id_imovel}, {random_garage})).")
+        fact_counter += 1
+
+        
+        #random_optical = random.choice(['present', 'absent'], weights=[70, 30], k=1)[0]
+        random_optical = random.choices(['present', 'absent'], weights=[70, 30], k=1)[0]
+        prolog_facts.append(f"fact({fact_counter}, optical_fiber({id_imovel}, {random_optical})).")
+        fact_counter += 1
+
+        random_smart = random.choice(['present', 'absent'])
+        prolog_facts.append(f"fact({fact_counter}, smart_appliances({id_imovel}, {random_smart})).")
         fact_counter += 1
         
         # Random floor level between 1 and 6
@@ -127,9 +148,9 @@ def generate_prolog_facts(data, output_file_path):
             output_file.write(fact + '\n')
 
 # Generate the Prolog facts and write to a file
-directory = '/Users/luispaula/Desktop/MEIA/RealEstateAnalyzer/Expert_System_PPROGIA/ImoveisData/'  # Directory where the JSON file is located
+directory = '../ImoveisData/'  # Directory where the JSON file is located
 file_name = 'formatted_property_data.json'  # Name of the JSON file
-output_file = '/Users/luispaula/Desktop/MEIA/RealEstateAnalyzer/Expert_System_PPROGIA/ImoveisData/prolog_facts.pl'  # Output Prolog file
+output_file = '../ImoveisData/prolog_facts.pl'  # Output Prolog file
 file_path = os.path.join(directory, file_name)
 
 # Read the JSON data from the file

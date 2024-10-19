@@ -1,118 +1,142 @@
 :- dynamic fact/2.
 
-% Security
-fact(1, location_crime_rate(lisboa, low)).
-fact(2, location_crime_rate(porto, medium)).
-fact(3, location_crime_rate(faro, high)).
-fact(4, location_property(property_1, lisboa)).
-fact(5, location_property(property_2, porto)).
-fact(6, location_property(property_3, faro)).
-fact(7, security_system(property_1, present)).
-fact(8, security_system(property_2, absent)).
-fact(9, security_system(property_3, absent)).
+fact(1, location_crime_rate('aldoar, foz do douro e nevogilde', low)).
+fact(2, nearby_schools('aldoar, foz do douro e nevogilde', present)).
+fact(3, nearby_public_transport('aldoar, foz do douro e nevogilde', present)).
+fact(4, nearby_hospitals('aldoar, foz do douro e nevogilde', absent)).
+fact(5, nearby_supermarkets('aldoar, foz do douro e nevogilde', present)).
+fact(6, nearby_leisure_areas('aldoar, foz do douro e nevogilde', present)).
+fact(7, parking('aldoar, foz do douro e nevogilde', medium)).
+fact(8, last_5_years_increased('aldoar, foz do douro e nevogilde', 40)).
+fact(9, forest('aldoar, foz do douro e nevogilde', absent)).
+fact(10, beach('aldoar, foz do douro e nevogilde', present)).
+fact(11, airport('aldoar, foz do douro e nevogilde', absent)).
+fact(12, busy_traffic('aldoar, foz do douro e nevogilde', absent)).
 
-% Confort
-fact(10, aeroport(porto, present)).
-fact(11, aeroport(lisboa, absent)).
-fact(12, aeroport(faro, absent)).
-fact(13, busy_traffic(porto, present)).
-fact(14, busy_traffic(lisboa, present)).
-fact(15, busy_traffic(faro, absent)).
-fact(16, acoustic_insulation(property_1, high)).
-fact(17, acoustic_insulation(property_2, low)).
-fact(18, acoustic_insulation(property_3, high)).
-fact(19, thermal_comfort(property_1, high)).
-fact(20, thermal_comfort(property_2, low)).
-fact(21, thermal_comfort(property_3, high)).
+fact(13, location_crime_rate('bonfim', medium)).
+fact(14, nearby_schools('bonfim', present)).
+fact(15, nearby_public_transport('bonfim', present)).
+fact(16, nearby_hospitals('bonfim', present)).
+fact(17, nearby_supermarkets('bonfim', present)).
+fact(18, nearby_leisure_areas('bonfim', absent)).
+fact(19, parking('bonfim', low)).
+fact(20, last_5_years_increased('bonfim', 30)).
+fact(21, forest('bonfim', absent)).
+fact(22, beach('bonfim', absent)).
+fact(23, airport('bonfim', absent)).
+fact(24, busy_traffic('bonfim', absent)).
 
-% Accessibility
-fact(22, elevator(property_1, absent)).
-fact(23, elevator(property_2, absent)).
-fact(24, elevator(property_3, present)).
-fact(25, ramps(property_1, absent)).
-fact(26, ramps(property_2, present)).
-fact(27, ramps(property_3, present)).
+fact(25, location_crime_rate('campanhã', medium)).
+fact(26, nearby_schools('campanhã', absent)).
+fact(27, nearby_public_transport('campanhã', present)).
+fact(28, nearby_hospitals('campanhã', absent)).
+fact(29, nearby_supermarkets('campanhã', present)).
+fact(30, nearby_leisure_areas('campanhã', absent)).
+fact(31, parking('campanhã', high)).
+fact(32, last_5_years_increased('campanhã', 25)).
+fact(33, forest('campanhã', absent)).
+fact(34, beach('campanhã', absent)).
+fact(35, airport('campanhã', absent)).
+fact(36, busy_traffic('campanhã', present)).
 
-% Maintenance
-fact(28, swimming_pool(property_1, absent)).
-fact(29, swimming_pool(property_2, absent)).
-fact(30, swimming_pool(property_3, present)).
-fact(31, garden(property_1, absent)).
-fact(32, garden(property_2, present)).
-fact(33, garden(property_3, present)).
-fact(34, property_condition(property_1, regular)).
-fact(35, property_condition(property_2, new)).
-fact(36, property_condition(property_3, reform)).
+fact(37, location_crime_rate('cedofeita, ildefonso, sé, miragaia, nicolau, vitória', low)).
+fact(38, nearby_schools('cedofeita, ildefonso, sé, miragaia, nicolau, vitória', present)).
+fact(39, nearby_public_transport('cedofeita, ildefonso, sé, miragaia, nicolau, vitória', present)).
+fact(40, nearby_hospitals('cedofeita, ildefonso, sé, miragaia, nicolau, vitória', present)).
+fact(41, nearby_supermarkets('cedofeita, ildefonso, sé, miragaia, nicolau, vitória', present)).
+fact(42, nearby_leisure_areas('cedofeita, ildefonso, sé, miragaia, nicolau, vitória', present)).
+fact(43, parking('cedofeita, ildefonso, sé, miragaia, nicolau, vitória', low)).
+fact(44, last_5_years_increased('cedofeita, ildefonso, sé, miragaia, nicolau, vitória', 45)).
+fact(45, forest('cedofeita, ildefonso, sé, miragaia, nicolau, vitória', absent)).
+fact(46, beach('cedofeita, ildefonso, sé, miragaia, nicolau, vitória', absent)).
+fact(47, airport('cedofeita, ildefonso, sé, miragaia, nicolau, vitória', absent)).
+fact(48, busy_traffic('cedofeita, ildefonso, sé, miragaia, nicolau, vitória', present)).
 
-% Energy Efficiency
-fact(37, energy_rating(property_1, b)).
-fact(38, energy_rating(property_2, e)).
-fact(39, energy_rating(property_3, a)).
+fact(49, location_crime_rate('lordelo do ouro e massarelos', low)).
+fact(50, nearby_schools('lordelo do ouro e massarelos', present)).
+fact(51, nearby_public_transport('lordelo do ouro e massarelos', present)).
+fact(52, nearby_hospitals('lordelo do ouro e massarelos', absent)).
+fact(53, nearby_supermarkets('lordelo do ouro e massarelos', present)).
+fact(54, nearby_leisure_areas('lordelo do ouro e massarelos', present)).
+fact(55, parking('lordelo do ouro e massarelos', medium)).
+fact(56, last_5_years_increased('lordelo do ouro e massarelos', 35)).
+fact(57, forest('lordelo do ouro e massarelos', absent)).
+fact(58, beach('lordelo do ouro e massarelos', present)).
+fact(59, airport('lordelo do ouro e massarelos', absent)).
+fact(60, busy_traffic('lordelo do ouro e massarelos', present)).
 
-% Services
-fact(40, nearby_schools(lisboa, absent)).
-fact(41, nearby_schools(porto, present)).
-fact(42, nearby_schools(faro, present)).
-fact(43, nearby_public_transport(lisboa, absent)).
-fact(44, nearby_public_transport(porto, absent)).
-fact(45, nearby_public_transport(faro, present)).
-fact(46, nearby_hospitals(lisboa, present)).
-fact(47, nearby_hospitals(porto, present)).
-fact(48, nearby_hospitals(faro, present)).
-fact(49, nearby_supermarkets(lisboa, absent)).
-fact(50, nearby_supermarkets(porto, present)).
-fact(51, nearby_supermarkets(faro, present)).
-fact(52, nearby_leisure_areas(lisboa, absent)).
-fact(53, nearby_leisure_areas(porto, absent)).
-fact(54, nearby_leisure_areas(faro, present)).
+fact(61, location_crime_rate('matosinhos e leça da palmeira', medium)).
+fact(62, nearby_schools('matosinhos e leça da palmeira', present)).
+fact(63, nearby_public_transport('matosinhos e leça da palmeira', present)).
+fact(64, nearby_hospitals('matosinhos e leça da palmeira', present)).
+fact(65, nearby_supermarkets('matosinhos e leça da palmeira', present)).
+fact(66, nearby_leisure_areas('matosinhos e leça da palmeira', present)).
+fact(67, parking('matosinhos e leça da palmeira', high)).
+fact(68, last_5_years_increased('matosinhos e leça da palmeira', 30)).
+fact(69, forest('matosinhos e leça da palmeira', present)).
+fact(70, beach('matosinhos e leça da palmeira', present)).
+fact(71, airport('matosinhos e leça da palmeira', present)).
+fact(72, busy_traffic('matosinhos e leça da palmeira', present)).
 
-% Parking
-fact(55, parking(lisboa, low)).
-fact(56, parking(porto, medium)).
-fact(57, parking(faro, high)).
-fact(58, garage(property_1, absent)).
-fact(59, garage(property_2, present)).
-fact(60, garage(property_3, absent)).
+fact(73, location_crime_rate('paranhos', medium)).
+fact(74, nearby_schools('paranhos', present)).
+fact(75, nearby_public_transport('paranhos', present)).
+fact(76, nearby_hospitals('paranhos', present)).
+fact(77, nearby_supermarkets('paranhos', present)).
+fact(78, nearby_leisure_areas('paranhos', absent)).
+fact(79, parking('paranhos', medium)).
+fact(80, last_5_years_increased('paranhos', 28)).
+fact(81, forest('paranhos', absent)).
+fact(82, beach('paranhos', absent)).
+fact(83, airport('paranhos', present)).
+fact(84, busy_traffic('paranhos', present)).
 
-% Construction Year
-fact(61, year_construction(property_1, 2018)).
-fact(62, year_construction(property_2, 1960)).
-fact(63, year_construction(property_3, 2021)).
+fact(85, location_crime_rate('ramalde', medium)).
+fact(86, nearby_schools('ramalde', absent)).
+fact(87, nearby_public_transport('ramalde', present)).
+fact(88, nearby_hospitals('ramalde', absent)).
+fact(89, nearby_supermarkets('ramalde', present)).
+fact(90, nearby_leisure_areas('ramalde', absent)).
+fact(91, parking('ramalde', high)).
+fact(92, last_5_years_increased('ramalde', 27)).
+fact(93, forest('ramalde', absent)).
+fact(94, beach('ramalde', absent)).
+fact(95, airport('ramalde', present)).
+fact(96, busy_traffic('ramalde', present)).
 
-% Potential for Appreciation
-fact(64, last_5_years_increased(lisboa, 70)).
-fact(65, last_5_years_increased(porto, 35)).
-fact(66, last_5_years_increased(faro, 10)).
+fact(97, location_crime_rate('rio tinto', high)).
+fact(98, nearby_schools('rio tinto', absent)).
+fact(99, nearby_public_transport('rio tinto', absent)).
+fact(100, nearby_hospitals('rio tinto', absent)).
+fact(101, nearby_supermarkets('rio tinto', present)).
+fact(102, nearby_leisure_areas('rio tinto', absent)).
+fact(103, parking('rio tinto', high)).
+fact(104, last_5_years_increased('rio tinto', 20)).
+fact(105, forest('rio tinto', absent)).
+fact(106, beach('rio tinto', absent)).
+fact(107, airport('rio tinto', absent)).
+fact(108, busy_traffic('rio tinto', absent)).
 
-% View
-fact(67, floor_level(property_1, 6)).
-fact(68, floor_level(property_2, 1)).
-fact(69, floor_level(property_3, 4)).
 
-% Area
-fact(70, area(property_1, 100)).
-fact(71, area(property_2, 100)).
-fact(72, area(property_3, 48)).
-fact(73, rooms(property_1, 4)).
-fact(74, rooms(property_2, 3)).
-fact(75, rooms(property_3, 3)).
-fact(76, area_per_room(property_1, 25)).
-fact(77, area_per_room(property_2, 33)).
-fact(78, area_per_room(property_3, 16)).
+fact(109, property(18484873, 'T4, apartamento para comprar - Rua São João Novo, Cedofeita, Santo Ildefonso, Sé, Miragaia, São Nicolau e Vitória - 18484873 • www.imovirtual.com')).
+fact(110, location_property(18484873, 'cedofeita, ildefonso, sé, miragaia, nicolau, vitória')).
+fact(111, price(18484873, 900000)).
+fact(112, area(18484873, 227)).
+fact(113, rooms(18484873, 4)).
+fact(114, energy_rating(18484873, 'c')).
+fact(115, year_construction(18484873, 2002)).
+fact(116, elevator(18484873, absent)).
+fact(117, garage(18484873, absent)).
+fact(118, security_system(18484873, absent)).
+fact(119, ramps(18484873, absent)).
+fact(120, swimming_pool(18484873, absent)).
+fact(121, garden(18484873, absent)).
+fact(122, optical_fiber(18484873, absent)).
+fact(123, smart_appliances(18484873, absent)).
+fact(124, floor_level(18484873, 0)).
+fact(125, sun_orientation(18484873, east)).
+fact(126, area_per_room(18484873, 45.4)).
+fact(127, image(18484873, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IndmZm04czJ6bjUxODItRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.8KhgVjhJCcQKbYbQ7eZZaAoEZxrKECfDxwytRSpBpLk/image;s=655x491;q=80')).
+fact(128, image(18484873, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Ijl0Zmdha3J6ajFpbjEtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.F0SId0NIme9HM9Fe-nINqUF-vp9qg5MnS7NEbTJFofY/image;s=655x491;q=80')).
+fact(129, image(18484873, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImxkN2d2aWdhYmN3ZC1FQ09TWVNURU0iLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.UfOIdXGB_Y_eH7ZP1fx9DZTfJHgpvjumH57Lzg-bjs8/image;s=655x491;q=80')).
 
-% Sun exposure
-fact(79, sun_orientation(property_1, south)).
-fact(80, sun_orientation(property_1, east)).
-fact(81, sun_orientation(property_2, north)).
-fact(82, sun_orientation(property_3, east)).
-
-fact(83, property_type(property_1, apartment)).
-fact(84, property_type(property_2, residence)).
-fact(85, property_type(property_3, apartment)).
-fact(86, forest(lisbon, present)).
-fact(87, forest(porto, absent)).
-fact(88, beach(faro, present)).
-
-fact(89, meta_score(high,1)).
-fact(90, meta_score(medium,0.7)).
-fact(91, meta_score(low,0.4)).
