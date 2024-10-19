@@ -42,17 +42,17 @@ rule 1.7
 
 % Rule 2.1: If the property is located in an area with an airport and busy traffic, then the property will have a high noise level.
 rule 2.1
-    if [location_property(Property, Location) and aeroport(Location, present) and busy_traffic(Location, present)]
+    if [location_property(Property, Location) and airport(Location, present) and busy_traffic(Location, present)]
     then [create_fact(noise_level(Property, high))].
 
 % Rule 2.2: If the property is located in an area with an airport or busy traffic, then the property will have a medium noise level.
 rule 2.2
-    if [location_property(Property, Location) and ((aeroport(Location, present) and busy_traffic(Location, absent)) or (busy_traffic(Location, present) and aeroport(Location, absent) ))]
+    if [location_property(Property, Location) and ((airport(Location, present) and busy_traffic(Location, absent)) or (busy_traffic(Location, present) and airport(Location, absent) ))]
     then [create_fact(noise_level(Property, medium))].
 
 % Rule 2.3: If the property is not located in an area with an airport and does not have busy traffic, then the property will have a low noise level.
 rule 2.3
-    if [location_property(Property, Location) and (aeroport(Location, absent) and busy_traffic(Location, absent))]
+    if [location_property(Property, Location) and (airport(Location, absent) and busy_traffic(Location, absent))]
     then [create_fact(noise_level(Property, low))].
 
 % Rule 2.4: If the property has a high noise level and low acoustic insulation, then the property will have low sound comfort.
