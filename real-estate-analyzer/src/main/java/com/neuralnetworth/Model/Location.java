@@ -38,8 +38,8 @@ public class Location {
     public String getCrimeRate() { return crimeRate; }
     public void setCrimeRate(String crimeRate) { this.crimeRate = crimeRate; }
 
-    public String getAeroport() { return airport; }
-    public void setAeroport(String airport) { this.airport = airport; }
+    public String getAirport() { return airport; }
+    public void setAirport(String airport) { this.airport = airport; }
 
     public String getBusyTraffic() { return busyTraffic; }
     public void setBusyTraffic(String busyTraffic) { this.busyTraffic = busyTraffic; }

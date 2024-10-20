@@ -3,6 +3,7 @@ package com.neuralnetworth.Model;
 // Property class
 public class Property {
     private String id;
+    private String name;
     private Location location;
     private String securitySystem;
     private String acousticInsulation;
@@ -25,13 +26,21 @@ public class Property {
     //Inferred attributes
     private String crimeRate;
     private String security;
+    private String noiseLevel;
+    private String soundComfort;
+    private String overallComfort;
+    private String accessibility;
+    private String amenities;
+    private String maintenance;
+    private String energyEfficiency;
 
-    public Property(String id, Location location, String securitySystem, String acousticInsulation,
+    public Property(String id, String name, Location location, String securitySystem, String acousticInsulation,
                     String thermalComfort, String elevator, String ramps, String swimmingPool,
                     String garden, String propertyCondition, String energyRating, String garage,
                     int yearConstruction, int floorLevel, int area, int rooms, int areaPerRoom,
                     String sunOrientation, String propertyType) {
         this.id = id;
+        this.name = name;
         this.location = location;
         this.securitySystem = securitySystem;
         this.acousticInsulation = acousticInsulation;
@@ -55,6 +64,9 @@ public class Property {
     // Getters and Setters
     public String getId() { return id; }
     public void setId(String id) { this.id = id; }
+
+    public String getName() { return name; }
+    public void setName(String name) { this.name = name; }
 
     public Location getLocation() { return location; }
     public void setLocation(Location location) { this.location = location; }
@@ -115,4 +127,40 @@ public class Property {
 
     public String getSecurity() { return security; }
     public void setSecurity(String security) { this.security = security; }
+
+    public String getNoiseLevel() { return this.noiseLevel; }
+    public void setNoiseLevel(String noiseLevel) { this.noiseLevel = noiseLevel; }
+
+    public String getSoundComfort() { return this.soundComfort; }
+    public void setSoundComfort(String soundComfort) { this.soundComfort = soundComfort; }
+
+    public String getOverallComfort() { return this.overallComfort; }
+    public void setOverallComfort(String overallComfort) { this.overallComfort = overallComfort; }
+
+    public String getAccessibility() { return this.accessibility; }
+    public void setAccessibility(String accessibility) { this.accessibility = accessibility; }
+
+    public String getAmenities() { return amenities; }
+    public void setAmenities(String amenities) { this.amenities = amenities; }
+
+    public String getMaintenance() { return maintenance; }
+    public void setMaintenance(String maintenance) { this.maintenance = maintenance; }
+
+    public String getEnergyEfficiency() { return energyEfficiency; }
+    public void setEnergyEfficiency(String energyEfficiency) { this.energyEfficiency = energyEfficiency; }
+
+    public void printInferredAttributes() {
+        System.out.println("\n --------------------------------------------------");
+        System.out.println("Property Name: " + this.name);
+        System.out.println("Inferred Attributes:");
+        System.out.println("  Crime Rate: " + (this.crimeRate != null ? this.crimeRate : "Not set"));
+        System.out.println("  Security: " + (this.security != null ? this.security : "Not set"));
+        System.out.println("  Noise Level: " + (this.noiseLevel != null ? this.noiseLevel : "Not set"));
+        System.out.println("  Sound Comfort: " + (this.soundComfort != null ? this.soundComfort : "Not set"));
+        System.out.println("  Overall Comfort: " + (this.overallComfort != null ? this.overallComfort : "Not set"));
+        System.out.println("  Accessibility: " + (this.accessibility != null ? this.accessibility : "Not set"));
+        System.out.println("  Amenities: " + (this.amenities != null ? this.amenities : "Not set"));
+        System.out.println("  Maintenance: " + (this.maintenance != null ? this.maintenance : "Not set"));
+        System.out.println("  EnergyEfficiency: " + (this.energyEfficiency != null ? this.energyEfficiency : "Not set"));
+    }
 }
