@@ -13,34 +13,13 @@ public class Main {
     public static final void main(String[] args) {
         KieServices kieServices = KieServices.Factory.get();
         KieContainer kieContainer = kieServices.getKieClasspathContainer();
-
         KieSession kieSession = kieContainer.newKieSession("ksession-rules");
 
-        if(kieSession == null) {
-            System.out.println("Kie session is null");
-            return;
+        if (kieSession == null) {
+            throw new RuntimeException("KieSession is null");
         }
 
-        Results results = kieContainer.verify();
-        if (results.hasMessages(Message.Level.ERROR)) {
-            System.out.println("Errors:");
-            for (Message message : results.getMessages(Message.Level.ERROR)) {
-                System.out.println("Error: " + message.getText());
-            }
-            return;
-        }
-
-        if(kieContainer.getKieBase().getKiePackages().isEmpty()) {
-            System.out.println("Kie container has no packages");
-        }else {
-            System.out.println("Loaded packages and rules:");
-            for (KiePackage kiePackage : kieContainer.getKieBase().getKiePackages()) {
-                System.out.println("Package: " + kiePackage.getName());
-                for (Rule rule : kiePackage.getRules()) {
-                    System.out.println("Rule: " + rule.getName());
-                }
-            }
-        }
+        verifyKieContainer(kieContainer, true);
 
         Location lisbon = new Location("lisbon", "low");
         Property property = new Property(1, lisbon);
@@ -52,6 +31,31 @@ public class Main {
 
         int firedRules = kieSession.fireAllRules();
         System.out.println("Rules fired: " + firedRules);
+
         kieSession.dispose();
     }
+
+    public static void verifyKieContainer(KieContainer kieContainer, boolean printRules) {
+        Results results = kieContainer.verify();
+        if (results.hasMessages(Message.Level.ERROR)) {
+            System.out.println("Errors:");
+            for (Message message : results.getMessages(Message.Level.ERROR)) {
+                System.out.println("Error: " + message.getText());
+            }
+            throw new RuntimeException("KieContainer has not been initialized correctly");
+        }
+
+        if (kieContainer.getKieBase().getKiePackages().isEmpty()) {
+            throw new RuntimeException("KieContainer has no packages");
+        }
+        if(printRules) {
+            System.out.println("Loaded rules:");
+            for (KiePackage kiePackage : kieContainer.getKieBase().getKiePackages()) {
+                for (Rule rule : kiePackage.getRules()) {
+                    System.out.println("\t- Rule: " + rule.getName());
+                }
+            }
+        }
+    }
 }
+

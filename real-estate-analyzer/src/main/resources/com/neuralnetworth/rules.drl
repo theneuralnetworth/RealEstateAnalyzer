@@ -6,9 +6,17 @@ import com.neuralnetworth.Property;
 import com.neuralnetworth.Location;
 import com.neuralnetworth.PropertyFact;
 
-rule "Low crime rate"
+rule "Rules sanity check"
 when
-    // No rules. Fire every time
+    // No conditions. Fires every time
 then
-    System.out.println("Rule triggered: Low crime rate property");
+    System.out.println("Sanity check: Rules are triggered succesfully");
+end
+
+rule "1.1: Low crime rate property"
+when
+    $location: Location(crimeRate == "low")
+    $property: Property(location == $location)
+then
+    insert(new PropertyFact("crimeRate", $property, "low"));
 end
