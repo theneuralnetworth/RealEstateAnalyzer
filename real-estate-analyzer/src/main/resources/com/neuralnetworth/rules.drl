@@ -11,8 +11,9 @@ import com.neuralnetworth.PropertyFact;
 rule "Low crime rate"
 when
     $location: Location(crimeRate == "low")
-    $property: Property(location == $location)
+    $property: Property(location.getName() == $location.getName())
 then
+    System.out.println("Rule triggered: Low crime rate property");
     insert(new PropertyFact("crimeRate", $property, "low"));
 end
 

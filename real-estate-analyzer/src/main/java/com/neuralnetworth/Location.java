@@ -24,4 +24,8 @@ public class Location {
     public void setCrimeRate(String crimeRate) {
         this.crimeRate = crimeRate;
     }
+
+    public String toString() {
+        return "Location[name: " + name + ", crimeRate: " + crimeRate + "]";
+    }
 }

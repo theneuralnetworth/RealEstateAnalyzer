@@ -20,4 +20,8 @@ public class Property {
     public void setLocation(Location location) {
         this.location = location;
     }
+
+    public String toString() {
+        return "Property [id=" + id + ", location=" + location + "]";
+    }
 }
