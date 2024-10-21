@@ -1,6 +1,5 @@
-<?xml version="1.0" encoding="UTF-8" ?>
 <kmodule xmlns="http://www.drools.org/xsd/kmodule">
-    <kbase name="rules" packages="com.neuralnetworth" default="true">
-        <ksession name="ksession-rules" type="stateful" default="true"/>
+    <kbase name="rules" packages="com.neuralnetworth">
+        <ksession name="ksession-rules" default="true"/>
     </kbase>
 </kmodule>
