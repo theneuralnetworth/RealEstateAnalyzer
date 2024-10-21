@@ -15,11 +15,9 @@ public class Main {
 
     public static void main(String[] args) {
         try {
-            // Load KieServices and KieContainer
             KieServices ks = KieServices.Factory.get();
             KieContainer kContainer = ks.getKieClasspathContainer();
 
-            // Load the KieSession from the rules.drl file
             KieSession kSession = kContainer.newKieSession("ksession-rules");
             if (kSession == null) {
                 System.out.println("Failed to load KieSession.");
@@ -28,29 +26,22 @@ public class Main {
                 System.out.println("KieSession loaded successfully.");
             }
 
-            // Add Agenda Event Listener to track triggered rules
             kSession.addEventListener(new AgendaEventListener() {
                 @Override
                 public void afterMatchFired(AfterMatchFiredEvent event) {
                     // Track the triggered rules
                     String ruleName = event.getMatch().getRule().getName();
+                   System.out.println(event.getMatch().getFactHandles());
 
-                    // Iterate through the objects involved in the match to find the property
                     for (Object object : event.getMatch().getObjects()) {
                         if (object instanceof Property) {
                             Property property = (Property) object;
-                            String propertyName = property.getName(); // Assuming Property class has getName() method
+                            String propertyName = property.getName();
 
-                            // Extract characteristic from rule name
                             String characteristic = ruleName.toLowerCase(Locale.ROOT).split(" ")[0];
 
-                            // Ensure the property entry exists in the map
                             triggeredRulesMap.putIfAbsent(propertyName, new HashMap<>());
-
-                            // Ensure the characteristic entry exists in the map for that property
                             triggeredRulesMap.get(propertyName).putIfAbsent(characteristic, new ArrayList<>());
-
-                            // Add the rule name to the list of rules for this characteristic
                             triggeredRulesMap.get(propertyName).get(characteristic).add(ruleName);
                         }
                     }
@@ -79,7 +70,6 @@ public class Main {
             });
 
             // Create Location objects
-            // Create Location objects with the updated constructor
             Location lisbon = new Location("lisboa", "low", "absent", "present", "absent", "absent", "present", "absent", "absent", "low", 70);
             Location porto = new Location("porto", "medium", "present", "present", "present", "absent", "present", "present", "absent", "medium", 35);
             Location faro = new Location("faro", "high", "absent", "absent", "present", "present", "present", "present", "present", "high", 10);
