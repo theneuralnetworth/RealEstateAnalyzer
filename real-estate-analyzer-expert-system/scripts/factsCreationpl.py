@@ -112,9 +112,11 @@ def generate_prolog_facts(data, output_file_path):
 
         thermal_comfort = characteristics.get("thermalconfort")
         prolog_facts.append(f"fact({fact_counter}, thermal_comfort({id_imovel}, {thermal_comfort})).")
+        fact_counter += 1
 
         acoustic_insulation = characteristics.get("acoustic_insulation")
         prolog_facts.append(f"fact({fact_counter}, acoustic_insulation({id_imovel}, {acoustic_insulation})).")
+        fact_counter += 1
 
         # Adicionar imagens
         images = item.get("images", [])
