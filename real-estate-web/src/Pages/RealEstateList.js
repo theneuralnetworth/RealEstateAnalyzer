@@ -10,7 +10,7 @@ const RealEstateList = () => {
     useEffect(() => {
         const fetchRealEstates = async () => {
             try {
-                const response = await axios.post('http://localhost:5182/api/realestates/getrealestates', {
+                const response = await axios.post('http://localhost:8080/api/realestates/getrealestates', {
                     preferences: {
                         location: 'Lisboa'
                     },
