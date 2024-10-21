@@ -28,7 +28,7 @@ services:
     build:
       context: ./real-estate-analyzer
     ports:
-      - "8082:80"
+      - "8082:8080"
 
 networks:
   real-estate-analyzer:
