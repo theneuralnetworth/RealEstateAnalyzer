@@ -167,6 +167,31 @@ for item in data:
                     "localizedValue": round(area_per_room, 2)  # Round to 2 decimal places
                 })
 
+           
+
+        
+
+            if year_of_construction < 1995:
+                termalconfort = 'low'
+            elif 1995 <= year_of_construction < 2010:
+                termalconfort = 'medium'
+            else:
+                termalconfort = 'high'
+
+            item["characteristics"].append({
+                    "label": "thermalconfort",
+                    "localizedValue": termalconfort
+                })
+        
+            item["characteristics"].append({
+                    "label": "acoustic_insulation",
+                    "localizedValue": termalconfort
+                })
+
+        
+
+        
+
 
 
 
