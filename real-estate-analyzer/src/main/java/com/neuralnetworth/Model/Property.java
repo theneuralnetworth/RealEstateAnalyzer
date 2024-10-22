@@ -1,5 +1,8 @@
 package com.neuralnetworth.Model;
 
+import java.util.ArrayList;
+import java.util.List;
+
 // Property class
 public class Property {
     private String id;
@@ -22,6 +25,7 @@ public class Property {
     private float areaPerRoom;
     private String sunOrientation;
     private String propertyType;
+    //private List<String> servicesList;
 
     //Inferred attributes
     private String crimeRate;
@@ -33,6 +37,7 @@ public class Property {
     private String amenities;
     private String maintenance;
     private String energyEfficiency;
+    //private String services;
 
     public Property(String id, String name, Location location, String securitySystem, String acousticInsulation,
                     String thermalComfort, String elevator, String ramps, String swimmingPool,
@@ -59,6 +64,7 @@ public class Property {
         this.areaPerRoom = areaPerRoom;
         this.sunOrientation = sunOrientation;
         this.propertyType = propertyType;
+        //this.servicesList = new ArrayList<>();
     }
 
     // Getters and Setters
@@ -149,6 +155,28 @@ public class Property {
     public String getEnergyEfficiency() { return energyEfficiency; }
     public void setEnergyEfficiency(String energyEfficiency) { this.energyEfficiency = energyEfficiency; }
 
+    /*public List<String> getServicesList() {
+        return servicesList;
+    }
+
+    public void setServicesList(List<String> servicesList) {
+        this.servicesList = servicesList;
+    }
+
+    public void addServices(String service) {
+        if (!servicesList.contains(service)) {
+            this.servicesList.add(service);
+        }
+    }
+
+    public String getServices() {
+        return services;
+    }
+
+    public void setServices(String services) {
+        this.services = services;
+    }*/
+
     public void printInferredAttributes() {
         System.out.println("\n --------------------------------------------------");
         System.out.println("Property Name: " + this.name);
@@ -162,5 +190,41 @@ public class Property {
         System.out.println("  Amenities: " + (this.amenities != null ? this.amenities : "Not set"));
         System.out.println("  Maintenance: " + (this.maintenance != null ? this.maintenance : "Not set"));
         System.out.println("  EnergyEfficiency: " + (this.energyEfficiency != null ? this.energyEfficiency : "Not set"));
+        //System.out.println("  Services: " + (this.services != null ? this.services : "Not set"));
+    }
+
+    @Override
+    public String toString() {
+        return "Property {" +
+                "id='" + id + '\'' +
+                ", name='" + name + '\'' +
+                ", location=" + location.getName() +
+                ", securitySystem='" + securitySystem + '\'' +
+                ", acousticInsulation='" + acousticInsulation + '\'' +
+                ", thermalComfort='" + thermalComfort + '\'' +
+                ", elevator='" + elevator + '\'' +
+                ", ramps='" + ramps + '\'' +
+                ", swimmingPool='" + swimmingPool + '\'' +
+                ", garden='" + garden + '\'' +
+                ", propertyCondition='" + propertyCondition + '\'' +
+                ", energyRating='" + energyRating + '\'' +
+                ", garage='" + garage + '\'' +
+                ", yearConstruction=" + yearConstruction +
+                ", floorLevel=" + floorLevel +
+                ", area=" + area +
+                ", rooms=" + rooms +
+                ", areaPerRoom=" + areaPerRoom +
+                ", sunOrientation='" + sunOrientation + '\'' +
+                ", propertyType='" + propertyType + '\'' +
+                ", crimeRate='" + crimeRate + '\'' +
+                ", security='" + security + '\'' +
+                ", noiseLevel='" + noiseLevel + '\'' +
+                ", soundComfort='" + soundComfort + '\'' +
+                ", overallComfort='" + overallComfort + '\'' +
+                ", accessibility='" + accessibility + '\'' +
+                ", amenities='" + amenities + '\'' +
+                ", maintenance='" + maintenance + '\'' +
+                ", energyEfficiency='" + energyEfficiency + '\'' +
+                '}';
     }
 }
