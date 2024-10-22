@@ -162,7 +162,7 @@ for item in data[:100]:
     #    "label": "sun_orientation",
     #    "localizedValue": random_orientation
     #})
-    new_property["orientation"] = random_orientation
+    new_property["sunOrientation"] = random_orientation
 
 
     floor_exists = any(char["label"] == "Andar" for char in item["characteristics"])
@@ -183,7 +183,7 @@ for item in data[:100]:
         #    "label": "floor number",
         #    "localizedValue": floor_number
         #})
-        new_property["floorNumber"] = floor_number
+        new_property["floorLevel"] = floor_number
 
     random_smart= random.choice(['present', 'absent'])
 
