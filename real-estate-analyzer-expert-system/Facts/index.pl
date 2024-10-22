@@ -145,4 +145,5 @@ fact(129, image(18484873, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Im
 fact(130, meta_score(high,1)).
 fact(131, meta_score(medium,0.7)).
 fact(132, meta_score(low,0.4)).
+fact(133, thermal_comfort(18484873, medium)).
 
