@@ -64,4 +64,21 @@ public class Location {
 
     public int getLast5YearsIncreased() { return last5YearsIncreased; }
     public void setLast5YearsIncreased(int last5YearsIncreased) { this.last5YearsIncreased = last5YearsIncreased; }
+
+    @Override
+    public String toString() {
+        return "Location {" +
+                "name='" + name + '\'' +
+                ", crimeRate='" + crimeRate + '\'' +
+                ", airport='" + airport + '\'' +
+                ", busyTraffic='" + busyTraffic + '\'' +
+                ", nearbySchools='" + nearbySchools + '\'' +
+                ", nearbyPublicTransport='" + nearbyPublicTransport + '\'' +
+                ", nearbyHospitals='" + nearbyHospitals + '\'' +
+                ", nearbySupermarkets='" + nearbySupermarkets + '\'' +
+                ", nearbyLeisureAreas='" + nearbyLeisureAreas + '\'' +
+                ", parking='" + parking + '\'' +
+                ", last5YearsIncreased=" + last5YearsIncreased +
+                '}';
+    }
 }
