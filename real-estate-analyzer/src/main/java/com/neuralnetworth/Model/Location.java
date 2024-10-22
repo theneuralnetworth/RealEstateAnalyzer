@@ -13,11 +13,14 @@ public class Location {
     private String nearbyLeisureAreas;
     private String parking;
     private int last5YearsIncreased;
+    private String forest;
+    private String beach;
 
     public Location(String name, String crimeRate, String airport, String busyTraffic,
                     String nearbySchools, String nearbyPublicTransport,
                     String nearbyHospitals, String nearbySupermarkets,
-                    String nearbyLeisureAreas, String parking, int last5YearsIncreased) {
+                    String nearbyLeisureAreas, String parking, int last5YearsIncreased,
+                    String forest, String beach) {
         this.name = name;
         this.crimeRate = crimeRate;
         this.airport = airport;
@@ -29,6 +32,8 @@ public class Location {
         this.nearbyLeisureAreas = nearbyLeisureAreas;
         this.parking = parking;
         this.last5YearsIncreased = last5YearsIncreased;
+        this.forest = forest;
+        this.beach = beach;
     }
 
     // Getters and Setters
@@ -64,6 +69,12 @@ public class Location {
 
     public int getLast5YearsIncreased() { return last5YearsIncreased; }
     public void setLast5YearsIncreased(int last5YearsIncreased) { this.last5YearsIncreased = last5YearsIncreased; }
+
+    public String getForest() {return forest;}
+    public void setForest(String forest) {this.forest = forest;}
+
+    public String getBeach() {return beach;}
+    public void setBeach(String beach) {this.beach = beach;}
 
     @Override
     public String toString() {
