@@ -2,7 +2,6 @@ package com.neuralnetworth;
 
 import com.neuralnetworth.Model.Property;
 import com.neuralnetworth.knowledge.KnowledgeBaseLoader;
-import com.neuralnetworth.knowledge.LocationFilter;
 import org.kie.api.runtime.KieContainer;
 import org.kie.api.runtime.KieSession;
 import org.kie.api.KieServices;

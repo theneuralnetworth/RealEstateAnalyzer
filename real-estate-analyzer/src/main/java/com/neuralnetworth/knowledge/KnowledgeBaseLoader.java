@@ -11,7 +11,6 @@ import org.kie.api.runtime.KieSession;
 import java.util.*;
 import java.io.FileReader;
 import java.io.IOException;
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 public class KnowledgeBaseLoader {
