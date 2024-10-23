@@ -124,21 +124,24 @@ fact(124, price(18484873, 900000)).
 fact(125, area(18484873, 227)).
 fact(126, rooms(18484873, 5)).
 fact(127, energy_rating(18484873, 'c')).
-fact(128, year_construction(18484873, 1983)).
+fact(128, year_construction(18484873, 1998)).
 fact(129, elevator(18484873, absent)).
 fact(130, garage(18484873, absent)).
 fact(131, security_system(18484873, absent)).
 fact(132, ramps(18484873, absent)).
 fact(133, swimming_pool(18484873, absent)).
 fact(134, garden(18484873, absent)).
-fact(135, optical_fiber(18484873, present)).
+fact(135, optical_fiber(18484873, absent)).
 fact(136, smart_appliances(18484873, present)).
-fact(137, floor_level(18484873, 2)).
-fact(138, sun_orientation(18484873, north)).
+fact(137, floor_level(18484873, 4)).
+fact(138, sun_orientation(18484873, south)).
 fact(139, area_per_room(18484873, 45.4)).
-fact(140, thermal_comfort(18484873, low)).
-fact(141, acoustic_insulation(18484873, low)).
+fact(140, thermal_comfort(18484873, medium)).
+fact(141, acoustic_insulation(18484873, medium)).
 fact(142, image(18484873, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IndmZm04czJ6bjUxODItRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.8KhgVjhJCcQKbYbQ7eZZaAoEZxrKECfDxwytRSpBpLk/image;s=655x491;q=80')).
 fact(143, image(18484873, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Ijl0Zmdha3J6ajFpbjEtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.F0SId0NIme9HM9Fe-nINqUF-vp9qg5MnS7NEbTJFofY/image;s=655x491;q=80')).
 fact(144, image(18484873, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImxkN2d2aWdhYmN3ZC1FQ09TWVNURU0iLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.UfOIdXGB_Y_eH7ZP1fx9DZTfJHgpvjumH57Lzg-bjs8/image;s=655x491;q=80')).
 
+fact(145, meta_score(high,1)).
+fact(146, meta_score(medium,0.7)).
+fact(147, meta_score(low,0.4)).
