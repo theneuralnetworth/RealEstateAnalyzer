@@ -2,6 +2,7 @@ package com.neuralnetworth.controller;
 
 import com.neuralnetworth.Model.Location;
 import com.neuralnetworth.Model.Property;
+import com.neuralnetworth.knowledge.KnowledgeBaseLoader;
 import org.kie.api.event.rule.*;
 import org.kie.api.runtime.KieContainer;
 import org.kie.api.event.rule.AfterMatchFiredEvent;
@@ -48,58 +49,58 @@ public class PropertyController {
 
                         triggeredRulesMap.putIfAbsent(propertyName, new HashMap<>());
                         triggeredRulesMap.get(propertyName).putIfAbsent(characteristic, new ArrayList<>());
-                        triggeredRulesMap.get(propertyName).get(characteristic).add(ruleName);
+                        if (!triggeredRulesMap.get(propertyName).get(characteristic).contains(ruleName)) {
+                            triggeredRulesMap.get(propertyName).get(characteristic).add(ruleName);
+                        }
                     }
                 }
             }
 
-
             // Other overridden methods can be left empty
             @Override
-            public void beforeMatchFired(BeforeMatchFiredEvent event) {}
+            public void beforeMatchFired(BeforeMatchFiredEvent event) {
+            }
+
             @Override
-            public void matchCreated(MatchCreatedEvent event) {}
+            public void matchCreated(MatchCreatedEvent event) {
+            }
+
             @Override
-            public void matchCancelled(MatchCancelledEvent event) {}
+            public void matchCancelled(MatchCancelledEvent event) {
+            }
+
             @Override
-            public void agendaGroupPopped(AgendaGroupPoppedEvent event) {}
+            public void agendaGroupPopped(AgendaGroupPoppedEvent event) {
+            }
+
             @Override
-            public void agendaGroupPushed(AgendaGroupPushedEvent event) {}
+            public void agendaGroupPushed(AgendaGroupPushedEvent event) {
+            }
+
             @Override
-            public void beforeRuleFlowGroupActivated(RuleFlowGroupActivatedEvent event) {}
+            public void beforeRuleFlowGroupActivated(RuleFlowGroupActivatedEvent event) {
+            }
+
             @Override
-            public void afterRuleFlowGroupActivated(RuleFlowGroupActivatedEvent event) {}
+            public void afterRuleFlowGroupActivated(RuleFlowGroupActivatedEvent event) {
+            }
+
             @Override
-            public void beforeRuleFlowGroupDeactivated(RuleFlowGroupDeactivatedEvent event) {}
+            public void beforeRuleFlowGroupDeactivated(RuleFlowGroupDeactivatedEvent event) {
+            }
+
             @Override
-            public void afterRuleFlowGroupDeactivated(RuleFlowGroupDeactivatedEvent event) {}
+            public void afterRuleFlowGroupDeactivated(RuleFlowGroupDeactivatedEvent event) {
+            }
         });
 
-        List<Property> properties = createProperties();
-
-        for (Property property : properties) {
-            kSession.insert(property);
-        }
-
-        System.out.println("\n --------------------------------------------------------------");
-        System.out.println("Triggered Rules Map:");
-        for (Map.Entry<String, Map<String, List<String>>> propertyEntry : triggeredRulesMap.entrySet()) {
-            System.out.println("\nProperty: " + propertyEntry.getKey());
-            for (Map.Entry<String, List<String>> characteristicEntry : propertyEntry.getValue().entrySet()) {
-                System.out.println("  Characteristic: " + characteristicEntry.getKey() + " -> Rules: " + characteristicEntry.getValue());
-            }
-        }
+        KnowledgeBaseLoader kbLoader = new KnowledgeBaseLoader(kSession);
 
         kSession.fireAllRules();
 
         kSession.dispose();
 
-        for (Property property : properties) {
-            property.printInferredAttributes();
-
-        }
-
-        return properties;
+        return kbLoader.loadProperties();
     }
 
     private List<Property> createProperties() {
