@@ -15,8 +15,6 @@ public class Location {
     private int last5YearsIncreased;
     private String forest;
     private String beach;
-    private String forest;
-    private String beach;
 
     public Location(String name, String crimeRate, String airport, String busyTraffic,
                     String nearbySchools, String nearbyPublicTransport,
@@ -34,8 +32,6 @@ public class Location {
         this.nearbyLeisureAreas = nearbyLeisureAreas;
         this.parking = parking;
         this.last5YearsIncreased = last5YearsIncreased;
-        this.forest = forest;
-        this.beach = beach;
         this.forest = forest;
         this.beach = beach;
     }
