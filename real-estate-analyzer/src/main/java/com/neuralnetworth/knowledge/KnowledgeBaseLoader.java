@@ -74,6 +74,40 @@ public class KnowledgeBaseLoader {
         throw new RuntimeException("Could not load locations from " + this.propertiesFilename);
     }
 
+    public void insertFakeFacts(KieSession kieSession) {
+         // Create Location objects
+         Location lisbon = new Location("lisboa", "low", "absent", "present",
+         "absent", "absent", "present", "absent", "absent", "low", 70, "present",
+         "present");
+         Location porto = new Location("porto", "medium", "present", "present",
+         "present", "absent", "present", "present", "absent", "medium", 35, "present",
+         "absent");
+         Location faro = new Location("faro", "high", "absent", "absent", "present",
+         "present", "present", "present", "present", "high", 10, "absent", "absent");
+
+         // Create Property objects
+         Property property1 = new Property("property_1", "Property in Lisbon" ,
+         lisbon, "present", "high", "high", "absent", "absent", "absent", "absent",
+         "regular", "b", "absent", 2018, 6, 100f, 4, 25f, "south", "apartment",
+         "present", "present");
+         Property property2 = new Property("property_2", "Property in Porto" , porto,
+         "absent", "low", "low", "absent", "present", "absent", "present", "new", "e",
+         "present", 1960, 1, 100f, 3, 33f, "north", "residence", "absent", "present");
+         Property property3 = new Property("property_3", "Property in Faro" , faro,
+         "absent", "high", "high", "present", "present", "present", "present",
+         "reform", "a", "absent", 2021, 4, 48f, 3, 16f, "east", "apartment", "absent",
+         "absent");
+
+         // Insert facts (Location and Property objects) into the session
+         kieSession.insert(lisbon);
+         kieSession.insert(porto);
+         kieSession.insert(faro);
+
+         kieSession.insert(property1);
+         kieSession.insert(property2);
+         kieSession.insert(property3);
+    }
+
     private JsonElement loadJsonFile(String filename) {
         try (FileReader reader = new FileReader(filename)) {
             return JsonParser.parseReader(reader);
