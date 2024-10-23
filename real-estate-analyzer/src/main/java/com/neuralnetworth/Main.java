@@ -29,7 +29,7 @@ public class Main {
                 public void afterMatchFired(AfterMatchFiredEvent event) {
                     // Track the triggered rules
                     String ruleName = event.getMatch().getRule().getName();
-                    System.out.println(event.getMatch().getFactHandles());
+                    //System.out.println(event.getMatch().getFactHandles());
 
                     for (Object object : event.getMatch().getObjects()) {
                         if (object instanceof Property) {
@@ -88,9 +88,9 @@ public class Main {
             // Load knowledge base
             KnowledgeBaseLoader kbLoader = new KnowledgeBaseLoader(
                     kSession);
-            //kbLoader.insertFakeFacts();
-            kbLoader.loadLocations().forEach(kSession::insert);
-            kbLoader.loadProperties().forEach(kSession::insert);
+            kbLoader.insertFakeFacts(kSession);
+            //kbLoader.loadLocations().forEach(kSession::insert);
+            //kbLoader.loadProperties().forEach(kSession::insert);
 
             // Fire all rules
             kSession.fireAllRules();

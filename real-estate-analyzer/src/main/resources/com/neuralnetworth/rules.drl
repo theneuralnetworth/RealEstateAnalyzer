@@ -783,10 +783,10 @@ end
 
 // Rule 14.14: Calculate total score
 rule "TotalScore Rule 14.14 - Calculate total score"
-no-loop
+    no-loop
 when
     $property: Property(scores != null)
 then
     $property.calculateTotalScore();
-    update($property)
+    update($property);
 end

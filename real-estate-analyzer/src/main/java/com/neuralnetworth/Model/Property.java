@@ -30,6 +30,9 @@ public class Property {
     private String opticalFiber;
     private String smartAppliances;
     private String publicParking;
+    private Float price;
+    private String typology;
+    private List<String> images;
 
 
     // Calculated
@@ -248,6 +251,30 @@ public class Property {
     public String getPotentialAppreciation() { return potentialAppreciation; }
     public void setPotentialAppreciation(String potentialAppreciation) {
         this.potentialAppreciation = potentialAppreciation;
+    }
+
+    public Float getPrice() {
+        return price;
+    }
+
+    public void setPrice(Float price) {
+        this.price = price;
+    }
+
+    public String getTypology() {
+        return typology;
+    }
+
+    public void setTypology(String typology) {
+        this.typology = typology;
+    }
+
+    public List<String> getImages() {
+        return images;
+    }
+
+    public void setImages(List<String> images) {
+        this.images = images;
     }
 
     public float getMetaScore(String value) { return metaScores.get(value); }

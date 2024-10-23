@@ -35,7 +35,7 @@ public class PropertyController {
             public void afterMatchFired(AfterMatchFiredEvent event) {
                 // Track the triggered rules
                 String ruleName = event.getMatch().getRule().getName();
-                System.out.println(event.getMatch().getFactHandles());
+                //System.out.println(event.getMatch().getFactHandles());
 
                 for (Object object : event.getMatch().getObjects()) {
                     if (object instanceof Property) {
@@ -94,6 +94,7 @@ public class PropertyController {
 
         for (Property property : properties) {
             property.printInferredAttributes();
+
         }
 
         return properties;
