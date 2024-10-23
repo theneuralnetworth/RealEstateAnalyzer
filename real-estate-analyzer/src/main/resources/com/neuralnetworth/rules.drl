@@ -303,3 +303,490 @@ rule "Energy_Efficiency Rule 5.3 - Low Energy Efficiency"
         $property.setEnergyEfficiency("low");
         update($property);
 end
+
+// Rule 6.1: If the property is located near schools, then it is classified as having the service "nearby schools".
+rule "Services Rule 6.1 - Nearby Schools"
+when
+    $location : Location(nearbySchools == "present")
+    $property : Property(location == $location, services not contains "nearby schools")
+then
+    $property.addService("nearby schools");
+    update($property);
+end
+
+
+// Rule 6.2: If the property is located near public transport, then it is classified as having the service "nearby public transport".
+rule "Services Rule 6.2 - Nearby Public Transport"
+    when
+        $location : Location(location: nearbyPublicTransport == "present")
+        $property : Property(location == $location, services not contains "nearby public transport")
+    then
+        $property.addService("nearby public transport");
+        update($property);
+end
+
+// Rule 6.3: If the property is located near hospitals, then it is classified as having the service "nearby hospitals".
+rule "Services Rule 6.3 - Nearby Hospitals"
+    when
+        $location : Location(nearbyHospitals == "present")
+        $property : Property(location == $location, services not contains "nearby hospitals")
+    then
+        $property.addService("nearby hospitals");
+        update($property);
+end
+
+// Rule 6.4: If the property is located near supermarkets, then it is classified as having the service "nearby supermarkets".
+rule "Services Rule 6.4 - Nearby Supermarkets"
+    when
+        $location : Location(nearbySupermarkets == "present")
+        $property : Property(location == $location, services not contains "nearby supermarkets")
+    then
+        $property.addService("nearby supermarkets");
+        update($property);
+end
+
+// Rule 6.5: If the property is located near leisure areas, then it is classified as having the service "nearby leisure areas".
+rule "Services Rule 6.5 - Nearby Leisure Areas"
+    when
+        $location : Location(nearbyLeisureAreas == "present")
+        $property : Property(location == $location, services not contains "nearby leisure areas")
+    then
+        $property.addService("nearby leisure areas");
+        update($property);
+end
+
+// Rule 6.7: If a property has four or more nearby services, then it is classified as having a high service level.
+rule "Services Rule 6.7 - High Service Level"
+    when
+        $property : Property(numberOfServices > 4)
+    then
+        $property.setServiceLevel("high");
+        update($property);
+end
+
+// Rule 6.8: If a property has two or three nearby services, then it is classified as having a medium service level.
+rule "Services Rule 6.8 - Medium Service Level"
+    when
+        $property : Property(numberOfServices >= 2 && numberOfServices <= 4)
+    then
+        $property.setServiceLevel("medium");
+        update($property);
+end
+
+// Rule 6.9: If a property has less than two nearby services, then it is classified as having a low service level.
+rule "Services Rule 6.9 - Low Service Level"
+    when
+        $property : Property(numberOfServices < 2)
+    then
+        $property.setServiceLevel("low");
+        update($property);
+end
+
+// Rule 7.1: If the property has optical fiber and smart appliances, then the property is classified as having high connectivity.
+rule "Connectivity Rule 7.1 - High Connectivity"
+    when
+        $property : Property(opticalFiber == "present", smartAppliances == "present")
+    then
+        $property.setConnectivity("high");
+        update($property);
+end
+
+// Rule 7.2: If the property has optical fiber and no smart appliances, then the property is classified as having medium connectivity.
+rule "Connectivity Rule 7.2 - Medium Connectivity"
+    when
+        $property : Property(opticalFiber == "present", smartAppliances == "absent")
+    then
+        $property.setConnectivity("medium");
+        update($property);
+end
+
+// Rule 7.3: If the property does not have optical fiber but has smart appliances, then the property is classified as having medium connectivity.
+rule "Connectivity Rule 7.3 - Medium Connectivity"
+    when
+        $property : Property(opticalFiber == "absent", smartAppliances == "present")
+    then
+        $property.setConnectivity("medium");
+        update($property);
+end
+
+// Rule 7.4: If the property does not have optical fiber or smart appliances, then the property is classified as having low connectivity.
+rule "Connectivity Rule 7.4 - Low Connectivity"
+    when
+        $property : Property(opticalFiber == "absent", smartAppliances == "absent")
+    then
+        $property.setConnectivity("low");
+        update($property);
+end
+
+// Rule 8.1: If the property is located near a forest or beach, then it is classified as having high view quality.
+rule "ViewQuality Rule 8.1 - High View Quality"
+    when
+        $location : Location(forest == "present" || beach == "present")
+        $property : Property(location == $location)
+    then
+        $property.setViewQuality("high");
+        update($property);
+end
+
+// Rule 8.2: If the property is not near a forest or beach, then it is classified as having low view quality.
+rule "ViewQuality Rule 8.2 - Low View Quality"
+    when
+        $location : Location(forest == "absent", beach == "absent")
+        $property : Property(location == $location)
+    then
+        $property.setViewQuality("low");
+        update($property);
+end
+
+// Rule 8.3: If the property has high view quality and is a residence, it is classified as high view quality.
+rule "ViewQuality Rule 8.3 - High View Quality for Residence"
+    when
+        $property : Property(viewQuality == "high", propertyType == "residence")
+    then
+        $property.setViewQualityLevel("high");
+        update($property);
+end
+
+// Rule 8.4: If the property has low view quality and is a residence, it is classified as medium view quality.
+rule "ViewQuality Rule 8.4 - Medium View Quality for Residence"
+    when
+        $property : Property(viewQuality == "low", propertyType == "residence")
+    then
+        $property.setViewQualityLevel("medium");
+        update($property);
+end
+
+// Rule 8.5: If the property has low view quality and is an apartment, it is classified as low view quality.
+rule "ViewQuality Rule 8.5 - Low View Quality for Apartment"
+    when
+        $property : Property(viewQuality == "low", propertyType == "apartment")
+    then
+        $property.setViewQualityLevel("low");
+        update($property);
+end
+
+// Rule 8.6: If the property has high view quality and is on the 4th floor or higher, it is classified as high view quality.
+rule "ViewQuality Rule 8.6 - High View Quality for High Floor"
+    when
+        $property : Property(viewQuality == "high", floorLevel >= 4)
+    then
+        $property.setViewQualityLevel("high");
+        update($property);
+end
+
+// Rule 8.7: If the property has high view quality and is on the 2nd or 3rd floor, it is classified as medium view quality.
+rule "ViewQuality Rule 8.7 - Medium View Quality for Mid Floor"
+    when
+        $property : Property(viewQuality == "high", floorLevel >= 2 && floorLevel < 4)
+    then
+        $property.setViewQualityLevel("medium");
+        update($property);
+end
+
+// Rule 8.8: If the property has high view quality and is on the 1st floor, it is classified as low view quality.
+rule "ViewQuality Rule 8.8 - Low View Quality for Low Floor"
+    when
+        $property : Property(viewQuality == "high", floorLevel < 2)
+    then
+        $property.setViewQualityLevel("low");
+        update($property);
+end
+
+// Rule 9.1: If area per room is greater than 30, classify as high spaciousness
+rule "Spaciousness Rule 9.1 - High"
+when
+    $property : Property(areaPerRoom > 30)
+then
+    $property.setSpaciousness("high");
+    update($property);
+end
+
+// Rule 9.2: If area per room is between 20 and 30, classify as medium spaciousness
+rule "Spaciousness Rule 9.2 - Medium"
+when
+    $property : Property(areaPerRoom > 20 && areaPerRoom <= 30)
+then
+    $property.setSpaciousness("medium");
+    update($property);
+end
+
+// Rule 9.3: If area per room is 20 or less, classify as low spaciousness
+rule "Spaciousness Rule 9.3 - Low"
+when
+    $property : Property(areaPerRoom <= 20)
+then
+    $property.setSpaciousness("low");
+    update($property);
+end
+
+// Rule 10.1: If the sun orientation is south and east, classify as high sun exposure
+rule "SunExposure Rule 10.1 - High"
+when
+    $property : Property(sunOrientation == "south" || sunOrientation == "east")
+then
+    $property.setSunExposure("high");
+    update($property);
+end
+
+// Rule 10.2: If the sun orientation is either south or east, but not both, classify as medium sun exposure
+rule "SunExposure Rule 10.2 - Medium"
+when
+    $property : Property((sunOrientation == "south" && sunOrientation != "east") ||
+                         (sunOrientation == "east" && sunOrientation != "south"))
+then
+    $property.setSunExposure("medium");
+    update($property);
+end
+
+// Rule 10.3: If not classified as high or medium sun exposure, classify as low sun exposure
+rule "SunExposure Rule 10.3 - Low"
+when
+    $property : Property(sunExposure == null || sunExposure == "")
+then
+    $property.setSunExposure("low");
+    update($property);
+end
+
+// Rule 11.1: If public parking availability is low, classify property as low public parking
+rule "Parking Rule 11.1 - Low Public Parking"
+when
+    $location : Location(parking == "low")
+    $property : Property(location == $location)
+then
+    $property.setPublicParking("low");
+    update($property);
+end
+
+// Rule 11.2: If public parking availability is medium, classify property as medium public parking
+rule "Parking Rule 11.2 - Medium Public Parking"
+when
+    $location : Location(parking == "medium")
+    $property : Property(location == $location)
+then
+    $property.setPublicParking("medium");
+    update($property);
+end
+
+// Rule 11.3: If public parking availability is high, classify property as high public parking
+rule "Parking Rule 11.3 - High Public Parking"
+when
+    $location : Location(parking == "high")
+    $property : Property(location == $location)
+then
+    $property.setPublicParking("high");
+    update($property);
+end
+
+// Rule 11.4: If the property has a garage and public parking is high or medium, classify as high overall parking
+rule "Parking Rule 11.4 - High Overall Parking"
+when
+    $property : Property(garage == "present")
+    $publicParking : Property(publicParking == "high" || publicParking == "medium")
+then
+    $property.setOverallParking("high");
+    update($property);
+end
+
+// Rule 11.5: If the property does not have a garage but public parking is high or medium, classify as medium overall parking
+rule "Parking Rule 11.5 - Medium Overall Parking"
+when
+    $property : Property(garage == "absent")
+    $publicParking : Property(publicParking == "high" || publicParking == "medium")
+then
+    $property.setOverallParking("medium");
+    update($property);
+end
+
+// Rule 11.6: If the property does not have a garage and public parking is low, classify as low overall parking
+rule "Parking Rule 11.6 - Low Overall Parking"
+when
+    $property : Property(garage == "absent")
+    $publicParking : Property(publicParking == "low")
+then
+    $property.setOverallParking("low");
+    update($property);
+end
+
+// Rule 12.1: If the property was constructed after 2020, classify as high state of condition
+rule "BuildState Rule 12.1 - High"
+when
+    $property : Property(yearConstruction > 2020)
+then
+    $property.setBuildState("high");
+    update($property);
+end
+
+// Rule 12.2: If the property was constructed between 1990 and 2020 (inclusive), classify as medium state of condition
+rule "BuildState Rule 12.2 - Medium"
+when
+    $property : Property(yearConstruction >= 1990 && yearConstruction <= 2020)
+then
+    $property.setBuildState("medium");
+    update($property);
+end
+
+// Rule 12.3: If the property was constructed before 1990, classify as low state of condition
+rule "BuildState Rule 12.3 - Low"
+when
+    $property : Property(yearConstruction < 1990)
+then
+    $property.setBuildState("low");
+    update($property);
+end
+
+// Rule 13.1: If the property is located in an area where property values have increased by more than 50% in the last five years, classify as high potential for appreciation
+rule "PotentialAppreciation Rule 13.1 - High Potential"
+when
+    $location : Location(last5YearsIncreased > 50)
+    $property : Property(location == $location)
+then
+    $property.setPotentialAppreciation("high");
+    update($property);
+end
+
+// Rule 13.2: If the property is located in an area where property values have increased by between 20% and 50% in the last five years, classify as medium potential for appreciation
+rule "PotentialAppreciation Rule 13.2 - Medium Potential"
+when
+    $location : Location(last5YearsIncreased >= 20 && last5YearsIncreased <= 50)
+    $property : Property(location == $location)
+then
+    $property.setPotentialAppreciation("medium");
+    update($property);
+end
+
+// Rule 13.3: If the property is located in an area where property values have increased by less than 20% in the last five years, classify as low potential for appreciation
+rule "PotentialAppreciation Rule 13.3 - Low Potential"
+when
+    $location : Location(last5YearsIncreased < 20)
+    $property : Property(location == $location)
+then
+    $property.setPotentialAppreciation("low");
+    update($property);
+end
+
+// Rule 14.1: If the property has a security value then calculate its score
+rule "SecurityScore Rule 14.1 - Calculate security score"
+when
+    $property : Property(security != null)
+then
+    $property.setScore("security", $property.getMetaScore($property.getSecurity()) * $property.getWeight("security"));
+    update($property);
+end
+
+// Rule 14.2: If the property has a overall comfort value then calculate its score
+rule "ComfortScore Rule 14.2 - Calculate comfort score"
+when
+    $property : Property(overallComfort != null)
+then
+    $property.setScore("comfort", $property.getMetaScore($property.getOverallComfort()) * $property.getWeight("comfort"));
+    update($property);
+end
+
+// Rule 14.3: If the property has a accessibility value then calculate its score
+rule "AccessibilityScore Rule 14.3 - Calculate accessibility score"
+when
+    $property : Property(accessibility != null)
+then
+    $property.setScore("accessibility", $property.getMetaScore($property.getAccessibility()) * $property.getWeight("accessibility"));
+    update($property);
+end
+
+// Rule 14.4: If the property has a maintenance value then calculate its score
+rule "MaintenanceScore Rule 14.4 - Calculate maintenance score"
+when
+    $property : Property(maintenance != null)
+then
+    $property.setScore("maintenance", $property.getMetaScore($property.getMaintenance()) * $property.getWeight("maintenance"));
+    update($property);
+end
+
+// Rule 14.5: If the property has a energyEfficiency value then calculate its score
+rule "EnergyEfficiencyScore Rule 14.5 - Calculate energyEfficiency score"
+when
+    $property : Property(energyEfficiency != null)
+then
+    $property.setScore("energyEfficiency", $property.getMetaScore($property.getEnergyEfficiency()) * $property.getWeight("energyEfficiency"));
+    update($property);
+end
+
+// Rule 14.6: If the property has a servicesLevel value then calculate its score
+rule "ServicesScore Rule 14.6 - Calculate servicesLevel score"
+when
+    $property : Property(serviceLevel != null)
+then
+    $property.setScore("services", $property.getMetaScore($property.getServiceLevel()) * $property.getWeight("services"));
+    update($property);
+end
+
+// Rule 14.7: If the property has a connectivity value then calculate its score
+rule "ConnectivityScore Rule 14.7 - Calculate connectivity score"
+when
+    $property : Property(connectivity != null)
+then
+    $property.setScore("connectivity", $property.getMetaScore($property.getConnectivity()) * $property.getWeight("connectivity"));
+    update($property);
+end
+
+// Rule 14.8: If the property has a viewQualityLevel value then calculate its score
+rule "ViewQualityLevelScore Rule 14.8 - Calculate viewQualityLevel score"
+when
+    $property : Property(viewQualityLevel != null)
+then
+    $property.setScore("viewQuality", $property.getMetaScore($property.getViewQualityLevel()) * $property.getWeight("viewQuality"));
+    update($property);
+end
+
+// Rule 14.9: If the property has a spaciousness value then calculate its score
+rule "SpaciousnessScore Rule 14.9 - Calculate spaciousness score"
+when
+    $property : Property(spaciousness != null)
+then
+    $property.setScore("spaciousness", $property.getMetaScore($property.getSpaciousness()) * $property.getWeight("spaciousness"));
+    update($property);
+end
+
+// Rule 14.10: If the property has a sunExposure value then calculate its score
+rule "SunExposureScore Rule 14.10 - Calculate sunExposure score"
+when
+    $property : Property(sunExposure != null)
+then
+    $property.setScore("sunExposure", $property.getMetaScore($property.getSunExposure()) * $property.getWeight("sunExposure"));
+    update($property);
+end
+
+// Rule 14.11: If the property has a overallParking value then calculate its score
+rule "OverallParkingScore Rule 14.11 - Calculate overallParking score"
+when
+    $property : Property(overallParking != null)
+then
+    $property.setScore("parking", $property.getMetaScore($property.getOverallParking()) * $property.getWeight("parking"));
+    update($property);
+end
+
+// Rule 14.12: If the property has a buildState value then calculate its score
+rule "BuildStateScore Rule 14.12 - Calculate buildState score"
+when
+    $property : Property(buildState != null)
+then
+    $property.setScore("buildState", $property.getMetaScore($property.getBuildState()) * $property.getWeight("buildState"));
+    update($property);
+end
+
+// Rule 14.13: If the property has a potentialAppreciation value then calculate its score
+rule "BuildStateScore Rule 14.13 - Calculate potentialAppreciation score"
+when
+    $property : Property(potentialAppreciation != null)
+then
+    $property.setScore("potentialAppreciation", $property.getMetaScore($property.getPotentialAppreciation()) * $property.getWeight("potentialAppreciation"));
+    update($property);
+end
+
+// Rule 14.14: Calculate total score
+rule "TotalScore Rule 14.14 - Calculate total score"
+no-loop
+when
+    $property: Property(scores != null)
+then
+    $property.calculateTotalScore();
+    update($property)
+end
