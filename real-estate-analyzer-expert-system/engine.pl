@@ -6,11 +6,34 @@
 :-op(600,xfy,or).
 
 :-dynamic justifies/3.
+:-dynamic last_fact/1.
+
+last_fact(1).
+
+create_initial_fact(ID, F):-
+	asserta(last_fact(ID)),
+	assertz(fact(ID,F)),!.
+
+create_inital_facts:-
+	create_initial_fact(1,meta_user_score_security(1)),
+	create_initial_fact(2,meta_user_score_security(1)),
+	create_initial_fact(3,meta_user_score_security(1)),
+	create_initial_fact(4,meta_user_score_security(1)),
+	create_initial_fact(5,meta_user_score_security(1)),
+	create_initial_fact(6,meta_user_score_security(1)),
+	create_initial_fact(7,meta_user_score_security(1)),
+	create_initial_fact(8,meta_user_score_security(1)),
+	create_initial_fact(9,meta_user_score_security(1)),
+	create_initial_fact(10,meta_user_score_security(1)),
+	create_initial_fact(11,meta_user_score_security(1)),
+	create_initial_fact(12,meta_user_score_security(1)),
+	create_initial_fact(13,meta_user_score_security(1)).
 
 % load knowledge base
 load_kb:-
 	consult('Metaknowledge/index.pl'),
 	consult('Rules/index.pl'),
+	create_inital_facts(),
     consult('Facts/index.pl').
 
 % counts the number of facts
@@ -125,7 +148,9 @@ conclude([create_fact(F)|Y],ID,LFacts):-
 conclude([],_,_):-!.
 
 % creates fact
+
 create_fact(F,_,_):-
+	writeln('fact2'),
 	fact(_,F),!.
 
 create_fact(F,ID,LFacts):-
@@ -143,7 +168,12 @@ create_fact(F,ID,LFacts):-
 	create_fact(FinalFact,ID,LFacts).
 
 create_fact(F,ID,LFacts):-
+	writeln('fact'),
+	writeln(F),
+	writeln(ID),
 	retract(last_fact(N1)),
+	writeln('N1'),
+	writeln(N1),
 	N is N1+1,
 	asserta(last_fact(N)),
 	assertz(justifies(N,ID,LFacts)),

@@ -7,12 +7,13 @@ import org.kie.api.runtime.KieContainer;
 import org.kie.api.event.rule.AfterMatchFiredEvent;
 import org.kie.api.runtime.KieSession;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.*;
 
 @RestController
+
+@RequestMapping("/api/realestates")
 public class PropertyController {
 
     @Autowired
@@ -20,8 +21,9 @@ public class PropertyController {
 
     private static final Map<String, Map<String, List<String>>> triggeredRulesMap = new HashMap<>();
 
-    @GetMapping("/properties")
-    public List<Property> getProperties() {
+    @CrossOrigin(origins = "http://localhost:3000")
+    @PostMapping("/getrealestates")
+    public List<Property> getRealEstates(@RequestBody(required = false) Map<String, Object> requestBody) {
         KieSession kSession = kieContainer.newKieSession("ksession-rules");
         if (kSession == null) {
             System.out.println("Failed to load KieSession.");
