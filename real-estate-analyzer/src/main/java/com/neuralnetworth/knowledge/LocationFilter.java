@@ -12,7 +12,8 @@ public class LocationFilter implements ObjectFilter {
 
     @Override
     public boolean accept(Object object) {
-        if (object instanceof Location location) {
+        if (object instanceof Location) {
+            Location location = (Location) object;
             return location.getName().equals(locationName);
         }
         return false;

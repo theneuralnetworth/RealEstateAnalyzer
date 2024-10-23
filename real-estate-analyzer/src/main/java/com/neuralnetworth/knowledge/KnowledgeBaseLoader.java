@@ -18,7 +18,14 @@ public class KnowledgeBaseLoader {
 
     private final String propertiesFilename;
     private final String locationsFilename;
-    private KieSession kieSession;
+    private final KieSession kieSession;
+
+    public KnowledgeBaseLoader(KieSession kieSession){
+        super();
+        this.kieSession = kieSession;
+        this.propertiesFilename = System.getenv("KNOWLEDGE_BASE_PROPERTIES_FILE");
+        this.locationsFilename = System.getenv("KNOWLEDGE_BASE_LOCATIONS_FILE");
+    }
 
     public KnowledgeBaseLoader(KieSession kieSession, String propertiesFilename, String locationsFilename) {
         super();

@@ -19,14 +19,12 @@ public class Main {
         try {
             KieServices ks = KieServices.Factory.get();
             KieContainer kContainer = ks.getKieClasspathContainer();
-
             KieSession kSession = kContainer.newKieSession("ksession-rules");
             if (kSession == null) {
                 System.out.println("Failed to load KieSession.");
-                return;
-            } else {
-                System.out.println("KieSession loaded successfully.");
+                throw new RuntimeException("Failed to load KieSession.");
             }
+            System.out.println("KieSession loaded successfully.");
 
             kSession.addEventListener(new AgendaEventListener() {
                 @Override
