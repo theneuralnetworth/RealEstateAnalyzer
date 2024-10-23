@@ -7,14 +7,39 @@ def read_json_from_file(file_path):
 
 # Função para gerar os factos Prolog
 def generate_prolog_facts(data, output_file_path):
-    fact_counter = 109  # Contador para o número de factos
+    fact_counter = 122  # Contador para o número de factos
     prolog_facts = []
 
-    for item in data:
+    for item in data[:20]:
         id_imovel = item.get("id")
-        title = item.get("title", "").replace("'", "")
-        description = item.get("description", "").replace("'", "")
-        location = item.get("location", "").replace("'", "")
+        title = item.get("title")
+        description = item.get("description")
+        location = item.get("location")
+        price = item.get("price")
+        area_sqm = item.get("area_sqm")
+        typology = item.get("typology")
+        energyRate = item.get("energyRate")
+        toiletsNumber = item.get("toiletsNumber")
+        ramps = item.get("ramps")
+        securitySystem = item.get("securitySystem")
+        elevator = item.get("elevator")
+        swimmingPool = item.get("swimmingPool")
+        garden = item.get("garden")
+
+       
+        yearConstruction = item.get("yearConstruction")
+        garage = item.get("garage")
+        opticalFiber = item.get("opticalFiber")
+        sunOrientation = item.get("sunOrientation")
+        floorLevel = item.get("floorLevel")
+        smartAppliances = item.get("smartAppliances")
+        numberRooms = item.get("numberRooms")
+        areaPerRoom = item.get("areaPerRoom")
+        thermalComfort = item.get("thermalComfort")
+        acousticIsolation = item.get("acousticIsolation")
+        images = item.get("images")
+    
+        
         
         # Fact: Property
         prolog_facts.append(f"fact({fact_counter}, property({id_imovel}, '{title}')).")
@@ -25,97 +50,95 @@ def generate_prolog_facts(data, output_file_path):
         fact_counter += 1
 
         # Itera sobre as características e cria factos
-        characteristics = {char['label'].lower(): char['localizedValue'] for char in item.get('characteristics', [])}
+        #characteristics = {char['label'].lower(): char['localizedValue'] for char in item.get('characteristics', [])}
 
         # Preço
-        price = characteristics.get('preço', '').replace('€', '').replace(' ', '')
-        if price:
-            prolog_facts.append(f"fact({fact_counter}, price({id_imovel}, {price})).")
-            fact_counter += 1
+       
+        prolog_facts.append(f"fact({fact_counter}, price({id_imovel}, {price})).")
+        fact_counter += 1
 
         # Área
-        area = characteristics.get('área', '').replace('m²', '').replace(' ', '')
-        if area:
-            prolog_facts.append(f"fact({fact_counter}, area({id_imovel}, {area})).")
-            fact_counter += 1
+        
+        prolog_facts.append(f"fact({fact_counter}, area({id_imovel}, {area_sqm})).")
+        fact_counter += 1
 
         # Tipologia (Número de quartos)
-        rooms = characteristics.get('tipologia', '0').replace('T', '')
-        prolog_facts.append(f"fact({fact_counter}, rooms({id_imovel}, {rooms})).")
+        
+        prolog_facts.append(f"fact({fact_counter}, rooms({id_imovel}, {numberRooms})).")
         fact_counter += 1
 
         # Certificado energético
-        energy_rating = characteristics.get('certificado energético', '').lower()
-        prolog_facts.append(f"fact({fact_counter}, energy_rating({id_imovel}, '{energy_rating}')).")
+        
+        prolog_facts.append(f"fact({fact_counter}, energy_rating({id_imovel}, '{energyRate}')).")
         fact_counter += 1
 
         # Ano de construção
-        year_construction = characteristics.get('ano de construção', '')
-        prolog_facts.append(f"fact({fact_counter}, year_construction({id_imovel}, {year_construction})).")
+        
+        prolog_facts.append(f"fact({fact_counter}, year_construction({id_imovel}, {yearConstruction})).")
         fact_counter += 1
 
         # Elevador
-        elevator_present = characteristics.get("elevator", "absent")
-        prolog_facts.append(f"fact({fact_counter}, elevator({id_imovel}, {elevator_present})).")
+        
+        prolog_facts.append(f"fact({fact_counter}, elevator({id_imovel}, {elevator})).")
         fact_counter += 1
 
         # Garagem
-        garage_present = characteristics.get("garage", "absent")
-        prolog_facts.append(f"fact({fact_counter}, garage({id_imovel}, {garage_present})).")
+     
+        prolog_facts.append(f"fact({fact_counter}, garage({id_imovel}, {garage})).")
         fact_counter += 1
 
         # Sistema de segurança
-        security_system = characteristics.get("security_system", "absent")
-        prolog_facts.append(f"fact({fact_counter}, security_system({id_imovel}, {security_system})).")
+        
+        prolog_facts.append(f"fact({fact_counter}, security_system({id_imovel}, {securitySystem})).")
         fact_counter += 1
 
         # Ramps
-        ramps_present = characteristics.get("ramps", "absent")
-        prolog_facts.append(f"fact({fact_counter}, ramps({id_imovel}, {ramps_present})).")
+       
+        prolog_facts.append(f"fact({fact_counter}, ramps({id_imovel}, {ramps})).")
         fact_counter += 1
 
         # Piscina
-        swimming_pool_present = characteristics.get("swimming_pool", "absent")
-        prolog_facts.append(f"fact({fact_counter}, swimming_pool({id_imovel}, {swimming_pool_present})).")
+        
+        prolog_facts.append(f"fact({fact_counter}, swimming_pool({id_imovel}, {swimmingPool})).")
         fact_counter += 1
 
         # Jardim
-        garden_present = characteristics.get("garden", "absent")
-        prolog_facts.append(f"fact({fact_counter}, garden({id_imovel}, {garden_present})).")
+        
+        prolog_facts.append(f"fact({fact_counter}, garden({id_imovel}, {garden})).")
         fact_counter += 1
 
         # Fibra óptica
-        optical_fiber_present = characteristics.get("optical_fiber", "absent")
-        prolog_facts.append(f"fact({fact_counter}, optical_fiber({id_imovel}, {optical_fiber_present})).")
+        
+        prolog_facts.append(f"fact({fact_counter}, optical_fiber({id_imovel}, {opticalFiber})).")
         fact_counter += 1
 
         # Smart appliances
-        smart_appliances_present = characteristics.get("smart_appliances", "absent")
-        prolog_facts.append(f"fact({fact_counter}, smart_appliances({id_imovel}, {smart_appliances_present})).")
+        
+        prolog_facts.append(f"fact({fact_counter}, smart_appliances({id_imovel}, {smartAppliances})).")
         fact_counter += 1
 
         # Número de andares
-        floor_number = characteristics.get("floor number", 0)
-        prolog_facts.append(f"fact({fact_counter}, floor_level({id_imovel}, {floor_number})).")
+        
+        prolog_facts.append(f"fact({fact_counter}, floor_level({id_imovel}, {floorLevel})).")
         fact_counter += 1
 
         # Orientação solar
-        sun_orientation = characteristics.get("sun_orientation", "unknown").lower()
-        prolog_facts.append(f"fact({fact_counter}, sun_orientation({id_imovel}, {sun_orientation})).")
+       
+        prolog_facts.append(f"fact({fact_counter}, sun_orientation({id_imovel}, {sunOrientation})).")
         fact_counter += 1
 
         # Área por quarto
-        area_per_room = characteristics.get("area_per_room", 0)
-        prolog_facts.append(f"fact({fact_counter}, area_per_room({id_imovel}, {area_per_room})).")
+        
+        prolog_facts.append(f"fact({fact_counter}, area_per_room({id_imovel}, {areaPerRoom})).")
         fact_counter += 1
 
 
-        thermal_comfort = characteristics.get("thermalconfort")
-        prolog_facts.append(f"fact({fact_counter}, thermal_comfort({id_imovel}, {thermal_comfort})).")
+        
+        prolog_facts.append(f"fact({fact_counter}, thermal_comfort({id_imovel}, {thermalComfort})).")
         fact_counter += 1
 
-        acoustic_insulation = characteristics.get("acoustic_insulation")
-        prolog_facts.append(f"fact({fact_counter}, acoustic_insulation({id_imovel}, {acoustic_insulation})).")
+        
+        prolog_facts.append(f"fact({fact_counter}, acoustic_insulation({id_imovel}, {acousticIsolation})).")
         fact_counter += 1
 
         # Adicionar imagens
@@ -123,6 +146,9 @@ def generate_prolog_facts(data, output_file_path):
         for image in images:
             prolog_facts.append(f"fact({fact_counter}, image({id_imovel}, '{image}')).")
             fact_counter += 1
+            
+            
+        
 
     
         prolog_facts.append("")
@@ -133,7 +159,7 @@ def generate_prolog_facts(data, output_file_path):
             output_file.write(fact + '\n')
 
 # Exemplo de uso
-file_path = '../ImoveisData/finalproperties.json'
-output_file = '../Facts/finalfacts.pl'
+file_path = '../ImoveisData/finalpropertiesDrools.json'
+output_file = '../Facts/finalfactsV2.pl'
 json_data = read_json_from_file(file_path)
 generate_prolog_facts(json_data, output_file)

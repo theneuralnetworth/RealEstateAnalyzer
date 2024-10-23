@@ -7,7 +7,7 @@ input_json_file = '../ImoveisData/location.json'
 with open(input_json_file, 'r', encoding='utf-8') as f:
     data = json.load(f)
 # Initialize fact counter
-fact_counter = 1
+fact_counter = 14
 
 # Function to generate facts
 def generate_prolog_facts(data):
