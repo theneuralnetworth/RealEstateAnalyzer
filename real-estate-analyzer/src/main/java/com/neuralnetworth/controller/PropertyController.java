@@ -101,9 +101,9 @@ public class PropertyController {
 
     private List<Property> createProperties() {
         List<Location> locations = new ArrayList<>();
-        Location lisbon = new Location("lisboa", "low", "absent", "present", "absent", "absent", "present", "absent", "absent", "low", 70);
-        Location porto = new Location("porto", "medium", "present", "present", "present", "absent", "present", "present", "absent", "medium", 35);
-        Location faro = new Location("faro", "high", "absent", "absent", "present", "present", "present", "present", "present", "high", 10);
+        Location lisbon = new Location("lisboa", "low", "absent", "present", "absent", "absent", "present", "absent", "absent", "low", 70, "present", "absent");
+        Location porto = new Location("porto", "medium", "present", "present", "present", "absent", "present", "present", "absent", "medium", 35, "absent", "present");
+        Location faro = new Location("faro", "high", "absent", "absent", "present", "present", "present", "present", "present", "high", 10, "absent", "absent");
         locations.add(lisbon);
         locations.add(porto);
         locations.add(faro);
