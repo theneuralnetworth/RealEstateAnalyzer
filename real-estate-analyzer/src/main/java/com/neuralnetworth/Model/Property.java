@@ -1,5 +1,7 @@
 package com.neuralnetworth.Model;
 
+import java.util.List;
+
 // Property class
 public class Property {
     private String id;
@@ -22,6 +24,12 @@ public class Property {
     private float areaPerRoom;
     private String sunOrientation;
     private String propertyType;
+    private long price;
+    private int toiletsNumber;
+    private String opticalFiber;
+    private String smartAppliances;
+    private String typology;
+    private List<String> images;
 
     //Inferred attributes
     private String crimeRate;
@@ -148,6 +156,24 @@ public class Property {
 
     public String getEnergyEfficiency() { return energyEfficiency; }
     public void setEnergyEfficiency(String energyEfficiency) { this.energyEfficiency = energyEfficiency; }
+
+    public long getPrice() {return price;}
+    public void setPrice(long price) {this.price = price;}
+
+    public int getToiletsNumber() {return toiletsNumber;}
+    public void setToiletsNumber(int toiletsNumber) {this.toiletsNumber = toiletsNumber;}
+
+    public String getOpticalFiber() {return opticalFiber;}
+    public void setOpticalFiber(String opticalFiber) {this.opticalFiber = opticalFiber;}
+
+    public String getSmartAppliances() {return smartAppliances;}
+    public void setSmartAppliances(String smartAppliances) {this.smartAppliances = smartAppliances;}
+
+    public String getTypology() {return typology;}
+    public void setTypology(String typology) {this.typology = typology;}
+
+    public List<String> getImages() {return images;}
+    public void setImages(List<String> images) {this.images = images;}
 
     public void printInferredAttributes() {
         System.out.println("\n --------------------------------------------------");
