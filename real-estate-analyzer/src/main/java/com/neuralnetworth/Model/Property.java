@@ -294,4 +294,39 @@ public class Property {
         System.out.println("  Scores: " + (this.scores != null ? this.scores : "Not set"));
         System.out.println("  TotalScore: " + (this.totalScore != null ? this.totalScore : "Not set"));
     }
+
+    @Override
+    public String toString() {
+        return "Property {" +
+                "id='" + id + '\'' +
+                ", name='" + name + '\'' +
+                ", location=" + location.getName() +
+                ", securitySystem='" + securitySystem + '\'' +
+                ", acousticInsulation='" + acousticInsulation + '\'' +
+                ", thermalComfort='" + thermalComfort + '\'' +
+                ", elevator='" + elevator + '\'' +
+                ", ramps='" + ramps + '\'' +
+                ", swimmingPool='" + swimmingPool + '\'' +
+                ", garden='" + garden + '\'' +
+                ", propertyCondition='" + propertyCondition + '\'' +
+                ", energyRating='" + energyRating + '\'' +
+                ", garage='" + garage + '\'' +
+                ", yearConstruction=" + yearConstruction +
+                ", floorLevel=" + floorLevel +
+                ", area=" + area +
+                ", rooms=" + rooms +
+                ", areaPerRoom=" + areaPerRoom +
+                ", sunOrientation='" + sunOrientation + '\'' +
+                ", propertyType='" + propertyType + '\'' +
+                ", crimeRate='" + crimeRate + '\'' +
+                ", security='" + security + '\'' +
+                ", noiseLevel='" + noiseLevel + '\'' +
+                ", soundComfort='" + soundComfort + '\'' +
+                ", overallComfort='" + overallComfort + '\'' +
+                ", accessibility='" + accessibility + '\'' +
+                ", amenities='" + amenities + '\'' +
+                ", maintenance='" + maintenance + '\'' +
+                ", energyEfficiency='" + energyEfficiency + '\'' +
+                '}';
+    }
 }

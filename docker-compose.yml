@@ -8,6 +8,11 @@ services:
       PROLOG_URL: http://prolog:8000
     networks:
       - real-estate-analyzer
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:80/health"]
+      interval: 5s
+      timeout: 10s
+      retries: 5
 
   prolog:
     build:
@@ -23,12 +28,23 @@ services:
       context: ./real-estate-web
     ports:
       - "3000:80"
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:80"]
+      interval: 5s
+      timeout: 10s
+      retries: 5
 
   drools:
     build:
       context: ./real-estate-analyzer
     ports:
-      - "8082:80"
+      - "8082:8080"
+    volumes:
+      - ./locations.json:/knowledgebase/locations.json:ro
+      - ./properties.json:/knowledgebase/properties.json:ro
+    environment:
+      KNOWLEDGE_BASE_LOCATIONS_FILE: /knowledgebase/locations.json
+      KNOWLEDGE_BASE_PROPERTIES_FILE: /knowledgebase/properties.json
 
 networks:
   real-estate-analyzer:

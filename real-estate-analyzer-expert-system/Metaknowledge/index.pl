@@ -3,8 +3,8 @@
 % Security
 fact_triggers_rules(location_crime_rate(_, _), [1.1,1.2,1.3]).
 fact_triggers_rules(location_property(_, _), [1.1,1.2,1.3,6.1,6.2,6.3,6.4,6.5,11.1,11.2,11.3,13.1,13.2,13.3]).
-fact_triggers_rules(security_system(_, _), [1.4,1.5,1.6,1.7]).
-fact_triggers_rules(property_crime_rate(_, _), [1.4,1.5,1.6,1.7]).
+fact_triggers_rules(security_system(_, _), [1.4,1.5,1.6,1.7,1.8]).
+fact_triggers_rules(property_crime_rate(_, _), [1.4,1.5,1.6,1.7,1.8]).
 
 % Comfort
 fact_triggers_rules(airport(_, _), [2.1,2.2,2.3]).
