@@ -28,14 +28,14 @@ def get_number_of_rooms(tipologia_value):
         return None 
 
 # Iterate through the items to add the features to the "characteristics" section of the JSON
-for item in data[:20]:
+for item in data[:40]:
     
     new_property = {}
     
     id_imovel = item.get("id")
     title = item.get("title", "").replace("'", "")
     description = item.get("description", "").replace("'", "")
-    location = item.get("location", "").replace("'", "")
+    location = item.get("location", "").replace("'", "").lower()
     
     for characteristic in item["characteristics"]:
         if characteristic["label"] == "Preço":
@@ -49,7 +49,9 @@ for item in data[:20]:
             
         if characteristic["label"] == "Certificado energético":
             energyRate = characteristic["localizedValue"].lower()
-            
+      
+        
+        
         if characteristic["label"] == "N.º de casas de banho":
             toilets  = characteristic["localizedValue"]
             
@@ -61,9 +63,17 @@ for item in data[:20]:
     new_property["description"] = description
     new_property["location"] = location
     new_property["price"] = price
-    new_property["area_sqm"] = area
+    new_property["areaSqm"] = area
     new_property["typology"] =  typology
-    new_property["energyRate"] =  energyRate
+    
+    possible_values = ['a', 'b', 'c', 'd', 'f']
+    if energyRate  == "isento / em curso":
+        new_property["energyRating"] = random.choice(possible_values)
+    elif energyRate  == "a_plus":
+        new_property["energyRating"] =  "a"
+    else :
+        new_property["energyRating"] =  energyRate
+        
     new_property["toiletsNumber"] =  toilets
     
     
@@ -250,7 +260,7 @@ for item in data[:20]:
             #    })
             
             new_property["thermalComfort"] = termalconfort
-            new_property["acousticIsolation"] = termalconfort
+            new_property["acousticInsulation"] = termalconfort
         new_property["images"] = item.get("images")
 
     property_list.append(new_property)

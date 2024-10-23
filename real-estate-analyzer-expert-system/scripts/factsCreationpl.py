@@ -16,9 +16,9 @@ def generate_prolog_facts(data, output_file_path):
         description = item.get("description")
         location = item.get("location")
         price = item.get("price")
-        area_sqm = item.get("area_sqm")
+        area_sqm = item.get("areaSqm")
         typology = item.get("typology")
-        energyRate = item.get("energyRate")
+        energyRate = item.get("energyRating")
         toiletsNumber = item.get("toiletsNumber")
         ramps = item.get("ramps")
         securitySystem = item.get("securitySystem")
@@ -36,7 +36,7 @@ def generate_prolog_facts(data, output_file_path):
         numberRooms = item.get("numberRooms")
         areaPerRoom = item.get("areaPerRoom")
         thermalComfort = item.get("thermalComfort")
-        acousticIsolation = item.get("acousticIsolation")
+        acousticIsolation = item.get("acousticInsulation")
         images = item.get("images")
     
         

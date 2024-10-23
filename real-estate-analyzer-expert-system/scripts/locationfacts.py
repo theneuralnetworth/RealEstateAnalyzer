@@ -1,7 +1,7 @@
 import json
 
 # Sample JSON input (from your previous example)
-input_json_file = '../ImoveisData/location.json'
+input_json_file = '../ImoveisData/locations.json'
 
 # Load the data from the JSON file
 with open(input_json_file, 'r', encoding='utf-8') as f:
@@ -15,30 +15,30 @@ def generate_prolog_facts(data):
     global fact_counter
 
     for location_data in data:
-        location = location_data["location"].replace("'", "")
+        location = location_data["name"].replace("'", "")
         
         # Fact: Location Crime Rate
-        prolog_facts.append(f"fact({fact_counter}, location_crime_rate('{location}', {location_data['crime_rate']})).")
+        prolog_facts.append(f"fact({fact_counter}, location_crime_rate('{location}', {location_data['crimeRate']})).")
         fact_counter += 1
         
         # Fact: Nearby Schools
-        prolog_facts.append(f"fact({fact_counter}, nearby_schools('{location}', {location_data['nearby_schools']})).")
+        prolog_facts.append(f"fact({fact_counter}, nearby_schools('{location}', {location_data['nearbySchools']})).")
         fact_counter += 1
         
         # Fact: Nearby Public Transport
-        prolog_facts.append(f"fact({fact_counter}, nearby_public_transport('{location}', {location_data['nearby_public_transport']})).")
+        prolog_facts.append(f"fact({fact_counter}, nearby_public_transport('{location}', {location_data['nearbyPublicTransport']})).")
         fact_counter += 1
         
         # Fact: Nearby Hospitals
-        prolog_facts.append(f"fact({fact_counter}, nearby_hospitals('{location}', {location_data['nearby_hospitals']})).")
+        prolog_facts.append(f"fact({fact_counter}, nearby_hospitals('{location}', {location_data['nearbyHospitals']})).")
         fact_counter += 1
         
         # Fact: Nearby Supermarkets
-        prolog_facts.append(f"fact({fact_counter}, nearby_supermarkets('{location}', {location_data['nearby_supermarkets']})).")
+        prolog_facts.append(f"fact({fact_counter}, nearby_supermarkets('{location}', {location_data['nearbySupermarkets']})).")
         fact_counter += 1
         
         # Fact: Nearby Leisure Areas
-        prolog_facts.append(f"fact({fact_counter}, nearby_leisure_areas('{location}', {location_data['nearby_leisure_areas']})).")
+        prolog_facts.append(f"fact({fact_counter}, nearby_leisure_areas('{location}', {location_data['nearbyLeisureAreas']})).")
         fact_counter += 1
         
         # Fact: Parking Availability
@@ -46,7 +46,7 @@ def generate_prolog_facts(data):
         fact_counter += 1
         
         # Fact: Last 5 years appreciation rate
-        prolog_facts.append(f"fact({fact_counter}, last_5_years_increased('{location}', {location_data['last_5_years_increased']})).")
+        prolog_facts.append(f"fact({fact_counter}, last_5_years_increased('{location}', {location_data['last5YearsIncreased']})).")
         fact_counter += 1
         
         # Fact: Forest proximity
@@ -62,7 +62,7 @@ def generate_prolog_facts(data):
         fact_counter += 1
 
         # Fact: busy_traffic
-        prolog_facts.append(f"fact({fact_counter}, busy_traffic('{location}', {location_data['busy_traffic']})).")
+        prolog_facts.append(f"fact({fact_counter}, busy_traffic('{location}', {location_data['busyTraffic']})).")
         fact_counter += 1
         
         # Add a blank line for better readability between locations
