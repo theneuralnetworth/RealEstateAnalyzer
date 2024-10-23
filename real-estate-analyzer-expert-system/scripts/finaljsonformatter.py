@@ -28,7 +28,7 @@ def get_number_of_rooms(tipologia_value):
         return None 
 
 # Iterate through the items to add the features to the "characteristics" section of the JSON
-for item in data[:100]:
+for item in data[:20]:
     
     new_property = {}
     
@@ -176,7 +176,11 @@ for item in data[:100]:
         if floor == "rés do chão":
             floor_number = 0
         else:
-            floor_number = floor
+            floor_number = floor_exists
+            
+    else : 
+        
+        floor_number = random.randint(0, 5)
         
         # Add the year_of_construction to the characteristics
         #item["characteristics"].append({
