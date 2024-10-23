@@ -27,13 +27,18 @@ rule 1.5
     if [property_crime_rate(Property, high) and security_system(Property, absent)]
     then [create_fact(result(Property, security, low))].
 
-% Rule 1.6: If the security system is absent and the property has a low or medium crime rate, then the property is classified as having medium security.
+% Rule 1.6: If the security system is absent and the property has a low crime rate, then the property is classified as having medium security.
 rule 1.6
-    if [security_system(Property, absent) and (property_crime_rate(Property, low) or property_crime_rate(Property, medium))]
+    if [security_system(Property, absent) and property_crime_rate(Property, low)]
     then [create_fact(result(Property, security, medium))].
 
-% Rule 1.7: If the property has a high crime rate and a security system is present, then the property is classified as having medium security.
+% Rule 1.7: If the security system is absent and the property has a medium crime rate, then the property is classified as having medium security.
 rule 1.7
+if [security_system(Property, absent) and property_crime_rate(Property, medium)]
+then [create_fact(result(Property, security, medium))].
+
+% Rule 1.8: If the property has a high crime rate and a security system is present, then the property is classified as having medium security.
+rule 1.8
     if [property_crime_rate(Property, high) and security_system(Property, present)]
     then [create_fact(result(Property, security, medium))].
 
