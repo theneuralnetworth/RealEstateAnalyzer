@@ -40,7 +40,7 @@ public class PropertyController {
                 for (Object object : event.getMatch().getObjects()) {
                     if (object instanceof Property) {
                         Property property = (Property) object;
-                        String propertyName = property.getName();
+                        String propertyName = property.getTitle();
 
                         String characteristic = ruleName.toLowerCase(Locale.ROOT).split(" ")[0];
 

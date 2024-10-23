@@ -299,7 +299,7 @@ public class Property {
     public String toString() {
         return "Property {" +
                 "id='" + id + '\'' +
-                ", name='" + name + '\'' +
+                ", name='" + title + '\'' +
                 ", location=" + location.getName() +
                 ", securitySystem='" + securitySystem + '\'' +
                 ", acousticInsulation='" + acousticInsulation + '\'' +
