@@ -11,6 +11,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.*;
+import java.util.stream.Collectors;
 
 @RestController
 
@@ -95,12 +96,15 @@ public class PropertyController {
         });
 
         KnowledgeBaseLoader kbLoader = new KnowledgeBaseLoader(kSession);
+        //kbLoader.insertFakeFacts(kSession);
+        kbLoader.loadLocations().forEach(kSession::insert);
+        kbLoader.loadProperties().forEach(kSession::insert);
 
         kSession.fireAllRules();
-
+        List<Property> properties = kSession.getObjects().stream().filter(obj -> obj instanceof Property).map(obj -> (Property) obj).collect(Collectors.toList());
         kSession.dispose();
 
-        return kbLoader.loadProperties();
+        return  properties;
     }
 
     private List<Property> createProperties() {

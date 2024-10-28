@@ -669,7 +669,8 @@ rule "SecurityScore Rule 14.1 - Calculate security score"
 when
     $property : Property(security != null)
 then
-    $property.setScore("security", $property.getMetaScore($property.getSecurity()) * $property.getWeight("security"));
+    Float $securityScore = $property.getMetaScore($property.getSecurity()) * $property.getWeight("security");
+    $property.setScoreSecurity($securityScore);
     update($property);
 end
 

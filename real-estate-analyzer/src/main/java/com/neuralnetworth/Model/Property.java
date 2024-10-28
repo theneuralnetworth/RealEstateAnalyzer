@@ -36,10 +36,11 @@ public class Property {
 
 
     // Calculated
-    private final List<String> services;
-    private final Map<String, Float> metaScores;
-    private final Map<String, Integer> weights;
-    private final Map<String, Float> scores;
+    private List<String> services;
+    private Map<String, Float> metaScores;
+    private Map<String, Integer> weights;
+    private Float scoreSecurity;
+    private Map<String, Float> scores;
 
     //Inferred attributes
     private String crimeRate;
@@ -63,6 +64,32 @@ public class Property {
     private String potentialAppreciation;
     private Float totalScore;
 
+    public Property() {
+        this.services = new ArrayList<>();
+        this.metaScores = new HashMap<>();
+        this.weights = new HashMap<>();
+        this.scores = new HashMap<>();
+
+        metaScores.put("high", 1f);
+        metaScores.put("medium", 0.7f);
+        metaScores.put("low", 0.4f);
+
+        weights.put("security", 10);
+        weights.put("comfort", 15);
+        weights.put("accessibility", 8);
+        weights.put("maintenance", 12);
+        weights.put("energyEfficiency", 10);
+        weights.put("services", 10);
+        weights.put("connectivity", 7);
+        weights.put("viewQuality", 8);
+        weights.put("spaciousness", 10);
+        weights.put("sunExposure", 5);
+        weights.put("parking", 5);
+        weights.put("buildState", 5);
+        weights.put("potentialAppreciation", 5);
+
+        this.totalScore = 0f;
+    }
 
     public Property(String id, String title, Location location, String securitySystem, String acousticInsulation,
                     String thermalComfort, String elevator, String ramps, String swimmingPool,
@@ -91,6 +118,7 @@ public class Property {
         this.propertyType = propertyType;
         this.opticalFiber = opticalFiber;
         this.smartAppliances = smartAppliances;
+        this.totalScore =0f;
 
         this.services = new ArrayList<>();
         this.metaScores = new HashMap<>();
@@ -283,6 +311,10 @@ public class Property {
 
     public Map<String, Float> getScores() { return scores; }
     public void setScore(String key, Float value) { this.scores.put(key, value); }
+
+    public float getScoreSecurity() { return scoreSecurity; }
+    public void setScoreSecurity(float scoreSecurity) { this.scoreSecurity = scoreSecurity; }
+
 
     public float getTotalScore() { return totalScore; }
     public void setTotalScore(float totalScore) { this.totalScore = totalScore; }
