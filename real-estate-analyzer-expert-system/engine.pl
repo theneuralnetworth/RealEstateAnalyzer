@@ -161,7 +161,6 @@ flatten_list(L, [L]) :-
 % creates fact
 
 create_fact(F,_,_):-
-	writeln('fact2'),
 	fact(_,F),!.
 
 create_fact(F,ID,LFacts):-
