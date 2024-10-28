@@ -7,7 +7,7 @@ def read_json_from_file(file_path):
 
 # Função para gerar os factos Prolog
 def generate_prolog_facts(data, output_file_path):
-    fact_counter = 121  # Contador para o número de factos
+    fact_counter = 134 # Contador para o número de factos
     prolog_facts = []
 
     for item in data[:20]:
@@ -16,7 +16,7 @@ def generate_prolog_facts(data, output_file_path):
         description = item.get("description")
         location = item.get("location")
         price = item.get("price")
-        area_sqm = item.get("areaSqm")
+        area_sqm = item.get("area")
         typology = item.get("typology")
         energyRate = item.get("energyRating")
         toiletsNumber = item.get("toiletsNumber")
@@ -38,15 +38,22 @@ def generate_prolog_facts(data, output_file_path):
         thermalComfort = item.get("thermalComfort")
         acousticIsolation = item.get("acousticInsulation")
         images = item.get("images")
+        propertyType = item.get("propertyType")
     
         
         
         # Fact: Property
         prolog_facts.append(f"fact({fact_counter}, property({id_imovel}, '{title}')).")
         fact_counter += 1
+        
+        
 
         # Fact: Location Property
         prolog_facts.append(f"fact({fact_counter}, location_property({id_imovel}, '{location.lower()}')).")
+        fact_counter += 1
+        
+        
+        prolog_facts.append(f"fact({fact_counter}, property_type({id_imovel}, '{propertyType}')).")
         fact_counter += 1
 
         # Itera sobre as características e cria factos

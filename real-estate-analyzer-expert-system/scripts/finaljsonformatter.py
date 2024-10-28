@@ -63,7 +63,7 @@ for item in data[:40]:
     new_property["description"] = description
     new_property["location"] = location
     new_property["price"] = price
-    new_property["area"] = area
+    new_property["area"] = float(area.replace(',', '.'))
     new_property["typology"] =  typology
     new_property["propertyType"] = "apartment"
     

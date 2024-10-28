@@ -249,16 +249,14 @@ rule 8.2
     then [create_fact(view_quality(Property, low))].
 
 rule 8.3
-   if [view_quality(Property, low)]
+    if [view_quality(Property, high) and property_type(Property, residence)]
+    then [create_fact(result(Property, view_quality, high))].
+rule 8.4
+    if [view_quality(Property, low) and property_type(Property, residence)]
+    then [create_fact(result(Property, view_quality, medium))].
+rule 8.5
+    if [view_quality(Property, low) and property_type(Property, apartment)]
     then [create_fact(result(Property, view_quality, low))].
-%
-%rule 8.4
-%    if [view_quality(Property, low) and property_type(Property, residence)]
-%    then [create_fact(result(Property, view_quality, medium))].
-%
-%rule 8.5
-%    if [view_quality(Property, low) and property_type(Property, apartment)]
-%    then [create_fact(result(Property, view_quality, low))].
 
 rule 8.6
     if [view_quality(Property, high) and evaluate(floor_level(Property, >=, 4))]
@@ -433,5 +431,4 @@ rule 14.13
     then [create_fact(score(Property, potential_appreciation, operation(multi,P, 5)))].
 
 rule 14.14
-    if [score(Property,_,_) and score(Property,security,_) and score(Property,comfort,_) and score(Property,accessibility,_) and score(Property,maintenance,_) and score(Property,energy_efficiency,_) and score(Property,services,_)  and score(Property,parking,_) and score(Property,state,_) and score(Property,potential_appreciation,_)]
-    then [create_fact(final_score(Property, operation(sum_all,score(Property,_,_), _)))].
+    if [score(Property,_,_) and score(Property,security,_) and score(Property,comfort,_) and score(Property,accessibility,_) and score(Property,maintenance,_) and score(Property,energy_efficiency,_) and score(Property,services,_)  and score(Property,parking,_) and score(Property,state,_) and score(Property,potential_appreciation,_)].
