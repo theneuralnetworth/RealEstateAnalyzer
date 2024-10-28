@@ -1,5 +1,18 @@
 :- dynamic fact/2.
 
+fact(1,meta_user_score_security(1)).
+fact(2,meta_user_score_security(1)).
+fact(3,meta_user_score_security(1)).
+fact(4,meta_user_score_security(1)).
+fact(5,meta_user_score_security(1)).
+fact(6,meta_user_score_security(1)).
+fact(7,meta_user_score_security(1)).
+fact(8,meta_user_score_security(1)).
+fact(9,meta_user_score_security(1)).
+fact(10,meta_user_score_security(1)).
+fact(11,meta_user_score_security(1)).
+fact(12,meta_user_score_security(1)).
+fact(13,meta_user_score_security(1)).
 
 fact(14, location_crime_rate('aldoar, foz do douro e nevogilde', low)).
 fact(15, nearby_schools('aldoar, foz do douro e nevogilde', present)).
@@ -124,7 +137,7 @@ fact(124, price(18484873, 900000)).
 fact(125, area(18484873, 227)).
 fact(126, rooms(18484873, 5)).
 fact(127, energy_rating(18484873, 'c')).
-fact(128, year_construction(18484873, 1998)).
+fact(128, year_construction(18484873, 2021)).
 fact(129, elevator(18484873, absent)).
 fact(130, garage(18484873, absent)).
 fact(131, security_system(18484873, absent)).
