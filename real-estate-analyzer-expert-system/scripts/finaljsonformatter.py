@@ -63,8 +63,9 @@ for item in data[:40]:
     new_property["description"] = description
     new_property["location"] = location
     new_property["price"] = price
-    new_property["areaSqm"] = area
+    new_property["area"] = area
     new_property["typology"] =  typology
+    new_property["propertyType"] = "apartment"
     
     possible_values = ['a', 'b', 'c', 'd', 'f']
     if energyRate  == "isento / em curso":
