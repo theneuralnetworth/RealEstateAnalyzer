@@ -131,30 +131,44 @@ fact(119, beach('rio tinto', absent)).
 fact(120, airport('rio tinto', absent)).
 fact(121, busy_traffic('rio tinto', absent)).
 
-fact(122, property(18484873, 'T4, apartamento para comprar - Rua São João Novo, Cedofeita, Santo Ildefonso, Sé, Miragaia, São Nicolau e Vitória - 18484873 • www.imovirtual.com')).
-fact(123, location_property(18484873, 'cedofeita, ildefonso, sé, miragaia, nicolau, vitória')).
-fact(124, price(18484873, 900000)).
-fact(125, area(18484873, 227)).
-fact(126, rooms(18484873, 5)).
-fact(127, energy_rating(18484873, 'c')).
-fact(128, year_construction(18484873, 2021)).
-fact(129, elevator(18484873, absent)).
-fact(130, garage(18484873, absent)).
-fact(131, security_system(18484873, absent)).
-fact(132, ramps(18484873, absent)).
-fact(133, swimming_pool(18484873, absent)).
-fact(134, garden(18484873, absent)).
-fact(135, optical_fiber(18484873, absent)).
-fact(136, smart_appliances(18484873, present)).
-fact(137, floor_level(18484873, 4)).
-fact(138, sun_orientation(18484873, south)).
-fact(139, area_per_room(18484873, 45.4)).
-fact(140, thermal_comfort(18484873, medium)).
-fact(141, acoustic_insulation(18484873, medium)).
-fact(142, image(18484873, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IndmZm04czJ6bjUxODItRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.8KhgVjhJCcQKbYbQ7eZZaAoEZxrKECfDxwytRSpBpLk/image;s=655x491;q=80')).
-fact(143, image(18484873, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Ijl0Zmdha3J6ajFpbjEtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.F0SId0NIme9HM9Fe-nINqUF-vp9qg5MnS7NEbTJFofY/image;s=655x491;q=80')).
-fact(144, image(18484873, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImxkN2d2aWdhYmN3ZC1FQ09TWVNURU0iLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.UfOIdXGB_Y_eH7ZP1fx9DZTfJHgpvjumH57Lzg-bjs8/image;s=655x491;q=80')).
+fact(122, location_crime_rate('são mamede de infesta e senhora da hora', medium)).
+fact(123, nearby_schools('são mamede de infesta e senhora da hora', present)).
+fact(124, nearby_public_transport('são mamede de infesta e senhora da hora', absent)).
+fact(125, nearby_hospitals('são mamede de infesta e senhora da hora', absent)).
+fact(126, nearby_supermarkets('são mamede de infesta e senhora da hora', present)).
+fact(127, nearby_leisure_areas('são mamede de infesta e senhora da hora', absent)).
+fact(128, parking('são mamede de infesta e senhora da hora', high)).
+fact(129, last_5_years_increased('são mamede de infesta e senhora da hora', 27)).
+fact(130, forest('são mamede de infesta e senhora da hora', absent)).
+fact(131, beach('são mamede de infesta e senhora da hora', absent)).
+fact(132, airport('são mamede de infesta e senhora da hora', present)).
+fact(133, busy_traffic('são mamede de infesta e senhora da hora', present)).
 
-fact(145, meta_score(high,1)).
-fact(146, meta_score(medium,0.7)).
-fact(147, meta_score(low,0.4)).
+fact(134, property(18484873, 'T4, apartamento para comprar - Rua São João Novo, Cedofeita, Santo Ildefonso, Sé, Miragaia, São Nicolau e Vitória - 18484873 • www.imovirtual.com')).
+fact(135, location_property(18484873, 'cedofeita, ildefonso, sé, miragaia, nicolau, vitória')).
+fact(136, property_type(18484873, 'apartment')).
+fact(137, price(18484873, 900000)).
+fact(138, area(18484873, 227.0)).
+fact(139, rooms(18484873, 5)).
+fact(140, energy_rating(18484873, 'c')).
+fact(141, year_construction(18484873, 2015)).
+fact(142, elevator(18484873, absent)).
+fact(143, garage(18484873, absent)).
+fact(144, security_system(18484873, absent)).
+fact(145, ramps(18484873, absent)).
+fact(146, swimming_pool(18484873, absent)).
+fact(147, garden(18484873, absent)).
+fact(148, optical_fiber(18484873, absent)).
+fact(149, smart_appliances(18484873, present)).
+fact(150, floor_level(18484873, 0)).
+fact(151, sun_orientation(18484873, west)).
+fact(152, area_per_room(18484873, 45.4)).
+fact(153, thermal_comfort(18484873, high)).
+fact(154, acoustic_insulation(18484873, high)).
+fact(155, image(18484873, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IndmZm04czJ6bjUxODItRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.8KhgVjhJCcQKbYbQ7eZZaAoEZxrKECfDxwytRSpBpLk/image;s=655x491;q=80')).
+fact(156, image(18484873, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Ijl0Zmdha3J6ajFpbjEtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.F0SId0NIme9HM9Fe-nINqUF-vp9qg5MnS7NEbTJFofY/image;s=655x491;q=80')).
+fact(157, image(18484873, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImxkN2d2aWdhYmN3ZC1FQ09TWVNURU0iLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.UfOIdXGB_Y_eH7ZP1fx9DZTfJHgpvjumH57Lzg-bjs8/image;s=655x491;q=80')).
+
+fact(158, meta_score(high,1)).
+fact(159, meta_score(medium,0.7)).
+fact(160, meta_score(low,0.4)).
