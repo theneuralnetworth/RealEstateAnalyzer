@@ -2,38 +2,38 @@
 :-op(35,xfy,if).
 :-op(240,fx,rule).
 :-op(500,fy,not).
-:-op(600,xfy,and).
+:-op(700,xfy,and).
 :-op(600,xfy,or).
 
 :-dynamic justifies/3.
 :-dynamic last_fact/1.
 
-last_fact(1).
+%last_fact(1).
 
-create_initial_fact(ID, F):-
-	asserta(last_fact(ID)),
-	assertz(fact(ID,F)),!.
+%create_initial_fact(ID, F):-
+	%asserta(last_fact(ID)),
+	%assertz(fact(ID,F)),!.
 
-create_inital_facts:-
-	create_initial_fact(1,meta_user_score_security(1)),
-	create_initial_fact(2,meta_user_score_security(1)),
-	create_initial_fact(3,meta_user_score_security(1)),
-	create_initial_fact(4,meta_user_score_security(1)),
-	create_initial_fact(5,meta_user_score_security(1)),
-	create_initial_fact(6,meta_user_score_security(1)),
-	create_initial_fact(7,meta_user_score_security(1)),
-	create_initial_fact(8,meta_user_score_security(1)),
-	create_initial_fact(9,meta_user_score_security(1)),
-	create_initial_fact(10,meta_user_score_security(1)),
-	create_initial_fact(11,meta_user_score_security(1)),
-	create_initial_fact(12,meta_user_score_security(1)),
-	create_initial_fact(13,meta_user_score_security(1)).
+%create_inital_facts:-
+%	create_initial_fact(1,meta_user_score_security(1)),
+%	create_initial_fact(2,meta_user_score_security(1)),
+%	create_initial_fact(3,meta_user_score_security(1)),
+%	create_initial_fact(4,meta_user_score_security(1)),
+%	create_initial_fact(5,meta_user_score_security(1)),
+%	create_initial_fact(6,meta_user_score_security(1)),
+%	create_initial_fact(7,meta_user_score_security(1)),
+%	create_initial_fact(8,meta_user_score_security(1)),
+%	create_initial_fact(9,meta_user_score_security(1)),
+%	create_initial_fact(10,meta_user_score_security(1)),
+%	create_initial_fact(11,meta_user_score_security(1)),
+%	create_initial_fact(12,meta_user_score_security(1)),
+%	create_initial_fact(13,meta_user_score_security(1)).
 
 % load knowledge base
 load_kb:-
+	%create_inital_facts(),
 	consult('Metaknowledge/index.pl'),
 	consult('Rules/index.pl'),
-	create_inital_facts(),
     consult('Facts/index.pl').
 
 % counts the number of facts
@@ -61,12 +61,21 @@ start_engine_loop(N, Total) :-
     number_of_facts(Total1),
     start_engine_loop(N1, Total1).
 
+
+restart_engine :-
+    retractall(fact(_, _)),        % Remove all facts
+    retractall(last_fact(_)),      % Reset the fact counter
+    retractall(justifies(_, _, _)). % Remove justifications
+
+	
+% case where the fact does not trigger any rule
+
 % checks which rules the fact triggers
 fact_triggers_rules1(Fact, LRules):-
 	fact_triggers_rules(Fact, LRules),
 	!.
 
-% case where the fact does not trigger any rule
+
 fact_triggers_rules1(_, []).
 
 % process each rule
@@ -93,9 +102,6 @@ fact_in_condition(F,[F  or _]).
 fact_in_condition(F,[evaluate(F1)  and _]):- F=..[H,H1|_],F1=..[H,H1|_].
 fact_in_condition(F,[evaluate(F1)  or _]):- F=..[H,H1|_],F1=..[H,H1|_].
 
-fact_in_condition(F,[_ and Fs]):- fact_in_condition(F,[Fs]).
-fact_in_condition(F,[_ or Fs]):- fact_in_condition(F,[Fs]).
-
 fact_in_condition(F,[F]).
 
 fact_in_condition(F,[evaluate(F1)]):-F=..[H,H1|_],F1=..[H,H1|_].
@@ -120,16 +126,12 @@ verify_conditions([not X or Y],[not X|LF]):- !,
 verify_conditions([X or Y],[N|LF]):- !,
 	(fact(N,X) ; verify_conditions([Y],LF)).
 
-verify_conditions([not evaluate(X) and Y],[not X|LF]):- !,
-	\+ evaluate(_,X),
+verify_conditions([not X and Y],[not X|LF]):- !,
+	\+ fact(_,X),
 	verify_conditions([Y],LF).
 
 verify_conditions([evaluate(X) and Y],[N|LF]):- !,
 	evaluate(N,X),
-	verify_conditions([Y],LF).
-
-verify_conditions([not X and Y],[not X|LF]):- !,
-	\+ fact(_,X),
 	verify_conditions([Y],LF).
 
 verify_conditions([X and Y],[N|LF]):- !,
@@ -139,13 +141,22 @@ verify_conditions([X and Y],[N|LF]):- !,
 verify_conditions([not X],[not X]):- !, \+ fact(_,X).
 verify_conditions([X],[N]):- fact(N,X).
 
-% concludes facts
+%  facts
 conclude([create_fact(F)|Y],ID,LFacts):-
 	!,
 	create_fact(F,ID,LFacts),
 	conclude(Y,ID,LFacts).
 
 conclude([],_,_):-!.
+
+
+flatten_list([], []).
+flatten_list([H|T], FlatList) :-
+    flatten_list(H, FlatH),
+    flatten_list(T, FlatT),
+    append(FlatH, FlatT, FlatList).
+flatten_list(L, [L]) :-
+    \+ is_list(L).
 
 % creates fact
 
@@ -168,15 +179,11 @@ create_fact(F,ID,LFacts):-
 	create_fact(FinalFact,ID,LFacts).
 
 create_fact(F,ID,LFacts):-
-	writeln('fact'),
-	writeln(F),
-	writeln(ID),
 	retract(last_fact(N1)),
-	writeln('N1'),
-	writeln(N1),
 	N is N1+1,
 	asserta(last_fact(N)),
-	assertz(justifies(N,ID,LFacts)),
+	flatten_list(LFacts, FlatLFacts), 
+	assertz(justifies(N,ID,FlatLFacts)),
 	assertz(fact(N,F)),!.
 
 operate(multi,X,L,Result):-
@@ -221,22 +228,25 @@ show_facts:-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Generation of explanations of the type "How"
 
-how(N):-last_fact(Last),Last<N,!,
-	write('This conclusion was not made'),nl,nl.
+how(N) :- 
+    last_fact(Last), Last<N, !,
+    write('This conclusion was not made'), nl, nl.
 
-how(N):-justifies(N,ID,LFacts),!,
-	fact(N,F),
-	write('Concluded fact no. '),write(N),write(' -> '),write(F),nl,
-	write('by rule '),write(ID),nl,
-	write('by verifying that:'),nl,
-	write_facts(LFacts),
-	write('********************************************************'),nl,
-	explain(LFacts).
+how(N) :- 
+    justifies(N, ID, LFacts), !,
+    fact(N, F),
+    write('Concluded fact no. '), write(N), write(' -> '), write(F), nl,
+    write('by rule '), write(ID), nl,
+    write('by verifying that:'), nl,
+    write_facts(LFacts),
+    write('********************************************************'), nl,
+    explain(LFacts).
 
-how(N):-fact(N,F),
-	write('Fact no. '),write(N),write(' -> '),write(F),nl,
-	write('was initially known'),nl,
-	write('********************************************************'),nl.
+how(N) :- 
+    fact(N, F),
+    write('Fact no. '), write(N), write(' -> '), write(F), nl,
+    write('was initially known'), nl,
+    write('********************************************************'), nl.
 
 % writes facts in a list
 write_facts([I|R]):-fact(I,F), !,

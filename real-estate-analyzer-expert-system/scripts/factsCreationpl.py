@@ -7,7 +7,7 @@ def read_json_from_file(file_path):
 
 # Função para gerar os factos Prolog
 def generate_prolog_facts(data, output_file_path):
-    fact_counter = 122  # Contador para o número de factos
+    fact_counter = 121  # Contador para o número de factos
     prolog_facts = []
 
     for item in data[:20]:

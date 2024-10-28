@@ -55,8 +55,8 @@ fact_triggers_rules(smart_appliances(_,_), [7.1,7.2,7.3,7.4]).
 fact_triggers_rules(forest(_,_), [8.1, 8.2]).
 fact_triggers_rules(beach(_,_), [8.1, 8.2]).
 fact_triggers_rules(location_property(_,_), [8.1, 8.2]).
-fact_triggers_rules(view_quality(_,_), [8.3,8.4,8.5,8.6,8.7,8.8]).
-fact_triggers_rules(property_type(_,_), [8.3,8.4,8.5]).
+fact_triggers_rules(view_quality(_,_), [8.3,8.6,8.7,8.8]).
+%fact_triggers_rules(property_type(_,_), [8.3,8.4,8.5]).
 fact_triggers_rules(floor_level(_, _), [8.6,8.7,8.8]).
 
 % Area

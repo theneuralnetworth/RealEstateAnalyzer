@@ -249,16 +249,16 @@ rule 8.2
     then [create_fact(view_quality(Property, low))].
 
 rule 8.3
-    if [view_quality(Property, high) and property_type(Property, residence)]
-    then [create_fact(result(Property, view_quality, high))].
-
-rule 8.4
-    if [view_quality(Property, low) and property_type(Property, residence)]
-    then [create_fact(result(Property, view_quality, medium))].
-
-rule 8.5
-    if [view_quality(Property, low) and property_type(Property, apartment)]
+   if [view_quality(Property, low)]
     then [create_fact(result(Property, view_quality, low))].
+%
+%rule 8.4
+%    if [view_quality(Property, low) and property_type(Property, residence)]
+%    then [create_fact(result(Property, view_quality, medium))].
+%
+%rule 8.5
+%    if [view_quality(Property, low) and property_type(Property, apartment)]
+%    then [create_fact(result(Property, view_quality, low))].
 
 rule 8.6
     if [view_quality(Property, high) and evaluate(floor_level(Property, >=, 4))]

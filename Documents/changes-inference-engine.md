@@ -15,6 +15,7 @@ In this update, all operators and predicates have been redefined from Portuguese
 ### Predicates:
 - **`carrega_bc`** has been replaced with **`load_bc`**.
 - **`arranca_motor`** has been replaced with **`start_engine`**.
+- **`restart_engine`** has been created 
 - **`fact_triggers_rules`** has been replaced with **`fact_triggers_rules`**.
 - **`facto_dispara_regras1`** has been replaced with **`fact_triggers_rules1`**.
 - **`dispara_regras`** has been replaced with **`trigger_rules`**.
@@ -35,6 +36,7 @@ In this update, all operators and predicates have been redefined from Portuguese
 - **`facto`** has been replaced with **`fact`**.
 - **`ultimo_facto`** has been replaced with **`last_fact`**.
 - **`justifica`** has been replaced with **`justifies`**.
+- **`flatten_list`** has created to prevent infinity loop on explain of evaluated conditions
 
 These changes not only facilitate a better understanding of the code but also help in maintaining consistency throughout the inference engine.
 
@@ -88,6 +90,12 @@ A conditional check has been introduced to signal when all facts have been proce
 +   trigger_rules(N1, Fact, LRules), 
 +   number_of_facts(Total1),
 +   start_engine_loop(N1, Total1).
+
++restart_engine :-
++    retractall(fact(_, _)),        % Remove all facts
++    retractall(last_fact(_)),      % Reset the fact counter
++    retractall(justifies(_, _, _)). % Remove justifications
+
 ```
 This restructuring improves the engine's responsiveness and ensures that all facts are accurately processed before the conclusion phase.
 
@@ -131,6 +139,16 @@ In addition to the changes in operator names, a new operator or has been introdu
 
 + verify_conditions([X or Y],[N|LF]):- !,
 + 	(fact(N,X) ; verify_conditions([Y],LF)).
+```
++ we change the weight of the precedence between if and or , in order to adjust the way our engine , the conditions with or should run before the and operator 
+
+```diff 
+:-op(220,xfx,then).
+:-op(35,xfy,if).
+:-op(240,fx,rule).
+:-op(500,fy,not).
++:-op(700,xfy,and).
+:-op(600,xfy,or). 
 ```
 
 ## Addition of new Predicates for enhanced evaluate conditions
@@ -206,11 +224,13 @@ This chapter introduces the ability to create facts based on operations passed a
 + 	create_fact(FinalFact,ID,LFacts).
   
   create_fact(F,ID,LFacts):-
-  	retract(last_fact(N1)),
-  	N is N1+1,
-  	asserta(last_fact(N)),
-  	assertz(justifies(N,ID,LFacts)),
-  	assertz(fact(N,F)),!.
+	writeln('fact'),
+	retract(last_fact(N1)),
+	N is N1+1,
+	asserta(last_fact(N)),
++	flatten_list(LFacts, FlatLFacts), 
++	assertz(justifies(N,ID,FlatLFacts)),
+	assertz(fact(N,F)),!.
   
 + operate(multi,X,L,Result):-
 + 	multiplication(X,L,Result).
@@ -232,4 +252,15 @@ This chapter introduces the ability to create facts based on operations passed a
 + count(X, _, Result) :-
 + 	findall(_, fact(_, X), LFacts),
 + 	length(LFacts, Result).
+
++ flatten_list([], []).
++ flatten_list([H|T], FlatList) :-
++    flatten_list(H, FlatH),
++    flatten_list(T, FlatT),
++    append(FlatH, FlatT, FlatList).
++ flatten_list(L, [L]) :-
++    \+ is_list(L).
+
 ```
+
+we noticed that the conditions there evaluated did not have the previous rule. Due to that the list of that stores the justification facts had anonymous variable for those facts , what was causing the infinity loop on the explain of the facts. so we created the **``flatten_list``** to remove the cases where a list had anonymous variables. 
