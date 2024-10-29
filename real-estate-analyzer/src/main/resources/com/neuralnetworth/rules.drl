@@ -580,8 +580,7 @@ end
 // Rule 11.4: If the property has a garage and public parking is high or medium, classify as high overall parking
 rule "Parking Rule 11.4 - High Overall Parking"
 when
-    $property : Property(garage == "present")
-    $publicParking : Property(publicParking == "high" || publicParking == "medium")
+    $property : Property(garage == "present", (publicParking == "high" || publicParking == "medium"))
 then
     $property.setOverallParking("high");
     update($property);
@@ -590,8 +589,7 @@ end
 // Rule 11.5: If the property does not have a garage but public parking is high or medium, classify as medium overall parking
 rule "Parking Rule 11.5 - Medium Overall Parking"
 when
-    $property : Property(garage == "absent")
-    $publicParking : Property(publicParking == "high" || publicParking == "medium")
+    $property : Property(garage == "absent", (publicParking == "high" || publicParking == "medium"))
 then
     $property.setOverallParking("medium");
     update($property);
@@ -600,8 +598,7 @@ end
 // Rule 11.6: If the property does not have a garage and public parking is low, classify as low overall parking
 rule "Parking Rule 11.6 - Low Overall Parking"
 when
-    $property : Property(garage == "absent")
-    $publicParking : Property(publicParking == "low")
+    $property : Property(garage == "absent", publicParking == "low")
 then
     $property.setOverallParking("low");
     update($property);
