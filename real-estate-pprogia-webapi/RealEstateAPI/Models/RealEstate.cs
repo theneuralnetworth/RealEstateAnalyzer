@@ -4,6 +4,6 @@ namespace RealEstateAPI.Model
     {
         public string ID { get; set; }
         public string Location { get; set; }
-        public double FinalScore { get; set; }
+        public double TotalScore { get; set; }
     }
 }

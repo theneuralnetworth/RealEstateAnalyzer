@@ -30,7 +30,8 @@ namespace RealEstateAPI.Controllers
             try
             {
                 var prologHost = Environment.GetEnvironmentVariable("PROLOG_URL") ?? "http://localhost:8080";
-                var response = await _httpClient.PostAsync($"{prologHost}/realestates", content);
+                
+                var response = await _httpClient.PostAsync($"http://prolog:8000/realestates", content);
 
                 if (response.IsSuccessStatusCode)
                 {
@@ -63,7 +64,7 @@ namespace RealEstateAPI.Controllers
                         {
                             case "final_score":
                                 var estate = realEstates.Find(x => x.ID == item.Args[0]);
-                                estate.FinalScore = Double.Parse(item.Args[1]);
+                                estate.TotalScore = Double.Parse(item.Args[1]);
                                 break;
 
                         }

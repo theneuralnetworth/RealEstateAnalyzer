@@ -8,6 +8,7 @@ import org.kie.api.runtime.KieContainer;
 import org.kie.api.event.rule.AfterMatchFiredEvent;
 import org.kie.api.runtime.KieSession;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.*;
@@ -16,6 +17,7 @@ import java.util.stream.Collectors;
 @RestController
 
 @RequestMapping("/api/realestates")
+@CrossOrigin(origins = "*")
 public class PropertyController {
 
     @Autowired
@@ -23,13 +25,12 @@ public class PropertyController {
 
     private static final Map<String, Map<String, List<String>>> triggeredRulesMap = new HashMap<>();
 
-    @CrossOrigin(origins = "http://localhost:3000")
     @PostMapping("/getrealestates")
-    public List<Property> getRealEstates(@RequestBody(required = false) Map<String, Object> requestBody) {
+    public ResponseEntity<List<Property>> getRealEstates(@RequestBody(required = false) Map<String, Object> requestBody) {
         KieSession kSession = kieContainer.newKieSession("ksession-rules");
         if (kSession == null) {
             System.out.println("Failed to load KieSession.");
-            return new ArrayList<>();
+            return ResponseEntity.ok(new ArrayList<>());
         } else {
             System.out.println("KieSession loaded successfully.");
         }
@@ -103,8 +104,7 @@ public class PropertyController {
         kSession.fireAllRules();
         List<Property> properties = kSession.getObjects().stream().filter(obj -> obj instanceof Property).map(obj -> (Property) obj).collect(Collectors.toList());
         kSession.dispose();
-
-        return  properties;
+        return ResponseEntity.ok(properties);
     }
 
     private List<Property> createProperties() {
