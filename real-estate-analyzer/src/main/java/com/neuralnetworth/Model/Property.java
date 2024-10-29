@@ -39,21 +39,6 @@ public class Property {
     private List<String> services;
     private Map<String, Float> metaScores;
     private Map<String, Integer> weights;
-    private Map<String, Float> scores;
-    private Float scoreSecurity;
-    private Float scoreComfort;
-    private Float scoreAccessibility;
-    private Float scoreMaintenance;
-    private Float scoreEnergyEfficiency;
-    private Float scoreServices;
-    private Float scoreConnectivity;
-    private Float scoreViewQuality;
-    private Float scoreSpaciousness;
-    private Float scoreSunExposure;
-    private Float scoreParking;
-    private Float scoreBuildState;
-    private Float scorePotentialAppreciation;
-    private Float totalScore;
 
     //Inferred attributes
     private String crimeRate;
@@ -75,6 +60,37 @@ public class Property {
     private String overallParking;
     private String buildState;
     private String potentialAppreciation;
+
+    // preferences
+    private Float prefSecurity;
+    private Float prefComfort;
+    private Float prefAccessibility;
+    private Float prefMaintenance;
+    private Float prefEnergyEfficiency;
+    private Float prefServices;
+    private Float prefConnectivity;
+    private Float prefViewQuality;
+    private Float prefSpaciousness;
+    private Float prefSunExposure;
+    private Float prefParking;
+    private Float prefBuildState;
+    private Float prefPotentialAppreciation;
+
+    // scores
+    private Float scoreSecurity;
+    private Float scoreComfort;
+    private Float scoreAccessibility;
+    private Float scoreMaintenance;
+    private Float scoreEnergyEfficiency;
+    private Float scoreServices;
+    private Float scoreConnectivity;
+    private Float scoreViewQuality;
+    private Float scoreSpaciousness;
+    private Float scoreSunExposure;
+    private Float scoreParking;
+    private Float scoreBuildState;
+    private Float scorePotentialAppreciation;
+    private Float totalScore;
 
     public Property() {
         this.services = new ArrayList<>();
@@ -98,6 +114,21 @@ public class Property {
         weights.put("parking", 5);
         weights.put("buildState", 5);
         weights.put("potentialAppreciation", 5);
+
+        this.prefSecurity = 1f;
+        this.prefComfort = 1f;
+        this.prefAccessibility = 1f;
+        this.prefMaintenance = 1f;
+        this.prefEnergyEfficiency = 1f;
+        this.prefServices = 1f;
+        this.prefConnectivity = 1f;
+        this.prefViewQuality = 1f;
+        this.prefSpaciousness = 1f;
+        this.prefSunExposure = 1f;
+        this.prefParking = 1f;
+        this.prefBuildState = 1f;
+        this.prefPotentialAppreciation = 1f;
+
         this.scoreSecurity = 0f;
         this.scoreComfort = 0f;
         this.scoreAccessibility = 0f;
@@ -331,6 +362,110 @@ public class Property {
 
     public float getWeight(String value) { return weights.get(value); }
 
+    public Float getPrefSecurity() {
+        return prefSecurity;
+    }
+
+    public void setPrefSecurity(Float prefSecurity) {
+        this.prefSecurity = prefSecurity;
+    }
+
+    public Float getPrefComfort() {
+        return prefComfort;
+    }
+
+    public void setPrefComfort(Float prefComfort) {
+        this.prefComfort = prefComfort;
+    }
+
+    public Float getPrefAccessibility() {
+        return prefAccessibility;
+    }
+
+    public void setPrefAccessibility(Float prefAccessibility) {
+        this.prefAccessibility = prefAccessibility;
+    }
+
+    public Float getPrefMaintenance() {
+        return prefMaintenance;
+    }
+
+    public void setPrefMaintenance(Float prefMaintenance) {
+        this.prefMaintenance = prefMaintenance;
+    }
+
+    public Float getPrefEnergyEfficiency() {
+        return prefEnergyEfficiency;
+    }
+
+    public void setPrefEnergyEfficiency(Float prefEnergyEfficiency) {
+        this.prefEnergyEfficiency = prefEnergyEfficiency;
+    }
+
+    public Float getPrefServices() {
+        return prefServices;
+    }
+
+    public void setPrefServices(Float prefServices) {
+        this.prefServices = prefServices;
+    }
+
+    public Float getPrefConnectivity() {
+        return prefConnectivity;
+    }
+
+    public void setPrefConnectivity(Float prefConnectivity) {
+        this.prefConnectivity = prefConnectivity;
+    }
+
+    public Float getPrefViewQuality() {
+        return prefViewQuality;
+    }
+
+    public void setPrefViewQuality(Float prefViewQuality) {
+        this.prefViewQuality = prefViewQuality;
+    }
+
+    public Float getPrefSpaciousness() {
+        return prefSpaciousness;
+    }
+
+    public void setPrefSpaciousness(Float prefSpaciousness) {
+        this.prefSpaciousness = prefSpaciousness;
+    }
+
+    public Float getPrefSunExposure() {
+        return prefSunExposure;
+    }
+
+    public void setPrefSunExposure(Float prefSunExposure) {
+        this.prefSunExposure = prefSunExposure;
+    }
+
+    public Float getPrefParking() {
+        return prefParking;
+    }
+
+    public void setPrefParking(Float prefParking) {
+        this.prefParking = prefParking;
+    }
+
+    public Float getPrefBuildState() {
+        return prefBuildState;
+    }
+
+    public void setPrefBuildState(Float prefBuildState) {
+        this.prefBuildState = prefBuildState;
+    }
+
+    public Float getPrefPotentialAppreciation() {
+        return prefPotentialAppreciation;
+    }
+
+    public void setPrefPotentialAppreciation(Float prefPotentialAppreciation) {
+        this.prefPotentialAppreciation = prefPotentialAppreciation;
+    }
+
     public float getScoreSecurity() { return scoreSecurity; }
     public void setScoreSecurity(float scoreSecurity) { this.scoreSecurity = scoreSecurity; }
 
@@ -434,7 +569,7 @@ public class Property {
     public void setTotalScore(float totalScore) { this.totalScore = totalScore; }
 
     public void calculateTotalScore() {
-        this.setTotalScore(this.scoreAccessibility + this.scoreComfort + this.scoreConnectivity * this.scoreMaintenance + this.scoreParking +
+        this.setTotalScore(this.scoreAccessibility + this.scoreComfort + this.scoreConnectivity + this.scoreMaintenance + this.scoreParking +
                 this.scorePotentialAppreciation + this.scoreBuildState + this.scoreEnergyEfficiency + this.scoreSecurity + this.scoreViewQuality + this.scoreSpaciousness
         + this.scoreSunExposure + this.scoreServices);
     }
