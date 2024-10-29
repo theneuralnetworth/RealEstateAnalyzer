@@ -33,6 +33,8 @@ services:
       interval: 5s
       timeout: 10s
       retries: 5
+    networks:
+      - real-estate-analyzer
 
   drools:
     build:
@@ -45,6 +47,8 @@ services:
     environment:
       KNOWLEDGE_BASE_LOCATIONS_FILE: /knowledgebase/locations.json
       KNOWLEDGE_BASE_PROPERTIES_FILE: /knowledgebase/properties.json
+    networks:
+      - real-estate-analyzer
 
 networks:
   real-estate-analyzer:

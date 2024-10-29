@@ -781,7 +781,7 @@ then
     update($property);
 end
 
-// Rule 14.14: Calculate total score
+/* Rule 14.14: Calculate total score
 rule "TotalScore Rule 14.14 - Calculate total score"
     no-loop
 when
@@ -790,3 +790,4 @@ then
     $property.calculateTotalScore();
     update($property);
 end
+*/
