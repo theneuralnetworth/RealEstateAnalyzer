@@ -146,7 +146,6 @@ public class Property {
         this.services = new ArrayList<>();
         this.metaScores = new HashMap<>();
         this.weights = new HashMap<>();
-        this.scores = new HashMap<>();
 
         metaScores.put("high", 1f);
         metaScores.put("medium", 0.7f);

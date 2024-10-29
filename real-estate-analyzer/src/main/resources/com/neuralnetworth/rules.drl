@@ -778,13 +778,12 @@ then
     update($property);
 end
 
-/* Rule 14.14: Calculate total score
+// Rule 14.14: Calculate total score
 rule "TotalScore Rule 14.14 - Calculate total score"
     no-loop
 when
-    $property: Property(scores != null)
+    $property: Property(scoreAccessibility != null && totalScore == 0)
 then
     $property.calculateTotalScore();
     update($property);
 end
-*/
