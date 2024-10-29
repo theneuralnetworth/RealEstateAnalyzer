@@ -53,10 +53,13 @@ start_engine_loop(N, N) :-
 
 % process each fact and repeat the process after create the new facts
 start_engine_loop(N, Total) :-
-    N < Total,
+    N =< Total,
     N1 is N + 1,
     fact(N1, Fact),
     fact_triggers_rules1(Fact, LRules),
+	writeln(N1),
+	writeln(Fact),
+	writeln(LRules),
     trigger_rules(N1, Fact, LRules),
     number_of_facts(Total1),
     start_engine_loop(N1, Total1).
@@ -68,14 +71,11 @@ restart_engine :-
     retractall(justifies(_, _, _)). % Remove justifications
 
 	
-% case where the fact does not trigger any rule
-
-% checks which rules the fact triggers
 fact_triggers_rules1(Fact, LRules):-
 	fact_triggers_rules(Fact, LRules),
 	!.
 
-
+% case where the fact does not trigger any rule
 fact_triggers_rules1(_, []).
 
 % process each rule
@@ -102,6 +102,8 @@ fact_in_condition(F,[F  or _]).
 fact_in_condition(F,[evaluate(F1)  and _]):- F=..[H,H1|_],F1=..[H,H1|_].
 fact_in_condition(F,[evaluate(F1)  or _]):- F=..[H,H1|_],F1=..[H,H1|_].
 
+fact_in_condition(F,[_ and Fs]):- fact_in_condition(F,[Fs]).
+fact_in_condition(F,[_ or Fs]):- fact_in_condition(F,[Fs]).
 fact_in_condition(F,[F]).
 
 fact_in_condition(F,[evaluate(F1)]):-F=..[H,H1|_],F1=..[H,H1|_].
@@ -126,14 +128,17 @@ verify_conditions([not X or Y],[not X|LF]):- !,
 verify_conditions([X or Y],[N|LF]):- !,
 	(fact(N,X) ; verify_conditions([Y],LF)).
 
-verify_conditions([not X and Y],[not X|LF]):- !,
-	\+ fact(_,X),
+verify_conditions([not evaluate(X) and Y],[not X|LF]):- !,
+	\+ evaluate(_,X),
 	verify_conditions([Y],LF).
 
 verify_conditions([evaluate(X) and Y],[N|LF]):- !,
 	evaluate(N,X),
 	verify_conditions([Y],LF).
 
+verify_conditions([not X and Y],[not X|LF]):- !,
+	\+ fact(_,X),
+	verify_conditions([Y],LF).
 verify_conditions([X and Y],[N|LF]):- !,
 	fact(N,X),
 	verify_conditions([Y],LF).
@@ -141,14 +146,13 @@ verify_conditions([X and Y],[N|LF]):- !,
 verify_conditions([not X],[not X]):- !, \+ fact(_,X).
 verify_conditions([X],[N]):- fact(N,X).
 
-%  facts
+% concludes facts
 conclude([create_fact(F)|Y],ID,LFacts):-
 	!,
 	create_fact(F,ID,LFacts),
 	conclude(Y,ID,LFacts).
 
 conclude([],_,_):-!.
-
 
 flatten_list([], []).
 flatten_list([H|T], FlatList) :-

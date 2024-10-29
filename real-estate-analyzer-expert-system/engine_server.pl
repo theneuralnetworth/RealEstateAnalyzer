@@ -11,6 +11,7 @@ start_server(Port) :-
 
 handle_real_estates(Request) :-
     http_read_json_dict(Request, DictIn),
+    writeln(Request),
     process_request(DictIn, DictOut),
     reply_json_dict(DictOut).
 

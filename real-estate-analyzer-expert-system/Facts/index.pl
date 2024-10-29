@@ -169,6 +169,33 @@ fact(155, image(18484873, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6In
 fact(156, image(18484873, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Ijl0Zmdha3J6ajFpbjEtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.F0SId0NIme9HM9Fe-nINqUF-vp9qg5MnS7NEbTJFofY/image;s=655x491;q=80')).
 fact(157, image(18484873, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImxkN2d2aWdhYmN3ZC1FQ09TWVNURU0iLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.UfOIdXGB_Y_eH7ZP1fx9DZTfJHgpvjumH57Lzg-bjs8/image;s=655x491;q=80')).
 
-fact(158, meta_score(high,1)).
-fact(159, meta_score(medium,0.7)).
-fact(160, meta_score(low,0.4)).
+fact(158, property(18438091, 'T0, apartamento para comprar - Cedofeita, Santo Ildefonso, Sé, Miragaia, São Nicolau e Vitória, Porto - 18438091 • www.imovirtual.com')).
+fact(159, location_property(18438091, 'cedofeita, ildefonso, sé, miragaia, nicolau, vitória')).
+fact(160, property_type(18438091, 'apartment')).
+fact(161, price(18438091, 450000)).
+fact(162, area(18438091, 107.0)).
+fact(163, rooms(18438091, 1)).
+fact(164, energy_rating(18438091, 'b')).
+fact(165, year_construction(18438091, 2024)).
+fact(166, elevator(18438091, present)).
+fact(167, garage(18438091, absent)).
+fact(168, security_system(18438091, absent)).
+fact(169, ramps(18438091, absent)).
+fact(170, swimming_pool(18438091, absent)).
+fact(171, garden(18438091, absent)).
+fact(172, optical_fiber(18438091, present)).
+fact(173, smart_appliances(18438091, present)).
+fact(174, floor_level(18438091, 4)).
+fact(175, sun_orientation(18438091, east)).
+fact(176, area_per_room(18438091, 107.0)).
+fact(177, thermal_comfort(18438091, high)).
+fact(178, acoustic_insulation(18438091, high)).
+fact(179, image(18438091, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Inhxemp4dGVpM2dhNTMtQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.Fho6UwGFYocWrBqTFJhyMy2EsNpZ4zCLG3s_GrIGsio/image;s=655x491;q=80')).
+fact(180, image(18438091, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InlpamgxOTRiaTcwYTEtQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.DcyJRCsZrJ0XjYDvntOZiDzHtsHJPQ2uU9aTOH5u6jE/image;s=655x491;q=80')).
+fact(181, image(18438091, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InVjdjZlczVtdGRwNzEtQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.G6ZA_LQ6oPUH6ix42boaf0ey8nIHMarUqG4Fx4mR-CE/image;s=655x491;q=80')).
+fact(182, image(18438091, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Inc2em53cWJiamQ3ajItQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.ofK3Mwv5w177VDzXtSkOjcszoR6_6CA5o9yP3ticHEY/image;s=655x491;q=80')).
+fact(183, image(18438091, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImNudThvdTVycHl4OS1BUFQiLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.hUuSwVYLOBnLOq-_4DbZrYQ-M0BmS9NF8cW0z1uUcMg/image;s=655x491;q=80')).
+
+fact(184, meta_score(high,1)).
+fact(185, meta_score(medium,0.7)).
+fact(186, meta_score(low,0.4)).
