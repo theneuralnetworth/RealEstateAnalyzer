@@ -39,8 +39,21 @@ public class Property {
     private List<String> services;
     private Map<String, Float> metaScores;
     private Map<String, Integer> weights;
-    private Float scoreSecurity;
     private Map<String, Float> scores;
+    private Float scoreSecurity;
+    private Float scoreComfort;
+    private Float scoreAccessibility;
+    private Float scoreMaintenance;
+    private Float scoreEnergyEfficiency;
+    private Float scoreServices;
+    private Float scoreConnectivity;
+    private Float scoreViewQuality;
+    private Float scoreSpaciousness;
+    private Float scoreSunExposure;
+    private Float scoreParking;
+    private Float scoreBuildState;
+    private Float scorePotentialAppreciation;
+    private Float totalScore;
 
     //Inferred attributes
     private String crimeRate;
@@ -62,13 +75,11 @@ public class Property {
     private String overallParking;
     private String buildState;
     private String potentialAppreciation;
-    private Float totalScore;
 
     public Property() {
         this.services = new ArrayList<>();
         this.metaScores = new HashMap<>();
         this.weights = new HashMap<>();
-        this.scores = new HashMap<>();
 
         metaScores.put("high", 1f);
         metaScores.put("medium", 0.7f);
@@ -87,7 +98,19 @@ public class Property {
         weights.put("parking", 5);
         weights.put("buildState", 5);
         weights.put("potentialAppreciation", 5);
-
+        this.scoreSecurity = 0f;
+        this.scoreComfort = 0f;
+        this.scoreAccessibility = 0f;
+        this.scoreMaintenance = 0f;
+        this.scoreEnergyEfficiency = 0f;
+        this.scoreServices = 0f;
+        this.scoreConnectivity = 0f;
+        this.scoreViewQuality = 0f;
+        this.scoreSpaciousness = 0f;
+        this.scoreSunExposure = 0f;
+        this.scoreParking = 0f;
+        this.scoreBuildState = 0f;
+        this.scorePotentialAppreciation = 0f;
         this.totalScore = 0f;
     }
 
@@ -309,22 +332,112 @@ public class Property {
 
     public float getWeight(String value) { return weights.get(value); }
 
-    public Map<String, Float> getScores() { return scores; }
-    public void setScore(String key, Float value) { this.scores.put(key, value); }
-
     public float getScoreSecurity() { return scoreSecurity; }
     public void setScoreSecurity(float scoreSecurity) { this.scoreSecurity = scoreSecurity; }
 
+    public Float getScoreComfort() {
+        return scoreComfort;
+    }
+
+    public void setScoreComfort(Float scoreComfort) {
+        this.scoreComfort = scoreComfort;
+    }
+
+    public Float getScoreAccessibility() {
+        return scoreAccessibility;
+    }
+
+    public void setScoreAccessibility(Float scoreAccessibility) {
+        this.scoreAccessibility = scoreAccessibility;
+    }
+
+    public Float getScoreMaintenance() {
+        return scoreMaintenance;
+    }
+
+    public void setScoreMaintenance(Float scoreMaintenance) {
+        this.scoreMaintenance = scoreMaintenance;
+    }
+
+    public Float getScoreEnergyEfficiency() {
+        return scoreEnergyEfficiency;
+    }
+
+    public void setScoreEnergyEfficiency(Float scoreEnergyEfficiency) {
+        this.scoreEnergyEfficiency = scoreEnergyEfficiency;
+    }
+
+    public Float getScoreServices() {
+        return scoreServices;
+    }
+
+    public void setScoreServices(Float scoreServices) {
+        this.scoreServices = scoreServices;
+    }
+
+    public Float getScoreConnectivity() {
+        return scoreConnectivity;
+    }
+
+    public void setScoreConnectivity(Float scoreConnectivity) {
+        this.scoreConnectivity = scoreConnectivity;
+    }
+
+    public Float getScoreViewQuality() {
+        return scoreViewQuality;
+    }
+
+    public void setScoreViewQuality(Float scoreViewQuality) {
+        this.scoreViewQuality = scoreViewQuality;
+    }
+
+    public Float getScoreSpaciousness() {
+        return scoreSpaciousness;
+    }
+
+    public void setScoreSpaciousness(Float scoreSpaciousness) {
+        this.scoreSpaciousness = scoreSpaciousness;
+    }
+
+    public Float getScoreSunExposure() {
+        return scoreSunExposure;
+    }
+
+    public void setScoreSunExposure(Float scoreSunExposure) {
+        this.scoreSunExposure = scoreSunExposure;
+    }
+
+    public Float getScoreBuildState() {
+        return scoreBuildState;
+    }
+
+    public void setScoreBuildState(Float scoreBuildState) {
+        this.scoreBuildState = scoreBuildState;
+    }
+
+    public Float getScoreParking() {
+        return scoreParking;
+    }
+
+    public void setScoreParking(Float scoreParking) {
+        this.scoreParking = scoreParking;
+    }
+
+    public Float getScorePotentialAppreciation() {
+        return scorePotentialAppreciation;
+    }
+
+    public void setScorePotentialAppreciation(Float scorePotentialAppreciation) {
+        this.scorePotentialAppreciation = scorePotentialAppreciation;
+    }
 
     public float getTotalScore() { return totalScore; }
     public void setTotalScore(float totalScore) { this.totalScore = totalScore; }
 
     public void calculateTotalScore() {
-        float temp = 0f;
-        for (Float value : scores.values()) {
-            temp += value;
-        }
-        this.setTotalScore(temp);
+        this.setTotalScore(this.scoreAccessibility + this.scoreComfort + this.scoreConnectivity * this.scoreMaintenance + this.scoreParking +
+                this.scorePotentialAppreciation + this.scoreBuildState + this.scoreEnergyEfficiency + this.scoreSecurity + this.scoreViewQuality + this.scoreSpaciousness
+        + this.scoreSunExposure + this.scoreServices);
     }
 
     public void printInferredAttributes() {
@@ -350,7 +463,6 @@ public class Property {
         System.out.println("  OverallParking: " + (this.overallParking != null ? this.spaciousness : "Not set"));
         System.out.println("  BuildState: " + (this.buildState != null ? this.buildState : "Not set"));
         System.out.println("  PotentialAppreciation: " + (this.potentialAppreciation != null ? this.potentialAppreciation : "Not set"));
-        System.out.println("  Scores: " + (this.scores != null ? this.scores : "Not set"));
         System.out.println("  TotalScore: " + (this.totalScore != null ? this.totalScore : "Not set"));
     }
 
