@@ -17,136 +17,6 @@ fact(13,meta_user_score_security(1)).
 
 
 
-fact(14, location_crime_rate('aldoar, foz do douro e nevogilde', low)).
-fact(15, nearby_schools('aldoar, foz do douro e nevogilde', present)).
-fact(16, nearby_public_transport('aldoar, foz do douro e nevogilde', present)).
-fact(17, nearby_hospitals('aldoar, foz do douro e nevogilde', absent)).
-fact(18, nearby_supermarkets('aldoar, foz do douro e nevogilde', present)).
-fact(19, nearby_leisure_areas('aldoar, foz do douro e nevogilde', present)).
-fact(20, parking('aldoar, foz do douro e nevogilde', medium)).
-fact(21, last_5_years_increased('aldoar, foz do douro e nevogilde', 40)).
-fact(22, forest('aldoar, foz do douro e nevogilde', absent)).
-fact(23, beach('aldoar, foz do douro e nevogilde', present)).
-fact(24, airport('aldoar, foz do douro e nevogilde', absent)).
-fact(25, busy_traffic('aldoar, foz do douro e nevogilde', absent)).
-
-fact(26, location_crime_rate('bonfim', medium)).
-fact(27, nearby_schools('bonfim', present)).
-fact(28, nearby_public_transport('bonfim', present)).
-fact(29, nearby_hospitals('bonfim', present)).
-fact(30, nearby_supermarkets('bonfim', present)).
-fact(31, nearby_leisure_areas('bonfim', absent)).
-fact(32, parking('bonfim', low)).
-fact(33, last_5_years_increased('bonfim', 30)).
-fact(34, forest('bonfim', absent)).
-fact(35, beach('bonfim', absent)).
-fact(36, airport('bonfim', absent)).
-fact(37, busy_traffic('bonfim', absent)).
-
-fact(38, location_crime_rate('campanhã', medium)).
-fact(39, nearby_schools('campanhã', absent)).
-fact(40, nearby_public_transport('campanhã', present)).
-fact(41, nearby_hospitals('campanhã', absent)).
-fact(42, nearby_supermarkets('campanhã', present)).
-fact(43, nearby_leisure_areas('campanhã', absent)).
-fact(44, parking('campanhã', high)).
-fact(45, last_5_years_increased('campanhã', 25)).
-fact(46, forest('campanhã', absent)).
-fact(47, beach('campanhã', absent)).
-fact(48, airport('campanhã', absent)).
-fact(49, busy_traffic('campanhã', present)).
-
-fact(50, location_crime_rate('cedofeita, ildefonso, sé, miragaia, nicolau, vitória', low)).
-fact(51, nearby_schools('cedofeita, ildefonso, sé, miragaia, nicolau, vitória', present)).
-fact(52, nearby_public_transport('cedofeita, ildefonso, sé, miragaia, nicolau, vitória', present)).
-fact(53, nearby_hospitals('cedofeita, ildefonso, sé, miragaia, nicolau, vitória', present)).
-fact(54, nearby_supermarkets('cedofeita, ildefonso, sé, miragaia, nicolau, vitória', present)).
-fact(55, nearby_leisure_areas('cedofeita, ildefonso, sé, miragaia, nicolau, vitória', present)).
-fact(56, parking('cedofeita, ildefonso, sé, miragaia, nicolau, vitória', low)).
-fact(57, last_5_years_increased('cedofeita, ildefonso, sé, miragaia, nicolau, vitória', 45)).
-fact(58, forest('cedofeita, ildefonso, sé, miragaia, nicolau, vitória', absent)).
-fact(59, beach('cedofeita, ildefonso, sé, miragaia, nicolau, vitória', absent)).
-fact(60, airport('cedofeita, ildefonso, sé, miragaia, nicolau, vitória', absent)).
-fact(61, busy_traffic('cedofeita, ildefonso, sé, miragaia, nicolau, vitória', present)).
-
-fact(62, location_crime_rate('lordelo do ouro e massarelos', low)).
-fact(63, nearby_schools('lordelo do ouro e massarelos', present)).
-fact(64, nearby_public_transport('lordelo do ouro e massarelos', present)).
-fact(65, nearby_hospitals('lordelo do ouro e massarelos', absent)).
-fact(66, nearby_supermarkets('lordelo do ouro e massarelos', present)).
-fact(67, nearby_leisure_areas('lordelo do ouro e massarelos', present)).
-fact(68, parking('lordelo do ouro e massarelos', medium)).
-fact(69, last_5_years_increased('lordelo do ouro e massarelos', 35)).
-fact(70, forest('lordelo do ouro e massarelos', absent)).
-fact(71, beach('lordelo do ouro e massarelos', present)).
-fact(72, airport('lordelo do ouro e massarelos', absent)).
-fact(73, busy_traffic('lordelo do ouro e massarelos', present)).
-
-fact(74, location_crime_rate('matosinhos e leça da palmeira', medium)).
-fact(75, nearby_schools('matosinhos e leça da palmeira', present)).
-fact(76, nearby_public_transport('matosinhos e leça da palmeira', present)).
-fact(77, nearby_hospitals('matosinhos e leça da palmeira', present)).
-fact(78, nearby_supermarkets('matosinhos e leça da palmeira', present)).
-fact(79, nearby_leisure_areas('matosinhos e leça da palmeira', present)).
-fact(80, parking('matosinhos e leça da palmeira', high)).
-fact(81, last_5_years_increased('matosinhos e leça da palmeira', 30)).
-fact(82, forest('matosinhos e leça da palmeira', present)).
-fact(83, beach('matosinhos e leça da palmeira', present)).
-fact(84, airport('matosinhos e leça da palmeira', present)).
-fact(85, busy_traffic('matosinhos e leça da palmeira', present)).
-
-fact(86, location_crime_rate('paranhos', medium)).
-fact(87, nearby_schools('paranhos', present)).
-fact(88, nearby_public_transport('paranhos', present)).
-fact(89, nearby_hospitals('paranhos', present)).
-fact(90, nearby_supermarkets('paranhos', present)).
-fact(91, nearby_leisure_areas('paranhos', absent)).
-fact(92, parking('paranhos', medium)).
-fact(93, last_5_years_increased('paranhos', 28)).
-fact(94, forest('paranhos', absent)).
-fact(95, beach('paranhos', absent)).
-fact(96, airport('paranhos', present)).
-fact(97, busy_traffic('paranhos', present)).
-
-fact(98, location_crime_rate('ramalde', medium)).
-fact(99, nearby_schools('ramalde', absent)).
-fact(100, nearby_public_transport('ramalde', present)).
-fact(101, nearby_hospitals('ramalde', absent)).
-fact(102, nearby_supermarkets('ramalde', present)).
-fact(103, nearby_leisure_areas('ramalde', absent)).
-fact(104, parking('ramalde', high)).
-fact(105, last_5_years_increased('ramalde', 27)).
-fact(106, forest('ramalde', absent)).
-fact(107, beach('ramalde', absent)).
-fact(108, airport('ramalde', present)).
-fact(109, busy_traffic('ramalde', present)).
-
-fact(110, location_crime_rate('rio tinto', high)).
-fact(111, nearby_schools('rio tinto', absent)).
-fact(112, nearby_public_transport('rio tinto', absent)).
-fact(113, nearby_hospitals('rio tinto', absent)).
-fact(114, nearby_supermarkets('rio tinto', present)).
-fact(115, nearby_leisure_areas('rio tinto', absent)).
-fact(116, parking('rio tinto', high)).
-fact(117, last_5_years_increased('rio tinto', 20)).
-fact(118, forest('rio tinto', absent)).
-fact(119, beach('rio tinto', absent)).
-fact(120, airport('rio tinto', absent)).
-fact(121, busy_traffic('rio tinto', absent)).
-
-fact(122, location_crime_rate('são mamede de infesta e senhora da hora', medium)).
-fact(123, nearby_schools('são mamede de infesta e senhora da hora', present)).
-fact(124, nearby_public_transport('são mamede de infesta e senhora da hora', absent)).
-fact(125, nearby_hospitals('são mamede de infesta e senhora da hora', absent)).
-fact(126, nearby_supermarkets('são mamede de infesta e senhora da hora', present)).
-fact(127, nearby_leisure_areas('são mamede de infesta e senhora da hora', absent)).
-fact(128, parking('são mamede de infesta e senhora da hora', high)).
-fact(129, last_5_years_increased('são mamede de infesta e senhora da hora', 27)).
-fact(130, forest('são mamede de infesta e senhora da hora', absent)).
-fact(131, beach('são mamede de infesta e senhora da hora', absent)).
-fact(132, airport('são mamede de infesta e senhora da hora', present)).
-fact(133, busy_traffic('são mamede de infesta e senhora da hora', present)).
-
 fact(134, property(18484873, 'T4, apartamento para comprar - Rua São João Novo, Cedofeita, Santo Ildefonso, Sé, Miragaia, São Nicolau e Vitória - 18484873 • www.imovirtual.com')).
 fact(135, location_property(18484873, 'cedofeita, ildefonso, sé, miragaia, nicolau, vitória')).
 fact(136, property_type(18484873, 'apartment')).
@@ -154,20 +24,20 @@ fact(137, price(18484873, 900000)).
 fact(138, area(18484873, 227.0)).
 fact(139, rooms(18484873, 5)).
 fact(140, energy_rating(18484873, 'c')).
-fact(141, year_construction(18484873, 2015)).
+fact(141, year_construction(18484873, 1987)).
 fact(142, elevator(18484873, absent)).
-fact(143, garage(18484873, absent)).
+fact(143, garage(18484873, present)).
 fact(144, security_system(18484873, absent)).
 fact(145, ramps(18484873, absent)).
 fact(146, swimming_pool(18484873, absent)).
 fact(147, garden(18484873, absent)).
-fact(148, optical_fiber(18484873, absent)).
+fact(148, optical_fiber(18484873, present)).
 fact(149, smart_appliances(18484873, present)).
-fact(150, floor_level(18484873, 0)).
-fact(151, sun_orientation(18484873, west)).
+fact(150, floor_level(18484873, 2)).
+fact(151, sun_orientation(18484873, north)).
 fact(152, area_per_room(18484873, 45.4)).
-fact(153, thermal_comfort(18484873, high)).
-fact(154, acoustic_insulation(18484873, high)).
+fact(153, thermal_comfort(18484873, low)).
+fact(154, acoustic_insulation(18484873, low)).
 fact(155, image(18484873, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IndmZm04czJ6bjUxODItRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.8KhgVjhJCcQKbYbQ7eZZaAoEZxrKECfDxwytRSpBpLk/image;s=655x491;q=80')).
 fact(156, image(18484873, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Ijl0Zmdha3J6ajFpbjEtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.F0SId0NIme9HM9Fe-nINqUF-vp9qg5MnS7NEbTJFofY/image;s=655x491;q=80')).
 fact(157, image(18484873, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImxkN2d2aWdhYmN3ZC1FQ09TWVNURU0iLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.UfOIdXGB_Y_eH7ZP1fx9DZTfJHgpvjumH57Lzg-bjs8/image;s=655x491;q=80')).
@@ -187,9 +57,9 @@ fact(169, ramps(18438091, absent)).
 fact(170, swimming_pool(18438091, absent)).
 fact(171, garden(18438091, absent)).
 fact(172, optical_fiber(18438091, present)).
-fact(173, smart_appliances(18438091, present)).
-fact(174, floor_level(18438091, 4)).
-fact(175, sun_orientation(18438091, east)).
+fact(173, smart_appliances(18438091, absent)).
+fact(174, floor_level(18438091, 0)).
+fact(175, sun_orientation(18438091, north)).
 fact(176, area_per_room(18438091, 107.0)).
 fact(177, thermal_comfort(18438091, high)).
 fact(178, acoustic_insulation(18438091, high)).
@@ -199,8 +69,771 @@ fact(181, image(18438091, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6In
 fact(182, image(18438091, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Inc2em53cWJiamQ3ajItQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.ofK3Mwv5w177VDzXtSkOjcszoR6_6CA5o9yP3ticHEY/image;s=655x491;q=80')).
 fact(183, image(18438091, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImNudThvdTVycHl4OS1BUFQiLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.hUuSwVYLOBnLOq-_4DbZrYQ-M0BmS9NF8cW0z1uUcMg/image;s=655x491;q=80')).
 
+fact(184, property(17385067, 'T2, apartamento para comprar - Rua António Cândido, Paranhos - 17385067 • www.imovirtual.com')).
+fact(185, location_property(17385067, 'paranhos')).
+fact(186, property_type(17385067, 'apartment')).
+fact(187, price(17385067, 615000)).
+fact(188, area(17385067, 171.78)).
+fact(189, rooms(17385067, 3)).
+fact(190, energy_rating(17385067, 'b')).
+fact(191, year_construction(17385067, 2024)).
+fact(192, elevator(17385067, present)).
+fact(193, garage(17385067, present)).
+fact(194, security_system(17385067, present)).
+fact(195, ramps(17385067, present)).
+fact(196, swimming_pool(17385067, absent)).
+fact(197, garden(17385067, present)).
+fact(198, optical_fiber(17385067, present)).
+fact(199, smart_appliances(17385067, absent)).
+fact(200, floor_level(17385067, 0)).
+fact(201, sun_orientation(17385067, east)).
+fact(202, area_per_room(17385067, 57.26)).
+fact(203, thermal_comfort(17385067, high)).
+fact(204, acoustic_insulation(17385067, high)).
+fact(205, image(17385067, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Imx4ZnpyaHk3bWw4ZTEtQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.cxE2Dvhq_SkHqau91xU2H2RyWZ2p1I8Tks8O46E7VMw/image;s=655x491;q=80')).
+fact(206, image(17385067, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImJzZDB4bms2bmF5azItQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.7s9OuZSBA0UFUjHu1KIfuwfztU8N-iY5S4ykTcJ2z-M/image;s=655x491;q=80')).
+fact(207, image(17385067, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InkwYXJoYzh1M3puYzMtQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.f5dCwVas2zlFIZxKF6ULYyCoBiCnXUF2DRa5emAlXCg/image;s=655x491;q=80')).
+fact(208, image(17385067, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImJvajg2Nm51d3J2ejEtQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.U-BPDUzQKSvKd6jh3T05CJPtO4Vj6sF_Vu5QgEg34rQ/image;s=655x491;q=80')).
+fact(209, image(17385067, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjZ4Y3dkYm1rM2RyZDMtQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.ZsTBAaT5-nA9ayDS841XrXyp3ET3NrN34UBg_pWN1WY/image;s=655x491;q=80')).
+fact(210, image(17385067, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Im01d3g3djE4Yzduay1BUFQiLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.l-c3fI9f7Um81-U6bFUiWsx8cK6GkKvEdFKwoMivTrs/image;s=655x491;q=80')).
+fact(211, image(17385067, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InJ5ZTl5OGVudXVpODEtQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.ja3sNK03X_Oo6K-RXgt2O9QhQCPO-HR_AfhwzyNSlAA/image;s=655x491;q=80')).
+fact(212, image(17385067, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InViendicmozeHEzeC1BUFQiLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.JVLoUNfRp-gSMmWcuKR0pkqspiJDIuzqJIoGESl-r3k/image;s=655x491;q=80')).
+fact(213, image(17385067, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Im44bGgyNjNpbXBvci1BUFQiLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.2uwI4Z-skiWGSKlaoKg8t8aIx-hWU0S4bHV6CVlnLE0/image;s=655x491;q=80')).
+fact(214, image(17385067, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImxydW9wNjdtZHN5di1BUFQiLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.bXiAfXOJDg_dVDrDtb8PamMywEFEupk2vj-fCJe3I28/image;s=655x491;q=80')).
+fact(215, image(17385067, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Im94aWQyYXB4MzB5Yy1BUFQiLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.6rHqD1hCdotZ9J_is2hiRSI41MaMcztcg3dAoXVTfrs/image;s=655x491;q=80')).
+fact(216, image(17385067, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Imc2bzdmZXN3Z3hyczMtQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.1_0zTOO58UVGsWZZqVGV1QtUZunuo-vgcqzNuLPIujA/image;s=655x491;q=80')).
+fact(217, image(17385067, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImtpYmZkYTJlNzNqaTItQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.FdHNLd3F9bLW5aAsHAmmYOvl7cYUPDUUB3gdFUYBLx0/image;s=655x491;q=80')).
+
+fact(218, property(18491447, 'T6, apartamento para comprar - Bonfim, Porto - 18491447 • www.imovirtual.com')).
+fact(219, location_property(18491447, 'cedofeita, ildefonso, sé, miragaia, nicolau, vitória')).
+fact(220, property_type(18491447, 'apartment')).
+fact(221, price(18491447, 485000)).
+fact(222, area(18491447, 195.5)).
+fact(223, rooms(18491447, 7)).
+fact(224, energy_rating(18491447, 'd')).
+fact(225, year_construction(18491447, 1967)).
+fact(226, elevator(18491447, present)).
+fact(227, garage(18491447, absent)).
+fact(228, security_system(18491447, absent)).
+fact(229, ramps(18491447, present)).
+fact(230, swimming_pool(18491447, absent)).
+fact(231, garden(18491447, absent)).
+fact(232, optical_fiber(18491447, present)).
+fact(233, smart_appliances(18491447, present)).
+fact(234, floor_level(18491447, 2)).
+fact(235, sun_orientation(18491447, north)).
+fact(236, area_per_room(18491447, 27.93)).
+fact(237, thermal_comfort(18491447, low)).
+fact(238, acoustic_insulation(18491447, low)).
+fact(239, image(18491447, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImU2bTlwcXdlaWFsYTMtQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.gvv_p5m24PEWAEs1ax0xmbWwiS83dyRtdfuUcBvbRgw/image;s=655x491;q=80')).
+fact(240, image(18491447, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImM3d3Y0a3BnMzU1MTItQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.KKe2If8W9sC7L40vIwoIUnzW_KxWrhuLARXVnH5bKdA/image;s=655x491;q=80')).
+fact(241, image(18491447, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjhheDZkaDRwZWNnajItQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.I31qJelxCrRSDeKpKgHOb1SKDvcCjiyPSswlwPoa-CI/image;s=655x491;q=80')).
+fact(242, image(18491447, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImhsZXhsbXMxamtxcjItQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.xlTAf6WoYoXrnY1A_UyoJMsCUyAZhlPDypHpv69FRoM/image;s=655x491;q=80')).
+fact(243, image(18491447, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Ims4YWl6dTNlN3Y0czItQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.dhgO3xNxznPz5_hAS8o0Km6EKmz2VYGhUM79uwo1YE0/image;s=655x491;q=80')).
+fact(244, image(18491447, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Im01YTBubjVoZ2c0ZzMtQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.0hbVRu8K8YxIehvR6ksIdoveRKUnL5FLRpcJFNB0Us8/image;s=655x491;q=80')).
+fact(245, image(18491447, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImMzN3lmZGwzYmtyODEtQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.DDMUmA53RHjpryjCcwo6nk17D81YbS8wVl45FaMWhqA/image;s=655x491;q=80')).
+fact(246, image(18491447, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImZ1cmdkNXlhMXdoMS1BUFQiLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.6L8leY_A2z_5JSGVvyB5Rw2DigMiaeVcsTWVfO1H_Ow/image;s=655x491;q=80')).
+fact(247, image(18491447, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InNxYTk3NGI5OGVmNzItQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.46wfqGGyuSNK8SgcrTI7XamCkTxn8WAxwLGDZNghhoU/image;s=655x491;q=80')).
+fact(248, image(18491447, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InVhYzlwOHl5Ym9pdi1BUFQiLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.ke2aHULVMMqQGz8vH6G5ZRSPBFHWk193BYa4H0J3EAM/image;s=655x491;q=80')).
+fact(249, image(18491447, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjVyNXlrYmswcXRkaS1BUFQiLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.k8rlRxnYrBXp9XG0KhFkJuCgf4ou_QMMvODsfFm_wr4/image;s=655x491;q=80')).
+fact(250, image(18491447, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Ijg5ZWl6N2p2NWsyby1BUFQiLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.Q2W1thhZpaoA0l-9cVuzK2WhZ4-nsQYicQ_vkhHfSEc/image;s=655x491;q=80')).
+fact(251, image(18491447, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InhoeXlzZHl6cDh6NC1BUFQiLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.1DE9xe37-Z2d8cTAVFKhyukPrOYhPbPd3HFfe2o7Hns/image;s=655x491;q=80')).
+fact(252, image(18491447, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImIya244OG94eWxidDMtQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.-aR7mckOqXBAntEe6EZRE1O3Nj1t-CnZuPZGjFYv8MU/image;s=655x491;q=80')).
+fact(253, image(18491447, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImRiZ29jNDJ4ajZxNS1BUFQiLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.SJUmEsZasZ9SR3ukDUM8wByfnV1KRTdBIufIq5bD3Po/image;s=655x491;q=80')).
+fact(254, image(18491447, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImZqY2dvbzZjZ3g4bjMtQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.BSXwnJHeH_7d4vWLxIY6JIrjZF3dmRopUTy-VPEG9Sc/image;s=655x491;q=80')).
+fact(255, image(18491447, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjZ0Y3d2cDF6cGhxZDEtQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.UXZBz2VTAU617hKtrdAgHgoIXxJXZ4pBHbcD4M6nzGQ/image;s=655x491;q=80')).
+fact(256, image(18491447, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImpoZ2Y0NWdjYmdrMDMtQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0._hJpNTM5SvH5LWnOmbnAFsAPofP_zW_0pM23nsJE13M/image;s=655x491;q=80')).
+fact(257, image(18491447, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjVjc20wdnZ1Y2p1cjEtQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.hPyOiJVssVOOMznKsH9ZWyr638o8vwF7d8lG7XLPXUw/image;s=655x491;q=80')).
+fact(258, image(18491447, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InMwbnR4NWdybGFkMzMtQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.cxSAaYHLa_MQMHtEaou5rVvXdBPKSZ4afYBLWXVRAf4/image;s=655x491;q=80')).
+fact(259, image(18491447, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjA2cXlqbGdvOHYxczMtQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.M6hgF3oloUkXmiI3bSR6aBDoLQHF19b-4RXSGFqCd1c/image;s=655x491;q=80')).
+fact(260, image(18491447, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Im9mcDc5Y3FxNzduNTEtQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.fCcbliicKTNtM1sUAYJKuNnWZ0kBoGPlYpGG51vSyLY/image;s=655x491;q=80')).
+fact(261, image(18491447, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InJ0MXNpMzY0bWhsaTItQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.83eNe1kPTmjBdkXETU47HK045FDYFpeTUQNMC1MqexA/image;s=655x491;q=80')).
+fact(262, image(18491447, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjBneWg1MHUxMGs3cTEtQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.ghfZff8LGTp-J-EglyZJ9mu9ApY-maldJRgVpYpwGEU/image;s=655x491;q=80')).
+fact(263, image(18491447, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InEzN2YyOHdoamNmdzEtQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.fYBwyK4lvfsmFfHwyBTYwYYf-k5liKs6WiqU1jcbOvs/image;s=655x491;q=80')).
+fact(264, image(18491447, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImR4cmZxc3l2b3g5Zi1BUFQiLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.DOPfvOnVx1qFpOZ8CPAQ9Ey8NT2Lxdyzf4WpM26R1Ko/image;s=655x491;q=80')).
+fact(265, image(18491447, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Im54eWhhdGdvNWpnbzMtQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.NDaMgC6jsHjdrWj5hknXsaQEu7xKSjeEsLzmstX7Sfw/image;s=655x491;q=80')).
+fact(266, image(18491447, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Im5sY3A1YjgzNTcxNy1BUFQiLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.tkxJhr05xN8Op9P5hQ9jBFGhnw8mqDBHEmX8O5-mCG8/image;s=655x491;q=80')).
+
+fact(267, property(17438039, 'T4 - Estado da construção: concluído - Área: 400 m² - Andar: 1 - Rua João de Lisboa, Aldoar, Foz do Douro e Nevogilde - 17438039 • www.imovirtual.com')).
+fact(268, location_property(17438039, 'aldoar, foz do douro e nevogilde')).
+fact(269, property_type(17438039, 'apartment')).
+fact(270, price(17438039, 1950000)).
+fact(271, area(17438039, 400.0)).
+fact(272, rooms(17438039, 5)).
+fact(273, energy_rating(17438039, 'a')).
+fact(274, year_construction(17438039, 2024)).
+fact(275, elevator(17438039, present)).
+fact(276, garage(17438039, present)).
+fact(277, security_system(17438039, present)).
+fact(278, ramps(17438039, present)).
+fact(279, swimming_pool(17438039, present)).
+fact(280, garden(17438039, present)).
+fact(281, optical_fiber(17438039, present)).
+fact(282, smart_appliances(17438039, absent)).
+fact(283, floor_level(17438039, 1)).
+fact(284, sun_orientation(17438039, south)).
+fact(285, area_per_room(17438039, 80.0)).
+fact(286, thermal_comfort(17438039, high)).
+fact(287, acoustic_insulation(17438039, high)).
+fact(288, image(17438039, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Impua3JhMWo2NWJ1MjItQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.x005DIg_P1OLYSSHA0iPD3-prSpl4cBR2CJfTC2HPpA/image;s=655x491;q=80')).
+fact(289, image(17438039, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjR4ZThiemo0NDlxNDMtQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.t4TrLxEG0vnB0j6OjHk9klqqN2jTA8iCzAod2OgCLyU/image;s=655x491;q=80')).
+fact(290, image(17438039, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjZ6OGE0NmFzOHoxOTEtQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.hmn-IuTA74sK6kI1qc82XZFOTGdpJhhYJ9e9IPwC9-E/image;s=655x491;q=80')).
+fact(291, image(17438039, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Im40MGx5Y3N3am5tODEtQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.MrQbBzWieIclQMWOclUAeAolpwjUo3BLKWwusD1usfM/image;s=655x491;q=80')).
+fact(292, image(17438039, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InZvZHhwcHRwZm1xajMtQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0._yooRwgQWTqaL-Guqm1IN7uiIOFRynTf7L9-SXMLquY/image;s=655x491;q=80')).
+fact(293, image(17438039, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Im81d3kyMHo1YXdwMzMtQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.V1xGmQ31sLjR02qU8N0jJouk6xBecrl2zpdgmASoIsM/image;s=655x491;q=80')).
+fact(294, image(17438039, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjZlZzBrMHZhMjJ2NDItQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.qERDvJtHV3MRwvvDYo1fXnzKTPthbNMLflUodjpbNos/image;s=655x491;q=80')).
+fact(295, image(17438039, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Ijd5eDB1aHdlNTBlbzEtQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.7OA297KDo0GCW-n44Mo7OXM61fj0URRHuUPrI2gFZUE/image;s=655x491;q=80')).
+fact(296, image(17438039, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjZldzM2eWl5enhpbTItQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.cF06di4Nz9kp5MsqA32O4bKFV-l56sfQKDg-VF_oFUw/image;s=655x491;q=80')).
+fact(297, image(17438039, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InJwdTRtcWs0ZzMwaTMtQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.96vGmyT9nPRlzGW6IaS3MOb0GH9qCJsjqtnBaWIjZQE/image;s=655x491;q=80')).
+fact(298, image(17438039, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InhqeTZhYXVsbXRkczEtQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.fEIumIZb6PgTZyq55-g8hfIFLA7Iyfirgc-f23rtz2A/image;s=655x491;q=80')).
+fact(299, image(17438039, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImI0aHMyZmFlNm0wczItQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.22SloWI-KiNHPB0r_HGFQdtsn9_Q3Nh7HtcEb7ZamOI/image;s=655x491;q=80')).
+fact(300, image(17438039, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Imp4ZnZ1bzRlb2pxZjEtQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.8ZE9qnL_ZNJ7l2LbQk6yuBqPCTWQxdpTdmau4-gnOXI/image;s=655x491;q=80')).
+fact(301, image(17438039, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImQ5NHI3bXY1bDFwcC1BUFQiLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.V6qSYy9sKHrQG3WkoXqBDNi48Ddeghh9vCMwf9fh3rA/image;s=655x491;q=80')).
+fact(302, image(17438039, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InkzODBuZWRyNTVkbjEtQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.PP0xcn1AT2egVhxmNXIp9X6a4CJBnst92J79f37lvd0/image;s=655x491;q=80')).
+fact(303, image(17438039, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImIwYW13OGpnNWRmNTItQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.bIdi74gkRNy5GnvmJnL2R6BMsrqgQiYanEe9I-6dX-M/image;s=655x491;q=80')).
+fact(304, image(17438039, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImJpcTZsdGM2aGdvbi1BUFQiLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.35uk9PcqA65U33m4jQJYyOghMqLhga2iEhfikRaGdpI/image;s=655x491;q=80')).
+fact(305, image(17438039, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjB1cjc2dWVsdG85di1BUFQiLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.gBeGQMnMU9OblWJ6t8TaX20prO3ueNYBr73pz2B0hW4/image;s=655x491;q=80')).
+fact(306, image(17438039, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InRjZXlmcjEyZWIyLUFQVCIsInciOlt7ImZuIjoiNjlubHBhN2VjcW03MS1BUFQiLCJzIjoiMTQiLCJwIjoiMTAsLTEwIiwiYSI6IjAifV19.pnHN7_jbN3YoBbWTisaRsDA_5vBsFW7ErDJimRgSxV8/image;s=655x491;q=80')).
+fact(307, image(17438039, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Imw3M2RlbHg2dHR6bjItQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.4fbEoBQqtlUBH-1AomAruO7to4qe5pvs-dN--OVWNMw/image;s=655x491;q=80')).
+fact(308, image(17438039, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjUzeWVhNDRxcWw0NzEtQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.3IzOYD7NO_aOSkBXAFQRDOYFsTeY2tCgd74g1EiGFws/image;s=655x491;q=80')).
+fact(309, image(17438039, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InliNTRhM2dsZzdzYTItQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.RLJdQAwwYxHeXyYcyvJEPB-Gcb3cwtbm3YdYhxZdazc/image;s=655x491;q=80')).
+fact(310, image(17438039, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InBsbzBkajlya2l6NzEtQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.wJkCAICMvNfelxJFYmd_hgHpaSAjpI0e5kfZYHeIyAI/image;s=655x491;q=80')).
+fact(311, image(17438039, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjgweGRmbG81aWJobjEtQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.iKKrk17dtpWenDD_Ul9jMDNB_50wYK8P8-7BGc_DcxA/image;s=655x491;q=80')).
+fact(312, image(17438039, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjdlZnU4eXAzaXp3ODItQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.YuQpS1sRZ4-oKYMfPQc6Hoy0bUoui8tnfMe5O4vTqtE/image;s=655x491;q=80')).
+fact(313, image(17438039, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Imp4eWMzZzF2OG10bzEtQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.IU7lvXtZZ1tciTl6XNXqy_59RmwxZXp2zDWKsgOCXzQ/image;s=655x491;q=80')).
+fact(314, image(17438039, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InJnY21ub3R5ODN6aDMtQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.dujUSXBma7dADU3lUBKA4HoyhoNNyo-zQ0Tze8JVPa0/image;s=655x491;q=80')).
+fact(315, image(17438039, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Ink5cXc2NjU5dGpjcDEtQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0._MztHI4AisxzU9HgnPK-4M9061GEi_SyZ_CgdMMYNEw/image;s=655x491;q=80')).
+fact(316, image(17438039, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Im9ydjkyYXhqMGp3ODEtQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.ZJBr0oWyXM4EwjJ0GuICg5kykSzOLM8Ng9jLZc9G7Ek/image;s=655x491;q=80')).
+fact(317, image(17438039, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InMzYzcydWczNGJ1ZTEtQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.mKZYMEVEuEqIsK3XetlwajCVytiscWDjF4JmwyeYea8/image;s=655x491;q=80')).
+fact(318, image(17438039, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Im5vNDV2c2d3Yzd0YTEtQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.nyAVE-nM-xeTvCIVkqyQ9vd1zuCf4knD4rPVFkr4lxw/image;s=655x491;q=80')).
+fact(319, image(17438039, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImdyNjQzcGxqYjltdjMtQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.StGQwUmAaMwZSaHPKJKIY2LtYqO9JgiNoNOuG093pTE/image;s=655x491;q=80')).
+fact(320, image(17438039, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InVzcm1jcG9seGV2YTItQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.gNMEhhl7b-sA3-8umJRJThXK6FOrksa3yWh6OA4Q0Go/image;s=655x491;q=80')).
+fact(321, image(17438039, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InE0YmMza3VrbmpnNDItQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.8f8IITPFXCgg7SKSS9SBoNZGFQ8UzyTEP3b5R5NrJLg/image;s=655x491;q=80')).
+fact(322, image(17438039, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InlrdTR5MHdrdHV2MTEtQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.DzZ6mO1ioEcd78Egy0s7586DMG1AGaDeE8tfvfws4OI/image;s=655x491;q=80')).
+fact(323, image(17438039, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InFndnh5M3VxaXBpajItQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.e_MvOjlVgYgJURCbTVGnglKxPIKTMpRbPS9KJkRSC_4/image;s=655x491;q=80')).
+fact(324, image(17438039, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImdvMXc5dmt0bWM0ay1BUFQiLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.Gctf7RZSUmfU25xg6VhCLcRIqIY_x4NI9_67NUZboY8/image;s=655x491;q=80')).
+fact(325, image(17438039, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InZtZGRzbTU2NWxocS1BUFQiLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.NMVDGF_pmVuT-8ZF26xyM-hhEHDQQjoAxOjmOn_hI4U/image;s=655x491;q=80')).
+fact(326, image(17438039, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjBmM3hhNXpnOWJjeDEtQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0._7V2RA9DCFzWlK83GnsLym2TXHSJOegi2I3ZVRicyp0/image;s=655x491;q=80')).
+fact(327, image(17438039, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Imc2b2h6dnFwaXJ6NTMtQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.FGbw_FfdcbbZh2fsc2KTiX288IUMAgsPA6-rRclRJYg/image;s=655x491;q=80')).
+fact(328, image(17438039, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImxwNWZ0ZDVyZGdmOS1BUFQiLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.4SMtFjwAWoA6XkIy69KQdO7HXCfj1eIWutCgc3BMTuU/image;s=655x491;q=80')).
+fact(329, image(17438039, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImxiMmswZWloemw0dDItQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.wSuEBmZQw7IExhA91molkdwR9bDHAFr3LFRLm_mkKxI/image;s=655x491;q=80')).
+
+fact(330, property(18466887, 'T1, apartamento para comprar - Rua do Bonfim, Bonfim - 18466887 • www.imovirtual.com')).
+fact(331, location_property(18466887, 'bonfim')).
+fact(332, property_type(18466887, 'apartment')).
+fact(333, price(18466887, 195000)).
+fact(334, area(18466887, 39.0)).
+fact(335, rooms(18466887, 2)).
+fact(336, energy_rating(18466887, 'c')).
+fact(337, year_construction(18466887, 2017)).
+fact(338, elevator(18466887, absent)).
+fact(339, garage(18466887, present)).
+fact(340, security_system(18466887, present)).
+fact(341, ramps(18466887, absent)).
+fact(342, swimming_pool(18466887, absent)).
+fact(343, garden(18466887, absent)).
+fact(344, optical_fiber(18466887, absent)).
+fact(345, smart_appliances(18466887, absent)).
+fact(346, floor_level(18466887, 2)).
+fact(347, sun_orientation(18466887, south)).
+fact(348, area_per_room(18466887, 19.5)).
+fact(349, thermal_comfort(18466887, high)).
+fact(350, acoustic_insulation(18466887, high)).
+fact(351, image(18466887, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImVqbTRtY24wdG9rcjItQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.5JY9pT6cFLp5Vl_-bIv5TuB81sNuuwwTe4Jm0e4bfZI/image;s=655x491;q=80')).
+fact(352, image(18466887, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InZ5NDd0cWR1MGw3NjMtQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.UgOokT8aZ2KXyEJPBnI_183Qq5tyySWCa2n_75LFj_g/image;s=655x491;q=80')).
+fact(353, image(18466887, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjA4MWcxNDg2bjR4MDMtQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.n_K6rsK15jV0ELYp6FYxa8ddYvWO4SPj39FSp5OZyEY/image;s=655x491;q=80')).
+fact(354, image(18466887, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Imlwdnh2YTAxejdjaTMtQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.B7IHgxVHh7vkDSNQSOGCjPD9Bj3uA74btQv5wLX_n50/image;s=655x491;q=80')).
+fact(355, image(18466887, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InlsODFxbDhrdjdhMDItQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.UBXJ1CDTAR5TCLnnU8zJXG61smexnkGc2R9U9Ce5FK4/image;s=655x491;q=80')).
+fact(356, image(18466887, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImRwb3plcW51YnVrazMtQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.LakDRG1C-iMpCtGtvcNlOqylu1JjMZnEAiWm5gEFZtY/image;s=655x491;q=80')).
+fact(357, image(18466887, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjIyZXA1dzZqdnJsMTMtQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.pHmzsit_GsIo7Y3gJtWHE_jFyIt_oXadvogoPVDl4IQ/image;s=655x491;q=80')).
+fact(358, image(18466887, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Im5xOGw2eDNpdTFkODEtQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.1B2ZIbUgCYKnkFu8fanIAMH5XgA5Bpt0araHiLCb9R0/image;s=655x491;q=80')).
+fact(359, image(18466887, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjdyMTVxdmVhZ3dnYjEtQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.eI04gvCa-bUggA59E0P_HzAn2fAZdEcYzlDUmmMEab4/image;s=655x491;q=80')).
+fact(360, image(18466887, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImppcTloemh1Z3Q4MjMtQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.dG4bAUIjc2mdbNUbLLIFdtClZR_33t1a8CtroGPbRnI/image;s=655x491;q=80')).
+fact(361, image(18466887, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjViNTlqdnR6NGQ0MzMtQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.HOReI_kMqPI1urK7kxOIY0LE1oR4zwLDYbo63WUui30/image;s=655x491;q=80')).
+fact(362, image(18466887, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImhkOTU0d2h5a2ZmdDMtQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.w6-CbUgVpO4WAVqM_qB2inp6vBFSnYsG1RfgYaIggJc/image;s=655x491;q=80')).
+fact(363, image(18466887, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Imx5ZDNybHA5eGM5azMtQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.nVNOSjUSwdJmhB_8ApBk2O0SDsKG2EXZ4DFpd3EkUlE/image;s=655x491;q=80')).
+fact(364, image(18466887, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InRsNHNhcGgwdGh0MTMtQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.NgfJ3auehKEqPUVLOC8Z8dl4hDxT2hjnCW5aJYStSgc/image;s=655x491;q=80')).
+fact(365, image(18466887, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjZweWFjc2I1djZ3eTItQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.auhYfJr_B4yHPEMTfPqil6Ialiomv7RpShyB8UmCkN0/image;s=655x491;q=80')).
+fact(366, image(18466887, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjhwbHVzbXNjMTZkdzItQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.y6Rewgn3Mx99hFHfNtDPn1tNb-GlRpiW26eodRtD5l4/image;s=655x491;q=80')).
+fact(367, image(18466887, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Im40dGExYXB0MGlvNjMtQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.n9eF9vhFibYr9QqdZi4mtsKs0RGwPvepUx4-vg5ff3E/image;s=655x491;q=80')).
+fact(368, image(18466887, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InZyeGhnbms4ZzVuczItQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.6MkrM9AujEdvDk5DfyLgvSBROViCZhS7FbLuzAofw2I/image;s=655x491;q=80')).
+fact(369, image(18466887, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InE1bTJyZm9oY3RsazEtQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.Daqp0-uVt4G9OyJngmMv0f-Vp37tKx4l_U5d4Ry9tqk/image;s=655x491;q=80')).
+fact(370, image(18466887, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjZwYjg1dmY1ZGlrNDEtQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.iCn80aMgvQekWtPV6aZor6x67Ljxl1Yp_yElhpeQzkA/image;s=655x491;q=80')).
+
+fact(371, property(17973015, 'T1, apartamento para comprar - Bonfim, Porto - 17973015 • www.imovirtual.com')).
+fact(372, location_property(17973015, 'bonfim')).
+fact(373, property_type(17973015, 'apartment')).
+fact(374, price(17973015, 290000)).
+fact(375, area(17973015, 74.0)).
+fact(376, rooms(17973015, 2)).
+fact(377, energy_rating(17973015, 'd')).
+fact(378, year_construction(17973015, 2001)).
+fact(379, elevator(17973015, absent)).
+fact(380, garage(17973015, absent)).
+fact(381, security_system(17973015, absent)).
+fact(382, ramps(17973015, absent)).
+fact(383, swimming_pool(17973015, absent)).
+fact(384, garden(17973015, absent)).
+fact(385, optical_fiber(17973015, present)).
+fact(386, smart_appliances(17973015, present)).
+fact(387, floor_level(17973015, 3)).
+fact(388, sun_orientation(17973015, west)).
+fact(389, area_per_room(17973015, 37.0)).
+fact(390, thermal_comfort(17973015, medium)).
+fact(391, acoustic_insulation(17973015, medium)).
+fact(392, image(17973015, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InQ4M2NyZnR1ZHlhZzItRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.8IPnB6gRQlPpFG5P8DFAHy6tt07oIS7EjRzWpyoreHg/image;s=655x491;q=80')).
+fact(393, image(17973015, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InQ2bnd1Y2piaHZvMjEtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.3Brezjfrb897tizcYibQJOkP_ttnZke680HUAFhAkd4/image;s=655x491;q=80')).
+fact(394, image(17973015, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImljYTNjZjFwM2pqdjMtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.9KRidTn3M-jqARdxR7wjgqVJX5cIqPui0EEphB2V_rs/image;s=655x491;q=80')).
+fact(395, image(17973015, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InNmMTgzMjY4NnVjNDItRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.rKihEMEN7MCCyxBUXO8QgilLebBAxXbgnWNSTpSP870/image;s=655x491;q=80')).
+fact(396, image(17973015, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImtvZWd4ZGJmN2lteDEtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.Y_q1eXeRI9h34s9BbrNDR1Tskumf-FaXR1fdvav8w9A/image;s=655x491;q=80')).
+fact(397, image(17973015, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Ijd1MHVkNjJ0cGV6NzEtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.PbLfUkrAc4aRJvQGDkceQ9fZxgdflVpxulZh9yU1J98/image;s=655x491;q=80')).
+fact(398, image(17973015, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InhiYThhZGlsZmhqcjEtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.rAc49IcqqUAQ9uujWoIsRrGJ6ZNggtI2mt3nEtJRyxU/image;s=655x491;q=80')).
+fact(399, image(17973015, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InFmM2tqNHd4eGlicjMtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.8gS2R4f1mKvqG2CWH5GdT6gSC7oP6b4FkmQ58qYyfmk/image;s=655x491;q=80')).
+fact(400, image(17973015, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImM2MGFkcWl4Mnl3aC1FQ09TWVNURU0iLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.lExaxgZuwqblq6wQyeSgm5ZRKCXhq8cB15jdz4_aY6Q/image;s=655x491;q=80')).
+fact(401, image(17973015, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InFsbjJxYmpjd3RieTEtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.vJ-ZcB2PrdR4prgXRi4CTaiKHwaOj976XGBh0CmkqlA/image;s=655x491;q=80')).
+fact(402, image(17973015, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InhvNWdiYnVrOXB6MDItRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.FZpwAh60uvysFTxw9WuFg4wUdnP-f3fDl12b9DadRoM/image;s=655x491;q=80')).
+fact(403, image(17973015, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Inl6ZWx0MXRkNXFhYjMtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.-S1OA-XJPOMhDFWAESDdrGcKOrQlUGjxQvMvae9lpg8/image;s=655x491;q=80')).
+fact(404, image(17973015, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjdlazJidGd6YjliazMtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.nqr5IftTpMqP3aAYcGD7--c7ol9b6ea0_77xT0h-cFI/image;s=655x491;q=80')).
+
+fact(405, property(18486512, 'T5, apartamento para comprar - Aldoar, Foz do Douro e Nevogilde, Porto - 18486512 • www.imovirtual.com')).
+fact(406, location_property(18486512, 'aldoar, foz do douro e nevogilde')).
+fact(407, property_type(18486512, 'apartment')).
+fact(408, price(18486512, 940000)).
+fact(409, area(18486512, 269.0)).
+fact(410, rooms(18486512, 6)).
+fact(411, energy_rating(18486512, 'c')).
+fact(412, year_construction(18486512, 1986)).
+fact(413, elevator(18486512, present)).
+fact(414, garage(18486512, absent)).
+fact(415, security_system(18486512, present)).
+fact(416, ramps(18486512, present)).
+fact(417, swimming_pool(18486512, absent)).
+fact(418, garden(18486512, present)).
+fact(419, optical_fiber(18486512, present)).
+fact(420, smart_appliances(18486512, absent)).
+fact(421, floor_level(18486512, 2)).
+fact(422, sun_orientation(18486512, west)).
+fact(423, area_per_room(18486512, 44.83)).
+fact(424, thermal_comfort(18486512, low)).
+fact(425, acoustic_insulation(18486512, low)).
+fact(426, image(18486512, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImVsYXg5c2FicmN1dDMtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0._czlGZ52v9zdyCSfX43HSSRPM0p3lSTvr5I0pNGdOEc/image;s=655x491;q=80')).
+fact(427, image(18486512, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InUwcHRlajYzYnh2ci1FQ09TWVNURU0iLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.OAyQ0l_u5ss0vU_SaEb17B71B0AFpkDFm5bdorhm-5Y/image;s=655x491;q=80')).
+fact(428, image(18486512, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImRzcXV2eGUzNm85LUVDT1NZU1RFTSIsInciOlt7ImZuIjoiNjlubHBhN2VjcW03MS1BUFQiLCJzIjoiMTQiLCJwIjoiMTAsLTEwIiwiYSI6IjAifV19.nq_SZhfhZLj0-BKUgIcBA9RXApzHV-yih_8D4A2vm8s/image;s=655x491;q=80')).
+fact(429, image(18486512, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjFpNDR0bnpvbmdsMjMtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.L49Lt7B3RFZfFDlL1zbBiF3m9_Jev9H5v-2cF5Du-A8/image;s=655x491;q=80')).
+fact(430, image(18486512, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImFucHdqczJhdHBhNDItRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.DNDYj0HREhLsMFy1K-LYLTJ050kCB-_CmpRqkatdOUU/image;s=655x491;q=80')).
+fact(431, image(18486512, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Indmc25tZGJ5Zzg2cC1FQ09TWVNURU0iLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.vhijbHznkEIA9JAK-I5VzkSXhpvD5md5l46H2b9DdpU/image;s=655x491;q=80')).
+fact(432, image(18486512, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImQxbnBjNjM3NDVmajMtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.ON3SW1XL9WFD1QmHUDJByfSNsSl-NRBlxXUmev41a14/image;s=655x491;q=80')).
+fact(433, image(18486512, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InNjdGRwcWNkZnAxdjItRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.-KJDGWRfwwrgwCdA1ugWQ2EAExz6ftNqChY9wsM0b2g/image;s=655x491;q=80')).
+fact(434, image(18486512, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImYwN3NleDM3ZThqczEtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.jueZqMDWadEQda-9hNBBaTrTzIkYVfbBEiH7NfS96MA/image;s=655x491;q=80')).
+fact(435, image(18486512, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImRtc2xvanFocmxvYzMtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.Z48zJyz7NN5T7Am7DkpN4JqNnKM4PTidF6-3ayOO22Y/image;s=655x491;q=80')).
+fact(436, image(18486512, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImRmbzd3aTN0NDZvaDItRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.Xv_GetAPjQo_PYMzJ5aunQCfpn5k52DkXh9t2qfZD_Q/image;s=655x491;q=80')).
+fact(437, image(18486512, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjZmZTJqc3d3b3M0cS1FQ09TWVNURU0iLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.AOeCNNYe4wohHoAX-nIkDldP93QCEpHoEsLI0NBSMXY/image;s=655x491;q=80')).
+fact(438, image(18486512, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjdpcmtueTg2c2cybjMtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.MyaQH1lHAkCtTnZg3blU-tjTgmD5yBbu-o9Xo3Phzwk/image;s=655x491;q=80')).
+fact(439, image(18486512, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImdpaGpvN3pyNjlhMTEtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.8kunUpUb46CkyqM4yv36gZiFsEIEI6oOyJGyp_gPlIQ/image;s=655x491;q=80')).
+fact(440, image(18486512, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjJodjRsMTFqOG55MjItRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.AaKdXXfHbyjAvjnpMBdvwWGlT9HEG6GafBCDUjNs9yc/image;s=655x491;q=80')).
+fact(441, image(18486512, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Ink5Y2Uwanhxb3A5dDEtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.BKxaPIFF1N2CxW806nYplInXB3fbuKjsn0vMBtGfBtg/image;s=655x491;q=80')).
+fact(442, image(18486512, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjBybzhkdnkyYmdrNTMtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.PralEMBNiFXJj_XA1SI5WQW_q-34rWrPatq9YNaO_No/image;s=655x491;q=80')).
+fact(443, image(18486512, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImJ2MWJvb2xuYTF6ZjMtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.wdbQ7tGBeMyeI3CN0hBqTAiXduXikvxnbEKJc3ke9Hw/image;s=655x491;q=80')).
+fact(444, image(18486512, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Ijl0YWRra2h5OTFjZzItRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.OnghL6lXjHBL1SiF-yawgh7GnwFX0HjAFOjjBK-pZoY/image;s=655x491;q=80')).
+fact(445, image(18486512, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Im5lYWFva2YxMjIydTMtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.sYxNQOVKxIGOWm9nDiij2F1oqoEIxGgZzPX_LP1vHO4/image;s=655x491;q=80')).
+fact(446, image(18486512, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImE2OWQzZXc1Y3JzajItRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.gm5QqnzIq1A2JVY92Xft153_zcm0AYovuGPyFUI4u4E/image;s=655x491;q=80')).
+fact(447, image(18486512, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Ijl6aWZoc2Q3NnFycDItRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.UnnUKIVwFSY0_TXhT6FKwEpO-iMLpECvkCIEvRBw5fw/image;s=655x491;q=80')).
+fact(448, image(18486512, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InE5M3p4MWtuejd3eDEtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.uBZDn-Ecc_d6hew3X5aZgCDUS8CRmsyLjUZqjf-osXU/image;s=655x491;q=80')).
+fact(449, image(18486512, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjdlNzNmbGJhc282bi1FQ09TWVNURU0iLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.ldtxsXyXpyDprJaVgUHD7XEo5ckssiaaU5JzcDelcro/image;s=655x491;q=80')).
+fact(450, image(18486512, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjE4aTRvN3FteTRiLUVDT1NZU1RFTSIsInciOlt7ImZuIjoiNjlubHBhN2VjcW03MS1BUFQiLCJzIjoiMTQiLCJwIjoiMTAsLTEwIiwiYSI6IjAifV19.YWuGivc0cSgq6ip5iPrO97L975MXxD5U2bWM4S5I-Zs/image;s=655x491;q=80')).
+fact(451, image(18486512, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjU1cDlwOGF2eTB0NTItRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.DpTFYIXxcWiw3xqKgfwSq5V39bLXastvWJWsacSYOVY/image;s=655x491;q=80')).
+fact(452, image(18486512, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Im84dmtnbzMyMWwyYzItRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.BWvQRxvc3B15WR-k1Ms7oJOiKZrpx0yDvfNYxeW7Rh0/image;s=655x491;q=80')).
+fact(453, image(18486512, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IngwZGk4NXFkcGYxNTMtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.eTrwNwzaep6DQ6v4Skm-U5hzCFkpSe8svr7gut3MfSY/image;s=655x491;q=80')).
+fact(454, image(18486512, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImxudWZuemhyZXBrczItRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.3YOOj38RIDqU4-H4lOky1YvXxmx34e9uiNRFYej9iQw/image;s=655x491;q=80')).
+fact(455, image(18486512, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjF4NG5nMWxjNDl1cTMtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0._ARFRQV8d9Q055REjS1aXIQyS1fR5pOVxFSjtaObdnY/image;s=655x491;q=80')).
+fact(456, image(18486512, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InV3NGh0d2pjMjkxdDItRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.kFkCypSO8qs-gHpp6chNG11tatLtBHjSykL3RuhjkXo/image;s=655x491;q=80')).
+fact(457, image(18486512, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Ijh2dWFrNDR5am5vNzEtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.AMTpgngod-xalMGIZndvRk86Blk1L69-DQPMaGKYw4A/image;s=655x491;q=80')).
+
+fact(458, property(18456220, 'T1, apartamento para comprar - Rua do Almada, Cedofeita, Santo Ildefonso, Sé, Miragaia, São Nicolau e Vitória - 18456220 • www.imovirtual.com')).
+fact(459, location_property(18456220, 'cedofeita, ildefonso, sé, miragaia, nicolau, vitória')).
+fact(460, property_type(18456220, 'apartment')).
+fact(461, price(18456220, 350000)).
+fact(462, area(18456220, 61.0)).
+fact(463, rooms(18456220, 2)).
+fact(464, energy_rating(18456220, 'f')).
+fact(465, year_construction(18456220, 2016)).
+fact(466, elevator(18456220, absent)).
+fact(467, garage(18456220, absent)).
+fact(468, security_system(18456220, absent)).
+fact(469, ramps(18456220, absent)).
+fact(470, swimming_pool(18456220, absent)).
+fact(471, garden(18456220, absent)).
+fact(472, optical_fiber(18456220, absent)).
+fact(473, smart_appliances(18456220, present)).
+fact(474, floor_level(18456220, 0)).
+fact(475, sun_orientation(18456220, north)).
+fact(476, area_per_room(18456220, 30.5)).
+fact(477, thermal_comfort(18456220, high)).
+fact(478, acoustic_insulation(18456220, high)).
+fact(479, image(18456220, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImNpeHhkdzBleXBtNTMtQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.o6HHe6NWydzlHIxsqokxtvS_rcB686ntcbpXDAxpfbg/image;s=655x491;q=80')).
+fact(480, image(18456220, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjA3Y3d1b2hiMWl1ZS1BUFQiLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.Ls7AUu0kR-aKCVwzibB-61rtuPU_h_YZDyk4K0j_vqg/image;s=655x491;q=80')).
+fact(481, image(18456220, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Ind5NXk3ZHV4NmRmZC1BUFQiLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.Y1UnmqMiwR1r6LWJW8DfeoRGCwTNF2eDJRYQjvfGItA/image;s=655x491;q=80')).
+fact(482, image(18456220, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImEzbndsMW5lMzRyejEtQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.nSZiy-okYnaRm4KRYq7Icg02C0im5KEbE5mQLb7VT8g/image;s=655x491;q=80')).
+fact(483, image(18456220, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InFiY21qNmt6OTlpeTEtQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.KZvqC2cUSFnYbS1xQUjIPXX5Q0OnIdEGiSuTjiRdB3s/image;s=655x491;q=80')).
+fact(484, image(18456220, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InR6YjFoMzM5MmpjMTEtQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.qRXVa6EatAmKYKyPKIK8Ml7VtMoNbXoyMvaoL4bonNI/image;s=655x491;q=80')).
+fact(485, image(18456220, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Imd3Z3M3Z2pleDF0dzItQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.4W6B2UK1dWUvN5nRmgO9ebkqwRtXa8as4k3hcFA9SjY/image;s=655x491;q=80')).
+fact(486, image(18456220, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Im96NDR1OHNrM2xyZDEtQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.5CGF3jmltE28ph_uNUOg5ipyDNEhlJBnmT6dna1_Iro/image;s=655x491;q=80')).
+fact(487, image(18456220, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImNhYjFpOHEzdzB0Yi1BUFQiLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.6Nl9xS07iHsCGvcTUrN2IXG-_h4N02x7JreuKKwh2xI/image;s=655x491;q=80')).
+fact(488, image(18456220, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Im45YjBqMjlvZTYxcTItQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.ZevGsg6AtRr9YNp6XLDhklzaqHQBoTbgeQpJBQtnuO8/image;s=655x491;q=80')).
+fact(489, image(18456220, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Im90ZnVpem01am5xNzMtQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.qGlJRuCGBRM6O3RyNMeDvIKL7vhOzbAaP4QcaFydgag/image;s=655x491;q=80')).
+fact(490, image(18456220, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InlkcHhia2lpOGliZTMtQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.sJJIsTJ-e_0Q49BqIb09RliCiWEJyqoYkki3glwwrTw/image;s=655x491;q=80')).
+fact(491, image(18456220, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IndoN3RsM3B0d3Jpcy1BUFQiLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.nS7EDYxOw6oCHXu_em78_aN8DXuAVXJvi8Bu8-F5UaQ/image;s=655x491;q=80')).
+fact(492, image(18456220, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InNueWd5NDZmeXN2dS1BUFQiLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.h6cXFhTz7YG3Ey1ZHHAw5ZyA7GF-QXENcqB678B2KFA/image;s=655x491;q=80')).
+fact(493, image(18456220, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjJpM202djNlczh4eS1BUFQiLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.CNJDBGYdogZfBg298hk6ESC2QQF_ec1RR6C6qWEHVWc/image;s=655x491;q=80')).
+fact(494, image(18456220, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InpxcnJ4cGs1em1iZy1BUFQiLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.N4vknOukumXtvJiIoZdbYSrQ4AH4Gn1_qsA58pR_dGo/image;s=655x491;q=80')).
+fact(495, image(18456220, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjNwY3NmY3FoNWFlMzItQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.ZTi1q6nKMWx4MYiIqOjjZxCJtACmLhLPrqc4qMRb5Qg/image;s=655x491;q=80')).
+fact(496, image(18456220, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Inh1ZDNrY2RodnI2ajEtQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.ciMMUJC2Ot7p6Kp8-VUFt5_xcV7r_tvFZYjvDd3F0aA/image;s=655x491;q=80')).
+fact(497, image(18456220, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Img0a3Btam5qZ2djazMtQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.-fn4wx-3jP3MCywB44jkG8o_tuCLcGsH1K0Vn2yyPRc/image;s=655x491;q=80')).
+fact(498, image(18456220, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImdldndmYWl0bnVpYS1BUFQiLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.LOJf-QxqSJSB_8E2L_ChH5AKIbAeYhGjif-wiiqj1YA/image;s=655x491;q=80')).
+fact(499, image(18456220, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InNncmNuNXlwOWUzNDMtQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.IlQk_L9v0wWnwndo6SKABIdedhQmj3ok2rFesidRltk/image;s=655x491;q=80')).
+fact(500, image(18456220, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjNodjNueTF6Y3lpMzEtQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.V94k7GwRTAbUew_zwZAmVf1ob4H1QhwYbxnclpEC1DM/image;s=655x491;q=80')).
+fact(501, image(18456220, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InNyZzFiNXM4b2g5Zi1BUFQiLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.1snuteobkJT5HSMY1FY3Tfa3KXUYVw7y7quMP2jHeWg/image;s=655x491;q=80')).
+fact(502, image(18456220, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InpicnB6cmF4dGQ1ai1BUFQiLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.np6cYhrJpBtWf0-QUR7PzQx9uH7gNJBtraz_YxtMaFU/image;s=655x491;q=80')).
+fact(503, image(18456220, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InUwNzBod3VkY2J3bzEtQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.8CCkOQKl4x7HVR-z9-OVZLIyFoPkeHSOXQYmsl0qY2Y/image;s=655x491;q=80')).
+fact(504, image(18456220, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImViaDY1bGFhcWJraTMtQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.X_jSBTgKJ3uGM1vpFnLUV6MTgBVmcKsgVt72w_KqiM0/image;s=655x491;q=80')).
+fact(505, image(18456220, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InMzdTUxYWY4czA2cjItQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.AfU53gh6NNmHT_Oef1Lnlm-4wDVjM6CB-ZGmjVItwVk/image;s=655x491;q=80')).
+fact(506, image(18456220, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImlmZ2NodmFpNjJwbC1BUFQiLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.r9kvXtziWdqg9Ufn1CaIznq6fTEoKMunxvGwhtqoc3I/image;s=655x491;q=80')).
+fact(507, image(18456220, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InFnMXhuYTF2ZnR1dzItQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.qOkhHotIzQEhvKrCU8nWU1j3kJYxWMxNvrygrv2hteM/image;s=655x491;q=80')).
+
+fact(508, property(18492427, 'T0, apartamento para comprar - Paranhos, Porto - 18492427 • www.imovirtual.com')).
+fact(509, location_property(18492427, 'paranhos')).
+fact(510, property_type(18492427, 'apartment')).
+fact(511, price(18492427, 156500)).
+fact(512, area(18492427, 40.0)).
+fact(513, rooms(18492427, 1)).
+fact(514, energy_rating(18492427, 'b')).
+fact(515, year_construction(18492427, 2020)).
+fact(516, elevator(18492427, absent)).
+fact(517, garage(18492427, present)).
+fact(518, security_system(18492427, absent)).
+fact(519, ramps(18492427, absent)).
+fact(520, swimming_pool(18492427, absent)).
+fact(521, garden(18492427, absent)).
+fact(522, optical_fiber(18492427, present)).
+fact(523, smart_appliances(18492427, present)).
+fact(524, floor_level(18492427, 1)).
+fact(525, sun_orientation(18492427, south)).
+fact(526, area_per_room(18492427, 40.0)).
+fact(527, thermal_comfort(18492427, high)).
+fact(528, acoustic_insulation(18492427, high)).
+fact(529, image(18492427, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjY4YTc2Zm5qczlocTEtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.OJWIqCt25WzKkF8kax76kzqJu2UsRWk8LnhoYiKtZTA/image;s=655x491;q=80')).
+fact(530, image(18492427, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InlucHA2dGxhdTZ0YjItRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.7ibrRIfVC-Or0OiJyH39SeQdiU3Fqa1D4FZ1UYSFY8A/image;s=655x491;q=80')).
+fact(531, image(18492427, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImE2aWRzM2l5Nmh5ODEtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.63ycYE2F9KgUi3PuzWCi36zT0Bpe79-NPjosUOTVVA0/image;s=655x491;q=80')).
+fact(532, image(18492427, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjJsejZwd2hzNHdhcTMtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.aToa21JL2utBenLPskq1na7xZfTiF_bXontPsvV-AQo/image;s=655x491;q=80')).
+fact(533, image(18492427, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjJhdmR1d2hqeTh1ZTItRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.Q8NcwDVY2z9VbFSZR3Tgb9RmOBdOrPBobi06VP4-PLE/image;s=655x491;q=80')).
+fact(534, image(18492427, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Imh4aGtrdzB4eXY4YjEtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.m1FabelhUCdWm3HxPLndKh9XhOGNaig6C-a032dNFfo/image;s=655x491;q=80')).
+
+fact(535, property(18476236, 'T0, apartamento para comprar - Rua da Arroteia, Paranhos - 18476236 • www.imovirtual.com')).
+fact(536, location_property(18476236, 'paranhos')).
+fact(537, property_type(18476236, 'apartment')).
+fact(538, price(18476236, 185000)).
+fact(539, area(18476236, 25.0)).
+fact(540, rooms(18476236, 1)).
+fact(541, energy_rating(18476236, 'b')).
+fact(542, year_construction(18476236, 2023)).
+fact(543, elevator(18476236, present)).
+fact(544, garage(18476236, present)).
+fact(545, security_system(18476236, present)).
+fact(546, ramps(18476236, absent)).
+fact(547, swimming_pool(18476236, absent)).
+fact(548, garden(18476236, absent)).
+fact(549, optical_fiber(18476236, present)).
+fact(550, smart_appliances(18476236, absent)).
+fact(551, floor_level(18476236, 4)).
+fact(552, sun_orientation(18476236, west)).
+fact(553, area_per_room(18476236, 25.0)).
+fact(554, thermal_comfort(18476236, high)).
+fact(555, acoustic_insulation(18476236, high)).
+fact(556, image(18476236, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImpmbHo0dHZkaHNhOTMtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.Px2rIgE1NefrGtHgbJwEKQY64AsB-jxcBt6JyW_SMAM/image;s=655x491;q=80')).
+fact(557, image(18476236, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IndxYjFiaXUxcmcwei1FQ09TWVNURU0iLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.VnLU4SfJJYP2qLAvawrHYXcmRXD93SRj_vmZH6-IjQ0/image;s=655x491;q=80')).
+fact(558, image(18476236, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjRvazg4eDBwM3kwMTEtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.sA-G8ZS6jF02Ldl5rnBlPRcHCfjgoSe4dt8ifawlHTU/image;s=655x491;q=80')).
+fact(559, image(18476236, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjQwdXB2bDF3N2thNi1FQ09TWVNURU0iLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.gsjxL57GquA35tsyR_z_egM2qubo6o4PucGE11BU_bw/image;s=655x491;q=80')).
+fact(560, image(18476236, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjhlcGZoZHNsNWU1bS1FQ09TWVNURU0iLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.upzieZ8VAK1YLTEnlQE73aLuY46nfxG1vTEMzjbs9Tg/image;s=655x491;q=80')).
+fact(561, image(18476236, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Ijc4Nnl0dGs5MzA2ZjItRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.gewdYsH3uQbkhOGDhRnBKPAI7e6IONZAvFvDFmUUPJQ/image;s=655x491;q=80')).
+fact(562, image(18476236, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImEzZm9yMGt0dTQ1ODMtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.PtPOHLXHRmYoA2cIKGhTTNgVV3uKRvgb2jrZXXrmQC8/image;s=655x491;q=80')).
+fact(563, image(18476236, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InRkMHQ3bThudTdlbS1FQ09TWVNURU0iLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.WL5LPZRODx7UmS46LCZ3P1gk8GcyLuNME5TDaOdxoIs/image;s=655x491;q=80')).
+fact(564, image(18476236, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImRnbnVjc3NrOGk3cjMtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.DQJmImH6tI8gTaqEH41J-M_QijgsZnohOycWqQB4seE/image;s=655x491;q=80')).
+fact(565, image(18476236, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImQxMHhpbzdvYjVweTEtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.9RkxxKUtTHSJXKAoyy6K8XE1x1AmyL018U1NC9sXqHQ/image;s=655x491;q=80')).
+fact(566, image(18476236, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Imx4c28xeWs5c2NnbDMtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.fVRM16EZz4qXn0R82uczOOgPa8-S8-wdFgxgv9fJXrs/image;s=655x491;q=80')).
+fact(567, image(18476236, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImV3Nm43dnc0eGlubjItRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.zdo03tZuKzaYE7N9MGYeKJPaNfE1A4IoER8yivGWmRw/image;s=655x491;q=80')).
+fact(568, image(18476236, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InR6eXJ6cm5uNDhqaTItRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.VPs82slKI-PriPNq4BmSGb6zSmEQ-F2vrlHoZo_pY28/image;s=655x491;q=80')).
+fact(569, image(18476236, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Im16ZmFtZm9tamg5ajItRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.TeLhD0Whp90KfOmWiCd7PM0TlUrD9bgvIx5roLPGPt4/image;s=655x491;q=80')).
+fact(570, image(18476236, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImU0NnJmYXRtb3o3NTEtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.HVsMMj8ScbNbdwgsYTUP8dZ6XpoHwPjJQAPTdG4iWCs/image;s=655x491;q=80')).
+fact(571, image(18476236, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjR4MzRiMWV5OGpmMjEtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.bGgrQ7POcFBpcFfVg2RZ5GTqOzjeoCR2xABdxmVLiaY/image;s=655x491;q=80')).
+fact(572, image(18476236, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InpkZGZxeHc5N2hqNDItRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.XwVozrKpzvTE3v0Is0SM4YFdOEp55Xgm0lUFOCXXWh0/image;s=655x491;q=80')).
+fact(573, image(18476236, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Imp0aTBpczFqM3A2dDEtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.3PGKZ_4a0RVmdXhl3Hsuu954vEykQJ_wI4882giCFas/image;s=655x491;q=80')).
+fact(574, image(18476236, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Imx0OGhkamhhd2RvYzEtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.R98_r4jXIhSL4HOlhIItyAq9Lx5w1LuHfCLMDA75tgA/image;s=655x491;q=80')).
+fact(575, image(18476236, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Ind0OWcybTdndWQ3aTEtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.TJzJSsb1MyUeIFXsgvZu_jWBjU1nWpMVdojzLqwcD0o/image;s=655x491;q=80')).
+fact(576, image(18476236, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjNnOWhnYXpueWltMjEtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.9y0k-pH5LtIJRbrqMoaQXA2Cwjkuodx0mzRZXf7rf3o/image;s=655x491;q=80')).
+fact(577, image(18476236, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InQ5NG5yYmVrYzV4ODMtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.U7UA7tr1N709qbhgaM46j2oc0HbNkQ0xqz3qHFFLRTU/image;s=655x491;q=80')).
+fact(578, image(18476236, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImRkc3ZsMWJ2a3dzajEtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.mpiQ1pY1EABK0Eq-Xg7N_iFDBFBVEIOvrupCGcHF_Ts/image;s=655x491;q=80')).
+fact(579, image(18476236, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InE3bTE5OTdndjd4ODEtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.rV-zIhPcyNF5MJ52jOiKwnMuDm99nmpC9pFQDNnuaLA/image;s=655x491;q=80')).
+fact(580, image(18476236, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImZoYm1kNXZwazJvYjEtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.NtTe1bKE0x7GvQCnBKQEBEPxO3Fkyt5w9ldaEZ1-8P4/image;s=655x491;q=80')).
+fact(581, image(18476236, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjJuM25veHNnbWowdTItRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.F44T1WD3w9P6McPJA3-qOrku7NDwnsVq2jC4TsmtJes/image;s=655x491;q=80')).
+fact(582, image(18476236, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Ijl1eWYzMjZ1dWU5ZDMtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.x5tP1pOM4YRCXKykWOJZ3I1TthSnKeFECt8ry5iLGuI/image;s=655x491;q=80')).
+
+fact(583, property(18483278, 'T1, apartamento para comprar - Rua do Bonfim, Bonfim - 18483278 • www.imovirtual.com')).
+fact(584, location_property(18483278, 'bonfim')).
+fact(585, property_type(18483278, 'apartment')).
+fact(586, price(18483278, 237500)).
+fact(587, area(18483278, 53.0)).
+fact(588, rooms(18483278, 2)).
+fact(589, energy_rating(18483278, 'a')).
+fact(590, year_construction(18483278, 2024)).
+fact(591, elevator(18483278, present)).
+fact(592, garage(18483278, present)).
+fact(593, security_system(18483278, present)).
+fact(594, ramps(18483278, present)).
+fact(595, swimming_pool(18483278, absent)).
+fact(596, garden(18483278, absent)).
+fact(597, optical_fiber(18483278, present)).
+fact(598, smart_appliances(18483278, absent)).
+fact(599, floor_level(18483278, 0)).
+fact(600, sun_orientation(18483278, south)).
+fact(601, area_per_room(18483278, 26.5)).
+fact(602, thermal_comfort(18483278, high)).
+fact(603, acoustic_insulation(18483278, high)).
+fact(604, image(18483278, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImV3aG04ZzltdXp3ZzMtQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.1QxOue9kIywvadDLHt9xhlXpoRKieGanrxCFh_lgJbM/image;s=655x491;q=80')).
+fact(605, image(18483278, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjRnMngzaXhkYWNkZjMtQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.G410hTnDEAXy2M0T7gW5Cdur6qMF7fZ8O8Kl-2N8Wdw/image;s=655x491;q=80')).
+fact(606, image(18483278, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InphdzEyb3BvYjh5NTItQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.IGnD-GgZor2QEh6hr1jjURwspUPoc_ixK3I8qQy3lfE/image;s=655x491;q=80')).
+fact(607, image(18483278, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjEyYzd5dDF2dGs2dzEtQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.VBkm8JpYA2-VkKcSsQK34ziWiJpaBlAAHXVGA2D4BlM/image;s=655x491;q=80')).
+fact(608, image(18483278, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Im9vbTVyaWZhcHprdjMtQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.iDzXPK_YZ93NRwRXcLhlLMWZrf1DbZ3TFnbnoiWwl8Q/image;s=655x491;q=80')).
+fact(609, image(18483278, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImR0MnBhYWx5Y2pjMS1BUFQiLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.JifbpRCIObp2_SSUyNNkqEPmEo8R7clDmnb7aoF2wFk/image;s=655x491;q=80')).
+fact(610, image(18483278, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Img2NWd2Z2ZpcGdvZDEtQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.m2KSjvRQSFn1MQzFT_O4H4fa4PRA4QZ6sCogdeHPfqo/image;s=655x491;q=80')).
+fact(611, image(18483278, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Im5sM3ljb2FvMmtkLUFQVCIsInciOlt7ImZuIjoiNjlubHBhN2VjcW03MS1BUFQiLCJzIjoiMTQiLCJwIjoiMTAsLTEwIiwiYSI6IjAifV19.C4oQd42T9_Ch6mjOurSr8jrvT4XMajXw7gMK_nGr5yU/image;s=655x491;q=80')).
+fact(612, image(18483278, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjEwNTQ1enh6ajg0cjMtQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.qwhcpOwZl1QylLMPlpTG-JwRZdJmyJa88fxyusmySdU/image;s=655x491;q=80')).
+fact(613, image(18483278, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Ijd5YTJtbmd3c2VsZTMtQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.Y0_chGeC-3_XBU3p1DHfmwwwCM828lT02EE2L0LyrhU/image;s=655x491;q=80')).
+fact(614, image(18483278, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImQya3N0eDB2eHl4ZDItQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.1KHZSkhgGIw65T-WmKmf8icwFEa21sqpPZ6_MsFur3Y/image;s=655x491;q=80')).
+
+fact(615, property(18403755, 'T2, apartamento para comprar - Bonfim, Porto - 18403755 • www.imovirtual.com')).
+fact(616, location_property(18403755, 'bonfim')).
+fact(617, property_type(18403755, 'apartment')).
+fact(618, price(18403755, 349000)).
+fact(619, area(18403755, 139.0)).
+fact(620, rooms(18403755, 3)).
+fact(621, energy_rating(18403755, 'a')).
+fact(622, year_construction(18403755, 2013)).
+fact(623, elevator(18403755, absent)).
+fact(624, garage(18403755, absent)).
+fact(625, security_system(18403755, absent)).
+fact(626, ramps(18403755, absent)).
+fact(627, swimming_pool(18403755, absent)).
+fact(628, garden(18403755, absent)).
+fact(629, optical_fiber(18403755, present)).
+fact(630, smart_appliances(18403755, absent)).
+fact(631, floor_level(18403755, 0)).
+fact(632, sun_orientation(18403755, east)).
+fact(633, area_per_room(18403755, 46.33)).
+fact(634, thermal_comfort(18403755, high)).
+fact(635, acoustic_insulation(18403755, high)).
+fact(636, image(18403755, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Ijd6YXZ2cGtsdzJnMDMtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.8Mh_qbKuuJrG_cA6FgEPKQlmMFGMnKPCwFanw__7Y50/image;s=655x491;q=80')).
+fact(637, image(18403755, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InJveGpxdmVsMndjYTItRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.qvWmBCdDxI95VCKJ4cw9t7E7b2Ld3rXLyIDGE77fJt0/image;s=655x491;q=80')).
+fact(638, image(18403755, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InB1bDE3aDZqemI1eTEtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.V71PnEGp5ScMWSOoyYKdcKPlEbV3i_IHjE1y34uk_bQ/image;s=655x491;q=80')).
+fact(639, image(18403755, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImFvdm94aXZqaHV2ejEtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.uLyWootb3FkboOSbvMbaK0576Y7D5zk3LTqHrbN1hn8/image;s=655x491;q=80')).
+fact(640, image(18403755, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InZqM3BibGZqdHlkazEtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.LRz_BW87ZqsHNUCOCjWf9lDBKxxjmj5PAugjToquXL4/image;s=655x491;q=80')).
+fact(641, image(18403755, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InFsaHA2eDA2dTl6cS1FQ09TWVNURU0iLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.CQYwY79QI9WEay2nwd748ZnJd6nZqwVHlP5FjxknncQ/image;s=655x491;q=80')).
+fact(642, image(18403755, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImN3MHRodzRlcnRmbTEtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.lQ28viDRBB9FrntDwPkrM-NuJPjIKK5g7bzAGSeWhxs/image;s=655x491;q=80')).
+fact(643, image(18403755, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjFjNW05ZG40YjYwYjItRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.EE_cro_A2hLTs86wCWZ6SXaURxRekR6J9kNq1BE_6rU/image;s=655x491;q=80')).
+fact(644, image(18403755, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImZubWNzcm9ycWdhZDItRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.kSf242s7Epof-5J8dBkNo6wNj8CALsxvpQ1_VMeJ1RU/image;s=655x491;q=80')).
+fact(645, image(18403755, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Inhreno3NHpuZHZ2Zy1FQ09TWVNURU0iLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.Dv4mzqnypHjm214xk-uVg5_P_AEJV9Rb6wAl2IBOolg/image;s=655x491;q=80')).
+fact(646, image(18403755, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Im14MmM0MDRmaWd6OC1FQ09TWVNURU0iLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.VaEahjd--Y-X_ae05g4QcSvgdbwchi_XxJmE8mMTLpE/image;s=655x491;q=80')).
+fact(647, image(18403755, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjdhdWR5aG5xNjV5NDMtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.wxoQUvSgB-3IW1ReXK3DQ3lCXN2yUzuGkGKob5tE8zs/image;s=655x491;q=80')).
+fact(648, image(18403755, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InUyMDBvOHpjYWc3bjMtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.d4rhw-msyH4jLuj2YpY19oNfdlZLVMM5xiQcE10TqSo/image;s=655x491;q=80')).
+fact(649, image(18403755, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InpnZnlqc2ZjajZ6YzMtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.mKbcN-f-s-QaskBqpxCeZ6GIQRRtRCDpL4EamZtjPM4/image;s=655x491;q=80')).
+fact(650, image(18403755, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Imt6ZjlpZjh5bXhhODEtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.DxVYkswGOajmXqddB651FwhIZ-ZRtgR5wqGFLsP4tQ0/image;s=655x491;q=80')).
+fact(651, image(18403755, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Imxsc2Y4am1objkzbjItRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.waMXXdCfyEoGmG4FHCiaWONMXCT6H-g7f27VC8WFiNc/image;s=655x491;q=80')).
+fact(652, image(18403755, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InYzYmNlbmhrdndjcjEtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.BZ51b18ZTShRCQghA-CLGLKPnKeRipXnycomMBFgapE/image;s=655x491;q=80')).
+fact(653, image(18403755, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjI5eXN1NWhrdjBpcjMtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.FF5g8UvFZcB5LUVmnN6gpKqeLEb-zZ2OH56w5X_lacE/image;s=655x491;q=80')).
+fact(654, image(18403755, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImI3ZWNzaXp0ajBxNjMtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.9AORlX8JN7Zh9A33JGWivxxR1dDHWd-TBcVgaq62UxM/image;s=655x491;q=80')).
+fact(655, image(18403755, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImZ5NnB5c2p6bHpsMDEtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.oxEQQ-UB9-Y9mZDxOBJUu-D4myQFRzoAlYVi9dj_LCo/image;s=655x491;q=80')).
+fact(656, image(18403755, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InlwOXRkeGFkamcwdDMtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.8VA8SSVExcSPQbe-3xSiQOdppuIiOYbrFvKxyLxY2K8/image;s=655x491;q=80')).
+fact(657, image(18403755, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InlzZGxwZmQzandmOS1FQ09TWVNURU0iLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.fmj1zufB0JE9uvwumlU8R3gufQADFPOrPM89Xs6_00I/image;s=655x491;q=80')).
+fact(658, image(18403755, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjI1bmd6YTdyeHB4ci1FQ09TWVNURU0iLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.-ym-EA7oz1sNqADjpR6Ytk5WRdr_JntNsGoLAc81WXo/image;s=655x491;q=80')).
+fact(659, image(18403755, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImY2dnI3ajEzYmNtYTMtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.X6v4j09LuqDLRBSXmJREUsVxd4qOY7N2oYZH5FuLJHI/image;s=655x491;q=80')).
+
+fact(660, property(18423907, 'T1, apartamento para comprar - Rua Miguel Bombarda, Cedofeita, Santo Ildefonso, Sé, Miragaia, São Nicolau e Vitória - 18423907 • www.imovirtual.com')).
+fact(661, location_property(18423907, 'cedofeita, ildefonso, sé, miragaia, nicolau, vitória')).
+fact(662, property_type(18423907, 'apartment')).
+fact(663, price(18423907, 213500)).
+fact(664, area(18423907, 35.0)).
+fact(665, rooms(18423907, 2)).
+fact(666, energy_rating(18423907, 'c')).
+fact(667, year_construction(18423907, 1985)).
+fact(668, elevator(18423907, absent)).
+fact(669, garage(18423907, absent)).
+fact(670, security_system(18423907, absent)).
+fact(671, ramps(18423907, absent)).
+fact(672, swimming_pool(18423907, absent)).
+fact(673, garden(18423907, absent)).
+fact(674, optical_fiber(18423907, present)).
+fact(675, smart_appliances(18423907, absent)).
+fact(676, floor_level(18423907, 2)).
+fact(677, sun_orientation(18423907, south)).
+fact(678, area_per_room(18423907, 17.5)).
+fact(679, thermal_comfort(18423907, low)).
+fact(680, acoustic_insulation(18423907, low)).
+fact(681, image(18423907, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImZjNGh6NmY0bWc4OS1FQ09TWVNURU0iLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.FO2ylS_GuBXl8PH7mNKtJwJrIK5TApxDfD_atdHO6s8/image;s=655x491;q=80')).
+fact(682, image(18423907, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Imp2bGFuZ2RuczZlbi1FQ09TWVNURU0iLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.iXFPS9S0WZWIVHEL5aOLQk-IIB7W_7Lh6xY7kMJTMYo/image;s=655x491;q=80')).
+fact(683, image(18423907, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjB2MTdzOW8wcThzcDItRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.jHyr2_32ox4QhhPBYAVUTg1ccjdmTJWF4Va2CrzB7NY/image;s=655x491;q=80')).
+fact(684, image(18423907, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InBzNG5rYzRjOHB4Zi1FQ09TWVNURU0iLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.5_67qK-rNmDRxgB0968aCjHPWoR32qhqx1RJk8oYtSA/image;s=655x491;q=80')).
+fact(685, image(18423907, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Imo1N2FxYXNiM2IwdjMtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.DyMapXK4GEX97_N0sHapK9hpHrb6oo5con2jw6p4oaI/image;s=655x491;q=80')).
+fact(686, image(18423907, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Ing1YnF1djE2NHl6bDItRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.Af9kes-VIxJpmkajW3n9naCXy6wvtHhwLu2VZPj5qpE/image;s=655x491;q=80')).
+fact(687, image(18423907, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Imlib2dnZDEwYWE0aS1FQ09TWVNURU0iLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.xMn7DlM8DOXRBC1LRoIhBCeOvUtMuUVA6kXfTcqgFKY/image;s=655x491;q=80')).
+fact(688, image(18423907, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjZqNTVjZ3FvZGlnaTEtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.4QXb5lDzqUDcnc_1QOdruXhL915wgEgVpv9_EWVVK9I/image;s=655x491;q=80')).
+fact(689, image(18423907, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjVvdzI1M29vdnNqZTEtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.t47bUlxbWhlTlEBR20wUOs8RbF4vlvCn7XiFGg1O8Rw/image;s=655x491;q=80')).
+fact(690, image(18423907, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Im1yc3J2dTJxMDNweS1FQ09TWVNURU0iLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.0GXc2v_Ewd2IBzWBXUqyXdzqIZXqrgh_XXCHCGEGjc4/image;s=655x491;q=80')).
+fact(691, image(18423907, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InJnbXB3enJsYjFwMy1FQ09TWVNURU0iLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.tr1gaXysnC8iU1T883VcSQYtrYT5Z_AIZ0ZBzA35Hrk/image;s=655x491;q=80')).
+fact(692, image(18423907, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InM4bWZ2b3J0dWJ3dTEtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.7DERx8PH6-niNohFxKzqlSPxIF570jCQar3-M1YS80w/image;s=655x491;q=80')).
+fact(693, image(18423907, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjNxZzc0Z2ViZXg0OS1FQ09TWVNURU0iLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.8dfa8tLN8xcW45mLflJDRaU-thESuqytWR47o_B5lPs/image;s=655x491;q=80')).
+fact(694, image(18423907, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImtiMW8wenQ2aGE0bjEtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.TRnvO46V25JziLDPvUIxOhhlg3NiM2EBIQp2vWX9gcM/image;s=655x491;q=80')).
+fact(695, image(18423907, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Inh2eHQ1bTh6eXlvbzMtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.Mu4R7YV0OvzY7WP4PhzavAnnP_RT6fMAtBBUEa8MPyg/image;s=655x491;q=80')).
+fact(696, image(18423907, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Imd2NG9jNnZidGN2aTEtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.1axZigUvdtmYYagv5wZNv2J0FBcvbmAgE090MQFE9IM/image;s=655x491;q=80')).
+fact(697, image(18423907, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InMxNDFwNnpyYXptcC1FQ09TWVNURU0iLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.o_jDTPHdgjLJfBdXUah_GJj4WnB-BoMG4ju1Jaat2bk/image;s=655x491;q=80')).
+fact(698, image(18423907, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjhvYzJxZTBsbHpqYy1FQ09TWVNURU0iLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.SE6zwOfVMIQNzAxvJWgDEIGt8R-i88HaTZQGl-jJD4I/image;s=655x491;q=80')).
+fact(699, image(18423907, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjIxZ3FjOGR3dWdwbTMtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.VzoqwESLcm_BcXMn57tso3s6Yz7z4IfisSz988oDras/image;s=655x491;q=80')).
+fact(700, image(18423907, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImNmN3ppZXY2YnNkaTEtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.VNMt_NUaDAm1slyx-y59qGbagdFuSkKc1tgMCPSMWZ4/image;s=655x491;q=80')).
+
+fact(701, property(18453785, 'T0, apartamento para comprar - Rua de 31 de Janeiro, Cedofeita, Santo Ildefonso, Sé, Miragaia, São Nicolau e Vitória - 18453785 • www.imovirtual.com')).
+fact(702, location_property(18453785, 'cedofeita, ildefonso, sé, miragaia, nicolau, vitória')).
+fact(703, property_type(18453785, 'apartment')).
+fact(704, price(18453785, 365000)).
+fact(705, area(18453785, 68.0)).
+fact(706, rooms(18453785, 1)).
+fact(707, energy_rating(18453785, 'b')).
+fact(708, year_construction(18453785, 2022)).
+fact(709, elevator(18453785, absent)).
+fact(710, garage(18453785, present)).
+fact(711, security_system(18453785, absent)).
+fact(712, ramps(18453785, absent)).
+fact(713, swimming_pool(18453785, absent)).
+fact(714, garden(18453785, absent)).
+fact(715, optical_fiber(18453785, present)).
+fact(716, smart_appliances(18453785, present)).
+fact(717, floor_level(18453785, 0)).
+fact(718, sun_orientation(18453785, east)).
+fact(719, area_per_room(18453785, 68.0)).
+fact(720, thermal_comfort(18453785, high)).
+fact(721, acoustic_insulation(18453785, high)).
+fact(722, image(18453785, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Imlkd212ZXo4N3Frai1FQ09TWVNURU0iLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.vEmPGUAyToeDYlAac1FpG1AWSIJbPA6kMZseiFjlJ-Y/image;s=655x491;q=80')).
+fact(723, image(18453785, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InhhdjY2ZjRkY3R0aDMtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.E8bmSguOoMuiuLRg3LcEGl3jCmLqkwYz4oe3MuqJvqs/image;s=655x491;q=80')).
+fact(724, image(18453785, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Imc0Zms2bGJnczRnajMtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.ET7n2YQsyNMoiIAJunpX1yiy4Hok62qziBX7fTwWC3k/image;s=655x491;q=80')).
+fact(725, image(18453785, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImZ2YjRxdGprMm9vczItRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.ySXec1V6UsDYocyUnUbDf6B5OVRlVRqmAe-EjHFFhAg/image;s=655x491;q=80')).
+fact(726, image(18453785, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InhnZHJuMmMyNmxlbzMtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.MHr3tVq3sx86wuvt8-3EUbb-HojoGp9IrnC0HVsUnXg/image;s=655x491;q=80')).
+fact(727, image(18453785, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Inl2ZmxqcDRxbW11bS1FQ09TWVNURU0iLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.eCC8R6akK8YuygqAfJm9oWkq93p0x2fPntks72QpMrg/image;s=655x491;q=80')).
+fact(728, image(18453785, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Im54eXhzMnNpa2NqaC1FQ09TWVNURU0iLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.dBOhvcnWU8qrS88MsKLstM127Sy-Og-5tBBK8KGDwDk/image;s=655x491;q=80')).
+fact(729, image(18453785, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImNlOWltMWtmd3VyNDMtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.mhaz8LcLCbMxM3hb42dm197FQAHB8FZV__HGCwXRtcE/image;s=655x491;q=80')).
+fact(730, image(18453785, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImRzN2tka3Y3M2F5aTMtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.-_s-pmDip3LHmwBQNGj19snPIjlD2nlkvx3nrmhoUJ0/image;s=655x491;q=80')).
+fact(731, image(18453785, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IndoaTRidDQ2NzI0bDEtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.YwzXe7yRsSXAWcACmATCQiJ4MUeb2r5N6tLmNa5vky8/image;s=655x491;q=80')).
+fact(732, image(18453785, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Inl2bnU2a2huanRoMjItRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.bbQSsFKlFHVm1PA9HmbcLrZI4u7u88OKsx3oK-sltns/image;s=655x491;q=80')).
+fact(733, image(18453785, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Im8yYjJmaXZrYjNsZjMtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.aVO1kwpuR3LA1R8a5qvT4kg9_94nt9h1LmMBLLqag4k/image;s=655x491;q=80')).
+fact(734, image(18453785, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImExeGlvNm02dWxpZTItRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.CEl2Hg2I8Y_PlDgh7luMUFtUc9IAbQpPNq8xaYisc0M/image;s=655x491;q=80')).
+fact(735, image(18453785, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjBjdno3NTl6amc4YTItRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.krlcTrmomX7CQRCYlUbAFkqFU_i43C8HZ68XC3n45kw/image;s=655x491;q=80')).
+fact(736, image(18453785, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InRoN3F3NHJnaW5nZi1FQ09TWVNURU0iLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.tyY-Hs2Y-GRodycpHUfkOoMmTgU2IZTHg9qu18xSrqk/image;s=655x491;q=80')).
+fact(737, image(18453785, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjgyZHJtMm9wNTBhZy1FQ09TWVNURU0iLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.yxx0QQjzZMkEL77PNfPPj4M7xit-LW1mjUSCUukssXA/image;s=655x491;q=80')).
+fact(738, image(18453785, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImpwZXpiZzVrNjAxeTEtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.LbwCxg_1kQarMFXetvXBoQnkkZeC-34pNioORUjcs8M/image;s=655x491;q=80')).
+fact(739, image(18453785, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImU0ZXNtNjUweXc0ZTItRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.3ucC1FS21M178CTt7IKGDx4eNINrjBguXHdkjxgTybQ/image;s=655x491;q=80')).
+fact(740, image(18453785, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Imk4enZ0bHZvbWNmZzEtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.4DBSRKNMrJ60wwaZWJM1aOPhPkPuTFNsKTpSuR6fpqg/image;s=655x491;q=80')).
+fact(741, image(18453785, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InJjMjhlOW0xdjc4eS1FQ09TWVNURU0iLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.lz-aeaskceuSHyXWAXIrLgXgdD62mAnwvFGjr5TuskA/image;s=655x491;q=80')).
+fact(742, image(18453785, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InJkajliZGJiOWV1NzItRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.6SKDFkWmTQH_oQ3zElRPNB8nwmkGOsfgQ2t_gLz9vdw/image;s=655x491;q=80')).
+
+fact(743, property(18296037, 'T0, apartamento para comprar - Cedofeita, Santo Ildefonso, Sé, Miragaia, São Nicolau e Vitória, Porto - 18296037 • www.imovirtual.com')).
+fact(744, location_property(18296037, 'cedofeita, ildefonso, sé, miragaia, nicolau, vitória')).
+fact(745, property_type(18296037, 'apartment')).
+fact(746, price(18296037, 159000)).
+fact(747, area(18296037, 32.0)).
+fact(748, rooms(18296037, 1)).
+fact(749, energy_rating(18296037, 'e')).
+fact(750, year_construction(18296037, 1984)).
+fact(751, elevator(18296037, absent)).
+fact(752, garage(18296037, absent)).
+fact(753, security_system(18296037, absent)).
+fact(754, ramps(18296037, absent)).
+fact(755, swimming_pool(18296037, absent)).
+fact(756, garden(18296037, absent)).
+fact(757, optical_fiber(18296037, present)).
+fact(758, smart_appliances(18296037, absent)).
+fact(759, floor_level(18296037, 0)).
+fact(760, sun_orientation(18296037, south)).
+fact(761, area_per_room(18296037, 32.0)).
+fact(762, thermal_comfort(18296037, low)).
+fact(763, acoustic_insulation(18296037, low)).
+fact(764, image(18296037, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InVnZTFtcnpvNnliNjItRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.NUWe3uD308Y1o0L64IV-dXnxO41F7ou9lFUtvXnC0co/image;s=655x491;q=80')).
+fact(765, image(18296037, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjRrczYyYWZrNXFycDItRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0._nlUenXtxg2EWL2mEAqNf5Sr3KqokvK_9zP8XMWWZvw/image;s=655x491;q=80')).
+fact(766, image(18296037, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjJzcHI3M2Y3c2QwcjEtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.JUlArXpNw-UdZUjhQQjHW6meE4sBVxU4TySUYZbmL2E/image;s=655x491;q=80')).
+fact(767, image(18296037, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImkzY2VreXlyejE4ZDEtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.kkDMBVqYpusA6sxVdYeqsaay2FdPrACuo5kJAwrj-Fc/image;s=655x491;q=80')).
+fact(768, image(18296037, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Ind1d2JyaWI4YWk4YzEtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.0SVlZ7okOt8d1dPggslj7vwDp9_c65y6CfRdUx4AFao/image;s=655x491;q=80')).
+fact(769, image(18296037, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImtyNHZrbTRjZmRycjEtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.QDHeQkheS2puWRolw6RDDencwlo-FqB01Pikqi_sses/image;s=655x491;q=80')).
+fact(770, image(18296037, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InN0aHVhYTN3cjJ4ZTItRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0._Tazl_j6cys_g0i7FvfOtQCxuxk5hjZzqDKCx8FVR_s/image;s=655x491;q=80')).
+
+fact(771, property(18491905, 'T0, apartamento para comprar - Cedofeita, Santo Ildefonso, Sé, Miragaia, São Nicolau e Vitória, Porto - 18491905 • www.imovirtual.com')).
+fact(772, location_property(18491905, 'cedofeita, ildefonso, sé, miragaia, nicolau, vitória')).
+fact(773, property_type(18491905, 'apartment')).
+fact(774, price(18491905, 199000)).
+fact(775, area(18491905, 29.0)).
+fact(776, rooms(18491905, 1)).
+fact(777, energy_rating(18491905, 'c')).
+fact(778, year_construction(18491905, 1988)).
+fact(779, elevator(18491905, absent)).
+fact(780, garage(18491905, absent)).
+fact(781, security_system(18491905, absent)).
+fact(782, ramps(18491905, absent)).
+fact(783, swimming_pool(18491905, absent)).
+fact(784, garden(18491905, absent)).
+fact(785, optical_fiber(18491905, present)).
+fact(786, smart_appliances(18491905, absent)).
+fact(787, floor_level(18491905, 4)).
+fact(788, sun_orientation(18491905, south)).
+fact(789, area_per_room(18491905, 29.0)).
+fact(790, thermal_comfort(18491905, low)).
+fact(791, acoustic_insulation(18491905, low)).
+fact(792, image(18491905, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InU0Z2I3NXlnbWhtcC1BUFQiLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.ho0-t4HPE_DBZzr2Df0-K9wgT2XyXhmyrcDhYPhJODU/image;s=655x491;q=80')).
+fact(793, image(18491905, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InlydTR2cnZqOGtqOS1BUFQiLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.2r06WJ4TO0B2I197LIUsS8YnSSlR-ZKLF5sgqXnYlvc/image;s=655x491;q=80')).
+fact(794, image(18491905, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImNudHRkc3A2dHRtMS1BUFQiLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.41sXcep7q93qqM8yN56-pvurswQ8EgsNVq8rZyFeWvo/image;s=655x491;q=80')).
+fact(795, image(18491905, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImVvem9pdDk2eTdkbDEtQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.xqxV16S0b3AIHwprt4SmpauLpxDfMovEU0DiF7HKknc/image;s=655x491;q=80')).
+fact(796, image(18491905, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InAyMW1sb2VzM21tajItQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.4xxLplDby9sCvqTC-Wt_Z7V1i0esHsdRAiZrbahbzZ4/image;s=655x491;q=80')).
+fact(797, image(18491905, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InVtaWU2c3V3YzRjMzEtQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.SCnzi9fkLMu9WCZq4vIH4L9VvfTimK-ojPzAM8Fi72I/image;s=655x491;q=80')).
+fact(798, image(18491905, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImQwa3p0ZXBjYWY4NDItQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.tKAP2GXm4AWidUYxvp_cm-TcR9i1x-RMPrD7S0HxmJA/image;s=655x491;q=80')).
+fact(799, image(18491905, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Imgzb2p3YTRzZ25wazMtQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.ojSqjbaWI5Efjs48OHS3APwQhDVFyJzTCFGORHMXejc/image;s=655x491;q=80')).
+fact(800, image(18491905, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Inh6MWkzNHo5ZnR2ZDItQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.2d1rxOYH1jxq57kyqmj_BUqa7ie5PAo5RJHAP7Dzur8/image;s=655x491;q=80')).
+fact(801, image(18491905, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InE2YjBzOXY4ZmM3NDEtQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.6ESeiAzq_TevJzJfQzSYBI1PQK9DtUuRmL7RZ-ytFf4/image;s=655x491;q=80')).
+fact(802, image(18491905, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InV5aGhibjA1d29iODEtQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0._sAsT4ZHXxbmfwTfmf_Ml4OodmnnnMoVj2ZMF7BYcgs/image;s=655x491;q=80')).
+
+fact(803, property(18449391, 'T0, apartamento para comprar - Rua da Alegria, Bonfim - 18449391 • www.imovirtual.com')).
+fact(804, location_property(18449391, 'bonfim')).
+fact(805, property_type(18449391, 'apartment')).
+fact(806, price(18449391, 235000)).
+fact(807, area(18449391, 38.0)).
+fact(808, rooms(18449391, 1)).
+fact(809, energy_rating(18449391, 'a')).
+fact(810, year_construction(18449391, 2001)).
+fact(811, elevator(18449391, absent)).
+fact(812, garage(18449391, absent)).
+fact(813, security_system(18449391, absent)).
+fact(814, ramps(18449391, absent)).
+fact(815, swimming_pool(18449391, absent)).
+fact(816, garden(18449391, absent)).
+fact(817, optical_fiber(18449391, present)).
+fact(818, smart_appliances(18449391, absent)).
+fact(819, floor_level(18449391, 2)).
+fact(820, sun_orientation(18449391, west)).
+fact(821, area_per_room(18449391, 38.0)).
+fact(822, thermal_comfort(18449391, medium)).
+fact(823, acoustic_insulation(18449391, medium)).
+fact(824, image(18449391, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjBkdG1tY2ZkOHljZC1FQ09TWVNURU0iLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.G3BoyMk2kVg1pTt6xYvcSsTZRAMKImHHtXP2EGt-V1I/image;s=655x491;q=80')).
+fact(825, image(18449391, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjVsNXNpaXR2NDIzaDItRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0._wSPvK_1wPMETCq0vuRzRHkDthE-c7d_wCJ92SThRgE/image;s=655x491;q=80')).
+fact(826, image(18449391, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InEzbmpudWE1aHNjaC1FQ09TWVNURU0iLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.ZzpHi2Jr9Y-PzwuEmRJAWu3cXjCtISZBe3ml8OKvSK8/image;s=655x491;q=80')).
+fact(827, image(18449391, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Imp6NDVrd3R1ZGV1MDEtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.IQL_MetgpZxN3P3UWSPC4horoLlX5aymIKZaOr1_M0Q/image;s=655x491;q=80')).
+fact(828, image(18449391, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImM5Nzhkb21wYTZpaTEtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.ddnFyLdVKsG60Sdn7nXC_r-Gu4WZJvL4kP5uup6r4PQ/image;s=655x491;q=80')).
+fact(829, image(18449391, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImJrY3hvY3R1emQxcC1FQ09TWVNURU0iLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.Nw488n1XnOQ2ATrVqjGPGBesW087LDy7DqZZO7qo2_k/image;s=655x491;q=80')).
+fact(830, image(18449391, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Ijg0cHJtYWQ1b3o3YTItRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.mciSdQioy9h2U-7k93ppXyhJ6yWACvP0FDRklz6gBIw/image;s=655x491;q=80')).
+fact(831, image(18449391, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImpxajY3azhxMjMzMjEtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.O6SqF_vHOAaBv3tSJbdKb6_IXEGJ532PIwInkwLcEcI/image;s=655x491;q=80')).
+fact(832, image(18449391, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Im1nYm5hbHc4eGR2czItRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.iCrmXQ0KZCTn-xCoflzE5mRxfzjuJm30R8d_wWrwVp8/image;s=655x491;q=80')).
+fact(833, image(18449391, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImZ1aGlxZHdncjJlNDEtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.J5bBoQdTfxaftPtP16jyEgjPJxTIB3i0IxBk8TvqX5g/image;s=655x491;q=80')).
+fact(834, image(18449391, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImoydnFtc3ZreWlnei1FQ09TWVNURU0iLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.Nj6XRyu7JA6_lYPfk-7x2gek9zNFCNq4f_I-QaW6p2I/image;s=655x491;q=80')).
+fact(835, image(18449391, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Ino1cGI3OTd3b2p0azMtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.caBW7y61XN_ov6LcaP4fNtzpmwjefr9iaCOIcZMYQ_c/image;s=655x491;q=80')).
+fact(836, image(18449391, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImE1OHoxNjA3djF6bC1FQ09TWVNURU0iLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.Ssro-vo-qt6IWyyDssW3fiBtIHP5f-itdsu03Dwll2c/image;s=655x491;q=80')).
+fact(837, image(18449391, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InAydTJienhhaTVvdjMtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.Fk1Fk9Iymi3XeEn3bx8t5181dLk2K5kVHi0MbmBfvwU/image;s=655x491;q=80')).
+fact(838, image(18449391, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InE3OTAzMXZtNHByaDItRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.xle6hGIz7c6yBDNQe63Qm6cxn1P3lII8uty61qxgiV8/image;s=655x491;q=80')).
+fact(839, image(18449391, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjBwd2g3aDd2azFrbjItRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.WmZ_dIcv2rNOmhCgM10pI0s6cAlwkGwlIH6rElcoDUs/image;s=655x491;q=80')).
+fact(840, image(18449391, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjlrYXJhdjUxdHd3ai1FQ09TWVNURU0iLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.zaMePw5zJV1yGO3gdyefc6bDTJiYf1EkMa3Z_fRXuQs/image;s=655x491;q=80')).
+fact(841, image(18449391, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Inp3dmd1dGJqa2xlbi1FQ09TWVNURU0iLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.nQFjEn96o-3I2x3TABXeADt3foq4hZN8k-tnF0c6onU/image;s=655x491;q=80')).
+fact(842, image(18449391, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Im5icGpxem5wdTJ0ZDEtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.b0vr_BithO5BjTn4Vz6XIjtMfmFRytAtc-mojhrw8Vo/image;s=655x491;q=80')).
+
+fact(843, property(18492162, 'T0, apartamento para comprar - Cedofeita, Santo Ildefonso, Sé, Miragaia, São Nicolau e Vitória, Porto - 18492162 • www.imovirtual.com')).
+fact(844, location_property(18492162, 'cedofeita, ildefonso, sé, miragaia, nicolau, vitória')).
+fact(845, property_type(18492162, 'apartment')).
+fact(846, price(18492162, 275000)).
+fact(847, area(18492162, 200.0)).
+fact(848, rooms(18492162, 1)).
+fact(849, energy_rating(18492162, 'c')).
+fact(850, year_construction(18492162, 2015)).
+fact(851, elevator(18492162, absent)).
+fact(852, garage(18492162, absent)).
+fact(853, security_system(18492162, absent)).
+fact(854, ramps(18492162, absent)).
+fact(855, swimming_pool(18492162, present)).
+fact(856, garden(18492162, present)).
+fact(857, optical_fiber(18492162, present)).
+fact(858, smart_appliances(18492162, present)).
+fact(859, floor_level(18492162, 1)).
+fact(860, sun_orientation(18492162, west)).
+fact(861, area_per_room(18492162, 200.0)).
+fact(862, thermal_comfort(18492162, high)).
+fact(863, acoustic_insulation(18492162, high)).
+fact(864, image(18492162, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjYxYnc4Y3Jpb2g1cS1BUFQiLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.G1JT290shAXBveu_vsF16uaPweIeLS3TIfmBsFkYSPE/image;s=655x491;q=80')).
+fact(865, image(18492162, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InB3d3cwbGxyN3dtcDItQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.twZ2ACuJNtT1y2RZr94myUZYmKwi_hhTIP8wqLTaLcc/image;s=655x491;q=80')).
+fact(866, image(18492162, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InQ2d3Y0YzFldDVpNDMtQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.K8_15b3XNMevC0_GFd_xmZX5r5wkOL18kOBXrV6PE7g/image;s=655x491;q=80')).
+fact(867, image(18492162, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImN6OHZ6bWdnM2I0ZC1BUFQiLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.7VSMHYIlgrbmxBTc5M5v_1LJwFu17l5-xWl1t9UX0v0/image;s=655x491;q=80')).
+fact(868, image(18492162, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InNtM3RoeGM4a3l0dDMtQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.hnDz1JGYXiCJ_yIGuL4-tBQPVCv5_F23ESL3v4XlNJY/image;s=655x491;q=80')).
+fact(869, image(18492162, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjM1eGw2N3ZqeTh4MjItQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.Fil04-J2dZ7PKk6WZVbevdGhVOrGS8Wp0_y3EXDB3Xs/image;s=655x491;q=80')).
+fact(870, image(18492162, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjRveThpZnBjejZoYzMtQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.-iF2lgsuOO1MIg1L65XKxmOvQa3Uzvm8VUp1t_FnouQ/image;s=655x491;q=80')).
+fact(871, image(18492162, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InI5YzV3bXMwYnVtMS1BUFQiLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.S5Z306eAC9dksg8jpuamQ8v8b1orUGuptGfMIzgssHg/image;s=655x491;q=80')).
+fact(872, image(18492162, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjluOHBsbjdzenAxejItQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.mr5LG9e5XM9YdTpHuKW-0razypdNfv2UXL27Q6CwN00/image;s=655x491;q=80')).
+fact(873, image(18492162, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjV6aHdiN2xucm5zajItQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.3T555dFqNi35Qe7UrXR7lgANShkqaYac6XCa0Kv7IvA/image;s=655x491;q=80')).
+fact(874, image(18492162, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Imo4b3hkeHhnZmMyNTEtQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.NdaygkSO_8hvr2CNkXbQ7nS7GZZ7KDaA0nvWmXjtMw0/image;s=655x491;q=80')).
+fact(875, image(18492162, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InhuNnJwazdsZzRxcTEtQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.cIKxEhNWzyd1mLP3QPMt6xTvQbbjTTGLIoAMqJ7FVo8/image;s=655x491;q=80')).
+fact(876, image(18492162, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Ijdtb2pxd2hxMmM5ZzEtQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.01lyeR73Imc3G3wCOWa9K2K9p7h_D7bfnFzeSy8dIVo/image;s=655x491;q=80')).
+fact(877, image(18492162, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Imt1dXZlZnhwZ3ZnbzItQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.HFA0rIu0k9TyRg7q0kQUp2_Ko3WbiRpPyULDPxXsg34/image;s=655x491;q=80')).
+fact(878, image(18492162, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImFoN3Z3Y29sc3JxMi1BUFQiLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.EhrC2RP-sYnJAXtLHxE-F8jtSNS3IkSS_cc4ZaPdJXc/image;s=655x491;q=80')).
+fact(879, image(18492162, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Ing3M3htaWtzejl6by1BUFQiLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.3RWWZUnRJHWGMr8WCgk3w_59QVbXPANOfSdB0KV-3zU/image;s=655x491;q=80')).
+fact(880, image(18492162, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InBkMTFzYmc1Zm15cjMtQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.-2F52nG1-20eWQeHXGGpAL9L3H3Y3bU2JwgGBEO6WSg/image;s=655x491;q=80')).
+fact(881, image(18492162, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Im4yZGsxdG80OWlwbjMtQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.VhqSg17-tpjzKjm8MqQkz8afezuryY4g2A3qA0BNRQI/image;s=655x491;q=80')).
+fact(882, image(18492162, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InJieXoxeHB5anV5cjMtQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.5HAD9nscSONHoRFwk0bKezT0RzD9dvqZqJYrZsnhB-s/image;s=655x491;q=80')).
+
+fact(883, property(17737256, 'T0, apartamento para comprar - Bonfim, Porto - 17737256 • www.imovirtual.com')).
+fact(884, location_property(17737256, 'bonfim')).
+fact(885, property_type(17737256, 'apartment')).
+fact(886, price(17737256, 249000)).
+fact(887, area(17737256, 45.3)).
+fact(888, rooms(17737256, 1)).
+fact(889, energy_rating(17737256, 'c')).
+fact(890, year_construction(17737256, 2005)).
+fact(891, elevator(17737256, absent)).
+fact(892, garage(17737256, present)).
+fact(893, security_system(17737256, absent)).
+fact(894, ramps(17737256, absent)).
+fact(895, swimming_pool(17737256, absent)).
+fact(896, garden(17737256, absent)).
+fact(897, optical_fiber(17737256, present)).
+fact(898, smart_appliances(17737256, present)).
+fact(899, floor_level(17737256, 0)).
+fact(900, sun_orientation(17737256, south)).
+fact(901, area_per_room(17737256, 45.3)).
+fact(902, thermal_comfort(17737256, medium)).
+fact(903, acoustic_insulation(17737256, medium)).
+fact(904, image(17737256, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImI2c2ppb2Rqd2VpMzEtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.gVe4hOYnC2kIFNX6Wm7nupkiI5EDcaWAgT8WB4yh0uc/image;s=655x491;q=80')).
+fact(905, image(17737256, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InhwNmxocWUwejJzdDMtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.BUFeYr0ItmQ__SFsy4A4kwj-KessakI-9Tqibkuy4n8/image;s=655x491;q=80')).
+fact(906, image(17737256, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Im90YjhtcnpzcGQ1MTMtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.dlWUdaxecBLLhPSG71MCY5pTbrzTwvFxFKygO64TGLY/image;s=655x491;q=80')).
+fact(907, image(17737256, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImpyY2I1eTFmdnduay1FQ09TWVNURU0iLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.OI6tZoja0LfJxY_sOwOzbMcS14Bp3hiHAmDIIQvHIaQ/image;s=655x491;q=80')).
+fact(908, image(17737256, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjlsNzlsenJodndrbDEtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.b7kvyJ2b2IUuTpZpml64kVyT9kTZPtiu9dKScYOSRbM/image;s=655x491;q=80')).
+fact(909, image(17737256, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjlpNjhsbzFxMjZmNC1FQ09TWVNURU0iLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.q8IUU1dA7dTr7MO9QAl1R2sEDDPaprk28zxSVvO8nBw/image;s=655x491;q=80')).
+fact(910, image(17737256, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InY0bDl0b282emlkdDMtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.RGPlgxK4AzJ4XsJF3YPvIiiEGjGEFbMRGBA2OtRr66g/image;s=655x491;q=80')).
+fact(911, image(17737256, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjMxMWNqMHB4eWIzdzItRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.DTIw2IdEzZHjzrljSy_WhQw-pca4ARa45r7XLmWw390/image;s=655x491;q=80')).
+fact(912, image(17737256, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InU1cG9ubWZzdDAxYzMtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.03IMSwfKUT3_kZEjzYWULjo2sbbrFAe9L6QgB_vV2ZQ/image;s=655x491;q=80')).
+fact(913, image(17737256, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImM4eW1oamg5a2t3NTItRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.r0OsX9Dd9KU3PNKtfdNd4ifC2hgb4c9DfXD7JVMhgAM/image;s=655x491;q=80')).
+fact(914, image(17737256, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Ims1YXcwZnFpZGk3Zi1FQ09TWVNURU0iLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ._eMTNUigeLwjTyKuCZBb-TYofTWc4VqV68fJufnYjUM/image;s=655x491;q=80')).
+fact(915, image(17737256, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Imd2aTZsZWJyOWF3dy1FQ09TWVNURU0iLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.3xfbqPxJvSv2Qpwjbk1EsmwArFYuWNIYRkgue7Yu-KE/image;s=655x491;q=80')).
+fact(916, image(17737256, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IngzMzlncmI4ZHVwby1FQ09TWVNURU0iLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.w4iFu3_6W4DQ3rSJpTwhr5K09m8mXpPXY5C5VNR-IDE/image;s=655x491;q=80')).
+fact(917, image(17737256, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InNmMGI1dzV6amJjZS1FQ09TWVNURU0iLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.-iMs38lVtoSZbwGAIMwHA40P0sfkHjSphzjB5JAgEEY/image;s=655x491;q=80')).
+fact(918, image(17737256, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Im51bWgzeDdsY2p5bS1FQ09TWVNURU0iLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.nSqVw3q_9PSg6XFjNZp7e3rggL9r0WmtIE-YccoKZ0s/image;s=655x491;q=80')).
+fact(919, image(17737256, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImFsZ2NqY3Y3emtwNi1FQ09TWVNURU0iLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.3eoPjt6SciqGTvClvFwsa1ODGKNKsTeEqSxCUCqs3Os/image;s=655x491;q=80')).
+fact(920, image(17737256, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Imt3ZTZuYmp6bTA5bDEtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.lN4DFsrJuuh2FOTRaD3jThYIbJ8IWtHqx_hL_3PnZUc/image;s=655x491;q=80')).
+fact(921, image(17737256, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Imp2NmViNW02dm9zazEtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.B__J8jNsK4H-W_hOebVR55laqST33zOfGU0JGEU5xeU/image;s=655x491;q=80')).
+fact(922, image(17737256, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6IjByYnZubGw1czB2ai1FQ09TWVNURU0iLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.SmIUzAdQc0w-7GNo-9hlGa98DW51q_3OH1HUhO-BVWQ/image;s=655x491;q=80')).
+fact(923, image(17737256, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImV5dzE2eG8wbDRiMDMtRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.0I404aKrggzJuRRVq327cGXI7qYUqis0-lQg9910emc/image;s=655x491;q=80')).
+fact(924, image(17737256, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Im1xNmVmeTJoNGwyYi1FQ09TWVNURU0iLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.X9zM0GVXzl2Bboukcs2Ogvf35hfkZ1RkjbzbGrz1zKc/image;s=655x491;q=80')).
+fact(925, image(17737256, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImRhMG1pc3NhbHh0Yi1FQ09TWVNURU0iLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.gwryz0YUq51Fz4CPagcPLcHrlZS7DWb6pM9yN0IgWjc/image;s=655x491;q=80')).
+fact(926, image(17737256, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InI4Y2ZwMGhzeHR0YjItRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.Jtvs9x3kgMXHGtURUddv6du0htnO5yjgw8yxakC_AlA/image;s=655x491;q=80')).
+fact(927, image(17737256, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImlkcWdrZ3YxaWpzejItRUNPU1lTVEVNIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.JU_aFh4jl9gaoTVhxNwTI3Vns-2utvFx_UNpnIieAxk/image;s=655x491;q=80')).
 
 
-fact(184, meta_score(high,1)).
-fact(185, meta_score(medium,0.7)).
-fact(186, meta_score(low,0.4)).
+
+
+fact(928, meta_score(high,1)).
+fact(929, meta_score(medium,0.7)).
+fact(930, meta_score(low,0.4)).
