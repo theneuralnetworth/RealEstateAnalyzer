@@ -35,6 +35,19 @@ public class PropertyController {
             System.out.println("KieSession loaded successfully.");
         }
 
+        System.out.println("Body Request -> " + requestBody);
+        Map<String, Integer> preferences = (Map<String, Integer>) requestBody.get("preferences");
+        Map<String, Object> filter = (Map<String, Object>) requestBody.get("filter") == null
+                ? new HashMap<>() : (Map<String, Object>) requestBody.get("filter");
+
+        Map<String, Object> priceFilter = filter.get("price") == null ? new HashMap<>() : (Map<String, Object>) filter.get("price");
+        int minPrice = priceFilter.get("min") == null ? 0 : (int) priceFilter.get("min");
+        int maxPrice = priceFilter.get("max") == null ? 999999999 : (int) priceFilter.get("max");
+
+        String locationFilter = filter.get("location") == null ? "" : (String) filter.get("location");
+        String typologyFilter = filter.get("typology") == null ? "" : (String) filter.get("typology");
+
+
         kSession.addEventListener(new AgendaEventListener() {
             @Override
             public void afterMatchFired(AfterMatchFiredEvent event) {
@@ -99,11 +112,47 @@ public class PropertyController {
         KnowledgeBaseLoader kbLoader = new KnowledgeBaseLoader(kSession);
         //kbLoader.insertFakeFacts(kSession);
         kbLoader.loadLocations().forEach(kSession::insert);
-        kbLoader.loadProperties().forEach(kSession::insert);
+        kbLoader.loadProperties().forEach(p -> {
+            if (preferences != null) {
+                p.setPrefSecurity(preferences.containsKey("safety") ? (float) preferences.get("safety") / 10 : 1f);
+                p.setPrefComfort(preferences.containsKey("comfort") ? (float) preferences.get("comfort") / 10 : 1f);
+                p.setPrefAccessibility(preferences.containsKey("accessibility") ? (float) preferences.get("accessibility") / 10 : 1f);
+                p.setPrefMaintenance(preferences.containsKey("maintenance") ? (float) preferences.get("maintenance") / 10 : 1f);
+                p.setPrefEnergyEfficiency(preferences.containsKey("energy_efficiency") ? (float) preferences.get("energy_efficiency") / 10 : 1f);
+                p.setPrefServices(preferences.containsKey("services") ? (float) preferences.get("services") / 10 : 1f);
+                p.setPrefConnectivity(preferences.containsKey("connectivity") ? (float) preferences.get("connectivity") / 10 : 1f);
+                p.setPrefViewQuality(preferences.containsKey("view_quality") ? (float) preferences.get("view_quality") / 10 : 1f);
+                p.setPrefSpaciousness(preferences.containsKey("spaciousness") ? (float) preferences.get("spaciousness") / 10 : 1f);
+                p.setPrefSunExposure(preferences.containsKey("sun_exposure") ? (float) preferences.get("sun_exposure") / 10 : 1f);
+                p.setPrefParking(preferences.containsKey("parking") ? (float) preferences.get("parking") / 10 : 1f);
+                p.setPrefBuildState(preferences.containsKey("state") ? (float) preferences.get("state") / 10 : 1f);
+                p.setPrefPotentialAppreciation(preferences.containsKey("potential_appreciation") ? (float) preferences.get("potential_appreciation") / 10 : 1f);
+            }
+            kSession.insert(p);
+        });
+
+        System.out.println("Location filter -> " + locationFilter);
+        System.out.println("Typology filter -> " + typologyFilter);
 
         kSession.fireAllRules();
-        List<Property> properties = kSession.getObjects().stream().filter(obj -> obj instanceof Property).map(obj -> (Property) obj).collect(Collectors.toList());
+        List<Property> properties = kSession.getObjects().stream()
+                .filter(obj -> obj instanceof Property)
+                .map(obj -> (Property) obj)
+                .filter(property ->
+                        (minPrice == 0 || property.getPrice() >= minPrice) &&
+                        (maxPrice == 999999999 || property.getPrice() <= maxPrice))
+                .filter(property ->
+                        locationFilter == null || locationFilter.isEmpty() ||
+                        Objects.equals(property.getLocation().getName(), locationFilter))
+                .filter(property ->
+                        typologyFilter == null || typologyFilter.isEmpty() ||
+                        Objects.equals(property.getTypology().toLowerCase(), typologyFilter.toLowerCase()))
+                .sorted(Comparator.comparing(Property::getTotalScore).reversed())
+                .collect(Collectors.toList());
+
+
         kSession.dispose();
+
         return ResponseEntity.ok(properties);
     }
 
