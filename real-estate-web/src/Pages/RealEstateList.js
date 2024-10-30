@@ -65,7 +65,7 @@ const RealEstateList = () => {
     },
     {
       name: "ENGCIA",
-      path: "http://localhost:8080/api/realestates/getrealestates",
+      path: "http://localhost:8082/api/realestates/getrealestates",
     },
   ];
   const [selectedRoute, setSelectedRoute] = useState(routes[1]);
