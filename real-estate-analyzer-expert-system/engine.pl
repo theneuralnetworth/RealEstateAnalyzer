@@ -251,6 +251,39 @@ how(N) :-
     write('was initially known'), nl,
     write('********************************************************'), nl.
 
+
+	how(N, Explanation) :-
+    last_fact(Last),
+    Last < N, !,
+    Explanation = ["This conclusion was not made", ""].
+how(N, Explanation) :-
+    justifies(N, ID, LFacts), !,
+    fact(N, F),
+    format(atom(FactMsg), 'Concluded fact no. ~w -> ~w', [N, F]),
+    format(atom(RuleMsg), 'by rule ~w', [ID]),
+    FactsMsg = "by verifying that:",
+    write_facts_list(LFacts, FactsExplanation),
+    Separator = "********************************************************",
+    explain_list(LFacts, ExplanationFacts),
+    append([FactMsg, RuleMsg, FactsMsg | FactsExplanation], [Separator | ExplanationFacts], Explanation).
+how(N, Explanation) :-
+    fact(N, F),
+    format(atom(FactMsg), 'Fact no. ~w -> ~w', [N, F]),
+    InitiallyKnown = "was initially known",
+    Separator = "********************************************************",
+    Explanation = [FactMsg, InitiallyKnown, Separator].
+% Helper predicates
+write_facts_list([], []).
+write_facts_list([Fact | Rest], [Msg | ExplanationRest]) :-
+    format(atom(Msg), ' - ~w', [Fact]),
+    write_facts_list(Rest, ExplanationRest).
+explain_list([], []).
+explain_list([Fact | Rest], Explanation) :-
+    (   how(Fact, SubExplanation)
+    ->  append(SubExplanation, RestExplanation, Explanation),
+        explain_list(Rest, RestExplanation)
+    ;   Explanation = [] ).
+
 % writes facts in a list
 write_facts([I|R]):-fact(I,F), !,
 	write('Fact no. '),write(I),write(' -> '),write(F),write(' is true'),nl,
