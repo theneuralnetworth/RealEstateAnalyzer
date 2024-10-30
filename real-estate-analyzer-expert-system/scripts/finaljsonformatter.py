@@ -125,9 +125,11 @@ for item in data[:40]:
 
     # Check if "year_construction" already exists
     year_exists = any(char["label"] == "Ano de construção" for char in item["characteristics"])
+  
     
     # If "year_construction" doesn't exist, apply the logic
     if not year_exists:
+        
         # Get the value of "Nova construção"
         nova_construcao = next((char['localizedValue'] for char in item["characteristics"] if char["label"] == "Nova construção"), "não")
         
@@ -136,13 +138,22 @@ for item in data[:40]:
             year_of_construction = current_year
         else:
             year_of_construction = random.randint(1980, 2020)
+            
+    else: 
+        
+        year = next((char['localizedValue'] for char in item["characteristics"] if char["label"] == "Ano de construção"), "não")
+        
+        
+        
+        year_of_construction =  int(year)
         
         # Add the year_of_construction to the characteristics
         #item["characteristics"].append({
         #    "label": "Ano de construção",
         #    "localizedValue": year_of_construction
         #})
-        new_property["yearConstruction"] = year_of_construction
+    new_property["yearConstruction"] = year_of_construction
+    #print(year_of_construction)
 
     garage_exists = 'garagem' in item.get("features", [])
     
@@ -177,6 +188,7 @@ for item in data[:40]:
 
 
     floor_exists = any(char["label"] == "Andar" for char in item["characteristics"])
+    #print(floor_exists)
     
     # If "floor" doesn't exist, apply the logic
     if  floor_exists:
@@ -187,18 +199,21 @@ for item in data[:40]:
         if floor == "rés do chão":
             floor_number = 0
         else:
-            floor_number = floor_exists
+            floor_number = floor
             
     else : 
         
         floor_number = random.randint(0, 5)
+        #print(floor_number)
         
         # Add the year_of_construction to the characteristics
         #item["characteristics"].append({
         #    "label": "floor number",
         #    "localizedValue": floor_number
         #})
-        new_property["floorLevel"] = floor_number
+        
+    #print(floor_number)
+    new_property["floorLevel"] = floor_number
 
     random_smart= random.choice(['present', 'absent'])
 
@@ -273,9 +288,9 @@ for item in data[:40]:
 
 
 
-# Output the updated JSON
+ #Output the updated JSON
 with open('../ImoveisData/finalpropertiesDrools.json', 'w', encoding='utf-8') as f:
-     json.dump(property_list, f, ensure_ascii=False, indent=4)
+    json.dump(property_list, f, ensure_ascii=False, indent=4)
 
 
 
