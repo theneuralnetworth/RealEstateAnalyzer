@@ -92,6 +92,8 @@ public class Property {
     private Float scorePotentialAppreciation;
     private Float totalScore;
 
+    private Map<String, List<String>> justifications;
+
     public Property() {
         this.services = new ArrayList<>();
         this.metaScores = new HashMap<>();
@@ -143,6 +145,8 @@ public class Property {
         this.scoreBuildState = 0f;
         this.scorePotentialAppreciation = 0f;
         this.totalScore = -1f;
+
+        this.justifications = new HashMap<>();
     }
 
     public Property(String id, String title, Location location, String securitySystem, String acousticInsulation,
@@ -195,6 +199,8 @@ public class Property {
         weights.put("parking", 5);
         weights.put("buildState", 5);
         weights.put("potentialAppreciation", 5);
+
+        this.justifications = new HashMap<>();
     }
 
     // Getters and Setters
@@ -563,6 +569,14 @@ public class Property {
 
     public void setScorePotentialAppreciation(Float scorePotentialAppreciation) {
         this.scorePotentialAppreciation = scorePotentialAppreciation;
+    }
+
+    public Map<String, List<String>> getJustifications() {
+        return justifications;
+    }
+
+    public void setJustifications(Map<String, List<String>> justifications) {
+        this.justifications = justifications;
     }
 
     public float getTotalScore() { return totalScore; }

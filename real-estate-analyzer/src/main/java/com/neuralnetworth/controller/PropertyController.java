@@ -58,14 +58,12 @@ public class PropertyController {
                 for (Object object : event.getMatch().getObjects()) {
                     if (object instanceof Property) {
                         Property property = (Property) object;
-                        String propertyName = property.getTitle();
-
                         String characteristic = ruleName.toLowerCase(Locale.ROOT).split(" ")[0];
 
-                        triggeredRulesMap.putIfAbsent(propertyName, new HashMap<>());
-                        triggeredRulesMap.get(propertyName).putIfAbsent(characteristic, new ArrayList<>());
-                        if (!triggeredRulesMap.get(propertyName).get(characteristic).contains(ruleName)) {
-                            triggeredRulesMap.get(propertyName).get(characteristic).add(ruleName);
+                        property.getJustifications().putIfAbsent(characteristic, new ArrayList<>());
+
+                        if (!property.getJustifications().get(characteristic).contains(ruleName)) {
+                            property.getJustifications().get(characteristic).add(ruleName);
                         }
                     }
                 }
