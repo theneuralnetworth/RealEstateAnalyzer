@@ -2,17 +2,17 @@
 :-op(35,xfy,if).
 :-op(240,fx,rule).
 :-op(500,fy,not).
-:-op(700,xfy,and).
+:-op(600,xfy,and).
 :-op(600,xfy,or).
 
 :-dynamic justifies/3.
 :-dynamic last_fact/1.
 
-%last_fact(1).
+%last_fact(0).
 
 %create_initial_fact(ID, F):-
-	%asserta(last_fact(ID)),
-	%assertz(fact(ID,F)),!.
+%	asserta(last_fact(ID)),
+%	assertz(fact(ID,F)),!.
 
 %create_inital_facts:-
 %	create_initial_fact(1,meta_user_score_security(1)),
@@ -53,7 +53,7 @@ start_engine_loop(N, N) :-
 
 % process each fact and repeat the process after create the new facts
 start_engine_loop(N, Total) :-
-    N =< Total,
+    N < Total,
     N1 is N + 1,
     fact(N1, Fact),
     fact_triggers_rules1(Fact, LRules),
@@ -247,6 +247,39 @@ how(N) :-
     write('Fact no. '), write(N), write(' -> '), write(F), nl,
     write('was initially known'), nl,
     write('********************************************************'), nl.
+
+
+	how(N, Explanation) :-
+    last_fact(Last),
+    Last < N, !,
+    Explanation = ["This conclusion was not made", ""].
+how(N, Explanation) :-
+    justifies(N, ID, LFacts), !,
+    fact(N, F),
+    format(atom(FactMsg), 'Concluded fact no. ~w -> ~w', [N, F]),
+    format(atom(RuleMsg), 'by rule ~w', [ID]),
+    FactsMsg = "by verifying that:",
+    write_facts_list(LFacts, FactsExplanation),
+    Separator = "********************************************************",
+    explain_list(LFacts, ExplanationFacts),
+    append([FactMsg, RuleMsg, FactsMsg | FactsExplanation], [Separator | ExplanationFacts], Explanation).
+how(N, Explanation) :-
+    fact(N, F),
+    format(atom(FactMsg), 'Fact no. ~w -> ~w', [N, F]),
+    InitiallyKnown = "was initially known",
+    Separator = "********************************************************",
+    Explanation = [FactMsg, InitiallyKnown, Separator].
+% Helper predicates
+write_facts_list([], []).
+write_facts_list([Fact | Rest], [Msg | ExplanationRest]) :-
+    format(atom(Msg), ' - ~w', [Fact]),
+    write_facts_list(Rest, ExplanationRest).
+explain_list([], []).
+explain_list([Fact | Rest], Explanation) :-
+    (   how(Fact, SubExplanation)
+    ->  append(SubExplanation, RestExplanation, Explanation),
+        explain_list(Rest, RestExplanation)
+    ;   Explanation = [] ).
 
 % writes facts in a list
 write_facts([I|R]):-fact(I,F), !,
