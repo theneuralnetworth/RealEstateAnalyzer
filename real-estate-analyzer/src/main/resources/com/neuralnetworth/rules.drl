@@ -663,126 +663,141 @@ end
 
 // Rule 14.1: If the property has a security value then calculate its score
 rule "SecurityScore Rule 14.1 - Calculate security score"
+    no-loop true
 when
     $property : Property(security != null)
 then
-    $property.setScoreSecurity($property.getMetaScore($property.getSecurity()) * $property.getWeight("security"));
+    $property.setScoreSecurity(($property.getMetaScore($property.getSecurity()) * $property.getWeight("security")) * $property.getPrefSecurity());
     update($property);
 end
 
 // Rule 14.2: If the property has a overall comfort value then calculate its score
 rule "ComfortScore Rule 14.2 - Calculate comfort score"
+    no-loop true
 when
     $property : Property(overallComfort != null)
 then
-    $property.setScoreComfort($property.getMetaScore($property.getOverallComfort()) * $property.getWeight("comfort"));
+    $property.setScoreComfort(($property.getMetaScore($property.getOverallComfort()) * $property.getWeight("comfort")) * $property.getPrefComfort());
     update($property);
 end
 
 // Rule 14.3: If the property has a accessibility value then calculate its score
 rule "AccessibilityScore Rule 14.3 - Calculate accessibility score"
+    no-loop true
 when
     $property : Property(accessibility != null)
 then
-    $property.setScoreAccessibility($property.getMetaScore($property.getAccessibility()) * $property.getWeight("accessibility"));
+    $property.setScoreAccessibility(($property.getMetaScore($property.getAccessibility()) * $property.getWeight("accessibility")) * $property.getPrefAccessibility());
     update($property);
 end
 
 // Rule 14.4: If the property has a maintenance value then calculate its score
 rule "MaintenanceScore Rule 14.4 - Calculate maintenance score"
+    no-loop true
 when
     $property : Property(maintenance != null)
 then
-    $property.setScoreMaintenance($property.getMetaScore($property.getMaintenance()) * $property.getWeight("maintenance"));
+    $property.setScoreMaintenance(($property.getMetaScore($property.getMaintenance()) * $property.getWeight("maintenance")) * $property.getPrefMaintenance());
     update($property);
 end
 
 // Rule 14.5: If the property has a energyEfficiency value then calculate its score
 rule "EnergyEfficiencyScore Rule 14.5 - Calculate energyEfficiency score"
+    no-loop true
 when
     $property : Property(energyEfficiency != null)
 then
-    $property.setScoreEnergyEfficiency($property.getMetaScore($property.getEnergyEfficiency()) * $property.getWeight("energyEfficiency"));
+    $property.setScoreEnergyEfficiency(($property.getMetaScore($property.getEnergyEfficiency()) * $property.getWeight("energyEfficiency")) * $property.getPrefEnergyEfficiency());
     update($property);
 end
 
 // Rule 14.6: If the property has a servicesLevel value then calculate its score
 rule "ServicesScore Rule 14.6 - Calculate servicesLevel score"
+    no-loop true
 when
     $property : Property(serviceLevel != null)
 then
-    $property.setScoreServices($property.getMetaScore($property.getServiceLevel()) * $property.getWeight("services"));
+    $property.setScoreServices(($property.getMetaScore($property.getServiceLevel()) * $property.getWeight("services")) * $property.getPrefServices());
     update($property);
 end
 
 // Rule 14.7: If the property has a connectivity value then calculate its score
 rule "ConnectivityScore Rule 14.7 - Calculate connectivity score"
+    no-loop true
 when
     $property : Property(connectivity != null)
 then
-    $property.setScoreConnectivity($property.getMetaScore($property.getConnectivity()) * $property.getWeight("connectivity"));
+    $property.setScoreConnectivity(($property.getMetaScore($property.getConnectivity()) * $property.getWeight("connectivity")) * $property.getPrefConnectivity());
     update($property);
 end
 
 // Rule 14.8: If the property has a viewQualityLevel value then calculate its score
 rule "ViewQualityLevelScore Rule 14.8 - Calculate viewQualityLevel score"
+    no-loop true
 when
     $property : Property(viewQualityLevel != null)
 then
-    $property.setScoreViewQuality($property.getMetaScore($property.getViewQualityLevel()) * $property.getWeight("viewQuality"));
+    $property.setScoreViewQuality(($property.getMetaScore($property.getViewQualityLevel()) * $property.getWeight("viewQuality")) * $property.getPrefViewQuality());
     update($property);
 end
 
 // Rule 14.9: If the property has a spaciousness value then calculate its score
 rule "SpaciousnessScore Rule 14.9 - Calculate spaciousness score"
+    no-loop true
 when
     $property : Property(spaciousness != null)
 then
-    $property.setScoreSpaciousness($property.getMetaScore($property.getSpaciousness()) * $property.getWeight("spaciousness"));
+    $property.setScoreSpaciousness(($property.getMetaScore($property.getSpaciousness()) * $property.getWeight("spaciousness")) * $property.getPrefSpaciousness());
     update($property);
 end
 
 // Rule 14.10: If the property has a sunExposure value then calculate its score
 rule "SunExposureScore Rule 14.10 - Calculate sunExposure score"
+    no-loop true
 when
     $property : Property(sunExposure != null)
 then
-    $property.setScoreSunExposure($property.getMetaScore($property.getSunExposure()) * $property.getWeight("sunExposure"));
+    $property.setScoreSunExposure(($property.getMetaScore($property.getSunExposure()) * $property.getWeight("sunExposure")) * $property.getPrefSunExposure());
     update($property);
 end
 
 // Rule 14.11: If the property has a overallParking value then calculate its score
 rule "OverallParkingScore Rule 14.11 - Calculate overallParking score"
+    no-loop true
 when
     $property : Property(overallParking != null)
 then
-    $property.setScoreParking($property.getMetaScore($property.getOverallParking()) * $property.getWeight("parking"));
+    $property.setScoreParking(($property.getMetaScore($property.getOverallParking()) * $property.getWeight("parking")) * $property.getPrefParking());
     update($property);
 end
 
 // Rule 14.12: If the property has a buildState value then calculate its score
 rule "BuildStateScore Rule 14.12 - Calculate buildState score"
+    no-loop true
 when
     $property : Property(buildState != null)
 then
-    $property.setScoreBuildState($property.getMetaScore($property.getBuildState()) * $property.getWeight("buildState"));
+    $property.setScoreBuildState(($property.getMetaScore($property.getBuildState()) * $property.getWeight("buildState")) * $property.getPrefBuildState());
     update($property);
 end
 
 // Rule 14.13: If the property has a potentialAppreciation value then calculate its score
 rule "PotentialAppreciation Rule 14.13 - Calculate potentialAppreciation score"
+    no-loop true
 when
     $property : Property(potentialAppreciation != null)
 then
-    $property.setScorePotentialAppreciation($property.getMetaScore($property.getPotentialAppreciation()) * $property.getWeight("potentialAppreciation"));
+    $property.setScorePotentialAppreciation(($property.getMetaScore($property.getPotentialAppreciation()) * $property.getWeight("potentialAppreciation")) * $property.getPrefPotentialAppreciation());
     update($property);
 end
 
 // Rule 14.14: Calculate total score
 rule "TotalScore Rule 14.14 - Calculate total score"
-    no-loop
+    no-loop true
 when
-    $property: Property(scoreAccessibility != null && totalScore == 0)
+    $property: Property(scoreAccessibility != null && scoreViewQuality != null && scoreSunExposure != null && scoreSpaciousness != null && scoreServices != null
+     && scoreSecurity != null && scorePotentialAppreciation != null && scoreParking != null && scoreMaintenance != null && scoreEnergyEfficiency != null &&
+     scoreConnectivity != null && scoreBuildState != null && scoreComfort != null && totalScore == -1)
 then
     $property.calculateTotalScore();
     update($property);
