@@ -119,7 +119,11 @@ rule 3.2
 
 % Rule 3.3: If the property has either an elevator or ramps, but not both, then the property is classified as having medium accessibility.
 rule 3.3
-    if [(elevator(Property, present) and ramps(Property, absent)) or (elevator(Property, absent) and ramps(Property, present))]
+    if [(elevator(Property, present) and ramps(Property, absent))]
+    then [create_fact(result(Property, accessibility, medium))].
+    
+rule 3.4
+    if [(elevator(Property, absent) and ramps(Property, present))]
     then [create_fact(result(Property, accessibility, medium))].
 
 %%%%%%%%%%% 4.Maintenance %%%%%%%%%%%
@@ -431,4 +435,5 @@ rule 14.13
     then [create_fact(score(Property, potential_appreciation, operation(multi,P, 5)))].
 
 rule 14.14
-    if [score(Property,_,_) and score(Property,security,_) and score(Property,comfort,_) and score(Property,accessibility,_) and score(Property,maintenance,_) and score(Property,energy_efficiency,_) and score(Property,services,_)  and score(Property,parking,_) and score(Property,state,_) and score(Property,potential_appreciation,_)].
+    if [score(Property,security,_) and score(Property,comfort,_) and score(Property,accessibility,_) and score(Property,maintenance,_) and score(Property,energy_efficiency,_) and score(Property,services,_)  and score(Property,parking,_) and score(Property,state,_) and score(Property,potential_appreciation,_)]
+    then [create_fact(final_score(Property, operation(sum_all,score(Property,_,_), _)))].

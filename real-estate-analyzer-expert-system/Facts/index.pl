@@ -1,5 +1,6 @@
 :- dynamic fact/2.
 
+
 fact(1,meta_user_score_security(1)).
 fact(2,meta_user_score_security(1)).
 fact(3,meta_user_score_security(1)).
@@ -13,6 +14,8 @@ fact(10,meta_user_score_security(1)).
 fact(11,meta_user_score_security(1)).
 fact(12,meta_user_score_security(1)).
 fact(13,meta_user_score_security(1)).
+
+
 
 fact(14, location_crime_rate('aldoar, foz do douro e nevogilde', low)).
 fact(15, nearby_schools('aldoar, foz do douro e nevogilde', present)).
@@ -195,6 +198,8 @@ fact(180, image(18438091, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6In
 fact(181, image(18438091, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6InVjdjZlczVtdGRwNzEtQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.G6ZA_LQ6oPUH6ix42boaf0ey8nIHMarUqG4Fx4mR-CE/image;s=655x491;q=80')).
 fact(182, image(18438091, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6Inc2em53cWJiamQ3ajItQVBUIiwidyI6W3siZm4iOiI2OW5scGE3ZWNxbTcxLUFQVCIsInMiOiIxNCIsInAiOiIxMCwtMTAiLCJhIjoiMCJ9XX0.ofK3Mwv5w177VDzXtSkOjcszoR6_6CA5o9yP3ticHEY/image;s=655x491;q=80')).
 fact(183, image(18438091, 'https://ireland.apollo.olxcdn.com/v1/files/eyJmbiI6ImNudThvdTVycHl4OS1BUFQiLCJ3IjpbeyJmbiI6IjY5bmxwYTdlY3FtNzEtQVBUIiwicyI6IjE0IiwicCI6IjEwLC0xMCIsImEiOiIwIn1dfQ.hUuSwVYLOBnLOq-_4DbZrYQ-M0BmS9NF8cW0z1uUcMg/image;s=655x491;q=80')).
+
+
 
 fact(184, meta_score(high,1)).
 fact(185, meta_score(medium,0.7)).

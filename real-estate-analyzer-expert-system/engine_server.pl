@@ -11,15 +11,17 @@ start_server(Port) :-
 
 handle_real_estates(Request) :-
     http_read_json_dict(Request, DictIn),
-    writeln(Request),
-    process_request(DictIn, DictOut),
-    reply_json_dict(DictOut).
+    %process_request(DictIn, DictOut),
+    reply_json(DictOut).
 
 process_request(DictIn, DictOut) :-
-    (   _{preferences: Preferences} :< DictIn
-    -> get_real_estates(Preferences, RealEstates),
-        DictOut = _{realEstates: RealEstates}
-    ; DictOut = _{error: "Missing preferences"}).
+    _{preferences: Preferences} :< DictIn
+     -> get_real_estates(Preferences, RealEstates),
+       DictOut = _{realEstates: RealEstates}
+;   DictOut = _{error: "Missing preferences"}.
+
+    generate_json_string(PrologTerm, String) :-
+    atom_json_dict(String, PrologTerm, []).
 
 get_real_estates(Preferences, RealEstates) :-
     load_kb,
