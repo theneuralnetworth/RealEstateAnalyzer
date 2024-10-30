@@ -142,7 +142,7 @@ public class Property {
         this.scoreParking = 0f;
         this.scoreBuildState = 0f;
         this.scorePotentialAppreciation = 0f;
-        this.totalScore = 0f;
+        this.totalScore = -1f;
     }
 
     public Property(String id, String title, Location location, String securitySystem, String acousticInsulation,
@@ -572,32 +572,6 @@ public class Property {
         this.setTotalScore(this.scoreAccessibility + this.scoreComfort + this.scoreConnectivity + this.scoreMaintenance + this.scoreParking +
                 this.scorePotentialAppreciation + this.scoreBuildState + this.scoreEnergyEfficiency + this.scoreSecurity + this.scoreViewQuality + this.scoreSpaciousness
         + this.scoreSunExposure + this.scoreServices);
-    }
-
-    public void printInferredAttributes() {
-        System.out.println("\n --------------------------------------------------");
-        System.out.println("Property Name: " + this.title);
-        System.out.println("Inferred Attributes:");
-        System.out.println("  Crime Rate: " + (this.crimeRate != null ? this.crimeRate : "Not set"));
-        System.out.println("  Security: " + (this.security != null ? this.security : "Not set"));
-        System.out.println("  Noise Level: " + (this.noiseLevel != null ? this.noiseLevel : "Not set"));
-        System.out.println("  Sound Comfort: " + (this.soundComfort != null ? this.soundComfort : "Not set"));
-        System.out.println("  Overall Comfort: " + (this.overallComfort != null ? this.overallComfort : "Not set"));
-        System.out.println("  Accessibility: " + (this.accessibility != null ? this.accessibility : "Not set"));
-        System.out.println("  Amenities: " + (this.amenities != null ? this.amenities : "Not set"));
-        System.out.println("  Maintenance: " + (this.maintenance != null ? this.maintenance : "Not set"));
-        System.out.println("  EnergyEfficiency: " + (this.energyEfficiency != null ? this.energyEfficiency : "Not set"));
-        System.out.println("  Connectivity: " + (this.connectivity != null ? this.connectivity : "Not set"));
-        System.out.println("  ServiceLevel: " + (this.serviceLevel != null ? this.serviceLevel : "Not set"));
-        System.out.println("  ViewQuality: " + (this.viewQuality != null ? this.viewQuality : "Not set"));
-        System.out.println("  ViewQualityLevel: " + (this.viewQualityLevel != null ? this.viewQualityLevel : "Not set"));
-        System.out.println("  NumberOfServices: " + this.numberOfServices);
-        System.out.println("  Spaciousness: " + (this.spaciousness != null ? this.spaciousness : "Not set"));
-        System.out.println("  SunExposer: " + (this.sunExposure != null ? this.sunExposure : "Not set"));
-        System.out.println("  OverallParking: " + (this.overallParking != null ? this.spaciousness : "Not set"));
-        System.out.println("  BuildState: " + (this.buildState != null ? this.buildState : "Not set"));
-        System.out.println("  PotentialAppreciation: " + (this.potentialAppreciation != null ? this.potentialAppreciation : "Not set"));
-        System.out.println("  TotalScore: " + (this.totalScore != null ? this.totalScore : "Not set"));
     }
 
     @Override

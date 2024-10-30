@@ -797,7 +797,7 @@ rule "TotalScore Rule 14.14 - Calculate total score"
 when
     $property: Property(scoreAccessibility != null && scoreViewQuality != null && scoreSunExposure != null && scoreSpaciousness != null && scoreServices != null
      && scoreSecurity != null && scorePotentialAppreciation != null && scoreParking != null && scoreMaintenance != null && scoreEnergyEfficiency != null &&
-     scoreConnectivity != null && scoreBuildState != null && scoreComfort != null && totalScore == 0)
+     scoreConnectivity != null && scoreBuildState != null && scoreComfort != null && totalScore == -1)
 then
     $property.calculateTotalScore();
     update($property);
