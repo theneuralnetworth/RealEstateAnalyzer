@@ -57,9 +57,6 @@ start_engine_loop(N, Total) :-
     N1 is N + 1,
     fact(N1, Fact),
     fact_triggers_rules1(Fact, LRules),
-	writeln(N1),
-	writeln(Fact),
-	writeln(LRules),
     trigger_rules(N1, Fact, LRules),
     number_of_facts(Total1),
     start_engine_loop(N1, Total1).

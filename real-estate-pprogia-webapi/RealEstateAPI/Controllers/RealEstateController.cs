@@ -48,7 +48,7 @@ namespace RealEstateAPI.Controllers
                         {
                             case "location_property":
                                 estate.ID = item.Args[0];
-                                estate.Location = item.Args[1];
+                                estate.Location = new Location(item.Args[1]);
                                 break;
 
                         }
@@ -60,11 +60,24 @@ namespace RealEstateAPI.Controllers
 
                     foreach (var item in prologResult.RealEstates)
                     {
+                        var estate = realEstates.Find(x => x.ID == item.Args[0]);
                         switch (item.Type)
                         {
+                            case "property":
+                                estate.Title = item.Args[1];
+                                break;
                             case "final_score":
-                                var estate = realEstates.Find(x => x.ID == item.Args[0]);
                                 estate.TotalScore = Double.Parse(item.Args[1]);
+                                break;
+                            case "price":
+                                estate.Price = Double.Parse(item.Args[1]);
+                                break;
+                            case "image":
+                                if(estate.Images == null)
+                                {
+                                    estate.Images = new List<string>();
+                                }
+                                estate.Images.Add(item.Args[1]);
                                 break;
 
                         }

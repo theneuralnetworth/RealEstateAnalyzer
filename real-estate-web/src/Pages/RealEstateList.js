@@ -10,10 +10,10 @@ const RealEstateList = () => {
         palette: {
             mode: 'light',
             primary: {
-                main: '#1976d2'
+                main: '#f4ffa0'
             },
             secondary: {
-                main: '#dc004e'
+                main: '#6e96f5'
             }
         },
     });
@@ -22,10 +22,10 @@ const RealEstateList = () => {
         palette: {
             mode: 'dark',
             primary: {
-                main: '#90caf9'
+                main: '#8f9b45'
             },
             secondary: {
-                main: '#f48fb1'
+                main: '#3e6df5'
             }
         },
     });
@@ -126,7 +126,7 @@ const RealEstateList = () => {
                                 image={realEstate?.images ? realEstate?.images[0] : 'default_house.png'}
                               />
                               <CardContent sx={{ flexGrow: 1 }}>
-                                  <Typography gutterBottom variant="body1" color="primary">
+                                  <Typography gutterBottom variant="body1" color="secondary">
                                       {realEstate?.title}
                                   </Typography>
                                   <Typography variant="body2" color="text.secondary">
@@ -191,7 +191,7 @@ const RealEstateList = () => {
     const PropertyPage = ({realEstate}) =>{ 
       return (
         <Box container spacing={2} sx={{ padding: 2, width:'100%' }} >
-          <Button size="small" color="primary" onClick={()=>{setSelectedProperty(null)}}>Back</Button>
+          <Button size="small" color="secondary" variant='outlined' onClick={()=>{setSelectedProperty(null)}}>Back</Button>
           <Typography gutterBottom variant="h5" component="div">
             {realEstate.id}
           </Typography>
@@ -210,8 +210,8 @@ const RealEstateList = () => {
             <AppBar>
             <Toolbar>
             <Box display='flex' flex={1}>
-              <Box display='flex' flex={1}>
-                <Typography variant="h6" component="div">
+              <Box display='flex' flex={1} alignItems='center'>
+                <Typography variant="h5" component="div" fontFamily='Pixelify Sans'>
                   Real Estate Analyzer
                 </Typography>
               </Box>
