@@ -37,6 +37,11 @@ rule 1.7
 if [security_system(Property, absent) and property_crime_rate(Property, medium)]
 then [create_fact(result(Property, security, medium))].
 
+rule 1.71
+if [security_system(Property, present) and property_crime_rate(Property, medium)]
+then [create_fact(result(Property, security, medium))].
+
+
 % Rule 1.8: If the property has a high crime rate and a security system is present, then the property is classified as having medium security.
 rule 1.8
     if [property_crime_rate(Property, high) and security_system(Property, present)]
@@ -78,6 +83,11 @@ rule 2.6
 % Rule 2.7: If the property has medium acoustic insulation or a medium noise level, then the property will have medium sound comfort.
 rule 2.7
     if [acoustic_insulation(Property, medium) or noise_level(Property, medium)]
+    then [create_fact(sound_comfort(Property, medium))].
+
+rule 2.71
+
+     if [acoustic_insulation(Property, low) or noise_level(Property, low)]
     then [create_fact(sound_comfort(Property, medium))].
 
 % Rule 2.8: If the property has high sound comfort and high thermal comfort, then the property will have high overall comfort.
@@ -322,6 +332,10 @@ rule 11.3
 rule 11.4
     if [garage(Property, present) and (public_parking(Property, high) or public_parking(Property, medium))]
     then [create_fact(result(Property, parking, high))].
+
+rule 11.41
+    if  [garage(Property, present) and (public_parking(Property, low) or public_parking(Property, medium))]
+        then [create_fact(result(Property, parking, medium))].
 
 % Rule 11.5: If the property does not have a garage but the public parking availability is either high or medium, then the property is classified as having medium overall parking.
 rule 11.5
