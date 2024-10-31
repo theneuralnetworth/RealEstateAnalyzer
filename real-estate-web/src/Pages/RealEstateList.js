@@ -58,8 +58,8 @@ const RealEstateList = () => {
     },
     {
       name: "ENGCIA",
-      path: "http://localhost:8080/api/realestates/getrealestates", // docker
-      // path: "http://localhost:8082/api/realestates/getrealestates", // local
+      // path: "http://localhost:8080/api/realestates/getrealestates", // local
+      path: "http://localhost:8082/api/realestates/getrealestates", // docker
     },
   ];
   const [selectedRoute, setSelectedRoute] = useState(routes[1]);
@@ -110,7 +110,13 @@ const RealEstateList = () => {
       const response = await axios.post(selectedRoute.path, {
         preferences,
       });
-      setRealEstates(response.data);
+      const sortedData =
+        selectedRoute.name === "PPROGIA"
+          ? response.data.sort(
+              (a, b) => Number(b.totalScore) - Number(a.totalScore)
+            )
+          : response.data;
+      setRealEstates(sortedData);
       setCurrentPage(1);
       setSelectedProperty(undefined);
     } catch (err) {

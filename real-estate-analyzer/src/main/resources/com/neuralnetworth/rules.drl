@@ -133,7 +133,7 @@ rule "Comfort Rule 2.5 - High Sound Comfort ; Has 'High' level of acoustic insul
 end
 
 // Rule 2.6: If the property has high acoustic insulation and a high noise level, then the property will have medium sound comfort.
-rule "Comfort Rule 2.6 - Medium Sound Comfort ; Has 'High' level of both acoustic insulation and noise leve"
+rule "Comfort Rule 2.6 - Medium Sound Comfort ; Has 'High' level because of both acoustic insulation and noise leve being 'High'"
     when
         $property : Property(acousticInsulation == "high", noiseLevel == "high")
     then
@@ -142,18 +142,35 @@ rule "Comfort Rule 2.6 - Medium Sound Comfort ; Has 'High' level of both acousti
 end
 
 // Rule 2.7: If the property has medium acoustic insulation or a medium noise level, then the property will have medium sound comfort.
-rule "Comfort Rule 2.7 - Medium Sound Comfort ; Has 'Medium' level of both acoustic insulation and noise level"
+rule "Comfort Rule 2.7 - Medium Sound Comfort ; Has 'Medium' level because of both acoustic insulation and noise level being 'Medium'"
     when
-        $property : Property(acousticInsulation == "medium" || noiseLevel == "medium")
+        $property : Property(acousticInsulation == "medium" && noiseLevel == "medium")
     then
         $property.setSoundComfort("medium");
         update($property);
 end
 
 // Rule 2.71: If the property has medium acoustic insulation or a medium noise level, then the property will have medium sound comfort.
-rule "Comfort Rule 2.71 - Medium Sound Comfort ; Has 'Medium' level of both acoustic insulation and noise level"
+rule "Comfort Rule 2.71 - Medium Sound Comfort ; Has 'Medium' level because of both acoustic insulation and noise level being 'Low'"
     when
-        $property : Property(acousticInsulation == "low" || noiseLevel == "low")
+        $property : Property(acousticInsulation == "low" && noiseLevel == "low")
+    then
+        $property.setSoundComfort("medium");
+        update($property);
+end
+
+// Rule 2.72: If the property has medium acoustic insulation or a medium noise level, then the property will have medium sound comfort.
+rule "Comfort Rule 2.72 - Medium Sound Comfort ; Has 'Medium' level because has a 'High' level of acoustic insulation and a noise level of 'Medium'"
+    when
+        $property : Property(acousticInsulation == "high" && noiseLevel == "medium")
+    then
+        $property.setSoundComfort("medium");
+        update($property);
+end
+// Rule 2.73: If the property has medium acoustic insulation or a medium noise level, then the property will have medium sound comfort.
+rule "Comfort Rule 2.73 - Medium Sound Comfort ; Has 'Medium' level because has a 'Low' level of acoustic insulation and a noise level of 'Medium'"
+    when
+        $property : Property(acousticInsulation == "low" && noiseLevel == "medium")
     then
         $property.setSoundComfort("medium");
         update($property);
@@ -180,7 +197,7 @@ end
 // Rule 2.10: If the property has high sound comfort and low thermal comfort, then the property will have medium overall comfort.
 rule "Comfort Rule 2.10 - Medium Overall Comfort ; Sound comfort is 'High' level and thermal comfort is 'Low'' level"
     when
-        $property : Property(soundComfort == "high", thermalComfort == "low")
+            $property : Property(soundComfort == "high", thermalComfort == "low")
     then
         $property.setOverallComfort("medium");
         update($property);
@@ -538,18 +555,45 @@ then
 end
 
 // Rule 10.1: If the sun orientation is south and east, classify as high sun exposure
-rule "Sun_Exposure Rule 10.1 - High ; Sun exposure level is 'High' because the property's sun orientation is either south or east"
+rule "Sun_Exposure Rule 10.1 - High ; Sun exposure level is 'High' because the property's sun orientation is either south and east"
 when
-    $property : Property(sunOrientation == "south" || sunOrientation == "east")
+    $property : Property(sunOrientation.contains("south") && sunOrientation.contains("east"))
 then
     $property.setSunExposure("high");
     update($property);
 end
 
-// Rule 10.3: If not classified as high or medium sun exposure, classify as low sun exposure
-rule "Sun_Exposure Rule 10.3 - Low ; Sun exposure level is 'Low' because the property's sun orientation is either north or west"
+// Rule 10.2: If the sun orientation is south and not east, classify as high sun exposure
+rule "Sun_Exposure Rule 10.2 - Medium ; Sun exposure level is 'Medium' because the property's sun orientation is south and other than east"
 when
-    $property : Property(sunExposure == null || sunExposure == "")
+    $property : Property(sunOrientation.contains("south") && !sunOrientation.contains("east"))
+then
+    $property.setSunExposure("medium");
+    update($property);
+end
+
+// Rule 10.21: If the sun orientation is not south and east, classify as high sun exposure
+rule "Sun_Exposure Rule 10.21 - Medium ; Sun exposure level is 'Medium' because the property's sun orientation is east and other than south"
+when
+    $property : Property(!sunOrientation.contains("south") && sunOrientation.contains("east"))
+then
+    $property.setSunExposure("medium");
+    update($property);
+end
+
+// Rule 10.3: If the sun orientation is not south and east, classify as high sun exposure
+rule "Sun_Exposure Rule 10.21 - Low ; Sun exposure level is 'Low' because the property's sun orientation is north and not south or east"
+when
+    $property : Property(sunOrientation.contains("north") && !sunOrientation.contains("south") && !sunOrientation.contains("east"))
+then
+    $property.setSunExposure("low");
+    update($property);
+end
+
+// Rule 10.4: If the sun orientation is not south and east, classify as high sun exposure
+rule "Sun_Exposure Rule 10.4 - Low ; Sun exposure level is 'Low' because the property's sun orientation is west and not south or east"
+when
+    $property : Property(sunOrientation.contains("west") && !sunOrientation.contains("south") && !sunOrientation.contains("east"))
 then
     $property.setSunExposure("low");
     update($property);
@@ -597,7 +641,7 @@ end
 // Rule 11.41: If the property has a garage and public parking is high or medium, classify as high overall parking
 rule "Parking Rule 11.41 - High Overall Parking ; Overall parking level is 'Medium' because there's just some parking spots nearby and has a garage"
 when
-    $property : Property(garage == "present", (publicParking == "low" || publicParking == "medium"))
+    $property : Property(garage == "present", (publicParking == "low"))
 then
     $property.setOverallParking("medium");
     update($property);

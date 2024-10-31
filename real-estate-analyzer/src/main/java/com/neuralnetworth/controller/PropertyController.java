@@ -164,9 +164,9 @@ public class PropertyController {
         locations.add(faro);
 
         List<Property> properties = new ArrayList<>();
-        Property property1 = new Property("property_1", "Property in Lisbon" , lisbon, "present", "high", "high", "absent", "absent", "absent", "absent", "regular", "b", "absent", 2018, 6, 100f, 4, 25f, "south", "apartment", "present", "present");
-        Property property2 = new Property("property_2", "Property in Porto" , porto, "absent", "low", "low", "absent", "present", "absent", "present", "new", "e", "present", 1960, 1, 100f, 3, 33f, "north", "residence", "present", "absent");
-        Property property3 = new Property("property_3", "Property in Faro" , faro, "absent", "high", "high", "present", "present", "present", "present", "reform", "a", "absent", 2021, 4, 48f, 3, 16f, "east", "apartment", "absent", "absent");
+        Property property1 = new Property("property_1", "Property in Lisbon" , lisbon, "present", "high", "high", "absent", "absent", "absent", "absent", "regular", "b", "absent", 2018, 6, 100f, 4, 25f, Collections.singletonList("south"), "apartment", "present", "present");
+        Property property2 = new Property("property_2", "Property in Porto" , porto, "absent", "low", "low", "absent", "present", "absent", "present", "new", "e", "present", 1960, 1, 100f, 3, 33f, Collections.singletonList("north"), "residence", "present", "absent");
+        Property property3 = new Property("property_3", "Property in Faro" , faro, "absent", "high", "high", "present", "present", "present", "present", "reform", "a", "absent", 2021, 4, 48f, 3, 16f, Collections.singletonList("east"), "apartment", "absent", "absent");
         properties.add(property1);
         properties.add(property2);
         properties.add(property3);
