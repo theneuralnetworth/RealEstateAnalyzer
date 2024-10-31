@@ -73,7 +73,7 @@ const RealEstateList = () => {
     },
     {
       name: "ENGCIA",
-      path: "http://localhost:8080/api/realestates/getrealestates",
+      path: "http://localhost:8082/api/realestates/getrealestates",
     },
   ];
   const [selectedRoute, setSelectedRoute] = useState(routes[1]);
@@ -114,6 +114,7 @@ const RealEstateList = () => {
       potential_appreciation: 5,
     });
     updateResults();
+
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [selectedRoute]);
 
@@ -126,6 +127,7 @@ const RealEstateList = () => {
       });
       setRealEstates(response.data);
       setCurrentPage(1);
+      setSelectedProperty(undefined);
     } catch (err) {
       setError("Error fetching real estates");
     } finally {
@@ -271,28 +273,41 @@ const RealEstateList = () => {
 
   const ImageCarousel = ({ realEstate }) => {
     const [currentImage, setCurrentImage] = useState(0);
-  
+
     const handlePrev = () => {
-      setCurrentImage((prev) => (prev === 0 ? realEstate.images.length - 1 : prev - 1));
+      setCurrentImage((prev) =>
+        prev === 0 ? realEstate.images.length - 1 : prev - 1
+      );
     };
-  
+
     const handleNext = () => {
-      setCurrentImage((prev) => (prev === realEstate.images.length - 1 ? 0 : prev + 1));
+      setCurrentImage((prev) =>
+        prev === realEstate.images.length - 1 ? 0 : prev + 1
+      );
     };
-  
+
     return (
-      <Box display="flex" alignItems="center" justifyContent="center" position="relative" width="100%" height="650px" overflow="hidden" mx="auto">
-        <IconButton 
+      <Box
+        display="flex"
+        alignItems="center"
+        justifyContent="center"
+        position="relative"
+        width="100%"
+        height="650px"
+        overflow="hidden"
+        mx="auto"
+      >
+        <IconButton
           onClick={handlePrev}
           sx={{
-            position: 'absolute', 
-            left: 0, 
-            top: '50%', 
-            transform: 'translateY(-50%)', 
-            color: 'white', 
-            zIndex: 1, 
-            backgroundColor: 'rgba(0, 0, 0, 0.5)', 
-            '&:hover': { backgroundColor: 'rgba(0, 0, 0, 0.7)' }
+            position: "absolute",
+            left: 0,
+            top: "50%",
+            transform: "translateY(-50%)",
+            color: "white",
+            zIndex: 1,
+            backgroundColor: "rgba(0, 0, 0, 0.5)",
+            "&:hover": { backgroundColor: "rgba(0, 0, 0, 0.7)" },
           }}
         >
           <ArrowBack />
@@ -301,7 +316,7 @@ const RealEstateList = () => {
           <Slide
             key={index}
             in={index === currentImage}
-            direction={index === currentImage ? 'left' : 'right'}
+            direction={index === currentImage ? "left" : "right"}
             timeout={500}
             mountOnEnter
             unmountOnExit
@@ -310,21 +325,26 @@ const RealEstateList = () => {
               component="img"
               src={image}
               alt={`Imagem ${index + 1}`}
-              sx={{ width: '100%', height: '100%', objectFit: 'cover', position: 'absolute' }}
+              sx={{
+                width: "100%",
+                height: "100%",
+                objectFit: "cover",
+                position: "absolute",
+              }}
             />
           </Slide>
         ))}
-        <IconButton 
+        <IconButton
           onClick={handleNext}
           sx={{
-            position: 'absolute', 
-            right: 0, 
-            top: '50%', 
-            transform: 'translateY(-50%)', 
-            color: 'white', 
-            zIndex: 1, 
-            backgroundColor: 'rgba(0, 0, 0, 0.5)', 
-            '&:hover': { backgroundColor: 'rgba(0, 0, 0, 0.7)' }
+            position: "absolute",
+            right: 0,
+            top: "50%",
+            transform: "translateY(-50%)",
+            color: "white",
+            zIndex: 1,
+            backgroundColor: "rgba(0, 0, 0, 0.5)",
+            "&:hover": { backgroundColor: "rgba(0, 0, 0, 0.7)" },
           }}
         >
           <ArrowForward />
@@ -335,7 +355,14 @@ const RealEstateList = () => {
 
   const PropertyPage = ({ realEstate }) => {
     return (
-      <Box display='flex' flexDirection='column' container="true" spacing={2} gap={2} sx={{ padding: 2, width: "100%" }}>
+      <Box
+        display="flex"
+        flexDirection="column"
+        container="true"
+        spacing={2}
+        gap={2}
+        sx={{ padding: 2, width: "100%" }}
+      >
         <Box>
           <Button
             startIcon={<ArrowBack />}
@@ -364,42 +391,62 @@ const RealEstateList = () => {
           </Typography>
         </Box>
         <Box>
-          {selectedRoute.name === 'ENGCIA' ? Object.keys(preferences).map((preference, i) => (
-            <Accordion key={`accordion-${preference}`}>
-              <AccordionSummary
-                expandIcon={<ExpandMoreIcon />}
-                aria-controls="panel1-content"
-                id={`panel-header-${i}`}
-              >
-                {preference}
-              </AccordionSummary>
-              <AccordionDetails>
-                <ul>
-                  {realEstate.justifications[preference].map((justification) => (
-                    <li>{justification.split(";")[1].trim()}</li>
-                  ))}
-                </ul>
-              </AccordionDetails>
-            </Accordion>
-          )): realEstate.categories?.map((category, i) => (
-            <Accordion key={`accordion-${category.name}`}>
-              <AccordionSummary
-                expandIcon={<ExpandMoreIcon />}
-                aria-controls="panel1-content"
-                id={`panel-header-${i}`}
-              >
-                <Box display='flex' flex={1} alignItems='center'>
-                  <Typography display='flex' flex={1}>{category.name.split('_').length > 1 ? category.name.split('_')[0] + ' ' + category.name.split('_')[1] : category.name}</Typography>
-                  <Chip label={category.value} variant="outlined" color={category.value === 'low' ? 'error' : category.value === 'medium' ? 'warning' : 'success'}/>
-                </Box>
-              </AccordionSummary>
-              <AccordionDetails>
-                  {category?.justifications?.map((justification) => (
-                    <Typography>{justification}</Typography>
-                  ))}
-              </AccordionDetails>
-            </Accordion>
-          ))}
+          {selectedRoute.name === "ENGCIA"
+            ? Object.keys(preferences).map((preference, i) => (
+                <Accordion key={`accordion-${preference}`}>
+                  <AccordionSummary
+                    expandIcon={<ExpandMoreIcon />}
+                    aria-controls="panel1-content"
+                    id={`panel-header-${i}`}
+                  >
+                    {preference}
+                  </AccordionSummary>
+                  <AccordionDetails>
+                    <ul>
+                      {realEstate.justifications[preference].map(
+                        (justification) => (
+                          <li>{justification.split(";")[1].trim()}</li>
+                        )
+                      )}
+                    </ul>
+                  </AccordionDetails>
+                </Accordion>
+              ))
+            : realEstate.categories?.map((category, i) => (
+                <Accordion key={`accordion-${category.name}`}>
+                  <AccordionSummary
+                    expandIcon={<ExpandMoreIcon />}
+                    aria-controls="panel1-content"
+                    id={`panel-header-${i}`}
+                  >
+                    <Box display="flex" flex={1} alignItems="center">
+                      <Typography display="flex" flex={1}>
+                        {category.name.split("_").length > 1
+                          ? category.name.split("_")[0] +
+                            " " +
+                            category.name.split("_")[1]
+                          : category.name}
+                      </Typography>
+                      <Chip
+                        label={category.value}
+                        variant="outlined"
+                        color={
+                          category.value === "low"
+                            ? "error"
+                            : category.value === "medium"
+                            ? "warning"
+                            : "success"
+                        }
+                      />
+                    </Box>
+                  </AccordionSummary>
+                  <AccordionDetails>
+                    {category?.justifications?.map((justification) => (
+                      <Typography>{justification}</Typography>
+                    ))}
+                  </AccordionDetails>
+                </Accordion>
+              ))}
         </Box>
       </Box>
     );
