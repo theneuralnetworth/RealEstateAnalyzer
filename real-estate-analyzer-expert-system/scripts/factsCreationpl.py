@@ -10,7 +10,7 @@ def generate_prolog_facts(data, output_file_path):
     fact_counter = 134 # Contador para o número de factos
     prolog_facts = []
 
-    for item in data[:20]:
+    for item in data:
         id_imovel = item.get("id")
         title = item.get("title")
         description = item.get("description")
