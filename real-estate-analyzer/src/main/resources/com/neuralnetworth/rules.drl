@@ -4,7 +4,7 @@ import com.neuralnetworth.Model.Location;
 import com.neuralnetworth.Model.Property;
 
 // Rule 1.1: If the crime rate in a location is low and the property is located there, then update the property to have a low crime rate.
-rule "Security Rule 1.1 - Low Crime Rate"
+rule "Security Rule 1.1 - Low Crime Rate ; Property has a 'Low' crime rate because is in a location with a 'Low' crime rate"
 
     when
         $location : Location(crimeRate == "low")
@@ -15,7 +15,7 @@ rule "Security Rule 1.1 - Low Crime Rate"
 end
 
 // Rule 1.2: If the crime rate in a location is medium and the property is located there, then update the property to have a medium crime rate.
-rule "Security Rule 1.2 - Medium Crime Rate"
+rule "Security Rule 1.2 - Medium Crime Rate ; Property has a 'Medium' crime rate because is in a location with a 'Medium' crime rate"
 
     when
         $location : Location(crimeRate == "medium")
@@ -26,7 +26,7 @@ rule "Security Rule 1.2 - Medium Crime Rate"
 end
 
 // Rule 1.3: If the crime rate in a location is high and the property is located there, then update the property to have a high crime rate.
-rule "Security Rule 1.3 - High Crime Rate"
+rule "Security Rule 1.3 - High Crime Rate ; Property has a 'High' crime rate because is in a location with a 'High' crime rate"
 
     when
         $location : Location(crimeRate == "high")
@@ -37,7 +37,7 @@ rule "Security Rule 1.3 - High Crime Rate"
 end
 
 // Rule 1.4: If the property has a low crime rate and a security system is present, then update the property to have high security.
-rule "Security Rule 1.4 - High Security"
+rule "Security Rule 1.4 - High Security ; Property's crime rate is 'Low' and have a security system"
 
     when
         $property : Property(crimeRate == "low", securitySystem == "present")
@@ -46,7 +46,7 @@ rule "Security Rule 1.4 - High Security"
         update($property);
 end
 
-rule "Security Rule 1.5 - High Crime Rate and No Security System -> Low Security"
+rule "Security Rule 1.5 - Low Security ; Property's crime rate is 'High' and doesn't have security system"
 
     when
         $property : Property(crimeRate == "high", securitySystem == "absent")
@@ -55,7 +55,7 @@ rule "Security Rule 1.5 - High Crime Rate and No Security System -> Low Security
         update($property);
     end
 
-rule "Security Rule 1.6 - No Security System and Low/Medium Crime Rate -> Medium Security"
+rule "Security Rule 1.6 - Medium Security ; Doesn't have a security system, but the property's crime rate is either 'Low' or 'Medium'"
 
     when
         $property : Property(securitySystem == "absent",
@@ -65,7 +65,7 @@ rule "Security Rule 1.6 - No Security System and Low/Medium Crime Rate -> Medium
         update($property);
     end
 
-rule "Security Rule 1.7 - High Crime Rate and Security System Present -> Medium Security"
+rule "Security Rule 1.7 - Medium Security ; Property has a 'High' level of crime, but has a security system"
 
     when
         $property : Property(crimeRate == "high", securitySystem == "present")
@@ -76,7 +76,7 @@ rule "Security Rule 1.7 - High Crime Rate and Security System Present -> Medium 
 
 
 // Rule 2.1: If the property is located in an area with an airport and busy traffic, then the property will have a high noise level.
-rule "Noise Rule 2.1 - High Noise Level"
+rule "Noise Rule 2.1 - High Noise Level ; Has an airport nearby and is in a location with busy traffic"
     when
         $location : Location(airport == "present", busyTraffic == "present")
         $property : Property(location == $location)
@@ -86,7 +86,7 @@ rule "Noise Rule 2.1 - High Noise Level"
 end
 
 // Rule 2.2: If the property is located in an area with an airport or busy traffic, then the property will have a medium noise level.
-rule "Noise Rule 2.2 - Medium Noise Level"
+rule "Noise Rule 2.2 - Medium Noise Level ; Either has an airport nearby or is in a location with busy traffic"
     when
         $location : Location((airport == "present" && busyTraffic == "absent") || (airport == "absent" && busyTraffic == "present"))
         $property : Property(location == $location)
@@ -96,7 +96,7 @@ rule "Noise Rule 2.2 - Medium Noise Level"
 end
 
 // Rule 2.3: If the property is not located in an area with an airport and does not have busy traffic, then the property will have a low noise level.
-rule "Noise Rule 2.3 - Low Noise Level"
+rule "Noise Rule 2.3 - Low Noise Level  ; Doesn't have an airport nearby and it's not in a location with busy traffic"
     when
         $location : Location(airport == "absent", busyTraffic == "absent")
         $property : Property(location == $location)
@@ -106,7 +106,7 @@ rule "Noise Rule 2.3 - Low Noise Level"
 end
 
 // Rule 2.4: If the property has a high noise level and low acoustic insulation, then the property will have low sound comfort.
-rule "Comfort Rule 2.4 - Low Sound Comfort"
+rule "Comfort Rule 2.4 - Low Sound Comfort ; Has 'High' level of noise and 'Low' acoustic insulation level"
     when
         $property : Property(noiseLevel == "high", acousticInsulation == "low")
     then
@@ -115,7 +115,7 @@ rule "Comfort Rule 2.4 - Low Sound Comfort"
 end
 
 // Rule 2.5: If the property has high acoustic insulation and a low noise level, then the property will have high sound comfort.
-rule "Comfort Rule 2.5 - High Sound Comfort"
+rule "Comfort Rule 2.5 - High Sound Comfort ; Has 'High' level of acoustic insulation and 'Low' noise level"
     when
         $property : Property(acousticInsulation == "high", noiseLevel == "low")
     then
@@ -124,7 +124,7 @@ rule "Comfort Rule 2.5 - High Sound Comfort"
 end
 
 // Rule 2.6: If the property has high acoustic insulation and a high noise level, then the property will have medium sound comfort.
-rule "Comfort Rule 2.6 - Medium Sound Comfort"
+rule "Comfort Rule 2.6 - Medium Sound Comfort ; Has 'High' level of both acoustic insulation and noise leve"
     when
         $property : Property(acousticInsulation == "high", noiseLevel == "high")
     then
@@ -133,7 +133,7 @@ rule "Comfort Rule 2.6 - Medium Sound Comfort"
 end
 
 // Rule 2.7: If the property has medium acoustic insulation or a medium noise level, then the property will have medium sound comfort.
-rule "Comfort Rule 2.7 - Medium Sound Comfort"
+rule "Comfort Rule 2.7 - Medium Sound Comfort ; Has 'Medium' level of both acoustic insulation and noise level"
     when
         $property : Property(acousticInsulation == "medium" || noiseLevel == "medium")
     then
@@ -142,7 +142,7 @@ rule "Comfort Rule 2.7 - Medium Sound Comfort"
 end
 
 // Rule 2.8: If the property has high sound comfort and high thermal comfort, then the property will have high overall comfort.
-rule "Comfort Rule 2.8 - High Overall Comfort"
+rule "Comfort Rule 2.8 - High Overall Comfort ; Both sound and thermal comfort's level is 'High'"
     when
         $property : Property(soundComfort == "high", thermalComfort == "high")
     then
@@ -151,7 +151,7 @@ rule "Comfort Rule 2.8 - High Overall Comfort"
 end
 
 // Rule 2.9: If the property has low sound comfort and low thermal comfort, then the property will have low overall comfort.
-rule "Comfort Rule 2.9 - Low Overall Comfort"
+rule "Comfort Rule 2.9 - Low Overall Comfort ; Both sound and thermal comfort's level is 'Low'"
     when
         $property : Property(soundComfort == "low", thermalComfort == "low")
     then
@@ -160,7 +160,7 @@ rule "Comfort Rule 2.9 - Low Overall Comfort"
 end
 
 // Rule 2.10: If the property has high sound comfort and low thermal comfort, then the property will have medium overall comfort.
-rule "Comfort Rule 2.10 - Medium Overall Comfort (High Sound, Low Thermal)"
+rule "Comfort Rule 2.10 - Medium Overall Comfort ; Sound comfort is 'High' level and thermal comfort is 'Low'' level"
     when
         $property : Property(soundComfort == "high", thermalComfort == "low")
     then
@@ -169,7 +169,7 @@ rule "Comfort Rule 2.10 - Medium Overall Comfort (High Sound, Low Thermal)"
 end
 
 // Rule 2.11: If the property has low sound comfort and high thermal comfort, then the property will have medium overall comfort.
-rule "Comfort Rule 2.11 - Medium Overall Comfort (Low Sound, High Thermal)"
+rule "Comfort Rule 2.11 - Medium Overall Comfort ; Sound confort level is 'Low' and thermal comfort level is 'High' "
     when
         $property : Property(soundComfort == "low", thermalComfort == "high")
     then
@@ -178,7 +178,7 @@ rule "Comfort Rule 2.11 - Medium Overall Comfort (Low Sound, High Thermal)"
 end
 
 // Rule 2.12: If the property has medium sound comfort or medium thermal comfort, then the property will have medium overall comfort.
-rule "Comfort Rule 2.12 - Medium Overall Comfort"
+rule "Comfort Rule 2.12 - Medium Overall Comfort ; Sound and thermal comfort are 'Medium' level"
     when
         $property : Property(soundComfort == "medium" || thermalComfort == "medium")
     then
@@ -187,7 +187,7 @@ rule "Comfort Rule 2.12 - Medium Overall Comfort"
 end
 
 // Rule 3.1: If the property has an elevator and ramps, then the property is classified as having high accessibility.
-rule "Accessibility Rule 3.1 - High Accessibility"
+rule "Accessibility Rule 3.1 - High Accessibility ; Has elevator and ramps"
     when
         $property : Property(elevator == "present", ramps == "present")
     then
@@ -196,7 +196,7 @@ rule "Accessibility Rule 3.1 - High Accessibility"
 end
 
 // Rule 3.2: If the property does not have an elevator and ramps, then the property is classified as having low accessibility.
-rule "Accessibility Rule 3.2 - Low Accessibility"
+rule "Accessibility Rule 3.2 - Low Accessibility ; Doesn't have elevator nor ramps"
     when
         $property : Property(elevator == "absent", ramps == "absent")
     then
@@ -205,7 +205,7 @@ rule "Accessibility Rule 3.2 - Low Accessibility"
 end
 
 // Rule 3.3: If the property has either an elevator or ramps, but not both, then the property is classified as having medium accessibility.
-rule "Accessibility Rule 3.3 - Medium Accessibility"
+rule "Accessibility Rule 3.3 - Medium Accessibility ; Has either elevator or ramps"
     when
         $property : Property(
             (elevator == "present" && ramps == "absent") ||
@@ -217,7 +217,7 @@ rule "Accessibility Rule 3.3 - Medium Accessibility"
 end
 
 // Rule 4.1: If the property has either a swimming pool or a garden, but not both, then the property is classified as having medium amenities.
-rule "Amenities Rule 4.1 - Medium Amenities"
+rule "Amenities Rule 4.1 - Medium Amenities ; Has either swimming pool or garden"
     when
         $property : Property(
             (swimmingPool == "present" && garden == "absent") ||
@@ -229,7 +229,7 @@ rule "Amenities Rule 4.1 - Medium Amenities"
 end
 
 // Rule 4.2: If the property has both a swimming pool and a garden, then the property is classified as having high amenities.
-rule "Amenities Rule 4.2 - High Amenities"
+rule "Amenities Rule 4.2 - High Amenities ; Has swimming pool and garden"
     when
         $property : Property(swimmingPool == "present", garden == "present")
     then
@@ -238,7 +238,7 @@ rule "Amenities Rule 4.2 - High Amenities"
 end
 
 // Rule 4.3: If the property has neither a swimming pool nor a garden, then the property is classified as having low amenities.
-rule "Amenities Rule 4.3 - Low Amenities"
+rule "Amenities Rule 4.3 - Low Amenities ; Doesn't have swimming pool nor garden"
     when
         $property : Property(swimmingPool == "absent", garden == "absent")
     then
@@ -247,7 +247,7 @@ rule "Amenities Rule 4.3 - Low Amenities"
 end
 
 // Rule 4.4: If the property is new or has low amenities, then it is classified as requiring low maintenance.
-rule "Maintenance Rule 4.4 - Low Maintenance"
+rule "Maintenance Rule 4.4 - Low Maintenance ; 'Low' level of Amenities and Property condition is 'New'"
     when
         $property : Property(propertyCondition == "new" || amenities == "low")
     then
@@ -256,7 +256,7 @@ rule "Maintenance Rule 4.4 - Low Maintenance"
 end
 
 // Rule 4.5: If the property is not new and has medium amenities, then it is classified as requiring medium maintenance.
-rule "Maintenance Rule 4.5 - Medium Maintenance"
+rule "Maintenance Rule 4.5 - Medium Maintenance ; 'Medium' level of Amenities and Property condition is 'New'"
     when
         $property : Property(propertyCondition != "new", amenities == "medium")
     then
@@ -265,7 +265,7 @@ rule "Maintenance Rule 4.5 - Medium Maintenance"
 end
 
 // Rule 4.6: If the property is not new and has high amenities, then it is classified as requiring high maintenance.
-rule "Maintenance Rule 4.6 - High Maintenance"
+rule "Maintenance Rule 4.6 - High Maintenance ; 'High' level of Amenities and Property condition is 'New'"
     when
         $property : Property(propertyCondition != "new", amenities == "high")
     then
@@ -274,7 +274,7 @@ rule "Maintenance Rule 4.6 - High Maintenance"
 end
 
 // Rule 5.1: If the property has an energy rating of A++ or A+ or A, then the property is classified as having high energy efficiency.
-rule "Energy_Efficiency Rule 5.1 - High Energy Efficiency"
+rule "Energy_Efficiency Rule 5.1 - High Energy Efficiency ; Property's energy rating is either 'A++', 'A+' or 'A'"
     when
         $property : Property(
             energyRating.toLowerCase() == "a_plus_plus" ||
@@ -287,7 +287,7 @@ rule "Energy_Efficiency Rule 5.1 - High Energy Efficiency"
 end
 
 // Rule 5.2: If the property has an energy rating of B or C, then the property is classified as having medium energy efficiency.
-rule "Energy_Efficiency Rule 5.2 - Medium Energy Efficiency"
+rule "Energy_Efficiency Rule 5.2 - Medium Energy Efficiency ; Property's energy rating is either 'B' or 'C'"
     when
         $property : Property(energyRating.toLowerCase() == "b" || energyRating.toLowerCase() == "c")
     then
@@ -296,7 +296,7 @@ rule "Energy_Efficiency Rule 5.2 - Medium Energy Efficiency"
 end
 
 // Rule 5.3: If the property has an energy rating of D, E, or F, then the property is classified as having low energy efficiency.
-rule "Energy_Efficiency Rule 5.3 - Low Energy Efficiency"
+rule "Energy_Efficiency Rule 5.3 - Low Energy Efficiency ; Property's energy rating is either 'D', 'E' or 'F'"
     when
         $property : Property(energyRating.toLowerCase() == "d" || energyRating.toLowerCase() == "e" || energyRating.toLowerCase() == "f")
     then
@@ -305,7 +305,7 @@ rule "Energy_Efficiency Rule 5.3 - Low Energy Efficiency"
 end
 
 // Rule 6.1: If the property is located near schools, then it is classified as having the service "nearby schools".
-rule "Services Rule 6.1 - Nearby Schools"
+rule "Services Rule 6.1 - Nearby Schools ; Property has a school nearby"
 when
     $location : Location(nearbySchools == "present")
     $property : Property(location == $location, services not contains "nearby schools")
@@ -316,7 +316,7 @@ end
 
 
 // Rule 6.2: If the property is located near public transport, then it is classified as having the service "nearby public transport".
-rule "Services Rule 6.2 - Nearby Public Transport"
+rule "Services Rule 6.2 - Nearby Public Transport ; Property has public transports nearby"
     when
         $location : Location(location: nearbyPublicTransport == "present")
         $property : Property(location == $location, services not contains "nearby public transport")
@@ -326,7 +326,7 @@ rule "Services Rule 6.2 - Nearby Public Transport"
 end
 
 // Rule 6.3: If the property is located near hospitals, then it is classified as having the service "nearby hospitals".
-rule "Services Rule 6.3 - Nearby Hospitals"
+rule "Services Rule 6.3 - Nearby Hospitals ; Property has an hospital nearby"
     when
         $location : Location(nearbyHospitals == "present")
         $property : Property(location == $location, services not contains "nearby hospitals")
@@ -336,7 +336,7 @@ rule "Services Rule 6.3 - Nearby Hospitals"
 end
 
 // Rule 6.4: If the property is located near supermarkets, then it is classified as having the service "nearby supermarkets".
-rule "Services Rule 6.4 - Nearby Supermarkets"
+rule "Services Rule 6.4 - Nearby Supermarkets ; Property has supermarkets nearby"
     when
         $location : Location(nearbySupermarkets == "present")
         $property : Property(location == $location, services not contains "nearby supermarkets")
@@ -346,7 +346,7 @@ rule "Services Rule 6.4 - Nearby Supermarkets"
 end
 
 // Rule 6.5: If the property is located near leisure areas, then it is classified as having the service "nearby leisure areas".
-rule "Services Rule 6.5 - Nearby Leisure Areas"
+rule "Services Rule 6.5 - Nearby Leisure Areas ; Property has leisure areas nearby"
     when
         $location : Location(nearbyLeisureAreas == "present")
         $property : Property(location == $location, services not contains "nearby leisure areas")
@@ -356,7 +356,7 @@ rule "Services Rule 6.5 - Nearby Leisure Areas"
 end
 
 // Rule 6.7: If a property has four or more nearby services, then it is classified as having a high service level.
-rule "Services Rule 6.7 - High Service Level"
+rule "Services Rule 6.7 - High Service Level ; Property's service level is 'High' because it has 5 or more services nearby"
     when
         $property : Property(numberOfServices > 4)
     then
@@ -365,7 +365,7 @@ rule "Services Rule 6.7 - High Service Level"
 end
 
 // Rule 6.8: If a property has two or three nearby services, then it is classified as having a medium service level.
-rule "Services Rule 6.8 - Medium Service Level"
+rule "Services Rule 6.8 - Medium Service Level ; Property's service level is 'Medium' because it has between 2 and 4 services nearby"
     when
         $property : Property(numberOfServices >= 2 && numberOfServices <= 4)
     then
@@ -374,7 +374,7 @@ rule "Services Rule 6.8 - Medium Service Level"
 end
 
 // Rule 6.9: If a property has less than two nearby services, then it is classified as having a low service level.
-rule "Services Rule 6.9 - Low Service Level"
+rule "Services Rule 6.9 - Low Service Level ; Property's service level is 'Low' because it has less than 2 services nearby"
     when
         $property : Property(numberOfServices < 2)
     then
@@ -383,7 +383,7 @@ rule "Services Rule 6.9 - Low Service Level"
 end
 
 // Rule 7.1: If the property has optical fiber and smart appliances, then the property is classified as having high connectivity.
-rule "Connectivity Rule 7.1 - High Connectivity"
+rule "Connectivity Rule 7.1 - High Connectivity ; Connectivity level is 'High' because it has optical fiber and smart appliances"
     when
         $property : Property(opticalFiber == "present", smartAppliances == "present")
     then
@@ -392,7 +392,7 @@ rule "Connectivity Rule 7.1 - High Connectivity"
 end
 
 // Rule 7.2: If the property has optical fiber and no smart appliances, then the property is classified as having medium connectivity.
-rule "Connectivity Rule 7.2 - Medium Connectivity"
+rule "Connectivity Rule 7.2 - Medium Connectivity ; Connectivity level is 'Medium' because it has optical fiber but not smart appliances"
     when
         $property : Property(opticalFiber == "present", smartAppliances == "absent")
     then
@@ -401,7 +401,7 @@ rule "Connectivity Rule 7.2 - Medium Connectivity"
 end
 
 // Rule 7.3: If the property does not have optical fiber but has smart appliances, then the property is classified as having medium connectivity.
-rule "Connectivity Rule 7.3 - Medium Connectivity"
+rule "Connectivity Rule 7.3 - Medium Connectivity ; Connectivity level is 'Medium' because it has smart appliances but not optical fiber"
     when
         $property : Property(opticalFiber == "absent", smartAppliances == "present")
     then
@@ -410,7 +410,7 @@ rule "Connectivity Rule 7.3 - Medium Connectivity"
 end
 
 // Rule 7.4: If the property does not have optical fiber or smart appliances, then the property is classified as having low connectivity.
-rule "Connectivity Rule 7.4 - Low Connectivity"
+rule "Connectivity Rule 7.4 - Low Connectivity ; Connectivity level is 'Low' because it doesn't have neither optical fiber nor smart appliances"
     when
         $property : Property(opticalFiber == "absent", smartAppliances == "absent")
     then
@@ -419,7 +419,7 @@ rule "Connectivity Rule 7.4 - Low Connectivity"
 end
 
 // Rule 8.1: If the property is located near a forest or beach, then it is classified as having high view quality.
-rule "ViewQuality Rule 8.1 - High View Quality"
+rule "View_Quality Rule 8.1 - High View Quality ; View quality is 'High' because is near a forest or a beach"
     when
         $location : Location(forest == "present" || beach == "present")
         $property : Property(location == $location)
@@ -429,7 +429,7 @@ rule "ViewQuality Rule 8.1 - High View Quality"
 end
 
 // Rule 8.2: If the property is not near a forest or beach, then it is classified as having low view quality.
-rule "ViewQuality Rule 8.2 - Low View Quality"
+rule "View_Quality Rule 8.2 - Low View Quality ; View quality is 'Low' because isn't near a forest or a beach"
     when
         $location : Location(forest == "absent", beach == "absent")
         $property : Property(location == $location)
@@ -439,7 +439,7 @@ rule "ViewQuality Rule 8.2 - Low View Quality"
 end
 
 // Rule 8.3: If the property has high view quality and is a residence, it is classified as high view quality.
-rule "ViewQuality Rule 8.3 - High View Quality for Residence"
+rule "View_Quality Rule 8.3 - High View Quality for Residence ; View quality level is 'High' because view quality is 'High' and is a residence"
     when
         $property : Property(viewQuality == "high", propertyType == "residence")
     then
@@ -448,7 +448,7 @@ rule "ViewQuality Rule 8.3 - High View Quality for Residence"
 end
 
 // Rule 8.4: If the property has low view quality and is a residence, it is classified as medium view quality.
-rule "ViewQuality Rule 8.4 - Medium View Quality for Residence"
+rule "View_Quality Rule 8.4 - Medium View Quality for Residence ; View quality level is 'Medium' because view quality is 'Low' and is a residence"
     when
         $property : Property(viewQuality == "low", propertyType == "residence")
     then
@@ -457,7 +457,7 @@ rule "ViewQuality Rule 8.4 - Medium View Quality for Residence"
 end
 
 // Rule 8.5: If the property has low view quality and is an apartment, it is classified as low view quality.
-rule "ViewQuality Rule 8.5 - Low View Quality for Apartment"
+rule "View_Quality Rule 8.5 - Low View Quality for Apartment ; View quality level is 'Low' because view quality is 'Low' and is an apartment"
     when
         $property : Property(viewQuality == "low", propertyType == "apartment")
     then
@@ -466,7 +466,7 @@ rule "ViewQuality Rule 8.5 - Low View Quality for Apartment"
 end
 
 // Rule 8.6: If the property has high view quality and is on the 4th floor or higher, it is classified as high view quality.
-rule "ViewQuality Rule 8.6 - High View Quality for High Floor"
+rule "View_Quality Rule 8.6 - High View Quality for High Floor ; View quality level is 'High' because view quality is 'High' and is in the 4th floor or higher"
     when
         $property : Property(viewQuality == "high", floorLevel >= 4)
     then
@@ -475,7 +475,7 @@ rule "ViewQuality Rule 8.6 - High View Quality for High Floor"
 end
 
 // Rule 8.7: If the property has high view quality and is on the 2nd or 3rd floor, it is classified as medium view quality.
-rule "ViewQuality Rule 8.7 - Medium View Quality for Mid Floor"
+rule "View_Quality Rule 8.7 - Medium View Quality for Mid Floor ; View quality level is 'Medium' because view quality is 'High' and is between the 2nd and 4th floor"
     when
         $property : Property(viewQuality == "high", floorLevel >= 2 && floorLevel < 4)
     then
@@ -484,7 +484,7 @@ rule "ViewQuality Rule 8.7 - Medium View Quality for Mid Floor"
 end
 
 // Rule 8.8: If the property has high view quality and is on the 1st floor, it is classified as low view quality.
-rule "ViewQuality Rule 8.8 - Low View Quality for Low Floor"
+rule "View_Quality Rule 8.8 - Low View Quality for Low Floor ; View quality level is 'Low' because view quality is 'High', but is in the 2nd floor or lower"
     when
         $property : Property(viewQuality == "high", floorLevel < 2)
     then
@@ -493,7 +493,7 @@ rule "ViewQuality Rule 8.8 - Low View Quality for Low Floor"
 end
 
 // Rule 9.1: If area per room is greater than 30, classify as high spaciousness
-rule "Spaciousness Rule 9.1 - High"
+rule "Spaciousness Rule 9.1 - High ; Spaciousness level is 'High' because has an area per room higher than 30m2"
 when
     $property : Property(areaPerRoom > 30)
 then
@@ -502,7 +502,7 @@ then
 end
 
 // Rule 9.2: If area per room is between 20 and 30, classify as medium spaciousness
-rule "Spaciousness Rule 9.2 - Medium"
+rule "Spaciousness Rule 9.2 - Medium ; Spaciousness level is 'Medium' because has an area per room between 20m2 and 30m2"
 when
     $property : Property(areaPerRoom > 20 && areaPerRoom <= 30)
 then
@@ -511,7 +511,7 @@ then
 end
 
 // Rule 9.3: If area per room is 20 or less, classify as low spaciousness
-rule "Spaciousness Rule 9.3 - Low"
+rule "Spaciousness Rule 9.3 - Low m2 ; Spaciousness level is 'Low' because has an area per room lower than 20m2"
 when
     $property : Property(areaPerRoom <= 20)
 then
@@ -520,7 +520,7 @@ then
 end
 
 // Rule 10.1: If the sun orientation is south and east, classify as high sun exposure
-rule "SunExposure Rule 10.1 - High"
+rule "Sun_Exposure Rule 10.1 - High ; Sun exposure level is 'High' because the property's sun orientation is either south or east"
 when
     $property : Property(sunOrientation == "south" || sunOrientation == "east")
 then
@@ -528,18 +528,8 @@ then
     update($property);
 end
 
-// Rule 10.2: If the sun orientation is either south or east, but not both, classify as medium sun exposure
-rule "SunExposure Rule 10.2 - Medium"
-when
-    $property : Property((sunOrientation == "south" && sunOrientation != "east") ||
-                         (sunOrientation == "east" && sunOrientation != "south"))
-then
-    $property.setSunExposure("medium");
-    update($property);
-end
-
 // Rule 10.3: If not classified as high or medium sun exposure, classify as low sun exposure
-rule "SunExposure Rule 10.3 - Low"
+rule "Sun_Exposure Rule 10.3 - Low ; Sun exposure level is 'Low' because the property's sun orientation is either north or west"
 when
     $property : Property(sunExposure == null || sunExposure == "")
 then
@@ -548,7 +538,7 @@ then
 end
 
 // Rule 11.1: If public parking availability is low, classify property as low public parking
-rule "Parking Rule 11.1 - Low Public Parking"
+rule "Parking Rule 11.1 - Low Public Parking ; Public parking level is 'Low' because there's not many parking spots nearby"
 when
     $location : Location(parking == "low")
     $property : Property(location == $location)
@@ -558,7 +548,7 @@ then
 end
 
 // Rule 11.2: If public parking availability is medium, classify property as medium public parking
-rule "Parking Rule 11.2 - Medium Public Parking"
+rule "Parking Rule 11.2 - Medium Public Parking ; Public parking level is 'Medium' because there's a decent amount of parking spots nearby"
 when
     $location : Location(parking == "medium")
     $property : Property(location == $location)
@@ -568,7 +558,7 @@ then
 end
 
 // Rule 11.3: If public parking availability is high, classify property as high public parking
-rule "Parking Rule 11.3 - High Public Parking"
+rule "Parking Rule 11.3 - High Public Parking ; Public parking level is 'Low' because there's alot of parking spots nearby"
 when
     $location : Location(parking == "high")
     $property : Property(location == $location)
@@ -578,7 +568,7 @@ then
 end
 
 // Rule 11.4: If the property has a garage and public parking is high or medium, classify as high overall parking
-rule "Parking Rule 11.4 - High Overall Parking"
+rule "Parking Rule 11.4 - High Overall Parking ; Overall parking level is 'High' because there's parking spots nearby and has a garage"
 when
     $property : Property(garage == "present", (publicParking == "high" || publicParking == "medium"))
 then
@@ -587,7 +577,7 @@ then
 end
 
 // Rule 11.5: If the property does not have a garage but public parking is high or medium, classify as medium overall parking
-rule "Parking Rule 11.5 - Medium Overall Parking"
+rule "Parking Rule 11.5 - Medium Overall Parking ; Overall parking level is 'Medium' because there's parking spots nearby, but hasn't a garage"
 when
     $property : Property(garage == "absent", (publicParking == "high" || publicParking == "medium"))
 then
@@ -596,7 +586,7 @@ then
 end
 
 // Rule 11.6: If the property does not have a garage and public parking is low, classify as low overall parking
-rule "Parking Rule 11.6 - Low Overall Parking"
+rule "Parking Rule 11.6 - Low Overall Parking ; Overall parking level is 'Low' because there's not many parking spots nearby and doesn't have a garage"
 when
     $property : Property(garage == "absent", publicParking == "low")
 then
@@ -605,7 +595,7 @@ then
 end
 
 // Rule 12.1: If the property was constructed after 2020, classify as high state of condition
-rule "BuildState Rule 12.1 - High"
+rule "State Rule 12.1 - High ; Build state is 'High' because the property was built after 2020"
 when
     $property : Property(yearConstruction > 2020)
 then
@@ -614,7 +604,7 @@ then
 end
 
 // Rule 12.2: If the property was constructed between 1990 and 2020 (inclusive), classify as medium state of condition
-rule "BuildState Rule 12.2 - Medium"
+rule "State Rule 12.2 - Medium ; Build state is 'Medium' because the property was built between 1990 and 2020"
 when
     $property : Property(yearConstruction >= 1990 && yearConstruction <= 2020)
 then
@@ -623,7 +613,7 @@ then
 end
 
 // Rule 12.3: If the property was constructed before 1990, classify as low state of condition
-rule "BuildState Rule 12.3 - Low"
+rule "State Rule 12.3 - Low ; Build state is 'Low' because the property was built before 1990"
 when
     $property : Property(yearConstruction < 1990)
 then
@@ -632,7 +622,7 @@ then
 end
 
 // Rule 13.1: If the property is located in an area where property values have increased by more than 50% in the last five years, classify as high potential for appreciation
-rule "PotentialAppreciation Rule 13.1 - High Potential"
+rule "Potential_Appreciation Rule 13.1 - High Potential ; Property's potential appreciation is 'High' because it's value as increased by more than 50% in the last 5 years"
 when
     $location : Location(last5YearsIncreased > 50)
     $property : Property(location == $location)
@@ -642,7 +632,7 @@ then
 end
 
 // Rule 13.2: If the property is located in an area where property values have increased by between 20% and 50% in the last five years, classify as medium potential for appreciation
-rule "PotentialAppreciation Rule 13.2 - Medium Potential"
+rule "Potential_Appreciation Rule 13.2 - Medium Potential ; Property's potential appreciation is 'Medium' because it's value as increased by 20-50% in the last 5 years"
 when
     $location : Location(last5YearsIncreased >= 20 && last5YearsIncreased <= 50)
     $property : Property(location == $location)
@@ -652,7 +642,7 @@ then
 end
 
 // Rule 13.3: If the property is located in an area where property values have increased by less than 20% in the last five years, classify as low potential for appreciation
-rule "PotentialAppreciation Rule 13.3 - Low Potential"
+rule "Potential_Appreciation Rule 13.3 - Low Potential ; Property's potential appreciation is 'Low' because it's value as increased by less than 220% in the last 5 years"
 when
     $location : Location(last5YearsIncreased < 20)
     $property : Property(location == $location)
@@ -662,7 +652,8 @@ then
 end
 
 // Rule 14.1: If the property has a security value then calculate its score
-rule "SecurityScore Rule 14.1 - Calculate security score"
+rule "SecurityScore Rule 14.1 - Calculate security scores"
+@Weight(0.1)
     no-loop true
 when
     $property : Property(security != null)

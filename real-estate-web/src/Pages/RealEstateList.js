@@ -22,7 +22,11 @@ import {
   Container,
   Box,
   Slider,
+  AccordionSummary,
+  Accordion,
+  AccordionDetails,
 } from "@mui/material";
+import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import Brightness2Icon from "@mui/icons-material/Brightness2";
 import LightMode from "@mui/icons-material/LightMode";
 
@@ -65,7 +69,7 @@ const RealEstateList = () => {
     },
     {
       name: "ENGCIA",
-      path: "http://localhost:8082/api/realestates/getrealestates",
+      path: "http://localhost:8080/api/realestates/getrealestates",
     },
   ];
   const [selectedRoute, setSelectedRoute] = useState(routes[1]);
@@ -73,7 +77,7 @@ const RealEstateList = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const [itemsPerPage] = useState(12);
   const [preferences, setPreferences] = useState({
-    safety: 5,
+    security: 5,
     comfort: 5,
     accessibility: 5,
     maintenance: 5,
@@ -91,7 +95,7 @@ const RealEstateList = () => {
   useEffect(() => {
     setSelectedProperty(null);
     setPreferences({
-      safety: 5,
+      security: 5,
       comfort: 5,
       accessibility: 5,
       maintenance: 5,
@@ -108,14 +112,6 @@ const RealEstateList = () => {
     updateResults();
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [selectedRoute]);
-
-  const handleSliderChange = (feature) => (event, newValue) => {
-    const value = parseInt(newValue);
-    setPreferences((prevPreferences) => ({
-      ...prevPreferences,
-      [feature]: value,
-    }));
-  };
 
   const updateResults = async () => {
     setLoading(true);
@@ -271,7 +267,7 @@ const RealEstateList = () => {
 
   const PropertyPage = ({ realEstate }) => {
     return (
-      <Box container spacing={2} sx={{ padding: 2, width: "100%" }}>
+      <Box container="true" spacing={2} sx={{ padding: 2, width: "100%" }}>
         <Button
           size="small"
           color="primary"
@@ -281,6 +277,24 @@ const RealEstateList = () => {
         >
           Back
         </Button>
+        {Object.keys(preferences).map((preference, i) => (
+          <Accordion key={`accordion-${preference}`}>
+            <AccordionSummary
+              expandIcon={<ExpandMoreIcon />}
+              aria-controls="panel1-content"
+              id={`panel-header-${i}`}
+            >
+              {preference}
+            </AccordionSummary>
+            <AccordionDetails>
+              <ul>
+                {realEstate.justifications[preference].map((justification) => (
+                  <li>{justification.split(";")[1].trim()}</li>
+                ))}
+              </ul>
+            </AccordionDetails>
+          </Accordion>
+        ))}
         <Typography gutterBottom variant="h5" component="div">
           {realEstate.id}
         </Typography>
@@ -336,13 +350,7 @@ const RealEstateList = () => {
         </Toolbar>
       </AppBar>
       <Toolbar />
-      <Container
-        sx={{
-          marginLeft: "200px",
-          marginRight: "200px",
-          maxWidth: "1500px !important",
-        }}
-      >
+      <Container>
         {!selectedProperty ? (
           <HomePage realEstates={realEstates} />
         ) : (
