@@ -9,8 +9,8 @@ fact_triggers_rules(property_crime_rate(_, _), [1.4,1.5,1.6,1.7,1.71,1.8]).
 % Comfort
 fact_triggers_rules(airport(_, _), [2.1,2.2,2.3]).
 fact_triggers_rules(busy_traffic(_, _), [2.1,2.2,2.3]).
-fact_triggers_rules(acoustic_insulation(_, _), [2.4,2.5,2.6,2.7,2.71]).
-fact_triggers_rules(noise_level(_, _), [2.4,2.5,2.6,2.7,2.71]).
+fact_triggers_rules(acoustic_insulation(_, _), [2.4,2.5,2.6,2.7,2.71, 2.72,2.73]).
+fact_triggers_rules(noise_level(_, _), [2.4,2.5,2.6,2.7,2.71, 2.72,2.73]).
 fact_triggers_rules(sound_comfort(_, _), [2.8,2.9,2.10,2.11,2.12]).
 fact_triggers_rules(thermal_comfort(_, _), [2.8,2.9,2.10,2.11,2.12]).
 
@@ -63,7 +63,7 @@ fact_triggers_rules(floor_level(_, _), [8.6,8.7,8.8]).
 fact_triggers_rules(area_per_room(_, _), [9.0,9.1,9.2,9.3]).
 
 % Sun exposure
-fact_triggers_rules(sun_orientation(_, _), [10.1, 10.2]).
+fact_triggers_rules(sun_orientation(_, _), [10.1, 10.2, 10.21, 10.3, 10.4]).
 
 % Score
 fact_triggers_rules(meta_score(_,_), [14.1,14.2,14.3,14.4,14.5,14.6,14.7,14.8,14.9,14.10,14.11,14.12,14.13,14.14]).

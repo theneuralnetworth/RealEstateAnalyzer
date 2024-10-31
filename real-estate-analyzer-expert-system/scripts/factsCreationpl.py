@@ -130,9 +130,9 @@ def generate_prolog_facts(data, output_file_path):
         fact_counter += 1
 
         # Orientação solar
-       
-        prolog_facts.append(f"fact({fact_counter}, sun_orientation({id_imovel}, {sunOrientation})).")
-        fact_counter += 1
+        for orientation in sunOrientation:  # Iterate over each sun orientation
+            prolog_facts.append(f"fact({fact_counter}, sun_orientation({id_imovel}, '{orientation}')).")
+            fact_counter += 1
 
         # Área por quarto
         
@@ -160,10 +160,10 @@ def generate_prolog_facts(data, output_file_path):
     
         prolog_facts.append("")
 
-    # Escrever os factos gerados no arquivo
+    # 
     with open(output_file_path, 'w', encoding='utf-8') as output_file:
         for fact in prolog_facts:
-            output_file.write(fact + '\n')
+           output_file.write(fact + '\n')
 
 # Exemplo de uso
 file_path = '../ImoveisData/finalpropertiesDrools.json'
