@@ -13,5 +13,7 @@ namespace RealEstateAPI.Model
         public List<string> Images { get; set; }
 
         public double TotalScore { get; set; }
+
+        public List<Category> Categories { get; set; }
     }
 }

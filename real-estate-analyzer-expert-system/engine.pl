@@ -10,28 +10,42 @@
 
 %last_fact(1).
 
-%create_initial_fact(ID, F):-
-	%asserta(last_fact(ID)),
-	%assertz(fact(ID,F)),!.
+create_initial_fact(ID, F):-
+	assertz(fact(ID,F)),!.
 
-%create_inital_facts:-
-%	create_initial_fact(1,meta_user_score_security(1)),
-%	create_initial_fact(2,meta_user_score_security(1)),
-%	create_initial_fact(3,meta_user_score_security(1)),
-%	create_initial_fact(4,meta_user_score_security(1)),
-%	create_initial_fact(5,meta_user_score_security(1)),
-%	create_initial_fact(6,meta_user_score_security(1)),
-%	create_initial_fact(7,meta_user_score_security(1)),
-%	create_initial_fact(8,meta_user_score_security(1)),
-%	create_initial_fact(9,meta_user_score_security(1)),
-%	create_initial_fact(10,meta_user_score_security(1)),
-%	create_initial_fact(11,meta_user_score_security(1)),
-%	create_initial_fact(12,meta_user_score_security(1)),
-%	create_initial_fact(13,meta_user_score_security(1)).
+create_initial_facts(Preferences) :-
+	retractall(last_fact(_)),
+	assert(last_fact(0)),
+	forall(
+		get_dict(Key, Preferences, Value),
+		(increment_fact_id(ID), create_initial_fact(ID, preferences(Key, Value)))
+	).
+
+%create_initial_facts:-
+%	assert(last_fact(0)),
+%	increment_fact_id(1), create_initial_fact(1, preferences(security, 1)),
+%	increment_fact_id(2), create_initial_fact(2, preferences(comfort, 2)),
+%	increment_fact_id(3), create_initial_fact(3, preferences(accessibility, 3)),
+%	increment_fact_id(4), create_initial_fact(4, preferences(maintenance, 4)),
+%	increment_fact_id(5), create_initial_fact(5, preferences(energyEfficiency, 5)),
+%	increment_fact_id(6), create_initial_fact(6, preferences(services, 6)),
+%	increment_fact_id(7), create_initial_fact(7, preferences(connectivity, 7)),
+%	increment_fact_id(8), create_initial_fact(8, preferences(viewQuality, 8)),
+%	increment_fact_id(9), create_initial_fact(9, preferences(spaciousness, 9)),
+%	increment_fact_id(10), create_initial_fact(10, preferences(sunExposure, 10)),
+%	increment_fact_id(11), create_initial_fact(11, preferences(parking, 11)),
+%	increment_fact_id(12), create_initial_fact(12, preferences(state, 12)),
+%	increment_fact_id(13), create_initial_fact(13, preferences(potentialAppreciation, 13)).
+
+increment_fact_id(ID) :-
+	last_fact(LastID),
+	ID is LastID + 1,
+	retract(last_fact(LastID)),
+	assert(last_fact(ID)).
 
 % load knowledge base
-load_kb:-
-	%create_inital_facts(),
+load_kb(Preferences):-
+	create_initial_facts(Preferences),
 	consult('Metaknowledge/index.pl'),
 	consult('Rules/index.pl'),
     consult('Facts/index.pl').
@@ -44,6 +58,7 @@ number_of_facts(Total) :-
 % start the inference engine
 start_engine :-
     number_of_facts(Total),
+	retract(last_fact(_)),
 	asserta(last_fact(Total)),
     start_engine_loop(0, Total).
 
@@ -179,12 +194,22 @@ create_fact(F,ID,LFacts):-
 	create_fact(FinalFact,ID,LFacts).
 
 create_fact(F,ID,LFacts):-
+	F=..[V1,V2,V3,Z],
+	Z=..[operation,O,X,L,T],
+	operate(O,X,L,T,Result),
+	FinalFact =..[V1,V2,V3,Result],
+	create_fact(FinalFact,ID,LFacts).
+
+create_fact(F,ID,LFacts):-
 	retract(last_fact(N1)),
 	N is N1+1,
 	asserta(last_fact(N)),
 	flatten_list(LFacts, FlatLFacts), 
 	assertz(justifies(N,ID,FlatLFacts)),
 	assertz(fact(N,F)),!.
+
+operate(multi,X,L,T,Result):-
+	multiplication(X,L,T,Result).
 
 operate(multi,X,L,Result):-
 	multiplication(X,L,Result).
@@ -197,6 +222,9 @@ operate(sum_all,X,L,Result):-
 
 multiplication(X, Y, Result) :-
 	Result is X * Y.
+
+multiplication(X, Y, T, Result) :-
+	Result is X * Y * T.
 
 sum_all(X, _, Result) :-
 	X=..[_,_,_,V],
@@ -247,6 +275,45 @@ how(N) :-
     write('Fact no. '), write(N), write(' -> '), write(F), nl,
     write('was initially known'), nl,
     write('********************************************************'), nl.
+
+how(N, Explanation) :-
+    last_fact(Last),
+    Last < N, !,
+    Explanation = ["This conclusion was not made"].
+
+how(N, Explanation) :-
+    justifies(N, ID, LFacts), !,
+    fact(N, F),
+    format(atom(FactMsg), 'Concluded fact no. ~w -> ~w', [N, F]),
+    format(atom(RuleMsg), 'by rule ~w', [ID]),
+    FactsMsg = "by verifying that:",
+    write_facts_list(LFacts, FactsExplanation),
+    Separator = "********************************************************",
+    explain_list(LFacts, ExplanationFacts),
+    append([FactMsg, RuleMsg, FactsMsg | FactsExplanation], [Separator | ExplanationFacts], Explanation).
+
+how(N, Explanation) :-
+    fact(N, F),
+    format(atom(FactMsg), 'Fact no. ~w -> ~w', [N, F]),
+    InitiallyKnown = "was initially known",
+    Separator = "********************************************************",
+    Explanation = [FactMsg, InitiallyKnown, Separator].
+
+% Helper predicates
+
+write_facts_list([], []).
+
+write_facts_list([Fact | Rest], [Msg | ExplanationRest]) :-
+    format(atom(Msg), ' - ~w', [Fact]),
+    write_facts_list(Rest, ExplanationRest).
+
+explain_list([], []).
+
+explain_list([Fact | Rest], Explanation) :-
+    (   how(Fact, SubExplanation)
+    ->  append(SubExplanation, RestExplanation, Explanation),
+        explain_list(Rest, RestExplanation)
+    ;   Explanation = [] ).
 
 % writes facts in a list
 write_facts([I|R]):-fact(I,F), !,

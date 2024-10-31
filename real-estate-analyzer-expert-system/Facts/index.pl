@@ -1,18 +1,18 @@
 :- dynamic fact/2.
 
-fact(1,meta_user_score_security(1)).
-fact(2,meta_user_score_security(1)).
-fact(3,meta_user_score_security(1)).
-fact(4,meta_user_score_security(1)).
-fact(5,meta_user_score_security(1)).
-fact(6,meta_user_score_security(1)).
-fact(7,meta_user_score_security(1)).
-fact(8,meta_user_score_security(1)).
-fact(9,meta_user_score_security(1)).
-fact(10,meta_user_score_security(1)).
-fact(11,meta_user_score_security(1)).
-fact(12,meta_user_score_security(1)).
-fact(13,meta_user_score_security(1)).
+%fact(1,meta_user_score_security(1)).
+%fact(2,meta_user_score_security(1)).
+%fact(3,meta_user_score_security(1)).
+%fact(4,meta_user_score_security(1)).
+%fact(5,meta_user_score_security(1)).
+%fact(6,meta_user_score_security(1)).
+%fact(7,meta_user_score_security(1)).
+%fact(8,meta_user_score_security(1)).
+%fact(9,meta_user_score_security(1)).
+%fact(10,meta_user_score_security(1)).
+%fact(11,meta_user_score_security(1)).
+%fact(12,meta_user_score_security(1)).
+%fact(13,meta_user_score_security(1)).
 
 fact(14, location_crime_rate('aldoar, foz do douro e nevogilde', low)).
 fact(15, nearby_schools('aldoar, foz do douro e nevogilde', present)).

@@ -24,7 +24,7 @@ namespace RealEstateAPI.Controllers
         [HttpPost("GetRealEstates")]
         public async Task<IActionResult> GetAllRealEstates([FromBody] PreferencesDTO preferences)
         {
-            var jsonContent = JsonConvert.SerializeObject(new { preferences });
+            var jsonContent = JsonConvert.SerializeObject(preferences);
             var content = new StringContent(jsonContent, Encoding.UTF8, "application/json");
 
             try
@@ -78,6 +78,23 @@ namespace RealEstateAPI.Controllers
                                     estate.Images = new List<string>();
                                 }
                                 estate.Images.Add(item.Args[1]);
+                                break;
+                            case "result":
+                                if(estate.Categories == null)
+                                {
+                                    estate.Categories = new List<Category>();
+                                }
+                                var category = new Category(item.Args[1],item.Args[2]);
+                                
+                                var contentHow = new StringContent(JsonConvert.SerializeObject(new { fact = item.ID}), Encoding.UTF8, "application/json");
+                                var responseHow = await _httpClient.PostAsync($"http://prolog:8000/how", contentHow);
+                                if (responseHow.IsSuccessStatusCode)
+                                {
+                                    var resultHow = await responseHow.Content.ReadAsStringAsync();
+                                    var prologResultHow = JsonConvert.DeserializeObject<PrologExplanationResultDTO>(resultHow);
+                                    category.Justifications = prologResultHow.Explanation;
+                                }
+                                estate.Categories.Add(category);
                                 break;
 
                         }

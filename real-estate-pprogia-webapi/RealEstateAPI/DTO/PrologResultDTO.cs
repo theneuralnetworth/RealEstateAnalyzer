@@ -8,7 +8,10 @@ namespace RealEstateAPI.DTO
 
     public class PrologFact
     {
+        public int ID { get; set; }
+
         public string Type { get; set; }
+
         public List<string> Args { get; set; }
     }
 }
