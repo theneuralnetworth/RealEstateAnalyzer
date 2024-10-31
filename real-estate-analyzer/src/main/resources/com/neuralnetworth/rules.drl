@@ -74,6 +74,15 @@ rule "Security Rule 1.7 - Medium Security ; Property has a 'High' level of crime
         update($property);
     end
 
+rule "Security Rule 1.71 - Medium Security ; Property has a 'Medium' level of crime and has a security system"
+
+    when
+        $property : Property(crimeRate == "medium", securitySystem == "present")
+    then
+        $property.setSecurity("medium");
+        update($property);
+    end
+
 
 // Rule 2.1: If the property is located in an area with an airport and busy traffic, then the property will have a high noise level.
 rule "Noise Rule 2.1 - High Noise Level ; Has an airport nearby and is in a location with busy traffic"
@@ -136,6 +145,15 @@ end
 rule "Comfort Rule 2.7 - Medium Sound Comfort ; Has 'Medium' level of both acoustic insulation and noise level"
     when
         $property : Property(acousticInsulation == "medium" || noiseLevel == "medium")
+    then
+        $property.setSoundComfort("medium");
+        update($property);
+end
+
+// Rule 2.71: If the property has medium acoustic insulation or a medium noise level, then the property will have medium sound comfort.
+rule "Comfort Rule 2.71 - Medium Sound Comfort ; Has 'Medium' level of both acoustic insulation and noise level"
+    when
+        $property : Property(acousticInsulation == "low" || noiseLevel == "low")
     then
         $property.setSoundComfort("medium");
         update($property);
@@ -573,6 +591,15 @@ when
     $property : Property(garage == "present", (publicParking == "high" || publicParking == "medium"))
 then
     $property.setOverallParking("high");
+    update($property);
+end
+
+// Rule 11.41: If the property has a garage and public parking is high or medium, classify as high overall parking
+rule "Parking Rule 11.41 - High Overall Parking ; Overall parking level is 'Medium' because there's just some parking spots nearby and has a garage"
+when
+    $property : Property(garage == "present", (publicParking == "low" || publicParking == "medium"))
+then
+    $property.setOverallParking("medium");
     update($property);
 end
 
