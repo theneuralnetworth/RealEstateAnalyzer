@@ -82,13 +82,26 @@ rule 2.6
 
 % Rule 2.7: If the property has medium acoustic insulation or a medium noise level, then the property will have medium sound comfort.
 rule 2.7
-    if [acoustic_insulation(Property, medium) or noise_level(Property, medium)]
+    if [acoustic_insulation(Property, medium) and noise_level(Property, medium)]
     then [create_fact(sound_comfort(Property, medium))].
 
 rule 2.71
 
-     if [acoustic_insulation(Property, low) or noise_level(Property, low)]
+    if [acoustic_insulation(Property, low) and  noise_level(Property, low)]
     then [create_fact(sound_comfort(Property, medium))].
+
+rule 2.72
+
+    if [acoustic_insulation(Property, high) and  noise_level(Property, medium)]
+    then [create_fact(sound_comfort(Property, medium))].
+
+rule 2.73
+    
+    if [acoustic_insulation(Property, low) and  noise_level(Property, medium)]
+    then [create_fact(sound_comfort(Property, medium))].
+
+
+
 
 % Rule 2.8: If the property has high sound comfort and high thermal comfort, then the property will have high overall comfort.
 rule 2.8
@@ -107,8 +120,8 @@ rule 2.10
 
 % Rule 2.11: If the property has low sound comfort and high thermal comfort, then the property will have medium overall comfort.
 rule 2.11
-    if [thermal_comfort(Property, high) and sound_comfort(Property, low)]
-    then [create_fact(result(Property, comfort, medium))].
+  if [thermal_comfort(Property, high) and sound_comfort(Property, low)]
+  then [create_fact(result(Property, comfort, medium))].
 
 % Rule 2.12: If the property has medium sound comfort or medium thermal comfort, then the property will have medium overall comfort.
 rule 2.12
@@ -304,12 +317,20 @@ rule 10.1
     then [create_fact(result(Property, sun_exposure, high))].
 
 rule 10.2
-    if [(sun_orientation(Property, south) and not sun_orientation(Property, east)) or (sun_orientation(Property, east) and not sun_orientation(Property, south))]
+    if [sun_orientation(Property, south) and not sun_orientation(Property, east)]
+    then [create_fact(result(Property, sun_exposure, medium))].
+
+rule 10.21
+    if[sun_orientation(Property, east) and not sun_orientation(Property, south)]
     then [create_fact(result(Property, sun_exposure, medium))].
 
 rule 10.3
-    if [not sun_exposure(Property, high) and not sun_exposure(Property, medium)]
+    if [ sun_orientation(Property, north) and not sun_orientation(Property, south) and not sun_orientation(Property, east)]
     then [create_fact(result(Property, sun_exposure, low))].
+rule 10.4
+   if [ sun_orientation(Property, west) and not sun_orientation(Property, south) and not sun_orientation(Property, east)]
+    then [create_fact(result(Property, sun_exposure, low))].
+  
 
 %%%%%%%%%%% 11.Parking %%%%%%%%%%%
 
@@ -334,7 +355,7 @@ rule 11.4
     then [create_fact(result(Property, parking, high))].
 
 rule 11.41
-    if  [garage(Property, present) and (public_parking(Property, low) or public_parking(Property, medium))]
+    if  [garage(Property, present) and (public_parking(Property, low))]
         then [create_fact(result(Property, parking, medium))].
 
 % Rule 11.5: If the property does not have a garage but the public parking availability is either high or medium, then the property is classified as having medium overall parking.
@@ -449,5 +470,5 @@ rule 14.13
     then [create_fact(score(Property, potential_appreciation, operation(multi,P, 5, P2)))].
 
 rule 14.14
-    if [score(Property,security,_) and score(Property,comfort,_) and score(Property,accessibility,_) and score(Property,maintenance,_) and score(Property,energy_efficiency,_) and score(Property,services,_)  and score(Property,parking,_) and score(Property,state,_) and score(Property,potential_appreciation,_)]
+    if [score(Property,security,_) and score(Property,comfort,_) and score(Property,accessibility,_) and score(Property,maintenance,_) and score(Property,energy_efficiency,_) and score(Property,services,_)  and score(Property,parking,_) and score(Property,state,_)  and score(Property,potential_appreciation,_)  and score(Property,connectivity,_) and score(Property,view_quality,_) and score(Property,spaciousness,_) and score(Property,sun_exposure,_)]
     then [create_fact(final_score(Property, operation(sum_all,score(Property,_,_), _)))].

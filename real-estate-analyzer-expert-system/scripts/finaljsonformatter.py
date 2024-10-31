@@ -179,16 +179,15 @@ for item in data[:40]:
     new_property["opticalFiber"] = random_optical
 
     orientations = ['north', 'south', 'east', 'west']
-    random_orientation = random.choice(orientations)
-    #item["characteristics"].append({
-    #    "label": "sun_orientation",
-    #    "localizedValue": random_orientation
-    #})
-    new_property["sunOrientation"] = random_orientation
+    selected_orientations = random.sample(orientations, 2)
+    #print(selected_orientations)# Select 2 unique random orientations
+    new_property["sunOrientation"] = selected_orientations
+    #print(new_property["sunOrientation"])
 
 
     floor_exists = any(char["label"] == "Andar" for char in item["characteristics"])
     #print(floor_exists)
+    
     
     # If "floor" doesn't exist, apply the logic
     if  floor_exists:
@@ -199,7 +198,7 @@ for item in data[:40]:
         if floor == "rés do chão":
             floor_number = 0
         else:
-            floor_number = floor
+            floor_number = int(floor)
             
     else : 
         
@@ -212,7 +211,7 @@ for item in data[:40]:
         #    "localizedValue": floor_number
         #})
         
-    #print(floor_number)
+    print(floor_number)
     new_property["floorLevel"] = floor_number
 
     random_smart= random.choice(['present', 'absent'])
