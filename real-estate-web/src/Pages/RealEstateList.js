@@ -389,7 +389,7 @@ const RealEstateList = () => {
                 id={`panel-header-${i}`}
               >
                 <Box display='flex' flex={1} alignItems='center'>
-                  <Typography display='flex' flex={1}>{category.name}</Typography>
+                  <Typography display='flex' flex={1}>{category.name.split('_').length > 1 ? category.name.split('_')[0] + ' ' + category.name.split('_')[1] : category.name}</Typography>
                   <Chip label={category.value} variant="outlined" color={category.value === 'low' ? 'error' : category.value === 'medium' ? 'warning' : 'success'}/>
                 </Box>
               </AccordionSummary>
