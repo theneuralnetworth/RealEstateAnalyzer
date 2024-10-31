@@ -1325,7 +1325,7 @@ fact(1277, property_type(18485255, 'apartment')).
 fact(1278, price(18485255, 203000)).
 fact(1279, area(18485255, 38.0)).
 fact(1280, rooms(18485255, 1)).
-fact(1281, energy_rating(18485255, 'a+')).
+fact(1281, energy_rating(18485255, 'a')).
 fact(1282, year_construction(18485255, 2023)).
 fact(1283, elevator(18485255, present)).
 fact(1284, garage(18485255, absent)).
@@ -1381,7 +1381,7 @@ fact(1331, property_type(18489374, 'apartment')).
 fact(1332, price(18489374, 205000)).
 fact(1333, area(18489374, 41.15)).
 fact(1334, rooms(18489374, 1)).
-fact(1335, energy_rating(18489374, 'b-')).
+fact(1335, energy_rating(18489374, 'b')).
 fact(1336, year_construction(18489374, 2024)).
 fact(1337, elevator(18489374, present)).
 fact(1338, garage(18489374, absent)).
