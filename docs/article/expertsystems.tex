@@ -1,0 +1,137 @@
+% This is samplepaper.tex, a sample chapter demonstrating the
+% LLNCS macro package for Springer Computer Science proceedings;
+% Version 2.21 of 2022/01/12
+%
+\documentclass[runningheads]{llncs}
+%
+\usepackage[T1]{fontenc}
+% T1 fonts will be used to generate the final print and online PDFs,
+% so please use T1 fonts in your manuscript whenever possible.
+% Other font encondings may result in incorrect characters.
+%
+\usepackage{graphicx}
+% Used for displaying a sample figure. If possible, figure files should
+% be included in EPS format.
+%
+% If you use the hyperref package, please uncomment the following two lines
+% to display URLs in blue roman font according to Springer's eBook style:
+%\usepackage{color}
+%\renewcommand\UrlFont{\color{blue}\rmfamily}
+%\urlstyle{rm}
+%
+\begin{document}
+%
+\title{An Expert System for Real Estate Analysis}
+%
+%\titlerunning{Abbreviated paper title}
+% If the paper title is too long for the running head, you can set
+% an abbreviated paper title here
+%
+\author{José Coelho\inst{1} \and Luciano Dias\inst{2}
+\and Joana Vaz\inst{2} \and Miguel Rodrigues \inst{3} \and Luís Paula \inst{4}}
+
+\institute{University of Madeira, Funchal, PT \and Instituto Superior de Engenharia do Porto, Porto, PT \and Instituto Superior Politécnico de GAYA, VN Gaia, PT \and Universidade do Minho, Braga, PT}
+%
+\maketitle              % typeset the header of the contribution
+%
+\begin{abstract}
+The abstract should briefly summarize the contents of the paper in
+150--250 words.
+
+\keywords{Expert Systems  \and Real Estate \and Artificial Intelligence.}
+\end{abstract}
+%
+%
+%
+\section{Introduction}
+
+Expert systems are computer applications designed to mimic the human expertise in its area of application. This is achieved by, among other things, applying logical inference and rule-based reasoning over the domain knowledge.
+
+Created in the 70s and 80s, it was regarded by many as the first truly successful Artificial Intelligence application. Three crucial components are required to make these systems a success: an inference engine, a knowledge base and an expert willing to encode their knowledge into these systems.
+These systems brought light to the importance of being able to represent t well structured domain knowledge and data. ultimately influencing the rise of subjects of study such as \textit{Machine Learning} and neural networks where data and its correctness are considered a crucial component to these newer systems.
+
+Expert systems applications have been divided into 10 categories\cite{hayesroth}. Interpretation, Prediction, Diagnosis, Design, Planning, Monitoring, Debugging, Repair, Instruction and Control. In this article we describe an Interpretation expert system, designed to make sense of domain knowledge by categorizing or labeling input according to predefined rules. This system interprets various real estate property attributes - like security, accessibility and energy efficiency - to determine its suitability for potential buyers.
+
+\section{State of the Art}
+
+\subsection{Property evaluation techniques}
+
+
+
+\subsection{Automated Valuation Models (AVMs)}
+
+On of the most common systems for evaluating real estate properties market value is Automated Valuation Models - or AVMs for short. These models leverage mathematical modelling techniques, in an automated manner, in order to generate property valuations quickly and, ideally, accurately. Such techniques include data sources, statistical models and machine learning algorithms.
+
+AVMs analyze a variety of data in order to produce their estimation, including:
+\begin{itemize}
+    \item Historical sales data - previous prices of comparable properties
+    \item Market trends - macroeconomic data, such as interest rates and housing market trends
+    \item Asking prices - current asking prices in the property's market
+    \item Property attributes - the attributes of the property being evaluated
+    \item Transactional data - house market transactions
+\end{itemize}
+
+The expert system described in this article uses both the Property attributes and the asking price to compare and evaluate properties.
+
+\subsubsection{Disadvantages}
+\paragraph{}
+A big disadvantage of this system is that, usually, it does not take into account the actual physical condition of the property. Instead an average condition is assumed which may not always be the case.
+
+Some of these models use transactional data, this can sometimes reveal problematic as the recency of this data might not be the most appropriate and might make the system overlook the current state of the market.
+
+\subsection{Machine Learning and Data-Driven models}
+
+Machine learning and other data driven models have been gaining traction among applications that need to learn from data. 
+Given the amount of data that this domain, ie. real estate valuation, requires it's only natural that this too is a perfect use case for machine learning applications.
+
+Some authors, for example, have used machine learning to develop housing price prediction models, as is the case of Park and Bae\cite{bpark} and Baldominos et al.\cite{mlinrealestate}. These applications focus specifically on predicting property prices taking into account, among other things, property attributes. The expert system in this article focuses on determining the suitability of a property to a client, using this same data.
+
+Oh and Tan\cite{reinforcement} demonstrated that it was possible to use reinforcement learning - an interdisciplinary area of Machine Learning - to develop agents that could aid users in identifying properties they might be interested in, making better recommendations that other systems that propose to do the same.
+
+\subsection{Expert Systems in Real Estate}
+
+There is effectively a lot of prior work on using Expert Systems for many different applications in the Real Estate domain. Hossein et al.\cite{hossein} designed and implemented a fuzzy Expert System to provide recommendations of real estate properties. This cover exactly the same use case that this paper's expert system is being applied to. 
+
+The authors of the previously mention paper have concluded, with user testing and surveys, that compared to conventional real estate systems, the expert system they developed was much less time consuming for users. They were also able to determine that this expert system could in fact be a replacement for a human expert in some situations.
+
+\subsection{Limitations in Current Systems}
+
+As discussed previously there has been an abundance of prior work done, and there are a lot of applications, mostly web applicatios, that cater to such use cases. This comes to no surprise given that real estate is a significant sector of the global economy which moves a lot of capital. As an example, according the Banco de Portugal (Bank of Portugal)\cite{bancoportugal} in september 2024 the total amount of bank loans extended to individuals for home purchases rose to over two thosand and seven hundred million euros. This shows a clear incentive for private initiatives to develop such systems that can help users find the best deals they can.
+
+Though the systems currently in place for real estate recommendations are powerful, they remain static through time and haven't seen real implementation of Artificial Intelligence applications to help users.
+
+Browsing through three of the top real estate portals in Portugal - idealista.pt, imovirtual.pt and supercasa.pt - we can quickly confirm that there is still no AI features. The user journey takes the classic form of the user initiating the interaction and going through all the steps of searching, filtering and picking the properties that are most adequate to what they are looking for. 
+
+Our expert system hopes to change that and influence future work on this domain. 
+
+\section{Methodology}
+\subsection{System Architecture}
+
+\subsection{Data Collection and Processing}
+\subsection{Knowledge Base and Rule Definition}
+\subsection{Inference Engines}
+\subsubsection{Prolog}
+\paragraph{explain how prolog engine works}
+\subsubsection{Drools}
+\paragraph{explain how drools engine works}
+\subsection{User Personalization and Decision Making}
+\subsection{Testing and Validation}
+
+\section{Results}
+
+\paragraph{Present key findings from running the expert system, such as the quality or accuracy of property recommendations, the relevance of results to user preferences, and any notable property selections.
+Include quantitative data where possible: metrics like recommendation accuracy, user satisfaction scores, or comparison with existing methods can be impactful. You might also include performance metrics (e.g., response times, processing speeds) to illustrate the system’s efficiency.}
+
+%
+% ---- Bibliography ----
+%
+% BibTeX users should specify bibliography style 'splncs04'.
+% References will then be sorted and formatted in the correct style.
+%
+% \bibliographystyle{splncs04}
+% \bibliography{mybibliography}
+%
+\bibliographystyle{plain}
+\bibliography{references}
+
+\end{document}
