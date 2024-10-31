@@ -2,21 +2,21 @@
 
 % Security
 fact_triggers_rules(location_crime_rate(_, _), [1.1,1.2,1.3]).
-fact_triggers_rules(location_property(_, _), [1.1,1.2,1.3,6.1,6.2,6.3,6.4,6.5,11.1,11.2,11.3,13.1,13.2,13.3]).
-fact_triggers_rules(security_system(_, _), [1.4,1.5,1.6,1.7,1.8]).
-fact_triggers_rules(property_crime_rate(_, _), [1.4,1.5,1.6,1.7,1.8]).
+fact_triggers_rules(location_property(_, _), [1.1,1.2,1.3,2.1,2.2,2.3,6.1,6.2,6.3,6.4,6.5,8.1,8.2,11.1,11.2,11.3,13.1,13.2,13.3]).
+fact_triggers_rules(security_system(_, _), [1.4,1.5,1.6,1.7,1.71,1.8]).
+fact_triggers_rules(property_crime_rate(_, _), [1.4,1.5,1.6,1.7,1.71,1.8]).
 
 % Comfort
 fact_triggers_rules(airport(_, _), [2.1,2.2,2.3]).
 fact_triggers_rules(busy_traffic(_, _), [2.1,2.2,2.3]).
-fact_triggers_rules(acoustic_insulation(_, _), [2.4,2.5,2.6,2.7]).
-fact_triggers_rules(noise_level(_, _), [2.4,2.5,2.6,2.7]).
+fact_triggers_rules(acoustic_insulation(_, _), [2.4,2.5,2.6,2.7,2.71]).
+fact_triggers_rules(noise_level(_, _), [2.4,2.5,2.6,2.7,2.71]).
 fact_triggers_rules(sound_comfort(_, _), [2.8,2.9,2.10,2.11,2.12]).
 fact_triggers_rules(thermal_comfort(_, _), [2.8,2.9,2.10,2.11,2.12]).
 
 % Accessibility
-fact_triggers_rules(elevator(_, _), [3.1,3.2,3.3]).
-fact_triggers_rules(ramps(_, _), [3.1,3.2,3.3]).
+fact_triggers_rules(elevator(_, _), [3.1,3.2,3.4]).
+fact_triggers_rules(ramps(_, _), [3.1,3.2,3.3,3.4]).
 
 % Maintenance
 fact_triggers_rules(swimming_pool(_, _), [4.1,4.2,4.3]).
@@ -38,8 +38,8 @@ fact_triggers_rules(number_services(_,_), [6.7,6.8,6.9]).
 
 % Parking
 fact_triggers_rules(parking(_, _), [11.1,11.2,11.3]).
-fact_triggers_rules(garage(_, _), [11.4,11.5,11.6]).
-fact_triggers_rules(public_parking(_, _), [11.4,11.5,11.6]).
+fact_triggers_rules(garage(_, _), [11.4,11.41,11.5,11.6]).
+fact_triggers_rules(public_parking(_, _), [11.4,11.41,11.5,11.6]).
 
 % Construction Year
 fact_triggers_rules(year_construction(_, _), [12.1,12.2,12.3]).
@@ -66,30 +66,31 @@ fact_triggers_rules(area_per_room(_, _), [9.0,9.1,9.2,9.3]).
 fact_triggers_rules(sun_orientation(_, _), [10.1, 10.2]).
 
 % Score
-fact_triggers_rules(meta_score(_,_), [14.1,14.2,14.3,14.4,14.5,14.6,14.7,14.8,14.9,14.10,14.11,14.12,14.13]).
-fact_triggers_rules(result(_,security,_), [14.1]).
+fact_triggers_rules(meta_score(_,_), [14.1,14.2,14.3,14.4,14.5,14.6,14.7,14.8,14.9,14.10,14.11,14.12,14.13,14.14]).
+fact_triggers_rules(result(_,security,_), [14.1,14.14]).
 fact_triggers_rules(preferences(security,_), [14.1]).
-fact_triggers_rules(result(_,comfort,_), [14.2]).
+fact_triggers_rules(result(_,comfort,_), [14.2,14.14]).
 fact_triggers_rules(preferences(comfort,_), [14.2]).
-fact_triggers_rules(result(_,accessibility,_), [14.3]).
+fact_triggers_rules(result(_,accessibility,_), [14.3,14.14]).
 fact_triggers_rules(preferences(accessibility,_), [14.3]).
-fact_triggers_rules(result(_,maintenance,_), [14.4]).
+fact_triggers_rules(result(_,maintenance,_), [14.4,14.14]).
 fact_triggers_rules(preferences(maintenance,_), [14.4]).
-fact_triggers_rules(result(_,energy_efficiency,_), [14.5]).
+fact_triggers_rules(result(_,energy_efficiency,_), [14.5,14.14]).
 fact_triggers_rules(preferences(energy_efficiency,_), [14.5]).
-fact_triggers_rules(result(_,services,_), [14.6]).
+fact_triggers_rules(result(_,services,_), [14.6,14.14]).
 fact_triggers_rules(preferences(services,_), [14.6]).
-fact_triggers_rules(result(_,connectivity,_), [14.7]).
+fact_triggers_rules(result(_,connectivity,_), [14.7,14.14]).
 fact_triggers_rules(preferences(connectivity,_), [14.7]).
-fact_triggers_rules(result(_,view_quality,_), [14.8]).
+fact_triggers_rules(result(_,view_quality,_), [14.8,14.14]).
 fact_triggers_rules(preferences(view_quality,_), [14.8]).
-fact_triggers_rules(result(_,spaciousness,_), [14.9]).
+fact_triggers_rules(result(_,spaciousness,_), [14.9,14.14]).
 fact_triggers_rules(preferences(spaciousness,_), [14.9]).
-fact_triggers_rules(result(_,sun_exposure,_), [14.10]).
+fact_triggers_rules(result(_,sun_exposure,_), [14.10,14.14]).
 fact_triggers_rules(preferences(sun_exposure,_), [14.10]).
-fact_triggers_rules(result(_,parking,_), [14.11]).
+fact_triggers_rules(result(_,parking,_), [14.11,14.14]).
 fact_triggers_rules(preferences(parking,_), [14.11]).
-fact_triggers_rules(result(_,state,_), [14.12]).
+fact_triggers_rules(result(_,state,_), [14.12,14.14]).
 fact_triggers_rules(preferences(state,_), [14.12]).
-fact_triggers_rules(result(_,potential_appreciation,_), [14.13]).
+fact_triggers_rules(result(_,potential_appreciation,_), [14.13,14.14]).
 fact_triggers_rules(preferences(potential_appreciation,_), [14.13]).
+fact_triggers_rules(score(_,_,_),[14.14]).

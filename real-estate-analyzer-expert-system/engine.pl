@@ -2,13 +2,13 @@
 :-op(35,xfy,if).
 :-op(240,fx,rule).
 :-op(500,fy,not).
-:-op(700,xfy,and).
+:-op(600,xfy,and).
 :-op(600,xfy,or).
 
 :-dynamic justifies/3.
 :-dynamic last_fact/1.
 
-%last_fact(1).
+%last_fact(0).
 
 create_initial_fact(ID, F):-
 	assertz(fact(ID,F)),!.
@@ -68,7 +68,7 @@ start_engine_loop(N, N) :-
 
 % process each fact and repeat the process after create the new facts
 start_engine_loop(N, Total) :-
-    N =< Total,
+    N < Total,
     N1 is N + 1,
     fact(N1, Fact),
     fact_triggers_rules1(Fact, LRules),

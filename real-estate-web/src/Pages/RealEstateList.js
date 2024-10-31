@@ -44,10 +44,10 @@ const RealEstateList = () => {
     palette: {
       mode: "dark",
       primary: {
-        main: "#90caf9",
+        main: "#8f9b45",
       },
       secondary: {
-        main: "#f48fb1",
+        main: "#3e6df5",
       },
     },
   });
@@ -169,7 +169,11 @@ const RealEstateList = () => {
                       }
                     />
                     <CardContent sx={{ flexGrow: 1 }}>
-                      <Typography gutterBottom variant="body1" color="primary">
+                      <Typography
+                        gutterBottom
+                        variant="body1"
+                        color="secondary"
+                      >
                         {realEstate?.title}
                       </Typography>
                       <Typography variant="body2" color="text.secondary">

@@ -663,6 +663,7 @@ end
 
 // Rule 14.1: If the property has a security value then calculate its score
 rule "SecurityScore Rule 14.1 - Calculate security score"
+@Weight(0.1)
     no-loop true
 when
     $property : Property(security != null)
@@ -673,6 +674,7 @@ end
 
 // Rule 14.2: If the property has a overall comfort value then calculate its score
 rule "ComfortScore Rule 14.2 - Calculate comfort score"
+@Weight(0.15)
     no-loop true
 when
     $property : Property(overallComfort != null)
@@ -683,6 +685,7 @@ end
 
 // Rule 14.3: If the property has a accessibility value then calculate its score
 rule "AccessibilityScore Rule 14.3 - Calculate accessibility score"
+@Weight(0.08)
     no-loop true
 when
     $property : Property(accessibility != null)
@@ -693,6 +696,7 @@ end
 
 // Rule 14.4: If the property has a maintenance value then calculate its score
 rule "MaintenanceScore Rule 14.4 - Calculate maintenance score"
+@Weight(0.12)
     no-loop true
 when
     $property : Property(maintenance != null)
@@ -703,6 +707,7 @@ end
 
 // Rule 14.5: If the property has a energyEfficiency value then calculate its score
 rule "EnergyEfficiencyScore Rule 14.5 - Calculate energyEfficiency score"
+@Weight(0.1)
     no-loop true
 when
     $property : Property(energyEfficiency != null)
@@ -713,6 +718,7 @@ end
 
 // Rule 14.6: If the property has a servicesLevel value then calculate its score
 rule "ServicesScore Rule 14.6 - Calculate servicesLevel score"
+@Weight(0.1)
     no-loop true
 when
     $property : Property(serviceLevel != null)
@@ -723,6 +729,7 @@ end
 
 // Rule 14.7: If the property has a connectivity value then calculate its score
 rule "ConnectivityScore Rule 14.7 - Calculate connectivity score"
+@Weight(0.07)
     no-loop true
 when
     $property : Property(connectivity != null)
@@ -733,6 +740,7 @@ end
 
 // Rule 14.8: If the property has a viewQualityLevel value then calculate its score
 rule "ViewQualityLevelScore Rule 14.8 - Calculate viewQualityLevel score"
+@Weight(0.08)
     no-loop true
 when
     $property : Property(viewQualityLevel != null)
@@ -743,6 +751,7 @@ end
 
 // Rule 14.9: If the property has a spaciousness value then calculate its score
 rule "SpaciousnessScore Rule 14.9 - Calculate spaciousness score"
+@Weight(0.1)
     no-loop true
 when
     $property : Property(spaciousness != null)
@@ -753,6 +762,7 @@ end
 
 // Rule 14.10: If the property has a sunExposure value then calculate its score
 rule "SunExposureScore Rule 14.10 - Calculate sunExposure score"
+@Weight(0.05)
     no-loop true
 when
     $property : Property(sunExposure != null)
@@ -763,6 +773,7 @@ end
 
 // Rule 14.11: If the property has a overallParking value then calculate its score
 rule "OverallParkingScore Rule 14.11 - Calculate overallParking score"
+@Weight(0.05)
     no-loop true
 when
     $property : Property(overallParking != null)
@@ -773,6 +784,7 @@ end
 
 // Rule 14.12: If the property has a buildState value then calculate its score
 rule "BuildStateScore Rule 14.12 - Calculate buildState score"
+@Weight(0.05)
     no-loop true
 when
     $property : Property(buildState != null)
@@ -783,6 +795,7 @@ end
 
 // Rule 14.13: If the property has a potentialAppreciation value then calculate its score
 rule "PotentialAppreciation Rule 14.13 - Calculate potentialAppreciation score"
+@Weight(0.05)
     no-loop true
 when
     $property : Property(potentialAppreciation != null)
