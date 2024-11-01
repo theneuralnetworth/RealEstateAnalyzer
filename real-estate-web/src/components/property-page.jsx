@@ -30,7 +30,7 @@ const PropertyPage = ({
     const matchCharacteristicsToPreferences = {
       comfort: "overallComfort",
       energy_efficiency: "energyEfficiency",
-      view_quality: "viewQuality",
+      view_quality: "viewQualityLevel",
       sun_exposure: "sunExposure",
       parking: "overallParking",
       state: "buildState",

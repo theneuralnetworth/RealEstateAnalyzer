@@ -112,19 +112,19 @@ public class PropertyController {
         kbLoader.loadLocations().forEach(kSession::insert);
         kbLoader.loadProperties().forEach(p -> {
             if (preferences != null) {
-                p.setPrefSecurity(preferences.containsKey("safety") ? (float) preferences.get("safety") / 10 : 1f);
-                p.setPrefComfort(preferences.containsKey("comfort") ? (float) preferences.get("comfort") / 10 : 1f);
-                p.setPrefAccessibility(preferences.containsKey("accessibility") ? (float) preferences.get("accessibility") / 10 : 1f);
-                p.setPrefMaintenance(preferences.containsKey("maintenance") ? (float) preferences.get("maintenance") / 10 : 1f);
-                p.setPrefEnergyEfficiency(preferences.containsKey("energy_efficiency") ? (float) preferences.get("energy_efficiency") / 10 : 1f);
-                p.setPrefServices(preferences.containsKey("services") ? (float) preferences.get("services") / 10 : 1f);
-                p.setPrefConnectivity(preferences.containsKey("connectivity") ? (float) preferences.get("connectivity") / 10 : 1f);
-                p.setPrefViewQuality(preferences.containsKey("view_quality") ? (float) preferences.get("view_quality") / 10 : 1f);
-                p.setPrefSpaciousness(preferences.containsKey("spaciousness") ? (float) preferences.get("spaciousness") / 10 : 1f);
-                p.setPrefSunExposure(preferences.containsKey("sun_exposure") ? (float) preferences.get("sun_exposure") / 10 : 1f);
-                p.setPrefParking(preferences.containsKey("parking") ? (float) preferences.get("parking") / 10 : 1f);
-                p.setPrefBuildState(preferences.containsKey("state") ? (float) preferences.get("state") / 10 : 1f);
-                p.setPrefPotentialAppreciation(preferences.containsKey("potential_appreciation") ? (float) preferences.get("potential_appreciation") / 10 : 1f);
+                p.setPrefSecurity(preferences.containsKey("security") ? (float) preferences.get("security") : 1f);
+                p.setPrefComfort(preferences.containsKey("comfort") ? (float) preferences.get("comfort") : 1f);
+                p.setPrefAccessibility(preferences.containsKey("accessibility") ? (float) preferences.get("accessibility") : 1f);
+                p.setPrefMaintenance(preferences.containsKey("maintenance") ? (float) preferences.get("maintenance") : 1f);
+                p.setPrefEnergyEfficiency(preferences.containsKey("energy_efficiency") ? (float) preferences.get("energy_efficiency") : 1f);
+                p.setPrefServices(preferences.containsKey("services") ? (float) preferences.get("services") : 1f);
+                p.setPrefConnectivity(preferences.containsKey("connectivity") ? (float) preferences.get("connectivity") : 1f);
+                p.setPrefViewQuality(preferences.containsKey("view_quality") ? (float) preferences.get("view_quality") : 1f);
+                p.setPrefSpaciousness(preferences.containsKey("spaciousness") ? (float) preferences.get("spaciousness") : 1f);
+                p.setPrefSunExposure(preferences.containsKey("sun_exposure") ? (float) preferences.get("sun_exposure") : 1f);
+                p.setPrefParking(preferences.containsKey("parking") ? (float) preferences.get("parking") : 1f);
+                p.setPrefBuildState(preferences.containsKey("state") ? (float) preferences.get("state") : 1f);
+                p.setPrefPotentialAppreciation(preferences.containsKey("potential_appreciation") ? (float) preferences.get("potential_appreciation") : 1f);
             }
             kSession.insert(p);
         });
