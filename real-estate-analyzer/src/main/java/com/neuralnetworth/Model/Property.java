@@ -25,7 +25,7 @@ public class Property {
     private Float area;
     private int rooms;
     private Float areaPerRoom;
-    private String sunOrientation;
+    private List<String> sunOrientation;
     private String propertyType;
     private String opticalFiber;
     private String smartAppliances;
@@ -153,7 +153,7 @@ public class Property {
                     String thermalComfort, String elevator, String ramps, String swimmingPool,
                     String garden, String propertyCondition, String energyRating, String garage,
                     int yearConstruction, int floorLevel, Float area, int rooms, Float areaPerRoom,
-                    String sunOrientation, String propertyType, String opticalFiber, String smartAppliances) {
+                    List<String> sunOrientation, String propertyType, String opticalFiber, String smartAppliances) {
         this.id = id;
         this.title = title;
         this.location = location;
@@ -258,8 +258,8 @@ public class Property {
     public float getAreaPerRoom() { return areaPerRoom; }
     public void setAreaPerRoom(float areaPerRoom) { this.areaPerRoom = areaPerRoom; }
 
-    public String getSunOrientation() { return sunOrientation; }
-    public void setSunOrientation(String sunOrientation) { this.sunOrientation = sunOrientation; }
+    public List<String> getSunOrientation() { return sunOrientation; }
+    public void setSunOrientation(List<String> sunOrientation) { this.sunOrientation = sunOrientation; }
 
     public String getPropertyType() { return propertyType; }
     public void setPropertyType(String propertyType) { this.propertyType = propertyType; }
