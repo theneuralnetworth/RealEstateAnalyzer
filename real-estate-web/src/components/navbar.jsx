@@ -14,7 +14,7 @@ import Brightness2Icon from "@mui/icons-material/Brightness2";
 
 const Navbar = ({
   selectedRoute,
-  setSelectedRoute,
+  changeRoute,
   routes,
   toggleDarkMode,
   darkMode,
@@ -37,11 +37,9 @@ const Navbar = ({
                 value={selectedRoute.name}
                 label="Environment"
                 size="small"
-                onChange={(e) =>
-                  setSelectedRoute(
-                    routes.find((r) => r.name === e.target.value)
-                  )
-                }
+                onChange={(e) => {
+                  changeRoute(e.target.value);
+                }}
               >
                 <MenuItem value={"PPROGIA"}>PPROGIA</MenuItem>
                 <MenuItem value={"ENGCIA"}>ENGCIA</MenuItem>

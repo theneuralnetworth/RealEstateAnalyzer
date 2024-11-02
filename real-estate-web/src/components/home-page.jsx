@@ -23,11 +23,13 @@ const HomePage = ({
   preferences,
   setPreferences,
   updateResults,
+  theme,
 }) => {
   const indexOfLastItem = currentPage * ITEMS_PER_PAGE;
   const indexOfFirstItem = indexOfLastItem - ITEMS_PER_PAGE;
   const currentItems = realEstates.slice(indexOfFirstItem, indexOfLastItem);
   const totalPages = Math.ceil(realEstates.length / ITEMS_PER_PAGE);
+  console.log("theme", theme);
   return (
     <Box display="flex">
       <PreferencesPanel
@@ -45,11 +47,18 @@ const HomePage = ({
               {currentItems.map((realEstate) => (
                 <Grid item xs={12} sm={6} md={4} lg={3} key={realEstate.id}>
                   <Card
+                    onClick={() => setSelectedProperty(realEstate)}
                     sx={{
                       width: "100%",
                       height: "100%",
                       display: "flex",
                       flexDirection: "column",
+                      cursor: "pointer",
+                      "&:hover": {
+                        backgroundColor: theme.palette.background.hover,
+                        opacity: 0.8,
+                        transition: "all 0.3s ease-in-out",
+                      },
                     }}
                   >
                     <CardMedia
@@ -62,36 +71,63 @@ const HomePage = ({
                           : "default_house.png"
                       }
                     />
-                    <CardContent sx={{ flexGrow: 1 }}>
+                    <CardContent
+                      sx={{
+                        flexGrow: 1,
+                        display: "flex",
+                        flexDirection: "column",
+                        justifyContent: "space-between",
+                      }}
+                    >
                       <Typography
                         gutterBottom
                         variant="body1"
-                        color="secondary"
+                        fontWeight={"bold"}
+                        color="textPrimary"
                       >
-                        {realEstate?.title}
+                        {realEstate?.title.split("•")[0].trim()}
                       </Typography>
-                      <Typography variant="body2" color="text.secondary">
-                        Price: {Math.round(realEstate?.price)} €
-                      </Typography>
-                      <Typography variant="body2" color="text.secondary">
-                        Location: {realEstate?.location?.name}
-                      </Typography>
-                      <Typography variant="body2" color="text.secondary">
-                        Score: {Math.round(realEstate?.totalScore)}
-                      </Typography>
-                    </CardContent>
-                    <CardActions sx={{ justifyContent: "flex-end" }}>
-                      <Button
-                        size="small"
-                        color="secondary"
-                        variant="outlined"
-                        onClick={() => {
-                          setSelectedProperty(realEstate);
+                      <div>
+                        <Typography
+                          variant="body2"
+                          color="text.secondary"
+                          fontWeight={"bold"}
+                          sx={{
+                            fontSize: "1rem",
+                          }}
+                        >
+                          Price: {Math.round(realEstate?.price)} €
+                        </Typography>
+                        <Typography
+                          variant="body2"
+                          color="text.secondary"
+                          fontSize={"0.77rem"}
+                        >
+                          Location: {realEstate?.location?.name}
+                        </Typography>
+                      </div>
+                      <Typography
+                        variant="body2"
+                        color="text.secondary"
+                        fontWeight={"bolder"}
+                        fontSize={"1.3rem"}
+                        marginTop="4px"
+                        textAlign={"right"}
+                        sx={{
+                          color:
+                            realEstate?.totalScore > 60
+                              ? "green"
+                              : realEstate?.totalScore < 40
+                              ? "red"
+                              : "yellow",
                         }}
                       >
-                        View Details
-                      </Button>
-                    </CardActions>
+                        Score: {Math.round(realEstate?.totalScore / 10)}
+                      </Typography>
+                    </CardContent>
+                    <CardActions
+                      sx={{ justifyContent: "flex-end" }}
+                    ></CardActions>
                   </Card>
                 </Grid>
               ))}

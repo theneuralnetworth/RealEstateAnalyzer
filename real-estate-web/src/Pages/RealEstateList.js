@@ -11,20 +11,66 @@ import Navbar from "../components/navbar";
 import PropertyPage from "../components/property-page";
 import HomePage from "../components/home-page";
 
+const routes = [
+  {
+    name: "PPROGIA",
+    path: "http://localhost:8080/api/realestates/getrealestates",
+  },
+  {
+    name: "ENGCIA",
+    // path: "http://localhost:8080/api/realestates/getrealestates", // local
+    path: "http://localhost:8082/api/realestates/getrealestates", // docker
+  },
+];
+
+const initialPreferencesState = {
+  security: 10,
+  comfort: 10,
+  accessibility: 10,
+  maintenance: 10,
+  energy_efficiency: 10,
+  services: 10,
+  connectivity: 10,
+  view_quality: 10,
+  spaciousness: 10,
+  sun_exposure: 10,
+  parking: 10,
+  state: 10,
+  potential_appreciation: 10,
+};
+
 const RealEstateList = () => {
   const [darkMode, setDarkMode] = useState(true);
+  const [realEstates, setRealEstates] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState("");
+  const [selectedRoute, setSelectedRoute] = useState(routes[0]);
+  const [selectedProperty, setSelectedProperty] = useState(null);
+  const [currentPage, setCurrentPage] = useState(1);
+  const [preferences, setPreferences] = useState(initialPreferencesState);
+
+  useEffect(() => {
+    setPreferences(initialPreferencesState);
+    updateResults();
+
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [selectedRoute]);
+
   const lightTheme = createTheme({
     palette: {
       mode: "light",
       background: {
         default: "#f5f5f5",
-        paper: "#FFF",
+        hover: "#F0F0F0",
       },
       primary: {
         main: "#f4ffa0",
       },
       secondary: {
         main: "#6e96f5",
+      },
+      content: {
+        main: "#ffffff",
       },
     },
   });
@@ -34,7 +80,7 @@ const RealEstateList = () => {
       mode: "dark",
       background: {
         default: "#202124",
-        paper: "#292828",
+        hover: "#303134",
       },
       primary: {
         main: "#8f9b45",
@@ -42,66 +88,15 @@ const RealEstateList = () => {
       secondary: {
         main: "#3e6df5",
       },
+      content: {
+        main: "#333333",
+      },
     },
   });
 
   const toggleDarkMode = () => {
     setDarkMode((prev) => !prev);
   };
-  const [realEstates, setRealEstates] = useState([]);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState("");
-  const routes = [
-    {
-      name: "PPROGIA",
-      path: "http://localhost:8080/api/realestates/getrealestates",
-    },
-    {
-      name: "ENGCIA",
-      // path: "http://localhost:8080/api/realestates/getrealestates", // local
-      path: "http://localhost:8082/api/realestates/getrealestates", // docker
-    },
-  ];
-  const [selectedRoute, setSelectedRoute] = useState(routes[1]);
-  const [selectedProperty, setSelectedProperty] = useState(null);
-  const [currentPage, setCurrentPage] = useState(1);
-  const [preferences, setPreferences] = useState({
-    security: 5,
-    comfort: 5,
-    accessibility: 5,
-    maintenance: 5,
-    energy_efficiency: 5,
-    services: 5,
-    connectivity: 5,
-    view_quality: 5,
-    spaciousness: 5,
-    sun_exposure: 5,
-    parking: 5,
-    state: 5,
-    potential_appreciation: 5,
-  });
-
-  useEffect(() => {
-    setSelectedProperty(null);
-    setPreferences({
-      security: 5,
-      comfort: 5,
-      accessibility: 5,
-      maintenance: 5,
-      energy_efficiency: 5,
-      services: 5,
-      connectivity: 5,
-      view_quality: 5,
-      spaciousness: 5,
-      sun_exposure: 5,
-      parking: 5,
-      state: 5,
-      potential_appreciation: 5,
-    });
-    updateResults();
-
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [selectedRoute]);
 
   const updateResults = async () => {
     setLoading(true);
@@ -126,6 +121,11 @@ const RealEstateList = () => {
     }
   };
 
+  const changeRoute = (newRoute) => {
+    setSelectedProperty(undefined);
+    setSelectedRoute(routes.find((r) => r.name === newRoute));
+  };
+
   return (
     <ThemeProvider theme={darkMode ? darkTheme : lightTheme}>
       <CssBaseline />
@@ -135,7 +135,7 @@ const RealEstateList = () => {
         darkMode={darkMode}
         routes={routes}
         selectedRoute={selectedRoute}
-        setSelectedRoute={setSelectedRoute}
+        changeRoute={changeRoute}
       />
       <Toolbar />
       <Container>
@@ -150,6 +150,7 @@ const RealEstateList = () => {
             preferences={preferences}
             setPreferences={setPreferences}
             updateResults={updateResults}
+            theme={darkMode ? darkTheme : lightTheme}
           />
         ) : (
           <PropertyPage
@@ -157,7 +158,7 @@ const RealEstateList = () => {
             preferences={preferences}
             selectedRoute={selectedRoute}
             setSelectedProperty={setSelectedProperty}
-            theme={toggleDarkMode ? darkTheme : lightTheme}
+            theme={darkMode ? darkTheme : lightTheme}
           />
         )}
       </Container>
