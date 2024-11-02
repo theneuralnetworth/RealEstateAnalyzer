@@ -151,6 +151,16 @@ const PreferencesPanel = ({
             <FormControlLabel
               control={
                 <Checkbox
+                  checked={typology.T0}
+                  onChange={handleTypologyChange}
+                  name="T0"
+                />
+              }
+              label="T0"
+            />
+            <FormControlLabel
+              control={
+                <Checkbox
                   checked={typology.T1}
                   onChange={handleTypologyChange}
                   name="T1"

@@ -64,10 +64,7 @@ const HomePage = ({
                         backgroundColor: theme.palette.background.hover,
                         border: `1px solid ${theme.palette.primary.contrast}`,
                         opacity: 0.8,
-                      },
-                      "& div:last-child": {
-                        textAlign: "right",
-                      },
+                      }
                     }}
                   >
                     <CardMedia
@@ -118,6 +115,10 @@ const HomePage = ({
                           Location: {realEstate?.location?.name}
                         </Typography>
                       </div>
+                    </CardContent>
+                    <CardActions
+                      sx={{ justifyContent: "flex-end" }}
+                    >
                       <Avatar
                         sx={{
                           bgcolor:
@@ -130,10 +131,7 @@ const HomePage = ({
                       >
                         {Math.round(realEstate?.totalScore / 10)}
                       </Avatar>
-                    </CardContent>
-                    <CardActions
-                      sx={{ justifyContent: "flex-end" }}
-                    ></CardActions>
+                    </CardActions>
                   </Card>
                 </Grid>
               ))}

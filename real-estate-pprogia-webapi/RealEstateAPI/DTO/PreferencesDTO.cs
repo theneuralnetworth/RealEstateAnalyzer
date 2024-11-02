@@ -42,7 +42,7 @@ namespace RealEstateAPI.DTO
 
         public string location { get; set; }
 
-        public List<int> typology { get; set; }
+        public List<int>? typology { get; set; }
     }
 
     public class PriceFilterDTO

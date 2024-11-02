@@ -98,6 +98,7 @@ const RealEstateList = () => {
     setLoading(true);
     setError("");
     try {
+      console.log('filter', filter)
       const response = await axios.post(selectedRoute.path, {
         preferences,
         filter,

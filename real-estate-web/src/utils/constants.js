@@ -27,6 +27,7 @@ export const INITIAL_PREFERENCES_STATE = {
 
 export const INITIAL_TYPOLOGIES_STATE = {
   default: true,
+  T0: false,
   T1: false,
   T2: false,
   T3: false,
