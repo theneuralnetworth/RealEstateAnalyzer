@@ -104,12 +104,12 @@ public class Property {
         metaScores.put("low", 0.4f);
 
         weights.put("security", 10);
-        weights.put("comfort", 15);
-        weights.put("accessibility", 8);
-        weights.put("maintenance", 12);
+        weights.put("comfort", 12);
+        weights.put("accessibility", 5);
+        weights.put("maintenance", 10);
         weights.put("energyEfficiency", 10);
         weights.put("services", 10);
-        weights.put("connectivity", 7);
+        weights.put("connectivity", 5);
         weights.put("viewQuality", 8);
         weights.put("spaciousness", 10);
         weights.put("sunExposure", 5);
@@ -187,12 +187,12 @@ public class Property {
         metaScores.put("low", 0.4f);
 
         weights.put("security", 10);
-        weights.put("comfort", 15);
-        weights.put("accessibility", 8);
-        weights.put("maintenance", 12);
+        weights.put("comfort", 12);
+        weights.put("accessibility", 5);
+        weights.put("maintenance", 10);
         weights.put("energyEfficiency", 10);
         weights.put("services", 10);
-        weights.put("connectivity", 7);
+        weights.put("connectivity", 5);
         weights.put("viewQuality", 8);
         weights.put("spaciousness", 10);
         weights.put("sunExposure", 5);

@@ -285,7 +285,7 @@ const PropertyPage = ({
           >
             Back to list
           </Button>
-          <Typography variant="body2">
+          <Typography variant="body2" fontWeight={"bold"}>
             {property.title.split("•")[0]}
           </Typography>
         </Content>

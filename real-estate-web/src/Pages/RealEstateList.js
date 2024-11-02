@@ -10,7 +10,10 @@ import {
 import Navbar from "../components/navbar";
 import PropertyPage from "../components/property-page";
 import HomePage from "../components/home-page";
-import { INITIAL_PREFERENCES_STATE } from "../utils/constants";
+import {
+  INITIAL_PREFERENCES_STATE,
+  INITIAL_PRICE_RANGE,
+} from "../utils/constants";
 
 const routes = [
   {
@@ -83,7 +86,13 @@ const RealEstateList = () => {
     setDarkMode((prev) => !prev);
   };
 
-  const updateResults = async (filter = {}) => {
+  const updateResults = async (
+    filter = {
+      price: { min: INITIAL_PRICE_RANGE[0], max: INITIAL_PRICE_RANGE[1] },
+      location: "",
+      typology: [],
+    }
+  ) => {
     setLoading(true);
     setError("");
     try {
@@ -115,14 +124,15 @@ const RealEstateList = () => {
   const applyFilters = (priceRange, location, typologies) => {
     const selectedTypologies = Object.entries(typologies)
       .filter((t) => t[1] === true)
-      .map((v) => v[0]);
+      .map((v) => v[0].split("")[1]);
+
     const filters = {
       price: {
         min: priceRange[0] ?? null,
         max: priceRange[1] ?? null,
       },
       location: location ?? null,
-      typologies:
+      typology:
         selectedTypologies && selectedTypologies.length > 0
           ? selectedTypologies
           : null,

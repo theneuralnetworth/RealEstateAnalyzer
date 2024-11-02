@@ -45,7 +45,7 @@ public class PropertyController {
         int maxPrice = priceFilter.get("max") == null ? 999999999 : (int) priceFilter.get("max");
 
         String locationFilter = filter.get("location") == null ? "" : (String) filter.get("location");
-        String typologyFilter = filter.get("typology") == null ? "" : (String) filter.get("typology");
+        List<String> typologyFilter = filter.get("typology") == null ? new ArrayList<>() : (List<String>) filter.get("typology");
 
 
         kSession.addEventListener(new AgendaEventListener() {
@@ -138,13 +138,13 @@ public class PropertyController {
                 .map(obj -> (Property) obj)
                 .filter(property ->
                         (minPrice == 0 || property.getPrice() >= minPrice) &&
-                        (maxPrice == 999999999 || property.getPrice() <= maxPrice))
+                            (maxPrice == 999999999 || property.getPrice() <= maxPrice))
                 .filter(property ->
                         locationFilter == null || locationFilter.isEmpty() ||
                         Objects.equals(property.getLocation().getName(), locationFilter))
                 .filter(property ->
-                        typologyFilter == null || typologyFilter.isEmpty() ||
-                        Objects.equals(property.getTypology().toLowerCase(), typologyFilter.toLowerCase()))
+                        typologyFilter == null || typologyFilter.isEmpty() || typologyFilter.size() < 1 ||
+                                typologyFilter.contains(property.getTypology().split("")[1]))
                 .sorted(Comparator.comparing(Property::getTotalScore).reversed())
                 .collect(Collectors.toList());
 

@@ -115,11 +115,11 @@ const HomePage = ({
                         textAlign={"right"}
                         sx={{
                           color:
-                            realEstate?.totalScore > 60
+                            Math.round(realEstate?.totalScore / 10) >= 60
                               ? "green"
-                              : realEstate?.totalScore < 40
+                              : Math.round(realEstate?.totalScore / 10) <= 40
                               ? "red"
-                              : "yellow",
+                              : "orange",
                         }}
                       >
                         Score: {Math.round(realEstate?.totalScore / 10)}
