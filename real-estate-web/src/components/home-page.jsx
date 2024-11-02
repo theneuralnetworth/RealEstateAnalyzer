@@ -12,6 +12,9 @@ import {
 } from "@mui/material";
 import { ITEMS_PER_PAGE } from "../utils/constants";
 import PreferencesPanel from "./preferences-panel";
+import SkeletonList from "./skeleton-list";
+import ErrorScreen from "./error-screen";
+import EmptyList from "./empty-list";
 
 const HomePage = ({
   realEstates,
@@ -39,9 +42,10 @@ const HomePage = ({
         applyFilters={applyFilters}
       />
       <Container sx={{ padding: 2 }}>
-        {loading && <Typography>Loading...</Typography>}
-        {error && <Typography>{error}</Typography>}
-        {!loading && !error && (
+        {loading && <SkeletonList />}
+        {error && <ErrorScreen onRetry={() => updateResults()} />}
+        {!loading && !error && realEstates.length === 0 && <EmptyList />}
+        {!loading && !error && realEstates.length > 0 && (
           <Box display="flex" flexDirection="column" gap={2}>
             <Grid container spacing={2}>
               {currentItems.map((realEstate) => (

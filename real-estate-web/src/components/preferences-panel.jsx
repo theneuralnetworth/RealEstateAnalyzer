@@ -242,7 +242,7 @@ const PreferencesPanel = ({
           </Box>
         </AccordionDetails>
       </Accordion>
-      <Box display={"flex"} gap={"5px"} mt={"-10px"}>
+      <Box display={"flex"} gap={"5px"} mt={"10px"}>
         <Button
           variant="outlined"
           color="black"
