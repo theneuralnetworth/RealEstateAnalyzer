@@ -52,7 +52,7 @@ const RealEstateList = () => {
         hover: "#F0F0F0",
       },
       primary: {
-        main: "#f4ffa0",
+        main: "#c9df20",
       },
       secondary: {
         main: "#6e96f5",

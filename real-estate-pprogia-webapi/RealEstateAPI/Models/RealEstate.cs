@@ -8,6 +8,10 @@ namespace RealEstateAPI.Model
 
         public double Price { get; set; }
 
+        public double Area { get; set; }
+
+        public int Rooms { get; set; }
+
         public Location Location { get; set; }
 
         public List<string> Images { get; set; }

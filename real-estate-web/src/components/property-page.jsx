@@ -310,7 +310,6 @@ const PropertyPage = ({
             sx={{ display: "flex", alignItems: "center", gap: "20px" }}
           >
             {property.price} €
-            {isEngciaData && (
               <span
                 style={{
                   fontSize: "1rem",
@@ -325,7 +324,6 @@ const PropertyPage = ({
                 <SquareFootIcon />
                 {"  "} {Math.round(property.price / property.area)}€/m2
               </span>
-            )}
           </Typography>
           <Typography
             variant="body2"
