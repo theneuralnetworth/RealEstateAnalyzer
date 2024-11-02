@@ -72,6 +72,12 @@ namespace RealEstateAPI.Controllers
                             case "price":
                                 estate.Price = Double.Parse(item.Args[1]);
                                 break;
+                            case "area":
+                                estate.Area = Double.Parse(item.Args[1]);
+                                break;
+                            case "rooms":
+                                estate.Rooms = Int32.Parse(item.Args[1]);
+                                break;
                             case "image":
                                 if(estate.Images == null)
                                 {

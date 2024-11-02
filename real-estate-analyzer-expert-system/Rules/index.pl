@@ -409,20 +409,20 @@ rule 14.1
     if [result(Property, security, X) and meta_score(X,P) and preferences(security, P2)]
     then [create_fact(score(Property, security, operation(multi,P, 10, P2)))].
 
-% Rule 14.2: Calculates the score for comfort based on the meta_score of the result. The weight for comfort is multiplied by 15.
+% Rule 14.2: Calculates the score for comfort based on the meta_score of the result. The weight for comfort is multiplied by 12.
 rule 14.2
     if [result(Property, comfort, X) and meta_score(X,P) and preferences(comfort, P2)]
-    then [create_fact(score(Property, comfort, operation(multi,P, 15, P2)))].
+    then [create_fact(score(Property, comfort, operation(multi,P, 12, P2)))].
 
-% Rule 14.3: Calculates the score for accessibility based on the meta_score of the result. The weight for accessibility is multiplied by 8.
+% Rule 14.3: Calculates the score for accessibility based on the meta_score of the result. The weight for accessibility is multiplied by 5.
 rule 14.3
     if [result(Property, accessibility, X) and meta_score(X,P) and preferences(accessibility, P2)]
-    then [create_fact(score(Property, accessibility, operation(multi,P, 8, P2)))].
+    then [create_fact(score(Property, accessibility, operation(multi,P, 5, P2)))].
 
-% Rule 14.4: Calculates the score for maintenance based on the meta_score of the result. The weight for maintenance is multiplied by 12.
+% Rule 14.4: Calculates the score for maintenance based on the meta_score of the result. The weight for maintenance is multiplied by 10.
 rule 14.4
     if [result(Property, maintenance, X) and meta_score(X,P) and preferences(maintenance, P2)]
-    then [create_fact(score(Property, maintenance, operation(multi,P, 12, P2)))].
+    then [create_fact(score(Property, maintenance, operation(multi,P, 10, P2)))].
 
 % Rule 14.5: Calculates the score for energy efficiency based on the meta_score of the result. The weight for energy efficiency is multiplied by 10.
 rule 14.5
@@ -434,10 +434,10 @@ rule 14.6
     if [result(Property, services, X) and meta_score(X,P) and preferences(services, P2)]
     then [create_fact(score(Property, services, operation(multi,P, 10, P2)))].
 
-% Rule 14.7: Calculates the score for connectivity based on the meta_score of the result. The weight for connectivity is multiplied by 7.
+% Rule 14.7: Calculates the score for connectivity based on the meta_score of the result. The weight for connectivity is multiplied by 5.
 rule 14.7
     if [result(Property, connectivity, X) and meta_score(X,P) and preferences(connectivity, P2)]
-    then [create_fact(score(Property, connectivity, operation(multi,P, 7, P2)))].
+    then [create_fact(score(Property, connectivity, operation(multi,P, 5, P2)))].
 
 % Rule 14.8: Calculates the score for view quality based on the meta_score of the result. The weight for view quality is multiplied by 8.
 rule 14.8
