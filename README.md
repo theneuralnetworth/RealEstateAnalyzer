@@ -58,7 +58,7 @@ The page will reload when you make changes.
 |---|---|---|---|---|
 | Blog | `ENGCIA` & `PPROGIA` | 8th week | `WIP` | 10% |
 | Relatório prévio | `ENGCIA` & `PPROGIA` | 5th week | `delivered` | 15% |
-| Relatório Final | `ENGCIA` & `PPROGIA` | November 7th | `WIP`| 15% |
-| Expert System | `ENGCIA` & `PPROGIA` | November 7th | `WIP`| 50% |
+| Relatório Final | `ENGCIA` & `PPROGIA` | November 3rd | `WIP`| 15% |
+| Expert System | `ENGCIA` & `PPROGIA` | November 3rd | `WIP`| 50% |
 | DemoDay Pitch | `ENGCIA` & `PPROGIA` | 8th week | `WIP` | 10% |
-| Artigo Científico | `PPROGIA` |  | `` | 30% |
+| Artigo Científico | `PPROGIA` | November 6th | `` | 30% |
