@@ -3,6 +3,8 @@ namespace RealEstateAPI.DTO
     public class PreferencesDTO
     {
         public PreferenceCategoryDTO preferences { get; set; }
+
+        public FilterOptionsDTO filter { get; set; }
     }
 
     public class PreferenceCategoryDTO
@@ -32,5 +34,21 @@ namespace RealEstateAPI.DTO
         public int state { get; set; }
 
         public int potential_appreciation { get; set; }
+    }
+
+    public class FilterOptionsDTO
+    {
+        public PriceFilterDTO price { get; set; }
+
+        public string location { get; set; }
+
+        public List<int> typology { get; set; }
+    }
+
+    public class PriceFilterDTO
+    {
+        public int min { get; set; }
+
+        public int max { get; set; }
     }
 }

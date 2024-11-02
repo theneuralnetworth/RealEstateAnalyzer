@@ -106,6 +106,21 @@ namespace RealEstateAPI.Controllers
                         }
                     }
 
+                    if(preferences.filter.price != null)
+                    {
+                        realEstates = realEstates.Where(x => x.Price >= preferences.filter.price.min && x.Price <= preferences.filter.price.max).ToList();
+                    }
+
+                    if(!string.IsNullOrEmpty(preferences.filter.location))
+                    {
+                        realEstates = realEstates.Where(x => x.Location.Name == preferences.filter.location).ToList();
+                    }
+
+                    if (preferences.filter.typology != null && preferences.filter.typology.Any())
+                    {
+                        realEstates = realEstates.Where(x => preferences.filter.typology.Contains(x.Rooms - 1)).ToList();
+                    }
+
                     return Ok(realEstates);
                 }
                 else
