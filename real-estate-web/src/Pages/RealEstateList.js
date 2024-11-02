@@ -123,7 +123,7 @@ const RealEstateList = () => {
 
   const applyFilters = (priceRange, location, typologies) => {
     const selectedTypologies = Object.entries(typologies)
-      .filter((t) => t[1] === true)
+      .filter((t) => t[1] === true && t[0] !== "default")
       .map((v) => v[0].split("")[1]);
 
     const filters = {
