@@ -10,6 +10,7 @@ import {
 import Navbar from "../components/navbar";
 import PropertyPage from "../components/property-page";
 import HomePage from "../components/home-page";
+import { INITIAL_PREFERENCES_STATE } from "../utils/constants";
 
 const routes = [
   {
@@ -23,22 +24,6 @@ const routes = [
   },
 ];
 
-const initialPreferencesState = {
-  security: 10,
-  comfort: 10,
-  accessibility: 10,
-  maintenance: 10,
-  energy_efficiency: 10,
-  services: 10,
-  connectivity: 10,
-  view_quality: 10,
-  spaciousness: 10,
-  sun_exposure: 10,
-  parking: 10,
-  state: 10,
-  potential_appreciation: 10,
-};
-
 const RealEstateList = () => {
   const [darkMode, setDarkMode] = useState(false);
   const [realEstates, setRealEstates] = useState([]);
@@ -47,10 +32,10 @@ const RealEstateList = () => {
   const [selectedRoute, setSelectedRoute] = useState(routes[0]);
   const [selectedProperty, setSelectedProperty] = useState(null);
   const [currentPage, setCurrentPage] = useState(1);
-  const [preferences, setPreferences] = useState(initialPreferencesState);
+  const [preferences, setPreferences] = useState(INITIAL_PREFERENCES_STATE);
 
   useEffect(() => {
-    setPreferences(initialPreferencesState);
+    setPreferences(INITIAL_PREFERENCES_STATE);
     updateResults();
 
     // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -98,12 +83,13 @@ const RealEstateList = () => {
     setDarkMode((prev) => !prev);
   };
 
-  const updateResults = async () => {
+  const updateResults = async (filter = {}) => {
     setLoading(true);
     setError("");
     try {
       const response = await axios.post(selectedRoute.path, {
         preferences,
+        filter,
       });
       const sortedData =
         selectedRoute.name === "PPROGIA"
@@ -124,6 +110,24 @@ const RealEstateList = () => {
   const changeRoute = (newRoute) => {
     setSelectedProperty(undefined);
     setSelectedRoute(routes.find((r) => r.name === newRoute));
+  };
+
+  const applyFilters = (priceRange, location, typologies) => {
+    const selectedTypologies = Object.entries(typologies)
+      .filter((t) => t[1] === true)
+      .map((v) => v[0]);
+    const filters = {
+      price: {
+        min: priceRange[0] ?? null,
+        max: priceRange[1] ?? null,
+      },
+      location: location ?? null,
+      typologies:
+        selectedTypologies && selectedTypologies.length > 0
+          ? selectedTypologies
+          : null,
+    };
+    updateResults(filters);
   };
 
   return (
@@ -151,6 +155,7 @@ const RealEstateList = () => {
             setPreferences={setPreferences}
             updateResults={updateResults}
             theme={darkMode ? darkTheme : lightTheme}
+            applyFilters={applyFilters}
           />
         ) : (
           <PropertyPage

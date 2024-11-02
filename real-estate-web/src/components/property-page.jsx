@@ -14,6 +14,7 @@ import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import ImageCarousel from "./image-carousel";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import SquareFootIcon from "@mui/icons-material/SquareFoot";
+import { capitalizeAndRemoveUnderscores } from "../utils/capitalize";
 
 const PropertyPage = ({
   property,
@@ -56,15 +57,6 @@ const PropertyPage = ({
     borderRadius: "8px",
     gap: "16px",
   });
-
-  const capitalizeAndRemoveUnderscores = (value) => {
-    // eslint-disable-next-line use-isnan
-    if (typeof value !== "string" || Number(value.charAt(0)) === NaN)
-      return value;
-    return (
-      value.charAt(0).toUpperCase() + String(value).slice(1).replace("_", " ")
-    );
-  };
 
   const formatPrologJustifications = (category) => {
     const justifications = category.justifications;

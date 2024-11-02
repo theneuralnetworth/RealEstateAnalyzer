@@ -1,6 +1,5 @@
 import {
   Box,
-  Button,
   Card,
   CardActions,
   CardContent,
@@ -24,6 +23,7 @@ const HomePage = ({
   setPreferences,
   updateResults,
   theme,
+  applyFilters,
 }) => {
   const indexOfLastItem = currentPage * ITEMS_PER_PAGE;
   const indexOfFirstItem = indexOfLastItem - ITEMS_PER_PAGE;
@@ -35,6 +35,7 @@ const HomePage = ({
         preferences={preferences}
         setPreferences={setPreferences}
         updateResults={updateResults}
+        applyFilters={applyFilters}
       />
       <Container sx={{ padding: 2 }}>
         {loading && <Typography>Loading...</Typography>}
