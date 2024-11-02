@@ -142,9 +142,12 @@ public class PropertyController {
                 .filter(property ->
                         locationFilter == null || locationFilter.isEmpty() ||
                         Objects.equals(property.getLocation().getName(), locationFilter))
-                .filter(property ->
-                        typologyFilter == null || typologyFilter.isEmpty() || typologyFilter.size() < 1 ||
-                                typologyFilter.contains(property.getTypology().split("")[1]))
+                .filter(property -> {
+                    String typology = property.getTypology().split("")[1];
+                    return typologyFilter == null || typologyFilter.isEmpty() ||
+                            typologyFilter.contains(typology) ||
+                            (typologyFilter.contains("4") && List.of("4", "5", "6", "7").contains(typology));
+                })
                 .sorted(Comparator.comparing(Property::getTotalScore).reversed())
                 .collect(Collectors.toList());
 

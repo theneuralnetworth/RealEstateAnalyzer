@@ -53,6 +53,7 @@ const RealEstateList = () => {
       },
       primary: {
         main: "#c9df20",
+        contrast: "#000",
       },
       secondary: {
         main: "#6e96f5",
@@ -72,6 +73,7 @@ const RealEstateList = () => {
       },
       primary: {
         main: "#8f9b45",
+        contrast: "#FFF",
       },
       secondary: {
         main: "#3e6df5",
@@ -123,7 +125,7 @@ const RealEstateList = () => {
 
   const applyFilters = (priceRange, location, typologies) => {
     const selectedTypologies = Object.entries(typologies)
-      .filter((t) => t[1] === true)
+      .filter((t) => t[1] === true && t[0] !== "default")
       .map((v) => v[0].split("")[1]);
 
     const filters = {

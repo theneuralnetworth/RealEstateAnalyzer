@@ -14,6 +14,7 @@ import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import ImageCarousel from "./image-carousel";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import SquareFootIcon from "@mui/icons-material/SquareFoot";
+import { Gauge, gaugeClasses } from "@mui/x-charts/Gauge";
 import { capitalizeAndRemoveUnderscores } from "../utils/capitalize";
 
 const PropertyPage = ({
@@ -52,6 +53,7 @@ const PropertyPage = ({
     flexDirection: "row",
     alignItems: "center",
     width: "100%",
+    height: "100%",
     background: theme.palette.content.main,
     padding: "16px",
     borderRadius: "8px",
@@ -300,16 +302,19 @@ const PropertyPage = ({
             alignItems: "flex-start",
             justifyContent: "space-between",
             minHeight: "100%",
+            height: "100%",
+            gap: "50px",
           }}
         >
-          <Typography
-            gutterBottom
-            variant="h4"
-            fontWeight="bold"
-            component="div"
-            sx={{ display: "flex", alignItems: "center", gap: "20px" }}
-          >
-            {property.price} €
+          <div>
+            <Typography
+              gutterBottom
+              variant="h4"
+              fontWeight="bold"
+              component="div"
+              sx={{ display: "flex", alignItems: "center", gap: "20px" }}
+            >
+              {property.price} €
               <span
                 style={{
                   fontSize: "1rem",
@@ -324,40 +329,57 @@ const PropertyPage = ({
                 <SquareFootIcon />
                 {"  "} {Math.round(property.price / property.area)}€/m2
               </span>
-          </Typography>
-          <Typography
-            variant="body2"
-            color="text.secondary"
+            </Typography>
+            <Typography
+              variant="body2"
+              color="text.secondary"
+              sx={{
+                textTransform: "capitalize",
+                display: "flex",
+                alignItems: "center",
+              }}
+              gutterBottom
+            >
+              <LocationOnIcon /> {"  "} {property.location.name}
+            </Typography>
+          </div>
+          <Gauge
+            width={250}
+            height={200}
+            value={propertyTotalScore}
+            valueMax={100}
+            startAngle={-90}
+            endAngle={90}
             sx={{
-              textTransform: "capitalize",
-              display: "flex",
-              alignItems: "center",
+              marginTop: "30px",
+              marginLeft: "50px",
+              [`& .${gaugeClasses.valueText}`]: {
+                fontSize: 40,
+                transform: "translate(0px, 0px)",
+                fontWeight: "bold",
+              },
+              [`& .${gaugeClasses.valueArc}`]: {
+                fill:
+                  Math.round(propertyTotalScore) >= 60
+                    ? "green"
+                    : Math.round(propertyTotalScore) <= 40
+                    ? "red"
+                    : "orange",
+              },
             }}
-            gutterBottom
-          >
-            <LocationOnIcon /> {"  "} {property.location.name}
-          </Typography>
-          <Typography
-            variant="h4"
-            color="text.secondary"
-            gutterBottom
-            marginTop={"30px"}
-            fontWeight={"bold"}
-            sx={{
-              color:
-                propertyTotalScore > 60
-                  ? "green"
-                  : propertyTotalScore < 40
-                  ? "red"
-                  : "yellow",
-            }}
-          >
-            Score: {propertyTotalScore} / 100
-          </Typography>
+            text={`${propertyTotalScore} / 100`}
+          />
         </Box>
       </Content>
       <Box>
-        <Typography gutterBottom variant="h6" fontWeight="bold" component="div">
+        <Typography
+          gutterBottom
+          variant="h6"
+          fontWeight="bold"
+          component="div"
+          textAlign={"left"}
+          mt={"12px"}
+        >
           How did it got that score?
         </Typography>
         <Box>{renderJustifications()}</Box>

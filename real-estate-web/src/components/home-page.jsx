@@ -1,4 +1,5 @@
 import {
+  Avatar,
   Box,
   Card,
   CardActions,
@@ -11,6 +12,9 @@ import {
 } from "@mui/material";
 import { ITEMS_PER_PAGE } from "../utils/constants";
 import PreferencesPanel from "./preferences-panel";
+import SkeletonList from "./skeleton-list";
+import ErrorScreen from "./error-screen";
+import EmptyList from "./empty-list";
 
 const HomePage = ({
   realEstates,
@@ -38,9 +42,10 @@ const HomePage = ({
         applyFilters={applyFilters}
       />
       <Container sx={{ padding: 2 }}>
-        {loading && <Typography>Loading...</Typography>}
-        {error && <Typography>{error}</Typography>}
-        {!loading && !error && (
+        {loading && <SkeletonList />}
+        {error && <ErrorScreen onRetry={() => updateResults()} />}
+        {!loading && !error && realEstates.length === 0 && <EmptyList />}
+        {!loading && !error && realEstates.length > 0 && (
           <Box display="flex" flexDirection="column" gap={2}>
             <Grid container spacing={2}>
               {currentItems.map((realEstate) => (
@@ -55,9 +60,13 @@ const HomePage = ({
                       cursor: "pointer",
                       textAlign: "left",
                       "&:hover": {
-                        backgroundColor: theme.palette.background.hover,
-                        opacity: 0.8,
                         transition: "all 0.3s ease-in-out",
+                        backgroundColor: theme.palette.background.hover,
+                        border: `1px solid ${theme.palette.primary.contrast}`,
+                        opacity: 0.8,
+                      },
+                      "& div:last-child": {
+                        textAlign: "right",
                       },
                     }}
                   >
@@ -77,6 +86,9 @@ const HomePage = ({
                         display: "flex",
                         flexDirection: "column",
                         justifyContent: "space-between",
+                        "& .MuiAvatar-root": {
+                          marginLeft: "auto",
+                        },
                       }}
                     >
                       <Typography
@@ -106,15 +118,9 @@ const HomePage = ({
                           Location: {realEstate?.location?.name}
                         </Typography>
                       </div>
-                      <Typography
-                        variant="body2"
-                        color="text.secondary"
-                        fontWeight={"bolder"}
-                        fontSize={"1.3rem"}
-                        marginTop="4px"
-                        textAlign={"right"}
+                      <Avatar
                         sx={{
-                          color:
+                          bgcolor:
                             Math.round(realEstate?.totalScore / 10) >= 60
                               ? "green"
                               : Math.round(realEstate?.totalScore / 10) <= 40
@@ -122,8 +128,8 @@ const HomePage = ({
                               : "orange",
                         }}
                       >
-                        Score: {Math.round(realEstate?.totalScore / 10)}
-                      </Typography>
+                        {Math.round(realEstate?.totalScore / 10)}
+                      </Avatar>
                     </CardContent>
                     <CardActions
                       sx={{ justifyContent: "flex-end" }}

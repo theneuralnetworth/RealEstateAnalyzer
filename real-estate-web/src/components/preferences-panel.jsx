@@ -23,6 +23,7 @@ import {
   INITIAL_TYPOLOGIES_STATE,
   UNIQUE_LOCATIONS,
 } from "../utils/constants";
+import formatNumber from "../utils/formatNumber";
 
 const PreferencesPanel = ({
   preferences,
@@ -97,12 +98,14 @@ const PreferencesPanel = ({
         <AccordionDetails>
           <Box sx={{ marginBottom: 2 }}>
             <Typography gutterBottom>
-              Price Range: {priceRange[0]}€ - {priceRange[1]}€
+              Price Range: {formatNumber(priceRange[0])}€ -{" "}
+              {formatNumber(priceRange[1])}€
             </Typography>
             <Slider
               value={priceRange}
               onChange={handlePriceChange}
               valueLabelDisplay="auto"
+              valueLabelFormat={(value) => `${formatNumber(value)}€`}
               min={0}
               max={2000000}
               step={10000}
@@ -239,7 +242,7 @@ const PreferencesPanel = ({
           </Box>
         </AccordionDetails>
       </Accordion>
-      <Box display={"flex"} gap={"5px"} mt={"-10px"}>
+      <Box display={"flex"} gap={"5px"} mt={"10px"}>
         <Button
           variant="outlined"
           color="black"

@@ -10,19 +10,19 @@ export const UNIQUE_LOCATIONS = [
 ];
 
 export const INITIAL_PREFERENCES_STATE = {
-  security: 10,
-  comfort: 10,
-  accessibility: 10,
-  maintenance: 10,
-  energy_efficiency: 10,
-  services: 10,
-  connectivity: 10,
-  view_quality: 10,
-  spaciousness: 10,
-  sun_exposure: 10,
-  parking: 10,
-  state: 10,
-  potential_appreciation: 10,
+  security: 7,
+  comfort: 7,
+  accessibility: 7,
+  maintenance: 7,
+  energy_efficiency: 7,
+  services: 7,
+  connectivity: 7,
+  view_quality: 7,
+  spaciousness: 7,
+  sun_exposure: 7,
+  parking: 7,
+  state: 7,
+  potential_appreciation: 7,
 };
 
 export const INITIAL_TYPOLOGIES_STATE = {
