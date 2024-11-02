@@ -40,7 +40,7 @@ const initialPreferencesState = {
 };
 
 const RealEstateList = () => {
-  const [darkMode, setDarkMode] = useState(true);
+  const [darkMode, setDarkMode] = useState(false);
   const [realEstates, setRealEstates] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");

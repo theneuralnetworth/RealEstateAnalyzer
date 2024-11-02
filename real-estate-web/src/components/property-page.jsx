@@ -80,7 +80,6 @@ const PropertyPage = ({
     because = because.map((v) => v.split("("));
     because = because.map((v) => v.join());
     because = because.map((v) => v.split(")")[0]);
-    console.log("midterm", because);
     because = because
       .map((v) => v.split(","))
       .map((arr) => {
@@ -152,7 +151,16 @@ const PropertyPage = ({
     return (
       <ul>
         {because.map((reason) => (
-          <li>{buildJustificationText(reason)}</li>
+          <li
+            style={{
+              maxWidth: "100%",
+              wordBreak: "break-word",
+              wordWrap: "break-word",
+              textAlign: "left",
+            }}
+          >
+            {buildJustificationText(reason)}
+          </li>
         ))}
       </ul>
     );
@@ -200,6 +208,7 @@ const PropertyPage = ({
                         maxWidth: "100%",
                         wordBreak: "break-word",
                         wordWrap: "break-word",
+                        textAlign: "left",
                       }}
                     >
                       {justification.split(";")[1].trim()}

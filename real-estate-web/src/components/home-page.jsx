@@ -29,7 +29,6 @@ const HomePage = ({
   const indexOfFirstItem = indexOfLastItem - ITEMS_PER_PAGE;
   const currentItems = realEstates.slice(indexOfFirstItem, indexOfLastItem);
   const totalPages = Math.ceil(realEstates.length / ITEMS_PER_PAGE);
-  console.log("theme", theme);
   return (
     <Box display="flex">
       <PreferencesPanel
