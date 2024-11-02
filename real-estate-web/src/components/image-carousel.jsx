@@ -24,10 +24,10 @@ const ImageCarousel = ({ realEstate }) => {
       alignItems="center"
       justifyContent="center"
       position="relative"
-      minWidth="50%"
+      width="60%"
+      // width="520px"
       height="400px"
       overflow="hidden"
-      mx="auto"
     >
       <IconButton
         onClick={handlePrev}
