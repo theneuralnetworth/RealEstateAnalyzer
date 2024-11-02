@@ -42,10 +42,9 @@ const HomePage = ({
         {error && <Typography>{error}</Typography>}
         {!loading && !error && (
           <Box display="flex" flexDirection="column" gap={2}>
-            <Typography variant="h5">List real estates</Typography>
             <Grid container spacing={2}>
               {currentItems.map((realEstate) => (
-                <Grid item xs={12} sm={6} md={4} lg={3} key={realEstate.id}>
+                <Grid item xs={12} sm={6} md={4} lg={4} key={realEstate.id}>
                   <Card
                     onClick={() => setSelectedProperty(realEstate)}
                     sx={{
@@ -54,6 +53,7 @@ const HomePage = ({
                       display: "flex",
                       flexDirection: "column",
                       cursor: "pointer",
+                      textAlign: "left",
                       "&:hover": {
                         backgroundColor: theme.palette.background.hover,
                         opacity: 0.8,

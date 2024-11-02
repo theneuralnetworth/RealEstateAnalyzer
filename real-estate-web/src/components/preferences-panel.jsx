@@ -85,7 +85,7 @@ const PreferencesPanel = ({
   };
 
   return (
-    <Box sx={{ width: "100%", maxWidth: "250px", padding: 2 }}>
+    <Box sx={{ width: "100%", maxWidth: "22rem", padding: 2 }}>
       <Accordion defaultExpanded>
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
@@ -198,9 +198,24 @@ const PreferencesPanel = ({
           <Typography variant="h5">Preferences</Typography>
         </AccordionSummary>
         <AccordionDetails>
-          <Box>
+          <Box
+            sx={{
+              display: "flex",
+              flexDirection: "column",
+              gap: "6px",
+              alignItems: "center",
+              justifyContent: "center",
+              width: "250px",
+            }}
+          >
             {Object.keys(preferences).map((feature) => (
-              <Box key={`box-${feature}`} sx={{ marginBottom: 2 }}>
+              <Box
+                key={`box-${feature}`}
+                sx={{
+                  marginBottom: 2,
+                  width: "250px",
+                }}
+              >
                 <Typography
                   key={`feature-slider-name-${feature}`}
                   id={`${feature}-slider`}
