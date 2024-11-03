@@ -28,13 +28,15 @@ import formatNumber from "../utils/formatNumber";
 const PreferencesPanel = ({
   preferences,
   setPreferences,
-  updateResults,
   applyFilters,
+  priceRange,
+  setPriceRange,
+  typology,
+  setTypology,
+  selectedLocation,
+  setSelectedLocation,
 }) => {
   const [sliderValues, setSliderValues] = useState(preferences);
-  const [selectedLocation, setSelectedLocation] = useState("");
-  const [priceRange, setPriceRange] = useState(INITIAL_PRICE_RANGE);
-  const [typology, setTypology] = useState(INITIAL_TYPOLOGIES_STATE);
 
   const handleSliderDrag = (feature) => (event, newValue) => {
     setSliderValues((prev) => ({

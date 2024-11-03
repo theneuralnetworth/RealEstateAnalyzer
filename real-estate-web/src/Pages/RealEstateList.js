@@ -13,6 +13,7 @@ import HomePage from "../components/home-page";
 import {
   INITIAL_PREFERENCES_STATE,
   INITIAL_PRICE_RANGE,
+  INITIAL_TYPOLOGIES_STATE,
 } from "../utils/constants";
 
 const routes = [
@@ -36,6 +37,9 @@ const RealEstateList = () => {
   const [selectedProperty, setSelectedProperty] = useState(null);
   const [currentPage, setCurrentPage] = useState(1);
   const [preferences, setPreferences] = useState(INITIAL_PREFERENCES_STATE);
+  const [selectedLocation, setSelectedLocation] = useState("");
+  const [priceRange, setPriceRange] = useState(INITIAL_PRICE_RANGE);
+  const [typology, setTypology] = useState(INITIAL_TYPOLOGIES_STATE);
 
   useEffect(() => {
     setPreferences(INITIAL_PREFERENCES_STATE);
@@ -98,7 +102,7 @@ const RealEstateList = () => {
     setLoading(true);
     setError("");
     try {
-      console.log('filter', filter)
+      console.log("filter", filter);
       const response = await axios.post(selectedRoute.path, {
         preferences,
         filter,
@@ -169,6 +173,12 @@ const RealEstateList = () => {
             updateResults={updateResults}
             theme={darkMode ? darkTheme : lightTheme}
             applyFilters={applyFilters}
+            priceRange={priceRange}
+            setPriceRange={setPriceRange}
+            typology={typology}
+            setTypology={setTypology}
+            selectedLocation={selectedLocation}
+            setSelectedLocation={setSelectedLocation}
           />
         ) : (
           <PropertyPage

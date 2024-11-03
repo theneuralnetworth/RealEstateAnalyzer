@@ -1,6 +1,7 @@
 import {
   Avatar,
   Box,
+  capitalize,
   Card,
   CardActions,
   CardContent,
@@ -15,6 +16,7 @@ import PreferencesPanel from "./preferences-panel";
 import SkeletonList from "./skeleton-list";
 import ErrorScreen from "./error-screen";
 import EmptyList from "./empty-list";
+import { capitalizeAndRemoveUnderscores } from "../utils/capitalize";
 
 const HomePage = ({
   realEstates,
@@ -28,6 +30,12 @@ const HomePage = ({
   updateResults,
   theme,
   applyFilters,
+  priceRange,
+  setPriceRange,
+  typology,
+  setTypology,
+  selectedLocation,
+  setSelectedLocation,
 }) => {
   const indexOfLastItem = currentPage * ITEMS_PER_PAGE;
   const indexOfFirstItem = indexOfLastItem - ITEMS_PER_PAGE;
@@ -40,6 +48,12 @@ const HomePage = ({
         setPreferences={setPreferences}
         updateResults={updateResults}
         applyFilters={applyFilters}
+        priceRange={priceRange}
+        setPriceRange={setPriceRange}
+        typology={typology}
+        setTypology={setTypology}
+        selectedLocation={selectedLocation}
+        setSelectedLocation={setSelectedLocation}
       />
       <Container sx={{ padding: 2 }}>
         {loading && <SkeletonList />}
@@ -64,7 +78,7 @@ const HomePage = ({
                         backgroundColor: theme.palette.background.hover,
                         border: `1px solid ${theme.palette.primary.contrast}`,
                         opacity: 0.8,
-                      }
+                      },
                     }}
                   >
                     <CardMedia
@@ -112,13 +126,14 @@ const HomePage = ({
                           color="text.secondary"
                           fontSize={"0.77rem"}
                         >
-                          Location: {realEstate?.location?.name}
+                          Location:{" "}
+                          {capitalizeAndRemoveUnderscores(
+                            realEstate?.location?.name
+                          )}
                         </Typography>
                       </div>
                     </CardContent>
-                    <CardActions
-                      sx={{ justifyContent: "flex-end" }}
-                    >
+                    <CardActions sx={{ justifyContent: "flex-end" }}>
                       <Avatar
                         sx={{
                           bgcolor:
