@@ -52,11 +52,39 @@ These systems brought light to the importance of being able to represent t well 
 
 Expert systems applications have been divided into 10 categories\cite{hayesroth}. Interpretation, Prediction, Diagnosis, Design, Planning, Monitoring, Debugging, Repair, Instruction and Control. In this article we describe an Interpretation expert system, designed to make sense of domain knowledge by categorizing or labeling input according to predefined rules. This system interprets various real estate property attributes - like security, accessibility and energy efficiency - to determine its suitability for potential buyers.
 
+It does this by trying to assign value - which we call the property score - to each property it analyzes. It is well established that there is intrinsic value in real estate properties, however with this system, more than anything, it tries to determine the value of the property to the user. The final goal is to make the user happy.
+\newpage
 \section{State of the Art}
 
 \subsection{Property evaluation techniques}
+\subsubsection{Traditional Techniques}
+\paragraph{}
+Pagourtzi E. et al.\cite{methods} describes traditional techniques as those that are performed through direct comparison of capital or by determining a regression model based on a range of observations. These might include the following methods:
+\begin{itemize}
+    \item Comparable method
+    \item Profits method
+    \item Investment/income method
+\end{itemize}
 
+These methods tend to focus on the monetary value the property is assigned by the market or the value other similar properties were assigned.
+The investment/income method is a method of simple comparison, it takes into account the investment the property is estimated to need and the income the property is expected to produce, doing so by looking at the transactional history of similar properties in the same area. The profit method, on the other hand, takes a business focus approach by trying to determine the profit that a business might be able to achieve with the property being evaluated.
 
+The expert system detailed in this paper is designed not only on the inherent value of a property but also the preferences that the user might have that can also be attributed to the property under evaluation.
+
+\subsubsection{Advanced Techniques}
+\paragraph{}
+More advanced methods have been developed and these try to model and emulate the actions and thought processes of the actors in the market. These are considered more quantitative methods \cite{methods}. These could be methods such as:
+\begin{itemize}
+    \item Artificial neural networks (ANNs)
+    \item Fuzzy logic methods
+    \item spatial analysis methods
+\end{itemize}
+
+These methods are what we would more closely consider today as being Artificial Intelligence methods. ANNs, for example, can be trained from the extensive amount of data about the real estate market to predict or interpret the value of a real estate property.
+
+Spatial analysis, as the name suggest, try to determine the value of properties based on their location and relationships found in data concerning those locations.
+
+Determining the value of a property is not an exact science most of the time, it is very nuanced, that's why \textbf{fuzzy logic} has been used in such methods. It favors linguistic variables over numbers which might make sense when the system's focus is on the user and their preferences.
 
 \subsection{Automated Valuation Models (AVMs)}
 
@@ -81,7 +109,7 @@ Some of these models use transactional data, this can sometimes reveal problemat
 
 \subsection{Machine Learning and Data-Driven models}
 
-Machine learning and other data driven models have been gaining traction among applications that need to learn from data. 
+Machine learning and other data driven models have been gaining traction among applications that need to learn from data.
 Given the amount of data that this domain, ie. real estate valuation, requires it's only natural that this too is a perfect use case for machine learning applications.
 
 Some authors, for example, have used machine learning to develop housing price prediction models, as is the case of Park and Bae\cite{bpark} and Baldominos et al.\cite{mlinrealestate}. These applications focus specifically on predicting property prices taking into account, among other things, property attributes. The expert system in this article focuses on determining the suitability of a property to a client, using this same data.
@@ -90,7 +118,7 @@ Oh and Tan\cite{reinforcement} demonstrated that it was possible to use reinforc
 
 \subsection{Expert Systems in Real Estate}
 
-There is effectively a lot of prior work on using Expert Systems for many different applications in the Real Estate domain. Hossein et al.\cite{hossein} designed and implemented a fuzzy Expert System to provide recommendations of real estate properties. This cover exactly the same use case that this paper's expert system is being applied to. 
+There is effectively a lot of prior work on using Expert Systems for many different applications in the Real Estate domain. Hossein et al.\cite{hossein} designed and implemented a fuzzy Expert System to provide recommendations of real estate properties. This cover exactly the same use case that this paper's expert system is being applied to.
 
 The authors of the previously mention paper have concluded, with user testing and surveys, that compared to conventional real estate systems, the expert system they developed was much less time consuming for users. They were also able to determine that this expert system could in fact be a replacement for a human expert in some situations.
 
@@ -100,20 +128,70 @@ As discussed previously there has been an abundance of prior work done, and ther
 
 Though the systems currently in place for real estate recommendations are powerful, they remain static through time and haven't seen real implementation of Artificial Intelligence applications to help users.
 
-Browsing through three of the top real estate portals in Portugal - idealista.pt, imovirtual.pt and supercasa.pt - we can quickly confirm that there is still no AI features. The user journey takes the classic form of the user initiating the interaction and going through all the steps of searching, filtering and picking the properties that are most adequate to what they are looking for. 
+Browsing through three of the top real estate portals in Portugal - idealista.pt, imovirtual.pt and supercasa.pt - we can quickly confirm that there is still no AI features. The user journey takes the classic form of the user initiating the interaction and going through all the steps of searching, filtering and picking the properties that are most adequate to what they are looking for.
 
-Our expert system hopes to change that and influence future work on this domain. 
+Our expert system hopes to change that and influence future work on this domain.
 
 \section{Methodology}
-\subsection{System Architecture}
 
 \subsection{Data Collection and Processing}
+
+For most intelligent systems data is a crucial part of its workings. Some systems are only as good as their data, and it has become clear in recent years that data correctness and availability is a tenet of artificial intelligence applications.
+
+For this expert system we had to gather and handle data so that we could feed it to our system, we implemented a ETL methodology - Extract, Transform and Load.
+
+\subsubsection{Extract}
+Firstly, we developed a python script to scrape one of the biggest websites for real estate property advertising and store that data on disk so that it could be processed later.
+
+Once we had the data we made a visual and manual run through of the data and noticed a few problems with it.
+\begin{itemize}
+    \item Some properties were missing some attributes,
+    \item Some attributes were using the wrong data type, for example the price as a string instead of a float
+    \item Some string attributes had special characters that had to be removed
+\end{itemize}
+
+\subsubsection{Transform}
+Given the amount of data we collected (around 600 properties) we implemented another python script to automatically detect and correct the situations reported above. This tasks was crucial as data correctness is extremely important to obtain correct results.
+
+Another important aspect of data handling is the format the data is in. Having the data in a format that is easy to read and process both by humans as well as computers is crucial. Hence we transformed the data into the JSON format so that it could be easily processed and understood.
+
+\subsubsection{Load}
+Now that we have correct and predictable data it was time to feed it to our system. For the Prolog system implementation we had to develop a python script that loaded the JSON data and converted it to Prolog facts. For the Drools implementation, since it's based on the Java language, a higher level language, it was easier to load and import the data with Java itself.
+
+\subsection{System Architecture}
+
 \subsection{Knowledge Base and Rule Definition}
+\subsubsection{Rules}
+\begin{table}[ht]
+    \centering
+    \begin{tabular}{c|c|c}
+    \hline
+    \textbf{ID} & \textbf{Category} & \textbf{Description} \\\hline
+    1.1 & Security & If location crime rate is low then property crime rate is low \\\hline
+    1.2 & Security & If location crime rate is medium then property crime rate is medium \\\hline
+    1.3 & Security & If location crime rate is high then the property crime rate is high \\\hline
+    1.4 & Security & If property crime rate is low and it has a security system then level of security is high  \\\hline
+    1.5 & Security & If property crime rate is high and it doesn't have a security system then level of security is low \\\hline
+    ... & ... & ... \\\hline
+    6.1 & Services & If location has schools then the property has schools nearby \\\hline
+    6.2 & Services & If location has public transports then the property has nearby public transports \\\hline
+    6.3 & Services & If location has a hospital then the property has a nearby hospital \\\hline
+    6.4 & Services & If location has supermarkets then the property has a nearby supermarket \\\hline
+    6.5 & Services & If location has leisure areas then the property has nearby leisure areas \\\hline
+    ... & ... & ... \\\hline
+    14.1 & Scores & Calculates the security score \\\hline
+    14.6 & Scores & Calculates the services score\\\hline
+    14.7 & Scores & Calculates the connectivity score\\\hline
+    14.14 & Scores & Calculates the final score of the property \\\hline
+    \end{tabular}
+    \caption{Excerpt of business rules defined from the expert's knowledge}
+    \label{tab:rules}
+\end{table}
+
 \subsection{Inference Engines}
 \subsubsection{Prolog}
 \paragraph{explain how prolog engine works}
-\subsubsection{Drools}
-\paragraph{explain how drools engine works}
+
 \subsection{User Personalization and Decision Making}
 \subsection{Testing and Validation}
 
@@ -131,7 +209,7 @@ Include quantitative data where possible: metrics like recommendation accuracy, 
 % \bibliographystyle{splncs04}
 % \bibliography{mybibliography}
 %
-\bibliographystyle{plain}
+\bibliographystyle{splncs04}
 \bibliography{references}
 
 \end{document}
