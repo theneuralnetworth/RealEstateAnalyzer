@@ -118,7 +118,7 @@ namespace RealEstateAPI.Controllers
 
                     if (preferences.filter.typology != null && preferences.filter.typology.Any())
                     {
-                        realEstates = realEstates.Where(x => preferences.filter.typology.Contains(x.Rooms - 1)).ToList();
+                        realEstates = realEstates.Where(x => preferences.filter.typology.Contains(x.Rooms - 1) || (x.Rooms >= 4 && preferences.filter.typology.Contains(4))).ToList();
                     }
 
                     return Ok(realEstates);
