@@ -1,7 +1,6 @@
 import {
   Avatar,
   Box,
-  capitalize,
   Card,
   CardActions,
   CardContent,
