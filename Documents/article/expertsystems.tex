@@ -22,7 +22,7 @@
 
 \begin{document}
 %
-\title{An Expert System for Real Estate Analysis}
+\title{An Expert System for Real Estate Recommendations}
 %
 %\titlerunning{Abbreviated paper title}
 % If the paper title is too long for the running head, you can set
@@ -36,8 +36,7 @@
 \maketitle              % typeset the header of the contribution
 %
 \begin{abstract}
-The abstract should briefly summarize the contents of the paper in
-150--250 words.
+Finding and purchasing a real estate property can be a delicate and challenging process due to the inherent influence of different factors. Even though there's been a lot of work done in the real estate recommendation space, most systems still lack accessibility and focus on user preference. Advanced AI applications and features are still being developed and are usually too expensive for the average property buyer. This paper describes the design and implementation of an expert system designed to provide recommendations for real estate properties for potential buyers with a focus on the user experience and preferences by incorporating a user friendly application that offers a good user-experience. Results demonstrate the systems potential as an early stage prototype, showing an ability to align recommendations to user individual needs. This approach proposes a scalable solution that could improve the usability for both final buyers and real estate agents.
 
 \keywords{Expert Systems  \and Real Estate \and Artificial Intelligence.}
 \end{abstract}
@@ -54,7 +53,7 @@ These systems brought light to the importance of being able to represent t well 
 Expert systems applications have been divided into 10 categories\cite{hayesroth}. Interpretation, Prediction, Diagnosis, Design, Planning, Monitoring, Debugging, Repair, Instruction and Control. In this article we describe an Interpretation expert system, designed to make sense of domain knowledge by categorizing or labeling input according to predefined rules. This system interprets various real estate property attributes - like security, accessibility and energy efficiency - to determine its suitability for potential buyers.
 
 It does this by trying to assign value - which we call the property score - to each property it analyzes. It is well established that there is intrinsic value in real estate properties, however with this system, more than anything, it tries to determine the value of the property to the user. The final goal is to make the user happy.
-\newpage
+
 \section{State of the Art}
 
 \subsection{Property evaluation techniques}
@@ -89,7 +88,7 @@ Determining the value of a property is not an exact science most of the time, it
 
 \subsection{Automated Valuation Models (AVMs)}
 
-On of the most common systems for evaluating real estate properties market value is Automated Valuation Models - or AVMs for short. These models leverage mathematical modelling techniques, in an automated manner, in order to generate property valuations quickly and, ideally, accurately. Such techniques include data sources, statistical models and machine learning algorithms.
+On of the most common systems for evaluating real estate properties market value is Automated Valuation Models - or AVMs for short. These models leverage mathematical modeling techniques, in an automated manner, in order to generate property valuations quickly and, ideally, accurately. Such techniques include data sources, statistical models and machine learning algorithms.
 
 AVMs analyze a variety of data in order to produce their estimation, including:
 \begin{itemize}
@@ -125,7 +124,7 @@ The authors of the previously mention paper have concluded, with user testing an
 
 \subsection{Limitations in Current Systems}
 
-As discussed previously there has been an abundance of prior work done, and there are a lot of applications, mostly web applicatios, that cater to such use cases. This comes to no surprise given that real estate is a significant sector of the global economy which moves a lot of capital. As an example, according the Banco de Portugal (Bank of Portugal)\cite{bancoportugal} in september 2024 the total amount of bank loans extended to individuals for home purchases rose to over two thosand and seven hundred million euros. This shows a clear incentive for private initiatives to develop such systems that can help users find the best deals they can.
+As discussed previously there has been an abundance of prior work done, and there are a lot of applications, mostly web applications, that cater to such use cases. This comes to no surprise given that real estate is a significant sector of the global economy which moves a lot of capital. As an example, according the Banco de Portugal (Bank of Portugal)\cite{bancoportugal} in September 2024 the total amount of bank loans extended to individuals for home purchases rose to over two thousand and seven hundred million euros. This shows a clear incentive for private initiatives to develop such systems that can help users find the best deals they can.
 
 Though the systems currently in place for real estate recommendations are powerful, they remain static through time and haven't seen real implementation of Artificial Intelligence applications to help users.
 
@@ -205,7 +204,7 @@ The engine then proceeds to process each loaded fact and determine if it trigger
 At the core of the engine we have predicates such as the \texttt{fact\_in\_condition} and \texttt{verify\_conditions}, these are used to evaluate logical conditions within rules. These predicates play a critical role in determining wether a combination of facts satisfies a given rule.
 When conditions are satisfied the engine calls the \texttt{conclude} predicate to create new facts defined in the \texttt{RHS} of rules.
 
-In order to implement explanations of the type \texttt{whynot} and \texttt{how} the engine maintains a table to keep track of which rules were triggered by each fact, providing tracibility and allowing us to provide explanations to the user.
+In order to implement explanations of the type \texttt{whynot} and \texttt{how} the engine maintains a table to keep track of which rules were triggered by each fact, providing traceability and allowing us to provide explanations to the user.
 
 Given the arithmetic nature of the goal of this engine we also implemented an \texttt{operate} predicate that supports arithmetic operations in the rules \texttt{LHS}.
 
@@ -269,15 +268,15 @@ Our system despite being an early stage prototype still produced some promising 
     \item The typical Portuguese family - a young couple with 1 or 2 of kids
 \end{itemize}
 
-The retired expat would be looking for a property in quiet location with low crime rate. Comfortable and security are of high priority for this persona. The appreciation potential and the accessibilities are probably not the highest priorities for this persona.
+The retired expat would be looking for a property in quiet location with low crime rate. Comfortable and security are of high priority for this persona. The appreciation potential and the accessibility are probably not the highest priorities for this persona.
 
-The young remote worke would be most interested on a property that would allow them flexibility and comfort. Located in a city center so that services and near by and where social life can thrive. Appreciation potential is probably of high importance as well as services and sun exposure.
+The young remote worker would be most interested on a property that would allow them flexibility and comfort. Located in a city center so that services and near by and where social life can thrive. Appreciation potential is probably of high importance as well as services and sun exposure.
 
-The typical portuguese family has their kids life in top of mind. They need a property that can accomodate their busy life style but can still provide a safe and easy to manage environment for their children. Security is of high importante and maintenance cost need to be as low as possible. Schools and public transportation near the property are also of great importance.
+The typical Portuguese family has their kids life in top of mind. They need a property that can accommodate their busy life style but can still provide a safe and easy to manage environment for their children. Security is of high importance and maintenance cost need to be as low as possible. Schools and public transportation near the property are also of great importance.
 
 We ran these 3 scenarios through our application and we were able to ascertain that the system does a fairly decent job in recommending properties given these very basic examples.
 
-\subsubsection{Limitations and improvements} Of course with this system being an basic prototype there is stil a lot of room for improvement. Starting by the availability of data, our system can only recommend properties for which it has the data in its knowledge base. So in order to obtain even better results one of the topics we'd have to improve would be the size, quality and diversification of our properties dataset.
+\subsubsection{Limitations and improvements} Of course with this system being an basic prototype there is still a lot of room for improvement. Starting by the availability of data, our system can only recommend properties for which it has the data in its knowledge base. So in order to obtain even better results one of the topics we'd have to improve would be the size, quality and diversification of our properties dataset.
 
 Another aspect we've noticed could be improved was the computational cost of running this system. Given that we load all our dataset into memory so the engine can have access to it we face ourselves with a bottleneck in terms of performance. A strict physical limitation is encountered in the amount of memory where our system is running. A future improvement would be to move our dataset to more appropriate data infrastructure such as a Database Management System and implement a caching mechanism that would allow for easier access to the most searched for properties.
 
