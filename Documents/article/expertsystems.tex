@@ -48,11 +48,11 @@ Finding and purchasing a real estate property can be a delicate and challenging 
 Expert systems are computer applications designed to mimic the human expertise in its area of application. This is achieved by, among other things, applying logical inference and rule-based reasoning over the domain knowledge.
 
 Created in the 70s and 80s, it was regarded by many as the first truly successful Artificial Intelligence application. Three crucial components are required to make these systems a success: an inference engine, a knowledge base and an expert willing to encode their knowledge into these systems.
-These systems brought light to the importance of being able to represent t well structured domain knowledge and data. ultimately influencing the rise of subjects of study such as \textit{Machine Learning} and neural networks where data and its correctness are considered a crucial component to these newer systems.
+These systems brought light to the importance of being able to represent well structured domain knowledge and data, ultimately influencing the rise of subjects of study such as \textit{Machine Learning} and neural networks where data and its correctness are considered a crucial component to these newer systems.
 
-Expert systems applications have been divided into 10 categories\cite{hayesroth}. Interpretation, Prediction, Diagnosis, Design, Planning, Monitoring, Debugging, Repair, Instruction and Control. In this article we describe an Interpretation expert system, designed to make sense of domain knowledge by categorizing or labeling input according to predefined rules. This system interprets various real estate property attributes - like security, accessibility and energy efficiency - to determine its suitability for potential buyers.
+Expert systems applications have been divided into 10 categories\cite{hayesroth}. Interpretation, Prediction, Diagnosis, Design, Planning, Monitoring, Debugging, Repair, Instruction and Control. In this article it is described an Interpretation expert system, designed to make sense of domain knowledge by categorizing or labeling input according to predefined rules. This system interprets various real estate property attributes - like security, accessibility and energy efficiency - to determine its suitability for potential buyers.
 
-It does this by trying to assign value - which we call the property score - to each property it analyzes. It is well established that there is intrinsic value in real estate properties, however with this system, more than anything, it tries to determine the value of the property to the user. The final goal is to make the user happy.
+It does this by trying to assign value - which the team calls the property score - to each property it analyzes. It is well established that there is intrinsic value in real estate properties, however with this system, more than anything, it tries to determine the value of the property to the user. The final goal is to make the user happy.
 
 \section{State of the Art}
 
@@ -80,7 +80,7 @@ More advanced methods have been developed and these try to model and emulate the
     \item spatial analysis methods
 \end{itemize}
 
-These methods are what we would more closely consider today as being Artificial Intelligence methods. ANNs, for example, can be trained from the extensive amount of data about the real estate market to predict or interpret the value of a real estate property.
+These methods are closely considered today as being Artificial Intelligence methods. ANNs, for example, can be trained from the extensive amount of data about the real estate market to predict or interpret the value of a real estate property.
 
 Spatial analysis, as the name suggest, try to determine the value of properties based on their location and relationships found in data concerning those locations.
 
@@ -128,9 +128,9 @@ As discussed previously there has been an abundance of prior work done, and ther
 
 Though the systems currently in place for real estate recommendations are powerful, they remain static through time and haven't seen real implementation of Artificial Intelligence applications to help users.
 
-Browsing through three of the top real estate portals in Portugal - idealista.pt, imovirtual.pt and supercasa.pt - we can quickly confirm that there is still no AI features. The user journey takes the classic form of the user initiating the interaction and going through all the steps of searching, filtering and picking the properties that are most adequate to what they are looking for.
+Browsing through three of the top real estate portals in Portugal - idealista.pt, imovirtual.pt and supercasa.pt - it's quick to confirm that there are still no AI features. The user journey takes the classic form of the user initiating the interaction and going through all the steps of searching, filtering and picking the properties that are most adequate to what they are looking for.
 
-Our expert system hopes to change that and influence future work on this domain.
+This expert system hopes to change that and influence future work on this domain.
 
 \section{Methodology}
 
@@ -138,12 +138,12 @@ Our expert system hopes to change that and influence future work on this domain.
 
 For most intelligent systems data is a crucial part of its workings. Some systems are only as good as their data, and it has become clear in recent years that data correctness and availability is a tenet of artificial intelligence applications.
 
-For this expert system we had to gather and handle data so that we could feed it to our system, we implemented a ETL methodology - Extract, Transform and Load.
+For this expert system, the team had to gather and handle the data to feed it into the system, implementing an ETL methodology - Extract, Transform and Load.
 
 \subsubsection{Extract}
-Firstly, we developed a python script to scrape one of the biggest websites for real estate property advertising and store that data on disk so that it could be processed later.
+Firstly, it was developed a python script to scrape one of the biggest websites for real estate property advertising and store that data on disk so that it could be processed later.
 
-Once we had the data we made a visual and manual run through of the data and noticed a few problems with it.
+Once the data was obtained, the team made a visual and manual run through the data and noticed a few problems with it.
 \begin{itemize}
     \item Some properties were missing some attributes,
     \item Some attributes were using the wrong data type, for example the price as a string instead of a float
@@ -151,16 +151,16 @@ Once we had the data we made a visual and manual run through of the data and not
 \end{itemize}
 
 \subsubsection{Transform}
-Given the amount of data we collected (around 600 properties) we implemented another python script to automatically detect and correct the situations reported above. This tasks was crucial as data correctness is extremely important to obtain correct results.
+Given the amount of data collected (around 600 properties), the  group implemented another python script to automatically detect and correct the situations reported above. This tasks was crucial as data correctness is extremely important to obtain correct results.
 
-Another important aspect of data handling is the format the data is in. Having the data in a format that is easy to read and process both by humans as well as computers is crucial. Hence we transformed the data into the JSON format so that it could be easily processed and understood.
+Another important aspect of data handling is the format the data is in. Having the data in a format that is easy to read and process both by humans as well as computers is crucial. Hence the team transformed the data into the JSON format so that it could be easily processed and understood.
 
 \subsubsection{Load}
-Now that we have correct and predictable data it was time to feed it to our system. For the Prolog system implementation we had to develop a python script that loaded the JSON data and converted it to Prolog facts. For the Drools implementation, since it's based on the Java language, a higher level language, it was easier to load and import the data with Java itself.
+After having correct and predictable data it was time to feed it to the system. For the Prolog system implementation, the team had to develop a python script that loaded the JSON data and converted it to Prolog facts. For the Drools implementation, since it's based on the Java language, a higher level language, it was easier to load and import the data with Java itself.
 
 \subsection{System Architecture}
 
-One of the most important aspects of the expert system we developed was to provide a good User Experience and to help the user reach its goals. Therefore we decided that we would expose the expert system through a Web application so that we could present users with a clean and intuitive user experience and interface.
+One of the most important aspects of the expert system developed was to provide a good User Experience and to help the user reach its goals. Therefore, the team decided to expose the expert system through a Web application to provide users with a clean and intuitive user experience and interface.
 
 The web application is composed of several components:
 \begin{enumerate}
@@ -179,44 +179,44 @@ The web application is composed of several components:
     \label{fig:system-architecture}
 \end{figure}
 
-The Prolog inference engine is responsible for interpreting the domain knowledge and infer and extract the conclusions we'd like to show to our users. In order to expose this information we implemented an HTTP server in Prolog, however the data structure that this component serves was not the most appropriate so we decided to add another layer, a proxy Web API.
+The Prolog inference engine is responsible for interpreting the domain knowledge and infer and extract the conclusions the team wanted to show to the users. In order to expose this information, it was implemented an HTTP server in Prolog. However, the data structure that this component serves was not the most appropriate so it was decided to add another layer, a proxy Web API.
 
 The proxy Web API is responsible for providing a simple and standard interface between the Prolog engine and the front-end application, or any other clients. This Web API gets HTTP requests from clients (eg. the front-end application), transforms that request into a request that Prolog can understand and then forwards that request to Prolog. The Prolog HTTP server processes the request and sends back a response to the Web API. Since Prolog responds with a less than optimal data structure, the Web API takes that response and formats it into a readable and easily accessible JSON format. It then forwards that request to the client that initiated the request in the first place.
 
-The Prolog engine needs data to reason upon, so as mentioned in the previous section "Data Collection and Processing" we developed a Python script to take our dataset and inject it into Prolog as facts.
+The Prolog engine needs data to reason upon, so as mentioned in the previous section "Data Collection and Processing" it was developed a Python script to take the dataset and inject it into Prolog as facts.
 
-It's worth mentioning as well that this project supports two different inference engine technologies, Prolog and Drools. For the Drools engine we implemented, in Java, a simple Springboot Web API so that we could expose the inferences and conclusions to our front-end application.
+It's worth mentioning as well that this project supports two different inference engine technologies, Prolog and Drools. For the Drools engine the team implemented, in Java, a simple Springboot Web API so that it could expose the inferences and conclusions to the front-end application.
 
 \subsection{Inference Engine}
 
-We implemented the core functionality of our system, ie. our inference engine, using Prolog, a logic programming language. An inference engine, as the name suggest, infers conclusions based on logical reasoning from rules and a knowledge base.
+The team implemented the core functionality of the system, ie. the inference engine, using Prolog, a logic programming language. An inference engine, as the name suggest, infers conclusions based on logical reasoning from rules and a knowledge base.
 
-We started by defining logical operators such as \texttt{rule}, \texttt{if}, \texttt{then}, \texttt{and}, \texttt{or} and finally \texttt{not}. These were operators allowed us to declare our rules in a declarative format. Defining 2 separate components of the rules the \texttt{LHS} and the \texttt{RHS}:
+The group started by defining logical operators such as \texttt{rule}, \texttt{if}, \texttt{then}, \texttt{and}, \texttt{or} and finally \texttt{not}. These operators allowed the rules to be declared in a declarative format. Defining 2 separate components of the rules the \texttt{LHS} and the \texttt{RHS}:
 \begin{verbatim}
     rule 1.1
     if [location_crime_rate(Property, low)]
     then [create_fact(property_crime_rate(Property, low)].
 \end{verbatim}
 
-The inference engine starts by loading our knowledge base that was extracted from the JSON files. This includes the properties attributes as well as the users preferences, these are later referenced during rule evaluation.
-The engine then proceeds to process each loaded fact and determine if it triggers any of the rules that have been declared. This mapping is determined by what we call the meta-knowledge which maps facts to rules. As new facts are processed rules are evaluated and if conditions are met new facts are added to our fact base.
+The inference engine starts by loading the knowledge base that was extracted from the JSON files. This includes the properties attributes as well as the users preferences, these are later referenced during rule evaluation.
+The engine then proceeds to process each loaded fact and determine if it triggers any of the rules that have been declared. This mapping is determined by what it's called the meta-knowledge which maps facts to rules. As new facts are processed rules are evaluated and if conditions are met new facts are added to the fact base.
 
-At the core of the engine we have predicates such as the \texttt{fact\_in\_condition} and \texttt{verify\_conditions}, these are used to evaluate logical conditions within rules. These predicates play a critical role in determining wether a combination of facts satisfies a given rule.
+At the core of the engine, there are predicates such as the \texttt{fact\_in\_condition} and \texttt{verify\_conditions}, that are used to evaluate logical conditions within rules. These predicates play a critical role in determining wether a combination of facts satisfies a given rule.
 When conditions are satisfied the engine calls the \texttt{conclude} predicate to create new facts defined in the \texttt{RHS} of rules.
 
-In order to implement explanations of the type \texttt{whynot} and \texttt{how} the engine maintains a table to keep track of which rules were triggered by each fact, providing traceability and allowing us to provide explanations to the user.
+In order to implement explanations of the type \texttt{whynot} and \texttt{how} the engine maintains a table to keep track of which rules were triggered by each fact, providing traceability and allowing the team to provide explanations to the user.
 
-Given the arithmetic nature of the goal of this engine we also implemented an \texttt{operate} predicate that supports arithmetic operations in the rules \texttt{LHS}.
+Given the arithmetic nature of the goal of this engine it was also implemented an \texttt{operate} predicate that supports arithmetic operations in the rules \texttt{LHS}.
 
 \subsection{User Personalization and Decision Making}
 
-As described in the previous sections our engine takes into account the user's preferences and recalculates the score for the properties in the dataset. User preferences are given through the front-end applications. Users are provided with a UI component that works as a slider where they can adjust how much each attribute of a property should impact the final score of a property. In other words how much a certain attribute of a property is important for them.
+As described in the previous sections, the engine takes into account the user's preferences and recalculates the score for the properties in the dataset. User preferences are given through the front-end applications. Users are provided with a UI component that works as a slider where they can adjust how much each attribute of a property should impact the final score of a property. In other words how much a certain attribute of a property is important for them.
 This is then sent to the inference engine where it reevaluates the scores for each property and provides the user with a reordered list of properties.
 
 \subsection{Knowledge Base and Rule Definition}
 \subsubsection{Knowledge Base}
 
-Our knowledge base gather a collection of properties and their attributes. Attributes ranged from the location, the number of rooms, the area in square meters, wether the property had a security system or not, the year of construction and so on. These attributes were analyzed and processed to infer 14 final attributes that directly influence the final score of the property.
+The knowledge base gather a collection of properties and their attributes. Attributes ranged from the location, the number of rooms, the area in square meters, wether the property had a security system or not, the year of construction and so on. These attributes were analyzed and processed to infer 14 final attributes that directly influence the final score of the property.
 
 The final 14 attributes that are inferred by the system are demonstrated in Fig.\ref{fig:property-attributes}
 \begin{figure}
@@ -229,9 +229,9 @@ The final 14 attributes that are inferred by the system are demonstrated in Fig.
 \paragraph{}
 \subsubsection{Rules}
 In expert systems, rules are the core of decision-making and provide the mechanism to make inferences and conclusions.
-For each attribute of a real estate Property we had several rules, describing how the value of that attribute influenced the final score of that Property. The systems took into account 13 different property attributes, however we had 14 different groups of rules. Group 14 describes the business rules for calculating the final score of the properties. In took into account the inferences of the previous rules and calculated the final score to be presented to the user.
+For each attribute of a real estate Property there are several rules, describing how the value of that attribute influenced the final score of that Property. The systems took into account 13 different property attributes, however there were 14 different groups of rules. Group 14 describes the business rules for calculating the final score of the properties. In took into account the inferences of the previous rules and calculated the final score to be presented to the user.
 
-Here are an excerpt of the business rules defined for our expert system:
+Here are an excerpt of the business rules defined for the expert system:
 \begin{table}[ht]
     \centering
     \begin{tabular}{c|c|c}
@@ -260,7 +260,7 @@ Here are an excerpt of the business rules defined for our expert system:
 
 \section{Results}
 
-Our system despite being an early stage prototype still produced some promising results. To get a more realistic understanding of results we defined 3 different personas, with different demographics and different requirements for buying a house:
+The developed system despite being an early stage prototype still produced some promising results. To get a more realistic understanding of results the team defined 3 different personas, with different demographics and different requirements for buying a house:
 
 \begin{itemize}
     \item The retired expat - A recently retired 60+ person. Seeking a property in quiet place.
@@ -274,13 +274,13 @@ The young remote worker would be most interested on a property that would allow 
 
 The typical Portuguese family has their kids life in top of mind. They need a property that can accommodate their busy life style but can still provide a safe and easy to manage environment for their children. Security is of high importance and maintenance cost need to be as low as possible. Schools and public transportation near the property are also of great importance.
 
-We ran these 3 scenarios through our application and we were able to ascertain that the system does a fairly decent job in recommending properties given these very basic examples.
+The team ran these 3 scenarios through the application and were able to ascertain that the system does a fairly decent job in recommending properties given these very basic examples.
 
-\subsubsection{Limitations and improvements} Of course with this system being an basic prototype there is still a lot of room for improvement. Starting by the availability of data, our system can only recommend properties for which it has the data in its knowledge base. So in order to obtain even better results one of the topics we'd have to improve would be the size, quality and diversification of our properties dataset.
+\subsubsection{Limitations and improvements} Of course with this system being an basic prototype there is still a lot of room for improvement. Starting by the availability of data, the developed system can only recommend properties for which it has the data in its knowledge base. So in order to obtain even better results one of the topics the team would have to improve would be the size, quality and diversification of the properties dataset.
 
-Another aspect we've noticed could be improved was the computational cost of running this system. Given that we load all our dataset into memory so the engine can have access to it we face ourselves with a bottleneck in terms of performance. A strict physical limitation is encountered in the amount of memory where our system is running. A future improvement would be to move our dataset to more appropriate data infrastructure such as a Database Management System and implement a caching mechanism that would allow for easier access to the most searched for properties.
+Another aspect the group noticed could be improved was the computational cost of running this system. Given that the entire dataset is loaded into memory so the engine can have access to it, the team faced a bottleneck in terms of performance. A strict physical limitation is encountered in the amount of memory where the system is running. A future improvement would be to move the dataset to more appropriate data infrastructure such as a Database Management System and implement a caching mechanism that would allow for easier access to the most searched for properties.
 
-Another great initiative that we think would bring great value to our solution would be the addition of an Insights/Statistics component where it would track all the requests and results that the system received and generated, respectively. This would allow us to understand better how our system works and find hidden insights on where it would benefit the most to be improved.
+Another great initiative that the team think would bring great value to the solution would be the addition of an Insights/Statistics component where it would track all the requests and results that the system received and generated, respectively. This would allow the group to understand better how the system works and find hidden insights on where it would benefit the most to be improved.
 
 
 \bibliographystyle{splncs04}
